@@ -139,3 +139,6 @@
 [submodule "open-source/24111999/claude-skills"]
 	path = open-source/24111999/claude-skills
 	url = git@github.com:24111999/claude-skills.git
+[submodule "open-source/anthropics/life-sciences"]
+	path = open-source/anthropics/life-sciences
+	url = git@github.com:anthropics/life-sciences.git
