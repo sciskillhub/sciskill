@@ -1,0 +1,562 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import argparse
+import base64
+import json
+import os
+import re
+import shutil
+import subprocess
+import sys
+import time
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any, Dict, List, Literal, Optional, Set, Tuple
+
+import requests
+import yaml
+
+API_ROOT = "https://api.github.com"
+API_VERSION = "2022-11-28"
+
+Protocol = Literal["ssh", "https"]
+
+
+@dataclass
+class SkillMatch:
+    repo_full_name: str
+    default_branch: str
+    skill_path: str
+    front_matter: Dict[str, Any]
+    repo_html_url: str
+
+
+def gh_headers(token: str) -> Dict[str, str]:
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": API_VERSION,
+        "User-Agent": "sciskill-skill-collector/1.0",
+    }
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    return headers
+
+
+def gh_get(url: str, token: str, params: Optional[Dict[str, Any]] = None) -> requests.Response:
+    r = requests.get(url, headers=gh_headers(token), params=params, timeout=40)
+    r.raise_for_status()
+    return r
+
+
+def run_ok(cmd: List[str], cwd: Optional[str] = None) -> bool:
+    try:
+        result = subprocess.run(
+            cmd,
+            cwd=cwd,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            check=False,
+            timeout=20,
+        )
+        return result.returncode == 0
+    except Exception:
+        return False
+
+
+def has_ssh_key() -> bool:
+    ssh_dir = Path.home() / ".ssh"
+    if ssh_dir.exists():
+        for name in ("id_ed25519", "id_rsa", "id_ecdsa"):
+            if (ssh_dir / name).exists():
+                return True
+    return bool(os.getenv("SSH_AUTH_SOCK"))
+
+
+def ssh_available_for_repo(repo_ssh_url: str) -> bool:
+    if shutil.which("ssh") is None:
+        return False
+    if not has_ssh_key():
+        return False
+    return run_ok(["git", "ls-remote", repo_ssh_url])
+
+
+def choose_submodule_protocol(repo_ssh_url: str, repo_https_url: str) -> Protocol:
+    forced = os.getenv("SUBMODULE_PROTOCOL", "").strip().lower()
+    if forced in {"ssh", "https"}:
+        return forced  # type: ignore[return-value]
+
+    in_github_actions = os.getenv("GITHUB_ACTIONS", "").strip().lower() == "true"
+
+    if in_github_actions:
+        if ssh_available_for_repo(repo_ssh_url):
+            return "ssh"
+        return "https"
+
+    if ssh_available_for_repo(repo_ssh_url):
+        return "ssh"
+    return "https"
+
+
+def choose_clone_url(full_name: str) -> Tuple[str, Protocol]:
+    owner, repo = full_name.split("/", 1)
+    ssh_url = f"git@github.com:{owner}/{repo}.git"
+    https_url = f"https://github.com/{owner}/{repo}.git"
+    protocol = choose_submodule_protocol(ssh_url, https_url)
+    return (ssh_url if protocol == "ssh" else https_url), protocol
+
+
+def read_topics_from_file(path: Path) -> List[str]:
+    if not path.exists():
+        raise FileNotFoundError(f"topics file not found: {path}")
+
+    topics: List[str] = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        topics.append(line)
+    return topics
+
+
+def parse_topics_arg(raw: str) -> List[str]:
+    if not raw.strip():
+        return []
+    return [x.strip() for x in raw.split(",") if x.strip()]
+
+
+def normalize_topics(topics: List[str]) -> List[str]:
+    seen: Set[str] = set()
+    out: List[str] = []
+    for t in topics:
+        t2 = t.strip()
+        if not t2:
+            continue
+        if t2 not in seen:
+            seen.add(t2)
+            out.append(t2)
+    return out
+
+
+def build_queries(base_query: str, topics: List[str]) -> List[Tuple[str, Optional[str]]]:
+    """
+    返回 [(query, topic)]。
+    如果没有 topic，就只返回基础查询。
+    """
+    base_query = base_query.strip()
+    if not topics:
+        return [(base_query, None)]
+
+    queries: List[Tuple[str, Optional[str]]] = []
+    for topic in topics:
+        if base_query:
+            queries.append((f"{base_query} topic:{topic}", topic))
+        else:
+            queries.append((f"topic:{topic}", topic))
+    return queries
+
+
+def search_repositories(
+    token: str,
+    query: str,
+    max_repos: int = 50,
+    sort: str = "updated",
+    order: str = "desc",
+) -> List[Dict[str, Any]]:
+    repos: List[Dict[str, Any]] = []
+    page = 1
+
+    while len(repos) < max_repos:
+        per_page = min(100, max_repos - len(repos))
+        r = gh_get(
+            f"{API_ROOT}/search/repositories",
+            token,
+            params={
+                "q": query,
+                "sort": sort,
+                "order": order,
+                "per_page": per_page,
+                "page": page,
+            },
+        )
+        data = r.json()
+        items = data.get("items", [])
+        if not items:
+            break
+
+        repos.extend(items)
+        page += 1
+        time.sleep(0.3)
+
+    return repos[:max_repos]
+
+
+def dedupe_repos(repos: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    seen: Set[str] = set()
+    out: List[Dict[str, Any]] = []
+    for repo in repos:
+        full_name = repo.get("full_name")
+        if not full_name or full_name in seen:
+            continue
+        seen.add(full_name)
+        out.append(repo)
+    return out
+
+
+def get_repo_info(token: str, full_name: str) -> Tuple[str, str]:
+    r = gh_get(f"{API_ROOT}/repos/{full_name}", token)
+    data = r.json()
+    return data["default_branch"], data["html_url"]
+
+
+def get_recursive_tree(token: str, full_name: str, branch: str) -> List[Dict[str, Any]]:
+    r_ref = gh_get(f"{API_ROOT}/repos/{full_name}/branches/{branch}", token)
+    ref_data = r_ref.json()
+    tree_sha = ref_data["commit"]["commit"]["tree"]["sha"]
+
+    r_tree = gh_get(
+        f"{API_ROOT}/repos/{full_name}/git/trees/{tree_sha}",
+        token,
+        params={"recursive": "1"},
+    )
+    tree_data = r_tree.json()
+    return tree_data.get("tree", [])
+
+
+def get_file_content(token: str, full_name: str, path: str, ref: str) -> str:
+    r = gh_get(
+        f"{API_ROOT}/repos/{full_name}/contents/{path}",
+        token,
+        params={"ref": ref},
+    )
+    data = r.json()
+
+    if data.get("encoding") == "base64":
+        return base64.b64decode(data["content"]).decode("utf-8", errors="replace")
+
+    download_url = data.get("download_url")
+    if download_url:
+        rr = requests.get(download_url, timeout=40)
+        rr.raise_for_status()
+        return rr.text
+
+    raise RuntimeError(f"Unable to read file: {full_name}:{path}")
+
+
+def extract_front_matter(md_text: str) -> Optional[Dict[str, Any]]:
+    text = md_text.lstrip("\ufeff")
+    m = re.match(r"^---\s*\n(.*?)\n---\s*(?:\n|$)", text, re.DOTALL)
+    if not m:
+        return None
+
+    raw_yaml = m.group(1)
+    try:
+        data = yaml.safe_load(raw_yaml)
+    except Exception:
+        return None
+
+    if not isinstance(data, dict):
+        return None
+    return data
+
+
+def validate_skill_md(md_text: str) -> Tuple[bool, str, Optional[Dict[str, Any]]]:
+    fm = extract_front_matter(md_text)
+    if fm is None:
+        return False, "missing or invalid YAML front matter", None
+
+    name = fm.get("name")
+    description = fm.get("description")
+
+    if not isinstance(name, str) or not name.strip():
+        return False, "front matter missing valid 'name'", fm
+
+    if not re.fullmatch(r"[a-z0-9-]+", name.strip()):
+        return False, "invalid 'name' format; expected [a-z0-9-]+", fm
+
+    if not isinstance(description, str) or not description.strip():
+        return False, "front matter missing valid 'description'", fm
+
+    if len(description.strip()) < 10:
+        return False, "description too short", fm
+
+    return True, "ok", fm
+
+
+def find_valid_skill_in_repo(token: str, full_name: str) -> List[SkillMatch]:
+    default_branch, html_url = get_repo_info(token, full_name)
+    tree = get_recursive_tree(token, full_name, default_branch)
+
+    skill_paths = [
+        item["path"]
+        for item in tree
+        if item.get("type") == "blob" and Path(item.get("path", "")).name == "SKILL.md"
+    ]
+
+    matches: List[SkillMatch] = []
+    for skill_path in skill_paths:
+        try:
+            content = get_file_content(token, full_name, skill_path, default_branch)
+            ok, _, fm = validate_skill_md(content)
+            if ok and fm is not None:
+                matches.append(
+                    SkillMatch(
+                        repo_full_name=full_name,
+                        default_branch=default_branch,
+                        skill_path=skill_path,
+                        front_matter=fm,
+                        repo_html_url=html_url,
+                    )
+                )
+        except Exception as e:
+            print(f"[WARN] failed reading {full_name}:{skill_path}: {e}", file=sys.stderr)
+
+        time.sleep(0.2)
+
+    return matches
+
+
+def submodule_target_path(sciskill_root: Path, full_name: str) -> Path:
+    owner, repo = full_name.split("/", 1)
+    return sciskill_root / "open-source" / owner / repo
+
+
+def already_added(sciskill_root: Path, full_name: str) -> bool:
+    target_rel = str(Path("open-source") / full_name)
+    target = sciskill_root / target_rel
+    gitmodules = sciskill_root / ".gitmodules"
+
+    if target.exists():
+        return True
+
+    if gitmodules.exists():
+        text = gitmodules.read_text(encoding="utf-8", errors="replace")
+        if target_rel in text:
+            return True
+
+    return False
+
+
+def remove_path(path: Path) -> None:
+    if path.is_symlink() or path.is_file():
+        path.unlink(missing_ok=True)
+    elif path.exists():
+        shutil.rmtree(path, ignore_errors=True)
+
+
+def add_submodule_with_fallback(sciskill_root: Path, full_name: str, dry_run: bool = False) -> Tuple[str, str]:
+    owner, repo = full_name.split("/", 1)
+    ssh_url = f"git@github.com:{owner}/{repo}.git"
+    https_url = f"https://github.com/{owner}/{repo}.git"
+
+    preferred_url, preferred_protocol = choose_clone_url(full_name)
+    fallback_url = https_url if preferred_protocol == "ssh" else ssh_url
+    fallback_protocol = "https" if preferred_protocol == "ssh" else "ssh"
+
+    target = submodule_target_path(sciskill_root, full_name)
+    target.parent.mkdir(parents=True, exist_ok=True)
+
+    def try_add(url: str, protocol: str) -> bool:
+        cmd = [
+            "git",
+            "submodule",
+            "add",
+            url,
+            str(target.relative_to(sciskill_root)),
+        ]
+        print(f"[INFO] trying {protocol}: {' '.join(cmd)}")
+        if dry_run:
+            return True
+        result = subprocess.run(cmd, cwd=sciskill_root, check=False)
+        return result.returncode == 0
+
+    if try_add(preferred_url, preferred_protocol):
+        return preferred_protocol, preferred_url
+
+    print(f"[WARN] {preferred_protocol} failed for {full_name}, retrying with {fallback_protocol}", file=sys.stderr)
+
+    if not dry_run:
+        remove_path(target)
+        modules_dir = sciskill_root / ".git" / "modules" / "open-source" / owner / repo
+        remove_path(modules_dir)
+
+    if try_add(fallback_url, fallback_protocol):
+        return fallback_protocol, fallback_url
+
+    raise RuntimeError(f"Both SSH and HTTPS failed for {full_name}")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description="Find GitHub repos containing valid SKILL.md and add them as submodules."
+    )
+    parser.add_argument("--token", default=os.getenv("GITHUB_TOKEN", ""), help="GitHub token")
+    parser.add_argument("--sciskill-root", required=True, help="Local path of sciskill repo")
+    parser.add_argument("--query", default="archived:false is:public", help="Base GitHub repository search query")
+    parser.add_argument("--topics", default="", help="Comma-separated topics")
+    parser.add_argument("--topics-file", default="", help="Path to topics file, one topic per line")
+    parser.add_argument("--max-repos", type=int, default=50, help="Max repos per query")
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--report", default="skill_report.json")
+    args = parser.parse_args()
+
+    if not args.token:
+        print("ERROR: missing GitHub token. Set --token or GITHUB_TOKEN", file=sys.stderr)
+        return 2
+
+    sciskill_root = Path(args.sciskill_root).resolve()
+    if not (sciskill_root / ".git").exists():
+        print(f"ERROR: {sciskill_root} does not look like a git repo", file=sys.stderr)
+        return 2
+
+    (sciskill_root / "open-source").mkdir(parents=True, exist_ok=True)
+
+    topics: List[str] = []
+    topics.extend(parse_topics_arg(args.topics))
+
+    if args.topics_file:
+        topics.extend(read_topics_from_file(Path(args.topics_file)))
+
+    topics = normalize_topics(topics)
+    queries = build_queries(args.query, topics)
+
+    print(f"Base query: {args.query}")
+    print(f"Topics: {topics if topics else '[none]'}")
+    print(f"Query count: {len(queries)}")
+
+    all_repos: List[Dict[str, Any]] = []
+    repo_topics: Dict[str, List[str]] = {}
+
+    for q, topic in queries:
+        print(f"\n[QUERY] {q}")
+        repos = search_repositories(
+            token=args.token,
+            query=q,
+            max_repos=args.max_repos,
+        )
+        print(f"[QUERY RESULT] {len(repos)} repos")
+
+        for repo in repos:
+            full_name = repo.get("full_name")
+            if not full_name:
+                continue
+            if topic:
+                repo_topics.setdefault(full_name, [])
+                if topic not in repo_topics[full_name]:
+                    repo_topics[full_name].append(topic)
+
+        all_repos.extend(repos)
+
+    repos = dedupe_repos(all_repos)
+    print(f"\nUnique candidate repos: {len(repos)}")
+
+    report: List[Dict[str, Any]] = []
+
+    for repo in repos:
+        full_name = repo["full_name"]
+        print(f"\n=== Checking {full_name} ===")
+
+        try:
+            matches = find_valid_skill_in_repo(args.token, full_name)
+        except Exception as e:
+            print(f"[WARN] failed checking {full_name}: {e}", file=sys.stderr)
+            report.append(
+                {
+                    "repo": full_name,
+                    "matched_topics": repo_topics.get(full_name, []),
+                    "status": "error",
+                    "error": str(e),
+                }
+            )
+            continue
+
+        if not matches:
+            print("No valid SKILL.md found")
+            report.append(
+                {
+                    "repo": full_name,
+                    "matched_topics": repo_topics.get(full_name, []),
+                    "status": "no_valid_skill",
+                }
+            )
+            continue
+
+        if already_added(sciskill_root, full_name):
+            print("Already added")
+            report.append(
+                {
+                    "repo": full_name,
+                    "matched_topics": repo_topics.get(full_name, []),
+                    "status": "already_added",
+                    "matches": [
+                        {
+                            "skill_path": m.skill_path,
+                            "front_matter": m.front_matter,
+                            "html_url": m.repo_html_url,
+                        }
+                        for m in matches
+                    ],
+                }
+            )
+            continue
+
+        chosen = matches[0]
+
+        try:
+            protocol, clone_url = add_submodule_with_fallback(
+                sciskill_root=sciskill_root,
+                full_name=full_name,
+                dry_run=args.dry_run,
+            )
+
+            status = "would_add" if args.dry_run else "added"
+            report.append(
+                {
+                    "repo": full_name,
+                    "matched_topics": repo_topics.get(full_name, []),
+                    "status": status,
+                    "protocol": protocol,
+                    "clone_url": clone_url,
+                    "chosen_skill_path": chosen.skill_path,
+                    "front_matter": chosen.front_matter,
+                    "html_url": chosen.repo_html_url,
+                    "target_path": str(submodule_target_path(sciskill_root, full_name)),
+                }
+            )
+        except Exception as e:
+            print(f"[WARN] submodule add failed for {full_name}: {e}", file=sys.stderr)
+            report.append(
+                {
+                    "repo": full_name,
+                    "matched_topics": repo_topics.get(full_name, []),
+                    "status": "add_failed",
+                    "error": str(e),
+                    "chosen_skill_path": chosen.skill_path,
+                    "front_matter": chosen.front_matter,
+                    "html_url": chosen.repo_html_url,
+                }
+            )
+
+        time.sleep(0.3)
+
+    report_path = Path(args.report).resolve()
+    report_path.write_text(
+        json.dumps(
+            {
+                "base_query": args.query,
+                "topics": topics,
+                "query_count": len(queries),
+                "repo_count": len(repos),
+                "results": report,
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+    print(f"\nReport saved to: {report_path}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

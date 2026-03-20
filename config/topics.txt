@@ -1,0 +1,13 @@
+ai-scientist
+bioinformatics+ai-agents
+genomics+ai-agents
+computational-biology+ai-agents
+scientific-visualization+ai-agents
+drug-discovery+ai-agents
+clinical-research+ai-agents
+bioinformatics+agent-skills
+genomics+agent-skills
+computational-biology+agent-skills
+scientific-visualization+agent-skills
+drug-discovery+agent-skills
+clinical-research+agent-skills
