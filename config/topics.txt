@@ -11,3 +11,9 @@ computational-biology+agent-skills
 scientific-visualization+agent-skills
 drug-discovery+agent-skills
 clinical-research+agent-skills
+bioinformatics+ai-skills
+genomics+ai-skills
+computational-biology+ai-skills
+scientific-visualization+ai-skills
+drug-discovery+ai-skills
+clinical-research+ai-skills
