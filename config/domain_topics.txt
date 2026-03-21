@@ -6,3 +6,5 @@ drug-discovery
 clinical-research
 transcriptomics
 scverse
+single-cell
+population-genetics

@@ -11,6 +11,7 @@ import subprocess
 import sys
 import time
 from dataclasses import dataclass
+from datetime import date, datetime
 from pathlib import Path
 from typing import Any, Dict, List, Literal, Optional, Set, Tuple
 
@@ -364,6 +365,18 @@ def extract_front_matter(md_text: str) -> Optional[Dict[str, Any]]:
     return data
 
 
+def make_json_safe(value: Any) -> Any:
+    if isinstance(value, (datetime, date)):
+        return value.isoformat()
+    if isinstance(value, dict):
+        return {str(key): make_json_safe(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [make_json_safe(item) for item in value]
+    if isinstance(value, tuple):
+        return [make_json_safe(item) for item in value]
+    return value
+
+
 def validate_skill_md(md_text: str) -> Tuple[bool, str, Optional[Dict[str, Any]]]:
     fm = extract_front_matter(md_text)
     if fm is None:
@@ -696,7 +709,8 @@ def main() -> int:
     report_path = Path(args.report).resolve()
     report_path.write_text(
         json.dumps(
-            {
+            make_json_safe(
+                {
                 "base_query": args.query,
                 "domain_topics": domain_topics,
                 "qualifier_topics": qualifier_topics,
@@ -706,7 +720,8 @@ def main() -> int:
                 "query_failures": query_failures,
                 "repo_count": len(repos),
                 "results": report,
-            },
+                }
+            ),
             ensure_ascii=False,
             indent=2,
         ),
