@@ -32,6 +32,14 @@ class SkillMatch:
     repo_html_url: str
 
 
+@dataclass
+class QuerySpec:
+    query: str
+    domain_topic: Optional[str] = None
+    qualifier_topic: Optional[str] = None
+    legacy_topic: Optional[str] = None
+
+
 def gh_headers(token: str) -> Dict[str, str]:
     headers = {
         "Accept": "application/vnd.github+json",
@@ -138,22 +146,81 @@ def normalize_topics(topics: List[str]) -> List[str]:
     return out
 
 
-def build_queries(base_query: str, topics: List[str]) -> List[Tuple[str, Optional[str]]]:
+def build_queries(
+    base_query: str,
+    domain_topics: List[str],
+    qualifier_topics: List[str],
+    legacy_topics: Optional[List[str]] = None,
+) -> List[QuerySpec]:
     """
-    返回 [(query, topic)]。
-    如果没有 topic，就只返回基础查询。
+    返回查询规格：
+    - 新模式：domain topic × qualifier topic 的笛卡尔积，且查询中必须同时包含两个 topic
+    - 兼容旧模式：只有单一 topic 列表时，按旧逻辑逐个扩展
     """
     base_query = base_query.strip()
-    if not topics:
-        return [(base_query, None)]
+    domain_topics = normalize_topics(domain_topics)
+    qualifier_topics = normalize_topics(qualifier_topics)
+    legacy_topics = normalize_topics(legacy_topics or [])
 
-    queries: List[Tuple[str, Optional[str]]] = []
-    for topic in topics:
+    has_dual_topic_mode = bool(domain_topics or qualifier_topics)
+    if has_dual_topic_mode and (not domain_topics or not qualifier_topics):
+        raise ValueError("domain topics 和 qualifier topics 必须同时提供，才能启用双 topic AND 收集模式")
+
+    if has_dual_topic_mode:
+        queries: List[QuerySpec] = []
+        for domain_topic in domain_topics:
+            for qualifier_topic in qualifier_topics:
+                clauses = [base_query] if base_query else []
+                clauses.extend([f"topic:{domain_topic}", f"topic:{qualifier_topic}"])
+                queries.append(
+                    QuerySpec(
+                        query=" ".join(clauses),
+                        domain_topic=domain_topic,
+                        qualifier_topic=qualifier_topic,
+                    )
+                )
+        return queries
+
+    if not legacy_topics:
+        return [QuerySpec(query=base_query)]
+
+    queries: List[QuerySpec] = []
+    for topic in legacy_topics:
         if base_query:
-            queries.append((f"{base_query} topic:{topic}", topic))
+            queries.append(QuerySpec(query=f"{base_query} topic:{topic}", legacy_topic=topic))
         else:
-            queries.append((f"topic:{topic}", topic))
+            queries.append(QuerySpec(query=f"topic:{topic}", legacy_topic=topic))
     return queries
+
+
+def empty_repo_topic_state() -> Dict[str, Set[Any]]:
+    return {
+        "domains": set(),
+        "qualifiers": set(),
+        "pairs": set(),
+        "legacy_topics": set(),
+    }
+
+
+def build_repo_topic_payload(state: Optional[Dict[str, Set[Any]]]) -> Dict[str, Any]:
+    if not state:
+        return {
+            "matched_domain_topics": [],
+            "matched_qualifier_topics": [],
+            "matched_topic_pairs": [],
+            "matched_topics": [],
+        }
+
+    pairs = sorted(state["pairs"])
+    return {
+        "matched_domain_topics": sorted(state["domains"]),
+        "matched_qualifier_topics": sorted(state["qualifiers"]),
+        "matched_topic_pairs": [
+            {"domain_topic": domain_topic, "qualifier_topic": qualifier_topic}
+            for domain_topic, qualifier_topic in pairs
+        ],
+        "matched_topics": sorted(state["legacy_topics"]),
+    }
 
 
 def search_repositories(
@@ -393,8 +460,12 @@ def main() -> int:
     parser.add_argument("--token", default=os.getenv("GITHUB_TOKEN", ""), help="GitHub token")
     parser.add_argument("--sciskill-root", required=True, help="Local path of sciskill repo")
     parser.add_argument("--query", default="archived:false is:public", help="Base GitHub repository search query")
-    parser.add_argument("--topics", default="", help="Comma-separated topics")
-    parser.add_argument("--topics-file", default="", help="Path to topics file, one topic per line")
+    parser.add_argument("--topics", default="", help="Legacy comma-separated topics")
+    parser.add_argument("--topics-file", default="", help="Legacy path to topics file, one topic per line")
+    parser.add_argument("--domain-topics", default="", help="Comma-separated domain topics")
+    parser.add_argument("--domain-topics-file", default="", help="Path to domain topics file, one topic per line")
+    parser.add_argument("--qualifier-topics", default="", help="Comma-separated skill/agent qualifier topics")
+    parser.add_argument("--qualifier-topics-file", default="", help="Path to qualifier topics file, one topic per line")
     parser.add_argument("--max-repos", type=int, default=50, help="Max repos per query")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--report", default="skill_report.json")
@@ -411,27 +482,50 @@ def main() -> int:
 
     (sciskill_root / "open-source").mkdir(parents=True, exist_ok=True)
 
-    topics: List[str] = []
-    topics.extend(parse_topics_arg(args.topics))
+    domain_topics: List[str] = []
+    qualifier_topics: List[str] = []
+    legacy_topics: List[str] = []
 
+    domain_topics.extend(parse_topics_arg(args.domain_topics))
+    qualifier_topics.extend(parse_topics_arg(args.qualifier_topics))
+    legacy_topics.extend(parse_topics_arg(args.topics))
+
+    if args.domain_topics_file:
+        domain_topics.extend(read_topics_from_file(Path(args.domain_topics_file)))
+    if args.qualifier_topics_file:
+        qualifier_topics.extend(read_topics_from_file(Path(args.qualifier_topics_file)))
     if args.topics_file:
-        topics.extend(read_topics_from_file(Path(args.topics_file)))
+        legacy_topics.extend(read_topics_from_file(Path(args.topics_file)))
 
-    topics = normalize_topics(topics)
-    queries = build_queries(args.query, topics)
+    domain_topics = normalize_topics(domain_topics)
+    qualifier_topics = normalize_topics(qualifier_topics)
+    legacy_topics = normalize_topics(legacy_topics)
+
+    if (domain_topics or qualifier_topics) and legacy_topics:
+        print("ERROR: dual-topic mode 和 legacy --topics/--topics-file 不能混用", file=sys.stderr)
+        return 2
+
+    queries = build_queries(
+        base_query=args.query,
+        domain_topics=domain_topics,
+        qualifier_topics=qualifier_topics,
+        legacy_topics=legacy_topics,
+    )
 
     print(f"Base query: {args.query}")
-    print(f"Topics: {topics if topics else '[none]'}")
+    print(f"Domain topics: {domain_topics if domain_topics else '[none]'}")
+    print(f"Qualifier topics: {qualifier_topics if qualifier_topics else '[none]'}")
+    print(f"Legacy topics: {legacy_topics if legacy_topics else '[none]'}")
     print(f"Query count: {len(queries)}")
 
     all_repos: List[Dict[str, Any]] = []
-    repo_topics: Dict[str, List[str]] = {}
+    repo_topics: Dict[str, Dict[str, Set[Any]]] = {}
 
-    for q, topic in queries:
-        print(f"\n[QUERY] {q}")
+    for spec in queries:
+        print(f"\n[QUERY] {spec.query}")
         repos = search_repositories(
             token=args.token,
-            query=q,
+            query=spec.query,
             max_repos=args.max_repos,
         )
         print(f"[QUERY RESULT] {len(repos)} repos")
@@ -440,10 +534,15 @@ def main() -> int:
             full_name = repo.get("full_name")
             if not full_name:
                 continue
-            if topic:
-                repo_topics.setdefault(full_name, [])
-                if topic not in repo_topics[full_name]:
-                    repo_topics[full_name].append(topic)
+            state = repo_topics.setdefault(full_name, empty_repo_topic_state())
+            if spec.domain_topic:
+                state["domains"].add(spec.domain_topic)
+            if spec.qualifier_topic:
+                state["qualifiers"].add(spec.qualifier_topic)
+            if spec.domain_topic and spec.qualifier_topic:
+                state["pairs"].add((spec.domain_topic, spec.qualifier_topic))
+            if spec.legacy_topic:
+                state["legacy_topics"].add(spec.legacy_topic)
 
         all_repos.extend(repos)
 
@@ -463,7 +562,7 @@ def main() -> int:
             report.append(
                 {
                     "repo": full_name,
-                    "matched_topics": repo_topics.get(full_name, []),
+                    **build_repo_topic_payload(repo_topics.get(full_name)),
                     "status": "error",
                     "error": str(e),
                 }
@@ -475,7 +574,7 @@ def main() -> int:
             report.append(
                 {
                     "repo": full_name,
-                    "matched_topics": repo_topics.get(full_name, []),
+                    **build_repo_topic_payload(repo_topics.get(full_name)),
                     "status": "no_valid_skill",
                 }
             )
@@ -486,7 +585,7 @@ def main() -> int:
             report.append(
                 {
                     "repo": full_name,
-                    "matched_topics": repo_topics.get(full_name, []),
+                    **build_repo_topic_payload(repo_topics.get(full_name)),
                     "status": "already_added",
                     "matches": [
                         {
@@ -513,7 +612,7 @@ def main() -> int:
             report.append(
                 {
                     "repo": full_name,
-                    "matched_topics": repo_topics.get(full_name, []),
+                    **build_repo_topic_payload(repo_topics.get(full_name)),
                     "status": status,
                     "protocol": protocol,
                     "clone_url": clone_url,
@@ -528,7 +627,7 @@ def main() -> int:
             report.append(
                 {
                     "repo": full_name,
-                    "matched_topics": repo_topics.get(full_name, []),
+                    **build_repo_topic_payload(repo_topics.get(full_name)),
                     "status": "add_failed",
                     "error": str(e),
                     "chosen_skill_path": chosen.skill_path,
@@ -544,7 +643,9 @@ def main() -> int:
         json.dumps(
             {
                 "base_query": args.query,
-                "topics": topics,
+                "domain_topics": domain_topics,
+                "qualifier_topics": qualifier_topics,
+                "legacy_topics": legacy_topics,
                 "query_count": len(queries),
                 "repo_count": len(repos),
                 "results": report,

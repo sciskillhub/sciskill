@@ -41,13 +41,15 @@ jobs:
           python scripts/collect_skills.py \
             --sciskill-root . \
             --query 'archived:false is:public' \
-            --topics-file config/topics.txt \
+            --domain-topics-file config/domain_topics.txt \
+            --qualifier-topics-file config/qualifier_topics.txt \
             --max-repos "$MAX_REPOS" \
             --report skill_report.json
 
       - name: Commit changes
         run: |
-          git add .gitmodules skill_report.json open-source/ config/topics.txt
+          git add .gitmodules skill_report.json open-source/
+          git add -A config
           git diff --cached --quiet && exit 0
           git commit -m "chore: collect valid skill repos"
           git push

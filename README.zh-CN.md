@@ -9,7 +9,8 @@ English version: [README.md](README.md)
 ### 仓库结构
 
 - [`scripts/collect_skills.py`](/data20T/dev/agenticbioinfo/sciskillhub/sciskill/scripts/collect_skills.py)：发现并校验技能仓库的收集脚本
-- [`config/topics.txt`](/data20T/dev/agenticbioinfo/sciskillhub/sciskill/config/topics.txt)：用于扩展搜索的 GitHub topic 列表
+- [`config/domain_topics.txt`](/data20T/dev/agenticbioinfo/sciskillhub/sciskill/config/domain_topics.txt)：领域 topic，例如 `clinical-research`
+- [`config/qualifier_topics.txt`](/data20T/dev/agenticbioinfo/sciskillhub/sciskill/config/qualifier_topics.txt)：skill / agent 限制 topic，例如 `ai-agents`
 - [`open-source/`](/data20T/dev/agenticbioinfo/sciskillhub/sciskill/open-source)：已纳入的上游 submodule 仓库
 - [`skill_report.json`](/data20T/dev/agenticbioinfo/sciskillhub/sciskill/skill_report.json)：最近一次收集结果报告
 - [`requirements.txt`](/data20T/dev/agenticbioinfo/sciskillhub/sciskill/requirements.txt)：Python 依赖
@@ -17,7 +18,7 @@ English version: [README.md](README.md)
 
 ### 收集器做什么
 
-- 基于基础查询和配置的 topic 搜索 GitHub 仓库
+- 基于基础查询以及“领域 topic × 限制 topic”的组合搜索 GitHub 仓库
 - 扫描候选仓库中的 `SKILL.md`
 - 校验其中的 YAML front matter
 - 将新命中的仓库加入为 Git submodule
@@ -47,6 +48,11 @@ GitHub Actions 工作流 [`.github/workflows/collect-skills.yml`](/data20T/dev/a
 
 ### 维护说明
 
-- [`config/topics.txt`](/data20T/dev/agenticbioinfo/sciskillhub/sciskill/config/topics.txt) 每行一个 topic，空行和 `#` 注释会被忽略
+- 收集器现在使用双 topic AND 语义：
+  - 从 [`config/domain_topics.txt`](/data20T/dev/agenticbioinfo/sciskillhub/sciskill/config/domain_topics.txt) 里取一个领域 topic
+  - 从 [`config/qualifier_topics.txt`](/data20T/dev/agenticbioinfo/sciskillhub/sciskill/config/qualifier_topics.txt) 里取一个 skill / agent 限制 topic
+- 实际查询会按 `M × N` 笛卡尔积生成，例如：
+  - `archived:false is:public topic:clinical-research topic:ai-agents`
+- 两个配置文件都采用“每行一个 topic”；空行和 `#` 注释会被忽略
 - 已存在于 `open-source/` 或 [`.gitmodules`](/data20T/dev/agenticbioinfo/sciskillhub/sciskill/.gitmodules) 的仓库会被跳过
 - [`skill_report.json`](/data20T/dev/agenticbioinfo/sciskillhub/sciskill/skill_report.json) 保存汇总信息和逐仓库状态

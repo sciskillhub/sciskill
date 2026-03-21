@@ -1,0 +1,8 @@
+bioinformatics
+genomics
+computational-biology
+scientific-visualization
+drug-discovery
+clinical-research
+transcriptomics
+scverse
