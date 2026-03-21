@@ -52,9 +52,37 @@ def gh_headers(token: str) -> Dict[str, str]:
 
 
 def gh_get(url: str, token: str, params: Optional[Dict[str, Any]] = None) -> requests.Response:
-    r = requests.get(url, headers=gh_headers(token), params=params, timeout=40)
-    r.raise_for_status()
-    return r
+    last_error: Optional[Exception] = None
+    for attempt in range(1, 4):
+        try:
+            r = requests.get(url, headers=gh_headers(token), params=params, timeout=40)
+            if r.status_code in {502, 503, 504} and attempt < 3:
+                time.sleep(attempt)
+                continue
+            r.raise_for_status()
+            return r
+        except requests.HTTPError as exc:
+            status_code = exc.response.status_code if exc.response is not None else None
+            is_retryable = status_code in {403, 429, 502, 503, 504}
+            last_error = exc
+            if is_retryable and attempt < 3:
+                retry_after = 0
+                if exc.response is not None:
+                    retry_after_header = exc.response.headers.get("Retry-After")
+                    if retry_after_header and retry_after_header.isdigit():
+                        retry_after = int(retry_after_header)
+                time.sleep(max(retry_after, attempt))
+                continue
+            break
+        except requests.RequestException as exc:
+            last_error = exc
+            if attempt < 3:
+                time.sleep(attempt)
+                continue
+            break
+
+    assert last_error is not None
+    raise last_error
 
 
 def run_ok(cmd: List[str], cwd: Optional[str] = None) -> bool:
@@ -256,6 +284,15 @@ def search_repositories(
         time.sleep(0.3)
 
     return repos[:max_repos]
+
+
+def summarize_request_error(exc: Exception) -> str:
+    if isinstance(exc, requests.HTTPError) and exc.response is not None:
+        body = exc.response.text.strip().replace("\n", " ")
+        if len(body) > 300:
+            body = body[:300] + "..."
+        return f"HTTP {exc.response.status_code}: {body}"
+    return str(exc)
 
 
 def dedupe_repos(repos: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -520,14 +557,32 @@ def main() -> int:
 
     all_repos: List[Dict[str, Any]] = []
     repo_topics: Dict[str, Dict[str, Set[Any]]] = {}
+    query_failures: List[Dict[str, Any]] = []
+    successful_query_count = 0
 
     for spec in queries:
         print(f"\n[QUERY] {spec.query}")
-        repos = search_repositories(
-            token=args.token,
-            query=spec.query,
-            max_repos=args.max_repos,
-        )
+        try:
+            repos = search_repositories(
+                token=args.token,
+                query=spec.query,
+                max_repos=args.max_repos,
+            )
+        except Exception as exc:
+            error_summary = summarize_request_error(exc)
+            print(f"[QUERY ERROR] {error_summary}", file=sys.stderr)
+            query_failures.append(
+                {
+                    "query": spec.query,
+                    "domain_topic": spec.domain_topic,
+                    "qualifier_topic": spec.qualifier_topic,
+                    "legacy_topic": spec.legacy_topic,
+                    "error": error_summary,
+                }
+            )
+            continue
+
+        successful_query_count += 1
         print(f"[QUERY RESULT] {len(repos)} repos")
 
         for repo in repos:
@@ -647,6 +702,8 @@ def main() -> int:
                 "qualifier_topics": qualifier_topics,
                 "legacy_topics": legacy_topics,
                 "query_count": len(queries),
+                "successful_query_count": successful_query_count,
+                "query_failures": query_failures,
                 "repo_count": len(repos),
                 "results": report,
             },
@@ -656,6 +713,9 @@ def main() -> int:
         encoding="utf-8",
     )
     print(f"\nReport saved to: {report_path}")
+    if queries and successful_query_count == 0:
+        print("ERROR: all GitHub search queries failed", file=sys.stderr)
+        return 1
     return 0
 
 
