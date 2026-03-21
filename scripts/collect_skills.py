@@ -623,6 +623,19 @@ def main() -> int:
         full_name = repo["full_name"]
         print(f"\n=== Checking {full_name} ===")
 
+        if already_added(sciskill_root, full_name):
+            print("Already added")
+            report.append(
+                {
+                    "repo": full_name,
+                    **build_repo_topic_payload(repo_topics.get(full_name)),
+                    "status": "already_added",
+                    "target_path": str(submodule_target_path(sciskill_root, full_name)),
+                    "matches": [],
+                }
+            )
+            continue
+
         try:
             matches = find_valid_skill_in_repo(args.token, full_name)
         except Exception as e:
@@ -644,25 +657,6 @@ def main() -> int:
                     "repo": full_name,
                     **build_repo_topic_payload(repo_topics.get(full_name)),
                     "status": "no_valid_skill",
-                }
-            )
-            continue
-
-        if already_added(sciskill_root, full_name):
-            print("Already added")
-            report.append(
-                {
-                    "repo": full_name,
-                    **build_repo_topic_payload(repo_topics.get(full_name)),
-                    "status": "already_added",
-                    "matches": [
-                        {
-                            "skill_path": m.skill_path,
-                            "front_matter": m.front_matter,
-                            "html_url": m.repo_html_url,
-                        }
-                        for m in matches
-                    ],
                 }
             )
             continue
