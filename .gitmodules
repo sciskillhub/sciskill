@@ -142,3 +142,36 @@
 [submodule "open-source/anthropics/life-sciences"]
 	path = open-source/anthropics/life-sciences
 	url = git@github.com:anthropics/life-sciences.git
+[submodule "open-source/foryourhealth111-pixel/Vibe-Skills"]
+	path = open-source/foryourhealth111-pixel/Vibe-Skills
+	url = https://github.com/foryourhealth111-pixel/Vibe-Skills.git
+[submodule "open-source/ClawBio/ClawBio"]
+	path = open-source/ClawBio/ClawBio
+	url = https://github.com/ClawBio/ClawBio.git
+[submodule "open-source/Runchuan-BU/BioClaw"]
+	path = open-source/Runchuan-BU/BioClaw
+	url = https://github.com/Runchuan-BU/BioClaw.git
+[submodule "open-source/ammawla/encode-toolkit"]
+	path = open-source/ammawla/encode-toolkit
+	url = https://github.com/ammawla/encode-toolkit.git
+[submodule "open-source/DrugClaw/DrugClaw"]
+	path = open-source/DrugClaw/DrugClaw
+	url = https://github.com/DrugClaw/DrugClaw.git
+[submodule "open-source/donbr/lifesciences-research"]
+	path = open-source/donbr/lifesciences-research
+	url = https://github.com/donbr/lifesciences-research.git
+[submodule "open-source/jackspace/ClaudeSkillz"]
+	path = open-source/jackspace/ClaudeSkillz
+	url = https://github.com/jackspace/ClaudeSkillz.git
+[submodule "open-source/JiahaoZhang-Public/ProtClaw"]
+	path = open-source/JiahaoZhang-Public/ProtClaw
+	url = https://github.com/JiahaoZhang-Public/ProtClaw.git
+[submodule "open-source/zacklecon/claude-skills"]
+	path = open-source/zacklecon/claude-skills
+	url = https://github.com/zacklecon/claude-skills.git
+[submodule "open-source/kimimgo/viznoir"]
+	path = open-source/kimimgo/viznoir
+	url = https://github.com/kimimgo/viznoir.git
+[submodule "open-source/javidmardanov/paper-banana-skill"]
+	path = open-source/javidmardanov/paper-banana-skill
+	url = https://github.com/javidmardanov/paper-banana-skill.git

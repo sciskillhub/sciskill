@@ -1,366 +1,955 @@
 {
   "base_query": "archived:false is:public",
-  "topics": [
-    "ai-scientist",
-    "bioinformatics+ai-agents",
-    "genomics+ai-agents",
-    "computational-biology+ai-agents",
-    "scientific-visualization+ai-agents",
-    "drug-discovery+ai-agents",
-    "clinical-research+ai-agents",
-    "bioinformatics+agent-skills",
-    "genomics+agent-skills",
-    "computational-biology+agent-skills",
-    "scientific-visualization+agent-skills",
-    "drug-discovery+agent-skills",
-    "clinical-research+agent-skills",
-    "bioinformatics+ai-skills",
-    "genomics+ai-skills",
-    "computational-biology+ai-skills",
-    "scientific-visualization+ai-skills",
-    "drug-discovery+ai-skills",
-    "clinical-research+ai-skills"
+  "domain_topics": [
+    "bioinformatics",
+    "genomics",
+    "computational-biology",
+    "scientific-visualization",
+    "drug-discovery",
+    "clinical-research",
+    "transcriptomics",
+    "scverse",
+    "single-cell",
+    "population-genetics"
   ],
-  "query_count": 19,
-  "repo_count": 35,
+  "qualifier_topics": [
+    "ai-agents",
+    "agent-skills",
+    "ai-skills"
+  ],
+  "legacy_topics": [],
+  "query_count": 30,
+  "successful_query_count": 18,
+  "query_failures": [
+    {
+      "query": "archived:false is:public topic:transcriptomics topic:ai-agents",
+      "domain_topic": "transcriptomics",
+      "qualifier_topic": "ai-agents",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 4838:1F1F38:DDB4ED:3AC8446:69BE8FDB and timestamp 2026-03-21 12:32:27 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+    },
+    {
+      "query": "archived:false is:public topic:transcriptomics topic:agent-skills",
+      "domain_topic": "transcriptomics",
+      "qualifier_topic": "agent-skills",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 483B:8F831:19AAAC7:6CDAA26:69BE8FDF and timestamp 2026-03-21 12:32:31 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+    },
+    {
+      "query": "archived:false is:public topic:transcriptomics topic:ai-skills",
+      "domain_topic": "transcriptomics",
+      "qualifier_topic": "ai-skills",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 483D:17670D:198572C:6C26D51:69BE8FE2 and timestamp 2026-03-21 12:32:34 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of S..."
+    },
+    {
+      "query": "archived:false is:public topic:scverse topic:ai-agents",
+      "domain_topic": "scverse",
+      "qualifier_topic": "ai-agents",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 483A:1F995:19C165B:6D1CFB4:69BE8FE6 and timestamp 2026-03-21 12:32:38 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+    },
+    {
+      "query": "archived:false is:public topic:scverse topic:agent-skills",
+      "domain_topic": "scverse",
+      "qualifier_topic": "agent-skills",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 483C:1F1F38:DDF11C:3AD82F1:69BE8FE9 and timestamp 2026-03-21 12:32:41 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+    },
+    {
+      "query": "archived:false is:public topic:scverse topic:ai-skills",
+      "domain_topic": "scverse",
+      "qualifier_topic": "ai-skills",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 4839:2B68C:19D993D:6DC4617:69BE8FEC and timestamp 2026-03-21 12:32:44 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+    },
+    {
+      "query": "archived:false is:public topic:single-cell topic:ai-agents",
+      "domain_topic": "single-cell",
+      "qualifier_topic": "ai-agents",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 483A:1F995:19C4306:6D2891B:69BE8FF0 and timestamp 2026-03-21 12:32:48 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+    },
+    {
+      "query": "archived:false is:public topic:single-cell topic:agent-skills",
+      "domain_topic": "single-cell",
+      "qualifier_topic": "agent-skills",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 483D:17670D:198A25A:6C3A8B1:69BE8FF3 and timestamp 2026-03-21 12:32:51 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of S..."
+    },
+    {
+      "query": "archived:false is:public topic:single-cell topic:ai-skills",
+      "domain_topic": "single-cell",
+      "qualifier_topic": "ai-skills",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 4838:1F1F38:DE29C8:3AE7150:69BE8FF7 and timestamp 2026-03-21 12:32:55 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+    },
+    {
+      "query": "archived:false is:public topic:population-genetics topic:ai-agents",
+      "domain_topic": "population-genetics",
+      "qualifier_topic": "ai-agents",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 483B:8F831:19B1863:6CF7720:69BE8FFA and timestamp 2026-03-21 12:32:58 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+    },
+    {
+      "query": "archived:false is:public topic:population-genetics topic:agent-skills",
+      "domain_topic": "population-genetics",
+      "qualifier_topic": "agent-skills",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 483E:1F995:19C7CAE:6D378F2:69BE8FFD and timestamp 2026-03-21 12:33:01 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+    },
+    {
+      "query": "archived:false is:public topic:population-genetics topic:ai-skills",
+      "domain_topic": "population-genetics",
+      "qualifier_topic": "ai-skills",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 4839:2B68C:19DF170:6DDBA27:69BE9001 and timestamp 2026-03-21 12:33:05 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+    }
+  ],
+  "repo_count": 34,
   "results": [
     {
-      "repo": "Valsacrificial484/AutoResearch-SibylSystem",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "foryourhealth111-pixel/Vibe-Skills",
+      "matched_domain_topics": [
+        "bioinformatics"
       ],
-      "status": "no_valid_skill"
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/foryourhealth111-pixel/Vibe-Skills.git",
+      "chosen_skill_path": "SKILL.md",
+      "front_matter": {
+        "name": "vibe",
+        "description": "Vibe Code Orchestrator (VCO) is a governed runtime entry that freezes requirements, plans XL-first execution, and enforces verification and phase cleanup."
+      },
+      "html_url": "https://github.com/foryourhealth111-pixel/Vibe-Skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/foryourhealth111-pixel/Vibe-Skills"
     },
     {
-      "repo": "Labrat025/AI-research-feedback",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "ClawBio/ClawBio",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics"
       ],
-      "status": "no_valid_skill"
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/ClawBio/ClawBio.git",
+      "chosen_skill_path": "skills/bio-orchestrator/SKILL.md",
+      "front_matter": {
+        "name": "bio-orchestrator",
+        "description": "Meta-agent that routes bioinformatics requests to specialised sub-skills. Handles file type detection, analysis planning, report generation, and reproducibility export.",
+        "version": "0.1.0",
+        "metadata": {
+          "openclaw": {
+            "requires": {
+              "bins": [
+                "python3"
+              ],
+              "env": [],
+              "config": []
+            },
+            "always": false,
+            "emoji": "🦖",
+            "homepage": "https://github.com/ClawBio/ClawBio",
+            "os": [
+              "darwin",
+              "linux"
+            ],
+            "install": [
+              {
+                "kind": "uv",
+                "package": "biopython",
+                "bins": []
+              },
+              {
+                "kind": "uv",
+                "package": "pandas",
+                "bins": []
+              }
+            ]
+          }
+        }
+      },
+      "html_url": "https://github.com/ClawBio/ClawBio",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio"
     },
     {
-      "repo": "R3tr04851/claude-skills",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "fmschulz/omics-skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "genomics"
       ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "Kayunangka/claude-skill",
-      "matched_topics": [
-        "ai-scientist"
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
       ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
       "status": "already_added",
       "matches": [
         {
-          "skill_path": "ast-grep/skills/ast-grep/SKILL.md",
+          "skill_path": "skills/agent-browser/SKILL.md",
           "front_matter": {
-            "name": "ast-grep",
-            "description": "Guide for writing ast-grep rules to perform structural code search and analysis. Use when users need to search codebases using Abstract Syntax Tree (AST) patterns, find specific code structures, or perform complex code queries that go beyond simple text search. This skill should be used when users ask to search for code patterns, find specific language constructs, or locate code with particular structural characteristics."
+            "name": "agent-browser",
+            "description": "Browser automation via agent-browser CLI for web navigation, form filling, screenshots, scraping, login flows, and UI testing."
           },
-          "html_url": "https://github.com/Kayunangka/claude-skill"
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/ai-scientist-evaluator/SKILL.md",
+          "front_matter": {
+            "name": "ai-scientist-evaluator",
+            "description": "Critically review, score, compare, and rank one or more AI scientist outputs for biology, bioinformatics, computational life science, or adjacent research tasks. Trigger when the user asks to evaluate notebooks, code, figures, analyses, manuscripts, software, or final reports produced by AI scientists; compare multiple AI scientists on the same task; judge publication readiness; or audit rigor, reproducibility, novelty, and task completion. Do not use this skill to perform the original research task itself unless the user is explicitly asking for a reviewer-style audit of already produced outputs."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/arxiv-search/SKILL.md",
+          "front_matter": {
+            "name": "arxiv-search",
+            "description": "Search arXiv preprints through the official arXiv API and turn arXiv IDs into local Markdown summaries. Use when you need CS, math, physics, or quantitative biology preprints, especially recent submissions that may not yet appear in peer-reviewed literature indexes.",
+            "user-invocable": true
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/beautiful-data-viz/SKILL.md",
+          "front_matter": {
+            "name": "beautiful-data-viz",
+            "description": "Create publication-quality matplotlib/seaborn charts with readable axes, tight layout, and curated palettes.",
+            "argument-hint": "[medium=notebook|paper|slides] [background=light|dark]"
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/bio-annotation/SKILL.md",
+          "front_matter": {
+            "name": "bio-annotation",
+            "description": "Functional annotation and taxonomy inference from sequence homology."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/bio-assembly-qc/SKILL.md",
+          "front_matter": {
+            "name": "bio-assembly-qc",
+            "description": "Assemble genomes/metagenomes and produce assembly QC artifacts."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/bio-binning-qc/SKILL.md",
+          "front_matter": {
+            "name": "bio-binning-qc",
+            "description": "Perform metagenomic binning, refinement, and QC with completeness/contamination checks."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/bio-foundation-housekeeping/SKILL.md",
+          "front_matter": {
+            "name": "bio-foundation-housekeeping",
+            "description": "Initialize a bioinformatics project scaffold with reproducible environments, schemas, and data cataloging. Use for new projects or repo setup."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/bio-gene-calling/SKILL.md",
+          "front_matter": {
+            "name": "bio-gene-calling",
+            "description": "Call genes and annotate basic features for prokaryotes, viruses, and eukaryotes."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/bio-logic/SKILL.md",
+          "front_matter": {
+            "name": "bio-logic",
+            "description": "Evaluate scientific rigor, methods, biases, and evidence quality for claims, papers, and study designs."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/bio-phylogenomics/SKILL.md",
+          "front_matter": {
+            "name": "bio-phylogenomics",
+            "description": "Build marker gene alignments and phylogenetic trees."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/bio-prefect-dask-nextflow/SKILL.md",
+          "front_matter": {
+            "name": "bio-prefect-dask-nextflow",
+            "description": "Design and scaffold bioinformatics pipelines using Prefect+Dask for local/distributed execution or Nextflow for HPC schedulers."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/bio-protein-clustering-pangenome/SKILL.md",
+          "front_matter": {
+            "name": "bio-protein-clustering-pangenome",
+            "description": "Cluster proteins into orthogroups and derive pangenome matrices."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/bio-reads-qc-mapping/SKILL.md",
+          "front_matter": {
+            "name": "bio-reads-qc-mapping",
+            "description": "Ingest, QC, and map reads with reproducible outputs. Use for raw read processing and coverage stats."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/bio-stats-ml-reporting/SKILL.md",
+          "front_matter": {
+            "name": "bio-stats-ml-reporting",
+            "description": "Aggregate results, train ML models, and produce reports with validated references."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/bio-structure-annotation/SKILL.md",
+          "front_matter": {
+            "name": "bio-structure-annotation",
+            "description": "Structure prediction and structure-based annotation."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/bio-viromics/SKILL.md",
+          "front_matter": {
+            "name": "bio-viromics",
+            "description": "Detect, classify, and QC viral contigs."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/bio-workflow-methods-docwriter/SKILL.md",
+          "front_matter": {
+            "name": "bio-workflow-methods-docwriter",
+            "description": "Generate reproducible Methods documentation from workflow run artifacts (Nextflow/Snakemake/CWL), including exact commands, versions, parameters, QC gates, and outputs."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/biorxiv-search/SKILL.md",
+          "front_matter": {
+            "name": "biorxiv-search",
+            "description": "Search bioRxiv preprints through the official bioRxiv API and locally filter titles, abstracts, and authors for keyword queries. Use when you need recent biology preprints, bioRxiv-native metadata, date-range scans, DOI lookups, or author shortlists that may not yet appear in peer-reviewed literature indexes."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/codexloop/SKILL.md",
+          "front_matter": {
+            "name": "codexloop",
+            "description": "Run a Codex-native planning and implementation loop with docs/plans progress tracking, MEMORY.md failure memory, per-task git worktrees, and iterative verification until tasks pass or need human intervention. Use when you want Mycelium-like orchestration for Codex without the Mycelium stack."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/crossref-lookup/SKILL.md",
+          "front_matter": {
+            "name": "crossref-lookup",
+            "description": "Query the Crossref REST API for DOI validation, title search, citation metadata, and bibliography audits. Use when you need DOI lookup, title-to-DOI matching, or reference metadata cleanup."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/get-api-docs/SKILL.md",
+          "front_matter": {
+            "name": "get-api-docs",
+            "description": "Fetch current API and SDK documentation with the chub CLI. Use when writing or reviewing code against fast-changing APIs, especially when the user asks for the latest or current docs."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/jgi-lakehouse/SKILL.md",
+          "front_matter": {
+            "name": "jgi-lakehouse",
+            "description": "Queries JGI Lakehouse (Dremio) for genomics metadata from GOLD, IMG, Mycocosm, Phytozome. Downloads genome files from JGI filesystem using IMG taxon OIDs. Use when working with JGI data, GOLD projects, IMG annotations, or downloading genomes."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/manuscript-review-council/SKILL.md",
+          "front_matter": {
+            "name": "manuscript-review-council",
+            "description": "Run a multi-agent scientific manuscript review with parallel specialist reviewers, disagreement checks, and an editor meta-review. Use when reviewing a manuscript, preprint, revision, or rebuttal in Codex or Claude Code."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/notebook-ai-agents-skill/SKILL.md",
+          "front_matter": {
+            "name": "notebook-ai-agents-skill",
+            "description": "Create/refactor reproducible analysis notebooks with Marimo (preferred) or Jupyter (minimal support). Use for interactive, narrative-first analyses."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/notebook-ai-agents-skill/notebook-ai-agents-skill/SKILL.md",
+          "front_matter": {
+            "name": "notebook-ai-agents-skill",
+            "description": "Create/refactor reproducible analysis notebooks with Marimo (preferred) or Jupyter (minimal support). Use for interactive, narrative-first analyses."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/plotly-dashboard-skill/SKILL.md",
+          "front_matter": {
+            "name": "plotly-dashboard-skill",
+            "description": "Build production-ready Plotly Dash dashboards with consistent theming, clear layouts, and performant callbacks."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/polars-dovmed/SKILL.md",
+          "front_matter": {
+            "name": "polars-dovmed",
+            "description": "Search the PMC Open Access literature with polars-dovmed. Prefer dovmed create-patterns to build structured JSON queries, then use the hosted API when an API key is available or fall back to local dovmed scan over parquet files.",
+            "user-invocable": true
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/proposal-review/SKILL.md",
+          "front_matter": {
+            "name": "proposal-review",
+            "description": "Structured, decision-ready review framework for AI/ML, computational biology, and bioscience proposals. Use when evaluating grant, project, or funding proposals."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/proposal-review/proposal-review/SKILL.md",
+          "front_matter": {
+            "name": "proposal-review",
+            "description": "Structured, decision-ready review framework for AI/ML, computational biology, and bioscience proposals. Use when evaluating grant, project, or funding proposals."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/scientific-impact-assessment/SKILL.md",
+          "front_matter": {
+            "name": "scientific-impact-assessment",
+            "description": "Assess paper and journal impact using OpenAlex citation counts, optional Altmetric data, and curated journal impact-factor references. Use when comparing papers, journals, or literature shortlists by reach and influence."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/scientific-writing/SKILL.md",
+          "front_matter": {
+            "name": "scientific-writing",
+            "description": "Draft, review, and iteratively revise scientific manuscripts with a provider-agnostic multi-agent workflow for Codex and Claude Code. Use for new manuscripts, section rewrites, rebuttals, response letters, or manuscript QA when claims must stay grounded in supplied artifacts."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/tracking-taxonomy-updates/SKILL.md",
+          "front_matter": {
+            "name": "tracking-taxonomy-updates",
+            "description": "Track and reconcile taxonomy updates across NCBI, GTDB, ICTV, and community eukaryote frameworks with versioned provenance."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
+        },
+        {
+          "skill_path": "skills/tracking-taxonomy-updates/tracking-taxonomy-updates/SKILL.md",
+          "front_matter": {
+            "name": "tracking-taxonomy-updates",
+            "description": "Track and reconcile taxonomy updates across NCBI, GTDB, ICTV, and community eukaryote frameworks with versioned provenance."
+          },
+          "html_url": "https://github.com/fmschulz/omics-skills"
         }
       ]
     },
     {
-      "repo": "bloody2634/claud-skills",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "genepattern/module-toolkit",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics"
       ],
-      "status": "already_added",
-      "matches": [
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
         {
-          "skill_path": ".claude/skills/document-skills/docx/SKILL.md",
-          "front_matter": {
-            "name": "docx",
-            "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks",
-            "license": "Proprietary. LICENSE.txt has complete terms"
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
         },
         {
-          "skill_path": ".claude/skills/document-skills/pdf/SKILL.md",
-          "front_matter": {
-            "name": "pdf",
-            "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs to fill in a PDF form or programmatically process, generate, or analyze PDF documents at scale.",
-            "license": "Proprietary. LICENSE.txt has complete terms"
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
-        },
-        {
-          "skill_path": ".claude/skills/document-skills/pptx/SKILL.md",
-          "front_matter": {
-            "name": "pptx",
-            "description": "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) Modifying or editing content, (3) Working with layouts, (4) Adding comments or speaker notes, or any other presentation tasks",
-            "license": "Proprietary. LICENSE.txt has complete terms"
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
-        },
-        {
-          "skill_path": ".claude/skills/document-skills/xlsx/SKILL.md",
-          "front_matter": {
-            "name": "xlsx",
-            "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for: (1) Creating new spreadsheets with formulas and formatting, (2) Reading or analyzing data, (3) Modify existing spreadsheets while preserving formulas, (4) Data analysis and visualization in spreadsheets, or (5) Recalculating formulas",
-            "license": "Proprietary. LICENSE.txt has complete terms"
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
-        },
-        {
-          "skill_path": ".claude/skills/image-fetcher/SKILL.md",
-          "front_matter": {
-            "name": "image-fetcher",
-            "description": "Fetch and download images from the internet in various formats (JPG, PNG, GIF, WebP, BMP, SVG, etc.). Use when users ask to download images, fetch images from URLs, save images from the web, or get images for embedding in documents or chats. Supports single and batch downloads with automatic format detection."
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
-        },
-        {
-          "skill_path": ".claude/skills/sap-article-generator-v2/SKILL.md",
-          "front_matter": {
-            "name": "sap-article-generator",
-            "description": "Generate comprehensive, fact-checked SAP technical articles and configuration guides with embedded images, flowcharts, and references. Use when users request SAP documentation, how-to guides, configuration tutorials, process explanations, or technical articles on SAP topics (ECC, S/4HANA, modules like SD, MM, FI, PP, ABAP, OData APIs, archiving, etc.). Creates professional Word documents with proper formatting and web-sourced visual aids with built-in image downloading."
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
-        },
-        {
-          "skill_path": ".claude/skills/skill-creator/SKILL.md",
-          "front_matter": {
-            "name": "skill-creator",
-            "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
-            "license": "Complete terms in LICENSE.txt"
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
-        },
-        {
-          "skill_path": ".claude/skills/template-skill/SKILL.md",
-          "front_matter": {
-            "name": "template-skill",
-            "description": "Replace with description of the skill and when Claude should use it."
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
-        },
-        {
-          "skill_path": "generic-claude-framework/skills/document-skills/docx/SKILL.md",
-          "front_matter": {
-            "name": "docx",
-            "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks",
-            "license": "Proprietary. LICENSE.txt has complete terms"
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
-        },
-        {
-          "skill_path": "generic-claude-framework/skills/document-skills/pdf/SKILL.md",
-          "front_matter": {
-            "name": "pdf",
-            "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs to fill in a PDF form or programmatically process, generate, or analyze PDF documents at scale.",
-            "license": "Proprietary. LICENSE.txt has complete terms"
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
-        },
-        {
-          "skill_path": "generic-claude-framework/skills/document-skills/pptx/SKILL.md",
-          "front_matter": {
-            "name": "pptx",
-            "description": "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) Modifying or editing content, (3) Working with layouts, (4) Adding comments or speaker notes, or any other presentation tasks",
-            "license": "Proprietary. LICENSE.txt has complete terms"
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
-        },
-        {
-          "skill_path": "generic-claude-framework/skills/document-skills/xlsx/SKILL.md",
-          "front_matter": {
-            "name": "xlsx",
-            "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for: (1) Creating new spreadsheets with formulas and formatting, (2) Reading or analyzing data, (3) Modify existing spreadsheets while preserving formulas, (4) Data analysis and visualization in spreadsheets, or (5) Recalculating formulas",
-            "license": "Proprietary. LICENSE.txt has complete terms"
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
-        },
-        {
-          "skill_path": "generic-claude-framework/skills/skill-creator/SKILL.md",
-          "front_matter": {
-            "name": "skill-creator",
-            "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
-            "license": "Complete terms in LICENSE.txt"
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
-        },
-        {
-          "skill_path": "generic-claude-framework/skills/sql-cli/SKILL.md",
-          "front_matter": {
-            "name": "sql-cli",
-            "description": "Token-efficient MySQL/PostgreSQL operations using mycli and native CLI tools (Windows/Mac/Linux compatible). Replaces Artisan Tinker for database queries with 87% token savings.",
-            "activation_keywords": "database, sql, mysql, postgres, query, tables, schema, count rows, subscription data, user data, database structure, show tables, artisan tinker",
-            "token_savings": "87% vs agent approach (200 vs 1,500+ tokens)",
-            "replaces": "Artisan Tinker, database-query-expert agent",
-            "version": "1.0.0"
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
-        },
-        {
-          "skill_path": "generic-claude-framework/skills/template-skill/SKILL.md",
-          "front_matter": {
-            "name": "template-skill",
-            "description": "Replace with description of the skill and when Claude should use it."
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
-        },
-        {
-          "skill_path": "generic-claude-framework/skills/webapp-testing/SKILL.md",
-          "front_matter": {
-            "name": "webapp-testing",
-            "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
-            "license": "Complete terms in LICENSE.txt"
-          },
-          "html_url": "https://github.com/bloody2634/claud-skills"
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
         }
-      ]
-    },
-    {
-      "repo": "Yusuf270200101/DeepAnalyze",
-      "matched_topics": [
-        "ai-scientist"
       ],
+      "matched_topics": [],
       "status": "no_valid_skill"
     },
     {
-      "repo": "InternScience/ResearchClawBench",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "Runchuan-BU/BioClaw",
+      "matched_domain_topics": [
+        "bioinformatics"
       ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/Runchuan-BU/BioClaw.git",
+      "chosen_skill_path": ".claude/skills/add-figure/SKILL.md",
+      "front_matter": {
+        "name": "add-figure",
+        "description": "Add a Python-only figure reference skill to a BioClaw installation. Use when the user wants publication-quality plotting guidance inside agent containers without adding source-code features. Creates `container/skills/figure/` with a Python-only `SKILL.md` and a root-level `seaborn_reference.md`.",
+        "disable-model-invocation": true
+      },
+      "html_url": "https://github.com/Runchuan-BU/BioClaw",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Runchuan-BU/BioClaw"
+    },
+    {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
       "status": "no_valid_skill"
     },
     {
-      "repo": "OpenRaiser/NanoResearch",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "ammawla/encode-toolkit",
+      "matched_domain_topics": [
+        "bioinformatics"
       ],
-      "status": "already_added",
-      "matches": [
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
         {
-          "skill_path": "skills/nanoresearch-experiment/SKILL.md",
-          "front_matter": {
-            "name": "nanoresearch-experiment",
-            "description": "Generate a Python code skeleton from an experiment blueprint",
-            "version": "0.1.0"
-          },
-          "html_url": "https://github.com/OpenRaiser/NanoResearch"
-        },
-        {
-          "skill_path": "skills/nanoresearch-ideation/SKILL.md",
-          "front_matter": {
-            "name": "nanoresearch-ideation",
-            "description": "Search academic literature and generate research hypotheses",
-            "version": "0.1.0"
-          },
-          "html_url": "https://github.com/OpenRaiser/NanoResearch"
-        },
-        {
-          "skill_path": "skills/nanoresearch-planning/SKILL.md",
-          "front_matter": {
-            "name": "nanoresearch-planning",
-            "description": "Produce an experiment blueprint from a research hypothesis",
-            "version": "0.1.0"
-          },
-          "html_url": "https://github.com/OpenRaiser/NanoResearch"
-        },
-        {
-          "skill_path": "skills/nanoresearch-writing/SKILL.md",
-          "front_matter": {
-            "name": "nanoresearch-writing",
-            "description": "Draft a LaTeX research paper from all previous stage outputs",
-            "version": "0.1.0"
-          },
-          "html_url": "https://github.com/OpenRaiser/NanoResearch"
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
         }
-      ]
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/ammawla/encode-toolkit.git",
+      "chosen_skill_path": "plugin/skills/accessibility-aggregation/SKILL.md",
+      "front_matter": {
+        "name": "accessibility-aggregation",
+        "description": "Build comprehensive chromatin accessibility maps by aggregating ATAC-seq and DNase-seq narrowPeak data across multiple ENCODE experiments, donors, and labs. Use when the user wants to answer \"where is chromatin accessible in my tissue?\" by combining peak calls into a union peak set. Handles cross-lab variation, ATAC vs DNase platform differences, and ENCODE blocklist filtering."
+      },
+      "html_url": "https://github.com/ammawla/encode-toolkit",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ammawla/encode-toolkit"
     },
     {
-      "repo": "openags/OpenAGS",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "DrugClaw/DrugClaw",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "drug-discovery"
       ],
-      "status": "already_added",
-      "matches": [
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
         {
-          "skill_path": "skills/research-workflow/SKILL.md",
-          "front_matter": {
-            "name": "research-workflow",
-            "description": "Dynamic research workflow management with self-reflection and backtracking",
-            "roles": [
-              "ags"
-            ],
-            "tools": [
-              "dispatch_agent",
-              "check_progress",
-              "ask_user"
-            ],
-            "triggers": [
-              "research",
-              "workflow",
-              "pipeline",
-              "run project",
-              "start research",
-              "always"
-            ],
-            "version": "1.0.0"
-          },
-          "html_url": "https://github.com/openags/OpenAGS"
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
         },
         {
-          "skill_path": "skills/search-papers/SKILL.md",
-          "front_matter": {
-            "name": "search-papers",
-            "description": "Search for academic papers using arXiv and Semantic Scholar",
-            "roles": [
-              "literature",
-              "ags"
-            ],
-            "tools": [
-              "arxiv",
-              "semantic_scholar"
-            ],
-            "triggers": [
-              "search papers",
-              "find papers",
-              "literature search",
-              "arxiv",
-              "semantic scholar"
-            ],
-            "allowed-tools": "Bash(curl *), Read, Write, Grep",
-            "version": "1.0.0"
-          },
-          "html_url": "https://github.com/openags/OpenAGS"
-        },
-        {
-          "skill_path": "skills/verify-citations/SKILL.md",
-          "front_matter": {
-            "name": "verify-citations",
-            "description": "Verify academic citations against public databases",
-            "roles": [
-              "literature",
-              "reference",
-              "reviewer"
-            ],
-            "tools": [
-              "arxiv",
-              "semantic_scholar"
-            ],
-            "triggers": [
-              "verify citations",
-              "check references",
-              "validate bibliography",
-              "always"
-            ],
-            "version": "1.0.0"
-          },
-          "html_url": "https://github.com/openags/OpenAGS"
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
         }
-      ]
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/DrugClaw/DrugClaw.git",
+      "chosen_skill_path": "skills/built-in/apple-calendar/SKILL.md",
+      "front_matter": {
+        "name": "apple-calendar",
+        "description": "Query and manage Apple Calendar on macOS via `icalBuddy` (read) and AppleScript (`osascript`) for event creation. Use when users ask about upcoming events or adding calendar events.",
+        "license": "Proprietary. LICENSE.txt has complete terms",
+        "compatibility": {
+          "os": [
+            "darwin"
+          ],
+          "deps": [
+            "icalBuddy"
+          ]
+        }
+      },
+      "html_url": "https://github.com/DrugClaw/DrugClaw",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/DrugClaw/DrugClaw"
+    },
+    {
+      "repo": "donbr/lifesciences-research",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/donbr/lifesciences-research.git",
+      "chosen_skill_path": ".claude/skills/lifesciences-clinical/SKILL.md",
+      "front_matter": {
+        "name": "lifesciences-clinical",
+        "description": "Queries clinical databases (Open Targets, ClinicalTrials.gov) via curl for target-disease associations, target tractability assessment, and clinical trial discovery. This skill should be used when the user asks to \"validate drug targets\", \"find clinical trials\", \"assess target tractability\", \"discover disease associations\", or mentions Open Targets scores, NCT identifiers, target-disease evidence, druggability assessment, or translational research workflows."
+      },
+      "html_url": "https://github.com/donbr/lifesciences-research",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/donbr/lifesciences-research"
+    },
+    {
+      "repo": "genecell/stato",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "genecell/PlanDrop",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "effieklimi/ensembl-mcp-server",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "anondo1969/ai-agents-life-sciences",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "Eldergenix/bio-llm-evaluation-suite",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "Nauman123-coder/GNN-LLM-Mutagen-Agent",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "CaPerez17/bioai-protein-modeling",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "fresh-milkshake/agentic_ai_x_longevity_hackathon",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "helianfeixing/lab-assistant-ai",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "Liu-Hy/GenoTEX",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "Liu-Hy/GenoMAS",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "Harsh9005/awesome-scientific-ai-tools",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "K-Dense-AI/claude-scientific-skills",
-      "matched_topics": [
-        "ai-scientist"
+      "matched_domain_topics": [
+        "bioinformatics",
+        "clinical-research",
+        "computational-biology",
+        "drug-discovery",
+        "genomics",
+        "scientific-visualization"
       ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
       "status": "already_added",
       "matches": [
         {
@@ -2524,696 +3113,282 @@
       ]
     },
     {
-      "repo": "khanfs/polymath-scientist",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "jackspace/ClaudeSkillz",
+      "matched_domain_topics": [
+        "bioinformatics"
       ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "whenpoem/aiscientist",
-      "matched_topics": [
-        "ai-scientist"
+      "matched_qualifier_topics": [
+        "ai-skills"
       ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "bio-xyz/BioAgents",
-      "matched_topics": [
-        "ai-scientist"
-      ],
-      "status": "already_added",
-      "matches": [
+      "matched_topic_pairs": [
         {
-          "skill_path": ".claude/skills/longevity-scholar/SKILL.md",
-          "front_matter": {
-            "name": "longevity-scholar",
-            "description": "This skill should be used when users explicitly request academic papers, recent research, most cited research, or scholarly articles about longevity, aging, lifespan extension, or related topics. Triggers on phrases like \"find papers on\", \"latest research about\", \"most cited studies on\", or \"academic literature about\" in the context of longevity."
-          },
-          "html_url": "https://github.com/bio-xyz/BioAgents"
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-skills"
         }
-      ]
-    },
-    {
-      "repo": "Sibyl-Research-Team/AutoResearch-SibylSystem",
-      "matched_topics": [
-        "ai-scientist"
       ],
-      "status": "already_added",
-      "matches": [
-        {
-          "skill_path": ".claude/skills/sibyl-codex-reviewer/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-codex-reviewer",
-            "description": "Sibyl Codex 独立第三方审查 - 使用 OpenAI Codex 提供不同 AI 视角的评审",
-            "context": "fork",
-            "agent": "sibyl-light",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, mcp__codex__codex, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-codex-writer/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-codex-writer",
-            "description": "Sibyl Codex 写作 agent - 使用 Codex (GPT-5) 撰写论文",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, mcp__codex__codex, mcp__codex__codex-reply, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-comparativist/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-comparativist",
-            "description": "Sibyl 比较分析者 agent - 对标 SOTA 和同类工作，定位结果贡献",
-            "context": "fork",
-            "agent": "sibyl-light",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, WebSearch, WebFetch, mcp__arxiv-mcp-server__search_papers, mcp__google-scholar__search_google_scholar_key_words, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-contrarian/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-contrarian",
-            "description": "Sibyl 反对者 agent - 挑战主流假设，寻找反面证据和盲点",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, WebSearch, WebFetch, mcp__arxiv-mcp-server__search_papers, mcp__arxiv-mcp-server__download_paper, mcp__arxiv-mcp-server__read_paper, mcp__google-scholar__search_google_scholar_key_words, mcp__claude_ai_bioRxiv__search_preprints, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-critic/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-critic",
-            "description": "Sibyl 批评者 agent - 苛刻但公正的学术批评",
-            "context": "fork",
-            "agent": "sibyl-heavy",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-editor/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-editor",
-            "description": "Sibyl 编辑 agent - 整合论文各章节为完整稿件",
-            "context": "fork",
-            "agent": "sibyl-heavy",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-empiricist/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-empiricist",
-            "description": "Sibyl 实验主义者 agent - 关注可复现性、数据质量和实验设计严谨性",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, WebSearch, WebFetch, mcp__arxiv-mcp-server__search_papers, mcp__arxiv-mcp-server__download_paper, mcp__arxiv-mcp-server__read_paper, mcp__google-scholar__search_google_scholar_key_words, mcp__claude_ai_bioRxiv__search_preprints, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-experiment-supervisor/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-experiment-supervisor",
-            "description": "Sibyl 后台实验监督 agent - 持续刷新 GPU 空闲状态、动态派发排队实验、处理运行时间/状态漂移",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, Skill, Agent, mcp__ssh-mcp-server__execute-command, mcp__ssh-mcp-server__upload, mcp__ssh-mcp-server__download, mcp__ssh-mcp-server__list-servers"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-experimenter/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-experimenter",
-            "description": "Sibyl 实验执行 agent - 编写代码并在远程 GPU 上执行实验",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, WebSearch, WebFetch, mcp__ssh-mcp-server__execute-command, mcp__ssh-mcp-server__upload, mcp__ssh-mcp-server__download, mcp__ssh-mcp-server__list-servers, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-final-critic/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-final-critic",
-            "description": "Sibyl 终审 agent - NeurIPS/ICML 级别的论文终审",
-            "context": "fork",
-            "agent": "sibyl-heavy",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-idea-validation-decision/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-idea-validation-decision",
-            "description": "Sibyl pilot 验证决策 agent - 根据小实验结果决定 ADVANCE / REFINE / PIVOT",
-            "context": "fork",
-            "agent": "sibyl-heavy",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-innovator/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-innovator",
-            "description": "Sibyl 创新者 agent - 大胆的跨领域创新研究提案生成",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, WebSearch, WebFetch, mcp__arxiv-mcp-server__search_papers, mcp__arxiv-mcp-server__download_paper, mcp__arxiv-mcp-server__read_paper, mcp__google-scholar__search_google_scholar_key_words, mcp__claude_ai_bioRxiv__search_preprints, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-interdisciplinary/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-interdisciplinary",
-            "description": "Sibyl 跨学科者 agent - 从认知科学、物理、生物等领域引入类比和方法",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, WebSearch, WebFetch, mcp__arxiv-mcp-server__search_papers, mcp__arxiv-mcp-server__download_paper, mcp__arxiv-mcp-server__read_paper, mcp__google-scholar__search_google_scholar_key_words, mcp__claude_ai_bioRxiv__search_preprints, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-lark-sync/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-lark-sync",
-            "description": "Sibyl 飞书同步 agent - 将研究数据同步到飞书云空间",
-            "context": "fork",
-            "agent": "sibyl-light",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, TaskCreate, TaskUpdate, TaskList, mcp__lark__bitable_v1_app_create, mcp__lark__bitable_v1_appTable_create, mcp__lark__bitable_v1_appTable_list, mcp__lark__bitable_v1_appTableField_list, mcp__lark__bitable_v1_appTableRecord_create, mcp__lark__bitable_v1_appTableRecord_search, mcp__lark__bitable_v1_appTableRecord_update, mcp__lark__im_v1_chat_list, mcp__lark__im_v1_message_create, mcp__feishu__create_feishu_document, mcp__feishu__create_feishu_folder, mcp__feishu__get_feishu_folder_files, mcp__feishu__get_feishu_document_info, mcp__feishu__get_feishu_document_blocks, mcp__feishu__batch_create_feishu_blocks, mcp__feishu__delete_feishu_document_blocks, mcp__feishu__create_feishu_table, mcp__feishu__search_feishu_documents, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-latex-writer/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-latex-writer",
-            "description": "Sibyl LaTeX 排版 agent - 将论文转为 NeurIPS LaTeX 格式并编译",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, mcp__ssh-mcp-server__execute-command, mcp__ssh-mcp-server__upload, mcp__ssh-mcp-server__download, mcp__ssh-mcp-server__list-servers, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-literature/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-literature",
-            "description": "Sibyl 文献调研 agent - 使用 arXiv + Web 双源搜索进行系统性文献调研",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, WebSearch, WebFetch, mcp__arxiv-mcp-server__search_papers, mcp__arxiv-mcp-server__download_paper, mcp__arxiv-mcp-server__read_paper, mcp__arxiv-mcp-server__list_papers, mcp__google-scholar__search_google_scholar_key_words, mcp__google-scholar__search_google_scholar_advanced, mcp__google-scholar__get_author_info, mcp__claude_ai_bioRxiv__search_preprints, mcp__claude_ai_bioRxiv__get_preprint, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-methodologist/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-methodologist",
-            "description": "Sibyl 方法论者 agent - 审查实验方法的内外部效度和可复现性",
-            "context": "fork",
-            "agent": "sibyl-light",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-novelty-checker/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-novelty-checker",
-            "description": "Sibyl 新颖性检查 agent - 搜索文献验证 idea 是否与已有论文撞车",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, WebSearch, WebFetch, mcp__arxiv-mcp-server__search_papers, mcp__arxiv-mcp-server__download_paper, mcp__arxiv-mcp-server__read_paper, mcp__google-scholar__search_google_scholar_key_words, mcp__google-scholar__search_google_scholar_advanced, mcp__claude_ai_bioRxiv__search_preprints, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-optimist/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-optimist",
-            "description": "Sibyl 乐观分析者 agent - 从积极角度分析实验结果",
-            "context": "fork",
-            "agent": "sibyl-light",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-outline-writer/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-outline-writer",
-            "description": "Sibyl 大纲撰写 agent - 生成论文详细大纲",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-planner/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-planner",
-            "description": "Sibyl 实验规划 agent - 设计严谨可复现的实验方案",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, WebSearch, WebFetch, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-pragmatist/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-pragmatist",
-            "description": "Sibyl 实用主义者 agent - 注重工程可行性的研究提案生成",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, WebSearch, WebFetch, mcp__arxiv-mcp-server__search_papers, mcp__arxiv-mcp-server__download_paper, mcp__arxiv-mcp-server__read_paper, mcp__google-scholar__search_google_scholar_key_words, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-reflection/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-reflection",
-            "description": "Sibyl 反思 agent - 分析迭代产出，分类问题，生成改进计划",
-            "context": "fork",
-            "agent": "sibyl-heavy",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-result-synthesizer/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-result-synthesizer",
-            "description": "Sibyl 结果辩论综合者 agent - 综合6方结果分析形成统一判断和行动计划",
-            "context": "fork",
-            "agent": "sibyl-heavy",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-revisionist/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-revisionist",
-            "description": "Sibyl 修正主义者 agent - 基于实验结果反思假设，提出修正方向",
-            "context": "fork",
-            "agent": "sibyl-light",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-section-critic/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-section-critic",
-            "description": "Sibyl 章节评审 agent - 评审论文特定章节",
-            "context": "fork",
-            "agent": "sibyl-light",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-section-writer/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-section-writer",
-            "description": "Sibyl 章节撰写 agent - 撰写论文特定章节",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-self-healer/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-self-healer",
-            "description": "Sibyl 自愈 agent - 后台自动检测修复系统错误，添加回归测试，git commit 留痕",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": true,
-            "allowed-tools": "Read, Write, Edit, Glob, Grep, Bash, Skill, Agent"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-sequential-writer/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-sequential-writer",
-            "description": "Sibyl 顺序写作 agent - 按章节顺序写作，确保整体行文一致性",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-server-experimenter/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-server-experimenter",
-            "description": "Sibyl 服务器端实验 agent - 在远程服务器上使用 Codex/Claude 本地执行实验",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, mcp__ssh-mcp-server__execute-command, mcp__ssh-mcp-server__upload, mcp__ssh-mcp-server__download, mcp__ssh-mcp-server__list-servers, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-skeptic/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-skeptic",
-            "description": "Sibyl 怀疑论者 agent - 以最大怀疑态度审视实验结果",
-            "context": "fork",
-            "agent": "sibyl-light",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-strategist/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-strategist",
-            "description": "Sibyl 战略顾问 agent - 从战略角度分析结果并建议下一步",
-            "context": "fork",
-            "agent": "sibyl-light",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-supervisor-decision/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-supervisor-decision",
-            "description": "Sibyl 监督决策 agent - 分析实验结果决定 PIVOT 还是 PROCEED",
-            "context": "fork",
-            "agent": "sibyl-heavy",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-supervisor/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-supervisor",
-            "description": "Sibyl 监督审查 agent - 独立第三方质量审查",
-            "context": "fork",
-            "agent": "sibyl-heavy",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, WebSearch, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-synthesizer/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-synthesizer",
-            "description": "Sibyl 综合决策者 agent - 综合多方观点生成最终研究提案",
-            "context": "fork",
-            "agent": "sibyl-heavy",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, WebSearch, WebFetch, mcp__arxiv-mcp-server__search_papers, mcp__arxiv-mcp-server__read_paper, mcp__google-scholar__search_google_scholar_key_words, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
-        },
-        {
-          "skill_path": ".claude/skills/sibyl-theoretical/SKILL.md",
-          "front_matter": {
-            "name": "sibyl-theoretical",
-            "description": "Sibyl 理论研究者 agent - 注重数学基础和理论保证的研究提案",
-            "context": "fork",
-            "agent": "sibyl-standard",
-            "user-invocable": false,
-            "allowed-tools": "Read, Write, Glob, Grep, Bash, WebSearch, WebFetch, mcp__arxiv-mcp-server__search_papers, mcp__arxiv-mcp-server__download_paper, mcp__arxiv-mcp-server__read_paper, mcp__google-scholar__search_google_scholar_key_words, Skill"
-          },
-          "html_url": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/jackspace/ClaudeSkillz.git",
+      "chosen_skill_path": "skills/ai-elements-chatbot/SKILL.md",
+      "front_matter": {
+        "name": "ai-elements-chatbot",
+        "description": "This skill provides production-ready AI chat UI components built on shadcn/ui for conversational AI interfaces. Use when building ChatGPT-style chat interfaces with streaming responses, tool/function call displays, reasoning visualization, or source citations. Provides 30+ components including Message, Conversation, Response, CodeBlock, Reasoning, Tool, Actions, Sources optimized for Vercel AI SDK v5.\n\nPrevents common setup errors with Next.js App Router, Tailwind v4, shadcn/ui integration, AI SDK v5 migration, component composition patterns, voice input browser compatibility, responsive design issues, and streaming optimization.\n\nKeywords: ai-elements, vercel-ai-sdk, shadcn, chatbot, conversational-ai, streaming-ui, chat-interface, ai-chat, message-components, conversation-ui, tool-calling, reasoning-display, source-citations, markdown-streaming, function-calling, ai-responses, prompt-input, code-highlighting, web-preview, branch-navigation, thinking-display, perplexity-style, claude-artifacts\n",
+        "license": "MIT",
+        "metadata": {
+          "version": "1.6.0",
+          "last_verified": "2025-11-07",
+          "package": "ai-elements",
+          "errors_prevented": 8,
+          "token_savings": "68%",
+          "production_tested": true
         }
-      ]
+      },
+      "html_url": "https://github.com/jackspace/ClaudeSkillz",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/jackspace/ClaudeSkillz"
     },
     {
-      "repo": "Research-Equality/Awesome-AI-Research",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "Mustapha5298/snippy",
+      "matched_domain_topics": [
+        "genomics"
       ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "ai-in-pm/PaperBananaFX",
-      "matched_topics": [
-        "ai-scientist"
+      "matched_qualifier_topics": [
+        "ai-agents"
       ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "TenureAI/PhD-Zero",
-      "matched_topics": [
-        "ai-scientist"
-      ],
-      "status": "already_added",
-      "matches": [
+      "matched_topic_pairs": [
         {
-          "skill_path": ".agents/skills/deep-research/SKILL.md",
-          "front_matter": {
-            "name": "deep-research",
-            "description": "Deep evidence-first research with broad discovery, verification, and traceable citations. Prefer invoking via research-workflow.\nTRIGGER when (MANDATORY — you MUST invoke this skill, no exceptions): user message contains ANY of these keywords or synonyms — 调研/研究/对比/综述/文献/证据/机制/根因/为什么/可行性/路线图/分析/探索, or research/investigate/compare/survey/literature/evidence/mechanism/root-cause/why/feasibility/roadmap/analyze/explore — or asks to verify claims, analyze tradeoffs, scope a new topic, or conduct literature review. Also MUST trigger mid-run when new research-intent signals appear. If in doubt whether to trigger, trigger. Skipping when keywords match is a routing violation.\nDO NOT TRIGGER when: user asks for paper-writing output (use paper-writing), experiment launch (use experiment-execution), or plan-only without evidence (use research-plan)."
-          },
-          "html_url": "https://github.com/TenureAI/PhD-Zero"
-        },
-        {
-          "skill_path": ".agents/skills/experiment-execution/SKILL.md",
-          "front_matter": {
-            "name": "experiment-execution",
-            "description": "Execute AI/ML experiments locally or remotely with environment, runtime, and logging controls. Prefer invoking via research-workflow.\nTRIGGER when: user asks to run/launch/start/resume/monitor a training job, evaluation, or benchmark, or a plan is ready for execution, or experiment needs rerun/recovery.\nDO NOT TRIGGER when: research investigation only (use deep-research), planning without execution (use research-plan), or env setup without launch (use project-context)."
-          },
-          "html_url": "https://github.com/TenureAI/PhD-Zero"
-        },
-        {
-          "skill_path": ".agents/skills/human-checkpoint/SKILL.md",
-          "front_matter": {
-            "name": "human-checkpoint",
-            "description": "Escalate critical decisions to a human with options, tradeoffs, and recommendation.\nTRIGGER when: major safety risk, high irreversible impact, large GPU spend, destructive data ops, shared-memory publication, or hard blockers requiring human approval.\nDO NOT TRIGGER when: routine confirmations handled by run-governor, or low-stakes reversible actions."
-          },
-          "html_url": "https://github.com/TenureAI/PhD-Zero"
-        },
-        {
-          "skill_path": ".agents/skills/memory-manager/SKILL.md",
-          "front_matter": {
-            "name": "memory-manager",
-            "description": "Manage long-term AI R&D memory: retrieval, writeback, promotion, and shared export.\nTRIGGER when: run bootstrap (retrieve), task completion (writeback), stage change, replan, significant failure, before high-resource action, before final report, or compaction markers detected (Compact/压缩/Summary).\nDO NOT TRIGGER when: already called this cycle (cooldown), unless forced by safety/failure/high-resource triggers."
-          },
-          "html_url": "https://github.com/TenureAI/PhD-Zero"
-        },
-        {
-          "skill_path": ".agents/skills/paper-writing/SKILL.md",
-          "front_matter": {
-            "name": "paper-writing",
-            "description": "Write CS/AI papers with progressive disclosure. Prefer invoking via research-workflow.\nTRIGGER when: user explicitly asks to draft/write/revise a paper, paper section (abstract, intro, related work, method, experiments, conclusion), rebuttal, or LaTeX content.\nDO NOT TRIGGER when: user mentions papers but needs research/investigation (use deep-research), experiment planning (use research-plan), or experiment execution (use experiment-execution)."
-          },
-          "html_url": "https://github.com/TenureAI/PhD-Zero"
-        },
-        {
-          "skill_path": ".agents/skills/project-context/SKILL.md",
-          "front_matter": {
-            "name": "project-context",
-            "description": "Initialize and maintain per-project runtime context (env, secrets, snapshots). Prefer invoking via research-workflow.\nTRIGGER when: new run needs env setup, preflight before experiment/eval, runtime fields missing (paths, API keys, GPU config, proxy), run snapshot needed, or shared-memory needs project config.\nDO NOT TRIGGER when: pure research (use deep-research), plan-only (use research-plan), or env already fully resolved."
-          },
-          "html_url": "https://github.com/TenureAI/PhD-Zero"
-        },
-        {
-          "skill_path": ".agents/skills/research-plan/SKILL.md",
-          "front_matter": {
-            "name": "research-plan",
-            "description": "Build execution-ready research plans, experiment proposals, and ablation designs. Prefer invoking via research-workflow.\nTRIGGER when: user asks for research proposal, experiment plan, ablation design, evaluation roadmap, study design, or after deep-research scoping needs conversion to actionable plan.\nDO NOT TRIGGER when: evidence gathering needed first (use deep-research), actual experiment launch (use experiment-execution), or paper writing (use paper-writing)."
-          },
-          "html_url": "https://github.com/TenureAI/PhD-Zero"
-        },
-        {
-          "skill_path": ".agents/skills/research-workflow/SKILL.md",
-          "front_matter": {
-            "name": "research-workflow",
-            "description": "PRIMARY ORCHESTRATOR — trigger this skill FIRST for any non-trivial AI R&D task. Coordinates run-governor, memory-manager, deep-research, research-plan, project-context, experiment-execution, human-checkpoint, and paper-writing.\nTRIGGER FIRST when: any non-trivial research task begins (analysis, debugging, reproduction, planning, evaluation, training), or context compaction detected (Compact/压缩/Summary). Other skills should be invoked FROM WITHIN this workflow.\nDO NOT TRIGGER when: trivial single-command tasks (\"show file\", \"fix typo\"), or pure conversational queries."
-          },
-          "html_url": "https://github.com/TenureAI/PhD-Zero"
-        },
-        {
-          "skill_path": ".agents/skills/run-governor/SKILL.md",
-          "front_matter": {
-            "name": "run-governor",
-            "description": "Govern run-level execution policy: mode selection, run_id, directory layout, stage reporting, safety allowances.\nTRIGGER when: starting a non-trivial research task (set mode + run_id), switching local/remote target, creating a new run, or mode-aware policy decisions needed.\nDO NOT TRIGGER when: trivial single-step tasks, pure info queries, or run already initialized with no policy change needed."
-          },
-          "html_url": "https://github.com/TenureAI/PhD-Zero"
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
         }
-      ]
-    },
-    {
-      "repo": "openags/paper-search-mcp",
-      "matched_topics": [
-        "ai-scientist"
       ],
+      "matched_topics": [],
       "status": "no_valid_skill"
     },
     {
-      "repo": "matiasrodlo/veritas",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "benrio0923/genomic-research",
+      "matched_domain_topics": [
+        "genomics"
       ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
       "status": "no_valid_skill"
     },
     {
-      "repo": "ruc-datalab/DeepAnalyze",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "JiahaoZhang-Public/ProtClaw",
+      "matched_domain_topics": [
+        "computational-biology"
       ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/JiahaoZhang-Public/ProtClaw.git",
+      "chosen_skill_path": "apps/orchestrator/.claude/skills/add-compact/SKILL.md",
+      "front_matter": {
+        "name": "add-compact",
+        "description": "Add /compact command for manual context compaction. Solves context rot in long sessions by forwarding the SDK's built-in /compact slash command. Main-group or trusted sender only."
+      },
+      "html_url": "https://github.com/JiahaoZhang-Public/ProtClaw",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/JiahaoZhang-Public/ProtClaw"
+    },
+    {
+      "repo": "ScottsSecondAct/olang",
+      "matched_domain_topics": [
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
       "status": "no_valid_skill"
     },
     {
-      "repo": "kadubon/audit-closed-ai-scientist",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "zacklecon/claude-skills",
+      "matched_domain_topics": [
+        "clinical-research",
+        "computational-biology",
+        "scientific-visualization"
       ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/zacklecon/claude-skills.git",
+      "chosen_skill_path": "skills/angular-architect/SKILL.md",
+      "front_matter": {
+        "name": "angular-architect",
+        "description": "Use when building Angular 17+ applications with standalone components or signals. Invoke for enterprise apps, RxJS patterns, NgRx state management, performance optimization, advanced routing.",
+        "license": "MIT",
+        "metadata": {
+          "author": "https://github.com/Jeffallan",
+          "version": "1.0.0",
+          "domain": "frontend",
+          "triggers": "Angular, Angular 17, standalone components, signals, RxJS, NgRx, Angular performance, Angular routing, Angular testing",
+          "role": "specialist",
+          "scope": "implementation",
+          "output-format": "code",
+          "related-skills": "typescript-pro, test-master"
+        }
+      },
+      "html_url": "https://github.com/zacklecon/claude-skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/zacklecon/claude-skills"
+    },
+    {
+      "repo": "AlexThePro939yt/scientific-validation-hub",
+      "matched_domain_topics": [
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
       "status": "no_valid_skill"
     },
     {
-      "repo": "openags/Awesome-AI-Scientist-Papers",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "kimimgo/viznoir",
+      "matched_domain_topics": [
+        "scientific-visualization"
       ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/kimimgo/viznoir.git",
+      "chosen_skill_path": ".claude-plugin/skills/cae-postprocess/SKILL.md",
+      "front_matter": {
+        "name": "cae-postprocess",
+        "description": "CAE simulation post-processing translator skill. Translates natural language requests from CFD/FEA/SPH domain experts into viznoir MCP tool calls. Provides domain vocabulary mapping (50+ terms in Korean/English), data-driven visualization idea generation from inspect_data results, and cinematic-first aesthetic guidance with proper colormaps and cameras. Triggers: simulation postprocess, CFD, FEA, SPH, flow, stress, particles, .foam, .vtu, .vtk, .pvd, render, slice, animate, visualization, postprocess, streamlines, contour, deformation, pressure drop, 시뮬레이션, 후처리, 유동, 응력, 입자, 시각화, 단면, 유선, 변형, wake, vortex, free surface"
+      },
+      "html_url": "https://github.com/kimimgo/viznoir",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/kimimgo/viznoir"
+    },
+    {
+      "repo": "aleeepassarelli/scientific-validation-hub",
+      "matched_domain_topics": [
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
       "status": "no_valid_skill"
     },
     {
-      "repo": "bio-xyz/bio-benchmark",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "javidmardanov/paper-banana-skill",
+      "matched_domain_topics": [
+        "scientific-visualization"
       ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/javidmardanov/paper-banana-skill.git",
+      "chosen_skill_path": "skills/paper-banana/SKILL.md",
+      "front_matter": {
+        "name": "paper-banana",
+        "description": "Generates publication-ready academic illustrations using the PaperBanana five-agent pipeline (arXiv:2601.23265). Diagram mode runs 5 Gemini API agents with multimodal in-context learning from curated reference images. Plot mode generates executable Python matplotlib/seaborn code. Use when the user asks for: research paper figures, academic diagrams, methodology illustrations, architecture diagrams, statistical plots, conference-quality visualizations, flowcharts for papers, NeurIPS/ICML/CVPR figures, or improving existing paper figures."
+      },
+      "html_url": "https://github.com/javidmardanov/paper-banana-skill",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/javidmardanov/paper-banana-skill"
+    },
+    {
+      "repo": "yorkeccak/bio",
+      "matched_domain_topics": [
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
       "status": "no_valid_skill"
     },
     {
-      "repo": "Alvoradozerouno/ORION-AI-Scientist-Consciousness",
-      "matched_topics": [
-        "ai-scientist"
+      "repo": "agentcures/ClawCures",
+      "matched_domain_topics": [
+        "drug-discovery"
       ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "qiliuchn/OR-Agent",
-      "matched_topics": [
-        "ai-scientist"
+      "matched_qualifier_topics": [
+        "ai-agents"
       ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "mims-harvard/Medea",
-      "matched_topics": [
-        "ai-scientist"
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
       ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "mlbio-epfl/HeurekaBench",
-      "matched_topics": [
-        "ai-scientist"
-      ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "dualverse-ai/station",
-      "matched_topics": [
-        "ai-scientist"
-      ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "ai-scientist-bench/ablation-bench",
-      "matched_topics": [
-        "ai-scientist"
-      ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "UKPLab/scicoqa",
-      "matched_topics": [
-        "ai-scientist"
-      ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "rashakil-ds/Roadmap-Docs",
-      "matched_topics": [
-        "ai-scientist"
-      ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "InternScience/SGI-Bench",
-      "matched_topics": [
-        "ai-scientist"
-      ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "principia-ai/PhysGym",
-      "matched_topics": [
-        "ai-scientist"
-      ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "zechenzhangAGI/vibe-filmmaking-veo3-claude",
-      "matched_topics": [
-        "ai-scientist"
-      ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "aether-raid/AERO",
-      "matched_topics": [
-        "ai-scientist"
-      ],
+      "matched_topics": [],
       "status": "no_valid_skill"
     }
   ]
