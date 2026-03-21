@@ -13,13 +13,19 @@
     "computational-biology+agent-skills",
     "scientific-visualization+agent-skills",
     "drug-discovery+agent-skills",
-    "clinical-research+agent-skills"
+    "clinical-research+agent-skills",
+    "bioinformatics+ai-skills",
+    "genomics+ai-skills",
+    "computational-biology+ai-skills",
+    "scientific-visualization+ai-skills",
+    "drug-discovery+ai-skills",
+    "clinical-research+ai-skills"
   ],
-  "query_count": 13,
-  "repo_count": 34,
+  "query_count": 19,
+  "repo_count": 35,
   "results": [
     {
-      "repo": "InternScience/ResearchClawBench",
+      "repo": "Valsacrificial484/AutoResearch-SibylSystem",
       "matched_topics": [
         "ai-scientist"
       ],
@@ -210,6 +216,13 @@
     },
     {
       "repo": "Yusuf270200101/DeepAnalyze",
+      "matched_topics": [
+        "ai-scientist"
+      ],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "InternScience/ResearchClawBench",
       "matched_topics": [
         "ai-scientist"
       ],
