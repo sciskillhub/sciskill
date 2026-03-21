@@ -19,94 +19,18 @@
   "repo_count": 34,
   "results": [
     {
-      "repo": "Labrat025/AI-research-feedback",
+      "repo": "InternScience/ResearchClawBench",
       "matched_topics": [
         "ai-scientist"
       ],
       "status": "no_valid_skill"
     },
     {
-      "repo": "openags/OpenAGS",
+      "repo": "Labrat025/AI-research-feedback",
       "matched_topics": [
         "ai-scientist"
       ],
-      "status": "already_added",
-      "matches": [
-        {
-          "skill_path": "skills/research-workflow/SKILL.md",
-          "front_matter": {
-            "name": "research-workflow",
-            "description": "Dynamic research workflow management with self-reflection and backtracking",
-            "roles": [
-              "ags"
-            ],
-            "tools": [
-              "dispatch_agent",
-              "check_progress",
-              "ask_user"
-            ],
-            "triggers": [
-              "research",
-              "workflow",
-              "pipeline",
-              "run project",
-              "start research",
-              "always"
-            ],
-            "version": "1.0.0"
-          },
-          "html_url": "https://github.com/openags/OpenAGS"
-        },
-        {
-          "skill_path": "skills/search-papers/SKILL.md",
-          "front_matter": {
-            "name": "search-papers",
-            "description": "Search for academic papers using arXiv and Semantic Scholar",
-            "roles": [
-              "literature",
-              "ags"
-            ],
-            "tools": [
-              "arxiv",
-              "semantic_scholar"
-            ],
-            "triggers": [
-              "search papers",
-              "find papers",
-              "literature search",
-              "arxiv",
-              "semantic scholar"
-            ],
-            "allowed-tools": "Bash(curl *), Read, Write, Grep",
-            "version": "1.0.0"
-          },
-          "html_url": "https://github.com/openags/OpenAGS"
-        },
-        {
-          "skill_path": "skills/verify-citations/SKILL.md",
-          "front_matter": {
-            "name": "verify-citations",
-            "description": "Verify academic citations against public databases",
-            "roles": [
-              "literature",
-              "reference",
-              "reviewer"
-            ],
-            "tools": [
-              "arxiv",
-              "semantic_scholar"
-            ],
-            "triggers": [
-              "verify citations",
-              "check references",
-              "validate bibliography",
-              "always"
-            ],
-            "version": "1.0.0"
-          },
-          "html_url": "https://github.com/openags/OpenAGS"
-        }
-      ]
+      "status": "no_valid_skill"
     },
     {
       "repo": "R3tr04851/claude-skills",
@@ -290,6 +214,134 @@
         "ai-scientist"
       ],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "OpenRaiser/NanoResearch",
+      "matched_topics": [
+        "ai-scientist"
+      ],
+      "status": "already_added",
+      "matches": [
+        {
+          "skill_path": "skills/nanoresearch-experiment/SKILL.md",
+          "front_matter": {
+            "name": "nanoresearch-experiment",
+            "description": "Generate a Python code skeleton from an experiment blueprint",
+            "version": "0.1.0"
+          },
+          "html_url": "https://github.com/OpenRaiser/NanoResearch"
+        },
+        {
+          "skill_path": "skills/nanoresearch-ideation/SKILL.md",
+          "front_matter": {
+            "name": "nanoresearch-ideation",
+            "description": "Search academic literature and generate research hypotheses",
+            "version": "0.1.0"
+          },
+          "html_url": "https://github.com/OpenRaiser/NanoResearch"
+        },
+        {
+          "skill_path": "skills/nanoresearch-planning/SKILL.md",
+          "front_matter": {
+            "name": "nanoresearch-planning",
+            "description": "Produce an experiment blueprint from a research hypothesis",
+            "version": "0.1.0"
+          },
+          "html_url": "https://github.com/OpenRaiser/NanoResearch"
+        },
+        {
+          "skill_path": "skills/nanoresearch-writing/SKILL.md",
+          "front_matter": {
+            "name": "nanoresearch-writing",
+            "description": "Draft a LaTeX research paper from all previous stage outputs",
+            "version": "0.1.0"
+          },
+          "html_url": "https://github.com/OpenRaiser/NanoResearch"
+        }
+      ]
+    },
+    {
+      "repo": "openags/OpenAGS",
+      "matched_topics": [
+        "ai-scientist"
+      ],
+      "status": "already_added",
+      "matches": [
+        {
+          "skill_path": "skills/research-workflow/SKILL.md",
+          "front_matter": {
+            "name": "research-workflow",
+            "description": "Dynamic research workflow management with self-reflection and backtracking",
+            "roles": [
+              "ags"
+            ],
+            "tools": [
+              "dispatch_agent",
+              "check_progress",
+              "ask_user"
+            ],
+            "triggers": [
+              "research",
+              "workflow",
+              "pipeline",
+              "run project",
+              "start research",
+              "always"
+            ],
+            "version": "1.0.0"
+          },
+          "html_url": "https://github.com/openags/OpenAGS"
+        },
+        {
+          "skill_path": "skills/search-papers/SKILL.md",
+          "front_matter": {
+            "name": "search-papers",
+            "description": "Search for academic papers using arXiv and Semantic Scholar",
+            "roles": [
+              "literature",
+              "ags"
+            ],
+            "tools": [
+              "arxiv",
+              "semantic_scholar"
+            ],
+            "triggers": [
+              "search papers",
+              "find papers",
+              "literature search",
+              "arxiv",
+              "semantic scholar"
+            ],
+            "allowed-tools": "Bash(curl *), Read, Write, Grep",
+            "version": "1.0.0"
+          },
+          "html_url": "https://github.com/openags/OpenAGS"
+        },
+        {
+          "skill_path": "skills/verify-citations/SKILL.md",
+          "front_matter": {
+            "name": "verify-citations",
+            "description": "Verify academic citations against public databases",
+            "roles": [
+              "literature",
+              "reference",
+              "reviewer"
+            ],
+            "tools": [
+              "arxiv",
+              "semantic_scholar"
+            ],
+            "triggers": [
+              "verify citations",
+              "check references",
+              "validate bibliography",
+              "always"
+            ],
+            "version": "1.0.0"
+          },
+          "html_url": "https://github.com/openags/OpenAGS"
+        }
+      ]
     },
     {
       "repo": "K-Dense-AI/claude-scientific-skills",
@@ -2455,58 +2507,6 @@
             }
           },
           "html_url": "https://github.com/K-Dense-AI/claude-scientific-skills"
-        }
-      ]
-    },
-    {
-      "repo": "InternScience/ResearchClawBench",
-      "matched_topics": [
-        "ai-scientist"
-      ],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "OpenRaiser/NanoResearch",
-      "matched_topics": [
-        "ai-scientist"
-      ],
-      "status": "already_added",
-      "matches": [
-        {
-          "skill_path": "skills/nanoresearch-experiment/SKILL.md",
-          "front_matter": {
-            "name": "nanoresearch-experiment",
-            "description": "Generate a Python code skeleton from an experiment blueprint",
-            "version": "0.1.0"
-          },
-          "html_url": "https://github.com/OpenRaiser/NanoResearch"
-        },
-        {
-          "skill_path": "skills/nanoresearch-ideation/SKILL.md",
-          "front_matter": {
-            "name": "nanoresearch-ideation",
-            "description": "Search academic literature and generate research hypotheses",
-            "version": "0.1.0"
-          },
-          "html_url": "https://github.com/OpenRaiser/NanoResearch"
-        },
-        {
-          "skill_path": "skills/nanoresearch-planning/SKILL.md",
-          "front_matter": {
-            "name": "nanoresearch-planning",
-            "description": "Produce an experiment blueprint from a research hypothesis",
-            "version": "0.1.0"
-          },
-          "html_url": "https://github.com/OpenRaiser/NanoResearch"
-        },
-        {
-          "skill_path": "skills/nanoresearch-writing/SKILL.md",
-          "front_matter": {
-            "name": "nanoresearch-writing",
-            "description": "Draft a LaTeX research paper from all previous stage outputs",
-            "version": "0.1.0"
-          },
-          "html_url": "https://github.com/OpenRaiser/NanoResearch"
         }
       ]
     },
