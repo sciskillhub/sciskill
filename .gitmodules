@@ -175,3 +175,6 @@
 [submodule "open-source/javidmardanov/paper-banana-skill"]
 	path = open-source/javidmardanov/paper-banana-skill
 	url = https://github.com/javidmardanov/paper-banana-skill.git
+[submodule "open-source/Elfredaaroused655/claude-skills"]
+	path = open-source/Elfredaaroused655/claude-skills
+	url = https://github.com/Elfredaaroused655/claude-skills.git
