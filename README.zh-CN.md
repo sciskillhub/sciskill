@@ -35,7 +35,7 @@ English version: [README.md](README.md)
 - `python3`
 - `git`
 - 可用于 GitHub API 的 token
-- 可选 SSH key；脚本优先使用 SSH，失败时回退到 HTTPS
+- 可选 SSH key；脚本默认使用 HTTPS，只有显式设置 `SUBMODULE_PROTOCOL=ssh` 时才优先使用 SSH
 
 ### 自动化
 

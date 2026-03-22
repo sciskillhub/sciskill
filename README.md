@@ -35,7 +35,7 @@ Current validation requires:
 - `python3`
 - `git`
 - a GitHub token for API access
-- optional SSH key support; the collector prefers SSH and falls back to HTTPS
+- optional SSH key support; the collector defaults to HTTPS and only uses SSH when `SUBMODULE_PROTOCOL=ssh`
 
 ### Automation
 

@@ -123,15 +123,6 @@ def choose_submodule_protocol(repo_ssh_url: str, repo_https_url: str) -> Protoco
     if forced in {"ssh", "https"}:
         return forced  # type: ignore[return-value]
 
-    in_github_actions = os.getenv("GITHUB_ACTIONS", "").strip().lower() == "true"
-
-    if in_github_actions:
-        if ssh_available_for_repo(repo_ssh_url):
-            return "ssh"
-        return "https"
-
-    if ssh_available_for_repo(repo_ssh_url):
-        return "ssh"
     return "https"
 
 

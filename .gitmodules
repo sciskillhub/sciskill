@@ -1,180 +1,240 @@
 [submodule "K-Dense-AI/claude-scientific-skills"]
-	path = K-Dense-AI/claude-scientific-skills
-	url = git@github.com:K-Dense-AI/claude-scientific-skills.git
+path = K-Dense-AI/claude-scientific-skills
+url = https://github.com/K-Dense-AI/claude-scientific-skills.git
+
 [submodule "open-source/zarazhangrui/frontend-slides"]
-	path = open-source/zarazhangrui/frontend-slides
-	url = git@github.com:zarazhangrui/frontend-slides.git
+path = open-source/zarazhangrui/frontend-slides
+url = https://github.com/zarazhangrui/frontend-slides.git
+
 [submodule "open-source/ALMAZENY1/order-hub"]
-	path = open-source/ALMAZENY1/order-hub
-	url = git@github.com:ALMAZENY1/order-hub.git
+path = open-source/ALMAZENY1/order-hub
+url = https://github.com/ALMAZENY1/order-hub.git
+
 [submodule "open-source/arjendev/launchpad-hq"]
-	path = open-source/arjendev/launchpad-hq
-	url = git@github.com:arjendev/launchpad-hq.git
+path = open-source/arjendev/launchpad-hq
+url = https://github.com/arjendev/launchpad-hq.git
+
 [submodule "open-source/kawsar1533/clawdwatch"]
-	path = open-source/kawsar1533/clawdwatch
-	url = git@github.com:kawsar1533/clawdwatch.git
+path = open-source/kawsar1533/clawdwatch
+url = https://github.com/kawsar1533/clawdwatch.git
+
 [submodule "open-source/toohamster/sftp-cc"]
-	path = open-source/toohamster/sftp-cc
-	url = git@github.com:toohamster/sftp-cc.git
+path = open-source/toohamster/sftp-cc
+url = https://github.com/toohamster/sftp-cc.git
+
 [submodule "open-source/GusWan58/dataclaw"]
-	path = open-source/GusWan58/dataclaw
-	url = git@github.com:GusWan58/dataclaw.git
+path = open-source/GusWan58/dataclaw
+url = https://github.com/GusWan58/dataclaw.git
+
 [submodule "open-source/mzoryy/hwpxskill"]
-	path = open-source/mzoryy/hwpxskill
-	url = git@github.com:mzoryy/hwpxskill.git
+path = open-source/mzoryy/hwpxskill
+url = https://github.com/mzoryy/hwpxskill.git
+
 [submodule "open-source/JimLiu/baoyu-skills"]
-	path = open-source/JimLiu/baoyu-skills
-	url = git@github.com:JimLiu/baoyu-skills.git
+path = open-source/JimLiu/baoyu-skills
+url = https://github.com/JimLiu/baoyu-skills.git
+
 [submodule "open-source/milady-ai/milady"]
-	path = open-source/milady-ai/milady
-	url = git@github.com:milady-ai/milady.git
+path = open-source/milady-ai/milady
+url = https://github.com/milady-ai/milady.git
+
 [submodule "open-source/d-oit/web-doc-resolver"]
-	path = open-source/d-oit/web-doc-resolver
-	url = git@github.com:d-oit/web-doc-resolver.git
+path = open-source/d-oit/web-doc-resolver
+url = https://github.com/d-oit/web-doc-resolver.git
+
 [submodule "open-source/mnfst/manifest"]
-	path = open-source/mnfst/manifest
-	url = git@github.com:mnfst/manifest.git
+path = open-source/mnfst/manifest
+url = https://github.com/mnfst/manifest.git
+
 [submodule "open-source/Marshanda14816/agent-skills"]
-	path = open-source/Marshanda14816/agent-skills
-	url = git@github.com:Marshanda14816/agent-skills.git
+path = open-source/Marshanda14816/agent-skills
+url = https://github.com/Marshanda14816/agent-skills.git
+
 [submodule "open-source/YTItsfrost/cypress-agent-skill"]
-	path = open-source/YTItsfrost/cypress-agent-skill
-	url = git@github.com:YTItsfrost/cypress-agent-skill.git
+path = open-source/YTItsfrost/cypress-agent-skill
+url = https://github.com/YTItsfrost/cypress-agent-skill.git
+
 [submodule "open-source/anubhavsingh-0218/uncodixify-skill"]
-	path = open-source/anubhavsingh-0218/uncodixify-skill
-	url = git@github.com:anubhavsingh-0218/uncodixify-skill.git
+path = open-source/anubhavsingh-0218/uncodixify-skill
+url = https://github.com/anubhavsingh-0218/uncodixify-skill.git
+
 [submodule "open-source/felipemsilva/PowerSkills"]
-	path = open-source/felipemsilva/PowerSkills
-	url = git@github.com:felipemsilva/PowerSkills.git
+path = open-source/felipemsilva/PowerSkills
+url = https://github.com/felipemsilva/PowerSkills.git
+
 [submodule "open-source/SURFLIN2030/swing-skills"]
-	path = open-source/SURFLIN2030/swing-skills
-	url = git@github.com:SURFLIN2030/swing-skills.git
+path = open-source/SURFLIN2030/swing-skills
+url = https://github.com/SURFLIN2030/swing-skills.git
+
 [submodule "open-source/megana05082003/review-analyzer-skill"]
-	path = open-source/megana05082003/review-analyzer-skill
-	url = git@github.com:megana05082003/review-analyzer-skill.git
+path = open-source/megana05082003/review-analyzer-skill
+url = https://github.com/megana05082003/review-analyzer-skill.git
+
 [submodule "open-source/Shroomfaerie/veriglow-agent-map-skill"]
-	path = open-source/Shroomfaerie/veriglow-agent-map-skill
-	url = git@github.com:Shroomfaerie/veriglow-agent-map-skill.git
+path = open-source/Shroomfaerie/veriglow-agent-map-skill
+url = https://github.com/Shroomfaerie/veriglow-agent-map-skill.git
+
 [submodule "open-source/AsadJaved66/Web-Skills-Protocol"]
-	path = open-source/AsadJaved66/Web-Skills-Protocol
-	url = git@github.com:AsadJaved66/Web-Skills-Protocol.git
+path = open-source/AsadJaved66/Web-Skills-Protocol
+url = https://github.com/AsadJaved66/Web-Skills-Protocol.git
+
 [submodule "open-source/Samuelkebede24/skill-conductor"]
-	path = open-source/Samuelkebede24/skill-conductor
-	url = git@github.com:Samuelkebede24/skill-conductor.git
+path = open-source/Samuelkebede24/skill-conductor
+url = https://github.com/Samuelkebede24/skill-conductor.git
+
 [submodule "open-source/wtfhanin/Enhance-Prompt"]
-	path = open-source/wtfhanin/Enhance-Prompt
-	url = git@github.com:wtfhanin/Enhance-Prompt.git
+path = open-source/wtfhanin/Enhance-Prompt
+url = https://github.com/wtfhanin/Enhance-Prompt.git
+
 [submodule "open-source/mateooo24/timework-skill"]
-	path = open-source/mateooo24/timework-skill
-	url = git@github.com:mateooo24/timework-skill.git
+path = open-source/mateooo24/timework-skill
+url = https://github.com/mateooo24/timework-skill.git
+
 [submodule "open-source/sethikasithum/skill-generator"]
-	path = open-source/sethikasithum/skill-generator
-	url = git@github.com:sethikasithum/skill-generator.git
+path = open-source/sethikasithum/skill-generator
+url = https://github.com/sethikasithum/skill-generator.git
+
 [submodule "open-source/nandodeejay/appstore-review-skill"]
-	path = open-source/nandodeejay/appstore-review-skill
-	url = git@github.com:nandodeejay/appstore-review-skill.git
+path = open-source/nandodeejay/appstore-review-skill
+url = https://github.com/nandodeejay/appstore-review-skill.git
+
 [submodule "open-source/teixasalone/UnrealEngine5-Skills"]
-	path = open-source/teixasalone/UnrealEngine5-Skills
-	url = git@github.com:teixasalone/UnrealEngine5-Skills.git
+path = open-source/teixasalone/UnrealEngine5-Skills
+url = https://github.com/teixasalone/UnrealEngine5-Skills.git
+
 [submodule "open-source/ankitgupta9525/VMware-Monitor"]
-	path = open-source/ankitgupta9525/VMware-Monitor
-	url = git@github.com:ankitgupta9525/VMware-Monitor.git
+path = open-source/ankitgupta9525/VMware-Monitor
+url = https://github.com/ankitgupta9525/VMware-Monitor.git
+
 [submodule "open-source/chainstacklabs/pumpclaw"]
-	path = open-source/chainstacklabs/pumpclaw
-	url = git@github.com:chainstacklabs/pumpclaw.git
+path = open-source/chainstacklabs/pumpclaw
+url = https://github.com/chainstacklabs/pumpclaw.git
+
 [submodule "open-source/meh2133/skills"]
-	path = open-source/meh2133/skills
-	url = git@github.com:meh2133/skills.git
+path = open-source/meh2133/skills
+url = https://github.com/meh2133/skills.git
+
 [submodule "open-source/mistertechie06/x402-payments-skill"]
-	path = open-source/mistertechie06/x402-payments-skill
-	url = git@github.com:mistertechie06/x402-payments-skill.git
+path = open-source/mistertechie06/x402-payments-skill
+url = https://github.com/mistertechie06/x402-payments-skill.git
+
 [submodule "open-source/Syniox5334/apple-dev-skills"]
-	path = open-source/Syniox5334/apple-dev-skills
-	url = git@github.com:Syniox5334/apple-dev-skills.git
+path = open-source/Syniox5334/apple-dev-skills
+url = https://github.com/Syniox5334/apple-dev-skills.git
+
 [submodule "open-source/aksh-3141/claude-toolshed"]
-	path = open-source/aksh-3141/claude-toolshed
-	url = git@github.com:aksh-3141/claude-toolshed.git
+path = open-source/aksh-3141/claude-toolshed
+url = https://github.com/aksh-3141/claude-toolshed.git
+
 [submodule "open-source/zinxj/uikit-expert-skill"]
-	path = open-source/zinxj/uikit-expert-skill
-	url = git@github.com:zinxj/uikit-expert-skill.git
+path = open-source/zinxj/uikit-expert-skill
+url = https://github.com/zinxj/uikit-expert-skill.git
+
 [submodule "open-source/musharrafsaroof-123/skillpm"]
-	path = open-source/musharrafsaroof-123/skillpm
-	url = git@github.com:musharrafsaroof-123/skillpm.git
+path = open-source/musharrafsaroof-123/skillpm
+url = https://github.com/musharrafsaroof-123/skillpm.git
+
 [submodule "open-source/Rayan55050/progressive-agent"]
-	path = open-source/Rayan55050/progressive-agent
-	url = git@github.com:Rayan55050/progressive-agent.git
+path = open-source/Rayan55050/progressive-agent
+url = https://github.com/Rayan55050/progressive-agent.git
+
 [submodule "open-source/Aditya923-c/xpoz-agent-skills"]
-	path = open-source/Aditya923-c/xpoz-agent-skills
-	url = git@github.com:Aditya923-c/xpoz-agent-skills.git
+path = open-source/Aditya923-c/xpoz-agent-skills
+url = https://github.com/Aditya923-c/xpoz-agent-skills.git
+
 [submodule "open-source/Taison472/codex-skills"]
-	path = open-source/Taison472/codex-skills
-	url = git@github.com:Taison472/codex-skills.git
+path = open-source/Taison472/codex-skills
+url = https://github.com/Taison472/codex-skills.git
+
 [submodule "open-source/openags/OpenAGS"]
-	path = open-source/openags/OpenAGS
-	url = git@github.com:openags/OpenAGS.git
+path = open-source/openags/OpenAGS
+url = https://github.com/openags/OpenAGS.git
+
 [submodule "open-source/Kayunangka/claude-skill"]
-	path = open-source/Kayunangka/claude-skill
-	url = git@github.com:Kayunangka/claude-skill.git
+path = open-source/Kayunangka/claude-skill
+url = https://github.com/Kayunangka/claude-skill.git
+
 [submodule "open-source/bloody2634/claud-skills"]
-	path = open-source/bloody2634/claud-skills
-	url = git@github.com:bloody2634/claud-skills.git
+path = open-source/bloody2634/claud-skills
+url = https://github.com/bloody2634/claud-skills.git
+
 [submodule "open-source/OpenRaiser/NanoResearch"]
-	path = open-source/OpenRaiser/NanoResearch
-	url = git@github.com:OpenRaiser/NanoResearch.git
+path = open-source/OpenRaiser/NanoResearch
+url = https://github.com/OpenRaiser/NanoResearch.git
+
 [submodule "open-source/bio-xyz/BioAgents"]
-	path = open-source/bio-xyz/BioAgents
-	url = git@github.com:bio-xyz/BioAgents.git
+path = open-source/bio-xyz/BioAgents
+url = https://github.com/bio-xyz/BioAgents.git
+
 [submodule "open-source/Sibyl-Research-Team/AutoResearch-SibylSystem"]
-	path = open-source/Sibyl-Research-Team/AutoResearch-SibylSystem
-	url = git@github.com:Sibyl-Research-Team/AutoResearch-SibylSystem.git
+path = open-source/Sibyl-Research-Team/AutoResearch-SibylSystem
+url = https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem.git
+
 [submodule "open-source/TenureAI/PhD-Zero"]
-	path = open-source/TenureAI/PhD-Zero
-	url = git@github.com:TenureAI/PhD-Zero.git
+path = open-source/TenureAI/PhD-Zero
+url = https://github.com/TenureAI/PhD-Zero.git
+
 [submodule "open-source/Chandrikakt/earl"]
-	path = open-source/Chandrikakt/earl
-	url = git@github.com:Chandrikakt/earl.git
+path = open-source/Chandrikakt/earl
+url = https://github.com/Chandrikakt/earl.git
+
 [submodule "open-source/fmschulz/omics-skills"]
-	path = open-source/fmschulz/omics-skills
-	url = git@github.com:fmschulz/omics-skills.git
+path = open-source/fmschulz/omics-skills
+url = https://github.com/fmschulz/omics-skills.git
+
 [submodule "open-source/24111999/claude-skills"]
-	path = open-source/24111999/claude-skills
-	url = git@github.com:24111999/claude-skills.git
+path = open-source/24111999/claude-skills
+url = https://github.com/24111999/claude-skills.git
+
 [submodule "open-source/anthropics/life-sciences"]
-	path = open-source/anthropics/life-sciences
-	url = git@github.com:anthropics/life-sciences.git
+path = open-source/anthropics/life-sciences
+url = https://github.com/anthropics/life-sciences.git
+
 [submodule "open-source/foryourhealth111-pixel/Vibe-Skills"]
-	path = open-source/foryourhealth111-pixel/Vibe-Skills
-	url = https://github.com/foryourhealth111-pixel/Vibe-Skills.git
+path = open-source/foryourhealth111-pixel/Vibe-Skills
+url = https://github.com/foryourhealth111-pixel/Vibe-Skills.git
+
 [submodule "open-source/ClawBio/ClawBio"]
-	path = open-source/ClawBio/ClawBio
-	url = https://github.com/ClawBio/ClawBio.git
+path = open-source/ClawBio/ClawBio
+url = https://github.com/ClawBio/ClawBio.git
+
 [submodule "open-source/Runchuan-BU/BioClaw"]
-	path = open-source/Runchuan-BU/BioClaw
-	url = https://github.com/Runchuan-BU/BioClaw.git
+path = open-source/Runchuan-BU/BioClaw
+url = https://github.com/Runchuan-BU/BioClaw.git
+
 [submodule "open-source/ammawla/encode-toolkit"]
-	path = open-source/ammawla/encode-toolkit
-	url = https://github.com/ammawla/encode-toolkit.git
+path = open-source/ammawla/encode-toolkit
+url = https://github.com/ammawla/encode-toolkit.git
+
 [submodule "open-source/DrugClaw/DrugClaw"]
-	path = open-source/DrugClaw/DrugClaw
-	url = https://github.com/DrugClaw/DrugClaw.git
+path = open-source/DrugClaw/DrugClaw
+url = https://github.com/DrugClaw/DrugClaw.git
+
 [submodule "open-source/donbr/lifesciences-research"]
-	path = open-source/donbr/lifesciences-research
-	url = https://github.com/donbr/lifesciences-research.git
+path = open-source/donbr/lifesciences-research
+url = https://github.com/donbr/lifesciences-research.git
+
 [submodule "open-source/jackspace/ClaudeSkillz"]
-	path = open-source/jackspace/ClaudeSkillz
-	url = https://github.com/jackspace/ClaudeSkillz.git
+path = open-source/jackspace/ClaudeSkillz
+url = https://github.com/jackspace/ClaudeSkillz.git
+
 [submodule "open-source/JiahaoZhang-Public/ProtClaw"]
-	path = open-source/JiahaoZhang-Public/ProtClaw
-	url = https://github.com/JiahaoZhang-Public/ProtClaw.git
+path = open-source/JiahaoZhang-Public/ProtClaw
+url = https://github.com/JiahaoZhang-Public/ProtClaw.git
+
 [submodule "open-source/zacklecon/claude-skills"]
-	path = open-source/zacklecon/claude-skills
-	url = https://github.com/zacklecon/claude-skills.git
+path = open-source/zacklecon/claude-skills
+url = https://github.com/zacklecon/claude-skills.git
+
 [submodule "open-source/kimimgo/viznoir"]
-	path = open-source/kimimgo/viznoir
-	url = https://github.com/kimimgo/viznoir.git
+path = open-source/kimimgo/viznoir
+url = https://github.com/kimimgo/viznoir.git
+
 [submodule "open-source/javidmardanov/paper-banana-skill"]
-	path = open-source/javidmardanov/paper-banana-skill
-	url = https://github.com/javidmardanov/paper-banana-skill.git
+path = open-source/javidmardanov/paper-banana-skill
+url = https://github.com/javidmardanov/paper-banana-skill.git
+
 [submodule "open-source/Elfredaaroused655/claude-skills"]
-	path = open-source/Elfredaaroused655/claude-skills
-	url = https://github.com/Elfredaaroused655/claude-skills.git
+path = open-source/Elfredaaroused655/claude-skills
+url = https://github.com/Elfredaaroused655/claude-skills.git
+
