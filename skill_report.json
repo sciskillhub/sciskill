@@ -19,126 +19,95 @@
   ],
   "legacy_topics": [],
   "query_count": 30,
-  "successful_query_count": 19,
+  "successful_query_count": 18,
   "query_failures": [
     {
       "query": "archived:false is:public topic:clinical-research topic:ai-skills",
       "domain_topic": "clinical-research",
       "qualifier_topic": "ai-skills",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 7BC0:4A222:239800E:95AF410:69BF9F1E and timestamp 2026-03-22 07:49:50 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B004:164358:55EECC:16907EC:69C00FBA and timestamp 2026-03-22 15:50:18 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
     },
     {
       "query": "archived:false is:public topic:transcriptomics topic:ai-agents",
       "domain_topic": "transcriptomics",
       "qualifier_topic": "ai-agents",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 7BC3:C2601:2A6E8FD:B23DDEB:69BF9F22 and timestamp 2026-03-22 07:49:54 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B001:164358:55FE0E:169483A:69C00FBD and timestamp 2026-03-22 15:50:22 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
     },
     {
       "query": "archived:false is:public topic:transcriptomics topic:agent-skills",
       "domain_topic": "transcriptomics",
       "qualifier_topic": "agent-skills",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 7BC1:139590:291BB86:AC49DED:69BF9F26 and timestamp 2026-03-22 07:49:58 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of S..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B003:176BAD:610B23:18D1031:69C00FC1 and timestamp 2026-03-22 15:50:25 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
     },
     {
       "query": "archived:false is:public topic:transcriptomics topic:ai-skills",
       "domain_topic": "transcriptomics",
       "qualifier_topic": "ai-skills",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 7BC2:211274:29B8705:AED608F:69BF9F2A and timestamp 2026-03-22 07:50:02 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of S..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B000:338619:5F10E7:18ED6DF:69C00FC5 and timestamp 2026-03-22 15:50:29 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
     },
     {
       "query": "archived:false is:public topic:scverse topic:ai-agents",
       "domain_topic": "scverse",
       "qualifier_topic": "ai-agents",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 7BC5:19DF6F:28AF7E6:AB0CA0E:69BF9F2E and timestamp 2026-03-22 07:50:06 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of S..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B005:B8BA7:5FE68D:1920D11:69C00FC8 and timestamp 2026-03-22 15:50:32 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Ser..."
     },
     {
       "query": "archived:false is:public topic:scverse topic:agent-skills",
       "domain_topic": "scverse",
       "qualifier_topic": "agent-skills",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 7BC0:4A222:239CC1E:95C34A5:69BF9F31 and timestamp 2026-03-22 07:50:09 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B000:338619:5F31C5:18F60CE:69C00FCC and timestamp 2026-03-22 15:50:36 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
     },
     {
       "query": "archived:false is:public topic:scverse topic:ai-skills",
       "domain_topic": "scverse",
       "qualifier_topic": "ai-skills",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 7BC3:C2601:2A74094:B2552A3:69BF9F35 and timestamp 2026-03-22 07:50:13 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B003:176BAD:6148BD:18E10E6:69C00FD0 and timestamp 2026-03-22 15:50:40 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
     },
     {
       "query": "archived:false is:public topic:single-cell topic:ai-agents",
       "domain_topic": "single-cell",
       "qualifier_topic": "ai-agents",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 7BC1:139590:2920C16:AC5F026:69BF9F39 and timestamp 2026-03-22 07:50:17 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of S..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B001:164358:5652F0:16AAB51:69C00FD3 and timestamp 2026-03-22 15:50:43 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
     },
     {
       "query": "archived:false is:public topic:single-cell topic:agent-skills",
       "domain_topic": "single-cell",
       "qualifier_topic": "agent-skills",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 7BC2:211274:29BDC13:AEEC4AB:69BF9F3D and timestamp 2026-03-22 07:50:21 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of S..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B002:1464F3:5A1834:17960BC:69C00FD7 and timestamp 2026-03-22 15:50:47 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
     },
     {
       "query": "archived:false is:public topic:single-cell topic:ai-skills",
       "domain_topic": "single-cell",
       "qualifier_topic": "ai-skills",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 7BC6:DCDA2:29A5A18:AE7EF71:69BF9F41 and timestamp 2026-03-22 07:50:25 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B006:1843FE:5BDA81:181D893:69C00FDA and timestamp 2026-03-22 15:50:51 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
     },
     {
       "query": "archived:false is:public topic:population-genetics topic:ai-agents",
       "domain_topic": "population-genetics",
       "qualifier_topic": "ai-agents",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 7BC0:4A222:23A1F46:95D9224:69BF9F44 and timestamp 2026-03-22 07:50:28 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B000:338619:5F7ED2:1909D8D:69C00FDE and timestamp 2026-03-22 15:50:54 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+    },
+    {
+      "query": "archived:false is:public topic:population-genetics topic:agent-skills",
+      "domain_topic": "population-genetics",
+      "qualifier_topic": "agent-skills",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B003:176BAD:6198D4:18F61A8:69C00FE2 and timestamp 2026-03-22 15:50:58 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
     }
   ],
   "repo_count": 35,
   "results": [
-    {
-      "repo": "ammawla/encode-toolkit",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ammawla/encode-toolkit",
-      "matches": []
-    },
-    {
-      "repo": "Runchuan-BU/BioClaw",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Runchuan-BU/BioClaw",
-      "matches": []
-    },
     {
       "repo": "foryourhealth111-pixel/Vibe-Skills",
       "matched_domain_topics": [
@@ -198,6 +167,44 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "ammawla/encode-toolkit",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ammawla/encode-toolkit",
+      "matches": []
+    },
+    {
+      "repo": "Runchuan-BU/BioClaw",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Runchuan-BU/BioClaw",
+      "matches": []
     },
     {
       "repo": "fmschulz/omics-skills",
@@ -662,31 +669,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "protocol": "https",
-      "clone_url": "https://github.com/Elfredaaroused655/claude-skills.git",
-      "chosen_skill_path": "business-growth/SKILL.md",
-      "front_matter": {
-        "name": "business-growth-skills",
-        "description": "4 business growth agent skills and plugins for Claude Code, Codex, Gemini CLI, Cursor, OpenClaw. Customer success (health scoring, churn), sales engineer (RFP), revenue operations (pipeline, GTM), contract & proposal writer. Python tools (stdlib-only).",
-        "version": "1.1.0",
-        "author": "Alireza Rezvani",
-        "license": "MIT",
-        "tags": [
-          "business",
-          "customer-success",
-          "sales",
-          "revenue-operations",
-          "growth"
-        ],
-        "agents": [
-          "claude-code",
-          "codex-cli",
-          "openclaw"
-        ]
-      },
-      "html_url": "https://github.com/Elfredaaroused655/claude-skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Elfredaaroused655/claude-skills"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Elfredaaroused655/claude-skills",
+      "matches": []
     },
     {
       "repo": "JiahaoZhang-Public/ProtClaw",
