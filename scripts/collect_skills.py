@@ -20,6 +20,8 @@ import yaml
 
 API_ROOT = "https://api.github.com"
 API_VERSION = "2022-11-28"
+SEARCH_PAGE_DELAY_SECONDS = 2.5
+RATE_LIMIT_BUFFER_SECONDS = 1
 
 Protocol = Literal["ssh", "https"]
 
@@ -52,6 +54,50 @@ def gh_headers(token: str) -> Dict[str, str]:
     return headers
 
 
+def github_error_message(response: requests.Response) -> str:
+    try:
+        payload = response.json()
+    except ValueError:
+        return response.text.strip()
+
+    message = payload.get("message")
+    if isinstance(message, str):
+        return message.strip()
+    return response.text.strip()
+
+
+def rate_limit_wait_seconds(response: requests.Response) -> int:
+    retry_after_header = response.headers.get("Retry-After")
+    if retry_after_header and retry_after_header.isdigit():
+        return max(int(retry_after_header), RATE_LIMIT_BUFFER_SECONDS)
+
+    reset_header = response.headers.get("X-RateLimit-Reset")
+    if reset_header and reset_header.isdigit():
+        reset_epoch = int(reset_header)
+        wait_seconds = reset_epoch - int(time.time()) + RATE_LIMIT_BUFFER_SECONDS
+        if wait_seconds > 0:
+            return wait_seconds
+
+    message = github_error_message(response).lower()
+    if "secondary rate limit" in message or "rate limit exceeded" in message:
+        return 60
+
+    return 0
+
+
+def log_rate_limit_wait(url: str, response: requests.Response, wait_seconds: int) -> None:
+    resource = response.headers.get("X-RateLimit-Resource", "api")
+    reset_header = response.headers.get("X-RateLimit-Reset")
+    reset_note = ""
+    if reset_header and reset_header.isdigit():
+        reset_time = datetime.utcfromtimestamp(int(reset_header)).strftime("%Y-%m-%d %H:%M:%S UTC")
+        reset_note = f" (reset at {reset_time})"
+    print(
+        f"[INFO] GitHub {resource} rate limit hit for {url}; waiting {wait_seconds}s{reset_note}",
+        file=sys.stderr,
+    )
+
+
 def gh_get(url: str, token: str, params: Optional[Dict[str, Any]] = None) -> requests.Response:
     last_error: Optional[Exception] = None
     for attempt in range(1, 4):
@@ -67,12 +113,12 @@ def gh_get(url: str, token: str, params: Optional[Dict[str, Any]] = None) -> req
             is_retryable = status_code in {403, 429, 502, 503, 504}
             last_error = exc
             if is_retryable and attempt < 3:
-                retry_after = 0
+                wait_seconds = 0
                 if exc.response is not None:
-                    retry_after_header = exc.response.headers.get("Retry-After")
-                    if retry_after_header and retry_after_header.isdigit():
-                        retry_after = int(retry_after_header)
-                time.sleep(max(retry_after, attempt))
+                    wait_seconds = rate_limit_wait_seconds(exc.response)
+                    if wait_seconds > 0 and status_code in {403, 429}:
+                        log_rate_limit_wait(url, exc.response, wait_seconds)
+                time.sleep(max(wait_seconds, attempt))
                 continue
             break
         except requests.RequestException as exc:
@@ -268,6 +314,8 @@ def search_repositories(
         )
         data = r.json()
         items = data.get("items", [])
+        # Search API has a much lower per-minute quota than the core REST API.
+        time.sleep(SEARCH_PAGE_DELAY_SECONDS)
         if not items:
             break
 
@@ -275,7 +323,6 @@ def search_repositories(
         if len(items) < per_page:
             break
         page += 1
-        time.sleep(0.3)
 
     return repos[:max_repos]
 
