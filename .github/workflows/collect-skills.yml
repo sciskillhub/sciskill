@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: "10 7 * * *"
 
+concurrency:
+  group: collect-skills-${{ github.ref }}
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -52,4 +56,6 @@ jobs:
           git add -A config
           git diff --cached --quiet && exit 0
           git commit -m "chore: collect valid skill repos"
-          git push
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
