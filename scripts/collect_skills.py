@@ -272,6 +272,8 @@ def search_repositories(
             break
 
         repos.extend(items)
+        if len(items) < per_page:
+            break
         page += 1
         time.sleep(0.3)
 
