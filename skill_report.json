@@ -22,7 +22,9 @@
   "legacy_topics": [],
   "query_count": 44,
   "successful_query_count": 44,
-  "query_failures": [],
+  "query_failure_count": 0,
+  "repo_error_count": 1,
+  "error_report": "skill_errors.json",
   "repo_count": 44,
   "results": [
     {
@@ -920,7 +922,6 @@
       ],
       "matched_topics": [],
       "status": "add_failed",
-      "error": "Both SSH and HTTPS failed for FreedomIntelligence/OpenClaw-Medical-Skills",
       "chosen_skill_path": "skills/adaptyv/SKILL.md",
       "front_matter": {
         "name": "adaptyv",
