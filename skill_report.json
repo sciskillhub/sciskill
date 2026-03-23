@@ -10,128 +10,112 @@
     "transcriptomics",
     "scverse",
     "single-cell",
-    "population-genetics"
+    "population-genetics",
+    "medical"
   ],
   "qualifier_topics": [
     "ai-agents",
     "agent-skills",
-    "ai-skills"
+    "ai-skills",
+    "openclaw-skills"
   ],
   "legacy_topics": [],
-  "query_count": 30,
-  "successful_query_count": 18,
+  "query_count": 44,
+  "successful_query_count": 32,
   "query_failures": [
+    {
+      "query": "archived:false is:public topic:drug-discovery topic:ai-skills",
+      "domain_topic": "drug-discovery",
+      "qualifier_topic": "ai-skills",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 6C03:1E10:22CAF8B:90F30E3:69C0D79C and timestamp 2026-03-23 06:03:08 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Ser..."
+    },
+    {
+      "query": "archived:false is:public topic:drug-discovery topic:openclaw-skills",
+      "domain_topic": "drug-discovery",
+      "qualifier_topic": "openclaw-skills",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 6C00:1E7B40:3FF7D4A:10B34BFF:69C0D79F and timestamp 2026-03-23 06:03:11 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of ..."
+    },
+    {
+      "query": "archived:false is:public topic:clinical-research topic:ai-agents",
+      "domain_topic": "clinical-research",
+      "qualifier_topic": "ai-agents",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 6C02:1E7B40:3FF931A:10B3A826:69C0D7A3 and timestamp 2026-03-23 06:03:15 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of ..."
+    },
+    {
+      "query": "archived:false is:public topic:clinical-research topic:agent-skills",
+      "domain_topic": "clinical-research",
+      "qualifier_topic": "agent-skills",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 6C08:253D2B:45EF33B:12341048:69C0D7A7 and timestamp 2026-03-23 06:03:19 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of ..."
+    },
     {
       "query": "archived:false is:public topic:clinical-research topic:ai-skills",
       "domain_topic": "clinical-research",
       "qualifier_topic": "ai-skills",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B004:164358:55EECC:16907EC:69C00FBA and timestamp 2026-03-22 15:50:18 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 6C01:1E43:1AD0EAF:6FDAB5B:69C0D7AA and timestamp 2026-03-23 06:03:22 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Ser..."
+    },
+    {
+      "query": "archived:false is:public topic:clinical-research topic:openclaw-skills",
+      "domain_topic": "clinical-research",
+      "qualifier_topic": "openclaw-skills",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 6C02:1E7B40:3FFD2F8:10B4B42A:69C0D7AE and timestamp 2026-03-23 06:03:26 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of ..."
     },
     {
       "query": "archived:false is:public topic:transcriptomics topic:ai-agents",
       "domain_topic": "transcriptomics",
       "qualifier_topic": "ai-agents",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B001:164358:55FE0E:169483A:69C00FBD and timestamp 2026-03-22 15:50:22 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 6C00:1E7B40:3FFE876:10B50BDF:69C0D7B1 and timestamp 2026-03-23 06:03:30 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of ..."
     },
     {
       "query": "archived:false is:public topic:transcriptomics topic:agent-skills",
       "domain_topic": "transcriptomics",
       "qualifier_topic": "agent-skills",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B003:176BAD:610B23:18D1031:69C00FC1 and timestamp 2026-03-22 15:50:25 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 6C06:15489C:42414EA:1152CB93:69C0D7B5 and timestamp 2026-03-23 06:03:33 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of ..."
     },
     {
       "query": "archived:false is:public topic:transcriptomics topic:ai-skills",
       "domain_topic": "transcriptomics",
       "qualifier_topic": "ai-skills",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B000:338619:5F10E7:18ED6DF:69C00FC5 and timestamp 2026-03-22 15:50:29 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 6C08:253D2B:45F673E:1235F159:69C0D7B9 and timestamp 2026-03-23 06:03:37 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of ..."
+    },
+    {
+      "query": "archived:false is:public topic:transcriptomics topic:openclaw-skills",
+      "domain_topic": "transcriptomics",
+      "qualifier_topic": "openclaw-skills",
+      "legacy_topic": null,
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 6C05:77200:3FBDD5E:10A0B79E:69C0D7BC and timestamp 2026-03-23 06:03:40 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of S..."
     },
     {
       "query": "archived:false is:public topic:scverse topic:ai-agents",
       "domain_topic": "scverse",
       "qualifier_topic": "ai-agents",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B005:B8BA7:5FE68D:1920D11:69C00FC8 and timestamp 2026-03-22 15:50:32 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Ser..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 6C00:29BC9D:21855F3:8BE4447:69C0D7C0 and timestamp 2026-03-23 06:03:44 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of S..."
     },
     {
       "query": "archived:false is:public topic:scverse topic:agent-skills",
       "domain_topic": "scverse",
       "qualifier_topic": "agent-skills",
       "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B000:338619:5F31C5:18F60CE:69C00FCC and timestamp 2026-03-22 15:50:36 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
-    },
-    {
-      "query": "archived:false is:public topic:scverse topic:ai-skills",
-      "domain_topic": "scverse",
-      "qualifier_topic": "ai-skills",
-      "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B003:176BAD:6148BD:18E10E6:69C00FD0 and timestamp 2026-03-22 15:50:40 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
-    },
-    {
-      "query": "archived:false is:public topic:single-cell topic:ai-agents",
-      "domain_topic": "single-cell",
-      "qualifier_topic": "ai-agents",
-      "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B001:164358:5652F0:16AAB51:69C00FD3 and timestamp 2026-03-22 15:50:43 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
-    },
-    {
-      "query": "archived:false is:public topic:single-cell topic:agent-skills",
-      "domain_topic": "single-cell",
-      "qualifier_topic": "agent-skills",
-      "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B002:1464F3:5A1834:17960BC:69C00FD7 and timestamp 2026-03-22 15:50:47 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
-    },
-    {
-      "query": "archived:false is:public topic:single-cell topic:ai-skills",
-      "domain_topic": "single-cell",
-      "qualifier_topic": "ai-skills",
-      "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B006:1843FE:5BDA81:181D893:69C00FDA and timestamp 2026-03-22 15:50:51 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
-    },
-    {
-      "query": "archived:false is:public topic:population-genetics topic:ai-agents",
-      "domain_topic": "population-genetics",
-      "qualifier_topic": "ai-agents",
-      "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B000:338619:5F7ED2:1909D8D:69C00FDE and timestamp 2026-03-22 15:50:54 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
-    },
-    {
-      "query": "archived:false is:public topic:population-genetics topic:agent-skills",
-      "domain_topic": "population-genetics",
-      "qualifier_topic": "agent-skills",
-      "legacy_topic": null,
-      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID B003:176BAD:6198D4:18F61A8:69C00FE2 and timestamp 2026-03-22 15:50:58 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
+      "error": "HTTP 403: {\"message\":\"API rate limit exceeded for user ID 24741118. If you reach out to GitHub Support for help, please include the request ID 6C05:4621E:1831AAC:65280AB:69C0D7C4 and timestamp 2026-03-23 06:03:48 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Se..."
     }
   ],
-  "repo_count": 35,
+  "repo_count": 44,
   "results": [
-    {
-      "repo": "foryourhealth111-pixel/Vibe-Skills",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/foryourhealth111-pixel/Vibe-Skills",
-      "matches": []
-    },
     {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
-        "genomics"
+        "genomics",
+        "population-genetics"
       ],
       "matched_qualifier_topics": [
         "ai-agents"
@@ -144,6 +128,10 @@
         {
           "domain_topic": "genomics",
           "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "population-genetics",
+          "qualifier_topic": "ai-agents"
         }
       ],
       "matched_topics": [],
@@ -152,9 +140,10 @@
       "matches": []
     },
     {
-      "repo": "aristoteleo/PantheonOS",
+      "repo": "DrugClaw/DrugClaw",
       "matched_domain_topics": [
-        "bioinformatics"
+        "bioinformatics",
+        "drug-discovery"
       ],
       "matched_qualifier_topics": [
         "ai-agents"
@@ -163,28 +152,15 @@
         {
           "domain_topic": "bioinformatics",
           "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "ammawla/encode-toolkit",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
+        },
         {
-          "domain_topic": "bioinformatics",
+          "domain_topic": "drug-discovery",
           "qualifier_topic": "ai-agents"
         }
       ],
       "matched_topics": [],
       "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ammawla/encode-toolkit",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/DrugClaw/DrugClaw",
       "matches": []
     },
     {
@@ -205,6 +181,42 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/Runchuan-BU/BioClaw",
       "matches": []
+    },
+    {
+      "repo": "foryourhealth111-pixel/Vibe-Skills",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/foryourhealth111-pixel/Vibe-Skills",
+      "matches": []
+    },
+    {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "fmschulz/omics-skills",
@@ -249,6 +261,25 @@
       "matches": []
     },
     {
+      "repo": "ammawla/encode-toolkit",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ammawla/encode-toolkit",
+      "matches": []
+    },
+    {
       "repo": "genepattern/module-toolkit",
       "matched_domain_topics": [
         "bioinformatics",
@@ -269,30 +300,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "DrugClaw/DrugClaw",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/DrugClaw/DrugClaw",
-      "matches": []
     },
     {
       "repo": "donbr/lifesciences-research",
@@ -531,32 +538,9 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "Harsh9005/awesome-scientific-ai-tools",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "K-Dense-AI/claude-scientific-skills",
       "matched_domain_topics": [
         "bioinformatics",
-        "clinical-research",
         "computational-biology",
         "drug-discovery",
         "genomics",
@@ -568,10 +552,6 @@
       "matched_topic_pairs": [
         {
           "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "clinical-research",
           "qualifier_topic": "agent-skills"
         },
         {
@@ -595,6 +575,28 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/claude-scientific-skills",
       "matches": []
+    },
+    {
+      "repo": "Harsh9005/awesome-scientific-ai-tools",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "jackspace/ClaudeSkillz",
@@ -650,19 +652,31 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "pswider/tula",
+      "matched_domain_topics": [
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "openclaw-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "openclaw-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "Elfredaaroused655/claude-skills",
       "matched_domain_topics": [
-        "clinical-research",
         "computational-biology"
       ],
       "matched_qualifier_topics": [
         "ai-agents"
       ],
       "matched_topic_pairs": [
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "ai-agents"
-        },
         {
           "domain_topic": "computational-biology",
           "qualifier_topic": "ai-agents"
@@ -712,7 +726,6 @@
     {
       "repo": "zacklecon/claude-skills",
       "matched_domain_topics": [
-        "clinical-research",
         "computational-biology",
         "scientific-visualization"
       ],
@@ -720,10 +733,6 @@
         "agent-skills"
       ],
       "matched_topic_pairs": [
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "agent-skills"
-        },
         {
           "domain_topic": "computational-biology",
           "qualifier_topic": "agent-skills"
@@ -843,6 +852,165 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "unexplained-familyephedraceae871/openclaw-skill",
+      "matched_domain_topics": [
+        "medical"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/unexplained-familyephedraceae871/openclaw-skill.git",
+      "chosen_skill_path": "skills/openclaw/SKILL.md",
+      "front_matter": {
+        "name": "openclaw",
+        "description": "OpenClaw development assistant, built by Michel Costa, co-founder of Brabaflow — AI-Native Agency (brabaflow.ai). Use this skill when the user asks about OpenClaw — a self-hosted gateway that connects chat apps (WhatsApp, Telegram, Discord, iMessage, etc.) to AI coding agents. Covers configuration, channels, providers, tools, plugins, deployment, CLI commands, and all aspects of OpenClaw development. 333 pages of verbatim official documentation from docs.openclaw.ai.\n",
+        "trigger": "Use when user mentions OpenClaw, openclaw, or asks about: configuring AI agent gateways, connecting chat platforms to AI agents, WhatsApp/Telegram/Discord bot setup via OpenClaw, OpenClaw CLI commands, OpenClaw gateway configuration, OpenClaw plugins, OpenClaw skills, OpenClaw deployment, or any topic covered by docs.openclaw.ai.\n",
+        "author": "Brabaflow — AI-Native Agency (brabaflow.ai) | Michel Costa",
+        "source": "docs.openclaw.ai (333 pages, verbatim extraction, 2026-03-09)"
+      },
+      "html_url": "https://github.com/unexplained-familyephedraceae871/openclaw-skill",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/unexplained-familyephedraceae871/openclaw-skill"
+    },
+    {
+      "repo": "David777-design/CLOVER_0015",
+      "matched_domain_topics": [
+        "medical"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "Necroraijin/AEGIS-AI-Doctor-Assistant-App",
+      "matched_domain_topics": [
+        "medical"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "veiston/Hygieia",
+      "matched_domain_topics": [
+        "medical"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "RakshitRajVIT/MedicalBotAssistant",
+      "matched_domain_topics": [
+        "medical"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "devangdhyani/RAG-MEDICAL-CHATBOT-",
+      "matched_domain_topics": [
+        "medical"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "barlasa7657/claw-skills",
+      "matched_domain_topics": [
+        "medical"
+      ],
+      "matched_qualifier_topics": [
+        "openclaw-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "openclaw-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "FreedomIntelligence/OpenClaw-Medical-Skills",
+      "matched_domain_topics": [
+        "medical"
+      ],
+      "matched_qualifier_topics": [
+        "openclaw-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "openclaw-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "add_failed",
+      "error": "Both SSH and HTTPS failed for FreedomIntelligence/OpenClaw-Medical-Skills",
+      "chosen_skill_path": "skills/adaptyv/SKILL.md",
+      "front_matter": {
+        "name": "adaptyv",
+        "description": "Cloud laboratory platform for automated protein testing and validation. Use when designing proteins and needing experimental validation including binding assays, expression testing, thermostability measurements, enzyme activity assays, or protein sequence optimization. Also use for submitting experiments via API, tracking experiment status, downloading results, optimizing protein sequences for better expression using computational tools (NetSolP, SoluProt, SolubleMPNN, ESM), or managing protein design workflows with wet-lab validation.",
+        "license": "Unknown",
+        "metadata": {
+          "skill-author": "K-Dense Inc."
+        }
+      },
+      "html_url": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills"
     }
   ]
 }

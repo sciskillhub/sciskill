@@ -238,3 +238,6 @@ url = https://github.com/javidmardanov/paper-banana-skill.git
 path = open-source/Elfredaaroused655/claude-skills
 url = https://github.com/Elfredaaroused655/claude-skills.git
 
+[submodule "open-source/unexplained-familyephedraceae871/openclaw-skill"]
+	path = open-source/unexplained-familyephedraceae871/openclaw-skill
+	url = https://github.com/unexplained-familyephedraceae871/openclaw-skill.git
