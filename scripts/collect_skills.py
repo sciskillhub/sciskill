@@ -23,6 +23,9 @@ API_VERSION = "2022-11-28"
 SEARCH_PAGE_DELAY_SECONDS = 2.5
 RATE_LIMIT_BUFFER_SECONDS = 1
 SUBPROCESS_OUTPUT_LIMIT = 4000
+SUBMODULE_ADD_ENV_OVERRIDES = {
+    "GIT_LFS_SKIP_SMUDGE": "1",
+}
 
 Protocol = Literal["ssh", "https"]
 
@@ -537,6 +540,9 @@ def add_submodule_with_fallback(sciskill_root: Path, full_name: str, dry_run: bo
     target.parent.mkdir(parents=True, exist_ok=True)
 
     def try_add(url: str, protocol: str) -> Tuple[bool, Optional[Dict[str, Any]]]:
+        env = os.environ.copy()
+        for key, value in SUBMODULE_ADD_ENV_OVERRIDES.items():
+            env.setdefault(key, value)
         cmd = [
             "git",
             "submodule",
@@ -544,13 +550,17 @@ def add_submodule_with_fallback(sciskill_root: Path, full_name: str, dry_run: bo
             url,
             str(target.relative_to(sciskill_root)),
         ]
-        print(f"[INFO] trying {protocol}: {' '.join(cmd)}")
+        print(
+            f"[INFO] trying {protocol}: {' '.join(cmd)} "
+            f"(GIT_LFS_SKIP_SMUDGE={env.get('GIT_LFS_SKIP_SMUDGE', '')})"
+        )
         if dry_run:
             return True, None
         result = subprocess.run(
             cmd,
             cwd=sciskill_root,
             check=False,
+            env=env,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,
