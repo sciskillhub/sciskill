@@ -24,49 +24,6 @@
   "successful_query_count": 44,
   "report": "skill_report.json",
   "query_failures": [],
-  "repo_error_count": 1,
-  "repo_errors": [
-    {
-      "repo": "FreedomIntelligence/OpenClaw-Medical-Skills",
-      "matched_domain_topics": [
-        "medical"
-      ],
-      "matched_qualifier_topics": [
-        "openclaw-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "medical",
-          "qualifier_topic": "openclaw-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "add_failed",
-      "error": "Both SSH and HTTPS failed for FreedomIntelligence/OpenClaw-Medical-Skills",
-      "chosen_skill_path": "skills/adaptyv/SKILL.md",
-      "front_matter": {
-        "name": "adaptyv",
-        "description": "Cloud laboratory platform for automated protein testing and validation. Use when designing proteins and needing experimental validation including binding assays, expression testing, thermostability measurements, enzyme activity assays, or protein sequence optimization. Also use for submitting experiments via API, tracking experiment status, downloading results, optimizing protein sequences for better expression using computational tools (NetSolP, SoluProt, SolubleMPNN, ESM), or managing protein design workflows with wet-lab validation.",
-        "license": "Unknown",
-        "metadata": {
-          "skill-author": "K-Dense Inc."
-        }
-      },
-      "html_url": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills",
-      "submodule_add_attempts": [
-        {
-          "protocol": "https",
-          "url": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills.git",
-          "returncode": 128,
-          "stderr": "Cloning into '/home/runner/work/sciskill/sciskill/open-source/FreedomIntelligence/OpenClaw-Medical-Skills'...\nDownloading skills/cellagent-annotation/repo/CellTypeAgent/data/GPTCellType/datasets/Azimuth.csv (48 KB)\nError downloading object: skills/cellagent-annotation/repo/CellTypeAgent/data/GPTCellType/datasets/Azimuth.csv (b4d722e): Smudge error: Error downloading skills/cellagent-annotation/repo/CellTypeAgent/data/GPTCellType/datasets/Azimuth.csv (b4d722e400f0633234816265a9725df556e1ccd77dc7cf82e9f139723ec5fb27): batch response: Git LFS is disabled for this repository.\n\nErrors logged to '/home/runner/work/sciskill/sciskill/.git/modules/open-source/FreedomIntelligence/OpenClaw-Medical-Skills/lfs/logs/20260323T084632.407241753.log'.\nUse `git lfs logs last` to view the log.\nerror: external filter 'git-lfs filter-process' failed\nfatal: skills/cellagent-annotation/repo/CellTypeAgent/data/GPTCellType/datasets/Azimuth.csv: smudge filter lfs failed\nfatal: unable to checkout submodule 'open-source/FreedomIntelligence/OpenClaw-Medical-Skills'"
-        },
-        {
-          "protocol": "ssh",
-          "url": "git@github.com:FreedomIntelligence/OpenClaw-Medical-Skills.git",
-          "returncode": 128,
-          "stderr": "Cloning into '/home/runner/work/sciskill/sciskill/open-source/FreedomIntelligence/OpenClaw-Medical-Skills'...\ngit@github.com: Permission denied (publickey).\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\nfatal: clone of 'git@github.com:FreedomIntelligence/OpenClaw-Medical-Skills.git' into submodule path '/home/runner/work/sciskill/sciskill/open-source/FreedomIntelligence/OpenClaw-Medical-Skills' failed"
-        }
-      ]
-    }
-  ]
+  "repo_error_count": 0,
+  "repo_errors": []
 }

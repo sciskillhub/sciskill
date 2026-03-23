@@ -23,7 +23,7 @@
   "query_count": 44,
   "successful_query_count": 44,
   "query_failure_count": 0,
-  "repo_error_count": 1,
+  "repo_error_count": 0,
   "error_report": "skill_errors.json",
   "repo_count": 44,
   "results": [
@@ -921,7 +921,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "add_failed",
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills.git",
       "chosen_skill_path": "skills/adaptyv/SKILL.md",
       "front_matter": {
         "name": "adaptyv",
@@ -931,7 +933,8 @@
           "skill-author": "K-Dense Inc."
         }
       },
-      "html_url": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills"
+      "html_url": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FreedomIntelligence/OpenClaw-Medical-Skills"
     }
   ]
 }
