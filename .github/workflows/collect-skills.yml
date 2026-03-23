@@ -48,11 +48,12 @@ jobs:
             --domain-topics-file config/domain_topics.txt \
             --qualifier-topics-file config/qualifier_topics.txt \
             --max-repos "$MAX_REPOS" \
-            --report skill_report.json
+            --report skill_report.json \
+            --error-report skill_errors.json
 
       - name: Commit changes
         run: |
-          git add .gitmodules skill_report.json open-source/
+          git add .gitmodules skill_report.json skill_errors.json open-source/
           git add -A config
           git diff --cached --quiet && exit 0
           git commit -m "chore: collect valid skill repos"

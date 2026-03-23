@@ -22,6 +22,7 @@ API_ROOT = "https://api.github.com"
 API_VERSION = "2022-11-28"
 SEARCH_PAGE_DELAY_SECONDS = 2.5
 RATE_LIMIT_BUFFER_SECONDS = 1
+SUBPROCESS_OUTPUT_LIMIT = 4000
 
 Protocol = Literal["ssh", "https"]
 
@@ -41,6 +42,12 @@ class QuerySpec:
     domain_topic: Optional[str] = None
     qualifier_topic: Optional[str] = None
     legacy_topic: Optional[str] = None
+
+
+class SubmoduleAddError(RuntimeError):
+    def __init__(self, full_name: str, attempts: List[Dict[str, Any]]):
+        super().__init__(f"Both SSH and HTTPS failed for {full_name}")
+        self.attempts = attempts
 
 
 def gh_headers(token: str) -> Dict[str, str]:
@@ -501,6 +508,21 @@ def remove_path(path: Path) -> None:
         shutil.rmtree(path, ignore_errors=True)
 
 
+def truncate_output(text: str, limit: int = SUBPROCESS_OUTPUT_LIMIT) -> str:
+    text = text.strip()
+    if len(text) <= limit:
+        return text
+    return text[:limit] + "..."
+
+
+def default_error_report_path(report_path: Path) -> Path:
+    if report_path.name.endswith("_report.json"):
+        return report_path.with_name(report_path.name.replace("_report.json", "_errors.json"))
+    if report_path.suffix:
+        return report_path.with_name(f"{report_path.stem}_errors{report_path.suffix}")
+    return report_path.with_name(report_path.name + "_errors.json")
+
+
 def add_submodule_with_fallback(sciskill_root: Path, full_name: str, dry_run: bool = False) -> Tuple[str, str]:
     owner, repo = full_name.split("/", 1)
     ssh_url = f"git@github.com:{owner}/{repo}.git"
@@ -509,11 +531,12 @@ def add_submodule_with_fallback(sciskill_root: Path, full_name: str, dry_run: bo
     preferred_url, preferred_protocol = choose_clone_url(full_name)
     fallback_url = https_url if preferred_protocol == "ssh" else ssh_url
     fallback_protocol = "https" if preferred_protocol == "ssh" else "ssh"
+    attempts: List[Dict[str, Any]] = []
 
     target = submodule_target_path(sciskill_root, full_name)
     target.parent.mkdir(parents=True, exist_ok=True)
 
-    def try_add(url: str, protocol: str) -> bool:
+    def try_add(url: str, protocol: str) -> Tuple[bool, Optional[Dict[str, Any]]]:
         cmd = [
             "git",
             "submodule",
@@ -523,12 +546,36 @@ def add_submodule_with_fallback(sciskill_root: Path, full_name: str, dry_run: bo
         ]
         print(f"[INFO] trying {protocol}: {' '.join(cmd)}")
         if dry_run:
-            return True
-        result = subprocess.run(cmd, cwd=sciskill_root, check=False)
-        return result.returncode == 0
+            return True, None
+        result = subprocess.run(
+            cmd,
+            cwd=sciskill_root,
+            check=False,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        if result.returncode == 0:
+            return True, None
 
-    if try_add(preferred_url, preferred_protocol):
+        attempt = {
+            "protocol": protocol,
+            "url": url,
+            "returncode": result.returncode,
+        }
+        stdout = truncate_output(result.stdout)
+        stderr = truncate_output(result.stderr)
+        if stdout:
+            attempt["stdout"] = stdout
+        if stderr:
+            attempt["stderr"] = stderr
+        return False, attempt
+
+    ok, attempt = try_add(preferred_url, preferred_protocol)
+    if ok:
         return preferred_protocol, preferred_url
+    if attempt is not None:
+        attempts.append(attempt)
 
     print(f"[WARN] {preferred_protocol} failed for {full_name}, retrying with {fallback_protocol}", file=sys.stderr)
 
@@ -537,10 +584,13 @@ def add_submodule_with_fallback(sciskill_root: Path, full_name: str, dry_run: bo
         modules_dir = sciskill_root / ".git" / "modules" / "open-source" / owner / repo
         remove_path(modules_dir)
 
-    if try_add(fallback_url, fallback_protocol):
+    ok, attempt = try_add(fallback_url, fallback_protocol)
+    if ok:
         return fallback_protocol, fallback_url
+    if attempt is not None:
+        attempts.append(attempt)
 
-    raise RuntimeError(f"Both SSH and HTTPS failed for {full_name}")
+    raise SubmoduleAddError(full_name, attempts)
 
 
 def main() -> int:
@@ -559,6 +609,7 @@ def main() -> int:
     parser.add_argument("--max-repos", type=int, default=50, help="Max repos per query")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--report", default="skill_report.json")
+    parser.add_argument("--error-report", default="", help="Path to save detailed error information")
     args = parser.parse_args()
 
     if not args.token:
@@ -611,6 +662,7 @@ def main() -> int:
     all_repos: List[Dict[str, Any]] = []
     repo_topics: Dict[str, Dict[str, Set[Any]]] = {}
     query_failures: List[Dict[str, Any]] = []
+    repo_errors: List[Dict[str, Any]] = []
     successful_query_count = 0
 
     for spec in queries:
@@ -685,6 +737,13 @@ def main() -> int:
                     "repo": full_name,
                     **build_repo_topic_payload(repo_topics.get(full_name)),
                     "status": "error",
+                }
+            )
+            repo_errors.append(
+                {
+                    "repo": full_name,
+                    **build_repo_topic_payload(repo_topics.get(full_name)),
+                    "status": "error",
                     "error": str(e),
                 }
             )
@@ -726,21 +785,34 @@ def main() -> int:
             )
         except Exception as e:
             print(f"[WARN] submodule add failed for {full_name}: {e}", file=sys.stderr)
-            report.append(
-                {
-                    "repo": full_name,
-                    **build_repo_topic_payload(repo_topics.get(full_name)),
-                    "status": "add_failed",
-                    "error": str(e),
-                    "chosen_skill_path": chosen.skill_path,
-                    "front_matter": chosen.front_matter,
-                    "html_url": chosen.repo_html_url,
-                }
-            )
+            entry = {
+                "repo": full_name,
+                **build_repo_topic_payload(repo_topics.get(full_name)),
+                "status": "add_failed",
+                "chosen_skill_path": chosen.skill_path,
+                "front_matter": chosen.front_matter,
+                "html_url": chosen.repo_html_url,
+            }
+            report.append(entry)
+            error_entry = {
+                "repo": full_name,
+                **build_repo_topic_payload(repo_topics.get(full_name)),
+                "status": "add_failed",
+                "error": str(e),
+                "chosen_skill_path": chosen.skill_path,
+                "front_matter": chosen.front_matter,
+                "html_url": chosen.repo_html_url,
+            }
+            if isinstance(e, SubmoduleAddError):
+                error_entry["submodule_add_attempts"] = e.attempts
+            repo_errors.append(error_entry)
 
         time.sleep(0.3)
 
-    report_path = Path(args.report).resolve()
+    report_arg_path = Path(args.report)
+    error_report_arg_path = Path(args.error_report) if args.error_report else default_error_report_path(report_arg_path)
+    report_path = report_arg_path.resolve()
+    error_report_path = error_report_arg_path.resolve()
     report_path.write_text(
         json.dumps(
             make_json_safe(
@@ -751,7 +823,9 @@ def main() -> int:
                 "legacy_topics": legacy_topics,
                 "query_count": len(queries),
                 "successful_query_count": successful_query_count,
-                "query_failures": query_failures,
+                "query_failure_count": len(query_failures),
+                "repo_error_count": len(repo_errors),
+                "error_report": str(error_report_arg_path),
                 "repo_count": len(repos),
                 "results": report,
                 }
@@ -761,7 +835,29 @@ def main() -> int:
         ),
         encoding="utf-8",
     )
+    error_report_path.write_text(
+        json.dumps(
+            make_json_safe(
+                {
+                    "base_query": args.query,
+                    "domain_topics": domain_topics,
+                    "qualifier_topics": qualifier_topics,
+                    "legacy_topics": legacy_topics,
+                    "query_count": len(queries),
+                    "successful_query_count": successful_query_count,
+                    "report": str(report_arg_path),
+                    "query_failures": query_failures,
+                    "repo_error_count": len(repo_errors),
+                    "repo_errors": repo_errors,
+                }
+            ),
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
     print(f"\nReport saved to: {report_path}")
+    print(f"Error report saved to: {error_report_path}")
     if queries and successful_query_count == 0:
         print("ERROR: all GitHub search queries failed", file=sys.stderr)
         return 1
