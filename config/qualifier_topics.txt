@@ -1,3 +1,4 @@
 ai-agents
 agent-skills
 ai-skills
+openclaw-skills

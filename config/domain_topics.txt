@@ -8,3 +8,4 @@ transcriptomics
 scverse
 single-cell
 population-genetics
+medical
