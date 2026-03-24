@@ -256,3 +256,6 @@ url = https://github.com/Elfredaaroused655/claude-skills.git
 [submodule "open-source/AlterLab-IEU/AlterLab-Academic-Skills"]
 	path = open-source/AlterLab-IEU/AlterLab-Academic-Skills
 	url = https://github.com/AlterLab-IEU/AlterLab-Academic-Skills.git
+[submodule "open-source/GPTomics/bioSkills"]
+	path = open-source/GPTomics/bioSkills
+	url = https://github.com/GPTomics/bioSkills.git
