@@ -1,6 +1,7 @@
 {
   "base_query": "archived:false is:public",
   "domain_topics": [
+    "science",
     "bioinformatics",
     "genomics",
     "computational-biology",
@@ -20,8 +21,8 @@
     "openclaw-skills"
   ],
   "legacy_topics": [],
-  "query_count": 44,
-  "successful_query_count": 44,
+  "query_count": 48,
+  "successful_query_count": 48,
   "report": "skill_report.json",
   "query_failures": [],
   "repo_error_count": 0,

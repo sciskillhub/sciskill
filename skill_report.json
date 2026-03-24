@@ -1,6 +1,7 @@
 {
   "base_query": "archived:false is:public",
   "domain_topics": [
+    "science",
     "bioinformatics",
     "genomics",
     "computational-biology",
@@ -20,13 +21,225 @@
     "openclaw-skills"
   ],
   "legacy_topics": [],
-  "query_count": 44,
-  "successful_query_count": 44,
+  "query_count": 48,
+  "successful_query_count": 48,
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "skill_errors.json",
-  "repo_count": 44,
+  "repo_count": 54,
   "results": [
+    {
+      "repo": "ULudo/ClawReview",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "cesifoti/jaigp",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "tumf/greats-soul-archive",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "effieklimi/ensembl-mcp-server",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "eamag/papers2dataset",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/eamag/papers2dataset.git",
+      "chosen_skill_path": "skill/SKILL.md",
+      "front_matter": {
+        "name": "scientific-papers-to-dataset",
+        "description": "Build structured datasets from academic papers. Use when the user wants to extract structured data from scientific literature, traverse citation graphs, search OpenAlex for papers, or create datasets from PDFs for research purposes."
+      },
+      "html_url": "https://github.com/eamag/papers2dataset",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/eamag/papers2dataset"
+    },
+    {
+      "repo": "frankdierolf/trainsci",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "jd-coderepos/awesome-science-ai-agents",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "Agentic-Systems-Lab/rigorous",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "sciskillhub/sciskill",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/sciskillhub/sciskill.git",
+      "chosen_skill_path": "open-source/K-Dense-AI/claude-scientific-skills/scientific-skills/adaptyv/SKILL.md",
+      "front_matter": {
+        "name": "adaptyv",
+        "description": "Cloud laboratory platform for automated protein testing and validation. Use when designing proteins and needing experimental validation including binding assays, expression testing, thermostability measurements, enzyme activity assays, or protein sequence optimization. Also use for submitting experiments via API, tracking experiment status, downloading results, optimizing protein sequences for better expression using computational tools (NetSolP, SoluProt, SolubleMPNN, ESM), or managing protein design workflows with wet-lab validation.",
+        "license": "Unknown",
+        "metadata": {
+          "skill-author": "K-Dense Inc."
+        }
+      },
+      "html_url": "https://github.com/sciskillhub/sciskill",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/sciskillhub/sciskill"
+    },
+    {
+      "repo": "th3vib3coder/vibe-science-codex",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/th3vib3coder/vibe-science-codex.git",
+      "chosen_skill_path": "SKILL.md",
+      "front_matter": {
+        "name": "vibe-science-codex",
+        "description": "Scientific research engine with adversarial review, tree search over hypotheses, and serendipity detection. Turns a coding agent into a rigorous research partner that hunts for artifacts, confounders, and unexpected discoveries. Use this skill whenever the user mentions research, hypotheses, scientific analysis, experimental design, literature review, data validation, quality gates, claim verification, reproducibility, or any task where correctness matters more than speed. Also use when the user wants to explore a dataset scientifically, validate findings against literature, run computational experiments with adversarial review, or hunt for unexpected patterns. Do NOT use for simple Q&A, code editing without research context, or non-scientific tasks.",
+        "license": "Apache-2.0",
+        "compatibility": "Requires Python 3.8+ for enforcement scripts. Designed for OpenAI Codex multi-agent architecture.",
+        "metadata": {
+          "author": "th3vib3coder",
+          "version": "5.5.0"
+        }
+      },
+      "html_url": "https://github.com/th3vib3coder/vibe-science-codex",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/th3vib3coder/vibe-science-codex"
+    },
     {
       "repo": "foryourhealth111-pixel/Vibe-Skills",
       "matched_domain_topics": [
@@ -76,30 +289,6 @@
       "matches": []
     },
     {
-      "repo": "DrugClaw/DrugClaw",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/DrugClaw/DrugClaw",
-      "matches": []
-    },
-    {
       "repo": "Runchuan-BU/BioClaw",
       "matched_domain_topics": [
         "bioinformatics"
@@ -134,6 +323,30 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "DrugClaw/DrugClaw",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/DrugClaw/DrugClaw",
+      "matches": []
     },
     {
       "repo": "fmschulz/omics-skills",
@@ -266,23 +479,6 @@
     },
     {
       "repo": "genecell/PlanDrop",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "effieklimi/ensembl-mcp-server",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -521,6 +717,37 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "AlterLab-IEU/AlterLab-Academic-Skills",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills.git",
+      "chosen_skill_path": "skills/bioinformatics/alterlab-anndata/SKILL.md",
+      "front_matter": {
+        "name": "alterlab-anndata",
+        "description": "Data structure for annotated matrices in single-cell analysis. Use when working with .h5ad files or integrating with the scverse ecosystem. This is the data format skill—for analysis workflows use scanpy; for probabilistic models use scvi-tools; for population-scale queries use cellxgene-census. Part of the AlterLab Academic Skills suite.",
+        "license": "MIT",
+        "metadata": {
+          "skill-author": "AlterLab",
+          "version": "1.0.0"
+        }
+      },
+      "html_url": "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/AlterLab-IEU/AlterLab-Academic-Skills"
+    },
+    {
       "repo": "jackspace/ClaudeSkillz",
       "matched_domain_topics": [
         "bioinformatics"
@@ -752,7 +979,7 @@
       "matches": []
     },
     {
-      "repo": "yorkeccak/bio",
+      "repo": "agentcures/ClawCures",
       "matched_domain_topics": [
         "drug-discovery"
       ],
@@ -769,7 +996,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "agentcures/ClawCures",
+      "repo": "yorkeccak/bio",
       "matched_domain_topics": [
         "drug-discovery"
       ],
@@ -921,20 +1148,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "protocol": "https",
-      "clone_url": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills.git",
-      "chosen_skill_path": "skills/adaptyv/SKILL.md",
-      "front_matter": {
-        "name": "adaptyv",
-        "description": "Cloud laboratory platform for automated protein testing and validation. Use when designing proteins and needing experimental validation including binding assays, expression testing, thermostability measurements, enzyme activity assays, or protein sequence optimization. Also use for submitting experiments via API, tracking experiment status, downloading results, optimizing protein sequences for better expression using computational tools (NetSolP, SoluProt, SolubleMPNN, ESM), or managing protein design workflows with wet-lab validation.",
-        "license": "Unknown",
-        "metadata": {
-          "skill-author": "K-Dense Inc."
-        }
-      },
-      "html_url": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FreedomIntelligence/OpenClaw-Medical-Skills"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FreedomIntelligence/OpenClaw-Medical-Skills",
+      "matches": []
     }
   ]
 }

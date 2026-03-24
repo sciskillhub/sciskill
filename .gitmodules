@@ -244,3 +244,15 @@ url = https://github.com/Elfredaaroused655/claude-skills.git
 [submodule "open-source/FreedomIntelligence/OpenClaw-Medical-Skills"]
 	path = open-source/FreedomIntelligence/OpenClaw-Medical-Skills
 	url = https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills.git
+[submodule "open-source/eamag/papers2dataset"]
+	path = open-source/eamag/papers2dataset
+	url = https://github.com/eamag/papers2dataset.git
+[submodule "open-source/sciskillhub/sciskill"]
+	path = open-source/sciskillhub/sciskill
+	url = https://github.com/sciskillhub/sciskill.git
+[submodule "open-source/th3vib3coder/vibe-science-codex"]
+	path = open-source/th3vib3coder/vibe-science-codex
+	url = https://github.com/th3vib3coder/vibe-science-codex.git
+[submodule "open-source/AlterLab-IEU/AlterLab-Academic-Skills"]
+	path = open-source/AlterLab-IEU/AlterLab-Academic-Skills
+	url = https://github.com/AlterLab-IEU/AlterLab-Academic-Skills.git
