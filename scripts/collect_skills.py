@@ -23,6 +23,9 @@ API_VERSION = "2022-11-28"
 SEARCH_PAGE_DELAY_SECONDS = 2.5
 RATE_LIMIT_BUFFER_SECONDS = 1
 SUBPROCESS_OUTPUT_LIMIT = 4000
+EXCLUDED_REPO_FULL_NAMES = {
+    "sciskillhub/sciskill",
+}
 SUBMODULE_ADD_ENV_OVERRIDES = {
     "GIT_LFS_SKIP_SMUDGE": "1",
 }
@@ -299,6 +302,12 @@ def build_repo_topic_payload(state: Optional[Dict[str, Set[Any]]]) -> Dict[str, 
     }
 
 
+def is_excluded_repo(full_name: Optional[str]) -> bool:
+    if not full_name:
+        return False
+    return full_name.strip().lower() in EXCLUDED_REPO_FULL_NAMES
+
+
 def search_repositories(
     token: str,
     query: str,
@@ -323,14 +332,16 @@ def search_repositories(
             },
         )
         data = r.json()
-        items = data.get("items", [])
+        raw_items = data.get("items", [])
         # Search API has a much lower per-minute quota than the core REST API.
         time.sleep(SEARCH_PAGE_DELAY_SECONDS)
-        if not items:
+        if not raw_items:
             break
 
+        items = [repo for repo in raw_items if not is_excluded_repo(repo.get("full_name"))]
+
         repos.extend(items)
-        if len(items) < per_page:
+        if len(raw_items) < per_page:
             break
         page += 1
 
@@ -351,7 +362,7 @@ def dedupe_repos(repos: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     out: List[Dict[str, Any]] = []
     for repo in repos:
         full_name = repo.get("full_name")
-        if not full_name or full_name in seen:
+        if not full_name or full_name in seen or is_excluded_repo(full_name):
             continue
         seen.add(full_name)
         out.append(repo)
