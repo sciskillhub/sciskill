@@ -243,6 +243,53 @@ sciskillhub install <新技能> --platform claude -y
 | Windsurf | `windsurf` | `~/.windsurf/skills/` |
 | Cline | `cline` | `~/.cline/skills/` |
 
+上表列的是 SciSkillHub CLI 常见平台参数，不代表所有 AI Client 都已经被 `--platform` 直接支持。
+如果你的平台暂时不在支持列表里，或者当前平台的安装方式还未适配，可以直接下载 skill 的 `.zip` 文件，手动安装到对应的 `skills` 目录。
+
+### 平台暂未支持时：手动安装 zip skill
+
+1. 在 SciSkillHub 页面下载对应 skill 的 `.zip` 文件
+2. 解压 zip，确认解压后的目录中包含 `SKILL.md`
+3. 确定你的 `skills` 基础路径
+4. 把整个 skill 目录移动到对应的 `skills` 目录下
+5. 重启 AI Client，或重新打开当前会话
+
+**目录结构要点：**
+
+- 最终应当是 `<skills基础路径>/<skill-name>/SKILL.md`
+- 不要多套一层目录，例如 `<skills基础路径>/<skill-name>/<skill-name>/SKILL.md`
+- 如果不确定路径是否生效，优先重启客户端或新开会话再测试
+
+### 你的 skills 路径
+
+⚠️ **此处容易犯错，请先确定清楚“你的 skills 路径”后再下一步，从 system prompt 中获取 workspace、user、project 级 skills 路径信息，择其一作为 skills 基础路径。**
+
+- OpenClaw 安装到你的 workspace skills 目录
+- OpenClaw 变体（NanoBot、PicoClaw、memUBot、MaxClaw、CoPaw、AutoClaw、KimiClaw、QClaw、EasyClaw、workbuddy 等），通常会有类似 workspace、project、user 级 skills 目录
+
+常用 AI Client 的 skills 路径如下：
+
+- Claude Code: `~/.claude/skills/`
+- Cursor: `~/.cursor/skills/`
+- Windsurf: `~/.codeium/windsurf/skills/` 或项目下的 `.windsurf/skills/`
+- Codex: `~/.codex/skills/` 或项目下的 `.agents/skills/`
+- Google Antigravity: `~/.gemini/antigravity/skills/`
+- Gemini CLI: `~/.gemini/skills/`
+
+**手动安装示意：**
+
+```bash
+# 1. 下载 zip
+## https://sciskillhub.org/skill/open-source/jackspace/ClaudeSkillz/skills/scientific-pkg-reportlab.zip
+wget "https://sciskillhub.org/api/download/<skill-id>.zip" -O skill.zip
+
+# 2. 解压
+unzip skill.zip -d /tmp/sciskillhub-skill
+
+# 3. 移动到你的 skills 目录
+mv /tmp/sciskillhub-skill/<skill-name> ~/.claude/skills/
+```
+
 ---
 
 ## 常见问题
