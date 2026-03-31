@@ -262,3 +262,6 @@ url = https://github.com/Elfredaaroused655/claude-skills.git
 [submodule "open-source/Sapiens-ostracism678/finance-skills"]
 	path = open-source/Sapiens-ostracism678/finance-skills
 	url = https://github.com/Sapiens-ostracism678/finance-skills.git
+[submodule "open-source/genepattern/module-toolkit"]
+	path = open-source/genepattern/module-toolkit
+	url = https://github.com/genepattern/module-toolkit.git
