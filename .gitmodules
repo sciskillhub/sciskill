@@ -265,3 +265,6 @@ url = https://github.com/Elfredaaroused655/claude-skills.git
 [submodule "open-source/genepattern/module-toolkit"]
 	path = open-source/genepattern/module-toolkit
 	url = https://github.com/genepattern/module-toolkit.git
+[submodule "open-source/Nonsteroidevangel872/research-writing-skill"]
+	path = open-source/Nonsteroidevangel872/research-writing-skill
+	url = https://github.com/Nonsteroidevangel872/research-writing-skill.git

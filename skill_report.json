@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "skill_errors.json",
-  "repo_count": 62,
+  "repo_count": 63,
   "results": [
     {
       "repo": "ULudo/ClawReview",
@@ -80,7 +80,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "BlackRoad-Agents/quantum-physics-agents",
+      "repo": "BlackRoad-Archive/quantum-physics-agents",
       "matched_domain_topics": [
         "science"
       ],
@@ -242,6 +242,23 @@
       "matches": []
     },
     {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "HelixGenomics/Genomic-Agent-Discovery",
       "matched_domain_topics": [
         "bioinformatics",
@@ -293,7 +310,31 @@
       "matches": []
     },
     {
-      "repo": "aristoteleo/PantheonOS",
+      "repo": "genepattern/module-toolkit",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/genepattern/module-toolkit",
+      "matches": []
+    },
+    {
+      "repo": "AiAgentKarl/bioinformatics-mcp-server",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -326,30 +367,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/Runchuan-BU/BioClaw",
-      "matches": []
-    },
-    {
-      "repo": "genepattern/module-toolkit",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/genepattern/module-toolkit",
       "matches": []
     },
     {
@@ -429,23 +446,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ammawla/encode-toolkit",
       "matches": []
-    },
-    {
-      "repo": "AiAgentKarl/bioinformatics-mcp-server",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "DrugClaw/DrugClaw",
@@ -844,6 +844,42 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "Nonsteroidevangel872/research-writing-skill",
+      "matched_domain_topics": [
+        "computational-biology",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-skills"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/Nonsteroidevangel872/research-writing-skill.git",
+      "chosen_skill_path": "SKILL.md",
+      "front_matter": {
+        "name": "research-writing",
+        "description": "科研论文写作助手，提供 30 个 Prompt 模板覆盖论文写作全流程。\n当用户提到：论文写作、润色、翻译、文献综述、摘要、引言、方法章节、回复审稿人、基金申请、研究计划、学术演讲 PPT、LaTeX 编辑、学术图表、实验结果分析、模拟审稿、去 AI 味、文献对比、找研究空白、论文大纲时使用。\n",
+        "license": "MIT",
+        "metadata": {
+          "author": "research-writing",
+          "version": "2.0.0"
+        }
+      },
+      "html_url": "https://github.com/Nonsteroidevangel872/research-writing-skill",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Nonsteroidevangel872/research-writing-skill"
     },
     {
       "repo": "pswider/tula",
