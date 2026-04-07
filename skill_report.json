@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "skill_errors.json",
-  "repo_count": 64,
+  "repo_count": 67,
   "results": [
     {
       "repo": "ULudo/ClawReview",
@@ -242,6 +242,79 @@
       "matches": []
     },
     {
+      "repo": "naity/FM4Life",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/naity/FM4Life.git",
+      "chosen_skill_path": "skills/alphafold/SKILL.md",
+      "front_matter": {
+        "name": "alphafold",
+        "description": "Skill for protein structure prediction and analysis with AlphaFold. Use this skill whenever a user wants to predict or fetch a protein 3D structure, download structures from the AlphaFold Database (AFDB), run ColabFold for novel proteins, parse pLDDT confidence scores or PAE (predicted aligned error) from AlphaFold outputs, predict structures of protein complexes or multimers, or work with AlphaFold3 for proteins with DNA/RNA/small molecules. Also trigger when the user mentions AlphaFold, AF2, AF3, AFDB, ColabFold, pLDDT, PAE, predicted aligned error, protein folding, or structure prediction from sequence.",
+        "license": "Apache-2.0 (code); CC BY 4.0 (model parameters)",
+        "metadata": {
+          "skill-author": "FM4Life",
+          "model-source": "https://github.com/google-deepmind/alphafold",
+          "paper": "Jumper et al., Nature 2021 — https://doi.org/10.1038/s41586-021-03819-2",
+          "af3-paper": "Abramson et al., Nature 2024 — https://doi.org/10.1038/s41586-024-07487-w"
+        }
+      },
+      "html_url": "https://github.com/naity/FM4Life",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/naity/FM4Life"
+    },
+    {
+      "repo": "HolobiomicsLab/Mimosa-AI",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -269,6 +342,23 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
       "matches": []
+    },
+    {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "HelixGenomics/Genomic-Agent-Discovery",
@@ -327,23 +417,6 @@
         },
         {
           "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "aristoteleo/PantheonOS",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
           "qualifier_topic": "ai-agents"
         }
       ],
@@ -868,6 +941,37 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "ma-compbio-lab/SkillFoundry",
+      "matched_domain_topics": [
+        "computational-biology",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "protocol": "https",
+      "clone_url": "https://github.com/ma-compbio-lab/SkillFoundry.git",
+      "chosen_skill_path": "skills/clinical-biomedical-data-science/clinicaltrials-study-search/SKILL.md",
+      "front_matter": {
+        "name": "clinicaltrials-study-search",
+        "description": "Use this skill to search the current ClinicalTrials.gov v2 API for condition or keyword matches when you need official clinical-study metadata. Do not use it for legacy API URLs or offline work."
+      },
+      "html_url": "https://github.com/ma-compbio-lab/SkillFoundry",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ma-compbio-lab/SkillFoundry"
+    },
+    {
       "repo": "Nonsteroidevangel872/research-writing-skill",
       "matched_domain_topics": [
         "computational-biology",
@@ -969,6 +1073,25 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "Sapiens-ostracism678/finance-skills",
+      "matched_domain_topics": [
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sapiens-ostracism678/finance-skills",
+      "matches": []
+    },
+    {
       "repo": "zacklecon/claude-skills",
       "matched_domain_topics": [
         "clinical-research",
@@ -998,23 +1121,21 @@
       "matches": []
     },
     {
-      "repo": "Sapiens-ostracism678/finance-skills",
+      "repo": "AlexThePro939yt/scientific-validation-hub",
       "matched_domain_topics": [
-        "computational-biology"
+        "scientific-visualization"
       ],
       "matched_qualifier_topics": [
-        "agent-skills"
+        "ai-agents"
       ],
       "matched_topic_pairs": [
         {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "ai-agents"
         }
       ],
       "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sapiens-ostracism678/finance-skills",
-      "matches": []
+      "status": "no_valid_skill"
     },
     {
       "repo": "kimimgo/viznoir",
@@ -1034,23 +1155,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/kimimgo/viznoir",
       "matches": []
-    },
-    {
-      "repo": "AlexThePro939yt/scientific-validation-hub",
-      "matched_domain_topics": [
-        "scientific-visualization"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "scientific-visualization",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "aleeepassarelli/scientific-validation-hub",
@@ -1159,6 +1263,23 @@
       "matches": []
     },
     {
+      "repo": "devangdhyani/RAG-MEDICAL-CHATBOT-",
+      "matched_domain_topics": [
+        "medical"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "David777-design/CLOVER_0015",
       "matched_domain_topics": [
         "medical"
@@ -1211,23 +1332,6 @@
     },
     {
       "repo": "RakshitRajVIT/MedicalBotAssistant",
-      "matched_domain_topics": [
-        "medical"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "medical",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "devangdhyani/RAG-MEDICAL-CHATBOT-",
       "matched_domain_topics": [
         "medical"
       ],
