@@ -26,8 +26,25 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "skill_errors.json",
-  "repo_count": 67,
+  "repo_count": 68,
   "results": [
+    {
+      "repo": "mareforma/mareforma",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
     {
       "repo": "ULudo/ClawReview",
       "matched_domain_topics": [
@@ -81,23 +98,6 @@
     },
     {
       "repo": "BlackRoad-Archive/quantum-physics-agents",
-      "matched_domain_topics": [
-        "science"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "mareforma/mareforma",
       "matched_domain_topics": [
         "science"
       ],
@@ -242,63 +242,7 @@
       "matches": []
     },
     {
-      "repo": "naity/FM4Life",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology",
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills",
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "protocol": "https",
-      "clone_url": "https://github.com/naity/FM4Life.git",
-      "chosen_skill_path": "skills/alphafold/SKILL.md",
-      "front_matter": {
-        "name": "alphafold",
-        "description": "Skill for protein structure prediction and analysis with AlphaFold. Use this skill whenever a user wants to predict or fetch a protein 3D structure, download structures from the AlphaFold Database (AFDB), run ColabFold for novel proteins, parse pLDDT confidence scores or PAE (predicted aligned error) from AlphaFold outputs, predict structures of protein complexes or multimers, or work with AlphaFold3 for proteins with DNA/RNA/small molecules. Also trigger when the user mentions AlphaFold, AF2, AF3, AFDB, ColabFold, pLDDT, PAE, predicted aligned error, protein folding, or structure prediction from sequence.",
-        "license": "Apache-2.0 (code); CC BY 4.0 (model parameters)",
-        "metadata": {
-          "skill-author": "FM4Life",
-          "model-source": "https://github.com/google-deepmind/alphafold",
-          "paper": "Jumper et al., Nature 2021 — https://doi.org/10.1038/s41586-021-03819-2",
-          "af3-paper": "Abramson et al., Nature 2024 — https://doi.org/10.1038/s41586-024-07487-w"
-        }
-      },
-      "html_url": "https://github.com/naity/FM4Life",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/naity/FM4Life"
-    },
-    {
-      "repo": "HolobiomicsLab/Mimosa-AI",
+      "repo": "aristoteleo/PantheonOS",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -344,7 +288,73 @@
       "matches": []
     },
     {
-      "repo": "aristoteleo/PantheonOS",
+      "repo": "genepattern/module-toolkit",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/genepattern/module-toolkit",
+      "matches": []
+    },
+    {
+      "repo": "naity/FM4Life",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/naity/FM4Life",
+      "matches": []
+    },
+    {
+      "repo": "HolobiomicsLab/Mimosa-AI",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -422,30 +432,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "genepattern/module-toolkit",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/genepattern/module-toolkit",
-      "matches": []
     },
     {
       "repo": "AiAgentKarl/bioinformatics-mcp-server",
@@ -960,16 +946,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "protocol": "https",
-      "clone_url": "https://github.com/ma-compbio-lab/SkillFoundry.git",
-      "chosen_skill_path": "skills/clinical-biomedical-data-science/clinicaltrials-study-search/SKILL.md",
-      "front_matter": {
-        "name": "clinicaltrials-study-search",
-        "description": "Use this skill to search the current ClinicalTrials.gov v2 API for condition or keyword matches when you need official clinical-study metadata. Do not use it for legacy API URLs or offline work."
-      },
-      "html_url": "https://github.com/ma-compbio-lab/SkillFoundry",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ma-compbio-lab/SkillFoundry"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ma-compbio-lab/SkillFoundry",
+      "matches": []
     },
     {
       "repo": "Nonsteroidevangel872/research-writing-skill",
@@ -1191,6 +1170,23 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/javidmardanov/paper-banana-skill",
       "matches": []
+    },
+    {
+      "repo": "Froztedd/HELIX-AI",
+      "matched_domain_topics": [
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "mondalsou/lead-optimization-agent",
