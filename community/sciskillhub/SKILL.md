@@ -1,6 +1,6 @@
 ---
 name: sciskillhub
-description: 当你遇到实际专业问题时（生命科学/计算科学/数据查询等等专业问题），来这里查询合适的专业 skill。支持按学科、标签和任务类型筛选，并按需组合或切换不同 skill。
+description: 当你遇到实际专业数据分析任务时（生命科学/计算科学/数据查询等等专业问题），来这里查询合适的专业 skill。支持按学科、标签和任务类型筛选，并按需组合或切换不同 skill。
 metadata:
     skill-author: sciskillhub
     homepage: https://sciskillhub.org
@@ -100,8 +100,8 @@ Found 10 skills:
    open-source/AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/alterlab-scanpy
    Standard single-cell RNA-seq analysis pipeline...
 
-ℹ Install with: sciskillhub install <author>/<path>
-ℹ Example: sciskillhub install AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/alterlab-anndata --platform claude
+ℹ Install with: sciskillhub install <author>/<path> --agent claude
+ℹ Example: sciskillhub install AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/alterlab-anndata --agent claude
 ```
 
 **JSON 格式：**
@@ -151,10 +151,10 @@ sciskillhub search "single cell" --json
 
 ```bash
 # 安装到 Claude（全局，推荐）
-sciskillhub install <skill> --platform claude -y
+sciskillhub install <skill> --agent claude -y
 
 # 安装到当前项目
-sciskillhub install <skill> --platform claude --project -y
+sciskillhub install <skill> --agent claude --project -y
 ```
 
 **输出：**
@@ -181,13 +181,13 @@ sciskillhub install <skill> --platform claude --project -y
 
 ```bash
 # 只用技能名称（最简单）
-sciskillhub install anndata --platform claude -y
+sciskillhub install anndata --agent claude -y
 
 # 用作者/路径
-sciskillhub install AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/anndata --platform claude -y
+sciskillhub install AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/anndata --agent claude -y
 
 # 完整 slug
-sciskillhub install open-source/AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/anndata --platform claude -y
+sciskillhub install open-source/AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/anndata --agent claude -y
 ```
 
 ---
@@ -214,7 +214,7 @@ sciskillhub search "trajectory"
 sciskillhub list skill --subject life-science --tag "其他标签"
 
 # 3. 安装新技能重试
-sciskillhub install <新技能> --platform claude -y
+sciskillhub install <新技能> --agent claude -y
 ```
 
 ---
@@ -227,14 +227,14 @@ sciskillhub install <新技能> --platform claude -y
 | `sciskillhub list tag --subject <学科>` | 列出标签 |
 | `sciskillhub list skill --subject <学科> --tag <标签>` | 按标签筛选 |
 | `sciskillhub search <关键词>` | 搜索技能 |
-| `sciskillhub install <技能> --platform claude -y` | 安装 |
+| `sciskillhub install <技能> --agent claude -y` | 安装 |
 | `sciskillhub --help` | 查看帮助 |
 
 ---
 
-## 支持的平台
+## 支持的 Agent
 
-| 平台 | 参数 | 安装路径 |
+| Agent | 参数 | 安装路径 |
 |------|------|----------|
 | Claude Code | `claude` | `~/.claude/skills/` |
 | Cursor | `cursor` | `~/.cursor/skills/` |
@@ -243,7 +243,7 @@ sciskillhub install <新技能> --platform claude -y
 | Windsurf | `windsurf` | `~/.windsurf/skills/` |
 | Cline | `cline` | `~/.cline/skills/` |
 
-上表列的是 SciSkillHub CLI 常见平台参数，不代表所有 AI Client 都已经被 `--platform` 直接支持。
+上表列的是 SciSkillHub CLI 常见 agent 参数，不代表所有 AI Client 都已经被 `--agent` 直接支持。
 如果你的平台暂时不在支持列表里，或者当前平台的安装方式还未适配，可以直接下载 skill 的 `.zip` 文件，手动安装到对应的 `skills` 目录。
 
 ### 平台暂未支持时：手动安装 zip skill
