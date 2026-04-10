@@ -274,3 +274,6 @@ url = https://github.com/Elfredaaroused655/claude-skills.git
 [submodule "open-source/ma-compbio-lab/SkillFoundry"]
 	path = open-source/ma-compbio-lab/SkillFoundry
 	url = https://github.com/ma-compbio-lab/SkillFoundry.git
+[submodule "open-source/K-Dense-AI/scientific-agent-skills"]
+	path = open-source/K-Dense-AI/scientific-agent-skills
+	url = https://github.com/K-Dense-AI/scientific-agent-skills.git
