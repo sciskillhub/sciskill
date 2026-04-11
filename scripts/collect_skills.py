@@ -13,7 +13,7 @@ import time
 from dataclasses import dataclass
 from datetime import date, datetime
 from pathlib import Path
-from typing import Any, Dict, List, Literal, Optional, Set, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple
 
 import requests
 import yaml
@@ -26,11 +26,7 @@ SUBPROCESS_OUTPUT_LIMIT = 4000
 EXCLUDED_REPO_FULL_NAMES = {
     "sciskillhub/sciskill",
 }
-SUBMODULE_ADD_ENV_OVERRIDES = {
-    "GIT_LFS_SKIP_SMUDGE": "1",
-}
-
-Protocol = Literal["ssh", "https"]
+MANIFEST_FILENAME = "skill-manifest.json"
 
 
 @dataclass
@@ -50,9 +46,9 @@ class QuerySpec:
     legacy_topic: Optional[str] = None
 
 
-class SubmoduleAddError(RuntimeError):
+class CloneError(RuntimeError):
     def __init__(self, full_name: str, attempts: List[Dict[str, Any]]):
-        super().__init__(f"Both SSH and HTTPS failed for {full_name}")
+        super().__init__(f"Clone failed for {full_name}")
         self.attempts = attempts
 
 
@@ -143,54 +139,6 @@ def gh_get(url: str, token: str, params: Optional[Dict[str, Any]] = None) -> req
 
     assert last_error is not None
     raise last_error
-
-
-def run_ok(cmd: List[str], cwd: Optional[str] = None) -> bool:
-    try:
-        result = subprocess.run(
-            cmd,
-            cwd=cwd,
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL,
-            check=False,
-            timeout=20,
-        )
-        return result.returncode == 0
-    except Exception:
-        return False
-
-
-def has_ssh_key() -> bool:
-    ssh_dir = Path.home() / ".ssh"
-    if ssh_dir.exists():
-        for name in ("id_ed25519", "id_rsa", "id_ecdsa"):
-            if (ssh_dir / name).exists():
-                return True
-    return bool(os.getenv("SSH_AUTH_SOCK"))
-
-
-def ssh_available_for_repo(repo_ssh_url: str) -> bool:
-    if shutil.which("ssh") is None:
-        return False
-    if not has_ssh_key():
-        return False
-    return run_ok(["git", "ls-remote", repo_ssh_url])
-
-
-def choose_submodule_protocol(repo_ssh_url: str, repo_https_url: str) -> Protocol:
-    forced = os.getenv("SUBMODULE_PROTOCOL", "").strip().lower()
-    if forced in {"ssh", "https"}:
-        return forced  # type: ignore[return-value]
-
-    return "https"
-
-
-def choose_clone_url(full_name: str) -> Tuple[str, Protocol]:
-    owner, repo = full_name.split("/", 1)
-    ssh_url = f"git@github.com:{owner}/{repo}.git"
-    https_url = f"https://github.com/{owner}/{repo}.git"
-    protocol = choose_submodule_protocol(ssh_url, https_url)
-    return (ssh_url if protocol == "ssh" else https_url), protocol
 
 
 def read_topics_from_file(path: Path) -> List[str]:
@@ -305,7 +253,12 @@ def build_repo_topic_payload(state: Optional[Dict[str, Set[Any]]]) -> Dict[str, 
 def is_excluded_repo(full_name: Optional[str]) -> bool:
     if not full_name:
         return False
-    return full_name.strip().lower() in EXCLUDED_REPO_FULL_NAMES
+    full_name = full_name.strip()
+    if full_name.lower() in EXCLUDED_REPO_FULL_NAMES:
+        return True
+    if full_name.lower().startswith("sciskillhub/"):
+        return True
+    return False
 
 
 def search_repositories(
@@ -502,17 +455,12 @@ def submodule_target_path(sciskill_root: Path, full_name: str) -> Path:
 def already_added(sciskill_root: Path, full_name: str) -> bool:
     target_rel = str(Path("open-source") / full_name)
     target = sciskill_root / target_rel
-    gitmodules = sciskill_root / ".gitmodules"
 
     if target.exists():
         return True
 
-    if gitmodules.exists():
-        text = gitmodules.read_text(encoding="utf-8", errors="replace")
-        if target_rel in text:
-            return True
-
-    return False
+    manifest = load_manifest(sciskill_root)
+    return any(e.get("fullName") == full_name for e in manifest)
 
 
 def remove_path(path: Path) -> None:
@@ -537,34 +485,50 @@ def default_error_report_path(report_path: Path) -> Path:
     return report_path.with_name(report_path.name + "_errors.json")
 
 
-def add_submodule_with_fallback(sciskill_root: Path, full_name: str, dry_run: bool = False) -> Tuple[str, str]:
+def load_manifest(sciskill_root: Path) -> List[Dict[str, Any]]:
+    mp = sciskill_root / MANIFEST_FILENAME
+    if not mp.is_file():
+        return []
+    try:
+        data = json.loads(mp.read_text(encoding="utf-8"))
+        return data if isinstance(data, list) else []
+    except (json.JSONDecodeError, OSError):
+        return []
+
+
+def save_manifest(sciskill_root: Path, entries: List[Dict[str, Any]]) -> None:
+    entries = sorted(entries, key=lambda e: e.get("fullName", ""))
+    mp = sciskill_root / MANIFEST_FILENAME
+    mp.write_text(json.dumps(entries, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def add_to_manifest(sciskill_root: Path, entry: Dict[str, Any]) -> None:
+    entries = load_manifest(sciskill_root)
+    full_name = entry.get("fullName", "")
+    if any(e.get("fullName") == full_name for e in entries):
+        return
+    entries.append(entry)
+    save_manifest(sciskill_root, entries)
+
+
+def clone_skill_repo(
+    sciskill_root: Path,
+    full_name: str,
+    default_branch: str,
+    dry_run: bool = False,
+) -> str:
     owner, repo = full_name.split("/", 1)
-    ssh_url = f"git@github.com:{owner}/{repo}.git"
     https_url = f"https://github.com/{owner}/{repo}.git"
-
-    preferred_url, preferred_protocol = choose_clone_url(full_name)
-    fallback_url = https_url if preferred_protocol == "ssh" else ssh_url
-    fallback_protocol = "https" if preferred_protocol == "ssh" else "ssh"
-    attempts: List[Dict[str, Any]] = []
-
     target = submodule_target_path(sciskill_root, full_name)
+    target_rel = str(target.relative_to(sciskill_root))
     target.parent.mkdir(parents=True, exist_ok=True)
 
-    def try_add(url: str, protocol: str) -> Tuple[bool, Optional[Dict[str, Any]]]:
-        env = os.environ.copy()
-        for key, value in SUBMODULE_ADD_ENV_OVERRIDES.items():
-            env.setdefault(key, value)
-        cmd = [
-            "git",
-            "submodule",
-            "add",
-            url,
-            str(target.relative_to(sciskill_root)),
-        ]
-        print(
-            f"[INFO] trying {protocol}: {' '.join(cmd)} "
-            f"(GIT_LFS_SKIP_SMUDGE={env.get('GIT_LFS_SKIP_SMUDGE', '')})"
-        )
+    env = os.environ.copy()
+    env["GIT_LFS_SKIP_SMUDGE"] = "1"
+
+    def try_clone(url: str, branch: str) -> Tuple[bool, Optional[Dict[str, Any]]]:
+        cmd = ["git", "clone", "--depth", "1", "--branch", branch, url, target_rel]
+        print(f"[INFO] trying clone: {' '.join(cmd)}")
         if dry_run:
             return True, None
         result = subprocess.run(
@@ -578,45 +542,46 @@ def add_submodule_with_fallback(sciskill_root: Path, full_name: str, dry_run: bo
         )
         if result.returncode == 0:
             return True, None
-
-        attempt = {
-            "protocol": protocol,
-            "url": url,
-            "returncode": result.returncode,
-        }
-        stdout = truncate_output(result.stdout)
+        attempt: Dict[str, Any] = {"url": url, "branch": branch, "returncode": result.returncode}
         stderr = truncate_output(result.stderr)
-        if stdout:
-            attempt["stdout"] = stdout
         if stderr:
             attempt["stderr"] = stderr
         return False, attempt
 
-    ok, attempt = try_add(preferred_url, preferred_protocol)
+    attempts: List[Dict[str, Any]] = []
+
+    ok, attempt = try_clone(https_url, default_branch)
     if ok:
-        return preferred_protocol, preferred_url
+        return https_url
     if attempt is not None:
         attempts.append(attempt)
 
-    print(f"[WARN] {preferred_protocol} failed for {full_name}, retrying with {fallback_protocol}", file=sys.stderr)
-
+    # Retry without --branch
     if not dry_run:
         remove_path(target)
-        modules_dir = sciskill_root / ".git" / "modules" / "open-source" / owner / repo
-        remove_path(modules_dir)
 
-    ok, attempt = try_add(fallback_url, fallback_protocol)
-    if ok:
-        return fallback_protocol, fallback_url
-    if attempt is not None:
-        attempts.append(attempt)
+    cmd = ["git", "clone", "--depth", "1", https_url, target_rel]
+    print(f"[INFO] retrying without --branch: {' '.join(cmd)}")
+    if not dry_run:
+        result = subprocess.run(
+            cmd,
+            cwd=sciskill_root,
+            check=False,
+            env=env,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        if result.returncode == 0:
+            return https_url
+        attempts.append({"url": https_url, "returncode": result.returncode, "stderr": truncate_output(result.stderr)})
 
-    raise SubmoduleAddError(full_name, attempts)
+    raise CloneError(full_name, attempts)
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Find GitHub repos containing valid SKILL.md and add them as submodules."
+        description="Find GitHub repos containing valid SKILL.md and clone them into open-source/."
     )
     parser.add_argument("--token", default=os.getenv("GITHUB_TOKEN", ""), help="GitHub token")
     parser.add_argument("--sciskill-root", required=True, help="Local path of sciskill repo")
@@ -784,11 +749,24 @@ def main() -> int:
         chosen = matches[0]
 
         try:
-            protocol, clone_url = add_submodule_with_fallback(
+            clone_url = clone_skill_repo(
                 sciskill_root=sciskill_root,
                 full_name=full_name,
+                default_branch=chosen.default_branch,
                 dry_run=args.dry_run,
             )
+
+            if not args.dry_run:
+                add_to_manifest(sciskill_root, {
+                    "fullName": full_name,
+                    "cloneUrl": clone_url,
+                    "localPath": str(Path("open-source") / full_name),
+                    "defaultBranch": chosen.default_branch,
+                    "lastCommitSha": "",
+                    "upstreamUrl": chosen.repo_html_url,
+                    "addedAt": datetime.utcnow().isoformat() + "Z",
+                    "addedBy": "github-actions",
+                })
 
             status = "would_add" if args.dry_run else "added"
             report.append(
@@ -796,7 +774,6 @@ def main() -> int:
                     "repo": full_name,
                     **build_repo_topic_payload(repo_topics.get(full_name)),
                     "status": status,
-                    "protocol": protocol,
                     "clone_url": clone_url,
                     "chosen_skill_path": chosen.skill_path,
                     "front_matter": chosen.front_matter,
@@ -805,7 +782,7 @@ def main() -> int:
                 }
             )
         except Exception as e:
-            print(f"[WARN] submodule add failed for {full_name}: {e}", file=sys.stderr)
+            print(f"[WARN] clone failed for {full_name}: {e}", file=sys.stderr)
             entry = {
                 "repo": full_name,
                 **build_repo_topic_payload(repo_topics.get(full_name)),
@@ -824,8 +801,8 @@ def main() -> int:
                 "front_matter": chosen.front_matter,
                 "html_url": chosen.repo_html_url,
             }
-            if isinstance(e, SubmoduleAddError):
-                error_entry["submodule_add_attempts"] = e.attempts
+            if isinstance(e, CloneError):
+                error_entry["clone_attempts"] = e.attempts
             repo_errors.append(error_entry)
 
         time.sleep(0.3)
