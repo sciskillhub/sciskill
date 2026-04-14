@@ -1,320 +1,320 @@
 ---
 name: sciskillhub
-description: 当你遇到实际专业数据分析任务时（生命科学/计算科学/数据查询等等专业问题），来这里查询合适的专业 skill。支持按学科、标签和任务类型筛选，并按需组合或切换不同 skill。
+description: 当本地 agent 需要为当前任务选择合适 skill 时，使用 SciSkillHub 查询 API 先缩小 object、stage、tasks、domains，再获取候选 skill list。这个 skill 只提供查询 API 与查询方法；具体判断当前任务属于什么 object、stage、domains，是本地 agent 自己的职责。
 metadata:
     skill-author: sciskillhub
     homepage: https://sciskillhub.org
-    subjects: General
-    tags: skillhub, discovery
 ---
 
-# sciskillhub — 技能中心
+# sciskillhub — Skill Routing API
 
-SciSkillHub 是一个科学技能分发平台。当遇到科研、编程、数据分析等问题时，你可以在这里找到专门的技能（Skill）来帮助解决问题。
+SciSkillHub 是一个面向 AI agent 的技能分发平台。
 
-每个技能都是一套针对特定任务优化的知识库和操作指南，安装后你的 AI 助手就能获得该领域的专业能力。
+这个 skill 的作用是：
+
+- 提供 SciSkillHub 的查询 API 和查询顺序
+- 告诉本地 agent 应该如何从 `object / stage / tasks / domains` 缩小范围
+- 返回候选 skill list，供本地 agent 继续判断
+
+以下判断应由本地 agent 结合用户当前问题先自行完成：
+
+- 当前任务属于什么 `object`
+- 当前任务主要处于什么 `stage`
+- 当前任务涉及哪些 `domains`
+- 哪些候选 `tasks` 最贴近当前意图
 
 ---
 
-## 解决问题的完整流程
+## 推荐调用流程
 
+```text
+用户自然语言输入
+  -> 本地 agent 判断 object
+  -> 本地 agent 判断 stage
+  -> 本地 agent 判断 domains
+  -> 用 object + stage + domains 查询 tasks
+  -> 从 tasks 中挑出最贴近当前任务的多个tasks
+  -> 用 object + stage + tasks + domains 查询 skills
+  -> 从候选 skill list 中选择最合适的多个skills
 ```
-┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐
-│  问题   │ → │ 确定学科 │ → │ 查询标签 │ → │ 搜索技能 │ → │ 安装技能 │ → │ 使用技能 │
-└─────────┘    └─────────┘    └─────────┘    └─────────┘    └─────────┘    └─────────┘
-                                                              ↓
-                                                    ┌─────────────────┐
-                                                    │ 问题未解决？    │
-                                                    │ 换其他技能重试  │
-                                                    └─────────────────┘
-```
+
+推荐顺序：
+
+1. 本地先判断 `object`
+2. 本地再判断 `stage`
+3. 本地再判断 `domains`
+4. 再调用查询 API，不要一开始直接盲搜所有 skill
 
 ---
 
-## 第一步：确定学科（Subject）
+## 固定 Object 列表
 
-根据问题内容，直接在下面选择最合适的学科即可：
+`object` 是固定枚举，本地 agent 需要先从下面选择最接近的一项：
 
-| subject | 说明 | 适用场景 |
-|---------|------|----------|
-| `life-science` | 生命科学相关技能 | 生物信息学、组学分析、医学、药物发现、实验数据分析 |
-| `computer-science` | 计算机科学相关技能 | 编程、软件工程、AI、数据结构、系统与工具开发 |
-| `general` | 通用技能 | 写作、效率工具、通用数据分析、跨学科任务 |
+- `Concepts and Theory`
+- `Research Capabilities`
+- `Methods and Techniques`
+- `Software and Tools`
+- `Instruments and Equipment`
+- `Data and Resources`
+- `Workflows`
+- `Standards and Guidelines`
 
-**选择建议：**
+判断原则：
 
-- 生物、医学、测序、组学、蛋白、分子、实验分析问题，优先选 `life-science`
-- 代码、框架、工程、部署、调试、算法问题，优先选 `computer-science`
-- 不明显属于某个专业学科，或偏通用方法/流程/写作时，选 `general`
-- 如果问题明显跨学科，先选最贴近主要任务目标的学科，再用标签和关键词继续缩小范围
+- 先判断“当前用户要解决的问题，本体更像什么”
+- 不要把这个判断步骤跳过
+- 如果本地 agent 连 `object` 都没先判断清楚，就不要直接查 skill list
 
 ---
 
-## 第二步：查询标签（Tag）
+## 固定 Stage 列表
 
-```bash
-sciskillhub list tag --subject life-science --json
+`stage` 也是固定枚举，本地 agent 需要先选最主要的一个阶段：
+
+- `Problem Definition and Background Research`
+- `Study Design`
+- `Data / Sample Acquisition`
+- `Data Analysis and Modeling`
+- `Validation and Interpretation`
+- `Writing and Publication`
+- `Translation to Practice`
+- `General Research Support`
+
+判断原则：
+
+- 只保留最主要阶段
+- 不要因为一个任务覆盖多个环节，就同时传多个 stage
+- 如果当前任务更偏“现在最需要做哪一步”，就按那一步选
+
+---
+
+## Domains 判断
+
+`domains` 由本地 agent 根据用户输入先做归类。
+
+常见原则：
+
+- 生命科学、医学、组学、临床、生物信息分析，优先考虑 `Life Sciences` 或 `Medical and Health Sciences`
+- 编程、建模、算法、系统、数据工程，优先考虑 `Computational Sciences`
+- 通用科研能力、跨学科研究方法，可考虑 `General Research`
+
+如果任务是跨学科的：
+
+- 保留主要 domain
+- 可以附带 1-2 个次级 domain
+- 不要一次传太多 domain，避免把结果集冲散
+
+---
+
+## API 1：按 Object + Stage + Domains 查询 Tasks
+
+用途：
+
+- 先根据已经判断好的 `object + stage + domains` 缩小 `tasks`
+- 不要直接跳过这一步
+
+接口：
+
+`GET /api/v1/agent/skills/tasks`
+
+查询参数：
+
+- `object`
+- `stage`
+- `domains`
+- `page`
+- `limit`
+
+约束：
+
+- 不提供 `q`
+- `limit` 默认 `100`
+- 返回必须包含 `total`
+
+示例：
+
+```http
+GET /api/v1/agent/skills/tasks?object=Research%20Capabilities&stage=Study%20Design&domains=Life%20Sciences&page=1&limit=100
 ```
+
+示例返回：
 
 ```json
-[
-  {"name": "bioinformatics", "count": 844},
-  {"name": "data-analysis", "count": 687},
-  {"name": "genomics", "count": 335},
-  {"name": "databases", "count": 136},
-  {"name": "Python", "count": 129},
-  {"name": "drug discovery", "count": 119},
-  {"name": "machine-learning", "count": 110},
-  {"name": "pipelines", "count": 103},
-  {"name": "single cell", "count": 79},
-  {"name": "data-formats", "count": 67}
-]
+{
+  "object": "Research Capabilities",
+  "stage": "Study Design",
+  "domains": ["Life Sciences"],
+  "page": 1,
+  "limit": 100,
+  "total": 3,
+  "tasks": [
+    {"name": "Hypothesis Building", "count": 12},
+    {"name": "Problem Definition", "count": 9},
+    {"name": "Experimental Design", "count": 7}
+  ]
+}
 ```
+
+本地 agent 在这一步要做的事情：
+
+- 不是把返回的 tasks 全部照单全收
+- 而是结合用户当前问题，从里面挑 1-3 个最贴近当前意图的 task
 
 ---
 
-## 第三步：搜索技能（Search）
+## API 2：按 Object + Stage + Tasks + Domains 查询 Skills
 
-```bash
-# 按学科和标签搜索
-sciskillhub list skill --subject life-science --tag "single cell"
+用途：
 
-# 按关键词搜索
-sciskillhub search "single cell"
+- 用结构化条件获取候选 `skill list`
+- 然后由本地 agent 继续判断具体该用哪个 skill
+
+接口：
+
+`GET /api/v1/agent/skills`
+
+查询参数：
+
+- `object`
+- `stage`
+- `tasks`
+- `domains`
+- `page`
+- `limit`
+
+约束：
+
+- 不提供 `q`
+- `limit` 默认 `100`
+- 返回必须包含 `total`
+
+示例：
+
+```http
+GET /api/v1/agent/skills?object=Research%20Capabilities&stage=Study%20Design&tasks=Hypothesis%20Building&tasks=Experimental%20Design&domains=Life%20Sciences&page=1&limit=100
 ```
 
-**输出：**
-
-```
-Found 10 skills:
-
-1. alterlab-anndata
-   open-source/AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/alterlab-anndata
-   Data structure for annotated matrices in single-cell analysis...
-
-2. alterlab-cellxgene
-   open-source/AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/alterlab-cellxgene
-   Query the CELLxGENE Census (61M+ cells) programmatically...
-
-3. alterlab-scanpy
-   open-source/AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/alterlab-scanpy
-   Standard single-cell RNA-seq analysis pipeline...
-
-ℹ Install with: sciskillhub install <author>/<path> --agent claude
-ℹ Example: sciskillhub install AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/alterlab-anndata --agent claude
-```
-
-**JSON 格式：**
-
-```bash
-sciskillhub search "single cell" --json
-```
+示例返回：
 
 ```json
-[
-  {
-    "id": "open-source/AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/alterlab-anndata",
-    "name": "alterlab-anndata",
-    "author": "AlterLab-IEU",
-    "description": "Data structure for annotated matrices in single-cell analysis. Use when working with .h5ad files...",
-    "tags": ["single cell", "data-formats", "Python"],
-    "category": "Life Science"
-  }
-]
+{
+  "object": "Research Capabilities",
+  "stage": "Study Design",
+  "tasks": ["Hypothesis Building", "Experimental Design"],
+  "domains": ["Life Sciences"],
+  "page": 1,
+  "limit": 100,
+  "total": 27,
+  "skills": [
+    {
+      "id": "open-source/FreedomIntelligence/OpenClaw-Medical-Skills/skills/hypothesis-generation",
+      "name": "hypothesis-generation",
+      "object": "Research Capabilities",
+      "stage": "Study Design",
+      "tasks": ["Hypothesis Building", "Experimental Design"],
+      "domains": ["Life Sciences", "General Research"],
+      "description": "Generate and refine scientific hypotheses from prior knowledge and evidence."
+    }
+  ]
+}
+```
+
+本地 agent 在这一步要做的事情：
+
+- 看返回 skill 是否和当前用户任务真正匹配
+- 选择最合适的 1-3 个 skill
+- 不要因为某个 skill 出现在结果里，就默认必须使用它
+
+---
+
+## API 3：读取 Taxonomy 枚举
+
+接口：
+
+`GET /api/v1/agent/skills/taxonomy`
+
+用途：
+
+- 读取标准 `object / stage / tasks / domains` 枚举
+- 保证本地 agent 传参时使用平台认可的标准值
+
+示例返回：
+
+```json
+{
+  "object_options": ["Research Capabilities", "Methods and Techniques", "Software and Tools"],
+  "stage_options": ["Study Design", "Data Analysis and Modeling", "Writing and Publication"],
+  "task_options": ["Hypothesis Building", "Experimental Design", "Clustering"],
+  "domain_options": ["Life Sciences", "Computational Sciences", "General Research"]
+}
 ```
 
 ---
 
-## 第四步：阅读描述，选择技能
+## 本地 Agent 的职责边界
 
-**常用技能说明：**
+在使用这个 skill 时，必须遵守下面的边界：
 
-| 技能 | 说明 | 适用场景 |
-|------|------|----------|
-| **anndata** | .h5ad 数据结构 | 读取、操作 AnnData 对象 |
-| **scanpy** | 单细胞分析流程 | QC、聚类、可视化 |
-| **scvi-tools** | 深度学习模型 | 批次校正、整合 |
-| **scvelo** | RNA 速度 | 轨迹推断 |
-| **cellxgene-census** | 大规模数据查询 | 查询已发表的单细胞数据 |
+- 先判断 `object`
+- 再判断 `stage`
+- 再判断 `domains`
+- 再查 `tasks`
+- 最后再查 `skills`
 
-**技能选择策略：**
+不要把职责反过来：
 
-- 如果一个问题包含多个阶段或子任务，可以选择多个**互补**技能组合使用
-- 例如：一个技能负责预处理，另一个负责建模/统计分析，第三个负责可视化或结果解释
-- 如果多个技能功能相近，不要一开始全部安装，先选择当前描述最贴合的一个
-- 如果第一个技能运行效果不好、覆盖不全，或不适合当前数据/环境，再尝试其他功能相近的技能
-- 优先避免安装大量重复能力的技能，先小步验证，再按需要补充
+- 不要先拿一堆 skill 再倒推 object/stage
+- 不要把远端接口当成“自动分类器”
+- 不要把“判断当前任务属于什么 object/stage/domains”的责任后置到查询之后
 
----
+简化成一句话：
 
-## 第五步：安装技能（Install）
-
-```bash
-# 安装到 Claude（全局，推荐）
-sciskillhub install <skill> --agent claude -y
-
-# 安装到当前项目
-sciskillhub install <skill> --agent claude --project -y
-```
-
-**输出：**
-
-```
-📦 alterlab-scanpy
-   open-source/AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/alterlab-scanpy
-
-- Downloading skill content...
-- Extracting skill files...
-
-✓ Installed alterlab-scanpy to Claude Code
-
-  Location: /home/shuang/.claude/skills/alterlab-scanpy
-  File:     SKILL.md
-
-╭─ ✓ Installed ─────────────────────────╮
-│ The skill is now available globally. │
-│ Restart your agent to use it.        │
-╰──────────────────────────────────────╯
-```
-
-**安装格式支持多种写法：**
-
-```bash
-# 只用技能名称（最简单）
-sciskillhub install anndata --agent claude -y
-
-# 用作者/路径
-sciskillhub install AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/anndata --agent claude -y
-
-# 完整 slug
-sciskillhub install open-source/AlterLab-IEU/AlterLab-Academic-Skills/skills/bioinformatics/anndata --agent claude -y
-```
+当前用户任务属于什么 `object / stage / domains`，应先由本地 agent 判断，再进入后续查询步骤。
 
 ---
 
-## 第六步：使用技能解决问题
+## 何时使用这个 Skill
 
-安装完成后，直接向 AI 提问：
+在这些情况下优先使用：
 
-```
-"帮我分析这个 h5ad 文件的结构"
-"用 scanpy 对我的单细胞数据做 QC 和聚类"
-"用 scvi-tools 进行批次校正"
-```
+- 你需要为当前任务动态选择 skill
+- 你已经知道当前任务的大致 `object / stage / domains`
+- 你想先缩小 `tasks`，再拿候选 skill list
 
----
+在这些情况下不要优先使用：
 
-## 第七步：问题没解决？换一个技能
-
-```bash
-# 1. 搜索其他相关技能
-sciskillhub search "trajectory"
-
-# 2. 查看同标签下的其他技能
-sciskillhub list skill --subject life-science --tag "其他标签"
-
-# 3. 安装新技能重试
-sciskillhub install <新技能> --agent claude -y
-```
+- 你已经明确知道要调用哪个具体 skill
+- 当前任务只是普通闲聊，不涉及专业 skill routing
+- 你还没有对当前问题做基本任务理解和分类
 
 ---
 
-## 常用命令速查
+## 最小示例
 
-| 命令 | 说明 |
-|------|------|
-| `sciskillhub list subject` | 列出所有学科 |
-| `sciskillhub list tag --subject <学科>` | 列出标签 |
-| `sciskillhub list skill --subject <学科> --tag <标签>` | 按标签筛选 |
-| `sciskillhub search <关键词>` | 搜索技能 |
-| `sciskillhub install <技能> --agent claude -y` | 安装 |
-| `sciskillhub --help` | 查看帮助 |
+用户问题：
+
+```text
+我需要帮助设计一个假设生成流程，用于肿瘤单细胞研究
+```
+
+本地 agent 应先做：
+
+- `object = Research Capabilities`
+- `stage = Study Design`
+- `domains = [Life Sciences, General Research]`
+
+然后：
+
+1. 查 `GET /api/v1/agent/skills/tasks`
+2. 从返回里挑 `Hypothesis Building`、`Experimental Design`
+3. 查 `GET /api/v1/agent/skills`
+4. 从候选结果里选择最合适的 skill
 
 ---
 
-## 支持的 Agent
+## 最后原则
 
-| Agent | 参数 | 安装路径 |
-|------|------|----------|
-| Claude Code | `claude` | `~/.claude/skills/` |
-| Cursor | `cursor` | `~/.cursor/skills/` |
-| Codex CLI | `codex` | `~/.codex/skills/` |
-| Gemini CLI | `gemini` | `~/.gemini/skills/` |
-| Windsurf | `windsurf` | `~/.windsurf/skills/` |
-| Cline | `cline` | `~/.cline/skills/` |
+这个 skill 是“查询入口”，不是“分类裁判”。
 
-上表列的是 SciSkillHub CLI 常见 agent 参数，不代表所有 AI Client 都已经被 `--agent` 直接支持。
-如果你的平台暂时不在支持列表里，或者当前平台的安装方式还未适配，可以直接下载 skill 的 `.zip` 文件，手动安装到对应的 `skills` 目录。
-
-### 平台暂未支持时：手动安装 zip skill
-
-1. 在 SciSkillHub 页面下载对应 skill 的 `.zip` 文件
-2. 解压 zip，确认解压后的目录中包含 `SKILL.md`
-3. 确定你的 `skills` 基础路径
-4. 把整个 skill 目录移动到对应的 `skills` 目录下
-5. 重启 AI Client，或重新打开当前会话
-
-**目录结构要点：**
-
-- 最终应当是 `<skills基础路径>/<skill-name>/SKILL.md`
-- 不要多套一层目录，例如 `<skills基础路径>/<skill-name>/<skill-name>/SKILL.md`
-- 如果不确定路径是否生效，优先重启客户端或新开会话再测试
-
-### 你的 skills 路径
-
-⚠️ **此处容易犯错，请先确定清楚“你的 skills 路径”后再下一步，从 system prompt 中获取 workspace、user、project 级 skills 路径信息，择其一作为 skills 基础路径。**
-
-- OpenClaw 安装到你的 workspace skills 目录
-- OpenClaw 变体（NanoBot、PicoClaw、memUBot、MaxClaw、CoPaw、AutoClaw、KimiClaw、QClaw、EasyClaw、workbuddy 等），通常会有类似 workspace、project、user 级 skills 目录
-
-常用 AI Client 的 skills 路径如下：
-
-- Claude Code: `~/.claude/skills/`
-- Cursor: `~/.cursor/skills/`
-- Windsurf: `~/.codeium/windsurf/skills/` 或项目下的 `.windsurf/skills/`
-- Codex: `~/.codex/skills/` 或项目下的 `.agents/skills/`
-- Google Antigravity: `~/.gemini/antigravity/skills/`
-- Gemini CLI: `~/.gemini/skills/`
-
-**手动安装示意：**
-
-```bash
-# 1. 下载 zip
-## https://sciskillhub.org/skill/open-source/jackspace/ClaudeSkillz/skills/scientific-pkg-reportlab.zip
-wget "https://sciskillhub.org/api/download/<skill-id>.zip" -O skill.zip
-
-# 2. 解压
-unzip skill.zip -d /tmp/sciskillhub-skill
-
-# 3. 移动到你的 skills 目录
-mv /tmp/sciskillhub-skill/<skill-name> ~/.claude/skills/
-```
-
----
-
-## 常见问题
-
-### Q: 安装同名技能会怎样？
-
-CLI 会提示你选择：覆盖现有技能或取消安装。
-
-### Q: 如何查看已安装的技能？
-
-```bash
-ls ~/.claude/skills/  # Claude Code
-ls ~/.cursor/skills/  # Cursor
-```
-
-### Q: 如何卸载技能？
-
-```bash
-rm -rf ~/.claude/skills/<skill-name>
-```
-
----
-
-## 获取帮助
-
-- **网站**: https://sciskillhub.org
-- **GitHub**: https://github.com/sciskillhub/typescript-cli
-- **命令行**: `sciskillhub --help`
+本地 agent 先理解任务，再使用 API。

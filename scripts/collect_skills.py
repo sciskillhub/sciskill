@@ -496,6 +496,28 @@ def load_manifest(sciskill_root: Path) -> List[Dict[str, Any]]:
         return []
 
 
+def repair_manifest(sciskill_root: Path) -> bool:
+    script_path = Path(__file__).with_name("repair_skill_manifest.py")
+    if not script_path.is_file():
+        return False
+    result = subprocess.run(
+        [sys.executable, str(script_path), "--repo-root", str(sciskill_root)],
+        cwd=sciskill_root,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode == 0:
+        message = (result.stdout or "").strip()
+        if message:
+            print(message)
+        return True
+    error = (result.stderr or result.stdout or "").strip()
+    if error:
+        print(f"[WARN] manifest repair failed: {error}", file=sys.stderr)
+    return False
+
+
 def save_manifest(sciskill_root: Path, entries: List[Dict[str, Any]]) -> None:
     entries = sorted(entries, key=lambda e: e.get("fullName", ""))
     mp = sciskill_root / MANIFEST_FILENAME
@@ -579,6 +601,24 @@ def clone_skill_repo(
     raise CloneError(full_name, attempts)
 
 
+def cloned_repo_head_sha(sciskill_root: Path, full_name: str) -> Optional[str]:
+    repo_path = submodule_target_path(sciskill_root, full_name)
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=repo_path,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+    except Exception:
+        return None
+    if result.returncode != 0:
+        return None
+    value = (result.stdout or "").strip()
+    return value or None
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Find GitHub repos containing valid SKILL.md and clone them into open-source/."
@@ -607,6 +647,7 @@ def main() -> int:
         print(f"ERROR: {sciskill_root} does not look like a git repo", file=sys.stderr)
         return 2
 
+    repair_manifest(sciskill_root)
     (sciskill_root / "open-source").mkdir(parents=True, exist_ok=True)
 
     domain_topics: List[str] = []
@@ -757,12 +798,13 @@ def main() -> int:
             )
 
             if not args.dry_run:
+                last_commit_sha = cloned_repo_head_sha(sciskill_root, full_name) or ""
                 add_to_manifest(sciskill_root, {
                     "fullName": full_name,
                     "cloneUrl": clone_url,
                     "localPath": str(Path("open-source") / full_name),
                     "defaultBranch": chosen.default_branch,
-                    "lastCommitSha": "",
+                    "lastCommitSha": last_commit_sha,
                     "upstreamUrl": chosen.repo_html_url,
                     "addedAt": datetime.utcnow().isoformat() + "Z",
                     "addedBy": "github-actions",
@@ -856,6 +898,7 @@ def main() -> int:
     )
     print(f"\nReport saved to: {report_path}")
     print(f"Error report saved to: {error_report_path}")
+    repair_manifest(sciskill_root)
     if queries and successful_query_count == 0:
         print("ERROR: all GitHub search queries failed", file=sys.stderr)
         return 1

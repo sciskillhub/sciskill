@@ -57,6 +57,28 @@ def load_manifest(repo_root):
         return []
 
 
+def repair_manifest(repo_root):
+    script_path = Path(__file__).with_name("repair_skill_manifest.py")
+    if not script_path.is_file():
+        return False
+    result = subprocess.run(
+        [sys.executable, str(script_path), "--repo-root", str(repo_root)],
+        cwd=repo_root,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode == 0:
+        message = (result.stdout or "").strip()
+        if message:
+            print(message)
+        return True
+    error = (result.stderr or result.stdout or "").strip()
+    if error:
+        print(f"[WARN] manifest repair failed: {error}")
+    return False
+
+
 def inject_token(url, token):
     if token and url.startswith("https://github.com/"):
         return url.replace("https://", f"https://{token}@", 1)
@@ -138,6 +160,7 @@ def main():
     else:
         print("[1/2] Skipping main repo pull")
 
+    repair_manifest(repo_root)
     # Load manifest
     manifest = load_manifest(repo_root)
     if not manifest:

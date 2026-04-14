@@ -53,10 +53,16 @@ jobs:
 
       - name: Commit changes
         run: |
+          python scripts/repair_skill_manifest.py --repo-root .
           git add skill-manifest.json skill_report.json skill_errors.json open-source/
           git add -A config
           git diff --cached --quiet && exit 0
           git commit -m "chore: collect valid skill repos"
           git fetch origin main
-          git rebase origin/main
+          if ! git rebase origin/main; then
+            echo "Rebase reported conflicts; attempting automatic skill-manifest repair"
+            python scripts/repair_skill_manifest.py --repo-root .
+            git add skill-manifest.json
+            GIT_EDITOR=true git rebase --continue
+          fi
           git push origin HEAD:main
