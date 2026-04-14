@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "skill_errors.json",
-  "repo_count": 68,
+  "repo_count": 73,
   "results": [
     {
       "repo": "mareforma/mareforma",
@@ -242,6 +242,87 @@
       "matches": []
     },
     {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "droftgamer-wq/researcher-skill",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "clinical-research",
+        "computational-biology",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/droftgamer-wq/researcher-skill.git",
+      "chosen_skill_path": "researcher/SKILL.md",
+      "front_matter": {
+        "name": "researcher",
+        "description": "Runs multi-source investigations using a structured evidence-mapping cycle. Routes between business research, academic research, and claim verification. Triggers on: \"research\", \"investigate\", \"verify\", \"compare\", \"analyze\", \"look into\", \"dig into\", \"fact check\", \"due diligence\", \"deep dive\", \"what is really happening\", \"how do real practitioners see this\", \"is this true\", \"is this legit\", \"what's the real story\", \"market landscape\", \"state of the art\", \"literature review\", \"competitive analysis\", \"opportunity scan\", \"risk assessment\", \"研究\", \"调研\", \"调查\", \"分析\", \"验证\", \"核实\", \"深挖\", \"摸底\", \"行业分析\", \"市场调研\", \"竞品分析\", \"尽调\", \"尽职调查\", \"这个靠谱吗\", \"真实情况是什么\", \"帮我查查\", \"帮我看看\", \"有没有前景\", \"值不值得\", \"到底怎么样\", \"是真的吗\", \"论文调研\", \"文献综述\", \"技术选型\", \"机会分析\".\n",
+        "argument-hint": "<research question or topic / 研究问题或主题>",
+        "allowed-tools": [
+          "WebSearch",
+          "WebFetch",
+          "Read",
+          "Write"
+        ]
+      },
+      "html_url": "https://github.com/droftgamer-wq/researcher-skill",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/droftgamer-wq/researcher-skill"
+    },
+    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -271,7 +352,7 @@
       "matches": []
     },
     {
-      "repo": "aristoteleo/PantheonOS",
+      "repo": "cyanheads/pubmed-mcp-server",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -285,7 +366,40 @@
         }
       ],
       "matched_topics": [],
-      "status": "no_valid_skill"
+      "status": "added",
+      "clone_url": "https://github.com/cyanheads/pubmed-mcp-server.git",
+      "chosen_skill_path": ".agents/skills/add-app-tool/SKILL.md",
+      "front_matter": {
+        "name": "add-app-tool",
+        "description": "Scaffold an MCP App tool + UI resource pair. Use when the user asks to add a tool with interactive UI, create an MCP App, or build a visual/interactive tool.\n",
+        "metadata": {
+          "author": "cyanheads",
+          "version": "1.2",
+          "audience": "external",
+          "type": "reference"
+        }
+      },
+      "html_url": "https://github.com/cyanheads/pubmed-mcp-server",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/pubmed-mcp-server"
+    },
+    {
+      "repo": "Runchuan-BU/BioClaw",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Runchuan-BU/BioClaw",
+      "matches": []
     },
     {
       "repo": "genepattern/module-toolkit",
@@ -310,6 +424,23 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/genepattern/module-toolkit",
       "matches": []
+    },
+    {
+      "repo": "HolobiomicsLab/Mimosa-AI",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "fmschulz/omics-skills",
@@ -352,42 +483,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/fmschulz/omics-skills",
       "matches": []
-    },
-    {
-      "repo": "Runchuan-BU/BioClaw",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Runchuan-BU/BioClaw",
-      "matches": []
-    },
-    {
-      "repo": "HolobiomicsLab/Mimosa-AI",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "HelixGenomics/Genomic-Agent-Discovery",
@@ -770,6 +865,100 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "sparzinhogames-hash/awesome-scientific-ai-tools",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "Agents365-ai/seurat-skill",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "single-cell"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "single-cell",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/Agents365-ai/seurat-skill.git",
+      "chosen_skill_path": "SKILL.md",
+      "front_matter": {
+        "name": "seurat-skill",
+        "description": "Comprehensive Seurat v5 (R) guide for single-cell RNA-seq and multimodal analysis. Covers installation, standard workflows (Normalize/SCTransform), clustering, integration (CCA/RPCA/Harmony), differential expression (FindMarkers/FindAllMarkers), visualization (DimPlot/FeaturePlot/VlnPlot/DoHeatmap), spatial transcriptomics (Visium/Visium HD/MERFISH/Slide-seq), CITE-seq, ATAC-seq, WNN, cell cycle regression, hashing/demultiplexing, sketch analysis, BPCells on-disk, pseudobulk, and format conversion. Use this skill whenever writing, debugging, or reviewing Seurat R code, building scRNA-seq pipelines, or looking up Seurat syntax, even for simple questions.",
+        "homepage": "https://github.com/Agents365-ai/seurat-skill"
+      },
+      "html_url": "https://github.com/Agents365-ai/seurat-skill",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Agents365-ai/seurat-skill"
+    },
+    {
+      "repo": "Agents365-ai/ccc-skill",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "single-cell"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "single-cell",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/Agents365-ai/ccc-skill.git",
+      "chosen_skill_path": "SKILL.md",
+      "front_matter": {
+        "name": "ccc-skill",
+        "description": "Domain expertise for cell-cell communication (CCC) analysis. Intent-to-tool routing, workflow patterns, code templates, and pitfall warnings for LIANA+, CellPhoneDB, CellChat, NicheNet, COMMOT, Squidpy, MEBOCOST, DIALOGUE, and 10+ additional tools across scRNA-seq and spatial transcriptomics data.",
+        "license": "MIT",
+        "homepage": "https://github.com/Agents365-ai/ccc-skill",
+        "platforms": [
+          "macos",
+          "linux",
+          "windows"
+        ],
+        "metadata": {
+          "author": "Agents365-ai",
+          "version": "0.2.0"
+        }
+      },
+      "html_url": "https://github.com/Agents365-ai/ccc-skill",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Agents365-ai/ccc-skill"
     },
     {
       "repo": "K-Dense-AI/scientific-agent-skills",
