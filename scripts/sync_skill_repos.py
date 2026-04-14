@@ -85,6 +85,34 @@ def inject_token(url, token):
     return url
 
 
+def _update_manifest_branch(repo_root, full_name, branch):
+    """Update defaultBranch in manifest when the recorded value was wrong."""
+    mp = Path(repo_root) / MANIFEST_FILENAME
+    try:
+        entries = json.loads(mp.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return
+    for entry in entries:
+        if entry.get("fullName") == full_name:
+            entry["defaultBranch"] = branch
+            break
+    mp.write_text(json.dumps(entries, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def _update_manifest_sha(repo_root, full_name, sha):
+    """Update lastCommitSha in manifest when the commit actually changed."""
+    mp = Path(repo_root) / MANIFEST_FILENAME
+    try:
+        entries = json.loads(mp.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return
+    for entry in entries:
+        if entry.get("fullName") == full_name:
+            entry["lastCommitSha"] = sha
+            break
+    mp.write_text(json.dumps(entries, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
 def sync_skill_repo(repo_root, entry, token):
     local_path = Path(repo_root) / entry["localPath"]
     clone_url = inject_token(entry.get("cloneUrl", ""), token)
@@ -96,9 +124,40 @@ def sync_skill_repo(repo_root, entry, token):
         print(f"  [update] {full_name}", end=" ", flush=True)
         auth = git_auth_args(token)
         try:
-            run_git(["git"] + auth + ["fetch", "origin", branch], cwd=local_path, check=False)
-            run_git(["git", "reset", "--hard", f"origin/{branch}"], cwd=local_path)
-            print("OK")
+            old_sha = run_git(["git", "rev-parse", "HEAD"], cwd=local_path, check=False).stdout.strip()
+
+            result = run_git(["git"] + auth + ["fetch", "origin", branch], cwd=local_path, check=False)
+            if result.returncode == 0:
+                effective_branch = branch
+            else:
+                # Branch name in manifest may be wrong — fetch all and detect actual default branch
+                run_git(["git"] + auth + ["fetch", "origin"], cwd=local_path)
+                head_branch = run_git(
+                    ["git", "rev-parse", "--abbrev-ref", "refs/remotes/origin/HEAD"],
+                    cwd=local_path, check=False,
+                )
+                effective_branch = (head_branch.stdout or "").strip()
+                if effective_branch.startswith("origin/"):
+                    effective_branch = effective_branch[len("origin/"):]
+                else:
+                    branches = run_git(["git", "branch", "-r"], cwd=local_path, check=False)
+                    first = (branches.stdout or "").strip().splitlines()
+                    effective_branch = first[0].strip().replace("origin/", "").split()[0] if first else branch
+                print(f"(branch {branch}->{effective_branch}) ", end="", flush=True)
+
+            run_git(["git", "reset", "--hard", f"origin/{effective_branch}"], cwd=local_path)
+            new_sha = run_git(["git", "rev-parse", "HEAD"], cwd=local_path, check=False).stdout.strip()
+
+            # Update manifest if branch was corrected
+            if effective_branch != branch:
+                _update_manifest_branch(repo_root, full_name, effective_branch)
+
+            # Only update lastCommitSha when commit actually changed
+            if new_sha and new_sha != old_sha:
+                _update_manifest_sha(repo_root, full_name, new_sha)
+                print("OK (updated)")
+            else:
+                print("OK (no change)")
             return True
         except Exception as e:
             print(f"FAILED ({e})")
