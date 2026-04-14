@@ -113,6 +113,24 @@ def _update_manifest_sha(repo_root, full_name, sha):
     mp.write_text(json.dumps(entries, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
+def _sync_manifest_after_clone(repo_root, entry, local_path, recorded_branch):
+    """After a fresh clone, update lastCommitSha and defaultBranch in manifest if they differ."""
+    new_sha = run_git(["git", "rev-parse", "HEAD"], cwd=local_path, check=False).stdout.strip()
+    if not new_sha:
+        return
+    old_sha = entry.get("lastCommitSha", "")
+    if new_sha != old_sha:
+        _update_manifest_sha(repo_root, entry.get("fullName", ""), new_sha)
+
+    # Detect actual branch and correct manifest if needed
+    head_branch = run_git(
+        ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+        cwd=local_path, check=False,
+    ).stdout.strip()
+    if head_branch and head_branch != recorded_branch:
+        _update_manifest_branch(repo_root, entry.get("fullName", ""), head_branch)
+
+
 def sync_skill_repo(repo_root, entry, token):
     local_path = Path(repo_root) / entry["localPath"]
     clone_url = inject_token(entry.get("cloneUrl", ""), token)
@@ -177,6 +195,7 @@ def sync_skill_repo(repo_root, entry, token):
         cwd=local_path.parent, check=False,
     )
     if result.returncode == 0:
+        _sync_manifest_after_clone(repo_root, entry, local_path, branch)
         print("OK")
         return True
 
@@ -187,6 +206,7 @@ def sync_skill_repo(repo_root, entry, token):
         cwd=local_path.parent, check=False,
     )
     if result.returncode == 0:
+        _sync_manifest_after_clone(repo_root, entry, local_path, branch)
         print("OK")
         return True
 
