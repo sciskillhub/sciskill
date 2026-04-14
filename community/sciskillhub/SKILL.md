@@ -30,27 +30,38 @@ SciSkillHub 是一个面向 AI agent 的技能分发平台。
 
 ```text
 用户自然语言输入
-  -> 本地 agent 判断 object
-  -> 本地 agent 判断 stage
+  -> 本地 agent 判断可能的 object 列表（2-3 个候选）
+  -> 本地 agent 判断可能的 stage 列表（1-2 个候选）
   -> 本地 agent 判断 domains
-  -> 用 object + stage + domains 查询 tasks
-  -> 从 tasks 中挑出最贴近当前任务的多个tasks
-  -> 用 object + stage + tasks + domains 查询 skills
-  -> 从候选 skill list 中选择最合适的多个skills
+  -> 对每个 object+stage 组合，查询 tasks（可并行）
+  -> 汇总所有 tasks，挑出最贴近当前任务的多个 tasks
+  -> 用 object + stage + tasks + domains 查询 skills（可对多个 object 组合并行查询）
+  -> 汇总候选 skill list，选择最合适的多个 skills
 ```
 
 推荐顺序：
 
-1. 本地先判断 `object`
-2. 本地再判断 `stage`
+1. 本地先列出可能的 `object`（不要只选一个，尝试 2-3 个相关候选）
+2. 本地再列出可能的 `stage`（1-2 个）
 3. 本地再判断 `domains`
-4. 再调用查询命令，不要一开始直接盲搜所有 skill
+4. 对多个 object+stage 组合分别查询，扩大覆盖面
+5. 汇总结果后再筛选，不要一开始就锁定单一组合
+
+**重要：多组合尝试原则**
+
+很多任务横跨多个 object 或 stage。例如"长读长测序数据分析"：
+
+- `Methods and Techniques` + `Data Analysis and Modeling` → 分析方法
+- `Software and Tools` + `Data Analysis and Modeling` → 分析软件
+- `Data and Resources` + `Data Analysis and Modeling` → 数据资源
+
+如果只选一个 object，会漏掉其他维度下的相关 skill。应该对 2-3 个最可能的组合都查询一遍，然后汇总去重。
 
 ---
 
 ## 固定 Object 列表
 
-`object` 是固定枚举，本地 agent 需要先从下面选择最接近的一项：
+`object` 是固定枚举，本地 agent 需要从中选出 **2-3 个最可能的候选**：
 
 - `Concepts and Theory`
 - `Research Capabilities`
@@ -63,15 +74,16 @@ SciSkillHub 是一个面向 AI agent 的技能分发平台。
 
 判断原则：
 
-- 先判断"当前用户要解决的问题，本体更像什么"
-- 不要把这个判断步骤跳过
-- 如果本地 agent 连 `object` 都没先判断清楚，就不要直接查 skill list
+- 不要只选一个 object，很多任务横跨多个维度
+- 例如"数据分析"相关的任务，通常同时涉及 `Methods and Techniques` 和 `Software and Tools`
+- 例如"实验设计"相关的任务，可能同时涉及 `Research Capabilities` 和 `Workflows`
+- 对每个候选 object 都执行查询，然后汇总结果去重
 
 ---
 
 ## 固定 Stage 列表
 
-`stage` 也是固定枚举，本地 agent 需要先选最主要的一个阶段：
+`stage` 也是固定枚举，本地 agent 需要选出 **1-2 个最相关的阶段**：
 
 - `Problem Definition and Background Research`
 - `Study Design`
@@ -84,9 +96,8 @@ SciSkillHub 是一个面向 AI agent 的技能分发平台。
 
 判断原则：
 
-- 只保留最主要阶段
-- 不要因为一个任务覆盖多个环节，就同时传多个 stage
-- 如果当前任务更偏"现在最需要做哪一步"，就按那一步选
+- 选最主要阶段，必要时加 1 个次要阶段
+- 例如"分析数据"偏 `Data Analysis and Modeling`，但如果涉及"如何设计分析方案"也覆盖 `Study Design`
 
 ---
 
@@ -299,25 +310,53 @@ sciskill install <author>/<path> --agent claude
 
 ## 最小示例
 
+### 示例 1：假设生成流程
+
 用户问题：
 
 ```text
 我需要帮助设计一个假设生成流程，用于肿瘤单细胞研究
 ```
 
-本地 agent 应先做：
+本地 agent 应先判断多组候选：
 
-- `object = Research Capabilities`
-- `stage = Study Design`
+- `object = [Research Capabilities, Methods and Techniques]`
+- `stage = [Study Design]`
 - `domains = [Life Sciences, General Research]`
 
-然后：
+然后（并行查询）：
 
 1. `sciskill tax --tasks --object "Research Capabilities" --stage "Study Design" --domain "Life Sciences" "General Research"`
-2. 从返回里挑 `Hypothesis Building`、`Experimental Design`
-3. `sciskill browse skills --object "Research Capabilities" --stage "Study Design" --task "Hypothesis Building" "Experimental Design" --domain "Life Sciences"`
-4. 从候选结果里选择最合适的 skill
-5. `sciskill install <author>/<path> --agent claude`
+2. `sciskill tax --tasks --object "Methods and Techniques" --stage "Study Design" --domain "Life Sciences" "General Research"`
+3. 汇总 tasks，挑出 `Hypothesis Building`、`Experimental Design`
+4. `sciskill browse skills --object "Research Capabilities" --stage "Study Design" --task "Hypothesis Building" "Experimental Design" --domain "Life Sciences"`
+5. `sciskill browse skills --object "Methods and Techniques" --stage "Study Design" --task "Hypothesis Building" "Experimental Design" --domain "Life Sciences"`
+6. 汇总去重，选择最合适的 skill
+7. `sciskill install <author>/<path> --agent claude`
+
+### 示例 2：长读长测序数据分析
+
+用户问题：
+
+```text
+帮我分析 Nanopore 长读长测序数据
+```
+
+本地 agent 应判断：
+
+- `object = [Methods and Techniques, Software and Tools, Data and Resources]`
+- `stage = [Data Analysis and Modeling]`
+- `domains = [Life Sciences]`
+
+然后（并行查询）：
+
+1. `sciskill tax --tasks --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences"`
+2. `sciskill tax --tasks --object "Software and Tools" --stage "Data Analysis and Modeling" --domain "Life Sciences"`
+3. 汇总 tasks，挑出 `Quality Control`、`Alignment`、`Quantification`
+4. `sciskill browse skills --object "Methods and Techniques" --stage "Data Analysis and Modeling" --task "Quality Control" "Alignment" "Quantification" --domain "Life Sciences"`
+5. `sciskill browse skills --object "Software and Tools" --stage "Data Analysis and Modeling" --task "Quality Control" "Alignment" "Quantification" --domain "Life Sciences"`
+6. 汇总去重，选择最合适的 skill
+7. `sciskill install <author>/<path> --agent claude`
 
 ---
 
