@@ -1,0 +1,20 @@
+{
+  "repo_full_names": [
+    "Elfredaaroused655/claude-skills",
+    "cyanheads/pubmed-mcp-server",
+    "zacklecon/claude-skills",
+    "Syniox5334/apple-dev-skills",
+    "wtfhanin/Enhance-Prompt",
+    "d-oit/web-doc-resolver"
+  ],
+  "local_path_prefixes": [
+    "open-source/foryourhealth111-pixel/Vibe-Skills/bundled/skills/local-vco-roles",
+    "open-source/foryourhealth111-pixel/Vibe-Skills/bundled/skills/prowler-docs",
+    "open-source/foryourhealth111-pixel/Vibe-Skills/bundled/skills/vscode-release-notes-writer",
+    "open-source/foryourhealth111-pixel/Vibe-Skills/bundled/skills/markdown-mermaid-writing",
+    "open-source/foryourhealth111-pixel/Vibe-Skills/bundled/skills/code-reviewer",
+    "open-source/foryourhealth111-pixel/Vibe-Skills/bundled/skills/code-review-excellence",
+    "open-source/foryourhealth111-pixel/Vibe-Skills/bundled/skills/property-based-testing",
+    "open-source/foryourhealth111-pixel/Vibe-Skills/bundled/skills/submission-checklist"
+  ]
+}
