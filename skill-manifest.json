@@ -100,16 +100,6 @@
     "addedBy": "migration-script"
   },
   {
-    "fullName": "Elfredaaroused655/claude-skills",
-    "cloneUrl": "https://github.com/Elfredaaroused655/claude-skills.git",
-    "localPath": "open-source/Elfredaaroused655/claude-skills",
-    "defaultBranch": "main",
-    "lastCommitSha": "05b72d2ed8d042662c2cdb39fc6423d31ec2453c",
-    "upstreamUrl": "https://github.com/Elfredaaroused655/claude-skills",
-    "addedAt": "2026-04-11T17:13:46.361886Z",
-    "addedBy": "migration-script"
-  },
-  {
     "fullName": "FreedomIntelligence/OpenClaw-Medical-Skills",
     "cloneUrl": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills.git",
     "localPath": "open-source/FreedomIntelligence/OpenClaw-Medical-Skills",
@@ -257,16 +247,6 @@
     "lastCommitSha": "c30c2168843a9dea8404cde4bab639c9ff8fc8b9",
     "upstreamUrl": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem",
     "addedAt": "2026-04-11T17:13:45.922885Z",
-    "addedBy": "migration-script"
-  },
-  {
-    "fullName": "Syniox5334/apple-dev-skills",
-    "cloneUrl": "https://github.com/Syniox5334/apple-dev-skills.git",
-    "localPath": "open-source/Syniox5334/apple-dev-skills",
-    "defaultBranch": "main",
-    "lastCommitSha": "29c82d3a9b0def86889a4a5345452d413806ab73",
-    "upstreamUrl": "https://github.com/Syniox5334/apple-dev-skills",
-    "addedAt": "2026-04-11T17:13:45.630408Z",
     "addedBy": "migration-script"
   },
   {
@@ -637,16 +617,6 @@
     "lastCommitSha": "3a570aac0913431a680127c1e1c190185f41fbc7",
     "upstreamUrl": "https://github.com/wtfhanin/Enhance-Prompt",
     "addedAt": "2026-04-11T17:13:45.394075Z",
-    "addedBy": "migration-script"
-  },
-  {
-    "fullName": "zacklecon/claude-skills",
-    "cloneUrl": "https://github.com/zacklecon/claude-skills.git",
-    "localPath": "open-source/zacklecon/claude-skills",
-    "defaultBranch": "main",
-    "lastCommitSha": "09814832df8117a7926ce082c24a65a74b55bccb",
-    "upstreamUrl": "https://github.com/zacklecon/claude-skills",
-    "addedAt": "2026-04-11T17:13:46.278386Z",
     "addedBy": "migration-script"
   },
   {
