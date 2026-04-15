@@ -20,16 +20,6 @@
     "addedBy": "migration-script"
   },
   {
-    "fullName": "Aditya923-c/xpoz-agent-skills",
-    "cloneUrl": "https://github.com/Aditya923-c/xpoz-agent-skills.git",
-    "localPath": "open-source/Aditya923-c/xpoz-agent-skills",
-    "defaultBranch": "main",
-    "lastCommitSha": "6ca24bcbe06047d9407bdf0dcd394646f5a2ad58",
-    "upstreamUrl": "https://github.com/Aditya923-c/xpoz-agent-skills",
-    "addedAt": "2026-04-11T17:13:45.758101Z",
-    "addedBy": "migration-script"
-  },
-  {
     "fullName": "Agents365-ai/ccc-skill",
     "cloneUrl": "https://github.com/Agents365-ai/ccc-skill.git",
     "localPath": "open-source/Agents365-ai/ccc-skill",
@@ -220,16 +210,6 @@
     "addedBy": "migration-script"
   },
   {
-    "fullName": "Rayan55050/progressive-agent",
-    "cloneUrl": "https://github.com/Rayan55050/progressive-agent.git",
-    "localPath": "open-source/Rayan55050/progressive-agent",
-    "defaultBranch": "main",
-    "lastCommitSha": "1d5acb5beed218f28dced09e6e8351e8ff38a23d",
-    "upstreamUrl": "https://github.com/Rayan55050/progressive-agent",
-    "addedAt": "2026-04-11T17:13:45.734488Z",
-    "addedBy": "migration-script"
-  },
-  {
     "fullName": "Runchuan-BU/BioClaw",
     "cloneUrl": "https://github.com/Runchuan-BU/BioClaw.git",
     "localPath": "open-source/Runchuan-BU/BioClaw",
@@ -257,16 +237,6 @@
     "lastCommitSha": "408f0eb2f0309d5d5532c2b493770b6943b09c79",
     "upstreamUrl": "https://github.com/Samuelkebede24/skill-conductor",
     "addedAt": "2026-04-11T17:13:45.369177Z",
-    "addedBy": "migration-script"
-  },
-  {
-    "fullName": "Sapiens-ostracism678/finance-skills",
-    "cloneUrl": "https://github.com/Sapiens-ostracism678/finance-skills.git",
-    "localPath": "open-source/Sapiens-ostracism678/finance-skills",
-    "defaultBranch": "main",
-    "lastCommitSha": "8b4678d9af5ae84e22d9930eeec3369b6f4fffe3",
-    "upstreamUrl": "https://github.com/Sapiens-ostracism678/finance-skills",
-    "addedAt": "2026-04-11T17:13:46.538843Z",
     "addedBy": "migration-script"
   },
   {
@@ -400,16 +370,6 @@
     "addedBy": "migration-script"
   },
   {
-    "fullName": "chainstacklabs/pumpclaw",
-    "cloneUrl": "https://github.com/chainstacklabs/pumpclaw.git",
-    "localPath": "open-source/chainstacklabs/pumpclaw",
-    "defaultBranch": "main",
-    "lastCommitSha": "80706ea9381fc97d87215b3b1d51cbc16492101b",
-    "upstreamUrl": "https://github.com/chainstacklabs/pumpclaw",
-    "addedAt": "2026-04-11T17:13:45.553257Z",
-    "addedBy": "migration-script"
-  },
-  {
     "fullName": "cyanheads/pubmed-mcp-server",
     "cloneUrl": "https://github.com/cyanheads/pubmed-mcp-server.git",
     "localPath": "open-source/cyanheads/pubmed-mcp-server",
@@ -517,16 +477,6 @@
     "lastCommitSha": "71856c20258ea499eb1c1008e0ddd8d260c968f7",
     "upstreamUrl": "https://github.com/javidmardanov/paper-banana-skill",
     "addedAt": "2026-04-11T17:13:46.335948Z",
-    "addedBy": "migration-script"
-  },
-  {
-    "fullName": "kawsar1533/clawdwatch",
-    "cloneUrl": "https://github.com/kawsar1533/clawdwatch.git",
-    "localPath": "open-source/kawsar1533/clawdwatch",
-    "defaultBranch": "main",
-    "lastCommitSha": "43d4787c04aabe2cb788d18f6d37986c68994a1b",
-    "upstreamUrl": "https://github.com/kawsar1533/clawdwatch",
-    "addedAt": "2026-04-11T17:13:45.003950Z",
     "addedBy": "migration-script"
   },
   {
