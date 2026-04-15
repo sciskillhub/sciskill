@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "skill_errors.json",
-  "repo_count": 73,
+  "repo_count": 74,
   "results": [
     {
       "repo": "mareforma/mareforma",
@@ -242,7 +242,7 @@
       "matches": []
     },
     {
-      "repo": "aristoteleo/PantheonOS",
+      "repo": "Runchuan-BU/BioClaw",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -256,7 +256,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "no_valid_skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Runchuan-BU/BioClaw",
+      "matches": []
     },
     {
       "repo": "droftgamer-wq/researcher-skill",
@@ -305,22 +307,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/droftgamer-wq/researcher-skill.git",
-      "chosen_skill_path": "researcher/SKILL.md",
-      "front_matter": {
-        "name": "researcher",
-        "description": "Runs multi-source investigations using a structured evidence-mapping cycle. Routes between business research, academic research, and claim verification. Triggers on: \"research\", \"investigate\", \"verify\", \"compare\", \"analyze\", \"look into\", \"dig into\", \"fact check\", \"due diligence\", \"deep dive\", \"what is really happening\", \"how do real practitioners see this\", \"is this true\", \"is this legit\", \"what's the real story\", \"market landscape\", \"state of the art\", \"literature review\", \"competitive analysis\", \"opportunity scan\", \"risk assessment\", \"研究\", \"调研\", \"调查\", \"分析\", \"验证\", \"核实\", \"深挖\", \"摸底\", \"行业分析\", \"市场调研\", \"竞品分析\", \"尽调\", \"尽职调查\", \"这个靠谱吗\", \"真实情况是什么\", \"帮我查查\", \"帮我看看\", \"有没有前景\", \"值不值得\", \"到底怎么样\", \"是真的吗\", \"论文调研\", \"文献综述\", \"技术选型\", \"机会分析\".\n",
-        "argument-hint": "<research question or topic / 研究问题或主题>",
-        "allowed-tools": [
-          "WebSearch",
-          "WebFetch",
-          "Read",
-          "Write"
-        ]
-      },
-      "html_url": "https://github.com/droftgamer-wq/researcher-skill",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/droftgamer-wq/researcher-skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/droftgamer-wq/researcher-skill",
+      "matches": []
     },
     {
       "repo": "ClawBio/ClawBio",
@@ -352,6 +341,23 @@
       "matches": []
     },
     {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "cyanheads/pubmed-mcp-server",
       "matched_domain_topics": [
         "bioinformatics"
@@ -366,39 +372,8 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/cyanheads/pubmed-mcp-server.git",
-      "chosen_skill_path": ".agents/skills/add-app-tool/SKILL.md",
-      "front_matter": {
-        "name": "add-app-tool",
-        "description": "Scaffold an MCP App tool + UI resource pair. Use when the user asks to add a tool with interactive UI, create an MCP App, or build a visual/interactive tool.\n",
-        "metadata": {
-          "author": "cyanheads",
-          "version": "1.2",
-          "audience": "external",
-          "type": "reference"
-        }
-      },
-      "html_url": "https://github.com/cyanheads/pubmed-mcp-server",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/pubmed-mcp-server"
-    },
-    {
-      "repo": "Runchuan-BU/BioClaw",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
       "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Runchuan-BU/BioClaw",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/pubmed-mcp-server",
       "matches": []
     },
     {
@@ -908,16 +883,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/Agents365-ai/seurat-skill.git",
-      "chosen_skill_path": "SKILL.md",
-      "front_matter": {
-        "name": "seurat-skill",
-        "description": "Comprehensive Seurat v5 (R) guide for single-cell RNA-seq and multimodal analysis. Covers installation, standard workflows (Normalize/SCTransform), clustering, integration (CCA/RPCA/Harmony), differential expression (FindMarkers/FindAllMarkers), visualization (DimPlot/FeaturePlot/VlnPlot/DoHeatmap), spatial transcriptomics (Visium/Visium HD/MERFISH/Slide-seq), CITE-seq, ATAC-seq, WNN, cell cycle regression, hashing/demultiplexing, sketch analysis, BPCells on-disk, pseudobulk, and format conversion. Use this skill whenever writing, debugging, or reviewing Seurat R code, building scRNA-seq pipelines, or looking up Seurat syntax, even for simple questions.",
-        "homepage": "https://github.com/Agents365-ai/seurat-skill"
-      },
-      "html_url": "https://github.com/Agents365-ai/seurat-skill",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Agents365-ai/seurat-skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Agents365-ai/seurat-skill",
+      "matches": []
     },
     {
       "repo": "Agents365-ai/ccc-skill",
@@ -939,26 +907,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/Agents365-ai/ccc-skill.git",
-      "chosen_skill_path": "SKILL.md",
-      "front_matter": {
-        "name": "ccc-skill",
-        "description": "Domain expertise for cell-cell communication (CCC) analysis. Intent-to-tool routing, workflow patterns, code templates, and pitfall warnings for LIANA+, CellPhoneDB, CellChat, NicheNet, COMMOT, Squidpy, MEBOCOST, DIALOGUE, and 10+ additional tools across scRNA-seq and spatial transcriptomics data.",
-        "license": "MIT",
-        "homepage": "https://github.com/Agents365-ai/ccc-skill",
-        "platforms": [
-          "macos",
-          "linux",
-          "windows"
-        ],
-        "metadata": {
-          "author": "Agents365-ai",
-          "version": "0.2.0"
-        }
-      },
-      "html_url": "https://github.com/Agents365-ai/ccc-skill",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Agents365-ai/ccc-skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Agents365-ai/ccc-skill",
+      "matches": []
     },
     {
       "repo": "K-Dense-AI/scientific-agent-skills",
@@ -1164,6 +1115,23 @@
       "matches": []
     },
     {
+      "repo": "Corrosive-turn243/tula",
+      "matched_domain_topics": [
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "openclaw-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "openclaw-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "pswider/tula",
       "matched_domain_topics": [
         "genomics"
@@ -1200,9 +1168,30 @@
         }
       ],
       "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Elfredaaroused655/claude-skills",
-      "matches": []
+      "status": "added",
+      "clone_url": "https://github.com/Elfredaaroused655/claude-skills.git",
+      "chosen_skill_path": "business-growth/SKILL.md",
+      "front_matter": {
+        "name": "business-growth-skills",
+        "description": "4 business growth agent skills and plugins for Claude Code, Codex, Gemini CLI, Cursor, OpenClaw. Customer success (health scoring, churn), sales engineer (RFP), revenue operations (pipeline, GTM), contract & proposal writer. Python tools (stdlib-only).",
+        "version": "1.1.0",
+        "author": "Alireza Rezvani",
+        "license": "MIT",
+        "tags": [
+          "business",
+          "customer-success",
+          "sales",
+          "revenue-operations",
+          "growth"
+        ],
+        "agents": [
+          "claude-code",
+          "codex-cli",
+          "openclaw"
+        ]
+      },
+      "html_url": "https://github.com/Elfredaaroused655/claude-skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Elfredaaroused655/claude-skills"
     },
     {
       "repo": "JiahaoZhang-Public/ProtClaw",
@@ -1241,25 +1230,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "Sapiens-ostracism678/finance-skills",
-      "matched_domain_topics": [
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sapiens-ostracism678/finance-skills",
-      "matches": []
-    },
-    {
       "repo": "zacklecon/claude-skills",
       "matched_domain_topics": [
         "clinical-research",
@@ -1284,9 +1254,51 @@
         }
       ],
       "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/zacklecon/claude-skills",
-      "matches": []
+      "status": "added",
+      "clone_url": "https://github.com/zacklecon/claude-skills.git",
+      "chosen_skill_path": "skills/angular-architect/SKILL.md",
+      "front_matter": {
+        "name": "angular-architect",
+        "description": "Use when building Angular 17+ applications with standalone components or signals. Invoke for enterprise apps, RxJS patterns, NgRx state management, performance optimization, advanced routing.",
+        "license": "MIT",
+        "metadata": {
+          "author": "https://github.com/Jeffallan",
+          "version": "1.0.0",
+          "domain": "frontend",
+          "triggers": "Angular, Angular 17, standalone components, signals, RxJS, NgRx, Angular performance, Angular routing, Angular testing",
+          "role": "specialist",
+          "scope": "implementation",
+          "output-format": "code",
+          "related-skills": "typescript-pro, test-master"
+        }
+      },
+      "html_url": "https://github.com/zacklecon/claude-skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/zacklecon/claude-skills"
+    },
+    {
+      "repo": "Sapiens-ostracism678/finance-skills",
+      "matched_domain_topics": [
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/Sapiens-ostracism678/finance-skills.git",
+      "chosen_skill_path": "skills/discord-reader/SKILL.md",
+      "front_matter": {
+        "name": "discord-reader",
+        "description": "Read Discord for financial research using the discord-cli tool (read-only). Use this skill whenever the user wants to read Discord channels, search for messages in trading servers, view guild/channel info, monitor crypto or market discussion groups, or gather financial sentiment from Discord. Triggers include: \"check my Discord\", \"search Discord for\", \"read Discord messages\", \"what's happening in the trading Discord\", \"show Discord channels\", \"list my servers\", \"Discord sentiment on BTC\", \"what are people saying in Discord about AAPL\", \"monitor crypto Discord\", \"export Discord messages\", any mention of Discord in context of reading financial news, market research, or trading community discussions. This skill is READ-ONLY — it does NOT support sending messages, reacting, or any write operations."
+      },
+      "html_url": "https://github.com/Sapiens-ostracism678/finance-skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sapiens-ostracism678/finance-skills"
     },
     {
       "repo": "AlexThePro939yt/scientific-validation-hub",
