@@ -3,7 +3,7 @@
 根据 skill-manifest.json 同步 sciskill 仓库下的 skill 子仓库。
 
 用法:
-    # 同步主仓库 + 所有 skill 子仓库
+    # 同步主仓库 + 所有 skill 子仓库；有变更时自动 add/commit/push
     python3 scripts/sync_skill_repos.py --dest .
 
     # 只同步子仓库（跳过主仓库 pull）
@@ -11,6 +11,9 @@
 
     # 只同步指定的子仓库
     python3 scripts/sync_skill_repos.py --dest . --only owner/repo
+
+    # 仅同步，不自动提交或推送
+    python3 scripts/sync_skill_repos.py --dest . --no-auto-commit
 
 依赖: 无（纯标准库）
 """
@@ -43,6 +46,65 @@ def run_git(args, cwd=None, check=True, timeout=GIT_TIMEOUT):
         stderr = result.stderr.strip() or result.stdout.strip()
         raise RuntimeError(f"git {' '.join(args)} failed: {stderr}")
     return result
+
+
+def repo_has_relevant_changes(repo_root):
+    result = run_git(
+        ["git", "status", "--porcelain", "--", MANIFEST_FILENAME, "open-source"],
+        cwd=repo_root,
+        check=False,
+    )
+    return bool((result.stdout or "").strip())
+
+
+def current_branch(repo_root):
+    return run_git(
+        ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+        cwd=repo_root,
+        check=False,
+    ).stdout.strip()
+
+
+def auto_commit_and_push(repo_root, auto_push=True):
+    if not repo_has_relevant_changes(repo_root):
+        print("[3/3] No manifest or skill repo changes to commit")
+        return True
+
+    print("[3/3] Auto-committing synced changes...")
+    run_git(["git", "add", MANIFEST_FILENAME, "open-source"], cwd=repo_root)
+
+    commit_result = run_git(
+        ["git", "commit", "-m", "chore: sync skill repos"],
+        cwd=repo_root,
+        check=False,
+    )
+    if commit_result.returncode != 0:
+        output = (commit_result.stderr or commit_result.stdout or "").strip()
+        if "nothing to commit" in output.lower():
+            print("[OK] nothing to commit after staging")
+            return True
+        print(f"[ERROR] auto-commit failed: {output}")
+        return False
+
+    print("[OK] committed synced changes")
+    if not auto_push:
+        print("[INFO] auto-push disabled")
+        return True
+
+    branch = current_branch(repo_root)
+    if not branch:
+        print("[ERROR] could not detect current branch for push")
+        return False
+
+    print(f"[4/4] Pushing to origin/{branch}...")
+    push_result = run_git(["git", "push", "origin", branch], cwd=repo_root, check=False)
+    if push_result.returncode != 0:
+        output = (push_result.stderr or push_result.stdout or "").strip()
+        print(f"[ERROR] auto-push failed: {output}")
+        return False
+
+    print("[OK] pushed synced changes")
+    return True
 
 
 def load_manifest(repo_root):
@@ -222,6 +284,8 @@ def main():
     parser.add_argument("--token", default=os.environ.get("GITHUB_TOKEN", ""), help="GitHub token")
     parser.add_argument("--skip-pull", action="store_true", help="Skip git pull on main repo")
     parser.add_argument("--only", action="append", help="Only sync specific fullName (can repeat)")
+    parser.add_argument("--no-auto-commit", action="store_true", help="Do not auto add/commit synced changes")
+    parser.add_argument("--no-auto-push", action="store_true", help="Do not auto push after auto-commit")
     args = parser.parse_args()
 
     repo_root = Path(args.dest).resolve()
@@ -270,6 +334,8 @@ def main():
         for name in failed:
             print(f"  - {name}")
         return 1
+    if not args.no_auto_commit:
+        return 0 if auto_commit_and_push(repo_root, auto_push=not args.no_auto_push) else 1
     return 0
 
 
