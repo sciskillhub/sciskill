@@ -1,6 +1,6 @@
 ---
 name: sciskillhub
-description: 为本地 agent 选择合适 skill 来执行任务/数据分析，当用户提出一个任务时，调用这个来帮助用户选择这个任务最合适的 skill
+description: 当用户需要为科研任务匹配合适 skill 时使用，尤其当任务需求属于 Concepts and Theory、Research Capabilities、Methods and Techniques、Software and Tools、Instruments and Equipment、Data and Resources、Workflows、Standards and Guidelines，或研究阶段属于 Study Design、Data / Sample Acquisition、Data Processing、Data Analysis and Modeling、Validation and Interpretation、Visualization and Presentation、Writing and Publication、Reproducibility, Collaboration and Management 时，应调用此 skill 查询 sciskillhub 中最合适的 skill。
 metadata:
     skill-author: sciskillhub
     homepage: https://sciskillhub.org
@@ -16,6 +16,15 @@ SciSkillHub 是一个面向 AI agent 的技能分发平台。
 - 提供 SciSkillHub CLI (`sciskill`) 的查询命令和调用顺序
 - 告诉本地 agent 应该如何从 `object / stage / domains` 缩小范围
 - 返回候选 skill list，供本地 agent 继续判断
+
+以下情况应优先使用这个 skill：
+
+- 用户明确说“帮我找合适的 skill / workflow / 方法 / 工具”
+- 用户的问题本质上是在问“这个需求应该用哪个 SciSkillHub skill”
+- 用户当前任务可被归入以下对象类型之一：
+  `Concepts and Theory`、`Research Capabilities`、`Methods and Techniques`、`Software and Tools`、`Instruments and Equipment`、`Data and Resources`、`Workflows`、`Standards and Guidelines`
+- 用户当前任务主要处于以下研究阶段之一：
+  `Study Design`、`Data / Sample Acquisition`、`Data Processing`、`Data Analysis and Modeling`、`Validation and Interpretation`、`Visualization and Presentation`、`Writing and Publication`、`Reproducibility, Collaboration and Management`
 
 以下判断应由本地 agent 结合用户当前问题先自行完成：
 
@@ -113,19 +122,22 @@ SciSkillHub 是一个面向 AI agent 的技能分发平台。
 
 `stage` 也是固定枚举，本地 agent 需要选出 **1-2 个最相关的阶段**：
 
-- `Problem Definition and Background Research`
 - `Study Design`
 - `Data / Sample Acquisition`
+- `Data Processing`
 - `Data Analysis and Modeling`
 - `Validation and Interpretation`
+- `Visualization and Presentation`
 - `Writing and Publication`
-- `Translation to Practice`
-- `General Research Support`
+- `Reproducibility, Collaboration and Management`
 
 判断原则：
 
 - 选最主要阶段，必要时加 1 个次要阶段
-- 例如"分析数据"偏 `Data Analysis and Modeling`，但如果涉及"如何设计分析方案"也覆盖 `Study Design`
+- 例如"分析数据"偏 `Data Analysis and Modeling`
+- 如果任务是上游清洗、比对、预处理，更适合 `Data Processing`
+- 如果任务是画图、汇报、结果展示，更适合 `Visualization and Presentation`
+- 如果任务是版本管理、流程复现、协作交付，更适合 `Reproducibility, Collaboration and Management`
 
 ---
 
@@ -174,14 +186,14 @@ Object (--object-list)
   • Standards and Guidelines
 
 Stage (--stage-list)
-  • Problem Definition and Background Research
   • Study Design
   • Data / Sample Acquisition
+  • Data Processing
   • Data Analysis and Modeling
   • Validation and Interpretation
+  • Visualization and Presentation
   • Writing and Publication
-  • Translation to Practice
-  • General Research Support
+  • Reproducibility, Collaboration and Management
 
 Domain (--domain-list)
   • Life Sciences
