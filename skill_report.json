@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "skill_errors.json",
-  "repo_count": 77,
+  "repo_count": 78,
   "results": [
     {
       "repo": "mareforma/mareforma",
@@ -293,6 +293,23 @@
       "matches": []
     },
     {
+      "repo": "HolobiomicsLab/Mimosa-AI",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -322,23 +339,6 @@
       "matches": []
     },
     {
-      "repo": "aristoteleo/PantheonOS",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "jayhemnani9910/biotech-accelerator",
       "matched_domain_topics": [
         "bioinformatics",
@@ -366,7 +366,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "HolobiomicsLab/Mimosa-AI",
+      "repo": "aristoteleo/PantheonOS",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -915,17 +915,36 @@
         }
       ],
       "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aipoch/medical-research-skills",
+      "matches": []
+    },
+    {
+      "repo": "Pavel-Kravchenko/Bioinformatics",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
       "status": "added",
-      "clone_url": "https://github.com/aipoch/medical-research-skills.git",
-      "chosen_skill_path": "awesome-med-research-skills/Academic Writing/author-response-builder/SKILL.md",
+      "clone_url": "https://github.com/Pavel-Kravchenko/Bioinformatics.git",
+      "chosen_skill_path": "Skills/advanced-string-structures/SKILL.md",
       "front_matter": {
-        "name": "author-response-builder",
-        "description": "Turns reviewer comments into structured, professional point-by-point responses linked to manuscript revisions, clarifications, rebuttals, and additional analyses.",
-        "license": "MIT",
-        "skill-author": "AIPOCH"
+        "name": "advanced-string-structures",
+        "description": "Tries, Aho-Corasick multi-pattern matching, suffix arrays with LCP, and suffix trees for genome indexing",
+        "tool_type": "python",
+        "primary_tool": "Python"
       },
-      "html_url": "https://github.com/aipoch/medical-research-skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aipoch/medical-research-skills"
+      "html_url": "https://github.com/Pavel-Kravchenko/Bioinformatics",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Pavel-Kravchenko/Bioinformatics"
     },
     {
       "repo": "K-Dense-AI/scientific-agent-skills",
@@ -1290,25 +1309,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "Sapiens-ostracism678/finance-skills",
-      "matched_domain_topics": [
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sapiens-ostracism678/finance-skills",
-      "matches": []
-    },
-    {
       "repo": "zacklecon/claude-skills",
       "matched_domain_topics": [
         "clinical-research",
@@ -1335,6 +1335,25 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/zacklecon/claude-skills",
+      "matches": []
+    },
+    {
+      "repo": "Sapiens-ostracism678/finance-skills",
+      "matched_domain_topics": [
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sapiens-ostracism678/finance-skills",
       "matches": []
     },
     {
