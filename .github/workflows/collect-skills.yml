@@ -21,7 +21,6 @@ jobs:
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
-          submodules: recursive
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -55,10 +54,8 @@ jobs:
       - name: Commit changes
         run: |
           python scripts/repair_skill_manifest.py --repo-root .
-          if [ -f .gitmodules ]; then
-            git add .gitmodules
-          fi
-          git add skill-manifest.json skill_report.json skill_errors.json open-source/
+          python scripts/generate_open_source_skills_md.py --repo-root .
+          git add skill-manifest.json skill_report.json skill_errors.json open-source-skills.md
           git add -A config
           git diff --cached --quiet && exit 0
           git commit -m "chore: collect valid skill repos"
@@ -66,10 +63,8 @@ jobs:
           if ! git rebase origin/main; then
             echo "Rebase reported conflicts; attempting automatic skill-manifest repair"
             python scripts/repair_skill_manifest.py --repo-root .
-            if [ -f .gitmodules ]; then
-              git add .gitmodules
-            fi
-            git add skill-manifest.json open-source/
+            python scripts/generate_open_source_skills_md.py --repo-root .
+            git add skill-manifest.json open-source-skills.md
             GIT_EDITOR=true git rebase --continue
           fi
           git push origin HEAD:main

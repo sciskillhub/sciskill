@@ -28,6 +28,7 @@ EXCLUDED_REPO_FULL_NAMES = {
 }
 MANIFEST_FILENAME = "skill-manifest.json"
 GITMODULES_FILENAME = ".gitmodules"
+REGISTRY_MARKDOWN_FILENAME = "open-source-skills.md"
 
 
 @dataclass
@@ -484,12 +485,6 @@ def is_registered_submodule(sciskill_root: Path, full_name: str) -> bool:
 
 
 def already_added(sciskill_root: Path, full_name: str) -> bool:
-    target_rel = str(Path("open-source") / full_name)
-    target = sciskill_root / target_rel
-
-    if target.exists() or is_registered_submodule(sciskill_root, full_name):
-        return True
-
     manifest = load_manifest(sciskill_root)
     return any(e.get("fullName") == full_name for e in manifest)
 
@@ -640,6 +635,36 @@ def add_to_manifest(sciskill_root: Path, entry: Dict[str, Any]) -> None:
     save_manifest(sciskill_root, entries)
 
 
+def generate_registry_markdown(sciskill_root: Path) -> None:
+    script_path = Path(__file__).with_name("generate_open_source_skills_md.py")
+    if not script_path.is_file():
+        return
+    subprocess.run(
+        [
+            sys.executable,
+            str(script_path),
+            "--repo-root",
+            str(sciskill_root),
+            "--output",
+            REGISTRY_MARKDOWN_FILENAME,
+            "--cache-root",
+            str(sciskill_root.parent / "data" / "open-source"),
+        ],
+        cwd=sciskill_root,
+        check=False,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+
+
+def fetch_branch_head_sha(token: str, full_name: str, default_branch: str) -> str:
+    payload = gh_get(
+        f"{API_ROOT}/repos/{full_name}/git/ref/heads/{default_branch}",
+        token,
+    ).json()
+    return str(payload.get("object", {}).get("sha") or "")
+
+
 def clone_skill_repo(
     sciskill_root: Path,
     full_name: str,
@@ -648,62 +673,15 @@ def clone_skill_repo(
 ) -> str:
     owner, repo = full_name.split("/", 1)
     https_url = f"https://github.com/{owner}/{repo}.git"
-    target = submodule_target_path(sciskill_root, full_name)
-    target_rel = str(target.relative_to(sciskill_root))
-    cleanup_failed_submodule_add(sciskill_root, target_rel)
-    target.parent.mkdir(parents=True, exist_ok=True)
-
-    env = os.environ.copy()
-    env["GIT_LFS_SKIP_SMUDGE"] = "1"
-
-    def try_add(url: str, branch: Optional[str]) -> Tuple[bool, Optional[Dict[str, Any]]]:
-        cmd = ["git", "submodule", "add", "--depth", "1"]
-        if branch:
-            cmd.extend(["-b", branch])
-        cmd.extend([url, target_rel])
-        print(f"[INFO] trying submodule add: {' '.join(cmd)}")
-        if dry_run:
-            return True, None
-        result = subprocess.run(
-            cmd,
-            cwd=sciskill_root,
-            check=False,
-            env=env,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True,
-        )
-        if result.returncode == 0:
-            return True, None
-        attempt: Dict[str, Any] = {"url": url, "branch": branch or "", "returncode": result.returncode}
-        stderr = truncate_output(result.stderr)
-        if stderr:
-            attempt["stderr"] = stderr
-        return False, attempt
-
-    attempts: List[Dict[str, Any]] = []
-
-    ok, attempt = try_add(https_url, default_branch)
-    if ok:
+    print(f"[INFO] registry-only mode: record {full_name} -> open-source/{full_name}")
+    if dry_run:
         return https_url
-    if attempt is not None:
-        attempts.append(attempt)
-
-    # Retry without --branch
-    if not dry_run:
-        cleanup_failed_submodule_add(sciskill_root, target_rel)
-
-    ok, attempt = try_add(https_url, None)
-    if ok:
-        return https_url
-    if attempt is not None:
-        attempts.append(attempt)
-
-    raise CloneError(full_name, attempts)
+    return https_url
 
 
 def cloned_repo_head_sha(sciskill_root: Path, full_name: str) -> Optional[str]:
-    return submodule_head_sha(sciskill_root, full_name)
+    del sciskill_root, full_name
+    return None
 
 
 def main() -> int:
@@ -735,7 +713,6 @@ def main() -> int:
         return 2
 
     repair_manifest(sciskill_root)
-    (sciskill_root / "open-source").mkdir(parents=True, exist_ok=True)
 
     domain_topics: List[str] = []
     qualifier_topics: List[str] = []
@@ -885,7 +862,7 @@ def main() -> int:
             )
 
             if not args.dry_run:
-                last_commit_sha = cloned_repo_head_sha(sciskill_root, full_name) or ""
+                last_commit_sha = fetch_branch_head_sha(args.token, full_name, chosen.default_branch)
                 add_to_manifest(sciskill_root, {
                     "fullName": full_name,
                     "cloneUrl": clone_url,
@@ -986,6 +963,8 @@ def main() -> int:
     print(f"\nReport saved to: {report_path}")
     print(f"Error report saved to: {error_report_path}")
     repair_manifest(sciskill_root)
+    if not args.dry_run:
+        generate_registry_markdown(sciskill_root)
     if queries and successful_query_count == 0:
         print("ERROR: all GitHub search queries failed", file=sys.stderr)
         return 1

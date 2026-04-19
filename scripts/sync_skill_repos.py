@@ -1,23 +1,18 @@
 #!/usr/bin/env python3
 """
-根据 skill-manifest.json 同步 sciskill 仓库下的 skill 子仓库。
+Sync skill repositories listed in skill-manifest.json into an external cache root.
 
-用法:
-    # 同步主仓库 + 所有 skill 子仓库；默认只同步，不自动写主仓库
+This script intentionally does not mutate the sciskill git worktree. The sciskill
+repository acts as a registry only; live repository contents are stored under an
+external cache root, which defaults to ../data relative to the repo root.
+
+Examples:
     python3 scripts/sync_skill_repos.py --dest .
-
-    # 只同步子仓库（跳过主仓库 fast-forward）
-    python3 scripts/sync_skill_repos.py --dest . --skip-pull
-
-    # 只同步指定的子仓库
+    python3 scripts/sync_skill_repos.py --dest . --cache-root ../data/open-source
     python3 scripts/sync_skill_repos.py --dest . --only owner/repo
-
-    # 显式允许自动提交 / 推送
-    python3 scripts/sync_skill_repos.py --dest . --auto-commit
-    python3 scripts/sync_skill_repos.py --dest . --auto-commit --auto-push
-
-依赖: 无（纯标准库）
 """
+
+from __future__ import annotations
 
 import argparse
 import base64
@@ -26,22 +21,20 @@ import os
 import shutil
 import subprocess
 import sys
-import time
 from pathlib import Path
 
 MANIFEST_FILENAME = "skill-manifest.json"
-GITMODULES_FILENAME = ".gitmodules"
 GIT_TIMEOUT = 300
 
 
-def git_auth_args(token):
+def git_auth_args(token: str) -> list[str]:
     if not token:
         return []
     encoded = base64.b64encode(f"x-access-token:{token}".encode()).decode("ascii")
     return ["-c", f"http.https://github.com/.extraheader=AUTHORIZATION: basic {encoded}"]
 
 
-def run_git(args, cwd=None, check=True, timeout=GIT_TIMEOUT):
+def run_git(args: list[str], cwd: Path | None = None, check: bool = True, timeout: int = GIT_TIMEOUT) -> subprocess.CompletedProcess:
     env = {**os.environ, "GIT_LFS_SKIP_SMUDGE": "1"}
     result = subprocess.run(args, cwd=cwd, capture_output=True, text=True, timeout=timeout, env=env)
     if check and result.returncode != 0:
@@ -50,47 +43,7 @@ def run_git(args, cwd=None, check=True, timeout=GIT_TIMEOUT):
     return result
 
 
-def git_index_entry(repo_root, local_path):
-    rel_path = Path(local_path).as_posix()
-    result = run_git(
-        ["git", "ls-files", "--stage", "--", rel_path],
-        cwd=repo_root,
-        check=False,
-    )
-    line = (result.stdout or "").strip()
-    if not line:
-        return None
-    try:
-        meta, path_text = line.split("\t", 1)
-        mode, sha, stage = meta.split()
-    except ValueError:
-        return None
-    return {
-        "mode": mode,
-        "sha": sha,
-        "stage": stage,
-        "path": path_text,
-    }
-
-
-def repo_has_relevant_changes(repo_root):
-    result = run_git(
-        ["git", "status", "--porcelain"],
-        cwd=repo_root,
-        check=False,
-    )
-    for line in (result.stdout or "").splitlines():
-        entry = line[3:] if len(line) > 3 else line
-        if (
-            entry == MANIFEST_FILENAME
-            or entry == GITMODULES_FILENAME
-            or entry.startswith("open-source/")
-        ):
-            return True
-    return False
-
-
-def current_branch(repo_root):
+def current_branch(repo_root: Path) -> str:
     return run_git(
         ["git", "rev-parse", "--abbrev-ref", "HEAD"],
         cwd=repo_root,
@@ -98,7 +51,7 @@ def current_branch(repo_root):
     ).stdout.strip()
 
 
-def ensure_clean_main_repo(repo_root):
+def ensure_clean_main_repo(repo_root: Path) -> None:
     result = run_git(
         ["git", "status", "--porcelain", "--untracked-files=no"],
         cwd=repo_root,
@@ -111,14 +64,14 @@ def ensure_clean_main_repo(repo_root):
         )
 
 
-def sync_main_repo_fast_forward(repo_root, token):
+def sync_main_repo_fast_forward(repo_root: Path, token: str) -> str:
     branch = current_branch(repo_root)
     if not branch:
         raise RuntimeError("could not detect current branch for main repo sync")
 
     ensure_clean_main_repo(repo_root)
     auth = git_auth_args(token)
-    print(f"[1/2] Fetching origin/{branch} for fast-forward sync...")
+    print(f"[1/3] Fetching origin/{branch} for fast-forward sync...")
     run_git(["git"] + auth + ["fetch", "origin", branch], cwd=repo_root)
 
     counts = run_git(
@@ -142,362 +95,204 @@ def sync_main_repo_fast_forward(repo_root, token):
             "refuse to overwrite or merge automatically."
         )
     if behind:
-        print(f"[1/2] Fast-forwarding {branch} by {behind} commit(s)...")
+        print(f"[1/3] Fast-forwarding {branch} by {behind} commit(s)...")
         run_git(["git", "merge", "--ff-only", f"refs/remotes/origin/{branch}"], cwd=repo_root)
     else:
-        print(f"[1/2] Main repo already matches origin/{branch}")
+        print(f"[1/3] Main repo already matches origin/{branch}")
 
     return branch
 
 
-def auto_commit_and_push(repo_root, auto_push=True):
-    if not repo_has_relevant_changes(repo_root):
-        print("[3/3] No manifest or skill repo changes to commit")
-        return True
-
-    print("[3/3] Auto-committing synced changes...")
-    add_args = ["git", "add", MANIFEST_FILENAME, "open-source"]
-    if gitmodules_path(repo_root).exists():
-        add_args.append(GITMODULES_FILENAME)
-    run_git(add_args, cwd=repo_root)
-
-    commit_result = run_git(
-        ["git", "commit", "-m", "chore: sync skill repos"],
-        cwd=repo_root,
-        check=False,
-    )
-    if commit_result.returncode != 0:
-        output = (commit_result.stderr or commit_result.stdout or "").strip()
-        if "nothing to commit" in output.lower():
-            print("[OK] nothing to commit after staging")
-            return True
-        print(f"[ERROR] auto-commit failed: {output}")
-        return False
-
-    print("[OK] committed synced changes")
-    if not auto_push:
-        print("[INFO] auto-push disabled")
-        return True
-
-    branch = current_branch(repo_root)
-    if not branch:
-        print("[ERROR] could not detect current branch for push")
-        return False
-
-    print(f"[4/4] Pushing to origin/{branch}...")
-    push_result = run_git(["git", "push", "origin", branch], cwd=repo_root, check=False)
-    if push_result.returncode != 0:
-        output = (push_result.stderr or push_result.stdout or "").strip()
-        print(f"[ERROR] auto-push failed: {output}")
-        return False
-
-    print("[OK] pushed synced changes")
-    return True
-
-
-def load_manifest(repo_root):
-    mp = Path(repo_root) / MANIFEST_FILENAME
-    if not mp.is_file():
-        print(f"[WARN] {mp} not found")
+def load_manifest(repo_root: Path) -> list[dict]:
+    manifest_path = repo_root / MANIFEST_FILENAME
+    if not manifest_path.is_file():
+        print(f"[WARN] {manifest_path} not found")
         return []
     try:
-        return json.loads(mp.read_text(encoding="utf-8"))
-    except (json.JSONDecodeError, OSError) as e:
-        print(f"[ERROR] Failed to parse manifest: {e}")
+        payload = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as exc:
+        print(f"[ERROR] Failed to parse {MANIFEST_FILENAME}: {exc}")
         return []
+    return payload if isinstance(payload, list) else []
 
 
-def repair_manifest(repo_root):
-    script_path = Path(__file__).with_name("repair_skill_manifest.py")
-    if not script_path.is_file():
-        return False
-    result = subprocess.run(
-        [sys.executable, str(script_path), "--repo-root", str(repo_root)],
-        cwd=repo_root,
-        capture_output=True,
-        text=True,
-        check=False,
-    )
-    if result.returncode == 0:
-        message = (result.stdout or "").strip()
-        if message:
-            print(message)
-        return True
-    error = (result.stderr or result.stdout or "").strip()
-    if error:
-        print(f"[WARN] manifest repair failed: {error}")
-    return False
-
-
-def inject_token(url, token):
+def inject_token(url: str, token: str) -> str:
     if token and url.startswith("https://github.com/"):
         return url.replace("https://", f"https://{token}@", 1)
     return url
 
 
-def gitmodules_path(repo_root):
-    return Path(repo_root) / GITMODULES_FILENAME
+def cache_relative_path(local_path: str) -> Path:
+    raw = Path(local_path)
+    parts = raw.parts
+    if parts and parts[0] == "open-source":
+        parts = parts[1:]
+    return Path(*parts) if parts else Path()
 
 
-def is_submodule(repo_root, local_path):
-    entry = git_index_entry(repo_root, local_path)
-    return bool(entry and entry.get("mode") == "160000")
+def determine_remote_branch(repo_path: Path, recorded_branch: str) -> str:
+    fetch_recorded = run_git(
+        ["git", "fetch", "origin", recorded_branch],
+        cwd=repo_path,
+        check=False,
+    )
+    if fetch_recorded.returncode == 0:
+        return recorded_branch
 
+    fetch_all = run_git(["git", "fetch", "origin"], cwd=repo_path, check=False)
+    if fetch_all.returncode != 0:
+        raise RuntimeError(fetch_all.stderr.strip() or fetch_all.stdout.strip() or "fetch origin failed")
 
-def submodule_head_sha(repo_root, local_path):
-    local_path = Path(local_path)
-    abs_path = Path(repo_root) / local_path
-    if abs_path.exists():
-        head_sha = run_git(
-            ["git", "rev-parse", "HEAD"],
-            cwd=abs_path,
-            check=False,
-        ).stdout.strip()
-        if head_sha:
-            return head_sha
-    entry = git_index_entry(repo_root, local_path)
-    if entry and entry.get("mode") == "160000":
-        return entry.get("sha", "")
-    return ""
-
-
-def submodule_git_dir(repo_root, local_path):
-    common_dir = run_git(
-        ["git", "rev-parse", "--git-common-dir"],
-        cwd=repo_root,
+    remote_head = run_git(
+        ["git", "rev-parse", "--abbrev-ref", "refs/remotes/origin/HEAD"],
+        cwd=repo_path,
         check=False,
     ).stdout.strip()
-    if not common_dir:
-        return None
-    common_path = Path(common_dir)
-    if not common_path.is_absolute():
-        common_path = (Path(repo_root) / common_path).resolve()
-    return common_path / "modules" / Path(local_path)
+    if remote_head.startswith("origin/"):
+        return remote_head[len("origin/"):]
 
-
-def cleanup_failed_submodule_add(repo_root, local_path):
-    local_path = Path(local_path)
-    abs_path = Path(repo_root) / local_path
-    shutil.rmtree(abs_path, ignore_errors=True)
-
-    run_git(
-        ["git", "rm", "--cached", "-f", "--", str(local_path)],
-        cwd=repo_root,
+    remote_branches = run_git(
+        ["git", "for-each-ref", "--format=%(refname:short)", "refs/remotes/origin"],
+        cwd=repo_path,
         check=False,
-    )
-    run_git(
-        ["git", "config", "--local", "--remove-section", f"submodule.{local_path.as_posix()}"],
-        cwd=repo_root,
-        check=False,
-    )
-    if gitmodules_path(repo_root).exists():
-        run_git(
-            ["git", "config", "--file", GITMODULES_FILENAME, "--remove-section", f"submodule.{local_path.as_posix()}"],
-            cwd=repo_root,
-            check=False,
-        )
-        if not gitmodules_path(repo_root).read_text(encoding="utf-8").strip():
-            gitmodules_path(repo_root).unlink(missing_ok=True)
+    ).stdout.splitlines()
+    for branch in remote_branches:
+        branch = branch.strip()
+        if branch.startswith("origin/") and branch != "origin/HEAD":
+            return branch[len("origin/"):]
 
-    modules_dir = submodule_git_dir(repo_root, local_path)
-    if modules_dir:
-        shutil.rmtree(modules_dir, ignore_errors=True)
+    return recorded_branch
 
 
-def set_submodule_branch(repo_root, local_path, branch, token):
+def clone_or_update_repo(cache_root: Path, entry: dict, token: str) -> bool:
+    full_name = str(entry.get("fullName") or "?")
+    local_path = str(entry.get("localPath") or "").strip()
+    clone_url = inject_token(str(entry.get("cloneUrl") or "").strip(), token)
+    branch = str(entry.get("defaultBranch") or "main").strip() or "main"
+
+    if not local_path:
+        print(f"  [skip] {full_name} missing localPath in manifest")
+        return False
+    if not clone_url:
+        print(f"  [skip] {full_name} missing cloneUrl in manifest")
+        return False
+
+    target_path = (cache_root / cache_relative_path(local_path)).resolve()
+    target_path.parent.mkdir(parents=True, exist_ok=True)
+
+    if (target_path / ".git").exists():
+        print(f"  [update] {full_name}", end=" ", flush=True)
+        try:
+            effective_branch = determine_remote_branch(target_path, branch)
+            run_git(["git", "checkout", "--force", "-B", effective_branch, f"origin/{effective_branch}"], cwd=target_path)
+            run_git(["git", "reset", "--hard", f"origin/{effective_branch}"], cwd=target_path)
+            print(f"OK ({effective_branch})")
+            return True
+        except Exception as exc:
+            print(f"FAILED ({exc})")
+            return False
+
+    if target_path.exists():
+        print(f"  [replace] {full_name} existing non-git path -> reclone")
+        if target_path.is_dir():
+            shutil.rmtree(target_path, ignore_errors=True)
+        else:
+            target_path.unlink(missing_ok=True)
+
+    print(f"  [clone] {full_name}", end=" ", flush=True)
     auth = git_auth_args(token)
-    run_git(
-        ["git"] + auth + ["submodule", "set-branch", "--branch", branch, "--", str(local_path)],
-        cwd=repo_root,
-    )
-
-
-def add_submodule(repo_root, local_path, clone_url, branch, token):
-    auth = git_auth_args(token)
-    local_path = Path(local_path)
-    cleanup_failed_submodule_add(repo_root, local_path)
-    local_path.parent.mkdir(parents=True, exist_ok=True)
-
     result = run_git(
-        ["git"] + auth + ["submodule", "add", "--depth", "1", "-b", branch, clone_url, str(local_path)],
-        cwd=repo_root,
+        ["git"] + auth + ["clone", "--depth", "1", "--branch", branch, clone_url, str(target_path)],
+        cwd=cache_root,
         check=False,
     )
     if result.returncode == 0:
-        return True
-
-    cleanup_failed_submodule_add(repo_root, local_path)
-    result = run_git(
-        ["git"] + auth + ["submodule", "add", "--depth", "1", clone_url, str(local_path)],
-        cwd=repo_root,
-        check=False,
-    )
-    return result.returncode == 0
-
-
-def update_submodule_checkout(repo_root, local_path, branch, token):
-    auth = git_auth_args(token)
-    set_submodule_branch(repo_root, local_path, branch, token)
-    run_git(["git"] + auth + ["submodule", "sync", "--", str(local_path)], cwd=repo_root)
-    run_git(
-        ["git"] + auth + ["submodule", "update", "--init", "--remote", "--depth", "1", "--", str(local_path)],
-        cwd=repo_root,
-    )
-
-
-def _update_manifest_branch(repo_root, full_name, branch):
-    """Update defaultBranch in manifest when the recorded value was wrong."""
-    mp = Path(repo_root) / MANIFEST_FILENAME
-    try:
-        entries = json.loads(mp.read_text(encoding="utf-8"))
-    except (json.JSONDecodeError, OSError):
-        return
-    for entry in entries:
-        if entry.get("fullName") == full_name:
-            entry["defaultBranch"] = branch
-            break
-    mp.write_text(json.dumps(entries, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-
-
-def _update_manifest_sha(repo_root, full_name, sha):
-    """Update lastCommitSha in manifest when the commit actually changed."""
-    mp = Path(repo_root) / MANIFEST_FILENAME
-    try:
-        entries = json.loads(mp.read_text(encoding="utf-8"))
-    except (json.JSONDecodeError, OSError):
-        return
-    for entry in entries:
-        if entry.get("fullName") == full_name:
-            entry["lastCommitSha"] = sha
-            break
-    mp.write_text(json.dumps(entries, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-
-
-def _sync_manifest_after_clone(repo_root, entry, local_path, recorded_branch):
-    """After a fresh clone, update lastCommitSha and defaultBranch in manifest if they differ."""
-    new_sha = submodule_head_sha(repo_root, Path(local_path).relative_to(repo_root))
-    if not new_sha:
-        return
-    old_sha = entry.get("lastCommitSha", "")
-    if new_sha != old_sha:
-        _update_manifest_sha(repo_root, entry.get("fullName", ""), new_sha)
-
-    # Detect actual branch and correct manifest if needed
-    head_branch = run_git(
-        ["git", "rev-parse", "--abbrev-ref", "HEAD"],
-        cwd=local_path, check=False,
-    ).stdout.strip()
-    if head_branch and head_branch != recorded_branch:
-        _update_manifest_branch(repo_root, entry.get("fullName", ""), head_branch)
-
-
-def sync_skill_repo(repo_root, entry, token):
-    local_path = Path(repo_root) / entry["localPath"]
-    clone_url = inject_token(entry.get("cloneUrl", ""), token)
-    branch = entry.get("defaultBranch", "main")
-    full_name = entry.get("fullName", "?")
-    local_rel = Path(entry["localPath"])
-
-    # Update existing submodule
-    if is_submodule(repo_root, local_rel):
-        print(f"  [update] {full_name}", end=" ", flush=True)
-        try:
-            old_sha = submodule_head_sha(repo_root, local_rel)
-            update_submodule_checkout(repo_root, local_rel, branch, token)
-            new_sha = submodule_head_sha(repo_root, local_rel)
-
-            # Only update lastCommitSha when commit actually changed
-            if new_sha and new_sha != old_sha:
-                _update_manifest_sha(repo_root, full_name, new_sha)
-                print("OK (updated)")
-            else:
-                print("OK (no change)")
-            return True
-        except Exception as e:
-            print(f"FAILED ({e})")
-            return False
-
-    # Add fresh submodule
-    cleanup_failed_submodule_add(repo_root, local_rel)
-    local_path.parent.mkdir(parents=True, exist_ok=True)
-
-    print(f"  [submodule-add] {full_name}", end=" ", flush=True)
-    if add_submodule(repo_root, local_rel, clone_url, branch, token):
-        _sync_manifest_after_clone(repo_root, entry, local_path, branch)
         print("OK")
         return True
 
-    cleanup_failed_submodule_add(repo_root, local_rel)
-    print("FAILED (git submodule add failed)")
+    if target_path.exists():
+        if target_path.is_dir():
+            shutil.rmtree(target_path, ignore_errors=True)
+        else:
+            target_path.unlink(missing_ok=True)
+
+    fallback = run_git(
+        ["git"] + auth + ["clone", "--depth", "1", clone_url, str(target_path)],
+        cwd=cache_root,
+        check=False,
+    )
+    if fallback.returncode == 0:
+        print("OK (fallback)")
+        return True
+
+    error = (fallback.stderr or fallback.stdout or result.stderr or result.stdout).strip()
+    print(f"FAILED ({error})")
     return False
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Sync skill repos from skill-manifest.json")
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Sync skill repos from skill-manifest.json into an external cache")
     parser.add_argument("--dest", default=".", help="sciskill repo root directory")
+    parser.add_argument(
+        "--cache-root",
+        default="",
+        help="external cache root. Defaults to ../data/open-source relative to the sciskill repo root",
+    )
     parser.add_argument("--token", default=os.environ.get("GITHUB_TOKEN", ""), help="GitHub token")
     parser.add_argument("--skip-pull", action="store_true", help="Skip fast-forward sync on main repo")
     parser.add_argument("--only", action="append", help="Only sync specific fullName (can repeat)")
-    parser.add_argument("--auto-commit", action="store_true", help="Auto add/commit synced changes")
-    parser.add_argument("--auto-push", action="store_true", help="Auto push after auto-commit")
+    parser.add_argument("--auto-commit", action="store_true", help="Deprecated; registry-only mode never commits")
+    parser.add_argument("--auto-push", action="store_true", help="Deprecated; registry-only mode never pushes")
     parser.add_argument("--no-auto-commit", action="store_true", help="Deprecated compatibility flag")
     parser.add_argument("--no-auto-push", action="store_true", help="Deprecated compatibility flag")
-    args = parser.parse_args()
+    return parser.parse_args()
 
+
+def main() -> int:
+    args = parse_args()
     repo_root = Path(args.dest).resolve()
     token = args.token.strip()
-    auto_commit = args.auto_commit
-    auto_push = args.auto_push
-
-    if args.no_auto_commit and args.auto_commit:
-        parser.error("--auto-commit 与 --no-auto-commit 不能同时指定")
-    if args.no_auto_push and args.auto_push:
-        parser.error("--auto-push 与 --no-auto-push 不能同时指定")
-    if args.no_auto_commit:
-        auto_commit = False
-    if args.no_auto_push:
-        auto_push = False
-    if auto_push and not auto_commit:
-        auto_commit = True
+    cache_root = Path(args.cache_root).resolve() if args.cache_root else (repo_root.parent / "data" / "open-source").resolve()
 
     if not (repo_root / ".git").exists():
         print(f"[ERROR] {repo_root} is not a git repository")
         return 1
 
-    # Sync main repo
+    if args.auto_commit or args.auto_push or args.no_auto_commit or args.no_auto_push:
+        print("[WARN] auto-commit/push flags are ignored in registry-only mode")
+
     if not args.skip_pull:
         try:
             sync_main_repo_fast_forward(repo_root, token)
-        except Exception as e:
-            print(f"[ERROR] Failed to fast-forward main repo: {e}")
+        except Exception as exc:
+            print(f"[ERROR] Failed to fast-forward main repo: {exc}")
             return 1
     else:
-        print("[1/2] Skipping main repo fast-forward sync")
+        print("[1/3] Skipping main repo fast-forward sync")
 
-    repair_manifest(repo_root)
-    # Load manifest
     manifest = load_manifest(repo_root)
     if not manifest:
         print("[ERROR] No manifest entries found")
         return 1
 
-    # Filter if --only
     if args.only:
         only_set = set(args.only)
-        manifest = [e for e in manifest if e.get("fullName") in only_set]
+        manifest = [entry for entry in manifest if entry.get("fullName") in only_set]
         if not manifest:
             print(f"[ERROR] None of --only entries found in manifest: {only_set}")
             return 1
 
-    # Sync skill repos
-    print(f"[2/2] Syncing {len(manifest)} skill repos...")
+    cache_root.mkdir(parents=True, exist_ok=True)
+    print(f"[2/3] External cache root: {cache_root}")
+    print(f"[3/3] Syncing {len(manifest)} skill repos into cache...")
+
     success = 0
-    failed = []
+    failed: list[str] = []
     for entry in manifest:
-        if sync_skill_repo(repo_root, entry, token):
+        if clone_or_update_repo(cache_root, entry, token):
             success += 1
         else:
-            failed.append(entry.get("fullName", "?"))
+            failed.append(str(entry.get("fullName") or "?"))
 
     print(f"\nDone: {success}/{len(manifest)} OK")
     if failed:
@@ -505,9 +300,8 @@ def main():
         for name in failed:
             print(f"  - {name}")
         return 1
-    if auto_commit:
-        return 0 if auto_commit_and_push(repo_root, auto_push=auto_push) else 1
-    print("[3/3] Auto-commit disabled; leaving manifest/open-source changes in worktree")
+
+    print("[INFO] Registry repo left untouched; no commit or push performed")
     return 0
 
 
