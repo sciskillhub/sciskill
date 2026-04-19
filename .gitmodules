@@ -1,0 +1,349 @@
+[submodule "open-source/24111999/claude-skills"]
+	path = open-source/24111999/claude-skills
+	url = https://github.com/24111999/claude-skills.git
+	branch = main
+
+[submodule "open-source/ALMAZENY1/order-hub"]
+	path = open-source/ALMAZENY1/order-hub
+	url = https://github.com/ALMAZENY1/order-hub.git
+	branch = main
+
+[submodule "open-source/Agents365-ai/ccc-skill"]
+	path = open-source/Agents365-ai/ccc-skill
+	url = https://github.com/Agents365-ai/ccc-skill.git
+	branch = main
+
+[submodule "open-source/Agents365-ai/seurat-skill"]
+	path = open-source/Agents365-ai/seurat-skill
+	url = https://github.com/Agents365-ai/seurat-skill.git
+	branch = main
+
+[submodule "open-source/AlterLab-IEU/AlterLab-Academic-Skills"]
+	path = open-source/AlterLab-IEU/AlterLab-Academic-Skills
+	url = https://github.com/AlterLab-IEU/AlterLab-Academic-Skills.git
+	branch = main
+
+[submodule "open-source/AsadJaved66/Web-Skills-Protocol"]
+	path = open-source/AsadJaved66/Web-Skills-Protocol
+	url = https://github.com/AsadJaved66/Web-Skills-Protocol.git
+	branch = main
+
+[submodule "open-source/Boom5426/Nature-Paper-Skills"]
+	path = open-source/Boom5426/Nature-Paper-Skills
+	url = https://github.com/Boom5426/Nature-Paper-Skills.git
+	branch = main
+
+[submodule "open-source/Chandrikakt/earl"]
+	path = open-source/Chandrikakt/earl
+	url = https://github.com/Chandrikakt/earl.git
+	branch = main
+
+[submodule "open-source/ClawBio/ClawBio"]
+	path = open-source/ClawBio/ClawBio
+	url = https://github.com/ClawBio/ClawBio.git
+	branch = main
+
+[submodule "open-source/DrugClaw/DrugClaw"]
+	path = open-source/DrugClaw/DrugClaw
+	url = https://github.com/DrugClaw/DrugClaw.git
+	branch = main
+
+[submodule "open-source/Elfredaaroused655/claude-skills"]
+	path = open-source/Elfredaaroused655/claude-skills
+	url = https://github.com/Elfredaaroused655/claude-skills.git
+	branch = main
+
+[submodule "open-source/FreedomIntelligence/OpenClaw-Medical-Skills"]
+	path = open-source/FreedomIntelligence/OpenClaw-Medical-Skills
+	url = https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills.git
+	branch = main
+
+[submodule "open-source/GPTomics/bioSkills"]
+	path = open-source/GPTomics/bioSkills
+	url = https://github.com/GPTomics/bioSkills.git
+	branch = main
+
+[submodule "open-source/GusWan58/dataclaw"]
+	path = open-source/GusWan58/dataclaw
+	url = https://github.com/GusWan58/dataclaw.git
+	branch = main
+
+[submodule "open-source/JiahaoZhang-Public/ProtClaw"]
+	path = open-source/JiahaoZhang-Public/ProtClaw
+	url = https://github.com/JiahaoZhang-Public/ProtClaw.git
+	branch = main
+
+[submodule "open-source/JimLiu/baoyu-skills"]
+	path = open-source/JimLiu/baoyu-skills
+	url = https://github.com/JimLiu/baoyu-skills.git
+	branch = main
+
+[submodule "open-source/K-Dense-AI/scientific-agent-skills"]
+	path = open-source/K-Dense-AI/scientific-agent-skills
+	url = https://github.com/K-Dense-AI/scientific-agent-skills.git
+	branch = main
+
+[submodule "open-source/Kayunangka/claude-skill"]
+	path = open-source/Kayunangka/claude-skill
+	url = https://github.com/Kayunangka/claude-skill.git
+	branch = main
+
+[submodule "open-source/Marshanda14816/agent-skills"]
+	path = open-source/Marshanda14816/agent-skills
+	url = https://github.com/Marshanda14816/agent-skills.git
+	branch = main
+
+[submodule "open-source/Nonsteroidevangel872/research-writing-skill"]
+	path = open-source/Nonsteroidevangel872/research-writing-skill
+	url = https://github.com/Nonsteroidevangel872/research-writing-skill.git
+	branch = main
+
+[submodule "open-source/OpenRaiser/NanoResearch"]
+	path = open-source/OpenRaiser/NanoResearch
+	url = https://github.com/OpenRaiser/NanoResearch.git
+	branch = main
+
+[submodule "open-source/Pavel-Kravchenko/Bioinformatics"]
+	path = open-source/Pavel-Kravchenko/Bioinformatics
+	url = https://github.com/Pavel-Kravchenko/Bioinformatics.git
+	branch = main
+
+[submodule "open-source/Runchuan-BU/BioClaw"]
+	path = open-source/Runchuan-BU/BioClaw
+	url = https://github.com/Runchuan-BU/BioClaw.git
+	branch = main
+
+[submodule "open-source/SURFLIN2030/swing-skills"]
+	path = open-source/SURFLIN2030/swing-skills
+	url = https://github.com/SURFLIN2030/swing-skills.git
+	branch = main
+
+[submodule "open-source/Samuelkebede24/skill-conductor"]
+	path = open-source/Samuelkebede24/skill-conductor
+	url = https://github.com/Samuelkebede24/skill-conductor.git
+	branch = main
+
+[submodule "open-source/Sapiens-ostracism678/finance-skills"]
+	path = open-source/Sapiens-ostracism678/finance-skills
+	url = https://github.com/Sapiens-ostracism678/finance-skills.git
+	branch = main
+
+[submodule "open-source/Shroomfaerie/veriglow-agent-map-skill"]
+	path = open-source/Shroomfaerie/veriglow-agent-map-skill
+	url = https://github.com/Shroomfaerie/veriglow-agent-map-skill.git
+	branch = main
+
+[submodule "open-source/Sibyl-Research-Team/AutoResearch-SibylSystem"]
+	path = open-source/Sibyl-Research-Team/AutoResearch-SibylSystem
+	url = https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem.git
+	branch = main
+
+[submodule "open-source/Taison472/codex-skills"]
+	path = open-source/Taison472/codex-skills
+	url = https://github.com/Taison472/codex-skills.git
+	branch = main
+
+[submodule "open-source/TenureAI/PhD-Zero"]
+	path = open-source/TenureAI/PhD-Zero
+	url = https://github.com/TenureAI/PhD-Zero.git
+	branch = main
+
+[submodule "open-source/YTItsfrost/cypress-agent-skill"]
+	path = open-source/YTItsfrost/cypress-agent-skill
+	url = https://github.com/YTItsfrost/cypress-agent-skill.git
+	branch = main
+
+[submodule "open-source/aipoch/medical-research-skills"]
+	path = open-source/aipoch/medical-research-skills
+	url = https://github.com/aipoch/medical-research-skills.git
+	branch = main
+
+[submodule "open-source/aksh-3141/claude-toolshed"]
+	path = open-source/aksh-3141/claude-toolshed
+	url = https://github.com/aksh-3141/claude-toolshed.git
+	branch = main
+
+[submodule "open-source/ammawla/encode-toolkit"]
+	path = open-source/ammawla/encode-toolkit
+	url = https://github.com/ammawla/encode-toolkit.git
+	branch = main
+
+[submodule "open-source/ankitgupta9525/VMware-Monitor"]
+	path = open-source/ankitgupta9525/VMware-Monitor
+	url = https://github.com/ankitgupta9525/VMware-Monitor.git
+	branch = main
+
+[submodule "open-source/anthropics/life-sciences"]
+	path = open-source/anthropics/life-sciences
+	url = https://github.com/anthropics/life-sciences.git
+	branch = main
+
+[submodule "open-source/anubhavsingh-0218/uncodixify-skill"]
+	path = open-source/anubhavsingh-0218/uncodixify-skill
+	url = https://github.com/anubhavsingh-0218/uncodixify-skill.git
+	branch = main
+
+[submodule "open-source/bio-xyz/BioAgents"]
+	path = open-source/bio-xyz/BioAgents
+	url = https://github.com/bio-xyz/BioAgents.git
+	branch = main
+
+[submodule "open-source/bloody2634/claud-skills"]
+	path = open-source/bloody2634/claud-skills
+	url = https://github.com/bloody2634/claud-skills.git
+	branch = main
+
+[submodule "open-source/cyanheads/pubmed-mcp-server"]
+	path = open-source/cyanheads/pubmed-mcp-server
+	url = https://github.com/cyanheads/pubmed-mcp-server.git
+	branch = main
+
+[submodule "open-source/d-oit/web-doc-resolver"]
+	path = open-source/d-oit/web-doc-resolver
+	url = https://github.com/d-oit/web-doc-resolver.git
+	branch = main
+
+[submodule "open-source/donbr/lifesciences-research"]
+	path = open-source/donbr/lifesciences-research
+	url = https://github.com/donbr/lifesciences-research.git
+	branch = main
+
+[submodule "open-source/droftgamer-wq/researcher-skill"]
+	path = open-source/droftgamer-wq/researcher-skill
+	url = https://github.com/droftgamer-wq/researcher-skill.git
+	branch = main
+
+[submodule "open-source/eamag/papers2dataset"]
+	path = open-source/eamag/papers2dataset
+	url = https://github.com/eamag/papers2dataset.git
+	branch = main
+
+[submodule "open-source/felipemsilva/PowerSkills"]
+	path = open-source/felipemsilva/PowerSkills
+	url = https://github.com/felipemsilva/PowerSkills.git
+	branch = main
+
+[submodule "open-source/fmschulz/omics-skills"]
+	path = open-source/fmschulz/omics-skills
+	url = https://github.com/fmschulz/omics-skills.git
+	branch = main
+
+[submodule "open-source/foryourhealth111-pixel/Vibe-Skills"]
+	path = open-source/foryourhealth111-pixel/Vibe-Skills
+	url = https://github.com/foryourhealth111-pixel/Vibe-Skills.git
+	branch = main
+
+[submodule "open-source/genepattern/module-toolkit"]
+	path = open-source/genepattern/module-toolkit
+	url = https://github.com/genepattern/module-toolkit.git
+	branch = main
+
+[submodule "open-source/jackspace/ClaudeSkillz"]
+	path = open-source/jackspace/ClaudeSkillz
+	url = https://github.com/jackspace/ClaudeSkillz.git
+	branch = master
+
+[submodule "open-source/javidmardanov/paper-banana-skill"]
+	path = open-source/javidmardanov/paper-banana-skill
+	url = https://github.com/javidmardanov/paper-banana-skill.git
+	branch = master
+
+[submodule "open-source/kimimgo/viznoir"]
+	path = open-source/kimimgo/viznoir
+	url = https://github.com/kimimgo/viznoir.git
+	branch = main
+
+[submodule "open-source/ma-compbio-lab/SkillFoundry"]
+	path = open-source/ma-compbio-lab/SkillFoundry
+	url = https://github.com/ma-compbio-lab/SkillFoundry.git
+	branch = main
+
+[submodule "open-source/mateooo24/timework-skill"]
+	path = open-source/mateooo24/timework-skill
+	url = https://github.com/mateooo24/timework-skill.git
+	branch = main
+
+[submodule "open-source/megana05082003/review-analyzer-skill"]
+	path = open-source/megana05082003/review-analyzer-skill
+	url = https://github.com/megana05082003/review-analyzer-skill.git
+	branch = main
+
+[submodule "open-source/mnfst/manifest"]
+	path = open-source/mnfst/manifest
+	url = https://github.com/mnfst/manifest.git
+	branch = main
+
+[submodule "open-source/mzoryy/hwpxskill"]
+	path = open-source/mzoryy/hwpxskill
+	url = https://github.com/mzoryy/hwpxskill.git
+	branch = main
+
+[submodule "open-source/naity/FM4Life"]
+	path = open-source/naity/FM4Life
+	url = https://github.com/naity/FM4Life.git
+	branch = main
+
+[submodule "open-source/nandodeejay/appstore-review-skill"]
+	path = open-source/nandodeejay/appstore-review-skill
+	url = https://github.com/nandodeejay/appstore-review-skill.git
+	branch = main
+
+[submodule "open-source/openags/OpenAGS"]
+	path = open-source/openags/OpenAGS
+	url = https://github.com/openags/OpenAGS.git
+	branch = main
+
+[submodule "open-source/sethikasithum/skill-generator"]
+	path = open-source/sethikasithum/skill-generator
+	url = https://github.com/sethikasithum/skill-generator.git
+	branch = main
+
+[submodule "open-source/teixasalone/UnrealEngine5-Skills"]
+	path = open-source/teixasalone/UnrealEngine5-Skills
+	url = https://github.com/teixasalone/UnrealEngine5-Skills.git
+	branch = main
+
+[submodule "open-source/th3vib3coder/vibe-science-codex"]
+	path = open-source/th3vib3coder/vibe-science-codex
+	url = https://github.com/th3vib3coder/vibe-science-codex.git
+	branch = main
+
+[submodule "open-source/toohamster/sftp-cc"]
+	path = open-source/toohamster/sftp-cc
+	url = https://github.com/toohamster/sftp-cc.git
+	branch = main
+
+[submodule "open-source/unexplained-familyephedraceae871/openclaw-skill"]
+	path = open-source/unexplained-familyephedraceae871/openclaw-skill
+	url = https://github.com/unexplained-familyephedraceae871/openclaw-skill.git
+	branch = main
+
+[submodule "open-source/wenmin-wu/ds-skills"]
+	path = open-source/wenmin-wu/ds-skills
+	url = https://github.com/wenmin-wu/ds-skills.git
+	branch = main
+
+[submodule "open-source/wtfhanin/Enhance-Prompt"]
+	path = open-source/wtfhanin/Enhance-Prompt
+	url = https://github.com/wtfhanin/Enhance-Prompt.git
+	branch = main
+
+[submodule "open-source/zacklecon/claude-skills"]
+	path = open-source/zacklecon/claude-skills
+	url = https://github.com/zacklecon/claude-skills.git
+	branch = main
+
+[submodule "open-source/zarazhangrui/frontend-slides"]
+	path = open-source/zarazhangrui/frontend-slides
+	url = https://github.com/zarazhangrui/frontend-slides.git
+	branch = main
+
+[submodule "open-source/zinxj/uikit-expert-skill"]
+	path = open-source/zinxj/uikit-expert-skill
+	url = https://github.com/zinxj/uikit-expert-skill.git
+	branch = main
+
+[submodule "open-source/zongtingwei/Bioclaw_Skills_Hub"]
+	path = open-source/zongtingwei/Bioclaw_Skills_Hub
+	url = https://github.com/zongtingwei/Bioclaw_Skills_Hub.git
+	branch = main

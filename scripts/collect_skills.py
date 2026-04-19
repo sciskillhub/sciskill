@@ -27,6 +27,7 @@ EXCLUDED_REPO_FULL_NAMES = {
     "sciskillhub/sciskill",
 }
 MANIFEST_FILENAME = "skill-manifest.json"
+GITMODULES_FILENAME = ".gitmodules"
 
 
 @dataclass
@@ -452,11 +453,41 @@ def submodule_target_path(sciskill_root: Path, full_name: str) -> Path:
     return sciskill_root / "open-source" / owner / repo
 
 
+def git_index_entry(sciskill_root: Path, target_rel: str) -> Optional[Dict[str, str]]:
+    result = subprocess.run(
+        ["git", "ls-files", "--stage", "--", target_rel],
+        cwd=sciskill_root,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    line = (result.stdout or "").strip()
+    if not line:
+        return None
+    try:
+        meta, path_text = line.split("\t", 1)
+        mode, sha, stage = meta.split()
+    except ValueError:
+        return None
+    return {
+        "mode": mode,
+        "sha": sha,
+        "stage": stage,
+        "path": path_text,
+    }
+
+
+def is_registered_submodule(sciskill_root: Path, full_name: str) -> bool:
+    target_rel = str(Path("open-source") / full_name)
+    entry = git_index_entry(sciskill_root, target_rel)
+    return bool(entry and entry.get("mode") == "160000")
+
+
 def already_added(sciskill_root: Path, full_name: str) -> bool:
     target_rel = str(Path("open-source") / full_name)
     target = sciskill_root / target_rel
 
-    if target.exists():
+    if target.exists() or is_registered_submodule(sciskill_root, full_name):
         return True
 
     manifest = load_manifest(sciskill_root)
@@ -468,6 +499,82 @@ def remove_path(path: Path) -> None:
         path.unlink(missing_ok=True)
     elif path.exists():
         shutil.rmtree(path, ignore_errors=True)
+
+
+def submodule_git_dir(sciskill_root: Path, target_rel: str) -> Optional[Path]:
+    result = subprocess.run(
+        ["git", "rev-parse", "--git-common-dir"],
+        cwd=sciskill_root,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    git_common_dir = (result.stdout or "").strip()
+    if not git_common_dir:
+        return None
+    common_dir = Path(git_common_dir)
+    if not common_dir.is_absolute():
+        common_dir = (sciskill_root / common_dir).resolve()
+    return common_dir / "modules" / Path(target_rel)
+
+
+def cleanup_failed_submodule_add(sciskill_root: Path, target_rel: str) -> None:
+    target = sciskill_root / target_rel
+    remove_path(target)
+    subprocess.run(
+        ["git", "rm", "--cached", "-f", "--", target_rel],
+        cwd=sciskill_root,
+        check=False,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    subprocess.run(
+        ["git", "config", "--local", "--remove-section", f"submodule.{target_rel}"],
+        cwd=sciskill_root,
+        check=False,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    gitmodules = sciskill_root / GITMODULES_FILENAME
+    if gitmodules.exists():
+        subprocess.run(
+            ["git", "config", "--file", GITMODULES_FILENAME, "--remove-section", f"submodule.{target_rel}"],
+            cwd=sciskill_root,
+            check=False,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        if not gitmodules.read_text(encoding="utf-8").strip():
+            gitmodules.unlink(missing_ok=True)
+    modules_dir = submodule_git_dir(sciskill_root, target_rel)
+    if modules_dir:
+        shutil.rmtree(modules_dir, ignore_errors=True)
+
+
+def submodule_head_sha(sciskill_root: Path, full_name: str) -> Optional[str]:
+    repo_path = submodule_target_path(sciskill_root, full_name)
+    if repo_path.exists():
+        try:
+            result = subprocess.run(
+                ["git", "rev-parse", "HEAD"],
+                cwd=repo_path,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+        except Exception:
+            result = None
+        if result and result.returncode == 0:
+            value = (result.stdout or "").strip()
+            if value:
+                return value
+
+    target_rel = str(Path("open-source") / full_name)
+    entry = git_index_entry(sciskill_root, target_rel)
+    if entry and entry.get("mode") == "160000":
+        value = entry.get("sha", "").strip()
+        return value or None
+    return None
 
 
 def truncate_output(text: str, limit: int = SUBPROCESS_OUTPUT_LIMIT) -> str:
@@ -543,14 +650,18 @@ def clone_skill_repo(
     https_url = f"https://github.com/{owner}/{repo}.git"
     target = submodule_target_path(sciskill_root, full_name)
     target_rel = str(target.relative_to(sciskill_root))
+    cleanup_failed_submodule_add(sciskill_root, target_rel)
     target.parent.mkdir(parents=True, exist_ok=True)
 
     env = os.environ.copy()
     env["GIT_LFS_SKIP_SMUDGE"] = "1"
 
-    def try_clone(url: str, branch: str) -> Tuple[bool, Optional[Dict[str, Any]]]:
-        cmd = ["git", "clone", "--depth", "1", "--branch", branch, url, target_rel]
-        print(f"[INFO] trying clone: {' '.join(cmd)}")
+    def try_add(url: str, branch: Optional[str]) -> Tuple[bool, Optional[Dict[str, Any]]]:
+        cmd = ["git", "submodule", "add", "--depth", "1"]
+        if branch:
+            cmd.extend(["-b", branch])
+        cmd.extend([url, target_rel])
+        print(f"[INFO] trying submodule add: {' '.join(cmd)}")
         if dry_run:
             return True, None
         result = subprocess.run(
@@ -564,7 +675,7 @@ def clone_skill_repo(
         )
         if result.returncode == 0:
             return True, None
-        attempt: Dict[str, Any] = {"url": url, "branch": branch, "returncode": result.returncode}
+        attempt: Dict[str, Any] = {"url": url, "branch": branch or "", "returncode": result.returncode}
         stderr = truncate_output(result.stderr)
         if stderr:
             attempt["stderr"] = stderr
@@ -572,7 +683,7 @@ def clone_skill_repo(
 
     attempts: List[Dict[str, Any]] = []
 
-    ok, attempt = try_clone(https_url, default_branch)
+    ok, attempt = try_add(https_url, default_branch)
     if ok:
         return https_url
     if attempt is not None:
@@ -580,48 +691,24 @@ def clone_skill_repo(
 
     # Retry without --branch
     if not dry_run:
-        remove_path(target)
+        cleanup_failed_submodule_add(sciskill_root, target_rel)
 
-    cmd = ["git", "clone", "--depth", "1", https_url, target_rel]
-    print(f"[INFO] retrying without --branch: {' '.join(cmd)}")
-    if not dry_run:
-        result = subprocess.run(
-            cmd,
-            cwd=sciskill_root,
-            check=False,
-            env=env,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True,
-        )
-        if result.returncode == 0:
-            return https_url
-        attempts.append({"url": https_url, "returncode": result.returncode, "stderr": truncate_output(result.stderr)})
+    ok, attempt = try_add(https_url, None)
+    if ok:
+        return https_url
+    if attempt is not None:
+        attempts.append(attempt)
 
     raise CloneError(full_name, attempts)
 
 
 def cloned_repo_head_sha(sciskill_root: Path, full_name: str) -> Optional[str]:
-    repo_path = submodule_target_path(sciskill_root, full_name)
-    try:
-        result = subprocess.run(
-            ["git", "rev-parse", "HEAD"],
-            cwd=repo_path,
-            capture_output=True,
-            text=True,
-            check=False,
-        )
-    except Exception:
-        return None
-    if result.returncode != 0:
-        return None
-    value = (result.stdout or "").strip()
-    return value or None
+    return submodule_head_sha(sciskill_root, full_name)
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Find GitHub repos containing valid SKILL.md and clone them into open-source/."
+        description="Find GitHub repos containing valid SKILL.md and add them into open-source/ as submodules."
     )
     parser.add_argument("--token", default=os.getenv("GITHUB_TOKEN", ""), help="GitHub token")
     parser.add_argument("--sciskill-root", required=True, help="Local path of sciskill repo")

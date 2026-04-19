@@ -30,6 +30,7 @@ import time
 from pathlib import Path
 
 MANIFEST_FILENAME = "skill-manifest.json"
+GITMODULES_FILENAME = ".gitmodules"
 GIT_TIMEOUT = 300
 
 
@@ -49,13 +50,44 @@ def run_git(args, cwd=None, check=True, timeout=GIT_TIMEOUT):
     return result
 
 
-def repo_has_relevant_changes(repo_root):
+def git_index_entry(repo_root, local_path):
+    rel_path = Path(local_path).as_posix()
     result = run_git(
-        ["git", "status", "--porcelain", "--", MANIFEST_FILENAME, "open-source"],
+        ["git", "ls-files", "--stage", "--", rel_path],
         cwd=repo_root,
         check=False,
     )
-    return bool((result.stdout or "").strip())
+    line = (result.stdout or "").strip()
+    if not line:
+        return None
+    try:
+        meta, path_text = line.split("\t", 1)
+        mode, sha, stage = meta.split()
+    except ValueError:
+        return None
+    return {
+        "mode": mode,
+        "sha": sha,
+        "stage": stage,
+        "path": path_text,
+    }
+
+
+def repo_has_relevant_changes(repo_root):
+    result = run_git(
+        ["git", "status", "--porcelain"],
+        cwd=repo_root,
+        check=False,
+    )
+    for line in (result.stdout or "").splitlines():
+        entry = line[3:] if len(line) > 3 else line
+        if (
+            entry == MANIFEST_FILENAME
+            or entry == GITMODULES_FILENAME
+            or entry.startswith("open-source/")
+        ):
+            return True
+    return False
 
 
 def current_branch(repo_root):
@@ -124,7 +156,10 @@ def auto_commit_and_push(repo_root, auto_push=True):
         return True
 
     print("[3/3] Auto-committing synced changes...")
-    run_git(["git", "add", MANIFEST_FILENAME, "open-source"], cwd=repo_root)
+    add_args = ["git", "add", MANIFEST_FILENAME, "open-source"]
+    if gitmodules_path(repo_root).exists():
+        add_args.append(GITMODULES_FILENAME)
+    run_git(add_args, cwd=repo_root)
 
     commit_result = run_git(
         ["git", "commit", "-m", "chore: sync skill repos"],
@@ -200,6 +235,116 @@ def inject_token(url, token):
     return url
 
 
+def gitmodules_path(repo_root):
+    return Path(repo_root) / GITMODULES_FILENAME
+
+
+def is_submodule(repo_root, local_path):
+    entry = git_index_entry(repo_root, local_path)
+    return bool(entry and entry.get("mode") == "160000")
+
+
+def submodule_head_sha(repo_root, local_path):
+    local_path = Path(local_path)
+    abs_path = Path(repo_root) / local_path
+    if abs_path.exists():
+        head_sha = run_git(
+            ["git", "rev-parse", "HEAD"],
+            cwd=abs_path,
+            check=False,
+        ).stdout.strip()
+        if head_sha:
+            return head_sha
+    entry = git_index_entry(repo_root, local_path)
+    if entry and entry.get("mode") == "160000":
+        return entry.get("sha", "")
+    return ""
+
+
+def submodule_git_dir(repo_root, local_path):
+    common_dir = run_git(
+        ["git", "rev-parse", "--git-common-dir"],
+        cwd=repo_root,
+        check=False,
+    ).stdout.strip()
+    if not common_dir:
+        return None
+    common_path = Path(common_dir)
+    if not common_path.is_absolute():
+        common_path = (Path(repo_root) / common_path).resolve()
+    return common_path / "modules" / Path(local_path)
+
+
+def cleanup_failed_submodule_add(repo_root, local_path):
+    local_path = Path(local_path)
+    abs_path = Path(repo_root) / local_path
+    shutil.rmtree(abs_path, ignore_errors=True)
+
+    run_git(
+        ["git", "rm", "--cached", "-f", "--", str(local_path)],
+        cwd=repo_root,
+        check=False,
+    )
+    run_git(
+        ["git", "config", "--local", "--remove-section", f"submodule.{local_path.as_posix()}"],
+        cwd=repo_root,
+        check=False,
+    )
+    if gitmodules_path(repo_root).exists():
+        run_git(
+            ["git", "config", "--file", GITMODULES_FILENAME, "--remove-section", f"submodule.{local_path.as_posix()}"],
+            cwd=repo_root,
+            check=False,
+        )
+        if not gitmodules_path(repo_root).read_text(encoding="utf-8").strip():
+            gitmodules_path(repo_root).unlink(missing_ok=True)
+
+    modules_dir = submodule_git_dir(repo_root, local_path)
+    if modules_dir:
+        shutil.rmtree(modules_dir, ignore_errors=True)
+
+
+def set_submodule_branch(repo_root, local_path, branch, token):
+    auth = git_auth_args(token)
+    run_git(
+        ["git"] + auth + ["submodule", "set-branch", "--branch", branch, "--", str(local_path)],
+        cwd=repo_root,
+    )
+
+
+def add_submodule(repo_root, local_path, clone_url, branch, token):
+    auth = git_auth_args(token)
+    local_path = Path(local_path)
+    cleanup_failed_submodule_add(repo_root, local_path)
+    local_path.parent.mkdir(parents=True, exist_ok=True)
+
+    result = run_git(
+        ["git"] + auth + ["submodule", "add", "--depth", "1", "-b", branch, clone_url, str(local_path)],
+        cwd=repo_root,
+        check=False,
+    )
+    if result.returncode == 0:
+        return True
+
+    cleanup_failed_submodule_add(repo_root, local_path)
+    result = run_git(
+        ["git"] + auth + ["submodule", "add", "--depth", "1", clone_url, str(local_path)],
+        cwd=repo_root,
+        check=False,
+    )
+    return result.returncode == 0
+
+
+def update_submodule_checkout(repo_root, local_path, branch, token):
+    auth = git_auth_args(token)
+    set_submodule_branch(repo_root, local_path, branch, token)
+    run_git(["git"] + auth + ["submodule", "sync", "--", str(local_path)], cwd=repo_root)
+    run_git(
+        ["git"] + auth + ["submodule", "update", "--init", "--remote", "--depth", "1", "--", str(local_path)],
+        cwd=repo_root,
+    )
+
+
 def _update_manifest_branch(repo_root, full_name, branch):
     """Update defaultBranch in manifest when the recorded value was wrong."""
     mp = Path(repo_root) / MANIFEST_FILENAME
@@ -230,7 +375,7 @@ def _update_manifest_sha(repo_root, full_name, sha):
 
 def _sync_manifest_after_clone(repo_root, entry, local_path, recorded_branch):
     """After a fresh clone, update lastCommitSha and defaultBranch in manifest if they differ."""
-    new_sha = run_git(["git", "rev-parse", "HEAD"], cwd=local_path, check=False).stdout.strip()
+    new_sha = submodule_head_sha(repo_root, Path(local_path).relative_to(repo_root))
     if not new_sha:
         return
     old_sha = entry.get("lastCommitSha", "")
@@ -251,39 +396,15 @@ def sync_skill_repo(repo_root, entry, token):
     clone_url = inject_token(entry.get("cloneUrl", ""), token)
     branch = entry.get("defaultBranch", "main")
     full_name = entry.get("fullName", "?")
+    local_rel = Path(entry["localPath"])
 
-    # Update existing repo
-    if local_path.exists() and (local_path / ".git").exists():
+    # Update existing submodule
+    if is_submodule(repo_root, local_rel):
         print(f"  [update] {full_name}", end=" ", flush=True)
-        auth = git_auth_args(token)
         try:
-            old_sha = run_git(["git", "rev-parse", "HEAD"], cwd=local_path, check=False).stdout.strip()
-
-            result = run_git(["git"] + auth + ["fetch", "origin", branch], cwd=local_path, check=False)
-            if result.returncode == 0:
-                effective_branch = branch
-            else:
-                # Branch name in manifest may be wrong — fetch all and detect actual default branch
-                run_git(["git"] + auth + ["fetch", "origin"], cwd=local_path)
-                head_branch = run_git(
-                    ["git", "rev-parse", "--abbrev-ref", "refs/remotes/origin/HEAD"],
-                    cwd=local_path, check=False,
-                )
-                effective_branch = (head_branch.stdout or "").strip()
-                if effective_branch.startswith("origin/"):
-                    effective_branch = effective_branch[len("origin/"):]
-                else:
-                    branches = run_git(["git", "branch", "-r"], cwd=local_path, check=False)
-                    first = (branches.stdout or "").strip().splitlines()
-                    effective_branch = first[0].strip().replace("origin/", "").split()[0] if first else branch
-                print(f"(branch {branch}->{effective_branch}) ", end="", flush=True)
-
-            run_git(["git", "reset", "--hard", f"origin/{effective_branch}"], cwd=local_path)
-            new_sha = run_git(["git", "rev-parse", "HEAD"], cwd=local_path, check=False).stdout.strip()
-
-            # Update manifest if branch was corrected
-            if effective_branch != branch:
-                _update_manifest_branch(repo_root, full_name, effective_branch)
+            old_sha = submodule_head_sha(repo_root, local_rel)
+            update_submodule_checkout(repo_root, local_rel, branch, token)
+            new_sha = submodule_head_sha(repo_root, local_rel)
 
             # Only update lastCommitSha when commit actually changed
             if new_sha and new_sha != old_sha:
@@ -296,38 +417,18 @@ def sync_skill_repo(repo_root, entry, token):
             print(f"FAILED ({e})")
             return False
 
-    # Clone fresh
-    if local_path.exists():
-        shutil.rmtree(local_path, ignore_errors=True)
+    # Add fresh submodule
+    cleanup_failed_submodule_add(repo_root, local_rel)
     local_path.parent.mkdir(parents=True, exist_ok=True)
 
-    print(f"  [clone] {full_name}", end=" ", flush=True)
-
-    # Try with --branch first
-    auth = git_auth_args(token)
-    result = run_git(
-        ["git"] + auth + ["clone", "--depth", "1", "--branch", branch, clone_url, str(local_path)],
-        cwd=local_path.parent, check=False,
-    )
-    if result.returncode == 0:
+    print(f"  [submodule-add] {full_name}", end=" ", flush=True)
+    if add_submodule(repo_root, local_rel, clone_url, branch, token):
         _sync_manifest_after_clone(repo_root, entry, local_path, branch)
         print("OK")
         return True
 
-    # Retry without --branch
-    shutil.rmtree(local_path, ignore_errors=True)
-    result = run_git(
-        ["git"] + auth + ["clone", "--depth", "1", clone_url, str(local_path)],
-        cwd=local_path.parent, check=False,
-    )
-    if result.returncode == 0:
-        _sync_manifest_after_clone(repo_root, entry, local_path, branch)
-        print("OK")
-        return True
-
-    shutil.rmtree(local_path, ignore_errors=True)
-    stderr = result.stderr.strip()[:80]
-    print(f"FAILED ({stderr})")
+    cleanup_failed_submodule_add(repo_root, local_rel)
+    print("FAILED (git submodule add failed)")
     return False
 
 
