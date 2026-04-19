@@ -23,7 +23,7 @@
   "legacy_topics": [],
   "query_count": 48,
   "successful_query_count": 48,
-  "report": "skill_report.json",
+  "report": "reports/skill_report.json",
   "query_failures": [],
   "repo_error_count": 0,
   "repo_errors": []

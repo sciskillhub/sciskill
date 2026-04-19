@@ -25,7 +25,7 @@
   "successful_query_count": 48,
   "query_failure_count": 0,
   "repo_error_count": 0,
-  "error_report": "skill_errors.json",
+  "error_report": "reports/skill_errors.json",
   "repo_count": 78,
   "results": [
     {

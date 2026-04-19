@@ -703,7 +703,7 @@ def main() -> int:
     parser.add_argument("--qualifier-topics-file", default="", help="Path to qualifier topics file, one topic per line")
     parser.add_argument("--max-repos", type=int, default=50, help="Max repos per query")
     parser.add_argument("--dry-run", action="store_true")
-    parser.add_argument("--report", default="skill_report.json")
+    parser.add_argument("--report", default="reports/skill_report.json")
     parser.add_argument("--error-report", default="", help="Path to save detailed error information")
     args = parser.parse_args()
 
@@ -919,6 +919,8 @@ def main() -> int:
     error_report_arg_path = Path(args.error_report) if args.error_report else default_error_report_path(report_arg_path)
     report_path = report_arg_path.resolve()
     error_report_path = error_report_arg_path.resolve()
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    error_report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(
         json.dumps(
             make_json_safe(

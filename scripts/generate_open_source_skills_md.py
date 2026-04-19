@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 MANIFEST_FILENAME = "skill-manifest.json"
-REPORT_FILENAME = "skill_report.json"
+REPORT_FILENAME = "reports/skill_report.json"
 DEFAULT_OUTPUT_FILENAME = "open-source-skills.md"
 
 
