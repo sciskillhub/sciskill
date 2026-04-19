@@ -3,17 +3,18 @@
 根据 skill-manifest.json 同步 sciskill 仓库下的 skill 子仓库。
 
 用法:
-    # 同步主仓库 + 所有 skill 子仓库；有变更时自动 add/commit/push
+    # 同步主仓库 + 所有 skill 子仓库；默认只同步，不自动写主仓库
     python3 scripts/sync_skill_repos.py --dest .
 
-    # 只同步子仓库（跳过主仓库 pull）
+    # 只同步子仓库（跳过主仓库 fast-forward）
     python3 scripts/sync_skill_repos.py --dest . --skip-pull
 
     # 只同步指定的子仓库
     python3 scripts/sync_skill_repos.py --dest . --only owner/repo
 
-    # 仅同步，不自动提交或推送
-    python3 scripts/sync_skill_repos.py --dest . --no-auto-commit
+    # 显式允许自动提交 / 推送
+    python3 scripts/sync_skill_repos.py --dest . --auto-commit
+    python3 scripts/sync_skill_repos.py --dest . --auto-commit --auto-push
 
 依赖: 无（纯标准库）
 """
@@ -63,6 +64,58 @@ def current_branch(repo_root):
         cwd=repo_root,
         check=False,
     ).stdout.strip()
+
+
+def ensure_clean_main_repo(repo_root):
+    result = run_git(
+        ["git", "status", "--porcelain", "--untracked-files=no"],
+        cwd=repo_root,
+        check=False,
+    )
+    if (result.stdout or "").strip():
+        raise RuntimeError(
+            "main repo has local tracked changes; refuse to sync automatically. "
+            "Commit/stash/reset changes first."
+        )
+
+
+def sync_main_repo_fast_forward(repo_root, token):
+    branch = current_branch(repo_root)
+    if not branch:
+        raise RuntimeError("could not detect current branch for main repo sync")
+
+    ensure_clean_main_repo(repo_root)
+    auth = git_auth_args(token)
+    print(f"[1/2] Fetching origin/{branch} for fast-forward sync...")
+    run_git(["git"] + auth + ["fetch", "origin", branch], cwd=repo_root)
+
+    counts = run_git(
+        ["git", "rev-list", "--left-right", "--count", f"HEAD...refs/remotes/origin/{branch}"],
+        cwd=repo_root,
+        check=False,
+    ).stdout.strip()
+    try:
+        ahead, behind = (int(part) for part in counts.split())
+    except Exception as exc:
+        raise RuntimeError(f"failed to parse main repo divergence state: {counts}") from exc
+
+    if ahead and behind:
+        raise RuntimeError(
+            f"main repo has diverged from origin/{branch} (local-only={ahead}, remote-only={behind}); "
+            "refuse to merge automatically. Rebase or reset explicitly."
+        )
+    if ahead:
+        raise RuntimeError(
+            f"main repo has {ahead} local-only commit(s) on {branch}; "
+            "refuse to overwrite or merge automatically."
+        )
+    if behind:
+        print(f"[1/2] Fast-forwarding {branch} by {behind} commit(s)...")
+        run_git(["git", "merge", "--ff-only", f"refs/remotes/origin/{branch}"], cwd=repo_root)
+    else:
+        print(f"[1/2] Main repo already matches origin/{branch}")
+
+    return branch
 
 
 def auto_commit_and_push(repo_root, auto_push=True):
@@ -282,26 +335,43 @@ def main():
     parser = argparse.ArgumentParser(description="Sync skill repos from skill-manifest.json")
     parser.add_argument("--dest", default=".", help="sciskill repo root directory")
     parser.add_argument("--token", default=os.environ.get("GITHUB_TOKEN", ""), help="GitHub token")
-    parser.add_argument("--skip-pull", action="store_true", help="Skip git pull on main repo")
+    parser.add_argument("--skip-pull", action="store_true", help="Skip fast-forward sync on main repo")
     parser.add_argument("--only", action="append", help="Only sync specific fullName (can repeat)")
-    parser.add_argument("--no-auto-commit", action="store_true", help="Do not auto add/commit synced changes")
-    parser.add_argument("--no-auto-push", action="store_true", help="Do not auto push after auto-commit")
+    parser.add_argument("--auto-commit", action="store_true", help="Auto add/commit synced changes")
+    parser.add_argument("--auto-push", action="store_true", help="Auto push after auto-commit")
+    parser.add_argument("--no-auto-commit", action="store_true", help="Deprecated compatibility flag")
+    parser.add_argument("--no-auto-push", action="store_true", help="Deprecated compatibility flag")
     args = parser.parse_args()
 
     repo_root = Path(args.dest).resolve()
     token = args.token.strip()
+    auto_commit = args.auto_commit
+    auto_push = args.auto_push
+
+    if args.no_auto_commit and args.auto_commit:
+        parser.error("--auto-commit 与 --no-auto-commit 不能同时指定")
+    if args.no_auto_push and args.auto_push:
+        parser.error("--auto-push 与 --no-auto-push 不能同时指定")
+    if args.no_auto_commit:
+        auto_commit = False
+    if args.no_auto_push:
+        auto_push = False
+    if auto_push and not auto_commit:
+        auto_commit = True
 
     if not (repo_root / ".git").exists():
         print(f"[ERROR] {repo_root} is not a git repository")
         return 1
 
-    # Pull main repo
+    # Sync main repo
     if not args.skip_pull:
-        print("[1/2] Pulling main repo...")
-        auth = git_auth_args(token)
-        run_git(["git"] + auth + ["pull"], cwd=repo_root, check=False)
+        try:
+            sync_main_repo_fast_forward(repo_root, token)
+        except Exception as e:
+            print(f"[ERROR] Failed to fast-forward main repo: {e}")
+            return 1
     else:
-        print("[1/2] Skipping main repo pull")
+        print("[1/2] Skipping main repo fast-forward sync")
 
     repair_manifest(repo_root)
     # Load manifest
@@ -334,8 +404,9 @@ def main():
         for name in failed:
             print(f"  - {name}")
         return 1
-    if not args.no_auto_commit:
-        return 0 if auto_commit_and_push(repo_root, auto_push=not args.no_auto_push) else 1
+    if auto_commit:
+        return 0 if auto_commit_and_push(repo_root, auto_push=auto_push) else 1
+    print("[3/3] Auto-commit disabled; leaving manifest/open-source changes in worktree")
     return 0
 
 
