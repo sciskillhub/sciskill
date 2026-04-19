@@ -598,6 +598,17 @@ def load_manifest(sciskill_root: Path) -> List[Dict[str, Any]]:
         return []
 
 
+def external_manifest_path(sciskill_root: Path) -> Path:
+    configured = os.environ.get("SCISKILL_DATA_DIR", "").strip()
+    data_root = Path(configured).expanduser().resolve() if configured else (sciskill_root.parent / "data").resolve()
+    return data_root / MANIFEST_FILENAME
+
+
+def write_manifest_file(target: Path, payload: str) -> None:
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(payload, encoding="utf-8")
+
+
 def repair_manifest(sciskill_root: Path) -> bool:
     script_path = Path(__file__).with_name("repair_skill_manifest.py")
     if not script_path.is_file():
@@ -622,8 +633,9 @@ def repair_manifest(sciskill_root: Path) -> bool:
 
 def save_manifest(sciskill_root: Path, entries: List[Dict[str, Any]]) -> None:
     entries = sorted(entries, key=lambda e: e.get("fullName", ""))
-    mp = sciskill_root / MANIFEST_FILENAME
-    mp.write_text(json.dumps(entries, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    payload = json.dumps(entries, indent=2, ensure_ascii=False) + "\n"
+    write_manifest_file(sciskill_root / MANIFEST_FILENAME, payload)
+    write_manifest_file(external_manifest_path(sciskill_root), payload)
 
 
 def add_to_manifest(sciskill_root: Path, entry: Dict[str, Any]) -> None:
@@ -655,14 +667,6 @@ def generate_registry_markdown(sciskill_root: Path) -> None:
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
     )
-
-
-def fetch_branch_head_sha(token: str, full_name: str, default_branch: str) -> str:
-    payload = gh_get(
-        f"{API_ROOT}/repos/{full_name}/git/ref/heads/{default_branch}",
-        token,
-    ).json()
-    return str(payload.get("object", {}).get("sha") or "")
 
 
 def clone_skill_repo(
@@ -862,13 +866,11 @@ def main() -> int:
             )
 
             if not args.dry_run:
-                last_commit_sha = fetch_branch_head_sha(args.token, full_name, chosen.default_branch)
                 add_to_manifest(sciskill_root, {
                     "fullName": full_name,
                     "cloneUrl": clone_url,
                     "localPath": str(Path("open-source") / full_name),
                     "defaultBranch": chosen.default_branch,
-                    "lastCommitSha": last_commit_sha,
                     "upstreamUrl": chosen.repo_html_url,
                     "addedAt": datetime.utcnow().isoformat() + "Z",
                     "addedBy": "github-actions",

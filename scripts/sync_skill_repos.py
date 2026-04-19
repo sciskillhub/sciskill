@@ -116,6 +116,16 @@ def load_manifest(repo_root: Path) -> list[dict]:
     return payload if isinstance(payload, list) else []
 
 
+def mirror_manifest_to_data(repo_root: Path) -> Path | None:
+    source = repo_root / MANIFEST_FILENAME
+    if not source.is_file():
+        return None
+    target = (repo_root.parent / "data" / MANIFEST_FILENAME).resolve()
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(source.read_text(encoding="utf-8"), encoding="utf-8")
+    return target
+
+
 def inject_token(url: str, token: str) -> str:
     if token and url.startswith("https://github.com/"):
         return url.replace("https://", f"https://{token}@", 1)
@@ -271,6 +281,11 @@ def main() -> int:
         print("[1/3] Skipping main repo fast-forward sync")
 
     manifest = load_manifest(repo_root)
+    mirrored_manifest = mirror_manifest_to_data(repo_root)
+    if mirrored_manifest is not None:
+        print(f"[2/4] Mirrored manifest to: {mirrored_manifest}")
+    else:
+        print(f"[2/4] No {MANIFEST_FILENAME} found to mirror")
     if not manifest:
         print("[ERROR] No manifest entries found")
         return 1
@@ -283,8 +298,8 @@ def main() -> int:
             return 1
 
     cache_root.mkdir(parents=True, exist_ok=True)
-    print(f"[2/3] External cache root: {cache_root}")
-    print(f"[3/3] Syncing {len(manifest)} skill repos into cache...")
+    print(f"[3/4] External cache root: {cache_root}")
+    print(f"[4/4] Syncing {len(manifest)} skill repos into cache...")
 
     success = 0
     failed: list[str] = []

@@ -4,7 +4,6 @@
     "cloneUrl": "https://github.com/24111999/claude-skills.git",
     "localPath": "open-source/24111999/claude-skills",
     "defaultBranch": "main",
-    "lastCommitSha": "9ebb2112ecade5dfefce5efedf922ce5bac3b360",
     "upstreamUrl": "https://github.com/24111999/claude-skills",
     "addedAt": "2026-04-11T17:13:46.015352Z",
     "addedBy": "migration-script"
@@ -14,7 +13,6 @@
     "cloneUrl": "https://github.com/ALMAZENY1/order-hub.git",
     "localPath": "open-source/ALMAZENY1/order-hub",
     "defaultBranch": "main",
-    "lastCommitSha": "09b0bae6e0818feaad4030c02e4e1b534d80c2ea",
     "upstreamUrl": "https://github.com/ALMAZENY1/order-hub",
     "addedAt": "2026-04-11T17:13:44.960942Z",
     "addedBy": "migration-script"
@@ -24,7 +22,6 @@
     "cloneUrl": "https://github.com/Agents365-ai/ccc-skill.git",
     "localPath": "open-source/Agents365-ai/ccc-skill",
     "defaultBranch": "main",
-    "lastCommitSha": "b0333047a170e4095ee72f885718271830e8fae6",
     "upstreamUrl": "https://github.com/Agents365-ai/ccc-skill",
     "addedAt": "2026-04-14T15:14:12.892700Z",
     "addedBy": "github-actions"
@@ -34,7 +31,6 @@
     "cloneUrl": "https://github.com/Agents365-ai/seurat-skill.git",
     "localPath": "open-source/Agents365-ai/seurat-skill",
     "defaultBranch": "main",
-    "lastCommitSha": "ed7b046c5ac69793c4bb4757d6d1799ec308682c",
     "upstreamUrl": "https://github.com/Agents365-ai/seurat-skill",
     "addedAt": "2026-04-14T15:14:10.892941Z",
     "addedBy": "github-actions"
@@ -44,7 +40,6 @@
     "cloneUrl": "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills.git",
     "localPath": "open-source/AlterLab-IEU/AlterLab-Academic-Skills",
     "defaultBranch": "main",
-    "lastCommitSha": "8490094e29e509304a3c8685cc021336d6b6cf56",
     "upstreamUrl": "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills",
     "addedAt": "2026-04-11T17:13:46.486198Z",
     "addedBy": "migration-script"
@@ -54,7 +49,6 @@
     "cloneUrl": "https://github.com/AsadJaved66/Web-Skills-Protocol.git",
     "localPath": "open-source/AsadJaved66/Web-Skills-Protocol",
     "defaultBranch": "main",
-    "lastCommitSha": "643859da67d8d26251d068581ff1f5904be697d2",
     "upstreamUrl": "https://github.com/AsadJaved66/Web-Skills-Protocol",
     "addedAt": "2026-04-11T17:13:45.348400Z",
     "addedBy": "migration-script"
@@ -64,7 +58,6 @@
     "cloneUrl": "https://github.com/Boom5426/Nature-Paper-Skills.git",
     "localPath": "open-source/Boom5426/Nature-Paper-Skills",
     "defaultBranch": "main",
-    "lastCommitSha": "e722e0022b27d7c28388405d0e6321c28baa3245",
     "upstreamUrl": "https://github.com/Boom5426/Nature-Paper-Skills",
     "addedAt": "2026-04-14T13:04:33.511Z",
     "addedBy": "huang-sh"
@@ -74,7 +67,6 @@
     "cloneUrl": "https://github.com/Chandrikakt/earl.git",
     "localPath": "open-source/Chandrikakt/earl",
     "defaultBranch": "main",
-    "lastCommitSha": "2e39f6a12e33779d83295123792d21bf6e0678dc",
     "upstreamUrl": "https://github.com/Chandrikakt/earl",
     "addedAt": "2026-04-11T17:13:45.963515Z",
     "addedBy": "migration-script"
@@ -84,7 +76,6 @@
     "cloneUrl": "https://github.com/ClawBio/ClawBio.git",
     "localPath": "open-source/ClawBio/ClawBio",
     "defaultBranch": "main",
-    "lastCommitSha": "305aa6ee8d25e33420f21459181ce47b9a4f2dbe",
     "upstreamUrl": "https://github.com/ClawBio/ClawBio",
     "addedAt": "2026-04-11T17:13:46.088645Z",
     "addedBy": "migration-script"
@@ -94,7 +85,6 @@
     "cloneUrl": "https://github.com/DrugClaw/DrugClaw.git",
     "localPath": "open-source/DrugClaw/DrugClaw",
     "defaultBranch": "main",
-    "lastCommitSha": "960a6e0e5935533099dcd1774f6d1280e7d59d55",
     "upstreamUrl": "https://github.com/DrugClaw/DrugClaw",
     "addedAt": "2026-04-11T17:13:46.168990Z",
     "addedBy": "migration-script"
@@ -104,7 +94,6 @@
     "cloneUrl": "https://github.com/Elfredaaroused655/claude-skills.git",
     "localPath": "open-source/Elfredaaroused655/claude-skills",
     "defaultBranch": "main",
-    "lastCommitSha": "f46fa280b536d479af7f95d8508af2bfb9158224",
     "upstreamUrl": "https://github.com/Elfredaaroused655/claude-skills",
     "addedAt": "2026-04-15T15:11:05.473027Z",
     "addedBy": "github-actions"
@@ -114,7 +103,6 @@
     "cloneUrl": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills.git",
     "localPath": "open-source/FreedomIntelligence/OpenClaw-Medical-Skills",
     "defaultBranch": "main",
-    "lastCommitSha": "2aa60d4d86d3a028358f4505684a24efe745a8ea",
     "upstreamUrl": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills",
     "addedAt": "2026-04-11T17:13:46.413410Z",
     "addedBy": "migration-script"
@@ -124,7 +112,6 @@
     "cloneUrl": "https://github.com/GPTomics/bioSkills.git",
     "localPath": "open-source/GPTomics/bioSkills",
     "defaultBranch": "main",
-    "lastCommitSha": "ebe4f4003ebeef4beda84ae1fb4f52295848c4e1",
     "upstreamUrl": "https://github.com/GPTomics/bioSkills",
     "addedAt": "2026-04-11T17:13:46.511553Z",
     "addedBy": "migration-script"
@@ -134,7 +121,6 @@
     "cloneUrl": "https://github.com/GusWan58/dataclaw.git",
     "localPath": "open-source/GusWan58/dataclaw",
     "defaultBranch": "main",
-    "lastCommitSha": "5f141234ca0339d2c36d59db2588185205b0e7ab",
     "upstreamUrl": "https://github.com/GusWan58/dataclaw",
     "addedAt": "2026-04-11T17:13:45.048006Z",
     "addedBy": "migration-script"
@@ -144,7 +130,6 @@
     "cloneUrl": "https://github.com/JiahaoZhang-Public/ProtClaw.git",
     "localPath": "open-source/JiahaoZhang-Public/ProtClaw",
     "defaultBranch": "main",
-    "lastCommitSha": "4fe009e039932a839ef436431f8da906bfe59ba7",
     "upstreamUrl": "https://github.com/JiahaoZhang-Public/ProtClaw",
     "addedAt": "2026-04-11T17:13:46.252258Z",
     "addedBy": "migration-script"
@@ -154,7 +139,6 @@
     "cloneUrl": "https://github.com/JimLiu/baoyu-skills.git",
     "localPath": "open-source/JimLiu/baoyu-skills",
     "defaultBranch": "main",
-    "lastCommitSha": "e13092ba2af192ad70eb61e01bf2c988e8c7d6f7",
     "upstreamUrl": "https://github.com/JimLiu/baoyu-skills",
     "addedAt": "2026-04-11T17:13:45.086637Z",
     "addedBy": "migration-script"
@@ -164,7 +148,6 @@
     "cloneUrl": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
     "localPath": "open-source/K-Dense-AI/scientific-agent-skills",
     "defaultBranch": "main",
-    "lastCommitSha": "e5cb785e4e6130ec16ef6226718cc2b8cd577216",
     "upstreamUrl": "https://github.com/K-Dense-AI/scientific-agent-skills",
     "addedAt": "2026-04-11T17:13:46.660820Z",
     "addedBy": "migration-script"
@@ -174,7 +157,6 @@
     "cloneUrl": "https://github.com/Kayunangka/claude-skill.git",
     "localPath": "open-source/Kayunangka/claude-skill",
     "defaultBranch": "main",
-    "lastCommitSha": "3917c781ecbad2f49da9ad657de7a4061899a4b1",
     "upstreamUrl": "https://github.com/Kayunangka/claude-skill",
     "addedAt": "2026-04-11T17:13:45.827966Z",
     "addedBy": "migration-script"
@@ -184,7 +166,6 @@
     "cloneUrl": "https://github.com/Marshanda14816/agent-skills.git",
     "localPath": "open-source/Marshanda14816/agent-skills",
     "defaultBranch": "main",
-    "lastCommitSha": "072dcfe1bc7a4847ea1953ba8fb6ec7b16cfa451",
     "upstreamUrl": "https://github.com/Marshanda14816/agent-skills",
     "addedAt": "2026-04-11T17:13:45.182268Z",
     "addedBy": "migration-script"
@@ -194,7 +175,6 @@
     "cloneUrl": "https://github.com/Nonsteroidevangel872/research-writing-skill.git",
     "localPath": "open-source/Nonsteroidevangel872/research-writing-skill",
     "defaultBranch": "main",
-    "lastCommitSha": "69cdc483a6f31fb005f7385ab6d97615262903f3",
     "upstreamUrl": "https://github.com/Nonsteroidevangel872/research-writing-skill",
     "addedAt": "2026-04-11T17:13:46.592486Z",
     "addedBy": "migration-script"
@@ -204,7 +184,6 @@
     "cloneUrl": "https://github.com/OpenRaiser/NanoResearch.git",
     "localPath": "open-source/OpenRaiser/NanoResearch",
     "defaultBranch": "main",
-    "lastCommitSha": "7130f14cd340b2dca57843368a364c6ea4be5f68",
     "upstreamUrl": "https://github.com/OpenRaiser/NanoResearch",
     "addedAt": "2026-04-11T17:13:45.877062Z",
     "addedBy": "migration-script"
@@ -214,7 +193,6 @@
     "cloneUrl": "https://github.com/Pavel-Kravchenko/Bioinformatics.git",
     "localPath": "open-source/Pavel-Kravchenko/Bioinformatics",
     "defaultBranch": "main",
-    "lastCommitSha": "05b9566693573bda1a117556ed08017cc4bda330",
     "upstreamUrl": "https://github.com/Pavel-Kravchenko/Bioinformatics",
     "addedAt": "2026-04-17T14:56:09.345502Z",
     "addedBy": "github-actions"
@@ -224,7 +202,6 @@
     "cloneUrl": "https://github.com/Runchuan-BU/BioClaw.git",
     "localPath": "open-source/Runchuan-BU/BioClaw",
     "defaultBranch": "main",
-    "lastCommitSha": "bdf2f80fe2002117c7244faa0e25bd11520cb466",
     "upstreamUrl": "https://github.com/Runchuan-BU/BioClaw",
     "addedAt": "2026-04-11T17:13:46.115943Z",
     "addedBy": "migration-script"
@@ -234,7 +211,6 @@
     "cloneUrl": "https://github.com/SURFLIN2030/swing-skills.git",
     "localPath": "open-source/SURFLIN2030/swing-skills",
     "defaultBranch": "main",
-    "lastCommitSha": "eeaa18aed8bc06a83e23cf9090b3bc6c1f72933e",
     "upstreamUrl": "https://github.com/SURFLIN2030/swing-skills",
     "addedAt": "2026-04-11T17:13:45.277222Z",
     "addedBy": "migration-script"
@@ -244,7 +220,6 @@
     "cloneUrl": "https://github.com/Samuelkebede24/skill-conductor.git",
     "localPath": "open-source/Samuelkebede24/skill-conductor",
     "defaultBranch": "main",
-    "lastCommitSha": "0c4cc4810c2afd3001d2dd8d579496ab80921f0d",
     "upstreamUrl": "https://github.com/Samuelkebede24/skill-conductor",
     "addedAt": "2026-04-11T17:13:45.369177Z",
     "addedBy": "migration-script"
@@ -254,7 +229,6 @@
     "cloneUrl": "https://github.com/Sapiens-ostracism678/finance-skills.git",
     "localPath": "open-source/Sapiens-ostracism678/finance-skills",
     "defaultBranch": "main",
-    "lastCommitSha": "398311ae5d8b0a90c8ca055165f3ef060e90eb1e",
     "upstreamUrl": "https://github.com/Sapiens-ostracism678/finance-skills",
     "addedAt": "2026-04-15T15:11:38.405415Z",
     "addedBy": "github-actions"
@@ -264,7 +238,6 @@
     "cloneUrl": "https://github.com/Shroomfaerie/veriglow-agent-map-skill.git",
     "localPath": "open-source/Shroomfaerie/veriglow-agent-map-skill",
     "defaultBranch": "main",
-    "lastCommitSha": "8d93edc918a494a6cb075ea6cd51465eb1bccf70",
     "upstreamUrl": "https://github.com/Shroomfaerie/veriglow-agent-map-skill",
     "addedAt": "2026-04-11T17:13:45.322870Z",
     "addedBy": "migration-script"
@@ -274,7 +247,6 @@
     "cloneUrl": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem.git",
     "localPath": "open-source/Sibyl-Research-Team/AutoResearch-SibylSystem",
     "defaultBranch": "main",
-    "lastCommitSha": "c30c2168843a9dea8404cde4bab639c9ff8fc8b9",
     "upstreamUrl": "https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem",
     "addedAt": "2026-04-11T17:13:45.922885Z",
     "addedBy": "migration-script"
@@ -284,7 +256,6 @@
     "cloneUrl": "https://github.com/Taison472/codex-skills.git",
     "localPath": "open-source/Taison472/codex-skills",
     "defaultBranch": "main",
-    "lastCommitSha": "8c6376438e5b69d517c30f6b160449b1a6917d59",
     "upstreamUrl": "https://github.com/Taison472/codex-skills",
     "addedAt": "2026-04-11T17:13:45.782515Z",
     "addedBy": "migration-script"
@@ -294,7 +265,6 @@
     "cloneUrl": "https://github.com/TenureAI/PhD-Zero.git",
     "localPath": "open-source/TenureAI/PhD-Zero",
     "defaultBranch": "main",
-    "lastCommitSha": "08fe2e84daae750f9b0e023743113fe7f5397207",
     "upstreamUrl": "https://github.com/TenureAI/PhD-Zero",
     "addedAt": "2026-04-11T17:13:45.946856Z",
     "addedBy": "migration-script"
@@ -304,7 +274,6 @@
     "cloneUrl": "https://github.com/YTItsfrost/cypress-agent-skill.git",
     "localPath": "open-source/YTItsfrost/cypress-agent-skill",
     "defaultBranch": "main",
-    "lastCommitSha": "dd8f9f58fcc3fb7740413a352a7cc4d591003506",
     "upstreamUrl": "https://github.com/YTItsfrost/cypress-agent-skill",
     "addedAt": "2026-04-11T17:13:45.208499Z",
     "addedBy": "migration-script"
@@ -314,7 +283,6 @@
     "cloneUrl": "https://github.com/aipoch/medical-research-skills.git",
     "localPath": "open-source/aipoch/medical-research-skills",
     "defaultBranch": "main",
-    "lastCommitSha": "4b49204a2666eceb2f376df962ba0d319fd6d8ab",
     "upstreamUrl": "https://github.com/aipoch/medical-research-skills",
     "addedAt": "2026-04-16T15:30:27.713252Z",
     "addedBy": "github-actions"
@@ -324,7 +292,6 @@
     "cloneUrl": "https://github.com/aksh-3141/claude-toolshed.git",
     "localPath": "open-source/aksh-3141/claude-toolshed",
     "defaultBranch": "main",
-    "lastCommitSha": "98a8019d6d570facda0d1d2c51e679381b904b62",
     "upstreamUrl": "https://github.com/aksh-3141/claude-toolshed",
     "addedAt": "2026-04-11T17:13:45.656794Z",
     "addedBy": "migration-script"
@@ -334,7 +301,6 @@
     "cloneUrl": "https://github.com/ammawla/encode-toolkit.git",
     "localPath": "open-source/ammawla/encode-toolkit",
     "defaultBranch": "main",
-    "lastCommitSha": "b40ab9227b9cb5b882f9c43b649275d89971bbdd",
     "upstreamUrl": "https://github.com/ammawla/encode-toolkit",
     "addedAt": "2026-04-11T17:13:46.142533Z",
     "addedBy": "migration-script"
@@ -344,7 +310,6 @@
     "cloneUrl": "https://github.com/ankitgupta9525/VMware-Monitor.git",
     "localPath": "open-source/ankitgupta9525/VMware-Monitor",
     "defaultBranch": "main",
-    "lastCommitSha": "8bd48a482831311a9cb873cb6ba7162d12f86baf",
     "upstreamUrl": "https://github.com/ankitgupta9525/VMware-Monitor",
     "addedAt": "2026-04-11T17:13:45.527796Z",
     "addedBy": "migration-script"
@@ -354,7 +319,6 @@
     "cloneUrl": "https://github.com/anthropics/life-sciences.git",
     "localPath": "open-source/anthropics/life-sciences",
     "defaultBranch": "main",
-    "lastCommitSha": "f6f10ffc1f4fbc96cdccf46e4d1a4c0914a316a9",
     "upstreamUrl": "https://github.com/anthropics/life-sciences",
     "addedAt": "2026-04-11T17:13:46.035610Z",
     "addedBy": "migration-script"
@@ -364,7 +328,6 @@
     "cloneUrl": "https://github.com/anubhavsingh-0218/uncodixify-skill.git",
     "localPath": "open-source/anubhavsingh-0218/uncodixify-skill",
     "defaultBranch": "main",
-    "lastCommitSha": "3ece6ffcc98f2a7992c1f7c0a414a54d6e7b57f9",
     "upstreamUrl": "https://github.com/anubhavsingh-0218/uncodixify-skill",
     "addedAt": "2026-04-11T17:13:45.227856Z",
     "addedBy": "migration-script"
@@ -374,7 +337,6 @@
     "cloneUrl": "https://github.com/bio-xyz/BioAgents.git",
     "localPath": "open-source/bio-xyz/BioAgents",
     "defaultBranch": "main",
-    "lastCommitSha": "464dbc011f60c48a64d17e09daed09ef09dd98ba",
     "upstreamUrl": "https://github.com/bio-xyz/BioAgents",
     "addedAt": "2026-04-11T17:13:45.901681Z",
     "addedBy": "migration-script"
@@ -384,7 +346,6 @@
     "cloneUrl": "https://github.com/bloody2634/claud-skills.git",
     "localPath": "open-source/bloody2634/claud-skills",
     "defaultBranch": "main",
-    "lastCommitSha": "53dfe7491f7d49d874942a2cbae363eaa63983c0",
     "upstreamUrl": "https://github.com/bloody2634/claud-skills",
     "addedAt": "2026-04-11T17:13:45.852071Z",
     "addedBy": "migration-script"
@@ -394,7 +355,6 @@
     "cloneUrl": "https://github.com/cyanheads/pubmed-mcp-server.git",
     "localPath": "open-source/cyanheads/pubmed-mcp-server",
     "defaultBranch": "main",
-    "lastCommitSha": "f676cf595ea55465c337351b4368603c1a7e5cc9",
     "upstreamUrl": "https://github.com/cyanheads/pubmed-mcp-server",
     "addedAt": "2026-04-14T15:13:52.737913Z",
     "addedBy": "github-actions"
@@ -404,7 +364,6 @@
     "cloneUrl": "https://github.com/d-oit/web-doc-resolver.git",
     "localPath": "open-source/d-oit/web-doc-resolver",
     "defaultBranch": "main",
-    "lastCommitSha": "eda47c031fc28eee1be941d5a8d4d514c7e54df9",
     "upstreamUrl": "https://github.com/d-oit/web-doc-resolver",
     "addedAt": "2026-04-11T17:13:45.139534Z",
     "addedBy": "migration-script"
@@ -414,7 +373,6 @@
     "cloneUrl": "https://github.com/donbr/lifesciences-research.git",
     "localPath": "open-source/donbr/lifesciences-research",
     "defaultBranch": "main",
-    "lastCommitSha": "d8b39abcf4ab5ba8f614da62722db3341b6895eb",
     "upstreamUrl": "https://github.com/donbr/lifesciences-research",
     "addedAt": "2026-04-11T17:13:46.196122Z",
     "addedBy": "migration-script"
@@ -424,7 +382,6 @@
     "cloneUrl": "https://github.com/droftgamer-wq/researcher-skill.git",
     "localPath": "open-source/droftgamer-wq/researcher-skill",
     "defaultBranch": "main",
-    "lastCommitSha": "fd50e00a5c2b9e51ef18792c5f6dc964eba6d849",
     "upstreamUrl": "https://github.com/droftgamer-wq/researcher-skill",
     "addedAt": "2026-04-14T15:13:27.348930Z",
     "addedBy": "github-actions"
@@ -434,7 +391,6 @@
     "cloneUrl": "https://github.com/eamag/papers2dataset.git",
     "localPath": "open-source/eamag/papers2dataset",
     "defaultBranch": "main",
-    "lastCommitSha": "cd13e3aaaf65274bf63fa7851c2de49ee17215da",
     "upstreamUrl": "https://github.com/eamag/papers2dataset",
     "addedAt": "2026-04-11T17:13:46.434195Z",
     "addedBy": "migration-script"
@@ -444,7 +400,6 @@
     "cloneUrl": "https://github.com/felipemsilva/PowerSkills.git",
     "localPath": "open-source/felipemsilva/PowerSkills",
     "defaultBranch": "main",
-    "lastCommitSha": "43a5e2902bbe1a136d85d7d9a64ae95f3a952d08",
     "upstreamUrl": "https://github.com/felipemsilva/PowerSkills",
     "addedAt": "2026-04-11T17:13:45.250804Z",
     "addedBy": "migration-script"
@@ -454,7 +409,6 @@
     "cloneUrl": "https://github.com/fmschulz/omics-skills.git",
     "localPath": "open-source/fmschulz/omics-skills",
     "defaultBranch": "main",
-    "lastCommitSha": "a4e2a7bb896b7d01c115a970679989b8b1efca65",
     "upstreamUrl": "https://github.com/fmschulz/omics-skills",
     "addedAt": "2026-04-11T17:13:45.988927Z",
     "addedBy": "migration-script"
@@ -464,7 +418,6 @@
     "cloneUrl": "https://github.com/foryourhealth111-pixel/Vibe-Skills.git",
     "localPath": "open-source/foryourhealth111-pixel/Vibe-Skills",
     "defaultBranch": "main",
-    "lastCommitSha": "001aa9bc5e590a9bf916e7d195a691775cb217f5",
     "upstreamUrl": "https://github.com/foryourhealth111-pixel/Vibe-Skills",
     "addedAt": "2026-04-11T17:13:46.060894Z",
     "addedBy": "migration-script"
@@ -474,7 +427,6 @@
     "cloneUrl": "https://github.com/genepattern/module-toolkit.git",
     "localPath": "open-source/genepattern/module-toolkit",
     "defaultBranch": "main",
-    "lastCommitSha": "e902db70838a41f967a9de7180de09021c4211a9",
     "upstreamUrl": "https://github.com/genepattern/module-toolkit",
     "addedAt": "2026-04-11T17:13:46.565238Z",
     "addedBy": "migration-script"
@@ -484,7 +436,6 @@
     "cloneUrl": "https://github.com/jackspace/ClaudeSkillz.git",
     "localPath": "open-source/jackspace/ClaudeSkillz",
     "defaultBranch": "master",
-    "lastCommitSha": "fafc4690cff2a2420be1d0bd80a6d18c5091904a",
     "upstreamUrl": "https://github.com/jackspace/ClaudeSkillz",
     "addedAt": "2026-04-11T17:13:46.223287Z",
     "addedBy": "migration-script"
@@ -494,7 +445,6 @@
     "cloneUrl": "https://github.com/javidmardanov/paper-banana-skill.git",
     "localPath": "open-source/javidmardanov/paper-banana-skill",
     "defaultBranch": "master",
-    "lastCommitSha": "71856c20258ea499eb1c1008e0ddd8d260c968f7",
     "upstreamUrl": "https://github.com/javidmardanov/paper-banana-skill",
     "addedAt": "2026-04-11T17:13:46.335948Z",
     "addedBy": "migration-script"
@@ -504,7 +454,6 @@
     "cloneUrl": "https://github.com/kimimgo/viznoir.git",
     "localPath": "open-source/kimimgo/viznoir",
     "defaultBranch": "main",
-    "lastCommitSha": "a9af47dedd47fceceac6bb08038ee47645c8a89e",
     "upstreamUrl": "https://github.com/kimimgo/viznoir",
     "addedAt": "2026-04-11T17:13:46.307143Z",
     "addedBy": "migration-script"
@@ -514,7 +463,6 @@
     "cloneUrl": "https://github.com/ma-compbio-lab/SkillFoundry.git",
     "localPath": "open-source/ma-compbio-lab/SkillFoundry",
     "defaultBranch": "main",
-    "lastCommitSha": "f892aaae9c49de834aaa35273a09561f25b1775d",
     "upstreamUrl": "https://github.com/ma-compbio-lab/SkillFoundry",
     "addedAt": "2026-04-11T17:13:46.638604Z",
     "addedBy": "migration-script"
@@ -524,7 +472,6 @@
     "cloneUrl": "https://github.com/mateooo24/timework-skill.git",
     "localPath": "open-source/mateooo24/timework-skill",
     "defaultBranch": "main",
-    "lastCommitSha": "9548e925bbff4ede691e712dad6149835187e43d",
     "upstreamUrl": "https://github.com/mateooo24/timework-skill",
     "addedAt": "2026-04-11T17:13:45.420769Z",
     "addedBy": "migration-script"
@@ -534,7 +481,6 @@
     "cloneUrl": "https://github.com/megana05082003/review-analyzer-skill.git",
     "localPath": "open-source/megana05082003/review-analyzer-skill",
     "defaultBranch": "main",
-    "lastCommitSha": "78286d53b64d6f27972f9a54d951addf0b549bf9",
     "upstreamUrl": "https://github.com/megana05082003/review-analyzer-skill",
     "addedAt": "2026-04-11T17:13:45.297348Z",
     "addedBy": "migration-script"
@@ -544,7 +490,6 @@
     "cloneUrl": "https://github.com/mnfst/manifest.git",
     "localPath": "open-source/mnfst/manifest",
     "defaultBranch": "main",
-    "lastCommitSha": "acd32843943b9cac7011a9bc8c1b3b00db8c805a",
     "upstreamUrl": "https://github.com/mnfst/manifest",
     "addedAt": "2026-04-11T17:13:45.158520Z",
     "addedBy": "migration-script"
@@ -554,7 +499,6 @@
     "cloneUrl": "https://github.com/mzoryy/hwpxskill.git",
     "localPath": "open-source/mzoryy/hwpxskill",
     "defaultBranch": "main",
-    "lastCommitSha": "fb36633618065b2733f275241885982c038a5eed",
     "upstreamUrl": "https://github.com/mzoryy/hwpxskill",
     "addedAt": "2026-04-11T17:13:45.067854Z",
     "addedBy": "migration-script"
@@ -564,7 +508,6 @@
     "cloneUrl": "https://github.com/naity/FM4Life.git",
     "localPath": "open-source/naity/FM4Life",
     "defaultBranch": "main",
-    "lastCommitSha": "d66cd4f02f4200e7f51f872d9e7ea5e1231f757e",
     "upstreamUrl": "https://github.com/naity/FM4Life",
     "addedAt": "2026-04-11T17:13:46.617423Z",
     "addedBy": "migration-script"
@@ -574,7 +517,6 @@
     "cloneUrl": "https://github.com/nandodeejay/appstore-review-skill.git",
     "localPath": "open-source/nandodeejay/appstore-review-skill",
     "defaultBranch": "main",
-    "lastCommitSha": "0bc5d668c586d8548d9d0ba2be28bb9b715cac1c",
     "upstreamUrl": "https://github.com/nandodeejay/appstore-review-skill",
     "addedAt": "2026-04-11T17:13:45.476758Z",
     "addedBy": "migration-script"
@@ -584,7 +526,6 @@
     "cloneUrl": "https://github.com/openags/OpenAGS.git",
     "localPath": "open-source/openags/OpenAGS",
     "defaultBranch": "main",
-    "lastCommitSha": "3bc7daa10102e7db15e7e9b8b3307a87de9327e0",
     "upstreamUrl": "https://github.com/openags/OpenAGS",
     "addedAt": "2026-04-11T17:13:45.805759Z",
     "addedBy": "migration-script"
@@ -594,7 +535,6 @@
     "cloneUrl": "https://github.com/sethikasithum/skill-generator.git",
     "localPath": "open-source/sethikasithum/skill-generator",
     "defaultBranch": "main",
-    "lastCommitSha": "3529b18f0de3cc7d0886a59ee4827e245b6676bd",
     "upstreamUrl": "https://github.com/sethikasithum/skill-generator",
     "addedAt": "2026-04-11T17:13:45.447681Z",
     "addedBy": "migration-script"
@@ -604,7 +544,6 @@
     "cloneUrl": "https://github.com/teixasalone/UnrealEngine5-Skills.git",
     "localPath": "open-source/teixasalone/UnrealEngine5-Skills",
     "defaultBranch": "main",
-    "lastCommitSha": "dcf365bdd2f588f380d15cd2204c44918b3cc341",
     "upstreamUrl": "https://github.com/teixasalone/UnrealEngine5-Skills",
     "addedAt": "2026-04-11T17:13:45.501772Z",
     "addedBy": "migration-script"
@@ -614,7 +553,6 @@
     "cloneUrl": "https://github.com/th3vib3coder/vibe-science-codex.git",
     "localPath": "open-source/th3vib3coder/vibe-science-codex",
     "defaultBranch": "main",
-    "lastCommitSha": "6953a6ec66888aeefb9aef04292bdd4b51b2a591",
     "upstreamUrl": "https://github.com/th3vib3coder/vibe-science-codex",
     "addedAt": "2026-04-11T17:13:46.458470Z",
     "addedBy": "migration-script"
@@ -624,7 +562,6 @@
     "cloneUrl": "https://github.com/toohamster/sftp-cc.git",
     "localPath": "open-source/toohamster/sftp-cc",
     "defaultBranch": "main",
-    "lastCommitSha": "b65b641ecc8568b85fbfc14613f10320bb1d827c",
     "upstreamUrl": "https://github.com/toohamster/sftp-cc",
     "addedAt": "2026-04-11T17:13:45.028065Z",
     "addedBy": "migration-script"
@@ -634,7 +571,6 @@
     "cloneUrl": "https://github.com/unexplained-familyephedraceae871/openclaw-skill.git",
     "localPath": "open-source/unexplained-familyephedraceae871/openclaw-skill",
     "defaultBranch": "main",
-    "lastCommitSha": "0f29d771a5ec9e0cb647ef367a2544b93f13add5",
     "upstreamUrl": "https://github.com/unexplained-familyephedraceae871/openclaw-skill",
     "addedAt": "2026-04-11T17:13:46.388699Z",
     "addedBy": "migration-script"
@@ -644,7 +580,6 @@
     "cloneUrl": "https://github.com/wenmin-wu/ds-skills.git",
     "localPath": "open-source/wenmin-wu/ds-skills",
     "defaultBranch": "main",
-    "lastCommitSha": "6385414f77d5e5b0ff83e95f632082f9e855f1f8",
     "upstreamUrl": "https://github.com/wenmin-wu/ds-skills",
     "addedAt": "2026-04-12T06:39:25.318Z",
     "addedBy": "huang-sh"
@@ -654,7 +589,6 @@
     "cloneUrl": "https://github.com/wtfhanin/Enhance-Prompt.git",
     "localPath": "open-source/wtfhanin/Enhance-Prompt",
     "defaultBranch": "main",
-    "lastCommitSha": "3a570aac0913431a680127c1e1c190185f41fbc7",
     "upstreamUrl": "https://github.com/wtfhanin/Enhance-Prompt",
     "addedAt": "2026-04-11T17:13:45.394075Z",
     "addedBy": "migration-script"
@@ -664,7 +598,6 @@
     "cloneUrl": "https://github.com/zacklecon/claude-skills.git",
     "localPath": "open-source/zacklecon/claude-skills",
     "defaultBranch": "main",
-    "lastCommitSha": "f76c0ba378cf640c728da4f5ffbb4c8b8b4ae6d4",
     "upstreamUrl": "https://github.com/zacklecon/claude-skills",
     "addedAt": "2026-04-15T15:11:33.681088Z",
     "addedBy": "github-actions"
@@ -674,7 +607,6 @@
     "cloneUrl": "https://github.com/zarazhangrui/frontend-slides.git",
     "localPath": "open-source/zarazhangrui/frontend-slides",
     "defaultBranch": "main",
-    "lastCommitSha": "8dca834fc61abc9dd633cbe6a74ed7be3d82a608",
     "upstreamUrl": "https://github.com/zarazhangrui/frontend-slides",
     "addedAt": "2026-04-11T17:13:44.943475Z",
     "addedBy": "migration-script"
@@ -684,7 +616,6 @@
     "cloneUrl": "https://github.com/zinxj/uikit-expert-skill.git",
     "localPath": "open-source/zinxj/uikit-expert-skill",
     "defaultBranch": "main",
-    "lastCommitSha": "7164c33122cd23d23511185a701b7ca6cfc44058",
     "upstreamUrl": "https://github.com/zinxj/uikit-expert-skill",
     "addedAt": "2026-04-11T17:13:45.681611Z",
     "addedBy": "migration-script"
@@ -694,7 +625,6 @@
     "cloneUrl": "https://github.com/zongtingwei/Bioclaw_Skills_Hub.git",
     "localPath": "open-source/zongtingwei/Bioclaw_Skills_Hub",
     "defaultBranch": "main",
-    "lastCommitSha": "d056daa153685cc59d24e9c432e4804d9cd122fe",
     "upstreamUrl": "https://github.com/zongtingwei/Bioclaw_Skills_Hub",
     "addedAt": "2026-04-15T15:51:52.365Z",
     "addedBy": "huang-sh"
