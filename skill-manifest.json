@@ -279,6 +279,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "agentcures/NanoCures",
+    "cloneUrl": "https://github.com/agentcures/NanoCures.git",
+    "localPath": "open-source/agentcures/NanoCures",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/agentcures/NanoCures",
+    "addedAt": "2026-04-20T15:17:20.489022Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "aipoch/medical-research-skills",
     "cloneUrl": "https://github.com/aipoch/medical-research-skills.git",
     "localPath": "open-source/aipoch/medical-research-skills",

@@ -2,11 +2,17 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **70**
+Total repositories: **71**
 
 ### [24111999/claude-skills](https://github.com/24111999/claude-skills)
 
 Collected GitHub skill repository.
+
+### [agentcures/NanoCures](https://github.com/agentcures/NanoCures)
+
+Add /compact command for manual context compaction. Solves context rot in long sessions by forwarding the SDK's built-in /compact slash command. Main-group or trusted sender only.
+
+Example skill path: `.claude/skills/add-compact/SKILL.md`
 
 ### [Agents365-ai/ccc-skill](https://github.com/Agents365-ai/ccc-skill)
 
