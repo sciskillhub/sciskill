@@ -10,9 +10,7 @@ Collected GitHub skill repository.
 
 ### [agentcures/NanoCures](https://github.com/agentcures/NanoCures)
 
-Add /compact command for manual context compaction. Solves context rot in long sessions by forwarding the SDK's built-in /compact slash command. Main-group or trusted sender only.
-
-Example skill path: `.claude/skills/add-compact/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Agents365-ai/ccc-skill](https://github.com/Agents365-ai/ccc-skill)
 
