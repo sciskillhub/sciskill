@@ -432,6 +432,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "foryourhealth111-pixel/research-innovation-explorer",
+    "cloneUrl": "https://github.com/foryourhealth111-pixel/research-innovation-explorer.git",
+    "localPath": "open-source/foryourhealth111-pixel/research-innovation-explorer",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/foryourhealth111-pixel/research-innovation-explorer",
+    "addedAt": "2026-04-23T15:51:36.692714Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "genepattern/module-toolkit",
     "cloneUrl": "https://github.com/genepattern/module-toolkit.git",
     "localPath": "open-source/genepattern/module-toolkit",
