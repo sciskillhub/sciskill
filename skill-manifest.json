@@ -99,6 +99,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "Ficere/archer",
+    "cloneUrl": "https://github.com/Ficere/archer.git",
+    "localPath": "open-source/Ficere/archer",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Ficere/archer",
+    "addedAt": "2026-04-28T16:09:17.663538Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "FreedomIntelligence/OpenClaw-Medical-Skills",
     "cloneUrl": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills.git",
     "localPath": "open-source/FreedomIntelligence/OpenClaw-Medical-Skills",
@@ -466,6 +475,15 @@
     "upstreamUrl": "https://github.com/javidmardanov/paper-banana-skill",
     "addedAt": "2026-04-11T17:13:46.335948Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "jvogan/proteus",
+    "cloneUrl": "https://github.com/jvogan/proteus.git",
+    "localPath": "open-source/jvogan/proteus",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/jvogan/proteus",
+    "addedAt": "2026-04-28T16:08:43.032368Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "kimimgo/viznoir",

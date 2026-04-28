@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **72**
+Total repositories: **74**
 
 ### [24111999/claude-skills](https://github.com/24111999/claude-skills)
 
@@ -108,6 +108,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Ficere/archer](https://github.com/Ficere/archer)
+
+Archer —— 面向特定领域专家的 AI 模型架构选型调研技能。在指定时间窗内系统性扫描 arXiv / bioRxiv / Hugging Face / 主流学术与中文技术源，筛选与领域相关的最新模型架构、预训练范式、tokenization 方案、长上下文与状态空间等通用 ML 创新，输出结构化的可关注架构清单（JSON 为主，Markdown 可选）。每条候选包含 title / summary / reason（为何对该领域有潜在价值）/ link 四要素。当用户提到模型架构调研、架构选型、追新架构、跟进最新模型、可关注架构、architecture survey、architecture watchlist、跟踪 arXiv、跟踪 bioRxiv、新架构筛选 时使用此技能。典型场景：基因组基础模型、蛋白语言模型、单细胞 FM、化学/材料 FM、视觉/多模态 FM、机器人 FM、RAG/Agent 架构跟进等领域专家的双周/月度选型调研。
+
+Example skill path: `SKILL.md`
+
 ### [fmschulz/omics-skills](https://github.com/fmschulz/omics-skills)
 
 Collected GitHub skill repository.
@@ -151,6 +157,12 @@ Collected GitHub skill repository.
 ### [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills)
 
 Collected GitHub skill repository.
+
+### [jvogan/proteus](https://github.com/jvogan/proteus)
+
+Use this skill when the user asks you to work with protein structures, molecular visualization, or structural biology tools. TRIGGER when: the user mentions PyMOL, ChimeraX, AlphaFold, Rosetta, PyRosetta, UniProt, RCSB PDB, PDBe, PDB files, protein structures, molecular rendering, pLDDT, RMSD, structure alignment, binding pockets, drug-target analysis, cryo-EM density maps, homology modeling, or protein design. Also trigger when the user opens/loads .pdb, .cif, .mmcif, .sdf, or .mol2 files, or .mrc density maps (see references/chimerax.md for cryo-EM workflows). DO NOT TRIGGER for: general biology questions with no structural component, bioinformatics sequence-only tasks (BLAST, MSA), or genomics/transcriptomics.
+
+Example skill path: `SKILL.md`
 
 ### [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)
 
