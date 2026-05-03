@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **74**
+Total repositories: **75**
 
 ### [24111999/claude-skills](https://github.com/24111999/claude-skills)
 
@@ -71,6 +71,12 @@ Collected GitHub skill repository.
 ### [Chandrikakt/earl](https://github.com/Chandrikakt/earl)
 
 Collected GitHub skill repository.
+
+### [charles0403/agent-skills](https://github.com/charles0403/agent-skills)
+
+Use when working with Figma and UI icons are needed — triggers on icon names, icon libraries (Tabler, Lucide, Material Design, Phosphor, Heroicons), or requests to add/insert icons in Figma designs.
+
+Example skill path: `skills/figma-icons-iconify/SKILL.md`
 
 ### [ClawBio/ClawBio](https://github.com/ClawBio/ClawBio)
 

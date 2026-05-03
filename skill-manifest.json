@@ -369,6 +369,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "charles0403/agent-skills",
+    "cloneUrl": "https://github.com/charles0403/agent-skills.git",
+    "localPath": "open-source/charles0403/agent-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/charles0403/agent-skills",
+    "addedAt": "2026-05-03T14:47:29.426632Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "cyanheads/pubmed-mcp-server",
     "cloneUrl": "https://github.com/cyanheads/pubmed-mcp-server.git",
     "localPath": "open-source/cyanheads/pubmed-mcp-server",
