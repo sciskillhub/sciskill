@@ -317,23 +317,6 @@
       "matches": []
     },
     {
-      "repo": "mmb78/AI-Forge-Research-Edition",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -361,6 +344,23 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
       "matches": []
+    },
+    {
+      "repo": "mmb78/AI-Forge-Research-Edition",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "aicell-lab/bioengine-worker",
@@ -1602,6 +1602,23 @@
       "matches": []
     },
     {
+      "repo": "agentcures/ClawCures",
+      "matched_domain_topics": [
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "K-Dense-AI/rowan-autosearch",
       "matched_domain_topics": [
         "drug-discovery"
@@ -1673,23 +1690,6 @@
     },
     {
       "repo": "mondalsou/lead-optimization-agent",
-      "matched_domain_topics": [
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "agentcures/ClawCures",
       "matched_domain_topics": [
         "drug-discovery"
       ],
