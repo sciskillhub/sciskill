@@ -576,6 +576,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "pswider/tula",
+    "cloneUrl": "https://github.com/pswider/tula.git",
+    "localPath": "open-source/pswider/tula",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/pswider/tula",
+    "addedAt": "2026-05-10T14:52:04.498502Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "sethikasithum/skill-generator",
     "cloneUrl": "https://github.com/sethikasithum/skill-generator.git",
     "localPath": "open-source/sethikasithum/skill-generator",

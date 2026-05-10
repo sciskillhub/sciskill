@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **75**
+Total repositories: **76**
 
 ### [24111999/claude-skills](https://github.com/24111999/claude-skills)
 
@@ -223,6 +223,12 @@ Collected GitHub skill repository.
 ### [Pavel-Kravchenko/Bioinformatics](https://github.com/Pavel-Kravchenko/Bioinformatics)
 
 Collected GitHub skill repository.
+
+### [pswider/tula](https://github.com/pswider/tula)
+
+Drafts a concise patient-portal message Paul can copy-paste to a clinician via Epic MyChart, Oracle Health HealtheLife, or similar. USE FOR: symptom reports, refill requests, lab/result follow-ups, visit follow-ups, asking a single clear question. DO NOT USE FOR: clinical notes, SOAP/discharge documentation, insurance or billing letters, or answering the patient's medical question.
+
+Example skill path: `skills/epic-note/SKILL.md`
 
 ### [Runchuan-BU/BioClaw](https://github.com/Runchuan-BU/BioClaw)
 
