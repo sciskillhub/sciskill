@@ -29,6 +29,23 @@
   "repo_count": 91,
   "results": [
     {
+      "repo": "OuroborosCollective/Wasd",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "mareforma/mareforma",
       "matched_domain_topics": [
         "science"
@@ -317,26 +334,7 @@
       "matches": []
     },
     {
-      "repo": "cyanheads/pubmed-mcp-server",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/pubmed-mcp-server",
-      "matches": []
-    },
-    {
-      "repo": "aristoteleo/PantheonOS",
+      "repo": "aicell-lab/bioengine-worker",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -399,6 +397,42 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "cyanheads/pubmed-mcp-server",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/pubmed-mcp-server",
+      "matches": []
+    },
+    {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "ammawla/encode-toolkit",
       "matched_domain_topics": [
         "bioinformatics"
@@ -416,23 +450,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ammawla/encode-toolkit",
       "matches": []
-    },
-    {
-      "repo": "aicell-lab/bioengine-worker",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "MaxMLang/cxg-census-mcp",
@@ -985,52 +1002,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "charles0403/agent-skills",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "clinical-research",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/charles0403/agent-skills",
-      "matches": []
-    },
-    {
-      "repo": "fourparty-utnapishtim59/llm-knowledge-base",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "sparzinhogames-hash/awesome-scientific-ai-tools",
       "matched_domain_topics": [
         "bioinformatics",
@@ -1053,11 +1024,9 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "aipoch/medical-research-skills",
+      "repo": "fourparty-utnapishtim59/llm-knowledge-base",
       "matched_domain_topics": [
-        "bioinformatics",
-        "clinical-research",
-        "computational-biology"
+        "bioinformatics"
       ],
       "matched_qualifier_topics": [
         "agent-skills"
@@ -1066,20 +1035,10 @@
         {
           "domain_topic": "bioinformatics",
           "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
         }
       ],
       "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aipoch/medical-research-skills",
-      "matches": []
+      "status": "no_valid_skill"
     },
     {
       "repo": "K-Dense-AI/scientific-agent-skills",
@@ -1123,6 +1082,35 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
+      "matches": []
+    },
+    {
+      "repo": "aipoch/medical-research-skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "clinical-research",
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aipoch/medical-research-skills",
       "matches": []
     },
     {
@@ -1402,20 +1390,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/pswider/tula.git",
-      "chosen_skill_path": "skills/epic-note/SKILL.md",
-      "front_matter": {
-        "name": "epic-note",
-        "description": "Drafts a concise patient-portal message Paul can copy-paste to a clinician via Epic MyChart, Oracle Health HealtheLife, or similar. USE FOR: symptom reports, refill requests, lab/result follow-ups, visit follow-ups, asking a single clear question. DO NOT USE FOR: clinical notes, SOAP/discharge documentation, insurance or billing letters, or answering the patient's medical question.",
-        "metadata": {
-          "openclaw": {
-            "emoji": "✉️"
-          }
-        }
-      },
-      "html_url": "https://github.com/pswider/tula",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/pswider/tula"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/pswider/tula",
+      "matches": []
     },
     {
       "repo": "Elfredaaroused655/claude-skills",

@@ -226,9 +226,7 @@ Collected GitHub skill repository.
 
 ### [pswider/tula](https://github.com/pswider/tula)
 
-Drafts a concise patient-portal message Paul can copy-paste to a clinician via Epic MyChart, Oracle Health HealtheLife, or similar. USE FOR: symptom reports, refill requests, lab/result follow-ups, visit follow-ups, asking a single clear question. DO NOT USE FOR: clinical notes, SOAP/discharge documentation, insurance or billing letters, or answering the patient's medical question.
-
-Example skill path: `skills/epic-note/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Runchuan-BU/BioClaw](https://github.com/Runchuan-BU/BioClaw)
 
