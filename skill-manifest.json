@@ -585,6 +585,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "realactivity/tula",
+    "cloneUrl": "https://github.com/realactivity/tula.git",
+    "localPath": "open-source/realactivity/tula",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/realactivity/tula",
+    "addedAt": "2026-05-12T16:19:36.790679Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "sethikasithum/skill-generator",
     "cloneUrl": "https://github.com/sethikasithum/skill-generator.git",
     "localPath": "open-source/sethikasithum/skill-generator",
