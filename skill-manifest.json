@@ -45,6 +45,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "Aperivue/medsci-skills",
+    "cloneUrl": "https://github.com/Aperivue/medsci-skills.git",
+    "localPath": "open-source/Aperivue/medsci-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Aperivue/medsci-skills",
+    "addedAt": "2026-05-13T16:18:46.217222Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "AsadJaved66/Web-Skills-Protocol",
     "cloneUrl": "https://github.com/AsadJaved66/Web-Skills-Protocol.git",
     "localPath": "open-source/AsadJaved66/Web-Skills-Protocol",
@@ -169,6 +178,15 @@
     "upstreamUrl": "https://github.com/Kayunangka/claude-skill",
     "addedAt": "2026-04-11T17:13:45.827966Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "LabOnoM/AROS_Pipeline_Factory",
+    "cloneUrl": "https://github.com/LabOnoM/AROS_Pipeline_Factory.git",
+    "localPath": "open-source/LabOnoM/AROS_Pipeline_Factory",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/LabOnoM/AROS_Pipeline_Factory",
+    "addedAt": "2026-05-13T16:17:59.015588Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "Marshanda14816/agent-skills",
