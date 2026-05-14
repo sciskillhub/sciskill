@@ -54,9 +54,7 @@ Collected GitHub skill repository.
 
 ### [Aperivue/medsci-skills](https://github.com/Aperivue/medsci-skills)
 
-Medical AI paper optimization for AI search engines (Perplexity, ChatGPT web, Elicit, Consensus, SciSpace) and RAG-based literature tools. Applies when drafting or reviewing titles, abstracts, structured summary boxes (Key Points / Research in Context / Plain-Language Summary), manuscripts for high-impact medical AI journals (Lancet Digital Health, Radiology, Radiology-AI, npj Digital Medicine, Nature Medicine), preprints (medRxiv/arXiv), GitHub README + CITATION.cff + Zenodo archives, and Hugging Face model/dataset cards. Integrates TRIPOD+AI, CLAIM 2024, STARD-AI, TRIPOD-LLM, DECIDE-AI reporting requirements with generative engine optimization (GEO) principles. Produces a visible pass/fail checklist.
-
-Example skill path: `skills/academic-aio/SKILL.md`
+Collected GitHub skill repository.
 
 ### [AsadJaved66/Web-Skills-Protocol](https://github.com/AsadJaved66/Web-Skills-Protocol)
 
@@ -184,9 +182,7 @@ Collected GitHub skill repository.
 
 ### [LabOnoM/AROS_Pipeline_Factory](https://github.com/LabOnoM/AROS_Pipeline_Factory)
 
-Classifies and organizes literature by theme, method, and conclusion; use when you need to batch-read a folder of PDF/MD/DOCX/TXT files and output a structured CSV for literature reviews and annotation management.
-
-Example skill path: `01.Shared_Assets/Skills/bibliography/SKILL.md`
+Collected GitHub skill repository.
 
 ### [ma-compbio-lab/SkillFoundry](https://github.com/ma-compbio-lab/SkillFoundry)
 
