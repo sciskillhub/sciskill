@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **79**
+Total repositories: **80**
 
 ### [24111999/claude-skills](https://github.com/24111999/claude-skills)
 
@@ -239,6 +239,12 @@ Collected GitHub skill repository.
 ### [realactivity/tula](https://github.com/realactivity/tula)
 
 Collected GitHub skill repository.
+
+### [richard-kim-79/archora-skills](https://github.com/richard-kim-79/archora-skills)
+
+Generates rigorous devil's advocate critiques from methodological, theoretical, and practical perspectives. Use when the user asks to challenge their own work, find weaknesses, stress-test assumptions, anticipate reviewer objections, or argue against their research claims. Run BEFORE writing a draft for stronger papers.
+
+Example skill path: `skills/counterargument/SKILL.md`
 
 ### [Runchuan-BU/BioClaw](https://github.com/Runchuan-BU/BioClaw)
 
