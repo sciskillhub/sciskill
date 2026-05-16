@@ -254,21 +254,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/richard-kim-79/archora-skills.git",
-      "chosen_skill_path": "skills/counterargument/SKILL.md",
-      "front_matter": {
-        "name": "counterargument",
-        "description": "Generates rigorous devil's advocate critiques from methodological, theoretical, and practical perspectives. Use when the user asks to challenge their own work, find weaknesses, stress-test assumptions, anticipate reviewer objections, or argue against their research claims. Run BEFORE writing a draft for stronger papers.\n",
-        "license": "MIT",
-        "metadata": {
-          "author": "archora",
-          "version": "1.0",
-          "website": "https://archora2026.com/"
-        }
-      },
-      "html_url": "https://github.com/richard-kim-79/archora-skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/richard-kim-79/archora-skills"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/richard-kim-79/archora-skills",
+      "matches": []
     },
     {
       "repo": "aipoch/medical-research-skills",
@@ -363,48 +351,6 @@
       "matches": []
     },
     {
-      "repo": "fmschulz/omics-skills",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills",
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/fmschulz/omics-skills",
-      "matches": []
-    },
-    {
       "repo": "droftgamer-wq/researcher-skill",
       "matched_domain_topics": [
         "bioinformatics",
@@ -482,6 +428,65 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
+      "matches": []
+    },
+    {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "fmschulz/omics-skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/fmschulz/omics-skills",
       "matches": []
     },
     {
@@ -590,23 +595,6 @@
     },
     {
       "repo": "mmb78/AI-Forge-Research-Edition",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "aristoteleo/PantheonOS",
       "matched_domain_topics": [
         "bioinformatics"
       ],

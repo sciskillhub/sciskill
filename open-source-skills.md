@@ -242,9 +242,7 @@ Collected GitHub skill repository.
 
 ### [richard-kim-79/archora-skills](https://github.com/richard-kim-79/archora-skills)
 
-Generates rigorous devil's advocate critiques from methodological, theoretical, and practical perspectives. Use when the user asks to challenge their own work, find weaknesses, stress-test assumptions, anticipate reviewer objections, or argue against their research claims. Run BEFORE writing a draft for stronger papers.
-
-Example skill path: `skills/counterargument/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Runchuan-BU/BioClaw](https://github.com/Runchuan-BU/BioClaw)
 
