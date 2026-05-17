@@ -126,6 +126,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "FridrichMethod/awesome-skills",
+    "cloneUrl": "https://github.com/FridrichMethod/awesome-skills.git",
+    "localPath": "open-source/FridrichMethod/awesome-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/FridrichMethod/awesome-skills",
+    "addedAt": "2026-05-17T15:10:32.793439Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "GPTomics/bioSkills",
     "cloneUrl": "https://github.com/GPTomics/bioSkills.git",
     "localPath": "open-source/GPTomics/bioSkills",
