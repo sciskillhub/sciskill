@@ -63,6 +63,23 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "BlackRoad-AI/lucidia-math",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "ULudo/ClawReview",
       "matched_domain_topics": [
         "science"
@@ -81,23 +98,6 @@
     },
     {
       "repo": "cesifoti/jaigp",
-      "matched_domain_topics": [
-        "science"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "BlackRoad-AI/lucidia-math",
       "matched_domain_topics": [
         "science"
       ],
@@ -240,25 +240,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "richard-kim-79/archora-skills",
-      "matched_domain_topics": [
-        "science"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/richard-kim-79/archora-skills",
-      "matches": []
-    },
-    {
       "repo": "aipoch/medical-research-skills",
       "matched_domain_topics": [
         "bioinformatics",
@@ -308,6 +289,25 @@
       "matches": []
     },
     {
+      "repo": "richard-kim-79/archora-skills",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/richard-kim-79/archora-skills",
+      "matches": []
+    },
+    {
       "repo": "foryourhealth111-pixel/research-innovation-explorer",
       "matched_domain_topics": [
         "science"
@@ -349,6 +349,23 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/th3vib3coder/vibe-science-codex",
       "matches": []
+    },
+    {
+      "repo": "aicell-lab/bioengine",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "droftgamer-wq/researcher-skill",
@@ -400,6 +417,23 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/droftgamer-wq/researcher-skill",
       "matches": []
+    },
+    {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "ClawBio/ClawBio",
@@ -492,7 +526,7 @@
       "matches": []
     },
     {
-      "repo": "aristoteleo/PantheonOS",
+      "repo": "HolobiomicsLab/Mimosa-AI",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -526,23 +560,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/LabOnoM/AROS_Pipeline_Factory",
       "matches": []
-    },
-    {
-      "repo": "aicell-lab/bioengine",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "Liu-Hy/GenoTEX",
@@ -741,9 +758,11 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "HolobiomicsLab/Mimosa-AI",
+      "repo": "jayhemnani9910/biotech-accelerator",
       "matched_domain_topics": [
-        "bioinformatics"
+        "bioinformatics",
+        "computational-biology",
+        "drug-discovery"
       ],
       "matched_qualifier_topics": [
         "ai-agents"
@@ -751,6 +770,14 @@
       "matched_topic_pairs": [
         {
           "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "drug-discovery",
           "qualifier_topic": "ai-agents"
         }
       ],
@@ -773,33 +800,6 @@
         },
         {
           "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "jayhemnani9910/biotech-accelerator",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology",
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "drug-discovery",
           "qualifier_topic": "ai-agents"
         }
       ],
@@ -1128,55 +1128,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "FridrichMethod/awesome-skills",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/FridrichMethod/awesome-skills.git",
-      "chosen_skill_path": "skills/abundance-estimation/SKILL.md",
-      "front_matter": {
-        "name": "bio-metagenomics-abundance",
-        "description": "Species abundance estimation using Bracken with Kraken2 output. Redistributes reads from higher taxonomic levels to species for more accurate estimates. Use when accurate species-level abundances are needed from Kraken2 classification output.",
-        "tool_type": "cli",
-        "primary_tool": "bracken"
-      },
-      "html_url": "https://github.com/FridrichMethod/awesome-skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills"
-    },
-    {
-      "repo": "Harsh9005/awesome-scientific-ai-tools",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "K-Dense-AI/scientific-agent-skills",
       "matched_domain_topics": [
         "bioinformatics",
@@ -1219,6 +1170,47 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
       "matches": []
+    },
+    {
+      "repo": "FridrichMethod/awesome-skills",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
+      "matches": []
+    },
+    {
+      "repo": "Harsh9005/awesome-scientific-ai-tools",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "Agents365-ai/ccc-skill",
@@ -1461,6 +1453,23 @@
       "matches": []
     },
     {
+      "repo": "Corrosive-turn243/tula",
+      "matched_domain_topics": [
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "openclaw-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "openclaw-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "realactivity/tula",
       "matched_domain_topics": [
         "genomics"
@@ -1478,23 +1487,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/realactivity/tula",
       "matches": []
-    },
-    {
-      "repo": "Corrosive-turn243/tula",
-      "matched_domain_topics": [
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "openclaw-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "openclaw-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "Elfredaaroused655/claude-skills",

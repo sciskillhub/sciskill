@@ -138,9 +138,7 @@ Collected GitHub skill repository.
 
 ### [FridrichMethod/awesome-skills](https://github.com/FridrichMethod/awesome-skills)
 
-Species abundance estimation using Bracken with Kraken2 output. Redistributes reads from higher taxonomic levels to species for more accurate estimates. Use when accurate species-level abundances are needed from Kraken2 classification output.
-
-Example skill path: `skills/abundance-estimation/SKILL.md`
+Collected GitHub skill repository.
 
 ### [genepattern/module-toolkit](https://github.com/genepattern/module-toolkit)
 
