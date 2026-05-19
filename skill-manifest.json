@@ -36,6 +36,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "Agents365-ai/target-prioritization",
+    "cloneUrl": "https://github.com/Agents365-ai/target-prioritization.git",
+    "localPath": "open-source/Agents365-ai/target-prioritization",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Agents365-ai/target-prioritization",
+    "addedAt": "2026-05-19T16:51:49.850767Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "AlterLab-IEU/AlterLab-Academic-Skills",
     "cloneUrl": "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills.git",
     "localPath": "open-source/AlterLab-IEU/AlterLab-Academic-Skills",
@@ -79,6 +88,15 @@
     "upstreamUrl": "https://github.com/Chandrikakt/earl",
     "addedAt": "2026-04-11T17:13:45.963515Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "Chen-kaige/science_skill",
+    "cloneUrl": "https://github.com/Chen-kaige/science_skill.git",
+    "localPath": "open-source/Chen-kaige/science_skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Chen-kaige/science_skill",
+    "addedAt": "2026-05-19T16:50:56.732629Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "ClawBio/ClawBio",
