@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 98,
+  "repo_count": 99,
   "results": [
     {
       "repo": "OuroborosCollective/Wasd",
@@ -240,6 +240,25 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "richard-kim-79/archora-skills",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/richard-kim-79/archora-skills",
+      "matches": []
+    },
+    {
       "repo": "Chen-kaige/science_skill",
       "matched_domain_topics": [
         "science"
@@ -254,15 +273,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/Chen-kaige/science_skill.git",
-      "chosen_skill_path": "SKILL.md",
-      "front_matter": {
-        "name": "science-manuscript",
-        "description": "Prepare, audit, revise, or template Science-family journal manuscripts and submission packages using Science/AAAS author guidance. Use when Codex needs to work on Science, Science Advances, Science Immunology, Science Robotics, Science Signaling, or Science Translational Medicine submissions; manuscript title, abstract, one-sentence summary, main text, references, acknowledgments, figures, tables, supplementary materials, data/code/materials availability, cover letters, article-type fit, broad-audience framing, or Chinese-to-English submission preparation for Science-family journals."
-      },
-      "html_url": "https://github.com/Chen-kaige/science_skill",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Chen-kaige/science_skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Chen-kaige/science_skill",
+      "matches": []
     },
     {
       "repo": "aipoch/medical-research-skills",
@@ -311,25 +324,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/aipoch/medical-research-skills",
-      "matches": []
-    },
-    {
-      "repo": "richard-kim-79/archora-skills",
-      "matched_domain_topics": [
-        "science"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/richard-kim-79/archora-skills",
       "matches": []
     },
     {
@@ -427,6 +421,42 @@
       "matches": []
     },
     {
+      "repo": "malaknabeelkhan/ForgeLab",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "LabOnoM/AROS_Pipeline_Factory",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/LabOnoM/AROS_Pipeline_Factory",
+      "matches": []
+    },
+    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -456,6 +486,23 @@
       "matches": []
     },
     {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "cyanheads/pubmed-mcp-server",
       "matched_domain_topics": [
         "bioinformatics"
@@ -473,59 +520,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/pubmed-mcp-server",
       "matches": []
-    },
-    {
-      "repo": "LabOnoM/AROS_Pipeline_Factory",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/LabOnoM/AROS_Pipeline_Factory",
-      "matches": []
-    },
-    {
-      "repo": "aicell-lab/bioengine",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "aristoteleo/PantheonOS",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "fmschulz/omics-skills",
@@ -568,6 +562,23 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/fmschulz/omics-skills",
       "matches": []
+    },
+    {
+      "repo": "aicell-lab/bioengine",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "HolobiomicsLab/Mimosa-AI",
@@ -1114,6 +1125,25 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "FridrichMethod/awesome-skills",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
+      "matches": []
+    },
+    {
       "repo": "fourparty-utnapishtim59/llm-knowledge-base",
       "matched_domain_topics": [
         "bioinformatics"
@@ -1194,25 +1224,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
-      "matches": []
-    },
-    {
-      "repo": "FridrichMethod/awesome-skills",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
       "matches": []
     },
     {
@@ -1877,27 +1888,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/Agents365-ai/target-prioritization.git",
-      "chosen_skill_path": "skills/target-prioritization/SKILL.md",
-      "front_matter": {
-        "name": "target-prioritization",
-        "description": "Prioritize drug targets from a ranked gene list (e.g., scRNA-seq DE output) by orchestrating parallel API queries against UniProt, OpenTargets, and PubMed, then re-ranking by a composite score combining protein localization, druggability, disease genetics, cross-lineage DE convergence, and research maturity. Use whenever the user wants to filter, triage, prioritize, or \"do due diligence\" on a list of candidate genes for drug discovery, especially after a DE / DEG analysis when they say things like \"which of these should I follow up on\", \"filter for druggable targets\", \"make a target dossier\", \"rank these for tractability\", \"annotate these genes for druggability\", or \"build a target report\". Trigger even when the user says just \"filter these candidate genes\" or hands over a CSV from a DE pipeline.",
-        "metadata": {
-          "openclaw": {
-            "requires": {
-              "bins": [
-                "python3",
-                "curl"
-              ]
-            },
-            "emoji": "🎯"
-          },
-          "version": "0.1.0"
-        }
-      },
-      "html_url": "https://github.com/Agents365-ai/target-prioritization",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Agents365-ai/target-prioritization"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Agents365-ai/target-prioritization",
+      "matches": []
     },
     {
       "repo": "Aperivue/medsci-skills",

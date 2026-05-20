@@ -22,9 +22,7 @@ Collected GitHub skill repository.
 
 ### [Agents365-ai/target-prioritization](https://github.com/Agents365-ai/target-prioritization)
 
-Prioritize drug targets from a ranked gene list (e.g., scRNA-seq DE output) by orchestrating parallel API queries against UniProt, OpenTargets, and PubMed, then re-ranking by a composite score combining protein localization, druggability, disease genetics, cross-lineage DE convergence, and research maturity. Use whenever the user wants to filter, triage, prioritize, or "do due diligence" on a list of candidate genes for drug discovery, especially after a DE / DEG analysis when they say things like "which of these should I follow up on", "filter for druggable targets", "make a target dossier", "rank these for tractability", "annotate these genes for druggability", or "build a target report". Trigger even when the user says just "filter these candidate genes" or hands over a CSV from a DE pipeline.
-
-Example skill path: `skills/target-prioritization/SKILL.md`
+Collected GitHub skill repository.
 
 ### [aipoch/medical-research-skills](https://github.com/aipoch/medical-research-skills)
 
@@ -88,9 +86,7 @@ Collected GitHub skill repository.
 
 ### [Chen-kaige/science_skill](https://github.com/Chen-kaige/science_skill)
 
-Prepare, audit, revise, or template Science-family journal manuscripts and submission packages using Science/AAAS author guidance. Use when Codex needs to work on Science, Science Advances, Science Immunology, Science Robotics, Science Signaling, or Science Translational Medicine submissions; manuscript title, abstract, one-sentence summary, main text, references, acknowledgments, figures, tables, supplementary materials, data/code/materials availability, cover letters, article-type fit, broad-audience framing, or Chinese-to-English submission preparation for Science-family journals.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [ClawBio/ClawBio](https://github.com/ClawBio/ClawBio)
 
