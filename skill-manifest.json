@@ -1,5 +1,14 @@
 [
   {
+    "fullName": "001TMF/agentic-science",
+    "cloneUrl": "https://github.com/001TMF/agentic-science.git",
+    "localPath": "open-source/001TMF/agentic-science",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/001TMF/agentic-science",
+    "addedAt": "2026-05-21T16:40:35.717852Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "24111999/claude-skills",
     "cloneUrl": "https://github.com/24111999/claude-skills.git",
     "localPath": "open-source/24111999/claude-skills",
