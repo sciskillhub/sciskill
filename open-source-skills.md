@@ -2,13 +2,17 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **84**
+Total repositories: **85**
 
 ### [001TMF/agentic-science](https://github.com/001TMF/agentic-science)
 
-Programmatically run protein characterization assays on the Adaptyv Bio foundry — expression, BLI/SPR binding screening, affinity kinetics, thermostability, and fluorescence — through the experiment-draft / quote / confirm lifecycle. Use when you have a list of protein sequences to send out for wet-lab characterization.
+Collected GitHub skill repository.
 
-Example skill path: `skills/adaptyv-api/SKILL.md`
+### [2023Anita/clinical-ai-agent-skills](https://github.com/2023Anita/clinical-ai-agent-skills)
+
+Use when a clinician, researcher, or beginner asks Codex to inspect, modify, explain, or verify code.
+
+Example skill path: `skills/beginner-codex-workflow/SKILL.md`
 
 ### [24111999/claude-skills](https://github.com/24111999/claude-skills)
 
