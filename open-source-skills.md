@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **85**
+Total repositories: **86**
 
 ### [001TMF/agentic-science](https://github.com/001TMF/agentic-science)
 
@@ -10,9 +10,7 @@ Collected GitHub skill repository.
 
 ### [2023Anita/clinical-ai-agent-skills](https://github.com/2023Anita/clinical-ai-agent-skills)
 
-Use when a clinician, researcher, or beginner asks Codex to inspect, modify, explain, or verify code.
-
-Example skill path: `skills/beginner-codex-workflow/SKILL.md`
+Collected GitHub skill repository.
 
 ### [24111999/claude-skills](https://github.com/24111999/claude-skills)
 
@@ -317,6 +315,12 @@ Collected GitHub skill repository.
 ### [unexplained-familyephedraceae871/openclaw-skill](https://github.com/unexplained-familyephedraceae871/openclaw-skill)
 
 Collected GitHub skill repository.
+
+### [VILA-Lab/FigMirror](https://github.com/VILA-Lab/FigMirror)
+
+This FigMirror skill should be used when the user asks to "mirror this figure's style", "copy this figure's style", "make a chart that looks like this paper", "reproduce this figure with my data", "match this paper's aesthetic", "I want a NeurIPS-quality version of this", or any variant where they hand over a cropped or uncropped reference figure AND their own data and want their data rendered in the same visual register. ALSO triggers when the user attaches a paper-figure screenshot plus tabular data and asks for matplotlib output. Does NOT trigger on generic matplotlib chart requests with no reference image — that's a basic matplotlib task, not style transfer.
+
+Example skill path: `.claude/skills/figmirror/SKILL.md`
 
 ### [wenmin-wu/ds-skills](https://github.com/wenmin-wu/ds-skills)
 

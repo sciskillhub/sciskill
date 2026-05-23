@@ -342,6 +342,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "VILA-Lab/FigMirror",
+    "cloneUrl": "https://github.com/VILA-Lab/FigMirror.git",
+    "localPath": "open-source/VILA-Lab/FigMirror",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/VILA-Lab/FigMirror",
+    "addedAt": "2026-05-23T15:00:06.562752Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "YTItsfrost/cypress-agent-skill",
     "cloneUrl": "https://github.com/YTItsfrost/cypress-agent-skill.git",
     "localPath": "open-source/YTItsfrost/cypress-agent-skill",
