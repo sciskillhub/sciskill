@@ -318,9 +318,7 @@ Collected GitHub skill repository.
 
 ### [VILA-Lab/FigMirror](https://github.com/VILA-Lab/FigMirror)
 
-This FigMirror skill should be used when the user asks to "mirror this figure's style", "copy this figure's style", "make a chart that looks like this paper", "reproduce this figure with my data", "match this paper's aesthetic", "I want a NeurIPS-quality version of this", or any variant where they hand over a cropped or uncropped reference figure AND their own data and want their data rendered in the same visual register. ALSO triggers when the user attaches a paper-figure screenshot plus tabular data and asks for matplotlib output. Does NOT trigger on generic matplotlib chart requests with no reference image — that's a basic matplotlib task, not style transfer.
-
-Example skill path: `.claude/skills/figmirror/SKILL.md`
+Collected GitHub skill repository.
 
 ### [wenmin-wu/ds-skills](https://github.com/wenmin-wu/ds-skills)
 
