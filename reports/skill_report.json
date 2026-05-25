@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 103,
+  "repo_count": 104,
   "results": [
     {
       "repo": "OuroborosCollective/Wasd",
@@ -421,6 +421,23 @@
       "matches": []
     },
     {
+      "repo": "aicell-lab/bioengine",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -450,7 +467,7 @@
       "matches": []
     },
     {
-      "repo": "aicell-lab/bioengine",
+      "repo": "aristoteleo/PantheonOS",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -604,23 +621,6 @@
     },
     {
       "repo": "cici566/encode-query-nexus",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "aristoteleo/PantheonOS",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -1203,25 +1203,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "FridrichMethod/awesome-skills",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
-      "matches": []
-    },
-    {
       "repo": "K-Dense-AI/scientific-agent-skills",
       "matched_domain_topics": [
         "bioinformatics",
@@ -1263,6 +1244,25 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
+      "matches": []
+    },
+    {
+      "repo": "FridrichMethod/awesome-skills",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
       "matches": []
     },
     {
@@ -1778,6 +1778,23 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/javidmardanov/paper-banana-skill",
       "matches": []
+    },
+    {
+      "repo": "oliverkraft93-ops/covasyn-mcp-examples",
+      "matched_domain_topics": [
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "mondalsou/lead-optimization-agent",
