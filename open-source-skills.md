@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **86**
+Total repositories: **87**
 
 ### [001TMF/agentic-science](https://github.com/001TMF/agentic-science)
 
@@ -332,6 +332,10 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills)
+
+Collected GitHub skill repository.
+
 ### [zacklecon/claude-skills](https://github.com/zacklecon/claude-skills)
 
 Collected GitHub skill repository.
@@ -347,3 +351,4 @@ Collected GitHub skill repository.
 ### [zongtingwei/Bioclaw_Skills_Hub](https://github.com/zongtingwei/Bioclaw_Skills_Hub)
 
 Collected GitHub skill repository.
+
