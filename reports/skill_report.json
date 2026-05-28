@@ -26,10 +26,27 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 109,
+  "repo_count": 111,
   "results": [
     {
       "repo": "OuroborosCollective/Wasd",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "mareforma/mareforma",
       "matched_domain_topics": [
         "science"
       ],
@@ -65,33 +82,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/connerlambden/bgpt-mcp.git",
-      "chosen_skill_path": "skills/bgpt-mcp/SKILL.md",
-      "front_matter": {
-        "name": "bgpt-mcp",
-        "author": "BGPT",
-        "description": "How to use BGPT MCP to search scientific papers and retrieve structured experimental data including methods, results, sample sizes, conflicts of interest, limitations, reproducibility scores, and falsifiability criteria. Use this skill when the user asks to find scientific evidence, search the literature, evaluate research quality, check reproducibility, surface study limitations or conflicts of interest, retrieve raw experimental data, or build evidence-grounded AI workflows. Also trigger when the user references PubMed, arXiv, biorxiv, medrxiv, systematic reviews, evidence-based medicine, GRADE, or critical appraisal."
-      },
-      "html_url": "https://github.com/connerlambden/bgpt-mcp",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/connerlambden/bgpt-mcp"
-    },
-    {
-      "repo": "mareforma/mareforma",
-      "matched_domain_topics": [
-        "science"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/connerlambden/bgpt-mcp",
+      "matches": []
     },
     {
       "repo": "BlackRoad-AI/lucidia-math",
@@ -418,87 +411,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "BioSymphony/biosymphony-structure-factory-public",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology",
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/BioSymphony/biosymphony-structure-factory-public.git",
-      "chosen_skill_path": "skills/biosymphony-structure-factory/SKILL.md",
-      "front_matter": {
-        "name": "biosymphony-structure-factory",
-        "description": "Use when planning structural biology campaigns, binder-design triage, model comparison, structure mapping, RunPod or cloud GPU stage contracts, or Symphony or Linear task packs for long-running biological agent work."
-      },
-      "html_url": "https://github.com/BioSymphony/biosymphony-structure-factory-public",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/BioSymphony/biosymphony-structure-factory-public"
-    },
-    {
-      "repo": "ClawBio/ClawBio",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "genomics",
-        "population-genetics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "population-genetics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
-      "matches": []
-    },
-    {
-      "repo": "aicell-lab/bioengine",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "droftgamer-wq/researcher-skill",
       "matched_domain_topics": [
         "bioinformatics",
@@ -550,7 +462,101 @@
       "matches": []
     },
     {
-      "repo": "BioSymphony/biosymphony-genecluster",
+      "repo": "aicell-lab/bioengine",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "nicola-murgia/bioagent-platform",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "BioSymphony/bioprospector",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/BioSymphony/bioprospector.git",
+      "chosen_skill_path": ".codex/skills/bioprospector/SKILL.md",
+      "front_matter": {
+        "name": "bioprospector",
+        "description": "Use when planning or executing BioSymphony BioProspector campaigns for agentic biosynthetic pathway discovery, enzyme/gene candidate mining, pathway stitching, host-fit review, construct hypotheses, and evidence-led candidate compression."
+      },
+      "html_url": "https://github.com/BioSymphony/bioprospector",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/BioSymphony/bioprospector"
+    },
+    {
+      "repo": "BioSymphony/cryocore",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/BioSymphony/cryocore.git",
+      "chosen_skill_path": "skills/cryocore-figure-dossier/SKILL.md",
+      "front_matter": {
+        "name": "cryocore-figure-dossier",
+        "description": "Use when creating or reviewing CryoCore structural figures, renderer scripts, captions, and publication/review figure dossiers."
+      },
+      "html_url": "https://github.com/BioSymphony/cryocore",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/BioSymphony/cryocore"
+    },
+    {
+      "repo": "BioSymphony/genecluster",
       "matched_domain_topics": [
         "bioinformatics",
         "computational-biology",
@@ -575,74 +581,14 @@
       ],
       "matched_topics": [],
       "status": "added",
-      "clone_url": "https://github.com/BioSymphony/biosymphony-genecluster.git",
+      "clone_url": "https://github.com/BioSymphony/genecluster.git",
       "chosen_skill_path": ".codex/skills/biosymphony/SKILL.md",
       "front_matter": {
         "name": "biosymphony",
         "description": "Use when planning or executing BioSymphony GeneCluster campaigns to find biosynthetic gene clusters and assemble pathway evidence across genomes and transcriptomes. Applications include bioprospecting toward target molecules, pathway gap-filling, comparative atlas building, and novel-cluster discovery. The skill provides source/query ledgers, route scouting, candidate search, evidence scoring, claim audits, scientific issue contracts, validation, and provenance."
       },
-      "html_url": "https://github.com/BioSymphony/biosymphony-genecluster",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/BioSymphony/biosymphony-genecluster"
-    },
-    {
-      "repo": "BioSymphony/biosymphony-bioprospector",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/BioSymphony/biosymphony-bioprospector.git",
-      "chosen_skill_path": ".codex/skills/bioprospector/SKILL.md",
-      "front_matter": {
-        "name": "bioprospector",
-        "description": "Use when planning or executing BioSymphony BioProspector campaigns for agentic biosynthetic pathway discovery, enzyme/gene candidate mining, pathway stitching, host-fit review, construct hypotheses, and evidence-led candidate compression."
-      },
-      "html_url": "https://github.com/BioSymphony/biosymphony-bioprospector",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/BioSymphony/biosymphony-bioprospector"
-    },
-    {
-      "repo": "BioSymphony/biosymphony-cryocore-public",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/BioSymphony/biosymphony-cryocore-public.git",
-      "chosen_skill_path": "skills/cryocore-figure-dossier/SKILL.md",
-      "front_matter": {
-        "name": "cryocore-figure-dossier",
-        "description": "Use when creating or reviewing CryoCore structural figures, renderer scripts, captions, and publication/review figure dossiers."
-      },
-      "html_url": "https://github.com/BioSymphony/biosymphony-cryocore-public",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/BioSymphony/biosymphony-cryocore-public"
+      "html_url": "https://github.com/BioSymphony/genecluster",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/BioSymphony/genecluster"
     },
     {
       "repo": "LabOnoM/AROS_Pipeline_Factory",
@@ -662,6 +608,70 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/LabOnoM/AROS_Pipeline_Factory",
       "matches": []
+    },
+    {
+      "repo": "ClawBio/ClawBio",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics",
+        "population-genetics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "population-genetics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
+      "matches": []
+    },
+    {
+      "repo": "BioSymphony/structure-factory",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/BioSymphony/structure-factory.git",
+      "chosen_skill_path": "skills/biosymphony-structure-factory/SKILL.md",
+      "front_matter": {
+        "name": "biosymphony-structure-factory",
+        "description": "Use when planning structural biology campaigns, binder-design triage, model comparison, structure mapping, RunPod or cloud GPU stage contracts, or Symphony or Linear task packs for long-running biological agent work."
+      },
+      "html_url": "https://github.com/BioSymphony/structure-factory",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/BioSymphony/structure-factory"
     },
     {
       "repo": "fmschulz/omics-skills",
@@ -1364,6 +1374,25 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "FridrichMethod/awesome-skills",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
+      "matches": []
+    },
+    {
       "repo": "K-Dense-AI/scientific-agent-skills",
       "matched_domain_topics": [
         "bioinformatics",
@@ -1405,25 +1434,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
-      "matches": []
-    },
-    {
-      "repo": "FridrichMethod/awesome-skills",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
       "matches": []
     },
     {
@@ -1802,6 +1812,25 @@
       "matches": []
     },
     {
+      "repo": "Sapiens-ostracism678/finance-skills",
+      "matched_domain_topics": [
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sapiens-ostracism678/finance-skills",
+      "matches": []
+    },
+    {
       "repo": "zacklecon/claude-skills",
       "matched_domain_topics": [
         "clinical-research",
@@ -1828,25 +1857,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/zacklecon/claude-skills",
-      "matches": []
-    },
-    {
-      "repo": "Sapiens-ostracism678/finance-skills",
-      "matched_domain_topics": [
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sapiens-ostracism678/finance-skills",
       "matches": []
     },
     {
@@ -1941,6 +1951,23 @@
       "matches": []
     },
     {
+      "repo": "K-Dense-AI/rowan-autosearch",
+      "matched_domain_topics": [
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "oliverkraft93-ops/covasyn-mcp-examples",
       "matched_domain_topics": [
         "drug-discovery"
@@ -1993,23 +2020,6 @@
     },
     {
       "repo": "agentcures/ClawCures",
-      "matched_domain_topics": [
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "K-Dense-AI/rowan-autosearch",
       "matched_domain_topics": [
         "drug-discovery"
       ],
@@ -2238,6 +2248,23 @@
     },
     {
       "repo": "veiston/Hygieia",
+      "matched_domain_topics": [
+        "medical"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "FarahBaraket-03/MedBridgeAI",
       "matched_domain_topics": [
         "medical"
       ],

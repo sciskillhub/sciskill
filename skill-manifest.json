@@ -90,6 +90,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "BioSymphony/bioprospector",
+    "cloneUrl": "https://github.com/BioSymphony/bioprospector.git",
+    "localPath": "open-source/BioSymphony/bioprospector",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/BioSymphony/bioprospector",
+    "addedAt": "2026-05-28T17:35:31.395121Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "BioSymphony/biosymphony-bioprospector",
     "cloneUrl": "https://github.com/BioSymphony/biosymphony-bioprospector.git",
     "localPath": "open-source/BioSymphony/biosymphony-bioprospector",
@@ -123,6 +132,33 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/BioSymphony/biosymphony-structure-factory-public",
     "addedAt": "2026-05-27T17:01:19.298103Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "BioSymphony/cryocore",
+    "cloneUrl": "https://github.com/BioSymphony/cryocore.git",
+    "localPath": "open-source/BioSymphony/cryocore",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/BioSymphony/cryocore",
+    "addedAt": "2026-05-28T17:35:35.609890Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "BioSymphony/genecluster",
+    "cloneUrl": "https://github.com/BioSymphony/genecluster.git",
+    "localPath": "open-source/BioSymphony/genecluster",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/BioSymphony/genecluster",
+    "addedAt": "2026-05-28T17:35:38.181842Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "BioSymphony/structure-factory",
+    "cloneUrl": "https://github.com/BioSymphony/structure-factory.git",
+    "localPath": "open-source/BioSymphony/structure-factory",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/BioSymphony/structure-factory",
+    "addedAt": "2026-05-28T17:35:39.792311Z",
     "addedBy": "github-actions"
   },
   {
