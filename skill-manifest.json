@@ -1,10 +1,10 @@
 [
   {
-    "fullName": "001TMF/agentic-science",
-    "cloneUrl": "https://github.com/001TMF/agentic-science.git",
-    "localPath": "open-source/001TMF/agentic-science",
+    "fullName": "hubayirp/agentic-science",
+    "cloneUrl": "https://github.com/hubayirp/agentic-science.git",
+    "localPath": "open-source/hubayirp/agentic-science",
     "defaultBranch": "main",
-    "upstreamUrl": "https://github.com/001TMF/agentic-science",
+    "upstreamUrl": "https://github.com/hubayirp/agentic-science",
     "addedAt": "2026-05-21T16:40:35.717852Z",
     "addedBy": "github-actions"
   },
