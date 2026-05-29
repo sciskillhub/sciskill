@@ -270,15 +270,6 @@
     "addedBy": "migration-script"
   },
   {
-    "fullName": "JimLiu/baoyu-skills",
-    "cloneUrl": "https://github.com/JimLiu/baoyu-skills.git",
-    "localPath": "open-source/JimLiu/baoyu-skills",
-    "defaultBranch": "main",
-    "upstreamUrl": "https://github.com/JimLiu/baoyu-skills",
-    "addedAt": "2026-04-11T17:13:45.086637Z",
-    "addedBy": "migration-script"
-  },
-  {
     "fullName": "K-Dense-AI/scientific-agent-skills",
     "cloneUrl": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
     "localPath": "open-source/K-Dense-AI/scientific-agent-skills",
