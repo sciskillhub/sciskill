@@ -74,9 +74,7 @@ Collected GitHub skill repository.
 
 ### [BioSymphony/bioprospector](https://github.com/BioSymphony/bioprospector)
 
-Use when planning or executing BioSymphony BioProspector campaigns for agentic biosynthetic pathway discovery, enzyme/gene candidate mining, pathway stitching, host-fit review, construct hypotheses, and evidence-led candidate compression.
-
-Example skill path: `.codex/skills/bioprospector/SKILL.md`
+Collected GitHub skill repository.
 
 ### [BioSymphony/biosymphony-bioprospector](https://github.com/BioSymphony/biosymphony-bioprospector)
 
@@ -96,21 +94,15 @@ Collected GitHub skill repository.
 
 ### [BioSymphony/cryocore](https://github.com/BioSymphony/cryocore)
 
-Use when creating or reviewing CryoCore structural figures, renderer scripts, captions, and publication/review figure dossiers.
-
-Example skill path: `skills/cryocore-figure-dossier/SKILL.md`
+Collected GitHub skill repository.
 
 ### [BioSymphony/genecluster](https://github.com/BioSymphony/genecluster)
 
-Use when planning or executing BioSymphony GeneCluster campaigns to find biosynthetic gene clusters and assemble pathway evidence across genomes and transcriptomes. Applications include bioprospecting toward target molecules, pathway gap-filling, comparative atlas building, and novel-cluster discovery. The skill provides source/query ledgers, route scouting, candidate search, evidence scoring, claim audits, scientific issue contracts, validation, and provenance.
-
-Example skill path: `.codex/skills/biosymphony/SKILL.md`
+Collected GitHub skill repository.
 
 ### [BioSymphony/structure-factory](https://github.com/BioSymphony/structure-factory)
 
-Use when planning structural biology campaigns, binder-design triage, model comparison, structure mapping, RunPod or cloud GPU stage contracts, or Symphony or Linear task packs for long-running biological agent work.
-
-Example skill path: `skills/biosymphony-structure-factory/SKILL.md`
+Collected GitHub skill repository.
 
 ### [bloody2634/claud-skills](https://github.com/bloody2634/claud-skills)
 

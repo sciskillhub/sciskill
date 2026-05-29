@@ -1,14 +1,5 @@
 [
   {
-    "fullName": "hubayirp/agentic-science",
-    "cloneUrl": "https://github.com/hubayirp/agentic-science.git",
-    "localPath": "open-source/hubayirp/agentic-science",
-    "defaultBranch": "main",
-    "upstreamUrl": "https://github.com/hubayirp/agentic-science",
-    "addedAt": "2026-05-21T16:40:35.717852Z",
-    "addedBy": "github-actions"
-  },
-  {
     "fullName": "2023Anita/clinical-ai-agent-skills",
     "cloneUrl": "https://github.com/2023Anita/clinical-ai-agent-skills.git",
     "localPath": "open-source/2023Anita/clinical-ai-agent-skills",
@@ -610,6 +601,15 @@
     "upstreamUrl": "https://github.com/genepattern/module-toolkit",
     "addedAt": "2026-04-11T17:13:46.565238Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "hubayirp/agentic-science",
+    "cloneUrl": "https://github.com/hubayirp/agentic-science.git",
+    "localPath": "open-source/hubayirp/agentic-science",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/hubayirp/agentic-science",
+    "addedAt": "2026-05-21T16:40:35.717852Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "jackspace/ClaudeSkillz",
