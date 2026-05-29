@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **95**
+Total repositories: **94**
 
 ### [2023Anita/clinical-ai-agent-skills](https://github.com/2023Anita/clinical-ai-agent-skills)
 
@@ -121,10 +121,6 @@ Collected GitHub skill repository.
 Collected GitHub skill repository.
 
 ### [Chandrikakt/earl](https://github.com/Chandrikakt/earl)
-
-Collected GitHub skill repository.
-
-### [charles0403/agent-skills](https://github.com/charles0403/agent-skills)
 
 Collected GitHub skill repository.
 
