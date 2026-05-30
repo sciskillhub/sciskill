@@ -29,7 +29,7 @@
   "repo_count": 110,
   "results": [
     {
-      "repo": "mareforma/mareforma",
+      "repo": "OuroborosCollective/Wasd",
       "matched_domain_topics": [
         "science"
       ],
@@ -46,7 +46,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "OuroborosCollective/Wasd",
+      "repo": "mareforma/mareforma",
       "matched_domain_topics": [
         "science"
       ],
@@ -445,9 +445,11 @@
       "matches": []
     },
     {
-      "repo": "aicell-lab/bioengine",
+      "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
-        "bioinformatics"
+        "bioinformatics",
+        "genomics",
+        "population-genetics"
       ],
       "matched_qualifier_topics": [
         "ai-agents"
@@ -456,10 +458,20 @@
         {
           "domain_topic": "bioinformatics",
           "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "population-genetics",
+          "qualifier_topic": "ai-agents"
         }
       ],
       "matched_topics": [],
-      "status": "no_valid_skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
+      "matches": []
     },
     {
       "repo": "fmschulz/omics-skills",
@@ -504,35 +516,6 @@
       "matches": []
     },
     {
-      "repo": "ClawBio/ClawBio",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "genomics",
-        "population-genetics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "population-genetics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
-      "matches": []
-    },
-    {
       "repo": "cyanheads/pubmed-mcp-server",
       "matched_domain_topics": [
         "bioinformatics"
@@ -550,6 +533,23 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/pubmed-mcp-server",
       "matches": []
+    },
+    {
+      "repo": "aicell-lab/bioengine",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "aristoteleo/PantheonOS",
@@ -1294,23 +1294,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "fourparty-utnapishtim59/llm-knowledge-base",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "sparzinhogames-hash/awesome-scientific-ai-tools",
       "matched_domain_topics": [
         "bioinformatics",
@@ -1326,6 +1309,23 @@
         },
         {
           "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "fourparty-utnapishtim59/llm-knowledge-base",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
           "qualifier_topic": "agent-skills"
         }
       ],
@@ -1910,6 +1910,23 @@
       "matches": []
     },
     {
+      "repo": "K-Dense-AI/rowan-autosearch",
+      "matched_domain_topics": [
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "agentcures/NanoCures",
       "matched_domain_topics": [
         "drug-discovery"
@@ -1930,23 +1947,6 @@
     },
     {
       "repo": "agentcures/ClawCures",
-      "matched_domain_topics": [
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "K-Dense-AI/rowan-autosearch",
       "matched_domain_topics": [
         "drug-discovery"
       ],
