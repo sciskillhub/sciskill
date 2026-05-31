@@ -81,6 +81,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "AstroReality-Li/bioinformatics-analysis-preflight",
+    "cloneUrl": "https://github.com/AstroReality-Li/bioinformatics-analysis-preflight.git",
+    "localPath": "open-source/AstroReality-Li/bioinformatics-analysis-preflight",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/AstroReality-Li/bioinformatics-analysis-preflight",
+    "addedAt": "2026-05-31T15:18:27.054271Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "BioSymphony/bioprospector",
     "cloneUrl": "https://github.com/BioSymphony/bioprospector.git",
     "localPath": "open-source/BioSymphony/bioprospector",

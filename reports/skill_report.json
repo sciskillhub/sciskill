@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 110,
+  "repo_count": 111,
   "results": [
     {
       "repo": "OuroborosCollective/Wasd",
@@ -394,6 +394,28 @@
       "matches": []
     },
     {
+      "repo": "Eldergenix/bio-llm-evaluation-suite",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "droftgamer-wq/researcher-skill",
       "matched_domain_topics": [
         "bioinformatics",
@@ -474,6 +496,23 @@
       "matches": []
     },
     {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "fmschulz/omics-skills",
       "matched_domain_topics": [
         "bioinformatics",
@@ -536,23 +575,6 @@
     },
     {
       "repo": "aicell-lab/bioengine",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "aristoteleo/PantheonOS",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -1199,28 +1221,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "Eldergenix/bio-llm-evaluation-suite",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "Nauman123-coder/GNN-LLM-Mutagen-Agent",
       "matched_domain_topics": [
         "bioinformatics"
@@ -1294,6 +1294,23 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "fourparty-utnapishtim59/llm-knowledge-base",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "sparzinhogames-hash/awesome-scientific-ai-tools",
       "matched_domain_topics": [
         "bioinformatics",
@@ -1316,7 +1333,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "fourparty-utnapishtim59/llm-knowledge-base",
+      "repo": "FridrichMethod/awesome-skills",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -1330,7 +1347,39 @@
         }
       ],
       "matched_topics": [],
-      "status": "no_valid_skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
+      "matches": []
+    },
+    {
+      "repo": "AstroReality-Li/bioinformatics-analysis-preflight",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "single-cell"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "single-cell",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/AstroReality-Li/bioinformatics-analysis-preflight.git",
+      "chosen_skill_path": "bioinformatics-analysis-preflight/SKILL.md",
+      "front_matter": {
+        "name": "bioinformatics-analysis-preflight",
+        "description": "Audit bioinformatics and omics analysis projects before downstream execution. Use when Codex needs to validate sample metadata, FASTQ pairing, sample sheets, count matrices, VCF/BAM/CRAM indexes, h5ad files, reference/provenance readiness, batch or condition confounding, privacy-sensitive local analysis, or whether an RNA-seq, single-cell, ATAC/ChIP-seq, variant, microbiome, proteomics, or multi-omics project is ready for reproducible analysis."
+      },
+      "html_url": "https://github.com/AstroReality-Li/bioinformatics-analysis-preflight",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/AstroReality-Li/bioinformatics-analysis-preflight"
     },
     {
       "repo": "K-Dense-AI/scientific-agent-skills",
@@ -1374,25 +1423,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
-      "matches": []
-    },
-    {
-      "repo": "FridrichMethod/awesome-skills",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
       "matches": []
     },
     {

@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **94**
+Total repositories: **95**
 
 ### [2023Anita/clinical-ai-agent-skills](https://github.com/2023Anita/clinical-ai-agent-skills)
 
@@ -67,6 +67,12 @@ Collected GitHub skill repository.
 ### [AsadJaved66/Web-Skills-Protocol](https://github.com/AsadJaved66/Web-Skills-Protocol)
 
 Collected GitHub skill repository.
+
+### [AstroReality-Li/bioinformatics-analysis-preflight](https://github.com/AstroReality-Li/bioinformatics-analysis-preflight)
+
+Audit bioinformatics and omics analysis projects before downstream execution. Use when Codex needs to validate sample metadata, FASTQ pairing, sample sheets, count matrices, VCF/BAM/CRAM indexes, h5ad files, reference/provenance readiness, batch or condition confounding, privacy-sensitive local analysis, or whether an RNA-seq, single-cell, ATAC/ChIP-seq, variant, microbiome, proteomics, or multi-omics project is ready for reproducible analysis.
+
+Example skill path: `bioinformatics-analysis-preflight/SKILL.md`
 
 ### [bio-xyz/BioAgents](https://github.com/bio-xyz/BioAgents)
 
