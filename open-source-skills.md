@@ -70,9 +70,7 @@ Collected GitHub skill repository.
 
 ### [AstroReality-Li/bioinformatics-analysis-preflight](https://github.com/AstroReality-Li/bioinformatics-analysis-preflight)
 
-Audit bioinformatics and omics analysis projects before downstream execution. Use when Codex needs to validate sample metadata, FASTQ pairing, sample sheets, count matrices, VCF/BAM/CRAM indexes, h5ad files, reference/provenance readiness, batch or condition confounding, privacy-sensitive local analysis, or whether an RNA-seq, single-cell, ATAC/ChIP-seq, variant, microbiome, proteomics, or multi-omics project is ready for reproducible analysis.
-
-Example skill path: `bioinformatics-analysis-preflight/SKILL.md`
+Collected GitHub skill repository.
 
 ### [bio-xyz/BioAgents](https://github.com/bio-xyz/BioAgents)
 
