@@ -1,6 +1,6 @@
 ---
 name: sciskillhub
-description: 当用户需要为科研任务匹配合适 skill 时使用，尤其当任务需求属于 Concepts and Theory、Research Capabilities、Methods and Techniques、Software and Tools、Instruments and Equipment、Data and Resources、Workflows、Standards and Guidelines，或研究阶段属于 Study Design、Data / Sample Acquisition、Data Processing、Data Analysis and Modeling、Validation and Interpretation、Visualization and Presentation、Writing and Publication、Reproducibility, Collaboration and Management 时，应调用此 skill 查询 sciskillhub 中最合适的 skill。
+description: 当用户需要为科研任务匹配合适 skill 时使用，尤其当任务需求可归入 Concepts and Theory、Research Capabilities、Methods and Techniques、Software and Tools、Instruments and Equipment、Data and Resources、Workflows、Standards and Guidelines，或研究阶段属于 Study Design、Data / Sample Acquisition、Data Processing、Data Analysis and Modeling、Validation and Interpretation、Visualization and Publication、Writing and Publication、Reproducibility, Collaboration and Management 时，应调用此 skill 查询 sciskillhub 中最合适的 skill。支持 object 与 stage 多值组合查询。
 metadata:
     skill-author: sciskillhub
     homepage: https://sciskillhub.org
@@ -14,7 +14,7 @@ SciSkillHub 是一个面向 AI agent 的技能分发平台。
 这个 skill 的作用是：
 
 - 提供 SciSkillHub CLI (`sciskill`) 的查询命令和调用顺序
-- 告诉本地 agent 应该如何从 `object / stage / domains` 缩小范围
+- 告诉本地 agent 应该如何从 `object / stage / domains` 缩小范围（object 与 stage 字段支持多值）
 - 返回候选 skill list，供本地 agent 继续判断
 
 以下情况应优先使用这个 skill：
@@ -223,15 +223,15 @@ Domain (--domain-list)
 命令：
 
 ```bash
-sciskill tax --tasks --object "Research Capabilities" --stage "Study Design" --domain "Life Sciences"
+sciskill tax --tasks --object "Research Capabilities" --object "Methods and Techniques" --stage "Study Design" --domain "Life Sciences"
 ```
 
 示例输出：
 
 ```
 Tasks (3 total)
-  Object: Research Capabilities
-  Stage: Study Design
+  Object(s): Research Capabilities, Methods and Techniques
+  Stage(s): Study Design
   Domains: Life Sciences
 
   • Hypothesis Building (12)
@@ -241,8 +241,8 @@ Tasks (3 total)
 
 选项：
 
-- `--object <value>` — 过滤 object
-- `--stage <value>` — 过滤 stage
+- `--object <values...>` — 过滤 object（可传多个）
+- `--stage <values...>` — 过滤 stage（可传多个）
 - `--domain <values...>` — 过滤 domain（可多个）
 - `--limit <n>` — 返回数量，默认 100
 - `--json` — JSON 输出
@@ -274,7 +274,7 @@ sciskill browse skills --object "Research Capabilities" --stage "Study Design" -
 ```
 Found 27 skills:
 
-  #  Name                      Object               Stage           Author         Path
+  #  Name                      Objects                           Stages                          Author         Path
   1. hypothesis-generation     Research Capabilities Study Design    FreedomIntell  hypothesis-generation
   ...
 
@@ -295,7 +295,7 @@ Install with: sciskill install <author>/<path>
 
 本地 agent 在这一步要做的事情：
 
-- 看返回 skill 是否和当前用户任务真正匹配
+- 看返回 skill 是否和当前用户任务真正匹配（优先核对 skill 的 `objects` / `stages` 多值字段）
 - 选择最合适的 1-3 个 skill
 - 不要因为某个 skill 出现在结果里，就默认必须使用它
 - 如果 `task` 路径结果很弱，可以省略 `--task`，保留 `object + stage + domains`，再叠加 `-q`
@@ -486,8 +486,8 @@ sciskill install <author>/<path> --agent claude
    - `sciskill browse skills --object "Research Capabilities" --object "Methods and Techniques" --stage "Study Design" --domain "Life Sciences" -q "hypothesis"`
    - `sciskill browse skills --object "Research Capabilities" --object "Methods and Techniques" --stage "Study Design" --domain "Life Sciences" -q "single cell"`
 3. 汇总 tasks，挑出 `Hypothesis Building`、`Experimental Design`
-4. `sciskill browse skills --object "Research Capabilities" --stage "Study Design" --task "Hypothesis Building" "Experimental Design" --domain "Life Sciences" "General Research"`
-5. `sciskill browse skills --object "Methods and Techniques" --stage "Study Design" --task "Hypothesis Building" "Experimental Design" --domain "Life Sciences" "General Research"`
+4. `sciskill browse skills --object "Research Capabilities" --object "Methods and Techniques" --stage "Study Design" --task "Hypothesis Building" "Experimental Design" --domain "Life Sciences" "General Research"`
+5. `sciskill browse skills --object "Research Capabilities" --object "Methods and Techniques" --stage "Study Design" --task "Hypothesis Building" "Experimental Design" --domain "Life Sciences" "General Research"`
 6. **适用性判断**：检查候选 skill 是否支持肿瘤/单细胞场景
 7. 汇总去重，选择最合适的 skill
 8. `sciskill install <author>/<path> --agent claude`
@@ -516,8 +516,8 @@ sciskill install <author>/<path> --agent claude
    - `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "nanopore"`
    - `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "long read"`
 3. 汇总 tasks，挑出 `Quality Control`、`Alignment`、`Quantification`
-4. `sciskill browse skills --object "Methods and Techniques" --stage "Data Analysis and Modeling" --task "Quality Control" "Alignment" "Quantification" --domain "Life Sciences"`
-5. `sciskill browse skills --object "Software and Tools" --stage "Data Analysis and Modeling" --task "Quality Control" "Alignment" "Quantification" --domain "Life Sciences"`
+4. `sciskill browse skills --object "Methods and Techniques" --object "Software and Tools" --stage "Data Analysis and Modeling" --task "Quality Control" "Alignment" "Quantification" --domain "Life Sciences"`
+5. `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --task "Quality Control" "Alignment" "Quantification" --domain "Life Sciences"`
 6. **适用性判断**：确认 skill 支持长读长数据（而非仅短读长）
 7. 汇总去重，选择最合适的 skill
 8. `sciskill install <author>/<path> --agent claude`
@@ -551,7 +551,7 @@ sciskill install <author>/<path> --agent claude
    - `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "infercnv"`
    - `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "copykat"`
 4. 汇总结构化路径找到的 task `copy number variation`
-5. `sciskill browse skills --object "Software and Tools" --stage "Data Analysis and Modeling" --task "copy number variation" --domain "Life Sciences"`
+5. `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --task "copy number variation" --domain "Life Sciences"`
 6. **适用性判断**（关键步骤）：
    - `cnv-caller-agent`：描述为"从测序数据检测 CNV"→ 未提及 single-cell → **可能不适用**
    - `bio-copy-number-cnvkit-analysis`：明确写"靶向/外显子测序" → **不适用于 scRNA-Seq**
