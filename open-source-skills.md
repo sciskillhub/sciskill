@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **95**
+Total repositories: **96**
 
 ### [2023Anita/clinical-ai-agent-skills](https://github.com/2023Anita/clinical-ai-agent-skills)
 
@@ -189,6 +189,10 @@ Collected GitHub skill repository.
 Collected GitHub skill repository.
 
 ### [genepattern/module-toolkit](https://github.com/genepattern/module-toolkit)
+
+Collected GitHub skill repository.
+
+### [google-deepmind/science-skills](https://github.com/google-deepmind/science-skills)
 
 Collected GitHub skill repository.
 
@@ -383,3 +387,4 @@ Collected GitHub skill repository.
 ### [zongtingwei/Bioclaw_Skills_Hub](https://github.com/zongtingwei/Bioclaw_Skills_Hub)
 
 Collected GitHub skill repository.
+
