@@ -297,6 +297,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "Lord1Egypt/scientific-agent-toolkit",
+    "cloneUrl": "https://github.com/Lord1Egypt/scientific-agent-toolkit.git",
+    "localPath": "open-source/Lord1Egypt/scientific-agent-toolkit",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Lord1Egypt/scientific-agent-toolkit",
+    "addedAt": "2026-06-04T16:54:31.468414Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Marshanda14816/agent-skills",
     "cloneUrl": "https://github.com/Marshanda14816/agent-skills.git",
     "localPath": "open-source/Marshanda14816/agent-skills",
@@ -403,6 +412,15 @@
     "upstreamUrl": "https://github.com/TenureAI/PhD-Zero",
     "addedAt": "2026-04-11T17:13:45.946856Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "ULudo/ClawReview",
+    "cloneUrl": "https://github.com/ULudo/ClawReview.git",
+    "localPath": "open-source/ULudo/ClawReview",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/ULudo/ClawReview",
+    "addedAt": "2026-06-04T16:53:32.493556Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "VILA-Lab/FigMirror",

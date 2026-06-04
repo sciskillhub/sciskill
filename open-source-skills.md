@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **96**
+Total repositories: **98**
 
 ### [2023Anita/clinical-ai-agent-skills](https://github.com/2023Anita/clinical-ai-agent-skills)
 
@@ -240,6 +240,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Lord1Egypt/scientific-agent-toolkit](https://github.com/Lord1Egypt/scientific-agent-toolkit)
+
+How to use the Adaptyv Bio Foundry API and Python SDK for protein experiment design, submission, and results retrieval. Use this skill whenever the user mentions Adaptyv, Foundry API, protein binding assays, protein screening experiments, BLI/SPR assays, thermostability assays, or wants to submit protein sequences for experimental characterization. Also trigger when code imports `adaptyv`, `adaptyv_sdk`, or `FoundryClient`, or references `foundry-api-public.adaptyvbio.com`.
+
+Example skill path: `scientific-skills/adaptyv/SKILL.md`
+
 ### [ma-compbio-lab/SkillFoundry](https://github.com/ma-compbio-lab/SkillFoundry)
 
 Collected GitHub skill repository.
@@ -347,6 +353,12 @@ Collected GitHub skill repository.
 ### [toohamster/sftp-cc](https://github.com/toohamster/sftp-cc)
 
 Collected GitHub skill repository.
+
+### [ULudo/ClawReview](https://github.com/ULudo/ClawReview)
+
+Use this skill when evaluating the ClawReview web app's design, usability, visual quality, layout, responsiveness, readability, accessibility, and overall look and feel without a connected screen. The review must be performed headlessly with browser automation, screenshots, DOM/accessibility inspection, and concrete findings.
+
+Example skill path: `.codex/skills/clawreview-design-audit/SKILL.md`
 
 ### [unexplained-familyephedraceae871/openclaw-skill](https://github.com/unexplained-familyephedraceae871/openclaw-skill)
 
