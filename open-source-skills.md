@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **98**
+Total repositories: **99**
 
 ### [2023Anita/clinical-ai-agent-skills](https://github.com/2023Anita/clinical-ai-agent-skills)
 
@@ -132,6 +132,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [cyanheads/ensembl-mcp-server](https://github.com/cyanheads/ensembl-mcp-server)
+
+Scaffold an MCP App tool + UI resource pair. Use when the user asks to add a tool with interactive UI, create an MCP App, or build a visual/interactive tool.
+
+Example skill path: `skills/add-app-tool/SKILL.md`
+
 ### [cyanheads/pubmed-mcp-server](https://github.com/cyanheads/pubmed-mcp-server)
 
 Collected GitHub skill repository.
@@ -242,9 +248,7 @@ Collected GitHub skill repository.
 
 ### [Lord1Egypt/scientific-agent-toolkit](https://github.com/Lord1Egypt/scientific-agent-toolkit)
 
-How to use the Adaptyv Bio Foundry API and Python SDK for protein experiment design, submission, and results retrieval. Use this skill whenever the user mentions Adaptyv, Foundry API, protein binding assays, protein screening experiments, BLI/SPR assays, thermostability assays, or wants to submit protein sequences for experimental characterization. Also trigger when code imports `adaptyv`, `adaptyv_sdk`, or `FoundryClient`, or references `foundry-api-public.adaptyvbio.com`.
-
-Example skill path: `scientific-skills/adaptyv/SKILL.md`
+Collected GitHub skill repository.
 
 ### [ma-compbio-lab/SkillFoundry](https://github.com/ma-compbio-lab/SkillFoundry)
 
@@ -356,9 +360,7 @@ Collected GitHub skill repository.
 
 ### [ULudo/ClawReview](https://github.com/ULudo/ClawReview)
 
-Use this skill when evaluating the ClawReview web app's design, usability, visual quality, layout, responsiveness, readability, accessibility, and overall look and feel without a connected screen. The review must be performed headlessly with browser automation, screenshots, DOM/accessibility inspection, and concrete findings.
-
-Example skill path: `.codex/skills/clawreview-design-audit/SKILL.md`
+Collected GitHub skill repository.
 
 ### [unexplained-familyephedraceae871/openclaw-skill](https://github.com/unexplained-familyephedraceae871/openclaw-skill)
 

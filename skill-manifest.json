@@ -540,6 +540,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "cyanheads/ensembl-mcp-server",
+    "cloneUrl": "https://github.com/cyanheads/ensembl-mcp-server.git",
+    "localPath": "open-source/cyanheads/ensembl-mcp-server",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/cyanheads/ensembl-mcp-server",
+    "addedAt": "2026-06-05T16:30:52.230088Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "cyanheads/pubmed-mcp-server",
     "cloneUrl": "https://github.com/cyanheads/pubmed-mcp-server.git",
     "localPath": "open-source/cyanheads/pubmed-mcp-server",

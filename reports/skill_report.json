@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 116,
+  "repo_count": 117,
   "results": [
     {
       "repo": "OuroborosCollective/Wasd",
@@ -60,15 +60,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/ULudo/ClawReview.git",
-      "chosen_skill_path": ".codex/skills/clawreview-design-audit/SKILL.md",
-      "front_matter": {
-        "name": "clawreview-design-audit",
-        "description": "Use this skill when evaluating the ClawReview web app's design, usability, visual quality, layout, responsiveness, readability, accessibility, and overall look and feel without a connected screen. The review must be performed headlessly with browser automation, screenshots, DOM/accessibility inspection, and concrete findings."
-      },
-      "html_url": "https://github.com/ULudo/ClawReview",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ULudo/ClawReview"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ULudo/ClawReview",
+      "matches": []
     },
     {
       "repo": "K-Dense-AI/scientific-agents",
@@ -436,6 +430,52 @@
       "matches": []
     },
     {
+      "repo": "ClawBio/ClawBio",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics",
+        "population-genetics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "population-genetics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
+      "matches": []
+    },
+    {
+      "repo": "aicell-lab/bioengine",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "droftgamer-wq/researcher-skill",
       "matched_domain_topics": [
         "bioinformatics",
@@ -487,9 +527,47 @@
       "matches": []
     },
     {
-      "repo": "Lord1Egypt/scientific-agent-toolkit",
+      "repo": "cyanheads/ensembl-mcp-server",
       "matched_domain_topics": [
-        "bioinformatics"
+        "bioinformatics",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/cyanheads/ensembl-mcp-server.git",
+      "chosen_skill_path": "skills/add-app-tool/SKILL.md",
+      "front_matter": {
+        "name": "add-app-tool",
+        "description": "Scaffold an MCP App tool + UI resource pair. Use when the user asks to add a tool with interactive UI, create an MCP App, or build a visual/interactive tool.\n",
+        "metadata": {
+          "author": "cyanheads",
+          "version": "1.4",
+          "audience": "external",
+          "type": "reference"
+        }
+      },
+      "html_url": "https://github.com/cyanheads/ensembl-mcp-server",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/ensembl-mcp-server"
+    },
+    {
+      "repo": "fmschulz/omics-skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "genomics"
       ],
       "matched_qualifier_topics": [
         "agent-skills",
@@ -503,64 +581,27 @@
         {
           "domain_topic": "bioinformatics",
           "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/Lord1Egypt/scientific-agent-toolkit.git",
-      "chosen_skill_path": "scientific-skills/adaptyv/SKILL.md",
-      "front_matter": {
-        "name": "adaptyv",
-        "author": "Lord1Egypt",
-        "description": "How to use the Adaptyv Bio Foundry API and Python SDK for protein experiment design, submission, and results retrieval. Use this skill whenever the user mentions Adaptyv, Foundry API, protein binding assays, protein screening experiments, BLI/SPR assays, thermostability assays, or wants to submit protein sequences for experimental characterization. Also trigger when code imports `adaptyv`, `adaptyv_sdk`, or `FoundryClient`, or references `foundry-api-public.adaptyvbio.com`."
-      },
-      "html_url": "https://github.com/Lord1Egypt/scientific-agent-toolkit",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Lord1Egypt/scientific-agent-toolkit"
-    },
-    {
-      "repo": "aicell-lab/bioengine",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
+        },
         {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "ClawBio/ClawBio",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "genomics",
-        "population-genetics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
         {
-          "domain_topic": "bioinformatics",
+          "domain_topic": "computational-biology",
           "qualifier_topic": "ai-agents"
         },
         {
           "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
+          "qualifier_topic": "agent-skills"
         },
         {
-          "domain_topic": "population-genetics",
+          "domain_topic": "genomics",
           "qualifier_topic": "ai-agents"
         }
       ],
       "matched_topics": [],
       "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/fmschulz/omics-skills",
       "matches": []
     },
     {
@@ -619,11 +660,9 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "fmschulz/omics-skills",
+      "repo": "Lord1Egypt/scientific-agent-toolkit",
       "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology",
-        "genomics"
+        "bioinformatics"
       ],
       "matched_qualifier_topics": [
         "agent-skills",
@@ -637,27 +676,11 @@
         {
           "domain_topic": "bioinformatics",
           "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
         }
       ],
       "matched_topics": [],
       "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/fmschulz/omics-skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Lord1Egypt/scientific-agent-toolkit",
       "matches": []
     },
     {
@@ -1406,39 +1429,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "AlterLab-IEU/AlterLab-Academic-Skills",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "clinical-research"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills",
-        "ai-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-skills"
-        },
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "ai-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/AlterLab-IEU/AlterLab-Academic-Skills",
-      "matches": []
-    },
-    {
       "repo": "K-Dense-AI/scientific-agent-skills",
       "matched_domain_topics": [
         "bioinformatics",
@@ -1480,6 +1470,39 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
+      "matches": []
+    },
+    {
+      "repo": "AlterLab-IEU/AlterLab-Academic-Skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "clinical-research"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-skills"
+        },
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "ai-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/AlterLab-IEU/AlterLab-Academic-Skills",
       "matches": []
     },
     {
