@@ -134,9 +134,7 @@ Collected GitHub skill repository.
 
 ### [cyanheads/ensembl-mcp-server](https://github.com/cyanheads/ensembl-mcp-server)
 
-Scaffold an MCP App tool + UI resource pair. Use when the user asks to add a tool with interactive UI, create an MCP App, or build a visual/interactive tool.
-
-Example skill path: `skills/add-app-tool/SKILL.md`
+Collected GitHub skill repository.
 
 ### [cyanheads/pubmed-mcp-server](https://github.com/cyanheads/pubmed-mcp-server)
 
