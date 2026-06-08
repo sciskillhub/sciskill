@@ -657,6 +657,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "iblai/medical-healthcare-agents",
+    "cloneUrl": "https://github.com/iblai/medical-healthcare-agents.git",
+    "localPath": "open-source/iblai/medical-healthcare-agents",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/iblai/medical-healthcare-agents",
+    "addedAt": "2026-06-08T17:23:35.667308Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "jackspace/ClaudeSkillz",
     "cloneUrl": "https://github.com/jackspace/ClaudeSkillz.git",
     "localPath": "open-source/jackspace/ClaudeSkillz",

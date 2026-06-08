@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **99**
+Total repositories: **100**
 
 ### [2023Anita/clinical-ai-agent-skills](https://github.com/2023Anita/clinical-ai-agent-skills)
 
@@ -211,6 +211,12 @@ Collected GitHub skill repository.
 ### [hubayirp/agentic-science](https://github.com/hubayirp/agentic-science)
 
 Collected GitHub skill repository.
+
+### [iblai/medical-healthcare-agents](https://github.com/iblai/medical-healthcare-agents)
+
+Availity Essentials — lets an agent perform real-time eligibility verification, prior authorization initiation and status checks, and payer enrollment management via the Availity clearinghouse REST API.
+
+Example skill path: `skills/availity/SKILL.md`
 
 ### [jackspace/ClaudeSkillz](https://github.com/jackspace/ClaudeSkillz)
 
