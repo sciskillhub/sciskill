@@ -1,104 +1,104 @@
 ---
 name: sciskillhub
-description: 当用户需要为科研任务匹配合适 skill 时使用，尤其当任务需求可归入 Concepts and Theory、Research Capabilities、Methods and Techniques、Software and Tools、Instruments and Equipment、Data and Resources、Workflows、Standards and Guidelines，或研究阶段属于 Study Design、Data / Sample Acquisition、Data Processing、Data Analysis and Modeling、Validation and Interpretation、Visualization and Publication、Writing and Publication、Reproducibility, Collaboration and Management 时，应调用此 skill 查询 sciskillhub 中最合适的 skill。支持 object 与 stage 多值组合查询。
+description: Use when a user needs to find the right skill for a research task, especially when the task can be mapped to Concepts and Theory, Research Capabilities, Methods and Techniques, Software and Tools, Instruments and Equipment, Data and Resources, Workflows, or Standards and Guidelines, or when the research stage belongs to Study Design, Data / Sample Acquisition, Data PreProcessing, Data Analysis and Modeling, Validation and Interpretation, Visualization and Publication, Writing and Publication, or Reproducibility, Collaboration and Management. Use this skill to query SciSkillHub for the most appropriate skill. Supports multi-value object and stage queries.
 metadata:
     skill-author: sciskillhub
     homepage: https://sciskillhub.org
     version: 0.1.0
 ---
 
-# sciskillhub — Skill Routing via CLI
+# sciskillhub - Skill Routing via CLI
 
-SciSkillHub 是一个面向 AI agent 的技能分发平台。
+SciSkillHub is a skill distribution platform for AI agents.
 
-这个 skill 的作用是：
+This skill is used to:
 
-- 提供 SciSkillHub CLI (`sciskill`) 的查询命令和调用顺序
-- 告诉本地 agent 应该如何从 `object / stage / domains` 缩小范围（object 与 stage 字段支持多值）
-- 返回候选 skill list，供本地 agent 继续判断
+- Provide SciSkillHub CLI (`sciskill`) query commands and the recommended call sequence
+- Tell local agents how to narrow the search space by `object / stage / domains` because object and stage fields support multiple values
+- Return candidate skill lists for the local agent to evaluate further
 
-以下情况应优先使用这个 skill：
+Use this skill first in these situations:
 
-- 用户明确说“帮我找合适的 skill / workflow / 方法 / 工具”
-- 用户的问题本质上是在问“这个需求应该用哪个 SciSkillHub skill”
-- 用户当前任务可被归入以下对象类型之一：
-  `Concepts and Theory`、`Research Capabilities`、`Methods and Techniques`、`Software and Tools`、`Instruments and Equipment`、`Data and Resources`、`Workflows`、`Standards and Guidelines`
-- 用户当前任务主要处于以下研究阶段之一：
-  `Study Design`、`Data / Sample Acquisition`、`Data Processing`、`Data Analysis and Modeling`、`Validation and Interpretation`、`Visualization and Presentation`、`Writing and Publication`、`Reproducibility, Collaboration and Management`
+- The user explicitly asks to "find a suitable skill / workflow / method / tool"
+- The user's question is essentially asking "which SciSkillHub skill should be used for this requirement?"
+- The current user task can be classified into one of these object types:
+  `Concepts and Theory`, `Research Capabilities`, `Methods and Techniques`, `Software and Tools`, `Instruments and Equipment`, `Data and Resources`, `Workflows`, `Standards and Guidelines`
+- The current user task mainly belongs to one of these research stages:
+  `Study Design`, `Data / Sample Acquisition`, `Data PreProcessing`, `Data Analysis and Modeling`, `Validation and Interpretation`, `Visualization and Presentation`, `Writing and Publication`, `Reproducibility, Collaboration and Management`
 
-以下判断应由本地 agent 结合用户当前问题先自行完成：
+The local agent must make these judgments first from the current user request:
 
-- 当前任务属于什么 `object`
-- 当前任务主要处于什么 `stage`
-- 当前任务涉及哪些 `domains`
-- 哪些候选 `tasks` 最贴近当前意图
+- Which `object` the task belongs to
+- Which `stage` the task mainly belongs to
+- Which `domains` the task involves
+- Which candidate `tasks` best match the current intent
 
 ---
 
-## 推荐调用流程
+## Recommended Call Flow
 
 ```text
-用户自然语言输入
-  -> 本地 agent 判断可能的 object 列表（2-3 个候选）
-  -> 本地 agent 判断可能的 stage 列表（1-2 个候选）
-  -> 本地 agent 判断 domains
-  -> 本地 agent 将用户任务拆解为 2-3 个独立概念维度
-  -> 路径 A：对每个 object+stage 组合查询 tasks（可并行）
-  -> 路径 B：对每个概念维度并行做关键词查询（先通用后具体）
-  -> 路径 A 中若出现贴切 tasks：继续用 object + stage + tasks + domains 查询 skills
-  -> 路径 B 同时持续返回 query 命中的 skills
-  -> 对所有返回结果做适用性判断（是否匹配用户的具体场景和数据类型）
-  -> 汇总两条路径的 skill 结果，去重后选择最合适的多个 skills
+User natural-language input
+  -> Local agent identifies possible object values (2-3 candidates)
+  -> Local agent identifies possible stage values (1-2 candidates)
+  -> Local agent identifies domains
+  -> Local agent decomposes the user task into 2-3 independent conceptual dimensions
+  -> Path A: query tasks for each object+stage combination (can run in parallel)
+  -> Path B: run keyword queries for each conceptual dimension in parallel (general terms before specific terms)
+  -> If Path A returns relevant tasks: query skills with object + stage + tasks + domains
+  -> Path B continues returning query-matched skills
+  -> Evaluate applicability for all returned results (fit to the user's specific scenario and data type)
+  -> Combine skill results from both paths, deduplicate them, and choose the best matching skills
 ```
 
-推荐顺序：
+Recommended order:
 
-1. 本地先列出可能的 `object`（不要只选一个，尝试 2-3 个相关候选）
-2. 本地再列出可能的 `stage`（1-2 个）
-3. 本地再判断 `domains`
-4. 将用户任务拆解为 2-3 个独立概念维度，每个维度提取关键词
-5. 对多个 object+stage 组合分别查询，扩大覆盖面
-6. 与结构化查询并行，对每个概念维度做关键词查询，优先通用关键词
-7. 对所有返回结果做适用性判断，筛除与用户具体场景不匹配的 skill
-8. 汇总结果后再筛选，不要一开始就锁定单一组合
+1. First list possible `object` values locally. Do not choose only one; try 2-3 relevant candidates.
+2. Then list possible `stage` values locally, usually 1-2 candidates.
+3. Then identify `domains`.
+4. Decompose the user task into 2-3 independent conceptual dimensions and extract keywords for each dimension.
+5. Query multiple object+stage combinations to improve coverage.
+6. In parallel with the structured query path, query each conceptual dimension by keyword, starting with broad keywords.
+7. Evaluate all returned results and filter out skills that do not fit the user's concrete scenario.
+8. Combine results before final filtering. Do not lock onto a single combination at the start.
 
-**重要：多组合尝试原则**
+**Important: try multiple combinations**
 
-很多任务横跨多个 object 或 stage。例如"长读长测序数据分析"：
+Many tasks span multiple objects or stages. For example, "long-read sequencing data analysis":
 
-- `Methods and Techniques` + `Data Analysis and Modeling` → 分析方法
-- `Software and Tools` + `Data Analysis and Modeling` → 分析软件
-- `Data and Resources` + `Data Analysis and Modeling` → 数据资源
+- `Methods and Techniques` + `Data Analysis and Modeling` -> analysis methods
+- `Software and Tools` + `Data Analysis and Modeling` -> analysis software
+- `Data and Resources` + `Data Analysis and Modeling` -> data resources
 
-如果只选一个 object，会漏掉其他维度下的相关 skill。应该对 2-3 个最可能的组合都查询一遍，然后汇总去重。
+If only one object is selected, relevant skills from other dimensions may be missed. Query the 2-3 most plausible combinations, then combine and deduplicate the results.
 
-**重要：任务维度拆解**
+**Important: decompose task dimensions**
 
-很多任务由多个独立概念组成。本地 agent 应将用户输入拆解为 2-3 个维度，分别作为关键词查询：
+Many tasks contain several independent concepts. The local agent should decompose the user input into 2-3 dimensions and query each as keywords:
 
-- "单细胞数据的 CNV 分析" → 维度 1: `单细胞 / single cell`，维度 2: `CNV / copy number`
-- "肿瘤空间转录组细胞通讯" → 维度 1: `spatial transcriptomics`，维度 2: `cell communication`
-- "长读长测序数据比对" → 维度 1: `long read / nanopore`，维度 2: `alignment`
+- "single-cell data CNV analysis" -> dimension 1: `single cell`, dimension 2: `CNV / copy number`
+- "tumor spatial transcriptomics cell communication" -> dimension 1: `spatial transcriptomics`, dimension 2: `cell communication`
+- "long-read sequencing data alignment" -> dimension 1: `long read / nanopore`, dimension 2: `alignment`
 
-拆解原则：
+Decomposition rules:
 
-- 每个维度用 1-2 个短关键词表达
-- 维度之间应相对独立（不是简单切分句子）
-- 对每个维度分别查询，然后看交集和互补
-- 拆解后还要做一轮**组合查询**（把两个维度关键词合并），捕捉同时覆盖多个维度的 skill
+- Express each dimension with 1-2 short keywords.
+- Dimensions should be relatively independent, not just sentence fragments.
+- Query each dimension separately, then inspect both overlap and complementarity.
+- After decomposition, also run one **combined query** by joining the dimension keywords to capture skills that cover multiple dimensions at once.
 
-**重要：结构化路径与关键词路径并行**
+**Important: run structured and keyword paths in parallel**
 
-- `tax --tasks` 是推荐入口，但不是唯一入口
-- 某些任务下，返回的 tasks 可能过泛、明显不贴题，或者虽然有返回但不足以覆盖真实相关 skill
-- 因此应默认并行做关键词查询，不是等结构化路径失败后再补做
-- 最终应汇总 `tasks` 路径和 `query` 路径的结果，再去重和判断
+- `tax --tasks` is the recommended entry point, but it is not the only entry point.
+- For some tasks, returned tasks may be too broad, clearly off target, or insufficient even when results exist.
+- Therefore, keyword queries should run in parallel by default, not only after the structured path fails.
+- The final decision should combine results from the `tasks` path and the `query` path, then deduplicate and evaluate them.
 
 ---
 
-## 固定 Object 列表
+## Fixed Object List
 
-`object` 是固定枚举，本地 agent 需要从中选出 **2-3 个最可能的候选**：
+`object` is a fixed enumeration. The local agent should select **2-3 most likely candidates**:
 
 - `Concepts and Theory`
 - `Research Capabilities`
@@ -109,169 +109,169 @@ SciSkillHub 是一个面向 AI agent 的技能分发平台。
 - `Workflows`
 - `Standards and Guidelines`
 
-判断原则：
+Decision rules:
 
-- 不要只选一个 object，很多任务横跨多个维度
-- 例如"数据分析"相关的任务，通常同时涉及 `Methods and Techniques` 和 `Software and Tools`
-- 例如"实验设计"相关的任务，可能同时涉及 `Research Capabilities` 和 `Workflows`
-- 对每个候选 object 都执行查询，然后汇总结果去重
+- Do not select only one object; many tasks span multiple dimensions.
+- Tasks related to "data analysis" usually involve both `Methods and Techniques` and `Software and Tools`.
+- Tasks related to "experimental design" may involve both `Research Capabilities` and `Workflows`.
+- Query each candidate object, then combine and deduplicate the results.
 
 ---
 
-## 固定 Stage 列表
+## Fixed Stage List
 
-`stage` 也是固定枚举，本地 agent 需要选出 **1-2 个最相关的阶段**：
+`stage` is also a fixed enumeration. The local agent should select the **1-2 most relevant stages**:
 
 - `Study Design`
 - `Data / Sample Acquisition`
-- `Data Processing`
+- `Data PreProcessing`
 - `Data Analysis and Modeling`
 - `Validation and Interpretation`
 - `Visualization and Presentation`
 - `Writing and Publication`
 - `Reproducibility, Collaboration and Management`
 
-判断原则：
+Decision rules:
 
-- 选最主要阶段，必要时加 1 个次要阶段
-- 例如"分析数据"偏 `Data Analysis and Modeling`
-- 如果任务是上游清洗、比对、预处理，更适合 `Data Processing`
-- 如果任务是画图、汇报、结果展示，更适合 `Visualization and Presentation`
-- 如果任务是版本管理、流程复现、协作交付，更适合 `Reproducibility, Collaboration and Management`
-
----
-
-## Domains 判断
-
-`domains` 由本地 agent 根据用户输入先做归类。
-
-常见原则：
-
-- 生命科学、医学、组学、临床、生物信息分析，优先考虑 `Life Sciences` 或 `Medical and Health Sciences`
-- 编程、建模、算法、系统、数据工程，优先考虑 `Computational Sciences`
-- 通用科研能力、跨学科研究方法，可考虑 `General Research`
-
-如果任务是跨学科的：
-
-- 保留主要 domain
-- 可以附带 1-2 个次级 domain
-- 不要一次传太多 domain，避免把结果集冲散
+- Select the primary stage and add one secondary stage when needed.
+- "Analyze data" usually maps to `Data Analysis and Modeling`.
+- Upstream cleaning, alignment, and preprocessing usually map to `Data PreProcessing`.
+- Plotting, reporting, and result presentation usually map to `Visualization and Presentation`.
+- Versioning, workflow reproducibility, collaboration, and delivery usually map to `Reproducibility, Collaboration and Management`.
 
 ---
 
-## 命令 0：查看 Taxonomy 枚举
+## Domain Selection
 
-用途：
+The local agent should classify `domains` from the user input first.
 
-- 读取标准 `object / stage / domain` 枚举
-- 保证本地 agent 传参时使用平台认可的标准值
+Common rules:
 
-命令：
+- Life science, medicine, omics, clinical work, and bioinformatics analysis should usually include `Life Sciences` or `Medical and Health Sciences`.
+- Programming, modeling, algorithms, systems, and data engineering should usually include `Computational Sciences`.
+- General research capabilities and cross-disciplinary research methods may include `General Research`.
+
+For interdisciplinary tasks:
+
+- Keep the primary domain.
+- Add 1-2 secondary domains when useful.
+- Do not pass too many domains at once, because this can fragment the result set.
+
+---
+
+## Command 0: View Taxonomy Enumerations
+
+Purpose:
+
+- Read the standard `object / stage / domain` enumerations.
+- Ensure that local agents use platform-approved values when passing arguments.
+
+Command:
 
 ```bash
 sciskill tax
 ```
 
-示例输出：
+Example output:
 
-```
+```text
 Object (--object-list)
-  • Concepts and Theory
-  • Research Capabilities
-  • Methods and Techniques
-  • Software and Tools
-  • Instruments and Equipment
-  • Data and Resources
-  • Workflows
-  • Standards and Guidelines
+  * Concepts and Theory
+  * Research Capabilities
+  * Methods and Techniques
+  * Software and Tools
+  * Instruments and Equipment
+  * Data and Resources
+  * Workflows
+  * Standards and Guidelines
 
 Stage (--stage-list)
-  • Study Design
-  • Data / Sample Acquisition
-  • Data Processing
-  • Data Analysis and Modeling
-  • Validation and Interpretation
-  • Visualization and Presentation
-  • Writing and Publication
-  • Reproducibility, Collaboration and Management
+  * Study Design
+  * Data / Sample Acquisition
+  * Data PreProcessing
+  * Data Analysis and Modeling
+  * Validation and Interpretation
+  * Visualization and Presentation
+  * Writing and Publication
+  * Reproducibility, Collaboration and Management
 
 Domain (--domain-list)
-  • Life Sciences
-  • Computational Sciences
-  • General Research
-  • ...
+  * Life Sciences
+  * Computational Sciences
+  * General Research
+  * ...
 ```
 
-选项：
+Options:
 
-- `sciskill tax --object-list` — 只看 object
-- `sciskill tax --stage-list` — 只看 stage
-- `sciskill tax --domain-list` — 只看 domain
-- `sciskill tax --task-list` — 只看 task（默认不显示 task）
-- `sciskill tax --refresh` — 强制刷新缓存
-- `sciskill tax --json` — JSON 输出
+- `sciskill tax --object-list` - show only objects
+- `sciskill tax --stage-list` - show only stages
+- `sciskill tax --domain-list` - show only domains
+- `sciskill tax --task-list` - show only tasks; tasks are hidden by default
+- `sciskill tax --refresh` - force refresh the cache
+- `sciskill tax --json` - output JSON
 
 ---
 
-## 命令 1：按 Object + Stage + Domains 查询 Tasks
+## Command 1: Query Tasks by Object + Stage + Domains
 
-用途：
+Purpose:
 
-- 先根据已经判断好的 `object + stage + domains` 缩小 `tasks`
-- 这是推荐入口，但不是强制唯一入口
+- Narrow `tasks` using the already inferred `object + stage + domains`.
+- This is the recommended entry point, but it is not the only allowed entry point.
 
-命令：
+Command:
 
 ```bash
 sciskill tax --tasks --object "Research Capabilities" --object "Methods and Techniques" --stage "Study Design" --domain "Life Sciences"
 ```
 
-示例输出：
+Example output:
 
-```
+```text
 Tasks (3 total)
   Object(s): Research Capabilities, Methods and Techniques
   Stage(s): Study Design
   Domains: Life Sciences
 
-  • Hypothesis Building (12)
-  • Problem Definition (9)
-  • Experimental Design (7)
+  * Hypothesis Building (12)
+  * Problem Definition (9)
+  * Experimental Design (7)
 ```
 
-选项：
+Options:
 
-- `--object <values...>` — 过滤 object（可传多个）
-- `--stage <values...>` — 过滤 stage（可传多个）
-- `--domain <values...>` — 过滤 domain（可多个）
-- `--limit <n>` — 返回数量，默认 100
-- `--json` — JSON 输出
+- `--object <values...>` - filter by object; can be passed multiple times
+- `--stage <values...>` - filter by stage; can be passed multiple times
+- `--domain <values...>` - filter by domain; can be passed multiple times
+- `--limit <n>` - number of results to return; default 100
+- `--json` - output JSON
 
-本地 agent 在这一步要做的事情：
+What the local agent should do at this step:
 
-- 不是把返回的 tasks 全部照单全收
-- 而是结合用户当前问题，从里面挑 1-3 个最贴近当前意图的 task
-- 如果没有明显贴切的 task，不要硬选
-- 即使已经在查 task，也要同步保留“关键词并行查询”这一路，不要把 query 当成失败后的备用方案
+- Do not accept every returned task blindly.
+- Select 1-3 tasks that best match the current user intent.
+- If no task is clearly relevant, do not force one.
+- Even while querying tasks, keep the parallel keyword-query path active. Do not treat keyword query as a fallback that only runs after failure.
 
 ---
 
-## 命令 2：按 Object + Stage + Tasks + Domains 查询 Skills
+## Command 2: Query Skills by Object + Stage + Tasks + Domains
 
-用途：
+Purpose:
 
-- 用结构化条件获取候选 `skill list`
-- 然后由本地 agent 继续判断具体该用哪个 skill
+- Retrieve candidate `skill list` entries using structured filters.
+- Let the local agent decide which specific skill should actually be used.
 
-命令：
+Command:
 
 ```bash
 sciskill browse skills --object "Research Capabilities" --stage "Study Design" --task "Hypothesis Building" "Experimental Design" --domain "Life Sciences"
 ```
 
-示例输出：
+Example output:
 
-```
+```text
 Found 27 skills:
 
   #  Name                      Objects                           Stages                          Author         Path
@@ -281,132 +281,132 @@ Found 27 skills:
 Install with: sciskill install <author>/<path>
 ```
 
-选项：
+Options:
 
-- `--object <values...>` — 过滤 object
-- `--stage <values...>` — 过滤 stage
-- `--task <values...>` — 过滤 tasks（可多个）
-- `--domain <values...>` — 过滤 domains（可多个）
-- `-q, --query <text>` — 额外关键词过滤
-- `--sort <field>` — 排序：name, stars, recent, score
-- `--order <dir>` — 排序方向：asc, desc
-- `-l, --limit <n>` — 返回数量，默认 20
-- `--json` — JSON 输出
+- `--object <values...>` - filter by object
+- `--stage <values...>` - filter by stage
+- `--task <values...>` - filter by tasks; can pass multiple values
+- `--domain <values...>` - filter by domains; can pass multiple values
+- `-q, --query <text>` - additional keyword filter
+- `--sort <field>` - sort by name, stars, recent, or score
+- `--order <dir>` - sort direction: asc or desc
+- `-l, --limit <n>` - number of results to return; default 20
+- `--json` - output JSON
 
-本地 agent 在这一步要做的事情：
+What the local agent should do at this step:
 
-- 看返回 skill 是否和当前用户任务真正匹配（优先核对 skill 的 `objects` / `stages` 多值字段）
-- 选择最合适的 1-3 个 skill
-- 不要因为某个 skill 出现在结果里，就默认必须使用它
-- 如果 `task` 路径结果很弱，可以省略 `--task`，保留 `object + stage + domains`，再叠加 `-q`
+- Check whether each returned skill truly matches the current user task. Prefer checking the multi-value `objects` and `stages` fields.
+- Select the best 1-3 skills.
+- Do not assume a skill must be used just because it appears in the result list.
+- If the `task` path produces weak results, omit `--task`, keep `object + stage + domains`, and add `-q`.
 
 ---
 
-## 命令 2B：并行关键词查询 Skills
+## Command 2B: Parallel Keyword Skill Queries
 
-用途：
+Purpose:
 
-- 与结构化路径默认并行执行
-- 它不是失败后的补救步骤，而是常规检索路径之一
-- 当 `tasks` 结果为空、过泛、或无法覆盖用户真实意图时，这一路通常会更快暴露相关 skill
-- 关键词查询不是禁止使用；禁止的是完全跳过任务理解和结构化判断
+- Run in parallel with the structured path by default.
+- This is a normal retrieval path, not a recovery step after failure.
+- When `tasks` results are empty, too broad, or unable to cover the user's real intent, this path often surfaces relevant skills faster.
+- Keyword queries are allowed. What is not allowed is skipping task understanding and structured judgment entirely.
 
-### 关键词策略：先通用，后具体
+### Keyword Strategy: General Before Specific
 
-关键词查询应按 **通用 → 具体** 的顺序组织，优先用覆盖面广的通用词：
+Organize keyword queries from **general -> specific**. Start with broad terms that maximize coverage.
 
-**第一轮（通用关键词）**：用任务拆解出的每个维度的最通用表达
+**Round 1 (general keywords)**: use the broadest expression for each decomposed task dimension.
 
 ```bash
-# “单细胞数据的CNV分析” 拆解为两个维度
-# 维度 1: 单细胞
-sciskill browse skills --object “Software and Tools” --object “Methods and Techniques” --stage “Data Analysis and Modeling” --domain “Life Sciences” -q “single cell”
-# 维度 2: CNV
-sciskill browse skills --object “Software and Tools” --object “Methods and Techniques” --stage “Data Analysis and Modeling” --domain “Life Sciences” -q “cnv”
-sciskill browse skills --object “Software and Tools” --object “Methods and Techniques” --stage “Data Analysis and Modeling” --domain “Life Sciences” -q “copy number”
+# "single-cell data CNV analysis" decomposed into two dimensions
+# Dimension 1: single cell
+sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "single cell"
+# Dimension 2: CNV
+sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "cnv"
+sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "copy number"
 ```
 
-**第二轮（组合 + 具体关键词）**：在通用词之后，补充具体工具/方法名
+**Round 2 (combined + specific keywords)**: after broad terms, add specific tool or method names.
 
 ```bash
-# 组合两个维度
-sciskill browse skills --object “Software and Tools” --object “Methods and Techniques” --stage “Data Analysis and Modeling” --domain “Life Sciences” -q “single cell cnv”
-# 具体工具名（如果用户提到或你已知）
-sciskill browse skills --object “Software and Tools” --object “Methods and Techniques” --stage “Data Analysis and Modeling” --domain “Life Sciences” -q “infercnv”
-sciskill browse skills --object “Software and Tools” --object “Methods and Techniques” --stage “Data Analysis and Modeling” --domain “Life Sciences” -q “copykat”
+# Combine two dimensions
+sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "single cell cnv"
+# Specific tool names, if the user mentioned them or you already know them
+sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "infercnv"
+sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "copykat"
 ```
 
-### 关键词选择原则
+### Keyword Selection Rules
 
-- **先通用后具体**：先用 `single cell`、`cnv` 等通用词扩大覆盖面，再用 `infercnv`、`copykat` 等具体工具名查漏
-- **不要只查一个长短语**：优先拆成多个短 query 并行查
-  - 好：`cnv`、`copy number`、`single cell`（分别并行查）
-  - 差：`single cell CNV analysis for tumor data`（一句话塞进去）
-- **按维度组织**：每个拆解出的维度独立查询，再做一轮组合查询
-- **关键词要短**：1-3 个词最佳，避免把整句自然语言原样塞进去
-- **优先用领域词、方法词、工具词**，不用虚词和停用词
+- **General before specific**: use broad terms such as `single cell` and `cnv` first, then specific tool names such as `infercnv` and `copykat` to catch misses.
+- **Do not search only one long phrase**: split into several short queries and run them in parallel.
+  - Good: `cnv`, `copy number`, `single cell` queried separately in parallel.
+  - Bad: `single cell CNV analysis for tumor data` stuffed into one query.
+- **Organize by dimension**: query each decomposed dimension independently, then run one combined query.
+- **Keep keywords short**: 1-3 words is best. Avoid passing the whole natural-language sentence directly.
+- **Prefer domain terms, method terms, and tool terms**. Avoid filler words and stop words.
 
-### 什么时候优先启用这一支路
+### When to Prioritize This Path
 
-- `tax --tasks` 返回的 task 不相关
-- `tax --tasks` 返回的 task 太泛，无法支撑精确筛选
-- 用户任务由多个独立概念组成（如”单细胞 + CNV”），结构化路径可能无法同时覆盖
-- 你怀疑 metadata 不完整，结构化过滤会漏掉技能
-- 某类技能通常靠名称/描述更容易命中，而不是靠 task 枚举
-
----
-
-## 适用性判断
-
-查询返回的 skill 列表不是最终答案。本地 agent 必须对每个候选 skill 做**适用性判断**，检查它是否真正匹配用户的具体场景。
-
-### 判断步骤
-
-1. **读 skill 描述和 use_cases**：用 `--json` 获取完整信息，关注 `description`、`use_cases`、`workflows` 字段
-2. **比对数据类型**：用户说的是 scRNA-Seq、WES、WGS、ATAC-Seq 还是 bulk RNA-Seq？skill 支持的输入是什么？
-3. **比对分析目标**：用户要做的是 calling、annotation、visualization 还是 integration？skill 覆盖哪个环节？
-4. **主动标记不匹配**：如果 skill 明确针对另一种数据类型或场景，应直接排除并告知用户
-
-### 常见适用性陷阱
-
-| 陷阱 | 说明 | 应对 |
-|------|------|------|
-| bulk vs single-cell | 同一个分析任务（如 CNV）在 bulk 和 single-cell 下用的是完全不同的工具 | 检查 skill 描述中的数据类型，区分 "sequencing data" 和 "single-cell RNA-seq" |
-| WES vs WGS vs Panel | CNVkit、GATK CNV 等工具针对特定测序类型 | 确认 skill 适用范围 |
-| calling vs annotation vs visualization | 一个分析流程的上下游环节用不同工具 | 确认用户要的是哪个环节 |
-| 人类 vs 模式生物 | 某些工具只支持特定物种的基因组 | 检查物种支持 |
-
-### 适用性判断示例
-
-用户任务："单细胞数据的 CNV 分析"
-
-返回的 skill 列表：
-
-- `cnv-caller-agent` — "从测序数据检测 CNV，用于癌症基因组学"
-- `bio-copy-number-cnvkit-analysis` — "从靶向/外显子测序检测 CNV，基于 CNVkit"
-- `bio-copy-number-gatk-cnv` — "GATK CNV calling"
-
-适用性判断：
-
-- `cnv-caller-agent`：描述为"sequencing data"，未提及 single-cell → **可能不适用，需进一步确认**
-- `bio-copy-number-cnvkit-analysis`：明确写"靶向/外显子测序" → **不适用于 scRNA-Seq**
-- `bio-copy-number-gatk-cnv`：GATK CNV 是 bulk WES 工具 → **不适用于 scRNA-Seq**
-
-结论：当前结果**没有适用于 scRNA-Seq CNV 推断的 skill**，应如实告知用户，并建议替代方案（如安装 scanpy skill 后手动编写 inferCNV/CopyKAT 分析流程）。
-
-### 判断原则
-
-- 不要因为 skill 出现在搜索结果中，就默认它适用
-- 不要假设通用描述一定覆盖你的具体场景
-- 对结果做**主动排除**比**被动接受**更重要
-- 如果所有结果都不适用，**明确告知用户"没有找到直接匹配的 skill"**，而不是强行推荐不合适的
-- 告知用户时，说明**为什么**不适用（数据类型、分析环节、物种等），帮助用户理解缺口
+- `tax --tasks` returns irrelevant tasks.
+- `tax --tasks` returns tasks that are too broad to support precise filtering.
+- The user task contains multiple independent concepts, such as "single-cell + CNV", and the structured path may not cover both at once.
+- You suspect metadata is incomplete and structured filters may miss skills.
+- A skill type is usually easier to find by name or description than by task enumeration.
 
 ---
 
-## 命令 3：安装 Skill
+## Applicability Evaluation
 
-找到合适的 skill 后，安装到本地：
+The returned skill list is not the final answer. The local agent must evaluate each candidate skill for **applicability** and check whether it truly matches the user's concrete scenario.
+
+### Evaluation Steps
+
+1. **Read the skill description and use cases**: use `--json` to get full information, especially `description`, `use_cases`, and `workflows`.
+2. **Compare data type**: is the user asking about scRNA-seq, WES, WGS, ATAC-seq, or bulk RNA-seq? What input does the skill support?
+3. **Compare analysis goal**: does the user need calling, annotation, visualization, or integration? Which step does the skill cover?
+4. **Actively mark mismatches**: if a skill clearly targets another data type or scenario, exclude it directly and tell the user why.
+
+### Common Applicability Pitfalls
+
+| Pitfall | Explanation | Response |
+|---|---|---|
+| bulk vs single-cell | The same analysis task, such as CNV, often uses completely different tools for bulk and single-cell data | Check the data type in the skill description and distinguish "sequencing data" from "single-cell RNA-seq" |
+| WES vs WGS vs panel | Tools such as CNVkit and GATK CNV target specific sequencing types | Confirm the skill's scope |
+| calling vs annotation vs visualization | Upstream and downstream steps of one workflow use different tools | Confirm which step the user needs |
+| human vs model organism | Some tools only support specific species or genomes | Check species support |
+
+### Applicability Example
+
+User task: "single-cell data CNV analysis"
+
+Returned skill list:
+
+- `cnv-caller-agent` - "detect CNVs from sequencing data for cancer genomics"
+- `bio-copy-number-cnvkit-analysis` - "detect CNVs from targeted/exome sequencing using CNVkit"
+- `bio-copy-number-gatk-cnv` - "GATK CNV calling"
+
+Applicability evaluation:
+
+- `cnv-caller-agent`: described as "sequencing data" and does not mention single-cell -> **possibly not applicable; needs further confirmation**
+- `bio-copy-number-cnvkit-analysis`: explicitly says "targeted/exome sequencing" -> **not applicable to scRNA-seq**
+- `bio-copy-number-gatk-cnv`: GATK CNV is a bulk WES tool -> **not applicable to scRNA-seq**
+
+Conclusion: the current results contain **no skill directly applicable to scRNA-seq CNV inference**. Tell the user this clearly and suggest an alternative, such as installing a Scanpy skill and manually writing an inferCNV/CopyKAT analysis workflow.
+
+### Evaluation Principles
+
+- Do not assume a skill is applicable just because it appears in search results.
+- Do not assume a generic description covers the user's specific scenario.
+- **Active exclusion** is more important than **passive acceptance**.
+- If all results are inapplicable, **clearly say that no directly matching skill was found** instead of forcing an unsuitable recommendation.
+- When telling the user, explain **why** the results are inapplicable, such as data type, analysis step, or species mismatch.
+
+---
+
+## Command 3: Install a Skill
+
+After finding a suitable skill, install it locally:
 
 ```bash
 sciskill install <author>/<path> --agent claude
@@ -414,155 +414,155 @@ sciskill install <author>/<path> --agent claude
 
 ---
 
-## 本地 Agent 的职责边界
+## Local Agent Responsibility Boundary
 
-在使用这个 skill 时，必须遵守下面的边界：
+When using this skill, follow these boundaries:
 
-- 先判断 `object`
-- 再判断 `stage`
-- 再判断 `domains`
-- 将用户任务拆解为 2-3 个独立概念维度
-- 然后默认并行执行：
-  `sciskill tax --tasks`（结构化路径）
-  和
-  `sciskill browse skills ... -q <通用关键词>`（关键词路径，按维度并行）
-- 对所有返回结果做适用性判断
-- 最后汇总两路结果，筛选出真正适用的 skill
+- First identify `object`.
+- Then identify `stage`.
+- Then identify `domains`.
+- Decompose the user task into 2-3 independent conceptual dimensions.
+- Then run these paths in parallel by default:
+  `sciskill tax --tasks` (structured path)
+  and
+  `sciskill browse skills ... -q <general keyword>` (keyword path, parallel by dimension)
+- Evaluate applicability for all returned results.
+- Finally combine both paths and select only truly applicable skills.
 
-不要把职责反过来：
+Do not reverse these responsibilities:
 
-- **不要使用 `sciskill search`** 代替任务理解
-- 不要在完全不判断 `object/stage/domains` 的情况下盲搜
-- 不要先拿一堆 skill 再倒推 object/stage
-- 不要把 CLI 当成”自动分类器”
-- 不要把”判断当前任务属于什么 object/stage/domains”的责任后置到查询之后
-- 不要跳过适用性判断，把查询结果直接当推荐结果
+- **Do not use `sciskill search`** as a replacement for task understanding.
+- Do not blindly search without judging `object/stage/domains`.
+- Do not retrieve a pile of skills first and infer object/stage afterward.
+- Do not treat the CLI as an "automatic classifier".
+- Do not postpone the responsibility of classifying the current task's object/stage/domains until after querying.
+- Do not skip applicability evaluation and treat query results as final recommendations.
 
-简化成一句话：
+One-sentence summary:
 
-当前用户任务属于什么 `object / stage / domains`，应先由本地 agent 判断；拆解概念维度后并行走”结构化路径 + 关键词路径”；最后对结果做适用性判断，筛除不匹配的 skill。
-
----
-
-## 何时使用这个 Skill
-
-在这些情况下优先使用：
-
-- 你需要为当前任务动态选择 skill
-- 你已经知道当前任务的大致 `object / stage / domains`
-- 你想先缩小 `tasks`，再拿候选 skill list
-
-在这些情况下不要优先使用：
-
-- 你已经明确知道要调用哪个具体 skill
-- 当前任务只是普通闲聊，不涉及专业 skill routing
-- 你还没有对当前问题做基本任务理解和分类
+The local agent should first decide which `object / stage / domains` the current user task belongs to, then decompose the conceptual dimensions, run the **structured path + keyword path** in parallel, and finally evaluate applicability to filter out mismatched skills.
 
 ---
 
-## 最小示例
+## When to Use This Skill
 
-### 示例 1：假设生成流程
+Use it first when:
 
-用户问题：
+- You need to dynamically select a skill for the current task.
+- You already know the approximate `object / stage / domains` for the current task.
+- You want to narrow `tasks` first, then retrieve a candidate skill list.
+
+Do not prioritize it when:
+
+- You already know the exact specific skill to invoke.
+- The current task is just ordinary conversation and does not involve professional skill routing.
+- You have not yet done basic task understanding and classification for the current request.
+
+---
+
+## Minimal Examples
+
+### Example 1: Hypothesis Generation Workflow
+
+User question:
 
 ```text
-我需要帮助设计一个假设生成流程，用于肿瘤单细胞研究
+I need help designing a hypothesis-generation workflow for tumor single-cell research.
 ```
 
-本地 agent 应先判断多组候选：
+The local agent should first identify multiple candidate groups:
 
 - `object = [Research Capabilities, Methods and Techniques]`
 - `stage = [Study Design]`
 - `domains = [Life Sciences, General Research]`
-- 概念维度：`hypothesis`、`单细胞 / single cell`
+- Conceptual dimensions: `hypothesis`, `single cell`
 
-然后（并行查询）：
+Then run queries in parallel:
 
-1. **结构化路径**：
+1. **Structured path**:
    - `sciskill tax --tasks --object "Research Capabilities" --stage "Study Design" --domain "Life Sciences" "General Research"`
    - `sciskill tax --tasks --object "Methods and Techniques" --stage "Study Design" --domain "Life Sciences" "General Research"`
-2. **关键词路径（通用）**：
+2. **Keyword path (general)**:
    - `sciskill browse skills --object "Research Capabilities" --object "Methods and Techniques" --stage "Study Design" --domain "Life Sciences" -q "hypothesis"`
    - `sciskill browse skills --object "Research Capabilities" --object "Methods and Techniques" --stage "Study Design" --domain "Life Sciences" -q "single cell"`
-3. 汇总 tasks，挑出 `Hypothesis Building`、`Experimental Design`
+3. Combine tasks and select `Hypothesis Building` and `Experimental Design`.
 4. `sciskill browse skills --object "Research Capabilities" --object "Methods and Techniques" --stage "Study Design" --task "Hypothesis Building" "Experimental Design" --domain "Life Sciences" "General Research"`
 5. `sciskill browse skills --object "Research Capabilities" --object "Methods and Techniques" --stage "Study Design" --task "Hypothesis Building" "Experimental Design" --domain "Life Sciences" "General Research"`
-6. **适用性判断**：检查候选 skill 是否支持肿瘤/单细胞场景
-7. 汇总去重，选择最合适的 skill
+6. **Applicability evaluation**: check whether candidate skills support tumor and single-cell scenarios.
+7. Combine and deduplicate, then choose the best skill.
 8. `sciskill install <author>/<path> --agent claude`
 
-### 示例 2：长读长测序数据分析
+### Example 2: Long-Read Sequencing Data Analysis
 
-用户问题：
+User question:
 
 ```text
-帮我分析 Nanopore 长读长测序数据
+Help me analyze Nanopore long-read sequencing data.
 ```
 
-本地 agent 应判断：
+The local agent should identify:
 
 - `object = [Methods and Techniques, Software and Tools, Data and Resources]`
 - `stage = [Data Analysis and Modeling]`
 - `domains = [Life Sciences]`
-- 概念维度：`nanopore / long read`、`alignment / analysis`
+- Conceptual dimensions: `nanopore / long read`, `alignment / analysis`
 
-然后（并行查询）：
+Then run queries in parallel:
 
-1. **结构化路径**：
+1. **Structured path**:
    - `sciskill tax --tasks --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences"`
    - `sciskill tax --tasks --object "Software and Tools" --stage "Data Analysis and Modeling" --domain "Life Sciences"`
-2. **关键词路径（通用）**：
+2. **Keyword path (general)**:
    - `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "nanopore"`
    - `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "long read"`
-3. 汇总 tasks，挑出 `Quality Control`、`Alignment`、`Quantification`
+3. Combine tasks and select `Quality Control`, `Alignment`, and `Quantification`.
 4. `sciskill browse skills --object "Methods and Techniques" --object "Software and Tools" --stage "Data Analysis and Modeling" --task "Quality Control" "Alignment" "Quantification" --domain "Life Sciences"`
 5. `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --task "Quality Control" "Alignment" "Quantification" --domain "Life Sciences"`
-6. **适用性判断**：确认 skill 支持长读长数据（而非仅短读长）
-7. 汇总去重，选择最合适的 skill
+6. **Applicability evaluation**: confirm that the skill supports long-read data rather than only short-read data.
+7. Combine and deduplicate, then choose the best skill.
 8. `sciskill install <author>/<path> --agent claude`
 
-### 示例 3：单细胞 CNV 分析（跨维度任务）
+### Example 3: Single-Cell CNV Analysis Across Dimensions
 
-用户问题：
+User question:
 
 ```text
-单细胞数据的CNV分析
+Single-cell data CNV analysis.
 ```
 
-本地 agent 应判断：
+The local agent should identify:
 
 - `object = [Methods and Techniques, Software and Tools]`
 - `stage = [Data Analysis and Modeling]`
 - `domains = [Life Sciences]`
-- 概念维度：**维度 1 = `single cell / 单细胞`**，**维度 2 = `CNV / copy number`**
+- Conceptual dimensions: **dimension 1 = `single cell`**, **dimension 2 = `CNV / copy number`**
 
-然后（并行查询）：
+Then run queries in parallel:
 
-1. **结构化路径**：
+1. **Structured path**:
    - `sciskill tax --tasks --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences"`
    - `sciskill tax --tasks --object "Software and Tools" --stage "Data Analysis and Modeling" --domain "Life Sciences"`
-2. **关键词路径（第一轮：通用，按维度并行）**：
+2. **Keyword path (round 1: general, parallel by dimension)**:
    - `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "single cell"`
    - `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "cnv"`
    - `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "copy number"`
-3. **关键词路径（第二轮：组合 + 具体）**：
+3. **Keyword path (round 2: combined + specific)**:
    - `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "single cell cnv"`
    - `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "infercnv"`
    - `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --domain "Life Sciences" -q "copykat"`
-4. 汇总结构化路径找到的 task `copy number variation`
+4. Combine the structured-path task `copy number variation`.
 5. `sciskill browse skills --object "Software and Tools" --object "Methods and Techniques" --stage "Data Analysis and Modeling" --task "copy number variation" --domain "Life Sciences"`
-6. **适用性判断**（关键步骤）：
-   - `cnv-caller-agent`：描述为"从测序数据检测 CNV"→ 未提及 single-cell → **可能不适用**
-   - `bio-copy-number-cnvkit-analysis`：明确写"靶向/外显子测序" → **不适用于 scRNA-Seq**
-   - `bio-copy-number-gatk-cnv`：GATK CNV 是 bulk WES 工具 → **不适用于 scRNA-Seq**
-7. **结论**：当前没有直接适用于 scRNA-Seq CNV 推断的 skill，告知用户并建议替代方案
-8. 如果用户接受替代方案：`sciskill install <scanpy skill> --agent claude`
+6. **Applicability evaluation** (critical step):
+   - `cnv-caller-agent`: described as "detect CNVs from sequencing data" -> does not mention single-cell -> **possibly not applicable**
+   - `bio-copy-number-cnvkit-analysis`: explicitly says "targeted/exome sequencing" -> **not applicable to scRNA-seq**
+   - `bio-copy-number-gatk-cnv`: GATK CNV is a bulk WES tool -> **not applicable to scRNA-seq**
+7. **Conclusion**: there is currently no skill directly applicable to scRNA-seq CNV inference. Tell the user and suggest an alternative.
+8. If the user accepts the alternative: `sciskill install <scanpy skill> --agent claude`
 
 ---
 
-## 最后原则
+## Final Principle
 
-这个 skill 是"查询入口"，不是"分类裁判"。
+This skill is a "query entry point", not a "classification judge".
 
-本地 agent 先理解任务，拆解维度，再使用 CLI，最后对结果做适用性判断。
+The local agent should first understand the task, decompose dimensions, use the CLI, and then evaluate applicability.
