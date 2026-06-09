@@ -214,9 +214,7 @@ Collected GitHub skill repository.
 
 ### [iblai/medical-healthcare-agents](https://github.com/iblai/medical-healthcare-agents)
 
-Availity Essentials — lets an agent perform real-time eligibility verification, prior authorization initiation and status checks, and payer enrollment management via the Availity clearinghouse REST API.
-
-Example skill path: `skills/availity/SKILL.md`
+Collected GitHub skill repository.
 
 ### [jackspace/ClaudeSkillz](https://github.com/jackspace/ClaudeSkillz)
 
