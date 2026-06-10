@@ -423,6 +423,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "ULudo/codex-science-skills",
+    "cloneUrl": "https://github.com/ULudo/codex-science-skills.git",
+    "localPath": "open-source/ULudo/codex-science-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/ULudo/codex-science-skills",
+    "addedAt": "2026-06-10T16:58:10.044452Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "VILA-Lab/FigMirror",
     "cloneUrl": "https://github.com/VILA-Lab/FigMirror.git",
     "localPath": "open-source/VILA-Lab/FigMirror",
@@ -529,6 +538,15 @@
     "upstreamUrl": "https://github.com/bloody2634/claud-skills",
     "addedAt": "2026-04-11T17:13:45.852071Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "changyufei222/fbbp-research-workbench",
+    "cloneUrl": "https://github.com/changyufei222/fbbp-research-workbench.git",
+    "localPath": "open-source/changyufei222/fbbp-research-workbench",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/changyufei222/fbbp-research-workbench",
+    "addedAt": "2026-06-10T16:58:28.707719Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "connerlambden/bgpt-mcp",
