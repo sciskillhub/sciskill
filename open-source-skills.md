@@ -122,9 +122,7 @@ Collected GitHub skill repository.
 
 ### [changyufei222/fbbp-research-workbench](https://github.com/changyufei222/fbbp-research-workbench)
 
-Use when the user asks for FBBP literature review, scaffold landscape analysis, evidence synthesis, or a cited research summary about flexible-backbone binding proteins.
-
-Example skill path: `skills/custom/fbbp-deep-research/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Chen-kaige/science_skill](https://github.com/Chen-kaige/science_skill)
 
@@ -372,9 +370,7 @@ Collected GitHub skill repository.
 
 ### [ULudo/codex-science-skills](https://github.com/ULudo/codex-science-skills)
 
-Audit LaTeX/BibTeX references and IEEE-style citations for real-source existence, metadata correctness, DOI/URL validity, fabricated citations, missing keys, uncited entries, duplicate sources, and in-text/bibliography consistency. Use for citation verification, bibliography repair, DOI checks, and reference-list audits. Do not use for general prose review.
-
-Example skill path: `skills/citation-reference-reviewer/SKILL.md`
+Collected GitHub skill repository.
 
 ### [unexplained-familyephedraceae871/openclaw-skill](https://github.com/unexplained-familyephedraceae871/openclaw-skill)
 

@@ -46,36 +46,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "ULudo/codex-science-skills",
-      "matched_domain_topics": [
-        "science"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills",
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/ULudo/codex-science-skills.git",
-      "chosen_skill_path": "skills/citation-reference-reviewer/SKILL.md",
-      "front_matter": {
-        "name": "citation-reference-reviewer",
-        "description": "Audit LaTeX/BibTeX references and IEEE-style citations for real-source existence, metadata correctness, DOI/URL validity, fabricated citations, missing keys, uncited entries, duplicate sources, and in-text/bibliography consistency. Use for citation verification, bibliography repair, DOI checks, and reference-list audits. Do not use for general prose review."
-      },
-      "html_url": "https://github.com/ULudo/codex-science-skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ULudo/codex-science-skills"
-    },
-    {
       "repo": "mareforma/mareforma",
       "matched_domain_topics": [
         "science"
@@ -109,6 +79,30 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ULudo/ClawReview",
+      "matches": []
+    },
+    {
+      "repo": "ULudo/codex-science-skills",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ULudo/codex-science-skills",
       "matches": []
     },
     {
@@ -477,6 +471,23 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -504,52 +515,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
       "matches": []
-    },
-    {
-      "repo": "changyufei222/fbbp-research-workbench",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/changyufei222/fbbp-research-workbench.git",
-      "chosen_skill_path": "skills/custom/fbbp-deep-research/SKILL.md",
-      "front_matter": {
-        "name": "fbbp-deep-research",
-        "description": "Use when the user asks for FBBP literature review, scaffold landscape analysis, evidence synthesis, or a cited research summary about flexible-backbone binding proteins.",
-        "metadata": {
-          "author": "local",
-          "version": "0.1.0"
-        }
-      },
-      "html_url": "https://github.com/changyufei222/fbbp-research-workbench",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/changyufei222/fbbp-research-workbench"
-    },
-    {
-      "repo": "changyufei222/fbbp-mcp-rag-server",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "droftgamer-wq/researcher-skill",
@@ -603,7 +568,50 @@
       "matches": []
     },
     {
-      "repo": "mckf111/TraceBio",
+      "repo": "jvogan/proteus",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/jvogan/proteus",
+      "matches": []
+    },
+    {
+      "repo": "changyufei222/fbbp-research-workbench",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/changyufei222/fbbp-research-workbench",
+      "matches": []
+    },
+    {
+      "repo": "changyufei222/fbbp-mcp-rag-server",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -620,7 +628,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "aristoteleo/PantheonOS",
+      "repo": "mckf111/TraceBio",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -702,30 +710,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "jvogan/proteus",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/jvogan/proteus",
-      "matches": []
     },
     {
       "repo": "fmschulz/omics-skills",
@@ -1502,10 +1486,14 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "AlterLab-IEU/AlterLab-Academic-Skills",
+      "repo": "K-Dense-AI/scientific-agent-skills",
       "matched_domain_topics": [
         "bioinformatics",
-        "clinical-research"
+        "clinical-research",
+        "computational-biology",
+        "drug-discovery",
+        "genomics",
+        "scientific-visualization"
       ],
       "matched_qualifier_topics": [
         "agent-skills"
@@ -1518,11 +1506,27 @@
         {
           "domain_topic": "clinical-research",
           "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
         }
       ],
       "matched_topics": [],
       "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/AlterLab-IEU/AlterLab-Academic-Skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
       "matches": []
     },
     {
@@ -1584,14 +1588,10 @@
       "matches": []
     },
     {
-      "repo": "K-Dense-AI/scientific-agent-skills",
+      "repo": "AlterLab-IEU/AlterLab-Academic-Skills",
       "matched_domain_topics": [
         "bioinformatics",
-        "clinical-research",
-        "computational-biology",
-        "drug-discovery",
-        "genomics",
-        "scientific-visualization"
+        "clinical-research"
       ],
       "matched_qualifier_topics": [
         "agent-skills"
@@ -1604,27 +1604,11 @@
         {
           "domain_topic": "clinical-research",
           "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "scientific-visualization",
-          "qualifier_topic": "agent-skills"
         }
       ],
       "matched_topics": [],
       "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/AlterLab-IEU/AlterLab-Academic-Skills",
       "matches": []
     },
     {
