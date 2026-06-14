@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **102**
+Total repositories: **104**
 
 ### [2023Anita/clinical-ai-agent-skills](https://github.com/2023Anita/clinical-ai-agent-skills)
 
@@ -107,6 +107,12 @@ Collected GitHub skill repository.
 ### [BioSymphony/structure-factory](https://github.com/BioSymphony/structure-factory)
 
 Collected GitHub skill repository.
+
+### [BioTender-max/awesome-bio-agent-skills](https://github.com/BioTender-max/awesome-bio-agent-skills)
+
+Validate protein designs using AlphaFold2 structure prediction. Use this skill when: (1) Validating designed sequences fold correctly, (2) Predicting binder-target complex structures, (3) Calculating confidence metrics (pLDDT, pTM, ipTM), (4) Self-consistency validation of designs, (5) Multi-chain complex prediction with AlphaFold-Multimer. For faster single-chain prediction, use esm. For QC thresholds, use protein-qc.
+
+Example skill path: `skills/adaptyv/alphafold/SKILL.md`
 
 ### [bloody2634/claud-skills](https://github.com/bloody2634/claud-skills)
 
@@ -307,6 +313,12 @@ Collected GitHub skill repository.
 ### [pswider/tula](https://github.com/pswider/tula)
 
 Collected GitHub skill repository.
+
+### [qchiujunhao/galaxy-cli](https://github.com/qchiujunhao/galaxy-cli)
+
+Operate Galaxy through the galaxy-cli command line interface with low-token, progressive command lookup.
+
+Example skill path: `galaxy_cli/skills/SKILL.md`
 
 ### [realactivity/tula](https://github.com/realactivity/tula)
 

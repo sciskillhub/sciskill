@@ -162,6 +162,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "BioTender-max/awesome-bio-agent-skills",
+    "cloneUrl": "https://github.com/BioTender-max/awesome-bio-agent-skills.git",
+    "localPath": "open-source/BioTender-max/awesome-bio-agent-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/BioTender-max/awesome-bio-agent-skills",
+    "addedAt": "2026-06-14T15:59:45.080937Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Boom5426/Nature-Paper-Skills",
     "cloneUrl": "https://github.com/Boom5426/Nature-Paper-Skills.git",
     "localPath": "open-source/Boom5426/Nature-Paper-Skills",
@@ -798,6 +807,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/pswider/tula",
     "addedAt": "2026-05-10T14:52:04.498502Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "qchiujunhao/galaxy-cli",
+    "cloneUrl": "https://github.com/qchiujunhao/galaxy-cli.git",
+    "localPath": "open-source/qchiujunhao/galaxy-cli",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/qchiujunhao/galaxy-cli",
+    "addedAt": "2026-06-14T15:59:57.515308Z",
     "addedBy": "github-actions"
   },
   {
