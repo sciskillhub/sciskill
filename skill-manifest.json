@@ -1,5 +1,14 @@
 [
   {
+    "fullName": "001TMF/pinakes",
+    "cloneUrl": "https://github.com/001TMF/pinakes.git",
+    "localPath": "open-source/001TMF/pinakes",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/001TMF/pinakes",
+    "addedAt": "2026-06-15T18:24:53.513344Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "2023Anita/clinical-ai-agent-skills",
     "cloneUrl": "https://github.com/2023Anita/clinical-ai-agent-skills.git",
     "localPath": "open-source/2023Anita/clinical-ai-agent-skills",

@@ -2,7 +2,13 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **104**
+Total repositories: **105**
+
+### [001TMF/pinakes](https://github.com/001TMF/pinakes)
+
+Retrieve reproducible, complete, verifiable records from 26 public biomedical sources (PDB, UniProt, NCBI Protein/Virus/Datasets, ClinVar, Ensembl, gnomAD, PubChem, AlphaFold, ClinicalTrials, openFDA, Open Targets, Reactome, GTEx, GWAS Catalog, and more — run `catalog` for the full list) via Pinakes — the same 8 verbs over an MCP server (pinakes_<verb> tools) or the identical pinakes CLI. Use when an agent must pull biomedical data that has to be reproducible, deterministic, byte-identical, complete-or-fail, or independently verifiable; when a record count, cited fact, or dataset must carry provenance a reviewer can re-derive offline; when pinning a content-addressed snapshot; reading a manifest's completeness or reproducible flag; verifying before citing; or self-correcting a rejected filter. Teaches the judgement the tool schemas do not: pin-or-no-determinism, complete vs best_effort, and verify-before-cite.
+
+Example skill path: `skills/pinakes-verifiable-retrieval/SKILL.md`
 
 ### [2023Anita/clinical-ai-agent-skills](https://github.com/2023Anita/clinical-ai-agent-skills)
 
@@ -110,9 +116,7 @@ Collected GitHub skill repository.
 
 ### [BioTender-max/awesome-bio-agent-skills](https://github.com/BioTender-max/awesome-bio-agent-skills)
 
-Validate protein designs using AlphaFold2 structure prediction. Use this skill when: (1) Validating designed sequences fold correctly, (2) Predicting binder-target complex structures, (3) Calculating confidence metrics (pLDDT, pTM, ipTM), (4) Self-consistency validation of designs, (5) Multi-chain complex prediction with AlphaFold-Multimer. For faster single-chain prediction, use esm. For QC thresholds, use protein-qc.
-
-Example skill path: `skills/adaptyv/alphafold/SKILL.md`
+Collected GitHub skill repository.
 
 ### [bloody2634/claud-skills](https://github.com/bloody2634/claud-skills)
 
@@ -316,9 +320,7 @@ Collected GitHub skill repository.
 
 ### [qchiujunhao/galaxy-cli](https://github.com/qchiujunhao/galaxy-cli)
 
-Operate Galaxy through the galaxy-cli command line interface with low-token, progressive command lookup.
-
-Example skill path: `galaxy_cli/skills/SKILL.md`
+Collected GitHub skill repository.
 
 ### [realactivity/tula](https://github.com/realactivity/tula)
 
