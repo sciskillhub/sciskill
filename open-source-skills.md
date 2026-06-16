@@ -6,9 +6,7 @@ Total repositories: **105**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
-Retrieve reproducible, complete, verifiable records from 26 public biomedical sources (PDB, UniProt, NCBI Protein/Virus/Datasets, ClinVar, Ensembl, gnomAD, PubChem, AlphaFold, ClinicalTrials, openFDA, Open Targets, Reactome, GTEx, GWAS Catalog, and more — run `catalog` for the full list) via Pinakes — the same 8 verbs over an MCP server (pinakes_<verb> tools) or the identical pinakes CLI. Use when an agent must pull biomedical data that has to be reproducible, deterministic, byte-identical, complete-or-fail, or independently verifiable; when a record count, cited fact, or dataset must carry provenance a reviewer can re-derive offline; when pinning a content-addressed snapshot; reading a manifest's completeness or reproducible flag; verifying before citing; or self-correcting a rejected filter. Teaches the judgement the tool schemas do not: pin-or-no-determinism, complete vs best_effort, and verify-before-cite.
-
-Example skill path: `skills/pinakes-verifiable-retrieval/SKILL.md`
+Collected GitHub skill repository.
 
 ### [2023Anita/clinical-ai-agent-skills](https://github.com/2023Anita/clinical-ai-agent-skills)
 
