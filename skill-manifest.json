@@ -684,6 +684,15 @@
     "addedBy": "huang-sh"
   },
   {
+    "fullName": "htlin222/openevidence-skill",
+    "cloneUrl": "https://github.com/htlin222/openevidence-skill.git",
+    "localPath": "open-source/htlin222/openevidence-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/htlin222/openevidence-skill",
+    "addedAt": "2026-06-19T16:33:35.240421Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "hubayirp/agentic-science",
     "cloneUrl": "https://github.com/hubayirp/agentic-science.git",
     "localPath": "open-source/hubayirp/agentic-science",
