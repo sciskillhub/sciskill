@@ -222,9 +222,7 @@ Collected GitHub skill repository.
 
 ### [htlin222/openevidence-skill](https://github.com/htlin222/openevidence-skill)
 
-Query OpenEvidence (clinical evidence assistant) without an MCP server. Mirrors the openevidence-mcp tool surface 1:1 - check auth, list question history, fetch an article, or ask a new question (with optional follow-up thread). Use when the user asks medical / evidence-based clinical questions, references OpenEvidence, asks for "OE answers", or wants citations + BibTeX from OpenEvidence. Portable to claude.ai's /mnt sandbox - just drop the folder and a fresh cookies.json next to scripts/oe.py.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [hubayirp/agentic-science](https://github.com/hubayirp/agentic-science)
 
