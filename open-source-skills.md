@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **106**
+Total repositories: **107**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -107,6 +107,12 @@ Collected GitHub skill repository.
 ### [BioSymphony/genecluster](https://github.com/BioSymphony/genecluster)
 
 Collected GitHub skill repository.
+
+### [BioSymphony/small-molecules](https://github.com/BioSymphony/small-molecules)
+
+Agent skill for choosing open small-molecule design tools and keeping tool, model, data, and license constraints visible during long-horizon agent work. Use when an agent needs to generate makeable molecules, project a molecule into synthesizable space, design analogs, plan or check synthesis routes, score synthesizability, predict protein structures, dock ligands, co-fold protein-ligand complexes, estimate binding affinity with ML or free-energy methods, build QSAR or ADMET screens, check selectivity and off-target risk, generate molecules into a binding pocket, or compare code, weights, data, and base-model terms for tools such as PrexSyn, SynFormer, ReaSyn, SynCoGen, SynTwins, SynLlama, SyntheMol, APEX, GenMol, AiZynthFinder, ASKCOS, Syntheseus, SynPlanner, ReactionT5v2, RXNGraphormer, RetroDFM-R, DeepRetro, Synthelite, RDChiral, rxnutils, SynTemp, RetroScore, ChemDFM-R, Boltz-1, Boltz-2, Chai-1, DiffDock, Uni-Mol, AlphaFold, ColabFold, ESMFold, OpenFold, RoseTTAFold, AutoDock Vina, gnina, RxDock, OpenFE, OpenMM, Chemprop, DeepChem, Therapeutics Data Commons, ADMET-AI, ESP-Sim, the ChEMBL multitask model, REINVENT, DiffSBDD, Pocket2Mol, fpocket, P2Rank, AgentD, and CLADD.
+
+Example skill path: `SKILL.md`
 
 ### [BioSymphony/structure-factory](https://github.com/BioSymphony/structure-factory)
 

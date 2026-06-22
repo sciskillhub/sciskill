@@ -162,6 +162,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "BioSymphony/small-molecules",
+    "cloneUrl": "https://github.com/BioSymphony/small-molecules.git",
+    "localPath": "open-source/BioSymphony/small-molecules",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/BioSymphony/small-molecules",
+    "addedAt": "2026-06-22T18:13:23.477523Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "BioSymphony/structure-factory",
     "cloneUrl": "https://github.com/BioSymphony/structure-factory.git",
     "localPath": "open-source/BioSymphony/structure-factory",
