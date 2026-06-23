@@ -288,6 +288,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "HolobiomicsLab/asb-skill-collections",
+    "cloneUrl": "https://github.com/HolobiomicsLab/asb-skill-collections.git",
+    "localPath": "open-source/HolobiomicsLab/asb-skill-collections",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/HolobiomicsLab/asb-skill-collections",
+    "addedAt": "2026-06-23T17:47:27.456791Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "JiahaoZhang-Public/ProtClaw",
     "cloneUrl": "https://github.com/JiahaoZhang-Public/ProtClaw.git",
     "localPath": "open-source/JiahaoZhang-Public/ProtClaw",
@@ -495,6 +504,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "aicell-lab/bioengine",
+    "cloneUrl": "https://github.com/aicell-lab/bioengine.git",
+    "localPath": "open-source/aicell-lab/bioengine",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/aicell-lab/bioengine",
+    "addedAt": "2026-06-23T16:27:50.982714Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "aipoch/medical-research-skills",
     "cloneUrl": "https://github.com/aipoch/medical-research-skills.git",
     "localPath": "open-source/aipoch/medical-research-skills",
@@ -637,6 +655,15 @@
     "upstreamUrl": "https://github.com/eamag/papers2dataset",
     "addedAt": "2026-04-11T17:13:46.434195Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "fastfold-ai/skills",
+    "cloneUrl": "https://github.com/fastfold-ai/skills.git",
+    "localPath": "open-source/fastfold-ai/skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/fastfold-ai/skills",
+    "addedAt": "2026-06-23T17:48:04.439675Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "felipemsilva/PowerSkills",

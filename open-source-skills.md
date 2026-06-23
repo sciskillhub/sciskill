@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **107**
+Total repositories: **110**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -31,6 +31,12 @@ Collected GitHub skill repository.
 ### [Agents365-ai/target-prioritization](https://github.com/Agents365-ai/target-prioritization)
 
 Collected GitHub skill repository.
+
+### [aicell-lab/bioengine](https://github.com/aicell-lab/bioengine)
+
+Reference material for agents helping maintain the BioEngine codebase — architecture map, dev image testing workflow, cleanup rules, Hypha platform invariants, PR description style. Loaded on demand by Claude Code in addition to the always-on rules in CLAUDE.md.
+
+Example skill path: `.claude/skills/bioengine-maintainer/SKILL.md`
 
 ### [aipoch/medical-research-skills](https://github.com/aipoch/medical-research-skills)
 
@@ -110,9 +116,7 @@ Collected GitHub skill repository.
 
 ### [BioSymphony/small-molecules](https://github.com/BioSymphony/small-molecules)
 
-Agent skill for choosing open small-molecule design tools and keeping tool, model, data, and license constraints visible during long-horizon agent work. Use when an agent needs to generate makeable molecules, project a molecule into synthesizable space, design analogs, plan or check synthesis routes, score synthesizability, predict protein structures, dock ligands, co-fold protein-ligand complexes, estimate binding affinity with ML or free-energy methods, build QSAR or ADMET screens, check selectivity and off-target risk, generate molecules into a binding pocket, or compare code, weights, data, and base-model terms for tools such as PrexSyn, SynFormer, ReaSyn, SynCoGen, SynTwins, SynLlama, SyntheMol, APEX, GenMol, AiZynthFinder, ASKCOS, Syntheseus, SynPlanner, ReactionT5v2, RXNGraphormer, RetroDFM-R, DeepRetro, Synthelite, RDChiral, rxnutils, SynTemp, RetroScore, ChemDFM-R, Boltz-1, Boltz-2, Chai-1, DiffDock, Uni-Mol, AlphaFold, ColabFold, ESMFold, OpenFold, RoseTTAFold, AutoDock Vina, gnina, RxDock, OpenFE, OpenMM, Chemprop, DeepChem, Therapeutics Data Commons, ADMET-AI, ESP-Sim, the ChEMBL multitask model, REINVENT, DiffSBDD, Pocket2Mol, fpocket, P2Rank, AgentD, and CLADD.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [BioSymphony/structure-factory](https://github.com/BioSymphony/structure-factory)
 
@@ -182,6 +186,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [fastfold-ai/skills](https://github.com/fastfold-ai/skills)
+
+Run Boltz API workflows via the official `boltz-api` CLI — structure-and-binding, protein design/screen, small-molecule design/screen, ADME prediction, and job status/recovery. Use when the user wants to estimate, submit, monitor, fetch results for, stop, or recover a Boltz API job.
+
+Example skill path: `skills/boltz/SKILL.md`
+
 ### [felipemsilva/PowerSkills](https://github.com/felipemsilva/PowerSkills)
 
 Collected GitHub skill repository.
@@ -225,6 +235,12 @@ Collected GitHub skill repository.
 ### [GusWan58/dataclaw](https://github.com/GusWan58/dataclaw)
 
 Collected GitHub skill repository.
+
+### [HolobiomicsLab/asb-skill-collections](https://github.com/HolobiomicsLab/asb-skill-collections)
+
+Use when you have raw .idat files or beta-valued matrices from HumanMethylation450 (450k) arrays and need to remove low-quality probes, correct for technical artifacts (batch effects, type-2 probe bias), and normalize the data before performing differential methylation analysis or DMR detection.
+
+Example skill path: `collections/epigenomics/v1/skills/450k-array-data-processing/SKILL.md`
 
 ### [htlin222/openevidence-skill](https://github.com/htlin222/openevidence-skill)
 
