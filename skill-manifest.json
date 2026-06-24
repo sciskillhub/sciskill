@@ -900,6 +900,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "tayloranthonyanderson/haploqtl",
+    "cloneUrl": "https://github.com/tayloranthonyanderson/haploqtl.git",
+    "localPath": "open-source/tayloranthonyanderson/haploqtl",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/tayloranthonyanderson/haploqtl",
+    "addedAt": "2026-06-24T16:17:59.132895Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "teixasalone/UnrealEngine5-Skills",
     "cloneUrl": "https://github.com/teixasalone/UnrealEngine5-Skills.git",
     "localPath": "open-source/teixasalone/UnrealEngine5-Skills",

@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 134,
+  "repo_count": 135,
   "results": [
     {
       "repo": "OuroborosCollective/Wasd",
@@ -454,29 +454,37 @@
       "matches": []
     },
     {
-      "repo": "aicell-lab/bioengine",
+      "repo": "HolobiomicsLab/asb-skill-collections",
       "matched_domain_topics": [
-        "bioinformatics"
+        "bioinformatics",
+        "computational-biology"
       ],
       "matched_qualifier_topics": [
+        "agent-skills",
         "ai-agents"
       ],
       "matched_topic_pairs": [
         {
           "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
           "qualifier_topic": "ai-agents"
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/aicell-lab/bioengine.git",
-      "chosen_skill_path": ".claude/skills/bioengine-maintainer/SKILL.md",
-      "front_matter": {
-        "name": "bioengine-maintainer",
-        "description": "Reference material for agents helping maintain the BioEngine codebase — architecture map, dev image testing workflow, cleanup rules, Hypha platform invariants, PR description style. Loaded on demand by Claude Code in addition to the always-on rules in CLAUDE.md."
-      },
-      "html_url": "https://github.com/aicell-lab/bioengine",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/HolobiomicsLab/asb-skill-collections",
+      "matches": []
     },
     {
       "repo": "droftgamer-wq/researcher-skill",
@@ -530,6 +538,25 @@
       "matches": []
     },
     {
+      "repo": "aicell-lab/bioengine",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
+      "matches": []
+    },
+    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -559,80 +586,6 @@
       "matches": []
     },
     {
-      "repo": "HolobiomicsLab/asb-skill-collections",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills",
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/HolobiomicsLab/asb-skill-collections.git",
-      "chosen_skill_path": "collections/epigenomics/v1/skills/450k-array-data-processing/SKILL.md",
-      "front_matter": {
-        "name": "450k-array-data-processing",
-        "description": "Use when you have raw .idat files or beta-valued matrices from HumanMethylation450 (450k) arrays and need to remove low-quality probes, correct for technical artifacts (batch effects, type-2 probe bias), and normalize the data before performing differential methylation analysis or DMR detection.",
-        "license": "CC-BY-4.0",
-        "metadata": {
-          "edam_operation": "http://edamontology.org/operation_3238",
-          "edam_topics": [
-            "http://edamontology.org/topic_3295",
-            "http://edamontology.org/topic_0091"
-          ],
-          "tools": [
-            "ChAMP",
-            "ChAMPdata",
-            "minfi",
-            "ComBat"
-          ]
-        },
-        "derived_from": [
-          {
-            "doi": "10.1093/bioinformatics/btx513",
-            "title": "champ"
-          }
-        ],
-        "evidence_spans": [],
-        "claims": [],
-        "provenance": {
-          "collection": "https://w3id.org/holobiomicslab/asb-skill/collection/epigenomics/v1",
-          "assembled_by": "scripts/collect_metabolomics_collection.py",
-          "sources": [
-            {
-              "build": "coll_champ",
-              "doi": "10.1093/bioinformatics/btx513",
-              "title": "champ"
-            }
-          ],
-          "dedup_kept_from": "coll_champ"
-        },
-        "schema_version": "0.2.0"
-      },
-      "html_url": "https://github.com/HolobiomicsLab/asb-skill-collections",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/HolobiomicsLab/asb-skill-collections"
-    },
-    {
       "repo": "aristoteleo/PantheonOS",
       "matched_domain_topics": [
         "bioinformatics"
@@ -643,33 +596,6 @@
       "matched_topic_pairs": [
         {
           "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "ElliotXie/autozyme",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "genomics",
-        "single-cell"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "single-cell",
           "qualifier_topic": "ai-agents"
         }
       ],
@@ -744,6 +670,33 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/BioTender-max/awesome-bio-agent-skills",
       "matches": []
+    },
+    {
+      "repo": "ElliotXie/autozyme",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics",
+        "single-cell"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "single-cell",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "cyanheads/ensembl-mcp-server",
@@ -1776,6 +1729,30 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "AlterLab-IEU/AlterLab-Academic-Skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "clinical-research"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/AlterLab-IEU/AlterLab-Academic-Skills",
+      "matches": []
+    },
+    {
       "repo": "exciting-soursop787/claude-plus-plus",
       "matched_domain_topics": [
         "bioinformatics",
@@ -1828,6 +1805,41 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "tayloranthonyanderson/haploqtl",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/tayloranthonyanderson/haploqtl.git",
+      "chosen_skill_path": "skills/qtl-candidate-gene/SKILL.md",
+      "front_matter": {
+        "name": "qtl-candidate-gene",
+        "description": "Interpret a fine-mapped QTL / introgression interval in tomato. Lists candidate genes in the interval from SGN ITAG4.1 (SL4.0), enriches them with protein function from UniProt, flags marker-assisted-selection (MAS) markers whose allele tracks the resistant haplotype, and drafts a breeder-facing candidate-gene report. Use when a user has a QTL interval or introgression boundaries (SL4.0 coordinates), wants candidate or causal genes, mechanistic hypotheses, MAS/KASP markers, or wants to interpret haplotype-clustering output from haploqtl."
+      },
+      "html_url": "https://github.com/tayloranthonyanderson/haploqtl",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/tayloranthonyanderson/haploqtl"
     },
     {
       "repo": "K-Dense-AI/scientific-agent-skills",
@@ -1890,30 +1902,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
-      "matches": []
-    },
-    {
-      "repo": "AlterLab-IEU/AlterLab-Academic-Skills",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "clinical-research"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/AlterLab-IEU/AlterLab-Academic-Skills",
       "matches": []
     },
     {
@@ -2276,25 +2264,6 @@
       "matches": []
     },
     {
-      "repo": "Sapiens-ostracism678/finance-skills",
-      "matched_domain_topics": [
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sapiens-ostracism678/finance-skills",
-      "matches": []
-    },
-    {
       "repo": "zacklecon/claude-skills",
       "matched_domain_topics": [
         "clinical-research",
@@ -2324,6 +2293,25 @@
       "matches": []
     },
     {
+      "repo": "Sapiens-ostracism678/finance-skills",
+      "matched_domain_topics": [
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sapiens-ostracism678/finance-skills",
+      "matches": []
+    },
+    {
       "repo": "fastfold-ai/skills",
       "matched_domain_topics": [
         "computational-biology"
@@ -2338,15 +2326,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/fastfold-ai/skills.git",
-      "chosen_skill_path": "skills/boltz/SKILL.md",
-      "front_matter": {
-        "name": "boltz",
-        "description": "Run Boltz API workflows via the official `boltz-api` CLI — structure-and-binding, protein design/screen, small-molecule design/screen, ADME prediction, and job status/recovery. Use when the user wants to estimate, submit, monitor, fetch results for, stop, or recover a Boltz API job."
-      },
-      "html_url": "https://github.com/fastfold-ai/skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/fastfold-ai/skills"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/fastfold-ai/skills",
+      "matches": []
     },
     {
       "repo": "kimimgo/viznoir",

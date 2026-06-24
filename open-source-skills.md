@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **110**
+Total repositories: **111**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -34,9 +34,7 @@ Collected GitHub skill repository.
 
 ### [aicell-lab/bioengine](https://github.com/aicell-lab/bioengine)
 
-Reference material for agents helping maintain the BioEngine codebase — architecture map, dev image testing workflow, cleanup rules, Hypha platform invariants, PR description style. Loaded on demand by Claude Code in addition to the always-on rules in CLAUDE.md.
-
-Example skill path: `.claude/skills/bioengine-maintainer/SKILL.md`
+Collected GitHub skill repository.
 
 ### [aipoch/medical-research-skills](https://github.com/aipoch/medical-research-skills)
 
@@ -188,9 +186,7 @@ Collected GitHub skill repository.
 
 ### [fastfold-ai/skills](https://github.com/fastfold-ai/skills)
 
-Run Boltz API workflows via the official `boltz-api` CLI — structure-and-binding, protein design/screen, small-molecule design/screen, ADME prediction, and job status/recovery. Use when the user wants to estimate, submit, monitor, fetch results for, stop, or recover a Boltz API job.
-
-Example skill path: `skills/boltz/SKILL.md`
+Collected GitHub skill repository.
 
 ### [felipemsilva/PowerSkills](https://github.com/felipemsilva/PowerSkills)
 
@@ -238,9 +234,7 @@ Collected GitHub skill repository.
 
 ### [HolobiomicsLab/asb-skill-collections](https://github.com/HolobiomicsLab/asb-skill-collections)
 
-Use when you have raw .idat files or beta-valued matrices from HumanMethylation450 (450k) arrays and need to remove low-quality probes, correct for technical artifacts (batch effects, type-2 probe bias), and normalize the data before performing differential methylation analysis or DMR detection.
-
-Example skill path: `collections/epigenomics/v1/skills/450k-array-data-processing/SKILL.md`
+Collected GitHub skill repository.
 
 ### [htlin222/openevidence-skill](https://github.com/htlin222/openevidence-skill)
 
@@ -385,6 +379,12 @@ Collected GitHub skill repository.
 ### [Taison472/codex-skills](https://github.com/Taison472/codex-skills)
 
 Collected GitHub skill repository.
+
+### [tayloranthonyanderson/haploqtl](https://github.com/tayloranthonyanderson/haploqtl)
+
+Interpret a fine-mapped QTL / introgression interval in tomato. Lists candidate genes in the interval from SGN ITAG4.1 (SL4.0), enriches them with protein function from UniProt, flags marker-assisted-selection (MAS) markers whose allele tracks the resistant haplotype, and drafts a breeder-facing candidate-gene report. Use when a user has a QTL interval or introgression boundaries (SL4.0 coordinates), wants candidate or causal genes, mechanistic hypotheses, MAS/KASP markers, or wants to interpret haplotype-clustering output from haploqtl.
+
+Example skill path: `skills/qtl-candidate-gene/SKILL.md`
 
 ### [teixasalone/UnrealEngine5-Skills](https://github.com/teixasalone/UnrealEngine5-Skills)
 
