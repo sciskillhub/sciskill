@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **111**
+Total repositories: **114**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -72,6 +72,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [ArielShemesh1999/fabius](https://github.com/ArielShemesh1999/fabius)
+
+fabius's persistent-memory layer — lets the agent stop re-deriving: write what it learns into an interlinked markdown knowledge base, retrieve from it cheaply, and keep it healthy (index + log + when-to-add-vector). Use when work spans sessions, when a fact or decision is worth keeping, when the user says "remember this", when a knowledge base is growing, to set up a per-project memory or an Obsidian vault so the next session starts ahead, or whenever the agent is about to redo research it (or a past session) already did. Directory schema and page conventions live in references/memory-schema.md; the knowledge engine itself — a vector engine, the wiki pattern, and a working RAG pipeline — lives in references/knowledge/. Cross-session auto-recall (capture → compress → re-inject without being asked) and source-grounded external-corpus connectors live in references/external-recall.md.
+
+Example skill path: `skills/fabius-archivum/SKILL.md`
+
 ### [AsadJaved66/Web-Skills-Protocol](https://github.com/AsadJaved66/Web-Skills-Protocol)
 
 Collected GitHub skill repository.
@@ -79,6 +85,12 @@ Collected GitHub skill repository.
 ### [AstroReality-Li/bioinformatics-analysis-preflight](https://github.com/AstroReality-Li/bioinformatics-analysis-preflight)
 
 Collected GitHub skill repository.
+
+### [awslabs/hcls-agent-skills](https://github.com/awslabs/hcls-agent-skills)
+
+Reasoning skill for designing AWS GenAI and ML architectures for healthcare and life sciences workloads. Use when the user asks to choose between SageMaker and Bedrock, design a RAG system over medical literature, architect clinical NLP or medical imaging inference, plan genomics or drug discovery pipelines on AWS, address HIPAA/PHI compliance in ML systems, design MLOps for regulated clinical models, or optimize cost for HCLS ML workloads. Triggers include "AWS architecture", "SageMaker vs Bedrock", "HIPAA ML", "clinical RAG", "medical imaging inference", "genomics on AWS", "PHI training", "MLOps healthcare", "Bedrock guardrails", "HealthLake", "HCLS cloud architecture", "BAA compliance", "SageMaker endpoint", "Bedrock knowledge base", "clinical NLP on AWS", "FDA SaMD on AWS".
+
+Example skill path: `skills/aws-genai-ml-architect/SKILL.md`
 
 ### [bio-xyz/BioAgents](https://github.com/bio-xyz/BioAgents)
 
@@ -382,9 +394,7 @@ Collected GitHub skill repository.
 
 ### [tayloranthonyanderson/haploqtl](https://github.com/tayloranthonyanderson/haploqtl)
 
-Interpret a fine-mapped QTL / introgression interval in tomato. Lists candidate genes in the interval from SGN ITAG4.1 (SL4.0), enriches them with protein function from UniProt, flags marker-assisted-selection (MAS) markers whose allele tracks the resistant haplotype, and drafts a breeder-facing candidate-gene report. Use when a user has a QTL interval or introgression boundaries (SL4.0 coordinates), wants candidate or causal genes, mechanistic hypotheses, MAS/KASP markers, or wants to interpret haplotype-clustering output from haploqtl.
-
-Example skill path: `skills/qtl-candidate-gene/SKILL.md`
+Collected GitHub skill repository.
 
 ### [teixasalone/UnrealEngine5-Skills](https://github.com/teixasalone/UnrealEngine5-Skills)
 
@@ -417,6 +427,12 @@ Collected GitHub skill repository.
 ### [VILA-Lab/FigMirror](https://github.com/VILA-Lab/FigMirror)
 
 Collected GitHub skill repository.
+
+### [vsff6/bioagent-genomics](https://github.com/vsff6/bioagent-genomics)
+
+Plans nf-core pipeline runs using tools/nfcore_launcher.py. Generates samplesheets, validates preflight requirements, and writes provenance records. Default is dry-run — never executes without explicit --run flag and passing preflight.
+
+Example skill path: `.claude/skills/nfcore-orchestration/SKILL.md`
 
 ### [wenmin-wu/ds-skills](https://github.com/wenmin-wu/ds-skills)
 

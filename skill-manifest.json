@@ -81,6 +81,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "ArielShemesh1999/fabius",
+    "cloneUrl": "https://github.com/ArielShemesh1999/fabius.git",
+    "localPath": "open-source/ArielShemesh1999/fabius",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/ArielShemesh1999/fabius",
+    "addedAt": "2026-06-25T16:24:14.071641Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "AsadJaved66/Web-Skills-Protocol",
     "cloneUrl": "https://github.com/AsadJaved66/Web-Skills-Protocol.git",
     "localPath": "open-source/AsadJaved66/Web-Skills-Protocol",
@@ -567,6 +576,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "awslabs/hcls-agent-skills",
+    "cloneUrl": "https://github.com/awslabs/hcls-agent-skills.git",
+    "localPath": "open-source/awslabs/hcls-agent-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/awslabs/hcls-agent-skills",
+    "addedAt": "2026-06-25T16:25:11.023255Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "bio-xyz/BioAgents",
     "cloneUrl": "https://github.com/bio-xyz/BioAgents.git",
     "localPath": "open-source/bio-xyz/BioAgents",
@@ -943,6 +961,15 @@
     "upstreamUrl": "https://github.com/unexplained-familyephedraceae871/openclaw-skill",
     "addedAt": "2026-04-11T17:13:46.388699Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "vsff6/bioagent-genomics",
+    "cloneUrl": "https://github.com/vsff6/bioagent-genomics.git",
+    "localPath": "open-source/vsff6/bioagent-genomics",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/vsff6/bioagent-genomics",
+    "addedAt": "2026-06-25T16:24:34.260099Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "wenmin-wu/ds-skills",
