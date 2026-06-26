@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 138,
+  "repo_count": 137,
   "results": [
     {
       "repo": "OuroborosCollective/Wasd",
@@ -44,31 +44,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "ArielShemesh1999/fabius",
-      "matched_domain_topics": [
-        "science"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/ArielShemesh1999/fabius.git",
-      "chosen_skill_path": "skills/fabius-archivum/SKILL.md",
-      "front_matter": {
-        "name": "fabius-archivum",
-        "description": "fabius's persistent-memory layer — lets the agent stop re-deriving: write what it learns into an interlinked markdown knowledge base, retrieve from it cheaply, and keep it healthy (index + log + when-to-add-vector). Use when work spans sessions, when a fact or decision is worth keeping, when the user says \"remember this\", when a knowledge base is growing, to set up a per-project memory or an Obsidian vault so the next session starts ahead, or whenever the agent is about to redo research it (or a past session) already did. Directory schema and page conventions live in references/memory-schema.md; the knowledge engine itself — a vector engine, the wiki pattern, and a working RAG pipeline — lives in references/knowledge/. Cross-session auto-recall (capture → compress → re-inject without being asked) and source-grounded external-corpus connectors live in references/external-recall.md."
-      },
-      "html_url": "https://github.com/ArielShemesh1999/fabius",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ArielShemesh1999/fabius"
     },
     {
       "repo": "mareforma/mareforma",
@@ -549,23 +524,6 @@
       "matches": []
     },
     {
-      "repo": "aristoteleo/PantheonOS",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -593,6 +551,23 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
       "matches": []
+    },
+    {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "vsff6/bioagent-genomics",
@@ -624,15 +599,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/vsff6/bioagent-genomics.git",
-      "chosen_skill_path": ".claude/skills/nfcore-orchestration/SKILL.md",
-      "front_matter": {
-        "name": "nfcore-orchestration",
-        "description": "Plans nf-core pipeline runs using tools/nfcore_launcher.py. Generates samplesheets, validates preflight requirements, and writes provenance records. Default is dry-run — never executes without explicit --run flag and passing preflight."
-      },
-      "html_url": "https://github.com/vsff6/bioagent-genomics",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/vsff6/bioagent-genomics"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/vsff6/bioagent-genomics",
+      "matches": []
     },
     {
       "repo": "HolobiomicsLab/asb-skill-collections",
@@ -1794,10 +1763,11 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "sparzinhogames-hash/awesome-scientific-ai-tools",
+      "repo": "tayloranthonyanderson/haploqtl",
       "matched_domain_topics": [
         "bioinformatics",
-        "drug-discovery"
+        "computational-biology",
+        "genomics"
       ],
       "matched_qualifier_topics": [
         "agent-skills"
@@ -1808,12 +1778,18 @@
           "qualifier_topic": "agent-skills"
         },
         {
-          "domain_topic": "drug-discovery",
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
           "qualifier_topic": "agent-skills"
         }
       ],
       "matched_topics": [],
-      "status": "no_valid_skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/tayloranthonyanderson/haploqtl",
+      "matches": []
     },
     {
       "repo": "exciting-soursop787/claude-plus-plus",
@@ -1848,6 +1824,28 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "sparzinhogames-hash/awesome-scientific-ai-tools",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "AlterLab-IEU/AlterLab-Academic-Skills",
       "matched_domain_topics": [
         "bioinformatics",
@@ -1869,35 +1867,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/AlterLab-IEU/AlterLab-Academic-Skills",
-      "matches": []
-    },
-    {
-      "repo": "tayloranthonyanderson/haploqtl",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/tayloranthonyanderson/haploqtl",
       "matches": []
     },
     {
@@ -2158,27 +2127,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/awslabs/hcls-agent-skills.git",
-      "chosen_skill_path": "skills/aws-genai-ml-architect/SKILL.md",
-      "front_matter": {
-        "name": "aws-genai-ml-architect",
-        "description": "Reasoning skill for designing AWS GenAI and ML architectures for healthcare and life sciences workloads. Use when the user asks to choose between SageMaker and Bedrock, design a RAG system over medical literature, architect clinical NLP or medical imaging inference, plan genomics or drug discovery pipelines on AWS, address HIPAA/PHI compliance in ML systems, design MLOps for regulated clinical models, or optimize cost for HCLS ML workloads. Triggers include \"AWS architecture\", \"SageMaker vs Bedrock\", \"HIPAA ML\", \"clinical RAG\", \"medical imaging inference\", \"genomics on AWS\", \"PHI training\", \"MLOps healthcare\", \"Bedrock guardrails\", \"HealthLake\", \"HCLS cloud architecture\", \"BAA compliance\", \"SageMaker endpoint\", \"Bedrock knowledge base\", \"clinical NLP on AWS\", \"FDA SaMD on AWS\".",
-        "usage": "Invoke when designing AWS GenAI/ML architectures for HCLS workloads, choosing between SageMaker and Bedrock, or addressing HIPAA compliance.",
-        "version": "1.0.0",
-        "tags": [
-          "skill",
-          "category:reasoning",
-          "aws",
-          "sagemaker",
-          "bedrock",
-          "architecture",
-          "hcls",
-          "genai"
-        ]
-      },
-      "html_url": "https://github.com/awslabs/hcls-agent-skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/awslabs/hcls-agent-skills"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/awslabs/hcls-agent-skills",
+      "matches": []
     },
     {
       "repo": "Eldergenix/Eldergenix",

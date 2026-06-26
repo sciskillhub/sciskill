@@ -74,9 +74,7 @@ Collected GitHub skill repository.
 
 ### [ArielShemesh1999/fabius](https://github.com/ArielShemesh1999/fabius)
 
-fabius's persistent-memory layer — lets the agent stop re-deriving: write what it learns into an interlinked markdown knowledge base, retrieve from it cheaply, and keep it healthy (index + log + when-to-add-vector). Use when work spans sessions, when a fact or decision is worth keeping, when the user says "remember this", when a knowledge base is growing, to set up a per-project memory or an Obsidian vault so the next session starts ahead, or whenever the agent is about to redo research it (or a past session) already did. Directory schema and page conventions live in references/memory-schema.md; the knowledge engine itself — a vector engine, the wiki pattern, and a working RAG pipeline — lives in references/knowledge/. Cross-session auto-recall (capture → compress → re-inject without being asked) and source-grounded external-corpus connectors live in references/external-recall.md.
-
-Example skill path: `skills/fabius-archivum/SKILL.md`
+Collected GitHub skill repository.
 
 ### [AsadJaved66/Web-Skills-Protocol](https://github.com/AsadJaved66/Web-Skills-Protocol)
 
@@ -88,9 +86,7 @@ Collected GitHub skill repository.
 
 ### [awslabs/hcls-agent-skills](https://github.com/awslabs/hcls-agent-skills)
 
-Reasoning skill for designing AWS GenAI and ML architectures for healthcare and life sciences workloads. Use when the user asks to choose between SageMaker and Bedrock, design a RAG system over medical literature, architect clinical NLP or medical imaging inference, plan genomics or drug discovery pipelines on AWS, address HIPAA/PHI compliance in ML systems, design MLOps for regulated clinical models, or optimize cost for HCLS ML workloads. Triggers include "AWS architecture", "SageMaker vs Bedrock", "HIPAA ML", "clinical RAG", "medical imaging inference", "genomics on AWS", "PHI training", "MLOps healthcare", "Bedrock guardrails", "HealthLake", "HCLS cloud architecture", "BAA compliance", "SageMaker endpoint", "Bedrock knowledge base", "clinical NLP on AWS", "FDA SaMD on AWS".
-
-Example skill path: `skills/aws-genai-ml-architect/SKILL.md`
+Collected GitHub skill repository.
 
 ### [bio-xyz/BioAgents](https://github.com/bio-xyz/BioAgents)
 
@@ -430,9 +426,7 @@ Collected GitHub skill repository.
 
 ### [vsff6/bioagent-genomics](https://github.com/vsff6/bioagent-genomics)
 
-Plans nf-core pipeline runs using tools/nfcore_launcher.py. Generates samplesheets, validates preflight requirements, and writes provenance records. Default is dry-run — never executes without explicit --run flag and passing preflight.
-
-Example skill path: `.claude/skills/nfcore-orchestration/SKILL.md`
+Collected GitHub skill repository.
 
 ### [wenmin-wu/ds-skills](https://github.com/wenmin-wu/ds-skills)
 
