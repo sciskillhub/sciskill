@@ -234,6 +234,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "Curtisflo/karyon",
+    "cloneUrl": "https://github.com/Curtisflo/karyon.git",
+    "localPath": "open-source/Curtisflo/karyon",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Curtisflo/karyon",
+    "addedAt": "2026-06-27T15:15:50.296393Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "DrugClaw/DrugClaw",
     "cloneUrl": "https://github.com/DrugClaw/DrugClaw.git",
     "localPath": "open-source/DrugClaw/DrugClaw",
@@ -483,6 +492,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/VILA-Lab/FigMirror",
     "addedAt": "2026-05-23T15:00:06.562752Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "Xroft12/RedNet-Airin-skillbook-public",
+    "cloneUrl": "https://github.com/Xroft12/RedNet-Airin-skillbook-public.git",
+    "localPath": "open-source/Xroft12/RedNet-Airin-skillbook-public",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Xroft12/RedNet-Airin-skillbook-public",
+    "addedAt": "2026-06-27T15:15:12.524906Z",
     "addedBy": "github-actions"
   },
   {

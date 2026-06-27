@@ -26,8 +26,57 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 137,
+  "repo_count": 139,
   "results": [
+    {
+      "repo": "Xroft12/RedNet-Airin-skillbook-public",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/Xroft12/RedNet-Airin-skillbook-public.git",
+      "chosen_skill_path": "skills/rednet-meta/rednet-beseda/SKILL.md",
+      "front_matter": {
+        "name": "rednet-beseda",
+        "description": "Использовать для режима внимательной беседы: редкие сильные вопросы, собственная позиция, скрытые критерии и бережное уточнение смысла без остановки работы.",
+        "version": "0.1.0",
+        "author": "RedNET / Airin",
+        "license": "MIT",
+        "platforms": [
+          "linux",
+          "macos",
+          "windows"
+        ],
+        "metadata": {
+          "hermes": {
+            "tags": [
+              "rednet",
+              "meta-skill",
+              "dialogue",
+              "care"
+            ],
+            "modes": [
+              false,
+              "observe",
+              "dialogue",
+              "hold"
+            ]
+          }
+        }
+      },
+      "html_url": "https://github.com/Xroft12/RedNet-Airin-skillbook-public",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Xroft12/RedNet-Airin-skillbook-public"
+    },
     {
       "repo": "OuroborosCollective/Wasd",
       "matched_domain_topics": [
@@ -505,25 +554,6 @@
       "matches": []
     },
     {
-      "repo": "aicell-lab/bioengine",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
-      "matches": []
-    },
-    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -553,29 +583,10 @@
       "matches": []
     },
     {
-      "repo": "aristoteleo/PantheonOS",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "vsff6/bioagent-genomics",
+      "repo": "jvogan/proteus",
       "matched_domain_topics": [
         "bioinformatics",
-        "computational-biology",
-        "genomics",
-        "single-cell"
+        "computational-biology"
       ],
       "matched_qualifier_topics": [
         "ai-agents"
@@ -588,19 +599,11 @@
         {
           "domain_topic": "computational-biology",
           "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "single-cell",
-          "qualifier_topic": "ai-agents"
         }
       ],
       "matched_topics": [],
       "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/vsff6/bioagent-genomics",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/jvogan/proteus",
       "matches": []
     },
     {
@@ -634,6 +637,76 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/HolobiomicsLab/asb-skill-collections",
+      "matches": []
+    },
+    {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "aicell-lab/bioengine",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
+      "matches": []
+    },
+    {
+      "repo": "vsff6/bioagent-genomics",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "genomics",
+        "single-cell"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "single-cell",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/vsff6/bioagent-genomics",
       "matches": []
     },
     {
@@ -1046,30 +1119,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/qchiujunhao/galaxy-cli",
-      "matches": []
-    },
-    {
-      "repo": "jvogan/proteus",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/jvogan/proteus",
       "matches": []
     },
     {
@@ -1763,35 +1812,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "tayloranthonyanderson/haploqtl",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/tayloranthonyanderson/haploqtl",
-      "matches": []
-    },
-    {
       "repo": "exciting-soursop787/claude-plus-plus",
       "matched_domain_topics": [
         "bioinformatics",
@@ -1844,6 +1864,73 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "Curtisflo/karyon",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/Curtisflo/karyon.git",
+      "chosen_skill_path": "skills/benchmark-leakage/SKILL.md",
+      "front_matter": {
+        "name": "benchmark-leakage",
+        "description": "Audit an ML benchmark for data leakage with karyon — measure how much a reported accuracy is inflated by train/test contamination. Use for leakage detection, data-leakage audit, scaffold leakage, template memorization, random-vs-scaffold split inflation, retrosynthesis or molecular-property benchmark honesty, or deciding whether a model's headline number is real.\n",
+        "license": "Apache-2.0 AND CC-BY-4.0",
+        "compatibility": "karyon[chem] (rdkit, rdchiral)",
+        "allowed-tools": "Bash, Read, Write"
+      },
+      "html_url": "https://github.com/Curtisflo/karyon",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Curtisflo/karyon"
+    },
+    {
+      "repo": "tayloranthonyanderson/haploqtl",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/tayloranthonyanderson/haploqtl",
+      "matches": []
     },
     {
       "repo": "AlterLab-IEU/AlterLab-Academic-Skills",
@@ -2272,7 +2359,7 @@
       "matches": []
     },
     {
-      "repo": "ScottsSecondAct/olang",
+      "repo": "jvogan/biovoice",
       "matched_domain_topics": [
         "computational-biology"
       ],
@@ -2289,7 +2376,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "jvogan/biovoice",
+      "repo": "ScottsSecondAct/olang",
       "matched_domain_topics": [
         "computational-biology"
       ],

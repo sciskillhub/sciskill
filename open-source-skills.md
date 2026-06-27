@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **114**
+Total repositories: **116**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -159,6 +159,12 @@ Collected GitHub skill repository.
 ### [connerlambden/bgpt-mcp](https://github.com/connerlambden/bgpt-mcp)
 
 Collected GitHub skill repository.
+
+### [Curtisflo/karyon](https://github.com/Curtisflo/karyon)
+
+Audit an ML benchmark for data leakage with karyon — measure how much a reported accuracy is inflated by train/test contamination. Use for leakage detection, data-leakage audit, scaffold leakage, template memorization, random-vs-scaffold split inflation, retrosynthesis or molecular-property benchmark honesty, or deciding whether a model's headline number is real.
+
+Example skill path: `skills/benchmark-leakage/SKILL.md`
 
 ### [cyanheads/ensembl-mcp-server](https://github.com/cyanheads/ensembl-mcp-server)
 
@@ -435,6 +441,12 @@ Collected GitHub skill repository.
 ### [wtfhanin/Enhance-Prompt](https://github.com/wtfhanin/Enhance-Prompt)
 
 Collected GitHub skill repository.
+
+### [Xroft12/RedNet-Airin-skillbook-public](https://github.com/Xroft12/RedNet-Airin-skillbook-public)
+
+Использовать для режима внимательной беседы: редкие сильные вопросы, собственная позиция, скрытые критерии и бережное уточнение смысла без остановки работы.
+
+Example skill path: `skills/rednet-meta/rednet-beseda/SKILL.md`
 
 ### [YTItsfrost/cypress-agent-skill](https://github.com/YTItsfrost/cypress-agent-skill)
 
