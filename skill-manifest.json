@@ -909,6 +909,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "qchiujunhao/labcoat",
+    "cloneUrl": "https://github.com/qchiujunhao/labcoat.git",
+    "localPath": "open-source/qchiujunhao/labcoat",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/qchiujunhao/labcoat",
+    "addedAt": "2026-06-28T15:17:36.635249Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "realactivity/tula",
     "cloneUrl": "https://github.com/realactivity/tula.git",
     "localPath": "open-source/realactivity/tula",
