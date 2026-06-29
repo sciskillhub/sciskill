@@ -354,9 +354,7 @@ Collected GitHub skill repository.
 
 ### [qchiujunhao/labcoat](https://github.com/qchiujunhao/labcoat)
 
-General Labcoat router for biomedical, bioinformatics, omics, clinical-adjacent research software, gene, variant, disease, drug, protein, cell type, tissue, or pathway claims. Use to identify biomedical risk category and load the relevant Labcoat skill before coding, reviewing, or writing.
-
-Example skill path: `skills/labcoat-biomedical-discipline/SKILL.md`
+Collected GitHub skill repository.
 
 ### [realactivity/tula](https://github.com/realactivity/tula)
 
