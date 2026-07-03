@@ -891,6 +891,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "phlex89/biotech-ai",
+    "cloneUrl": "https://github.com/phlex89/biotech-ai.git",
+    "localPath": "open-source/phlex89/biotech-ai",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/phlex89/biotech-ai",
+    "addedAt": "2026-07-03T15:53:46.554673Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "pswider/tula",
     "cloneUrl": "https://github.com/pswider/tula.git",
     "localPath": "open-source/pswider/tula",
@@ -943,6 +952,15 @@
     "upstreamUrl": "https://github.com/sethikasithum/skill-generator",
     "addedAt": "2026-04-11T17:13:45.447681Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "sounkou-bioinfo/pi-bio-agent",
+    "cloneUrl": "https://github.com/sounkou-bioinfo/pi-bio-agent.git",
+    "localPath": "open-source/sounkou-bioinfo/pi-bio-agent",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/sounkou-bioinfo/pi-bio-agent",
+    "addedAt": "2026-07-03T15:54:02.166395Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "tayloranthonyanderson/haploqtl",

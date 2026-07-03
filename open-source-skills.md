@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **117**
+Total repositories: **119**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -344,6 +344,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [phlex89/biotech-ai](https://github.com/phlex89/biotech-ai)
+
+Find, filter, and rank biotechnology, biomedical research, postdoc, faculty, industry, fellowship, grant, travel-award, and company opportunities using current official sources. Use this skill whenever the user asks for jobs, grants, fellowships, funding, calls, deadlines, eligibility checks, or opportunity shortlists.
+
+Example skill path: `skills/career-grants-scout/SKILL.md`
+
 ### [pswider/tula](https://github.com/pswider/tula)
 
 Collected GitHub skill repository.
@@ -387,6 +393,12 @@ Collected GitHub skill repository.
 ### [Sibyl-Research-Team/AutoResearch-SibylSystem](https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem)
 
 Collected GitHub skill repository.
+
+### [sounkou-bioinfo/pi-bio-agent](https://github.com/sounkou-bioinfo/pi-bio-agent)
+
+Guides design and use of pi-bio-agent abstractions: SQL-first bio primitives, ontology and knowledge-graph modeling, DuckDB extension substrates, capability discovery, and project-local skill authoring. Use when building agentic bio/genomics workflows over Pi.
+
+Example skill path: `skills/pi-bio-agent/SKILL.md`
 
 ### [SURFLIN2030/swing-skills](https://github.com/SURFLIN2030/swing-skills)
 
