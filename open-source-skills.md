@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **119**
+Total repositories: **120**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -346,9 +346,7 @@ Collected GitHub skill repository.
 
 ### [phlex89/biotech-ai](https://github.com/phlex89/biotech-ai)
 
-Find, filter, and rank biotechnology, biomedical research, postdoc, faculty, industry, fellowship, grant, travel-award, and company opportunities using current official sources. Use this skill whenever the user asks for jobs, grants, fellowships, funding, calls, deadlines, eligibility checks, or opportunity shortlists.
-
-Example skill path: `skills/career-grants-scout/SKILL.md`
+Collected GitHub skill repository.
 
 ### [pswider/tula](https://github.com/pswider/tula)
 
@@ -396,9 +394,7 @@ Collected GitHub skill repository.
 
 ### [sounkou-bioinfo/pi-bio-agent](https://github.com/sounkou-bioinfo/pi-bio-agent)
 
-Guides design and use of pi-bio-agent abstractions: SQL-first bio primitives, ontology and knowledge-graph modeling, DuckDB extension substrates, capability discovery, and project-local skill authoring. Use when building agentic bio/genomics workflows over Pi.
-
-Example skill path: `skills/pi-bio-agent/SKILL.md`
+Collected GitHub skill repository.
 
 ### [SURFLIN2030/swing-skills](https://github.com/SURFLIN2030/swing-skills)
 
@@ -475,6 +471,12 @@ Collected GitHub skill repository.
 ### [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides)
 
 Collected GitHub skill repository.
+
+### [zhoy0409-debug/scholarflow-skills](https://github.com/zhoy0409-debug/scholarflow-skills)
+
+Route academic paper outlining, drafting, abstract writing, revision, citation formatting, AI disclosure, LaTeX/DOCX/PDF formatting guidance, and manuscript improvement to PaperSpine, Nature writing, citation, and integrity workflows.
+
+Example skill path: `skills/academic-paper/SKILL.md`
 
 ### [zinxj/uikit-expert-skill](https://github.com/zinxj/uikit-expert-skill)
 

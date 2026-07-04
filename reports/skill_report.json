@@ -26,10 +26,10 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 143,
+  "repo_count": 144,
   "results": [
     {
-      "repo": "GTC2080/DeepSeek_Science",
+      "repo": "OuroborosCollective/Wasd",
       "matched_domain_topics": [
         "science"
       ],
@@ -46,7 +46,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "OuroborosCollective/Wasd",
+      "repo": "GTC2080/DeepSeek_Science",
       "matched_domain_topics": [
         "science"
       ],
@@ -91,15 +91,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/phlex89/biotech-ai.git",
-      "chosen_skill_path": "skills/career-grants-scout/SKILL.md",
-      "front_matter": {
-        "name": "career-grants-scout",
-        "description": "Find, filter, and rank biotechnology, biomedical research, postdoc, faculty, industry, fellowship, grant, travel-award, and company opportunities using current official sources. Use this skill whenever the user asks for jobs, grants, fellowships, funding, calls, deadlines, eligibility checks, or opportunity shortlists."
-      },
-      "html_url": "https://github.com/phlex89/biotech-ai",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/phlex89/biotech-ai"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/phlex89/biotech-ai",
+      "matches": []
     },
     {
       "repo": "connerlambden/bgpt-mcp",
@@ -529,7 +523,7 @@
       "matches": []
     },
     {
-      "repo": "cyanheads/ensembl-mcp-server",
+      "repo": "sounkou-bioinfo/pi-bio-agent",
       "matched_domain_topics": [
         "bioinformatics",
         "genomics"
@@ -549,7 +543,7 @@
       ],
       "matched_topics": [],
       "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/ensembl-mcp-server",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/sounkou-bioinfo/pi-bio-agent",
       "matches": []
     },
     {
@@ -604,25 +598,6 @@
       "matches": []
     },
     {
-      "repo": "aicell-lab/bioengine",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
-      "matches": []
-    },
-    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -652,24 +627,7 @@
       "matches": []
     },
     {
-      "repo": "genecell/stato",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "sounkou-bioinfo/pi-bio-agent",
+      "repo": "cyanheads/ensembl-mcp-server",
       "matched_domain_topics": [
         "bioinformatics",
         "genomics"
@@ -688,15 +646,45 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/sounkou-bioinfo/pi-bio-agent.git",
-      "chosen_skill_path": "skills/pi-bio-agent/SKILL.md",
-      "front_matter": {
-        "name": "pi-bio-agent",
-        "description": "Guides design and use of pi-bio-agent abstractions: SQL-first bio primitives, ontology and knowledge-graph modeling, DuckDB extension substrates, capability discovery, and project-local skill authoring. Use when building agentic bio/genomics workflows over Pi."
-      },
-      "html_url": "https://github.com/sounkou-bioinfo/pi-bio-agent",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/sounkou-bioinfo/pi-bio-agent"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/ensembl-mcp-server",
+      "matches": []
+    },
+    {
+      "repo": "aicell-lab/bioengine",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
+      "matches": []
+    },
+    {
+      "repo": "genecell/stato",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "MarbuelB/AI-Forge-Research-Edition",
@@ -1946,6 +1934,50 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "zhoy0409-debug/scholarflow-skills",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/zhoy0409-debug/scholarflow-skills.git",
+      "chosen_skill_path": "skills/academic-paper/SKILL.md",
+      "front_matter": {
+        "name": "academic-paper",
+        "description": "Route academic paper outlining, drafting, abstract writing, revision, citation formatting, AI disclosure, LaTeX/DOCX/PDF formatting guidance, and manuscript improvement to PaperSpine, Nature writing, citation, and integrity workflows."
+      },
+      "html_url": "https://github.com/zhoy0409-debug/scholarflow-skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/zhoy0409-debug/scholarflow-skills"
+    },
+    {
+      "repo": "Pavel-Kravchenko/Bioinformatics",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Pavel-Kravchenko/Bioinformatics",
+      "matches": []
+    },
+    {
       "repo": "AlterLab-IEU/AlterLab-Academic-Skills",
       "matched_domain_topics": [
         "bioinformatics",
@@ -2199,25 +2231,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/Agents365-ai/seurat-skill",
-      "matches": []
-    },
-    {
-      "repo": "Pavel-Kravchenko/Bioinformatics",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Pavel-Kravchenko/Bioinformatics",
       "matches": []
     },
     {
