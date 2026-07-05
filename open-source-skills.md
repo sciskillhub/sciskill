@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **120**
+Total repositories: **122**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -360,6 +360,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [r-ruser/epi-skill](https://github.com/r-ruser/epi-skill)
+
+Research methodology skill for epidemiology, biostatistics, clinical or medical statistics, bioinformatics methods, causal inference, prediction/diagnostic studies, survival/regression modeling, meta-analysis, and manuscript methods auditing. Use when designing, critiquing, analyzing, or reporting biomedical studies; choosing study design or statistical models; controlling confounding and bias; planning sensitivity analyses; reviewing missing data, measurement validity, effect estimates, or reviewer-facing methods/results.
+
+Example skill path: `epi-skill/SKILL.md`
+
 ### [realactivity/tula](https://github.com/realactivity/tula)
 
 Collected GitHub skill repository.
@@ -456,6 +462,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [yojiro253-del/BioForge](https://github.com/yojiro253-del/BioForge)
+
+Search academic literature (Semantic Scholar) for synbio/microbiology papers, returning a ranked, citable list to feed into paper-extractor.
+
+Example skill path: `skills/literature-search/SKILL.md`
+
 ### [YTItsfrost/cypress-agent-skill](https://github.com/YTItsfrost/cypress-agent-skill)
 
 Collected GitHub skill repository.
@@ -474,9 +486,7 @@ Collected GitHub skill repository.
 
 ### [zhoy0409-debug/scholarflow-skills](https://github.com/zhoy0409-debug/scholarflow-skills)
 
-Route academic paper outlining, drafting, abstract writing, revision, citation formatting, AI disclosure, LaTeX/DOCX/PDF formatting guidance, and manuscript improvement to PaperSpine, Nature writing, citation, and integrity workflows.
-
-Example skill path: `skills/academic-paper/SKILL.md`
+Collected GitHub skill repository.
 
 ### [zinxj/uikit-expert-skill](https://github.com/zinxj/uikit-expert-skill)
 

@@ -927,6 +927,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "r-ruser/epi-skill",
+    "cloneUrl": "https://github.com/r-ruser/epi-skill.git",
+    "localPath": "open-source/r-ruser/epi-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/r-ruser/epi-skill",
+    "addedAt": "2026-07-05T15:13:08.494741Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "realactivity/tula",
     "cloneUrl": "https://github.com/realactivity/tula.git",
     "localPath": "open-source/realactivity/tula",
@@ -1033,6 +1042,15 @@
     "upstreamUrl": "https://github.com/wtfhanin/Enhance-Prompt",
     "addedAt": "2026-04-11T17:13:45.394075Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "yojiro253-del/BioForge",
+    "cloneUrl": "https://github.com/yojiro253-del/BioForge.git",
+    "localPath": "open-source/yojiro253-del/BioForge",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/yojiro253-del/BioForge",
+    "addedAt": "2026-07-05T15:12:42.161035Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "zacklecon/claude-skills",

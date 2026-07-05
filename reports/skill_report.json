@@ -26,8 +26,25 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 144,
+  "repo_count": 146,
   "results": [
+    {
+      "repo": "K-Dense-AI/scientific-agents",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
     {
       "repo": "OuroborosCollective/Wasd",
       "matched_domain_topics": [
@@ -154,23 +171,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/Xroft12/RedNet-Airin-skillbook-public",
       "matches": []
-    },
-    {
-      "repo": "K-Dense-AI/scientific-agents",
-      "matched_domain_topics": [
-        "science"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "ULudo/ClawReview",
@@ -523,30 +523,6 @@
       "matches": []
     },
     {
-      "repo": "sounkou-bioinfo/pi-bio-agent",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/sounkou-bioinfo/pi-bio-agent",
-      "matches": []
-    },
-    {
       "repo": "droftgamer-wq/researcher-skill",
       "matched_domain_topics": [
         "bioinformatics",
@@ -624,6 +600,30 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
+      "matches": []
+    },
+    {
+      "repo": "sounkou-bioinfo/pi-bio-agent",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/sounkou-bioinfo/pi-bio-agent",
       "matches": []
     },
     {
@@ -1101,30 +1101,6 @@
       "matches": []
     },
     {
-      "repo": "qchiujunhao/labcoat",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills",
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/qchiujunhao/labcoat",
-      "matches": []
-    },
-    {
       "repo": "HolobiomicsLab/asb-skill-collections",
       "matched_domain_topics": [
         "bioinformatics",
@@ -1155,6 +1131,30 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/HolobiomicsLab/asb-skill-collections",
+      "matches": []
+    },
+    {
+      "repo": "qchiujunhao/labcoat",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/qchiujunhao/labcoat",
       "matches": []
     },
     {
@@ -1880,6 +1880,38 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "yojiro253-del/BioForge",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/yojiro253-del/BioForge.git",
+      "chosen_skill_path": "skills/literature-search/SKILL.md",
+      "front_matter": {
+        "name": "literature-search",
+        "description": "Search academic literature (Semantic Scholar) for synbio/microbiology papers, returning a ranked, citable list to feed into paper-extractor.",
+        "tags": [
+          "synthetic-biology",
+          "bioinformatics",
+          "igem",
+          "research",
+          "literature"
+        ]
+      },
+      "html_url": "https://github.com/yojiro253-del/BioForge",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/yojiro253-del/BioForge"
+    },
+    {
       "repo": "exciting-soursop787/claude-plus-plus",
       "matched_domain_topics": [
         "bioinformatics",
@@ -1934,6 +1966,25 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "FridrichMethod/awesome-skills",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
+      "matches": []
+    },
+    {
       "repo": "zhoy0409-debug/scholarflow-skills",
       "matched_domain_topics": [
         "bioinformatics"
@@ -1948,57 +1999,8 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/zhoy0409-debug/scholarflow-skills.git",
-      "chosen_skill_path": "skills/academic-paper/SKILL.md",
-      "front_matter": {
-        "name": "academic-paper",
-        "description": "Route academic paper outlining, drafting, abstract writing, revision, citation formatting, AI disclosure, LaTeX/DOCX/PDF formatting guidance, and manuscript improvement to PaperSpine, Nature writing, citation, and integrity workflows."
-      },
-      "html_url": "https://github.com/zhoy0409-debug/scholarflow-skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/zhoy0409-debug/scholarflow-skills"
-    },
-    {
-      "repo": "Pavel-Kravchenko/Bioinformatics",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
       "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Pavel-Kravchenko/Bioinformatics",
-      "matches": []
-    },
-    {
-      "repo": "AlterLab-IEU/AlterLab-Academic-Skills",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "clinical-research"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/AlterLab-IEU/AlterLab-Academic-Skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/zhoy0409-debug/scholarflow-skills",
       "matches": []
     },
     {
@@ -2043,6 +2045,49 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
+      "matches": []
+    },
+    {
+      "repo": "Pavel-Kravchenko/Bioinformatics",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Pavel-Kravchenko/Bioinformatics",
+      "matches": []
+    },
+    {
+      "repo": "AlterLab-IEU/AlterLab-Academic-Skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "clinical-research"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/AlterLab-IEU/AlterLab-Academic-Skills",
       "matches": []
     },
     {
@@ -2101,25 +2146,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/tayloranthonyanderson/haploqtl",
-      "matches": []
-    },
-    {
-      "repo": "FridrichMethod/awesome-skills",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
       "matches": []
     },
     {
@@ -2931,6 +2957,31 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/Aperivue/medsci-skills",
       "matches": []
+    },
+    {
+      "repo": "r-ruser/epi-skill",
+      "matched_domain_topics": [
+        "clinical-research"
+      ],
+      "matched_qualifier_topics": [
+        "ai-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "ai-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/r-ruser/epi-skill.git",
+      "chosen_skill_path": "epi-skill/SKILL.md",
+      "front_matter": {
+        "name": "epi-skill",
+        "description": "Research methodology skill for epidemiology, biostatistics, clinical or medical statistics, bioinformatics methods, causal inference, prediction/diagnostic studies, survival/regression modeling, meta-analysis, and manuscript methods auditing. Use when designing, critiquing, analyzing, or reporting biomedical studies; choosing study design or statistical models; controlling confounding and bias; planning sensitivity analyses; reviewing missing data, measurement validity, effect estimates, or reviewer-facing methods/results."
+      },
+      "html_url": "https://github.com/r-ruser/epi-skill",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/r-ruser/epi-skill"
     },
     {
       "repo": "unexplained-familyephedraceae871/openclaw-skill",
