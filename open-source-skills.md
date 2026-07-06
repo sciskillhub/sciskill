@@ -362,9 +362,7 @@ Collected GitHub skill repository.
 
 ### [r-ruser/epi-skill](https://github.com/r-ruser/epi-skill)
 
-Research methodology skill for epidemiology, biostatistics, clinical or medical statistics, bioinformatics methods, causal inference, prediction/diagnostic studies, survival/regression modeling, meta-analysis, and manuscript methods auditing. Use when designing, critiquing, analyzing, or reporting biomedical studies; choosing study design or statistical models; controlling confounding and bias; planning sensitivity analyses; reviewing missing data, measurement validity, effect estimates, or reviewer-facing methods/results.
-
-Example skill path: `epi-skill/SKILL.md`
+Collected GitHub skill repository.
 
 ### [realactivity/tula](https://github.com/realactivity/tula)
 
@@ -464,9 +462,7 @@ Collected GitHub skill repository.
 
 ### [yojiro253-del/BioForge](https://github.com/yojiro253-del/BioForge)
 
-Search academic literature (Semantic Scholar) for synbio/microbiology papers, returning a ranked, citable list to feed into paper-extractor.
-
-Example skill path: `skills/literature-search/SKILL.md`
+Collected GitHub skill repository.
 
 ### [YTItsfrost/cypress-agent-skill](https://github.com/YTItsfrost/cypress-agent-skill)
 
