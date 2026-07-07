@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **122**
+Total repositories: **123**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -43,6 +43,12 @@ Collected GitHub skill repository.
 ### [aksh-3141/claude-toolshed](https://github.com/aksh-3141/claude-toolshed)
 
 Collected GitHub skill repository.
+
+### [Alim430/bioresearch-agent](https://github.com/Alim430/bioresearch-agent)
+
+Invoke the BioResearch Agent biomarker workflow (differential expression + pathway enrichment) through the bioresearch CLI.
+
+Example skill path: `skills/biomarker/SKILL.md`
 
 ### [ALMAZENY1/order-hub](https://github.com/ALMAZENY1/order-hub)
 
