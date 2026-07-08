@@ -26,8 +26,25 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 148,
+  "repo_count": 152,
   "results": [
+    {
+      "repo": "OuroborosCollective/Wasd",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
     {
       "repo": "mareforma/mareforma",
       "matched_domain_topics": [
@@ -88,23 +105,6 @@
     },
     {
       "repo": "K-Dense-AI/scientific-agents",
-      "matched_domain_topics": [
-        "science"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "OuroborosCollective/Wasd",
       "matched_domain_topics": [
         "science"
       ],
@@ -523,36 +523,6 @@
       "matches": []
     },
     {
-      "repo": "Alim430/bioresearch-agent",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/Alim430/bioresearch-agent.git",
-      "chosen_skill_path": "skills/biomarker/SKILL.md",
-      "front_matter": {
-        "name": "bioresearch-biomarker",
-        "description": "Invoke the BioResearch Agent biomarker workflow (differential expression + pathway enrichment) through the bioresearch CLI."
-      },
-      "html_url": "https://github.com/Alim430/bioresearch-agent",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Alim430/bioresearch-agent"
-    },
-    {
       "repo": "sounkou-bioinfo/pi-bio-agent",
       "matched_domain_topics": [
         "bioinformatics",
@@ -574,6 +544,42 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/sounkou-bioinfo/pi-bio-agent",
+      "matches": []
+    },
+    {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "aicell-lab/bioengine",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
       "matches": []
     },
     {
@@ -628,9 +634,10 @@
       "matches": []
     },
     {
-      "repo": "aicell-lab/bioengine",
+      "repo": "Alim430/bioresearch-agent",
       "matched_domain_topics": [
-        "bioinformatics"
+        "bioinformatics",
+        "computational-biology"
       ],
       "matched_qualifier_topics": [
         "ai-agents"
@@ -639,11 +646,15 @@
         {
           "domain_topic": "bioinformatics",
           "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
         }
       ],
       "matched_topics": [],
       "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Alim430/bioresearch-agent",
       "matches": []
     },
     {
@@ -676,7 +687,29 @@
       "matches": []
     },
     {
-      "repo": "aristoteleo/PantheonOS",
+      "repo": "mrsirquanzo/Sonny",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "genecell/stato",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -693,7 +726,24 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "genecell/stato",
+      "repo": "revengator/hpc-slurm-lab",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "HolobiomicsLab/Mimosa-AI",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -750,23 +800,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/fmschulz/omics-skills",
       "matches": []
-    },
-    {
-      "repo": "HolobiomicsLab/Mimosa-AI",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "BioSymphony/structure-factory",
@@ -1910,6 +1943,36 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "ruthannepai-tech/inflammatory-target-discovery-skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/ruthannepai-tech/inflammatory-target-discovery-skills.git",
+      "chosen_skill_path": "skills/antigen-epitope-pipeline/SKILL.md",
+      "front_matter": {
+        "name": "antigen-epitope-pipeline",
+        "description": "Map antigen proteins to MHC-II/I binding epitopes and per-HLA burden for a personalized, disease-agnostic pMHC pipeline. Use when building food/auto/microbial-antigen epitope panels (EoE, celiac, T1D, IBD), predicting which peptides a patient's HLA can present, or designing antigen-specific T-cell diagnostics/tolerance reagents. Covers antigen->UniProt->peptide-window->MHC-prediction->burden, and the presentation-vs-pathology guardrail."
+      },
+      "html_url": "https://github.com/ruthannepai-tech/inflammatory-target-discovery-skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ruthannepai-tech/inflammatory-target-discovery-skills"
+    },
+    {
       "repo": "exciting-soursop787/claude-plus-plus",
       "matched_domain_topics": [
         "bioinformatics",
@@ -2604,6 +2667,36 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/fastfold-ai/skills",
       "matches": []
+    },
+    {
+      "repo": "MisterBrookT/paper-skills",
+      "matched_domain_topics": [
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/MisterBrookT/paper-skills.git",
+      "chosen_skill_path": "skills/plot/SKILL.md",
+      "front_matter": {
+        "name": "plot",
+        "description": "Use for discipline-aware scientific figure generation, figure redesign, paper-ready schematic illustrations, domain-specific visual grammar, expert rubric extraction, adaptive figure benchmarks, and editable figure outputs for research papers."
+      },
+      "html_url": "https://github.com/MisterBrookT/paper-skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/MisterBrookT/paper-skills"
     },
     {
       "repo": "kimimgo/viznoir",

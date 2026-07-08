@@ -378,6 +378,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "MisterBrookT/paper-skills",
+    "cloneUrl": "https://github.com/MisterBrookT/paper-skills.git",
+    "localPath": "open-source/MisterBrookT/paper-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/MisterBrookT/paper-skills",
+    "addedAt": "2026-07-08T16:03:13.498616Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Nonsteroidevangel872/research-writing-skill",
     "cloneUrl": "https://github.com/Nonsteroidevangel872/research-writing-skill.git",
     "localPath": "open-source/Nonsteroidevangel872/research-writing-skill",
@@ -960,6 +969,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/richard-kim-79/archora-skills",
     "addedAt": "2026-05-15T16:04:10.476346Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "ruthannepai-tech/inflammatory-target-discovery-skills",
+    "cloneUrl": "https://github.com/ruthannepai-tech/inflammatory-target-discovery-skills.git",
+    "localPath": "open-source/ruthannepai-tech/inflammatory-target-discovery-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/ruthannepai-tech/inflammatory-target-discovery-skills",
+    "addedAt": "2026-07-08T16:03:00.206080Z",
     "addedBy": "github-actions"
   },
   {
