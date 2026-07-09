@@ -819,6 +819,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "jiazhenz026/SciStudio",
+    "cloneUrl": "https://github.com/jiazhenz026/SciStudio.git",
+    "localPath": "open-source/jiazhenz026/SciStudio",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/jiazhenz026/SciStudio",
+    "addedAt": "2026-07-09T16:27:59.447159Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "jvogan/proteus",
     "cloneUrl": "https://github.com/jvogan/proteus.git",
     "localPath": "open-source/jvogan/proteus",

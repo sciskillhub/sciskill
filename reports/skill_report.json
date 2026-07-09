@@ -26,25 +26,8 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 152,
+  "repo_count": 153,
   "results": [
-    {
-      "repo": "OuroborosCollective/Wasd",
-      "matched_domain_topics": [
-        "science"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
     {
       "repo": "mareforma/mareforma",
       "matched_domain_topics": [
@@ -64,6 +47,23 @@
     },
     {
       "repo": "GTC2080/DeepSeek_Science",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "OuroborosCollective/Wasd",
       "matched_domain_topics": [
         "science"
       ],
@@ -523,47 +523,6 @@
       "matches": []
     },
     {
-      "repo": "sounkou-bioinfo/pi-bio-agent",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/sounkou-bioinfo/pi-bio-agent",
-      "matches": []
-    },
-    {
-      "repo": "aristoteleo/PantheonOS",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "aicell-lab/bioengine",
       "matched_domain_topics": [
         "bioinformatics"
@@ -634,30 +593,6 @@
       "matches": []
     },
     {
-      "repo": "Alim430/bioresearch-agent",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Alim430/bioresearch-agent",
-      "matches": []
-    },
-    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -685,6 +620,96 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
       "matches": []
+    },
+    {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "Alim430/bioresearch-agent",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Alim430/bioresearch-agent",
+      "matches": []
+    },
+    {
+      "repo": "sounkou-bioinfo/pi-bio-agent",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/sounkou-bioinfo/pi-bio-agent",
+      "matches": []
+    },
+    {
+      "repo": "jiazhenz026/SciStudio",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/jiazhenz026/SciStudio.git",
+      "chosen_skill_path": ".agents/skills/adr-author/SKILL.md",
+      "front_matter": {
+        "name": "adr-author",
+        "description": "Use when acting as the SciStudio ADR author persona for ADRs, addenda, specs, governance text, document standards, schemas, and architecture-facing decisions."
+      },
+      "html_url": "https://github.com/jiazhenz026/SciStudio",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/jiazhenz026/SciStudio"
     },
     {
       "repo": "mrsirquanzo/Sonny",
@@ -1943,36 +1968,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "ruthannepai-tech/inflammatory-target-discovery-skills",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/ruthannepai-tech/inflammatory-target-discovery-skills.git",
-      "chosen_skill_path": "skills/antigen-epitope-pipeline/SKILL.md",
-      "front_matter": {
-        "name": "antigen-epitope-pipeline",
-        "description": "Map antigen proteins to MHC-II/I binding epitopes and per-HLA burden for a personalized, disease-agnostic pMHC pipeline. Use when building food/auto/microbial-antigen epitope panels (EoE, celiac, T1D, IBD), predicting which peptides a patient's HLA can present, or designing antigen-specific T-cell diagnostics/tolerance reagents. Covers antigen->UniProt->peptide-window->MHC-prediction->burden, and the presentation-vs-pathology guardrail."
-      },
-      "html_url": "https://github.com/ruthannepai-tech/inflammatory-target-discovery-skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ruthannepai-tech/inflammatory-target-discovery-skills"
-    },
-    {
       "repo": "exciting-soursop787/claude-plus-plus",
       "matched_domain_topics": [
         "bioinformatics",
@@ -2068,6 +2063,30 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
+      "matches": []
+    },
+    {
+      "repo": "ruthannepai-tech/inflammatory-target-discovery-skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ruthannepai-tech/inflammatory-target-discovery-skills",
       "matches": []
     },
     {
@@ -2376,23 +2395,6 @@
       "matches": []
     },
     {
-      "repo": "Eldergenix/Eldergenix",
-      "matched_domain_topics": [
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "awslabs/hcls-agent-skills",
       "matched_domain_topics": [
         "drug-discovery",
@@ -2424,6 +2426,23 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/awslabs/hcls-agent-skills",
       "matches": []
+    },
+    {
+      "repo": "Eldergenix/Eldergenix",
+      "matched_domain_topics": [
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "benrio0923/genomic-research",
@@ -2602,25 +2621,6 @@
       "matches": []
     },
     {
-      "repo": "Sapiens-ostracism678/finance-skills",
-      "matched_domain_topics": [
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sapiens-ostracism678/finance-skills",
-      "matches": []
-    },
-    {
       "repo": "zacklecon/claude-skills",
       "matched_domain_topics": [
         "clinical-research",
@@ -2647,6 +2647,25 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/zacklecon/claude-skills",
+      "matches": []
+    },
+    {
+      "repo": "Sapiens-ostracism678/finance-skills",
+      "matched_domain_topics": [
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sapiens-ostracism678/finance-skills",
       "matches": []
     },
     {
@@ -2688,15 +2707,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/MisterBrookT/paper-skills.git",
-      "chosen_skill_path": "skills/plot/SKILL.md",
-      "front_matter": {
-        "name": "plot",
-        "description": "Use for discipline-aware scientific figure generation, figure redesign, paper-ready schematic illustrations, domain-specific visual grammar, expert rubric extraction, adaptive figure benchmarks, and editable figure outputs for research papers."
-      },
-      "html_url": "https://github.com/MisterBrookT/paper-skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/MisterBrookT/paper-skills"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/MisterBrookT/paper-skills",
+      "matches": []
     },
     {
       "repo": "kimimgo/viznoir",

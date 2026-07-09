@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **125**
+Total repositories: **126**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -276,6 +276,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [jiazhenz026/SciStudio](https://github.com/jiazhenz026/SciStudio)
+
+Use when acting as the SciStudio ADR author persona for ADRs, addenda, specs, governance text, document standards, schemas, and architecture-facing decisions.
+
+Example skill path: `.agents/skills/adr-author/SKILL.md`
+
 ### [jvogan/proteus](https://github.com/jvogan/proteus)
 
 Collected GitHub skill repository.
@@ -318,9 +324,7 @@ Collected GitHub skill repository.
 
 ### [MisterBrookT/paper-skills](https://github.com/MisterBrookT/paper-skills)
 
-Use for discipline-aware scientific figure generation, figure redesign, paper-ready schematic illustrations, domain-specific visual grammar, expert rubric extraction, adaptive figure benchmarks, and editable figure outputs for research papers.
-
-Example skill path: `skills/plot/SKILL.md`
+Collected GitHub skill repository.
 
 ### [mnfst/manifest](https://github.com/mnfst/manifest)
 
@@ -388,9 +392,7 @@ Collected GitHub skill repository.
 
 ### [ruthannepai-tech/inflammatory-target-discovery-skills](https://github.com/ruthannepai-tech/inflammatory-target-discovery-skills)
 
-Map antigen proteins to MHC-II/I binding epitopes and per-HLA burden for a personalized, disease-agnostic pMHC pipeline. Use when building food/auto/microbial-antigen epitope panels (EoE, celiac, T1D, IBD), predicting which peptides a patient's HLA can present, or designing antigen-specific T-cell diagnostics/tolerance reagents. Covers antigen->UniProt->peptide-window->MHC-prediction->burden, and the presentation-vs-pathology guardrail.
-
-Example skill path: `skills/antigen-epitope-pipeline/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Samuelkebede24/skill-conductor](https://github.com/Samuelkebede24/skill-conductor)
 
