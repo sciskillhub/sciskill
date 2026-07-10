@@ -278,9 +278,7 @@ Collected GitHub skill repository.
 
 ### [jiazhenz026/SciStudio](https://github.com/jiazhenz026/SciStudio)
 
-Use when acting as the SciStudio ADR author persona for ADRs, addenda, specs, governance text, document standards, schemas, and architecture-facing decisions.
-
-Example skill path: `.agents/skills/adr-author/SKILL.md`
+Collected GitHub skill repository.
 
 ### [jvogan/proteus](https://github.com/jvogan/proteus)
 
