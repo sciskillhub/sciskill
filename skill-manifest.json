@@ -423,6 +423,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "SL-Mar/science-skills",
+    "cloneUrl": "https://github.com/SL-Mar/science-skills.git",
+    "localPath": "open-source/SL-Mar/science-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/SL-Mar/science-skills",
+    "addedAt": "2026-07-11T14:51:07.039087Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "SURFLIN2030/swing-skills",
     "cloneUrl": "https://github.com/SURFLIN2030/swing-skills.git",
     "localPath": "open-source/SURFLIN2030/swing-skills",

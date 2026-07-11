@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **126**
+Total repositories: **127**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -411,6 +411,12 @@ Collected GitHub skill repository.
 ### [Sibyl-Research-Team/AutoResearch-SibylSystem](https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem)
 
 Collected GitHub skill repository.
+
+### [SL-Mar/science-skills](https://github.com/SL-Mar/science-skills)
+
+Keyless, deterministic citation verifier — checks whether the references in a manuscript actually resolve to real published works, catching fabricated citations and wrong/copy-pasted DOIs. A local CLI (stdlib Python, no API key, no pip install) that extracts DOIs, arXiv ids, and BibTeX entries from a .md / .tex / .bib / .txt file and resolves each against free scholarly APIs (Crossref for DOIs and titles, arXiv for preprints); a DOI that 404s or a title with no close match is flagged as a fabrication risk, and every resolved DOI's canonical title is shown so a wrong-DOI mismatch is easy to spot. Use when the user wants to verify citations / check references / catch fabricated citations in a paper or manuscript, validate a bibliography or .bib file, confirm a DOI is real, or invokes /citecheck. Sibling of litsearch (which finds papers; citecheck verifies the ones already cited).
+
+Example skill path: `skills/citecheck/SKILL.md`
 
 ### [sounkou-bioinfo/pi-bio-agent](https://github.com/sounkou-bioinfo/pi-bio-agent)
 
