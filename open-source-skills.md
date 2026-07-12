@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **127**
+Total repositories: **128**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -360,6 +360,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [ProfesseurHaipeng/ai-research-preflight](https://github.com/ProfesseurHaipeng/ai-research-preflight)
+
+Run a local, deterministic preflight on a user-provided structured formulation, policy, and evidence set for unit consistency, totals, declared bounds, user-declared pair compatibility, process-order dependencies, uncertainty, evidence coverage, and experimental gates. Use when asked whether a formula or formulation is structurally ready for planned experiments or when explaining deterministic blockers. Never generate or optimize formulations, infer undeclared compatibility, or claim real-world feasibility, safety, stability, efficacy, or regulatory compliance.
+
+Example skill path: `skills/check-formulation-readiness/SKILL.md`
+
 ### [pswider/tula](https://github.com/pswider/tula)
 
 Collected GitHub skill repository.
@@ -414,9 +420,7 @@ Collected GitHub skill repository.
 
 ### [SL-Mar/science-skills](https://github.com/SL-Mar/science-skills)
 
-Keyless, deterministic citation verifier — checks whether the references in a manuscript actually resolve to real published works, catching fabricated citations and wrong/copy-pasted DOIs. A local CLI (stdlib Python, no API key, no pip install) that extracts DOIs, arXiv ids, and BibTeX entries from a .md / .tex / .bib / .txt file and resolves each against free scholarly APIs (Crossref for DOIs and titles, arXiv for preprints); a DOI that 404s or a title with no close match is flagged as a fabrication risk, and every resolved DOI's canonical title is shown so a wrong-DOI mismatch is easy to spot. Use when the user wants to verify citations / check references / catch fabricated citations in a paper or manuscript, validate a bibliography or .bib file, confirm a DOI is real, or invokes /citecheck. Sibling of litsearch (which finds papers; citecheck verifies the ones already cited).
-
-Example skill path: `skills/citecheck/SKILL.md`
+Collected GitHub skill repository.
 
 ### [sounkou-bioinfo/pi-bio-agent](https://github.com/sounkou-bioinfo/pi-bio-agent)
 
