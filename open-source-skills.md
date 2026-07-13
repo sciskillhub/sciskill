@@ -362,9 +362,7 @@ Collected GitHub skill repository.
 
 ### [ProfesseurHaipeng/ai-research-preflight](https://github.com/ProfesseurHaipeng/ai-research-preflight)
 
-Run a local, deterministic preflight on a user-provided structured formulation, policy, and evidence set for unit consistency, totals, declared bounds, user-declared pair compatibility, process-order dependencies, uncertainty, evidence coverage, and experimental gates. Use when asked whether a formula or formulation is structurally ready for planned experiments or when explaining deterministic blockers. Never generate or optimize formulations, infer undeclared compatibility, or claim real-world feasibility, safety, stability, efficacy, or regulatory compliance.
-
-Example skill path: `skills/check-formulation-readiness/SKILL.md`
+Collected GitHub skill repository.
 
 ### [pswider/tula](https://github.com/pswider/tula)
 
