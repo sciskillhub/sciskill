@@ -999,12 +999,30 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "ruthannepai-tech/inflammatory-target-analyst",
+    "cloneUrl": "https://github.com/ruthannepai-tech/inflammatory-target-analyst.git",
+    "localPath": "open-source/ruthannepai-tech/inflammatory-target-analyst",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/ruthannepai-tech/inflammatory-target-analyst",
+    "addedAt": "2026-07-14T15:24:02.675275Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "ruthannepai-tech/inflammatory-target-discovery-skills",
     "cloneUrl": "https://github.com/ruthannepai-tech/inflammatory-target-discovery-skills.git",
     "localPath": "open-source/ruthannepai-tech/inflammatory-target-discovery-skills",
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/ruthannepai-tech/inflammatory-target-discovery-skills",
     "addedAt": "2026-07-08T16:03:00.206080Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "ruthannepai-tech/therapeutic-program-architect",
+    "cloneUrl": "https://github.com/ruthannepai-tech/therapeutic-program-architect.git",
+    "localPath": "open-source/ruthannepai-tech/therapeutic-program-architect",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/ruthannepai-tech/therapeutic-program-architect",
+    "addedAt": "2026-07-14T15:24:06.379479Z",
     "addedBy": "github-actions"
   },
   {

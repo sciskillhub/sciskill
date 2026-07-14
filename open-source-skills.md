@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **128**
+Total repositories: **130**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -392,9 +392,21 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [ruthannepai-tech/inflammatory-target-analyst](https://github.com/ruthannepai-tech/inflammatory-target-analyst)
+
+Map antigen proteins to MHC-II/I binding epitopes and per-HLA burden for a personalized, disease-agnostic pMHC pipeline. Use when building food/auto/microbial-antigen epitope panels (EoE, celiac, T1D, IBD), predicting which peptides a patient's HLA can present, or designing antigen-specific T-cell diagnostics/tolerance reagents. Covers antigen->UniProt->peptide-window->MHC-prediction->burden, and the presentation-vs-pathology guardrail.
+
+Example skill path: `skills/antigen-epitope-pipeline/SKILL.md`
+
 ### [ruthannepai-tech/inflammatory-target-discovery-skills](https://github.com/ruthannepai-tech/inflammatory-target-discovery-skills)
 
 Collected GitHub skill repository.
+
+### [ruthannepai-tech/therapeutic-program-architect](https://github.com/ruthannepai-tech/therapeutic-program-architect)
+
+Prepare and UPDATE the "agentic-workflow narrative" manuscript (Paper D) that documents a human-supervised, self-correcting AI discovery-to-design campaign, with eosinophilic esophagitis (EoE) as the worked example. Use when building or revising this Perspective-style paper — recomputing verified campaign metrics from the artifact store, growing the living correction/calibration ledger with new self-correction and human-domain-catch episodes harvested from later chats, verifying citations against CrossRef, and rendering to DOCX for bioRxiv. Load whenever the user says "update the paper", "add a correction-ledger episode", "regenerate Figure 1/2/3/4 or Table 1/3", or "re-render the manuscript".
+
+Example skill path: `skills/agentic-campaign-manuscript/SKILL.md`
 
 ### [Samuelkebede24/skill-conductor](https://github.com/Samuelkebede24/skill-conductor)
 
