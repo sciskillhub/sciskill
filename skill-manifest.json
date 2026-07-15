@@ -792,6 +792,15 @@
     "addedBy": "huang-sh"
   },
   {
+    "fullName": "guhou-hvi/elsevier-figure-style",
+    "cloneUrl": "https://github.com/guhou-hvi/elsevier-figure-style.git",
+    "localPath": "open-source/guhou-hvi/elsevier-figure-style",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/guhou-hvi/elsevier-figure-style",
+    "addedAt": "2026-07-15T15:26:52.586798Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "htlin222/openevidence-skill",
     "cloneUrl": "https://github.com/htlin222/openevidence-skill.git",
     "localPath": "open-source/htlin222/openevidence-skill",
@@ -852,6 +861,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/jvogan/proteus",
     "addedAt": "2026-04-28T16:08:43.032368Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "k-telux/OpticalModeler",
+    "cloneUrl": "https://github.com/k-telux/OpticalModeler.git",
+    "localPath": "open-source/k-telux/OpticalModeler",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/k-telux/OpticalModeler",
+    "addedAt": "2026-07-15T15:26:54.676826Z",
     "addedBy": "github-actions"
   },
   {

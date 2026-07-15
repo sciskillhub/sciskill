@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 162,
+  "repo_count": 168,
   "results": [
     {
       "repo": "GTC2080/DeepSeek_Science",
@@ -523,6 +523,33 @@
       "matches": []
     },
     {
+      "repo": "MaxMLang/cxg-census-mcp",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "single-cell"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "single-cell",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "droftgamer-wq/researcher-skill",
       "matched_domain_topics": [
         "bioinformatics",
@@ -591,6 +618,28 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
       "matches": []
+    },
+    {
+      "repo": "nithinram97/tcga-clickhouse-agentic-stack",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "C4MIND/C4REQBER",
@@ -1755,33 +1804,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "MaxMLang/cxg-census-mcp",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology",
-        "single-cell"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "single-cell",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "EugeneM1/Syntrx",
       "matched_domain_topics": [
         "bioinformatics"
@@ -2128,6 +2150,23 @@
         },
         {
           "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "Julesbladed538/baidu-netdisk-transfer",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
           "qualifier_topic": "agent-skills"
         }
       ],
@@ -2719,15 +2758,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/ruthannepai-tech/inflammatory-target-analyst.git",
-      "chosen_skill_path": "skills/antigen-epitope-pipeline/SKILL.md",
-      "front_matter": {
-        "name": "antigen-epitope-pipeline",
-        "description": "Map antigen proteins to MHC-II/I binding epitopes and per-HLA burden for a personalized, disease-agnostic pMHC pipeline. Use when building food/auto/microbial-antigen epitope panels (EoE, celiac, T1D, IBD), predicting which peptides a patient's HLA can present, or designing antigen-specific T-cell diagnostics/tolerance reagents. Covers antigen->UniProt->peptide-window->MHC-prediction->burden, and the presentation-vs-pathology guardrail."
-      },
-      "html_url": "https://github.com/ruthannepai-tech/inflammatory-target-analyst",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ruthannepai-tech/inflammatory-target-analyst"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ruthannepai-tech/inflammatory-target-analyst",
+      "matches": []
     },
     {
       "repo": "ruthannepai-tech/therapeutic-program-architect",
@@ -2744,15 +2777,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/ruthannepai-tech/therapeutic-program-architect.git",
-      "chosen_skill_path": "skills/agentic-campaign-manuscript/SKILL.md",
-      "front_matter": {
-        "name": "agentic-campaign-manuscript",
-        "description": "Prepare and UPDATE the \"agentic-workflow narrative\" manuscript (Paper D) that documents a human-supervised, self-correcting AI discovery-to-design campaign, with eosinophilic esophagitis (EoE) as the worked example. Use when building or revising this Perspective-style paper — recomputing verified campaign metrics from the artifact store, growing the living correction/calibration ledger with new self-correction and human-domain-catch episodes harvested from later chats, verifying citations against CrossRef, and rendering to DOCX for bioRxiv. Load whenever the user says \"update the paper\", \"add a correction-ledger episode\", \"regenerate Figure 1/2/3/4 or Table 1/3\", or \"re-render the manuscript\"."
-      },
-      "html_url": "https://github.com/ruthannepai-tech/therapeutic-program-architect",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ruthannepai-tech/therapeutic-program-architect"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ruthannepai-tech/therapeutic-program-architect",
+      "matches": []
     },
     {
       "repo": "jvogan/biovoice",
@@ -2899,6 +2926,23 @@
       "matches": []
     },
     {
+      "repo": "sepahead/cortexel",
+      "matched_domain_topics": [
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "kimimgo/viznoir",
       "matched_domain_topics": [
         "scientific-visualization"
@@ -2933,6 +2977,56 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "guhou-hvi/elsevier-figure-style",
+      "matched_domain_topics": [
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/guhou-hvi/elsevier-figure-style.git",
+      "chosen_skill_path": "skills/elsevier-figure-style/SKILL.md",
+      "front_matter": {
+        "name": "elsevier-figure-style",
+        "description": "Generate, revise, and audit source-backed quantitative manuscript figures, and visually audit exported schematic/conceptual figures and graphical abstracts without redrawing them in v0.1. Use for Elsevier-style manuscript figure generation, matplotlib or ggplot2 result plots, line charts, heatmaps, bar charts, scatter or Pareto plots, artwork export checks, pre-submission figure QA, mechanism/workflow diagram audits, graphical-abstract audits, or equivalent Chinese-language requests for paper figures and submission checks."
+      },
+      "html_url": "https://github.com/guhou-hvi/elsevier-figure-style",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/guhou-hvi/elsevier-figure-style"
+    },
+    {
+      "repo": "k-telux/OpticalModeler",
+      "matched_domain_topics": [
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/k-telux/OpticalModeler.git",
+      "chosen_skill_path": "i18n/ja/SKILL.md",
+      "front_matter": {
+        "name": "thorlabs-blender-optical-path-ja",
+        "description": "2D 光学回路図とメーカー CAD から、物理的に妥当な Blender 光学テーブルを構築・監査・改訂します。Thorlabs 互換ミラーマウント、レンズマウント、ビームスプリッター、ポスト、ファイバー結合、開口、検出器、光学トポロジー、fail-closed 証拠、Nature スタイル描画に使用します。"
+      },
+      "html_url": "https://github.com/k-telux/OpticalModeler",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/k-telux/OpticalModeler"
     },
     {
       "repo": "VILA-Lab/FigMirror",
@@ -2971,6 +3065,23 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/javidmardanov/paper-banana-skill",
       "matches": []
+    },
+    {
+      "repo": "DoronLevinson/bioskeptic",
+      "matched_domain_topics": [
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "mondalsou/lead-optimization-agent",
@@ -3513,6 +3624,23 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "JuneYaooo/awesome-medical-ai-skills-cn",
+      "matched_domain_topics": [
+        "medical"
+      ],
+      "matched_qualifier_topics": [
+        "openclaw-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "openclaw-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "FreedomIntelligence/OpenClaw-Medical-Skills",
       "matched_domain_topics": [
         "medical"
@@ -3530,23 +3658,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/FreedomIntelligence/OpenClaw-Medical-Skills",
       "matches": []
-    },
-    {
-      "repo": "JuneYaooo/awesome-medical-ai-skills-cn",
-      "matched_domain_topics": [
-        "medical"
-      ],
-      "matched_qualifier_topics": [
-        "openclaw-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "medical",
-          "qualifier_topic": "openclaw-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     }
   ]
 }

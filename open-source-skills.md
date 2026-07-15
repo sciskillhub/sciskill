@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **130**
+Total repositories: **132**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -244,6 +244,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [guhou-hvi/elsevier-figure-style](https://github.com/guhou-hvi/elsevier-figure-style)
+
+Generate, revise, and audit source-backed quantitative manuscript figures, and visually audit exported schematic/conceptual figures and graphical abstracts without redrawing them in v0.1. Use for Elsevier-style manuscript figure generation, matplotlib or ggplot2 result plots, line charts, heatmaps, bar charts, scatter or Pareto plots, artwork export checks, pre-submission figure QA, mechanism/workflow diagram audits, graphical-abstract audits, or equivalent Chinese-language requests for paper figures and submission checks.
+
+Example skill path: `skills/elsevier-figure-style/SKILL.md`
+
 ### [GusWan58/dataclaw](https://github.com/GusWan58/dataclaw)
 
 Collected GitHub skill repository.
@@ -287,6 +293,12 @@ Collected GitHub skill repository.
 ### [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)
 
 Collected GitHub skill repository.
+
+### [k-telux/OpticalModeler](https://github.com/k-telux/OpticalModeler)
+
+2D 光学回路図とメーカー CAD から、物理的に妥当な Blender 光学テーブルを構築・監査・改訂します。Thorlabs 互換ミラーマウント、レンズマウント、ビームスプリッター、ポスト、ファイバー結合、開口、検出器、光学トポロジー、fail-closed 証拠、Nature スタイル描画に使用します。
+
+Example skill path: `i18n/ja/SKILL.md`
 
 ### [Kayunangka/claude-skill](https://github.com/Kayunangka/claude-skill)
 
@@ -394,9 +406,7 @@ Collected GitHub skill repository.
 
 ### [ruthannepai-tech/inflammatory-target-analyst](https://github.com/ruthannepai-tech/inflammatory-target-analyst)
 
-Map antigen proteins to MHC-II/I binding epitopes and per-HLA burden for a personalized, disease-agnostic pMHC pipeline. Use when building food/auto/microbial-antigen epitope panels (EoE, celiac, T1D, IBD), predicting which peptides a patient's HLA can present, or designing antigen-specific T-cell diagnostics/tolerance reagents. Covers antigen->UniProt->peptide-window->MHC-prediction->burden, and the presentation-vs-pathology guardrail.
-
-Example skill path: `skills/antigen-epitope-pipeline/SKILL.md`
+Collected GitHub skill repository.
 
 ### [ruthannepai-tech/inflammatory-target-discovery-skills](https://github.com/ruthannepai-tech/inflammatory-target-discovery-skills)
 
@@ -404,9 +414,7 @@ Collected GitHub skill repository.
 
 ### [ruthannepai-tech/therapeutic-program-architect](https://github.com/ruthannepai-tech/therapeutic-program-architect)
 
-Prepare and UPDATE the "agentic-workflow narrative" manuscript (Paper D) that documents a human-supervised, self-correcting AI discovery-to-design campaign, with eosinophilic esophagitis (EoE) as the worked example. Use when building or revising this Perspective-style paper — recomputing verified campaign metrics from the artifact store, growing the living correction/calibration ledger with new self-correction and human-domain-catch episodes harvested from later chats, verifying citations against CrossRef, and rendering to DOCX for bioRxiv. Load whenever the user says "update the paper", "add a correction-ledger episode", "regenerate Figure 1/2/3/4 or Table 1/3", or "re-render the manuscript".
-
-Example skill path: `skills/agentic-campaign-manuscript/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Samuelkebede24/skill-conductor](https://github.com/Samuelkebede24/skill-conductor)
 
