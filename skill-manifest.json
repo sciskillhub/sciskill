@@ -1134,6 +1134,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "xuzhougeng/wisp-science",
+    "cloneUrl": "https://github.com/xuzhougeng/wisp-science.git",
+    "localPath": "open-source/xuzhougeng/wisp-science",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/xuzhougeng/wisp-science",
+    "addedAt": "2026-07-16T15:33:23.933108Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "yojiro253-del/BioForge",
     "cloneUrl": "https://github.com/yojiro253-del/BioForge.git",
     "localPath": "open-source/yojiro253-del/BioForge",

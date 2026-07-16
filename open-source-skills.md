@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **132**
+Total repositories: **133**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -246,9 +246,7 @@ Collected GitHub skill repository.
 
 ### [guhou-hvi/elsevier-figure-style](https://github.com/guhou-hvi/elsevier-figure-style)
 
-Generate, revise, and audit source-backed quantitative manuscript figures, and visually audit exported schematic/conceptual figures and graphical abstracts without redrawing them in v0.1. Use for Elsevier-style manuscript figure generation, matplotlib or ggplot2 result plots, line charts, heatmaps, bar charts, scatter or Pareto plots, artwork export checks, pre-submission figure QA, mechanism/workflow diagram audits, graphical-abstract audits, or equivalent Chinese-language requests for paper figures and submission checks.
-
-Example skill path: `skills/elsevier-figure-style/SKILL.md`
+Collected GitHub skill repository.
 
 ### [GusWan58/dataclaw](https://github.com/GusWan58/dataclaw)
 
@@ -296,9 +294,7 @@ Collected GitHub skill repository.
 
 ### [k-telux/OpticalModeler](https://github.com/k-telux/OpticalModeler)
 
-2D 光学回路図とメーカー CAD から、物理的に妥当な Blender 光学テーブルを構築・監査・改訂します。Thorlabs 互換ミラーマウント、レンズマウント、ビームスプリッター、ポスト、ファイバー結合、開口、検出器、光学トポロジー、fail-closed 証拠、Nature スタイル描画に使用します。
-
-Example skill path: `i18n/ja/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Kayunangka/claude-skill](https://github.com/Kayunangka/claude-skill)
 
@@ -503,6 +499,12 @@ Collected GitHub skill repository.
 ### [Xroft12/RedNet-Airin-skillbook-public](https://github.com/Xroft12/RedNet-Airin-skillbook-public)
 
 Collected GitHub skill repository.
+
+### [xuzhougeng/wisp-science](https://github.com/xuzhougeng/wisp-science)
+
+Use the InfiniSynapse CLI (`agent_infini`) for multi-turn AI data-analysis tasks, database/RAG context, and task workspace files. Use when the user mentions InfiniSynapse, agent_infini, database or RAG analysis, or asks to delegate analysis through InfiniSynapse.
+
+Example skill path: `skills/agent-infini/SKILL.md`
 
 ### [yojiro253-del/BioForge](https://github.com/yojiro253-del/BioForge)
 
