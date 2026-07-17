@@ -591,25 +591,6 @@
       "matches": []
     },
     {
-      "repo": "aicell-lab/bioengine",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
-      "matches": []
-    },
-    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -639,6 +620,41 @@
       "matches": []
     },
     {
+      "repo": "Sepanta-Yalameha/SIMBIOLOGY-MCP",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/Sepanta-Yalameha/SIMBIOLOGY-MCP.git",
+      "chosen_skill_path": "simbiology_mcp/skills/SKILL.md",
+      "front_matter": {
+        "name": "simbiology-workflow",
+        "description": "Use when building, modifying, simulating, exporting, or analyzing MATLAB SimBiology models through the SimBiology MCP. Covers project setup, species, parameters, reactions, doses, variants, simulation defaults, export, analysis, and use of PubMed and iGEM tools to ground model constants in real biology."
+      },
+      "html_url": "https://github.com/Sepanta-Yalameha/SIMBIOLOGY-MCP",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sepanta-Yalameha/SIMBIOLOGY-MCP"
+    },
+    {
       "repo": "jiazhenz026/SciStudio",
       "matched_domain_topics": [
         "bioinformatics"
@@ -655,6 +671,49 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/jiazhenz026/SciStudio",
+      "matches": []
+    },
+    {
+      "repo": "sounkou-bioinfo/pi-bio-agent",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/sounkou-bioinfo/pi-bio-agent",
+      "matches": []
+    },
+    {
+      "repo": "aicell-lab/bioengine",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
       "matches": []
     },
     {
@@ -792,30 +851,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "sounkou-bioinfo/pi-bio-agent",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/sounkou-bioinfo/pi-bio-agent",
-      "matches": []
-    },
-    {
       "repo": "fmschulz/omics-skills",
       "matched_domain_topics": [
         "bioinformatics",
@@ -923,25 +958,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/qchiujunhao/galaxy-cli",
-      "matches": []
-    },
-    {
-      "repo": "SL-Mar/science-skills",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/SL-Mar/science-skills",
       "matches": []
     },
     {
@@ -2120,54 +2136,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "xuzhougeng/wisp-science",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/xuzhougeng/wisp-science.git",
-      "chosen_skill_path": "skills/agent-infini/SKILL.md",
-      "front_matter": {
-        "name": "agent-infini",
-        "description": "Use the InfiniSynapse CLI (`agent_infini`) for multi-turn AI data-analysis tasks, database/RAG context, and task workspace files. Use when the user mentions InfiniSynapse, agent_infini, database or RAG analysis, or asks to delegate analysis through InfiniSynapse.",
-        "license": "Apache-2.0"
-      },
-      "html_url": "https://github.com/xuzhougeng/wisp-science",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/xuzhougeng/wisp-science"
-    },
-    {
-      "repo": "Julesbladed538/baidu-netdisk-transfer",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "exciting-soursop787/claude-plus-plus",
       "matched_domain_topics": [
         "bioinformatics",
@@ -2200,6 +2168,30 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "xuzhougeng/wisp-science",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/xuzhougeng/wisp-science",
+      "matches": []
+    },
+    {
       "repo": "sparzinhogames-hash/awesome-scientific-ai-tools",
       "matched_domain_topics": [
         "bioinformatics",
@@ -2215,6 +2207,23 @@
         },
         {
           "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "Julesbladed538/baidu-netdisk-transfer",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
           "qualifier_topic": "agent-skills"
         }
       ],
@@ -3359,7 +3368,7 @@
       "matches": []
     },
     {
-      "repo": "xxxxchaos/oh-my-sci",
+      "repo": "bakhtiersizhaev/openevidence-mcp",
       "matched_domain_topics": [
         "clinical-research"
       ],
@@ -3376,7 +3385,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "bakhtiersizhaev/openevidence-mcp",
+      "repo": "xxxxchaos/oh-my-sci",
       "matched_domain_topics": [
         "clinical-research"
       ],

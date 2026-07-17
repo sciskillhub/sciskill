@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **133**
+Total repositories: **134**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -420,6 +420,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Sepanta-Yalameha/SIMBIOLOGY-MCP](https://github.com/Sepanta-Yalameha/SIMBIOLOGY-MCP)
+
+Use when building, modifying, simulating, exporting, or analyzing MATLAB SimBiology models through the SimBiology MCP. Covers project setup, species, parameters, reactions, doses, variants, simulation defaults, export, analysis, and use of PubMed and iGEM tools to ground model constants in real biology.
+
+Example skill path: `simbiology_mcp/skills/SKILL.md`
+
 ### [sethikasithum/skill-generator](https://github.com/sethikasithum/skill-generator)
 
 Collected GitHub skill repository.
@@ -502,9 +508,7 @@ Collected GitHub skill repository.
 
 ### [xuzhougeng/wisp-science](https://github.com/xuzhougeng/wisp-science)
 
-Use the InfiniSynapse CLI (`agent_infini`) for multi-turn AI data-analysis tasks, database/RAG context, and task workspace files. Use when the user mentions InfiniSynapse, agent_infini, database or RAG analysis, or asks to delegate analysis through InfiniSynapse.
-
-Example skill path: `skills/agent-infini/SKILL.md`
+Collected GitHub skill repository.
 
 ### [yojiro253-del/BioForge](https://github.com/yojiro253-del/BioForge)
 
