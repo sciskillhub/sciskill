@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **134**
+Total repositories: **136**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -284,6 +284,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [jvogan/motif](https://github.com/jvogan/motif)
+
+Opens bounded sequence data in the connected Motif workbench or creates a self-contained Motif HTML artifact for visual review.
+
+Example skill path: `skills/motif-for-claude-science/SKILL.md`
+
 ### [jvogan/proteus](https://github.com/jvogan/proteus)
 
 Collected GitHub skill repository.
@@ -422,9 +428,7 @@ Collected GitHub skill repository.
 
 ### [Sepanta-Yalameha/SIMBIOLOGY-MCP](https://github.com/Sepanta-Yalameha/SIMBIOLOGY-MCP)
 
-Use when building, modifying, simulating, exporting, or analyzing MATLAB SimBiology models through the SimBiology MCP. Covers project setup, species, parameters, reactions, doses, variants, simulation defaults, export, analysis, and use of PubMed and iGEM tools to ground model constants in real biology.
-
-Example skill path: `simbiology_mcp/skills/SKILL.md`
+Collected GitHub skill repository.
 
 ### [sethikasithum/skill-generator](https://github.com/sethikasithum/skill-generator)
 
@@ -529,6 +533,12 @@ Collected GitHub skill repository.
 ### [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides)
 
 Collected GitHub skill repository.
+
+### [zhoy0409-debug/polish-sci-figures](https://github.com/zhoy0409-debug/polish-sci-figures)
+
+Create, redraw, compare, arrange, audit, and package publication-grade scientific figures for manuscripts, posters, Word documents, PowerPoint slides, and public showcases. Use for SCI figures, 论文配图, 科研作图, 结果可视化, 组图, 重绘, figure polishing, aligned multipanel grids, whitespace control, title-free and serial-label-free panels, collision-free annotations, Arial or journal-specific font control, scientific typography and nomenclature, consistent canvas sizing, final-size typography, editable SVG/PDF/PNG, manuscript or presentation figure QA, and original-versus-redesign selection.
+
+Example skill path: `skills/polish-sci-figures/SKILL.md`
 
 ### [zhoy0409-debug/scholarflow-skills](https://github.com/zhoy0409-debug/scholarflow-skills)
 

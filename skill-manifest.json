@@ -864,6 +864,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "jvogan/motif",
+    "cloneUrl": "https://github.com/jvogan/motif.git",
+    "localPath": "open-source/jvogan/motif",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/jvogan/motif",
+    "addedAt": "2026-07-18T14:50:03.206507Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "jvogan/proteus",
     "cloneUrl": "https://github.com/jvogan/proteus.git",
     "localPath": "open-source/jvogan/proteus",
@@ -1177,6 +1186,15 @@
     "upstreamUrl": "https://github.com/zarazhangrui/frontend-slides",
     "addedAt": "2026-04-11T17:13:44.943475Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "zhoy0409-debug/polish-sci-figures",
+    "cloneUrl": "https://github.com/zhoy0409-debug/polish-sci-figures.git",
+    "localPath": "open-source/zhoy0409-debug/polish-sci-figures",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/zhoy0409-debug/polish-sci-figures",
+    "addedAt": "2026-07-18T14:51:10.933752Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "zhoy0409-debug/scholarflow-skills",
