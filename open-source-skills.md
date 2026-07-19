@@ -286,9 +286,7 @@ Collected GitHub skill repository.
 
 ### [jvogan/motif](https://github.com/jvogan/motif)
 
-Opens bounded sequence data in the connected Motif workbench or creates a self-contained Motif HTML artifact for visual review.
-
-Example skill path: `skills/motif-for-claude-science/SKILL.md`
+Collected GitHub skill repository.
 
 ### [jvogan/proteus](https://github.com/jvogan/proteus)
 
@@ -536,9 +534,7 @@ Collected GitHub skill repository.
 
 ### [zhoy0409-debug/polish-sci-figures](https://github.com/zhoy0409-debug/polish-sci-figures)
 
-Create, redraw, compare, arrange, audit, and package publication-grade scientific figures for manuscripts, posters, Word documents, PowerPoint slides, and public showcases. Use for SCI figures, 论文配图, 科研作图, 结果可视化, 组图, 重绘, figure polishing, aligned multipanel grids, whitespace control, title-free and serial-label-free panels, collision-free annotations, Arial or journal-specific font control, scientific typography and nomenclature, consistent canvas sizing, final-size typography, editable SVG/PDF/PNG, manuscript or presentation figure QA, and original-versus-redesign selection.
-
-Example skill path: `skills/polish-sci-figures/SKILL.md`
+Collected GitHub skill repository.
 
 ### [zhoy0409-debug/scholarflow-skills](https://github.com/zhoy0409-debug/scholarflow-skills)
 
