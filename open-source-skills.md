@@ -274,9 +274,7 @@ Collected GitHub skill repository.
 
 ### [Jason-0409-G/vivarium](https://github.com/Jason-0409-G/vivarium)
 
-Compare a set of microbial genomes: genome relatedness (ANI/AAI), shared vs unique gene content (orthology / pangenome / core-accessory via OrthoFinder), and genome structure (synteny / rearrangements via MUMmer). Use whenever the user wants to know how similar two or more genomes are, whether two strains are the same species, which genes are shared or unique to a strain, build orthogroups or a pangenome, or align genomes to see synteny. Triggers on phrases like "compare these genomes", "ANI/AAI between", "are these the same species", "which genes are unique to strain X", "core and accessory genome", "run OrthoFinder", "pangenome", "synteny / genome alignment", "比较这些基因组", "算 ANI/AAI", "是不是同一个种", "哪些基因是 X 独有的", "核心/附属基因组", "共线性". Light steps (FastANI, MUMmer) run locally in the bio_tools conda env and produce tables ready for vivarium-report; the heavy step (OrthoFinder) is scaffolded as a ready-to-run command. Part of the vivarium comparative-genomics skill set.
-
-Example skill path: `skills/vivarium-compare/SKILL.md`
+Collected GitHub skill repository.
 
 ### [javidmardanov/paper-banana-skill](https://github.com/javidmardanov/paper-banana-skill)
 
