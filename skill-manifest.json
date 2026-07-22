@@ -819,6 +819,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "htlin222/ask-oe-with-ego-skill",
+    "cloneUrl": "https://github.com/htlin222/ask-oe-with-ego-skill.git",
+    "localPath": "open-source/htlin222/ask-oe-with-ego-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/htlin222/ask-oe-with-ego-skill",
+    "addedAt": "2026-07-22T15:34:56.865968Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "htlin222/openevidence-skill",
     "cloneUrl": "https://github.com/htlin222/openevidence-skill.git",
     "localPath": "open-source/htlin222/openevidence-skill",
@@ -907,6 +916,15 @@
     "upstreamUrl": "https://github.com/kimimgo/viznoir",
     "addedAt": "2026-04-11T17:13:46.307143Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "lhbsaa/apex-discovery",
+    "cloneUrl": "https://github.com/lhbsaa/apex-discovery.git",
+    "localPath": "open-source/lhbsaa/apex-discovery",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/lhbsaa/apex-discovery",
+    "addedAt": "2026-07-22T15:34:16.831965Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "ma-compbio-lab/SkillFoundry",
@@ -1071,6 +1089,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "seandavi/agentic-coding-intro",
+    "cloneUrl": "https://github.com/seandavi/agentic-coding-intro.git",
+    "localPath": "open-source/seandavi/agentic-coding-intro",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/seandavi/agentic-coding-intro",
+    "addedAt": "2026-07-22T15:32:37.742360Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "sethikasithum/skill-generator",
     "cloneUrl": "https://github.com/sethikasithum/skill-generator.git",
     "localPath": "open-source/sethikasithum/skill-generator",
@@ -1167,6 +1194,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/xuzhougeng/wisp-science",
     "addedAt": "2026-07-16T15:33:23.933108Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "yigityildiz0/scientific-agent-skills",
+    "cloneUrl": "https://github.com/yigityildiz0/scientific-agent-skills.git",
+    "localPath": "open-source/yigityildiz0/scientific-agent-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/yigityildiz0/scientific-agent-skills",
+    "addedAt": "2026-07-22T15:34:26.272204Z",
     "addedBy": "github-actions"
   },
   {
