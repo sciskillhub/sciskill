@@ -258,9 +258,7 @@ Collected GitHub skill repository.
 
 ### [htlin222/ask-oe-with-ego-skill](https://github.com/htlin222/ask-oe-with-ego-skill)
 
-Asks a medical question on OpenEvidence via ego-browser (or appends a follow-up to a thread), makes it public, then mints a scalable multi-turn HTML plus BibTeX/CSL-JSON/AMA bibliography with references verified through the Crossref API. Split into an ego-only capture step and a fully standalone transform step. Use when the user wants to ask OpenEvidence, add a follow-up, get a shareable link, an HTML export, and/or citations (.bib / CSL / AMA).
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [htlin222/openevidence-skill](https://github.com/htlin222/openevidence-skill)
 
@@ -324,9 +322,7 @@ Collected GitHub skill repository.
 
 ### [lhbsaa/apex-discovery](https://github.com/lhbsaa/apex-discovery)
 
-How to use the Adaptyv Bio Foundry API and Python SDK for protein experiment design, submission, and results retrieval. Use this skill whenever the user mentions Adaptyv, Foundry API, protein binding assays, protein screening experiments, BLI/SPR assays, thermostability assays, or wants to submit protein sequences for experimental characterization. Also trigger when code imports `adaptyv`, `adaptyv_sdk`, or `FoundryClient`, or references `foundry-api-public.adaptyvbio.com`.
-
-Example skill path: `skills/adaptyv/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Lord1Egypt/scientific-agent-toolkit](https://github.com/Lord1Egypt/scientific-agent-toolkit)
 
@@ -442,9 +438,7 @@ Collected GitHub skill repository.
 
 ### [seandavi/agentic-coding-intro](https://github.com/seandavi/agentic-coding-intro)
 
-Author figures in Quarto documents using the quarto-livefigures extension — editable, version-controlled figure sources (Excalidraw, Vega-Lite, Graphviz, PlantUML, and 14 more) rendered at build time. Use when creating or editing diagrams, charts, schemas, or timing figures in a Quarto project, when the user asks for a figure/diagram in a .qmd document, or when converting static images to maintainable sources.
-
-Example skill path: `talks/2026-07-22-ai-agents-for-knowledge-workers-bigcare/_extensions/seandavi/livefigures/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Sepanta-Yalameha/SIMBIOLOGY-MCP](https://github.com/Sepanta-Yalameha/SIMBIOLOGY-MCP)
 
@@ -536,9 +530,7 @@ Collected GitHub skill repository.
 
 ### [yigityildiz0/scientific-agent-skills](https://github.com/yigityildiz0/scientific-agent-skills)
 
-Plan, write, review, or improve academic presentations for thesis defenses, conferences, seminars, lab meetings, grant briefings, and research talks. Use when evidence, argument flow, citations, methods, results, and scholarly presentation quality matter.
-
-Example skill path: `skills/common/academic-presentations/SKILL.md`
+Collected GitHub skill repository.
 
 ### [yojiro253-del/BioForge](https://github.com/yojiro253-del/BioForge)
 
