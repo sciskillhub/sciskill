@@ -666,6 +666,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "blackblue-labs/zeroplot",
+    "cloneUrl": "https://github.com/blackblue-labs/zeroplot.git",
+    "localPath": "open-source/blackblue-labs/zeroplot",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/blackblue-labs/zeroplot",
+    "addedAt": "2026-07-24T15:25:20.942155Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "bloody2634/claud-skills",
     "cloneUrl": "https://github.com/bloody2634/claud-skills.git",
     "localPath": "open-source/bloody2634/claud-skills",

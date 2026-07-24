@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **141**
+Total repositories: **142**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -135,6 +135,12 @@ Collected GitHub skill repository.
 ### [BioTender-max/awesome-bio-agent-skills](https://github.com/BioTender-max/awesome-bio-agent-skills)
 
 Collected GitHub skill repository.
+
+### [blackblue-labs/zeroplot](https://github.com/blackblue-labs/zeroplot)
+
+Create editable charts, diagrams, figures, posters, or slides from intent, data, or references.
+
+Example skill path: `skills/zeroplot/SKILL.md`
 
 ### [bloody2634/claud-skills](https://github.com/bloody2634/claud-skills)
 
