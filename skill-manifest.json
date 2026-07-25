@@ -351,6 +351,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "KaiyiHu/ResearchFigureSkill",
+    "cloneUrl": "https://github.com/KaiyiHu/ResearchFigureSkill.git",
+    "localPath": "open-source/KaiyiHu/ResearchFigureSkill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/KaiyiHu/ResearchFigureSkill",
+    "addedAt": "2026-07-25T15:02:26.972094Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Kayunangka/claude-skill",
     "cloneUrl": "https://github.com/Kayunangka/claude-skill.git",
     "localPath": "open-source/Kayunangka/claude-skill",

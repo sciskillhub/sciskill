@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 188,
+  "repo_count": 191,
   "results": [
     {
       "repo": "OuroborosCollective/Wasd",
@@ -508,54 +508,6 @@
       "matches": []
     },
     {
-      "repo": "Sepanta-Yalameha/SIMBIOLOGY-MCP",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology",
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sepanta-Yalameha/SIMBIOLOGY-MCP",
-      "matches": []
-    },
-    {
-      "repo": "aicell-lab/bioengine",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
-      "matches": []
-    },
-    {
       "repo": "droftgamer-wq/researcher-skill",
       "matched_domain_topics": [
         "bioinformatics",
@@ -607,6 +559,25 @@
       "matches": []
     },
     {
+      "repo": "aicell-lab/bioengine",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
+      "matches": []
+    },
+    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -634,6 +605,69 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
       "matches": []
+    },
+    {
+      "repo": "Bioconductor/agentic-ai-workshop-2026-boston",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "Sepanta-Yalameha/SIMBIOLOGY-MCP",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sepanta-Yalameha/SIMBIOLOGY-MCP",
+      "matches": []
+    },
+    {
+      "repo": "HolobiomicsLab/Mimosa-AI",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "jvogan/motif",
@@ -910,23 +944,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/jvogan/proteus",
       "matches": []
-    },
-    {
-      "repo": "HolobiomicsLab/Mimosa-AI",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "MaxMLang/cxg-census-mcp",
@@ -3009,6 +3026,25 @@
       "matches": []
     },
     {
+      "repo": "ruthannepai-tech/therapeutic-program-architect",
+      "matched_domain_topics": [
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ruthannepai-tech/therapeutic-program-architect",
+      "matches": []
+    },
+    {
       "repo": "jvogan/biovoice",
       "matched_domain_topics": [
         "computational-biology"
@@ -3047,25 +3083,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ruthannepai-tech/inflammatory-target-analyst",
-      "matches": []
-    },
-    {
-      "repo": "ruthannepai-tech/therapeutic-program-architect",
-      "matched_domain_topics": [
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ruthannepai-tech/therapeutic-program-architect",
       "matches": []
     },
     {
@@ -3172,36 +3189,6 @@
       "matches": []
     },
     {
-      "repo": "blackblue-labs/zeroplot",
-      "matched_domain_topics": [
-        "scientific-visualization"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills",
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "scientific-visualization",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "scientific-visualization",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/blackblue-labs/zeroplot.git",
-      "chosen_skill_path": "skills/zeroplot/SKILL.md",
-      "front_matter": {
-        "name": "zeroplot",
-        "description": "Create editable charts, diagrams, figures, posters, or slides from intent, data, or references."
-      },
-      "html_url": "https://github.com/blackblue-labs/zeroplot",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/blackblue-labs/zeroplot"
-    },
-    {
       "repo": "sepahead/cortexel",
       "matched_domain_topics": [
         "scientific-visualization"
@@ -3238,6 +3225,30 @@
       "matches": []
     },
     {
+      "repo": "blackblue-labs/zeroplot",
+      "matched_domain_topics": [
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/blackblue-labs/zeroplot",
+      "matches": []
+    },
+    {
       "repo": "aleeepassarelli/scientific-validation-hub",
       "matched_domain_topics": [
         "scientific-visualization"
@@ -3249,6 +3260,48 @@
         {
           "domain_topic": "scientific-visualization",
           "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "KaiyiHu/ResearchFigureSkill",
+      "matched_domain_topics": [
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/KaiyiHu/ResearchFigureSkill.git",
+      "chosen_skill_path": "skills/research-figure/SKILL.md",
+      "front_matter": {
+        "name": "research-figure",
+        "description": "Create AI top-conference-grade scientific figures from papers or research briefs by summarizing the source, filling fixed Motivation and Pipeline prompt templates, generating editable figures with previews, and checking scientific correctness, arrows, text, blur, spacing, alignment, and clipping. Use for NeurIPS-, ICML-, ICLR-, AAAI-, CVPR-, ACL-, or KDD-level paper figures; Figure 1 motivation figures; method, workflow, or architecture diagrams; editable scientific illustrations; research figure prompts; 论文配图; 科研绘图; 动机图; 方法图; or 流程图. Before work, establish the requested figure type, whether the paper already has that figure, and whether to replace it completely, use it as a reference and improve it, or preserve and repair it."
+      },
+      "html_url": "https://github.com/KaiyiHu/ResearchFigureSkill",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/KaiyiHu/ResearchFigureSkill"
+    },
+    {
+      "repo": "Azhi-ss/academic-figure-skills",
+      "matched_domain_topics": [
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
         }
       ],
       "matched_topics": [],

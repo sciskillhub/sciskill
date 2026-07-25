@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **142**
+Total repositories: **143**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -138,9 +138,7 @@ Collected GitHub skill repository.
 
 ### [blackblue-labs/zeroplot](https://github.com/blackblue-labs/zeroplot)
 
-Create editable charts, diagrams, figures, posters, or slides from intent, data, or references.
-
-Example skill path: `skills/zeroplot/SKILL.md`
+Collected GitHub skill repository.
 
 ### [bloody2634/claud-skills](https://github.com/bloody2634/claud-skills)
 
@@ -313,6 +311,12 @@ Collected GitHub skill repository.
 ### [k-telux/OpticalModeler](https://github.com/k-telux/OpticalModeler)
 
 Collected GitHub skill repository.
+
+### [KaiyiHu/ResearchFigureSkill](https://github.com/KaiyiHu/ResearchFigureSkill)
+
+Create AI top-conference-grade scientific figures from papers or research briefs by summarizing the source, filling fixed Motivation and Pipeline prompt templates, generating editable figures with previews, and checking scientific correctness, arrows, text, blur, spacing, alignment, and clipping. Use for NeurIPS-, ICML-, ICLR-, AAAI-, CVPR-, ACL-, or KDD-level paper figures; Figure 1 motivation figures; method, workflow, or architecture diagrams; editable scientific illustrations; research figure prompts; 论文配图; 科研绘图; 动机图; 方法图; or 流程图. Before work, establish the requested figure type, whether the paper already has that figure, and whether to replace it completely, use it as a reference and improve it, or preserve and repair it.
+
+Example skill path: `skills/research-figure/SKILL.md`
 
 ### [Kayunangka/claude-skill](https://github.com/Kayunangka/claude-skill)
 
