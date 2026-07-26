@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **143**
+Total repositories: **145**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -314,13 +314,17 @@ Collected GitHub skill repository.
 
 ### [KaiyiHu/ResearchFigureSkill](https://github.com/KaiyiHu/ResearchFigureSkill)
 
-Create AI top-conference-grade scientific figures from papers or research briefs by summarizing the source, filling fixed Motivation and Pipeline prompt templates, generating editable figures with previews, and checking scientific correctness, arrows, text, blur, spacing, alignment, and clipping. Use for NeurIPS-, ICML-, ICLR-, AAAI-, CVPR-, ACL-, or KDD-level paper figures; Figure 1 motivation figures; method, workflow, or architecture diagrams; editable scientific illustrations; research figure prompts; 论文配图; 科研绘图; 动机图; 方法图; or 流程图. Before work, establish the requested figure type, whether the paper already has that figure, and whether to replace it completely, use it as a reference and improve it, or preserve and repair it.
-
-Example skill path: `skills/research-figure/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Kayunangka/claude-skill](https://github.com/Kayunangka/claude-skill)
 
 Collected GitHub skill repository.
+
+### [khu88/ResearchFigureSkill](https://github.com/khu88/ResearchFigureSkill)
+
+Create AI top-conference-grade scientific Motivation and Pipeline figures from papers or research briefs. Summarize the allowed source, fill the original user-supplied Research Figure Prompt Template without paraphrasing its fixed visual-style lock, directly generate a style-faithful primary PNG, reconstruct a faithful editable PowerPoint companion, and visually check scientific correctness, text overflow, collisions, blur, spacing, alignment, clipping, and consistent connected arrows. Use for NeurIPS-, ICML-, ICLR-, AAAI-, CVPR-, ACL-, or KDD-level paper figures; Figure 1; method, workflow, or architecture diagrams; editable PPT/PPTX scientific illustrations; research figure prompts; 论文配图; 科研绘图; 动机图; 方法图; or 流程图. Before work, establish the requested figure type, whether the paper already has that figure, and whether to replace it completely, use it as a reference and improve it, or preserve and repair it.
+
+Example skill path: `skills/research-figure/SKILL.md`
 
 ### [kimimgo/viznoir](https://github.com/kimimgo/viznoir)
 
@@ -421,6 +425,12 @@ Collected GitHub skill repository.
 ### [richard-kim-79/archora-skills](https://github.com/richard-kim-79/archora-skills)
 
 Collected GitHub skill repository.
+
+### [ruiwuniu/My-Academic-Skills](https://github.com/ruiwuniu/My-Academic-Skills)
+
+Coordinate advisory-only academic manuscript drafting, revision, resubmission, reviewer-response preparation, section-agent delegation, literature positioning, theorem or proof checking, mathematical validation, and linguistic smoothing. Use when Codex needs to organize scholarly manuscript work with a master agent and specialist sub-agents for literature review, mathematical validation, and academic prose polishing while preserving files until explicit user approval.
+
+Example skill path: `academic-manuscript-agents/SKILL.md`
 
 ### [Runchuan-BU/BioClaw](https://github.com/Runchuan-BU/BioClaw)
 

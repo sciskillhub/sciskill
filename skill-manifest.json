@@ -927,6 +927,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "khu88/ResearchFigureSkill",
+    "cloneUrl": "https://github.com/khu88/ResearchFigureSkill.git",
+    "localPath": "open-source/khu88/ResearchFigureSkill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/khu88/ResearchFigureSkill",
+    "addedAt": "2026-07-26T15:05:27.713495Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "kimimgo/viznoir",
     "cloneUrl": "https://github.com/kimimgo/viznoir.git",
     "localPath": "open-source/kimimgo/viznoir",
@@ -1077,6 +1086,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/richard-kim-79/archora-skills",
     "addedAt": "2026-05-15T16:04:10.476346Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "ruiwuniu/My-Academic-Skills",
+    "cloneUrl": "https://github.com/ruiwuniu/My-Academic-Skills.git",
+    "localPath": "open-source/ruiwuniu/My-Academic-Skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/ruiwuniu/My-Academic-Skills",
+    "addedAt": "2026-07-26T15:05:24.909768Z",
     "addedBy": "github-actions"
   },
   {
