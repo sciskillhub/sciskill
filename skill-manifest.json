@@ -666,6 +666,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "baney75/GeneMachine",
+    "cloneUrl": "https://github.com/baney75/GeneMachine.git",
+    "localPath": "open-source/baney75/GeneMachine",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/baney75/GeneMachine",
+    "addedAt": "2026-07-28T16:06:40.611373Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "bio-xyz/BioAgents",
     "cloneUrl": "https://github.com/bio-xyz/BioAgents.git",
     "localPath": "open-source/bio-xyz/BioAgents",
