@@ -94,9 +94,7 @@ Collected GitHub skill repository.
 
 ### [baney75/GeneMachine](https://github.com/baney75/GeneMachine)
 
-Analyze personal DNA and genomic files with privacy-first quality control, compatible open-source bioinformatics workflows, current evidence, calibrated statistics, and action-first cited PDF reports. Use for 23andMe or Ancestry raw data, VCF/gVCF, BAM/CRAM, FASTQ, true methylation data, exact-marker or pharmacogenomic questions, and professional genomic reports that make uncertainty and next steps explicit.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [bio-xyz/BioAgents](https://github.com/bio-xyz/BioAgents)
 
