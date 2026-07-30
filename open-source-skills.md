@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **146**
+Total repositories: **147**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -299,6 +299,12 @@ Collected GitHub skill repository.
 ### [jiazhenz026/SciStudio](https://github.com/jiazhenz026/SciStudio)
 
 Collected GitHub skill repository.
+
+### [JuneYaooo/clinical-calculator](https://github.com/JuneYaooo/clinical-calculator)
+
+Use for searching, selecting, calculating, checking, or explaining executable clinical formulas, medical calculators, risk and staging scores, renal estimates, lab-derived indices, unit conversions, dose arithmetic, or interpretation thresholds; also use to turn a supplied JSON, CSV, Markdown, PDF, DOCX, or written specification into a draft, validated, and installed user-defined scalar/multi-output formula, lookup table, or decision-tree calculator. Supports Chinese and English calculator names and keeps local executability separate from clinical review and release.
+
+Example skill path: `SKILL.md`
 
 ### [jvogan/motif](https://github.com/jvogan/motif)
 

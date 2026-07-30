@@ -342,6 +342,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "JuneYaooo/clinical-calculator",
+    "cloneUrl": "https://github.com/JuneYaooo/clinical-calculator.git",
+    "localPath": "open-source/JuneYaooo/clinical-calculator",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/JuneYaooo/clinical-calculator",
+    "addedAt": "2026-07-30T15:52:53.535927Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "K-Dense-AI/scientific-agent-skills",
     "cloneUrl": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
     "localPath": "open-source/K-Dense-AI/scientific-agent-skills",
