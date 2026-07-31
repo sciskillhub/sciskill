@@ -342,6 +342,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "Jinsong-Zhou/bio-research-skills",
+    "cloneUrl": "https://github.com/Jinsong-Zhou/bio-research-skills.git",
+    "localPath": "open-source/Jinsong-Zhou/bio-research-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Jinsong-Zhou/bio-research-skills",
+    "addedAt": "2026-07-31T16:03:15.224267Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "JuneYaooo/clinical-calculator",
     "cloneUrl": "https://github.com/JuneYaooo/clinical-calculator.git",
     "localPath": "open-source/JuneYaooo/clinical-calculator",

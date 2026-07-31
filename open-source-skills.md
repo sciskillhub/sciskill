@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **147**
+Total repositories: **148**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -300,11 +300,15 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Jinsong-Zhou/bio-research-skills](https://github.com/Jinsong-Zhou/bio-research-skills)
+
+Deep-read one paper end to end — explain what it does, then judge whether its conclusions actually hold and whether it is worth acting on — and deliver the result as a Word document. Use when handed a PDF, an arXiv id, a DOI or a preprint link and asked to read it properly, go through it carefully, evaluate it, critique it, or write it up. Triggers on "read this paper", "deep read", "精读", "help me understand this paper", "is this paper any good", "does this hold up", "review this preprint", "write up notes on this paper", or any request pairing one specific paper with more than a summary.
+
+Example skill path: `skills/paper-deep-reading/SKILL.md`
+
 ### [JuneYaooo/clinical-calculator](https://github.com/JuneYaooo/clinical-calculator)
 
-Use for searching, selecting, calculating, checking, or explaining executable clinical formulas, medical calculators, risk and staging scores, renal estimates, lab-derived indices, unit conversions, dose arithmetic, or interpretation thresholds; also use to turn a supplied JSON, CSV, Markdown, PDF, DOCX, or written specification into a draft, validated, and installed user-defined scalar/multi-output formula, lookup table, or decision-tree calculator. Supports Chinese and English calculator names and keeps local executability separate from clinical review and release.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [jvogan/motif](https://github.com/jvogan/motif)
 

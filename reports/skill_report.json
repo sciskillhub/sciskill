@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 200,
+  "repo_count": 201,
   "results": [
     {
       "repo": "OuroborosCollective/Wasd",
@@ -503,23 +503,6 @@
       "matches": []
     },
     {
-      "repo": "fmdelgado/academatepy",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -547,6 +530,59 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
       "matches": []
+    },
+    {
+      "repo": "cyanheads/pubmed-mcp-server",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/pubmed-mcp-server",
+      "matches": []
+    },
+    {
+      "repo": "Bioconductor/agentic-ai-workshop-2026-boston",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "fmdelgado/academatepy",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "mrsirquanzo/Sonny",
@@ -801,7 +837,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "cyanheads/pubmed-mcp-server",
+      "repo": "ammawla/encode-toolkit",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -816,25 +852,8 @@
       ],
       "matched_topics": [],
       "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/pubmed-mcp-server",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ammawla/encode-toolkit",
       "matches": []
-    },
-    {
-      "repo": "Bioconductor/agentic-ai-workshop-2026-boston",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "Sepanta-Yalameha/SIMBIOLOGY-MCP",
@@ -1014,25 +1033,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/Jason-0409-G/vivarium",
-      "matches": []
-    },
-    {
-      "repo": "ammawla/encode-toolkit",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ammawla/encode-toolkit",
       "matches": []
     },
     {
@@ -1391,6 +1391,23 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/BioSymphony/structure-factory",
       "matches": []
+    },
+    {
+      "repo": "icohangar-ops/medpsy-clinical-trial-agent",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "gbadedata/bioagent",
@@ -2368,7 +2385,22 @@
         }
       ],
       "matched_topics": [],
-      "status": "no_valid_skill"
+      "status": "added",
+      "clone_url": "https://github.com/Jinsong-Zhou/bio-research-skills.git",
+      "chosen_skill_path": "skills/paper-deep-reading/SKILL.md",
+      "front_matter": {
+        "name": "paper-deep-reading",
+        "description": "Deep-read one paper end to end — explain what it does, then judge whether its conclusions actually hold and whether it is worth acting on — and deliver the result as a Word document. Use when handed a PDF, an arXiv id, a DOI or a preprint link and asked to read it properly, go through it carefully, evaluate it, critique it, or write it up. Triggers on \"read this paper\", \"deep read\", \"精读\", \"help me understand this paper\", \"is this paper any good\", \"does this hold up\", \"review this preprint\", \"write up notes on this paper\", or any request pairing one specific paper with more than a summary.",
+        "license": "MIT",
+        "allowed-tools": "Bash Read Write",
+        "compatibility": "Needs network access and Python 3.9+. The bundled scripts use only the standard library — no packages to install, no credentials required. Set BIO_RESEARCH_CONTACT to your email so bioRxiv and Europe PMC can identify you. Word and slide output are rendered by the `docx` and `pptx` skills from `anthropics/skills`, which are licensed separately and need Node.js; without them the note still renders to Markdown.",
+        "metadata": {
+          "version": "0.1",
+          "skill-author": "Jinsong Zhou"
+        }
+      },
+      "html_url": "https://github.com/Jinsong-Zhou/bio-research-skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Jinsong-Zhou/bio-research-skills"
     },
     {
       "repo": "K-Dense-AI/scientific-agent-skills",
@@ -3426,6 +3458,25 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "guhou-hvi/elsevier-figure-style",
+      "matched_domain_topics": [
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/guhou-hvi/elsevier-figure-style",
+      "matches": []
+    },
+    {
       "repo": "khu88/ResearchFigureSkill",
       "matched_domain_topics": [
         "scientific-visualization"
@@ -3479,25 +3530,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "guhou-hvi/elsevier-figure-style",
-      "matched_domain_topics": [
-        "scientific-visualization"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "scientific-visualization",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/guhou-hvi/elsevier-figure-style",
-      "matches": []
     },
     {
       "repo": "zhoy0409-debug/polish-sci-figures",
@@ -3557,7 +3589,7 @@
       "matches": []
     },
     {
-      "repo": "NovoMCP/novomcp",
+      "repo": "AI-Governance-Lab/governed-quantum-agents",
       "matched_domain_topics": [
         "drug-discovery"
       ],
@@ -3574,7 +3606,24 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "AI-Governance-Lab/governed-quantum-agents",
+      "repo": "oliverkraft93-ops/covasyn-mcp-examples",
+      "matched_domain_topics": [
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "NovoMCP/novomcp",
       "matched_domain_topics": [
         "drug-discovery"
       ],
@@ -3761,23 +3810,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/agentcures/NanoCures",
       "matches": []
-    },
-    {
-      "repo": "oliverkraft93-ops/covasyn-mcp-examples",
-      "matched_domain_topics": [
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "malamute0882-create/bioflow",
@@ -4213,15 +4245,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/JuneYaooo/clinical-calculator.git",
-      "chosen_skill_path": "SKILL.md",
-      "front_matter": {
-        "name": "clinical-calculator",
-        "description": "Use for searching, selecting, calculating, checking, or explaining executable clinical formulas, medical calculators, risk and staging scores, renal estimates, lab-derived indices, unit conversions, dose arithmetic, or interpretation thresholds; also use to turn a supplied JSON, CSV, Markdown, PDF, DOCX, or written specification into a draft, validated, and installed user-defined scalar/multi-output formula, lookup table, or decision-tree calculator. Supports Chinese and English calculator names and keeps local executability separate from clinical review and release."
-      },
-      "html_url": "https://github.com/JuneYaooo/clinical-calculator",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/JuneYaooo/clinical-calculator"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/JuneYaooo/clinical-calculator",
+      "matches": []
     },
     {
       "repo": "htlin222/ask-oe-with-ego-skill",
