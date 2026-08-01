@@ -29,6 +29,25 @@
   "repo_count": 201,
   "results": [
     {
+      "repo": "ArielShemesh1999/fabius",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ArielShemesh1999/fabius",
+      "matches": []
+    },
+    {
       "repo": "OuroborosCollective/Wasd",
       "matched_domain_topics": [
         "science"
@@ -61,25 +80,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "ArielShemesh1999/fabius",
-      "matched_domain_topics": [
-        "science"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ArielShemesh1999/fabius",
-      "matches": []
     },
     {
       "repo": "GTC2080/DeepSeek_Science",
@@ -532,43 +532,7 @@
       "matches": []
     },
     {
-      "repo": "cyanheads/pubmed-mcp-server",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/pubmed-mcp-server",
-      "matches": []
-    },
-    {
       "repo": "Bioconductor/agentic-ai-workshop-2026-boston",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "fmdelgado/academatepy",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -600,6 +564,42 @@
         },
         {
           "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "cyanheads/pubmed-mcp-server",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/pubmed-mcp-server",
+      "matches": []
+    },
+    {
+      "repo": "fmdelgado/academatepy",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
           "qualifier_topic": "ai-agents"
         }
       ],
@@ -2385,22 +2385,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/Jinsong-Zhou/bio-research-skills.git",
-      "chosen_skill_path": "skills/paper-deep-reading/SKILL.md",
-      "front_matter": {
-        "name": "paper-deep-reading",
-        "description": "Deep-read one paper end to end — explain what it does, then judge whether its conclusions actually hold and whether it is worth acting on — and deliver the result as a Word document. Use when handed a PDF, an arXiv id, a DOI or a preprint link and asked to read it properly, go through it carefully, evaluate it, critique it, or write it up. Triggers on \"read this paper\", \"deep read\", \"精读\", \"help me understand this paper\", \"is this paper any good\", \"does this hold up\", \"review this preprint\", \"write up notes on this paper\", or any request pairing one specific paper with more than a summary.",
-        "license": "MIT",
-        "allowed-tools": "Bash Read Write",
-        "compatibility": "Needs network access and Python 3.9+. The bundled scripts use only the standard library — no packages to install, no credentials required. Set BIO_RESEARCH_CONTACT to your email so bioRxiv and Europe PMC can identify you. Word and slide output are rendered by the `docx` and `pptx` skills from `anthropics/skills`, which are licensed separately and need Node.js; without them the note still renders to Markdown.",
-        "metadata": {
-          "version": "0.1",
-          "skill-author": "Jinsong Zhou"
-        }
-      },
-      "html_url": "https://github.com/Jinsong-Zhou/bio-research-skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Jinsong-Zhou/bio-research-skills"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Jinsong-Zhou/bio-research-skills",
+      "matches": []
     },
     {
       "repo": "K-Dense-AI/scientific-agent-skills",
@@ -3589,6 +3576,23 @@
       "matches": []
     },
     {
+      "repo": "deepbioacademy/deepbioacademy.github.io",
+      "matched_domain_topics": [
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "AI-Governance-Lab/governed-quantum-agents",
       "matched_domain_topics": [
         "drug-discovery"
@@ -3658,23 +3662,6 @@
     },
     {
       "repo": "b9gcnjtgkn-dev/pharmvers-aios",
-      "matched_domain_topics": [
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "deepbioacademy/deepbioacademy.github.io",
       "matched_domain_topics": [
         "drug-discovery"
       ],

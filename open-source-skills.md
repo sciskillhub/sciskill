@@ -302,9 +302,7 @@ Collected GitHub skill repository.
 
 ### [Jinsong-Zhou/bio-research-skills](https://github.com/Jinsong-Zhou/bio-research-skills)
 
-Deep-read one paper end to end — explain what it does, then judge whether its conclusions actually hold and whether it is worth acting on — and deliver the result as a Word document. Use when handed a PDF, an arXiv id, a DOI or a preprint link and asked to read it properly, go through it carefully, evaluate it, critique it, or write it up. Triggers on "read this paper", "deep read", "精读", "help me understand this paper", "is this paper any good", "does this hold up", "review this preprint", "write up notes on this paper", or any request pairing one specific paper with more than a summary.
-
-Example skill path: `skills/paper-deep-reading/SKILL.md`
+Collected GitHub skill repository.
 
 ### [JuneYaooo/clinical-calculator](https://github.com/JuneYaooo/clinical-calculator)
 
