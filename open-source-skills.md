@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **148**
+Total repositories: **149**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -327,6 +327,12 @@ Collected GitHub skill repository.
 ### [KaiyiHu/ResearchFigureSkill](https://github.com/KaiyiHu/ResearchFigureSkill)
 
 Collected GitHub skill repository.
+
+### [KalarisLabs/myriad](https://github.com/KalarisLabs/myriad)
+
+Activate when an agent must parse high-throughput screening plate-reader data, reconcile plate maps, detect row/column/edge artifacts, normalize inhibition or activation assays, calculate Z-prime or robust Z-prime, compute robust z-scores or B-scores, assess replicate concordance, control false discoveries, call primary hits, quarantine failed plates, or produce an auditable HTS campaign-level hit table.
+
+Example skill path: `skills/normalize-qc-call-hts-hits/SKILL.md`
 
 ### [Kayunangka/claude-skill](https://github.com/Kayunangka/claude-skill)
 

@@ -378,6 +378,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "KalarisLabs/myriad",
+    "cloneUrl": "https://github.com/KalarisLabs/myriad.git",
+    "localPath": "open-source/KalarisLabs/myriad",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/KalarisLabs/myriad",
+    "addedAt": "2026-08-04T16:12:09.131354Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Kayunangka/claude-skill",
     "cloneUrl": "https://github.com/Kayunangka/claude-skill.git",
     "localPath": "open-source/Kayunangka/claude-skill",
