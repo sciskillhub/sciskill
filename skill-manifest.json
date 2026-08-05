@@ -378,6 +378,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "KalarisLabs/Myriad",
+    "cloneUrl": "https://github.com/KalarisLabs/Myriad.git",
+    "localPath": "open-source/KalarisLabs/Myriad",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/KalarisLabs/Myriad",
+    "addedAt": "2026-08-05T16:01:49.140183Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "KalarisLabs/myriad",
     "cloneUrl": "https://github.com/KalarisLabs/myriad.git",
     "localPath": "open-source/KalarisLabs/myriad",
@@ -510,6 +519,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/Sapiens-ostracism678/finance-skills",
     "addedAt": "2026-04-15T15:11:38.405415Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "SciToolsmith/sci-plot",
+    "cloneUrl": "https://github.com/SciToolsmith/sci-plot.git",
+    "localPath": "open-source/SciToolsmith/sci-plot",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/SciToolsmith/sci-plot",
+    "addedAt": "2026-08-05T16:02:58.769098Z",
     "addedBy": "github-actions"
   },
   {

@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **149**
+Total repositories: **151**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -328,11 +328,15 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
-### [KalarisLabs/myriad](https://github.com/KalarisLabs/myriad)
+### [KalarisLabs/Myriad](https://github.com/KalarisLabs/Myriad)
 
 Activate when an agent must parse high-throughput screening plate-reader data, reconcile plate maps, detect row/column/edge artifacts, normalize inhibition or activation assays, calculate Z-prime or robust Z-prime, compute robust z-scores or B-scores, assess replicate concordance, control false discoveries, call primary hits, quarantine failed plates, or produce an auditable HTS campaign-level hit table.
 
 Example skill path: `skills/normalize-qc-call-hts-hits/SKILL.md`
+
+### [KalarisLabs/myriad](https://github.com/KalarisLabs/myriad)
+
+Collected GitHub skill repository.
 
 ### [Kayunangka/claude-skill](https://github.com/Kayunangka/claude-skill)
 
@@ -469,6 +473,12 @@ Collected GitHub skill repository.
 ### [Sapiens-ostracism678/finance-skills](https://github.com/Sapiens-ostracism678/finance-skills)
 
 Collected GitHub skill repository.
+
+### [SciToolsmith/sci-plot](https://github.com/SciToolsmith/sci-plot)
+
+Design, implement, revise, and audit data-driven scientific figures and multi-panel evidence layouts. Use for 科研绘图、论文图、Nature-style or journal-ready publication figures, selecting evidence-appropriate visual encodings, adapting an audited case to new data, improving an existing plot without silently changing its scientific meaning, or reviewing figure code and rendered artifacts for statistical semantics, data integrity, readability, reproducibility, and export quality. Supports Python/R workflows and editable vector or raster deliverables.
+
+Example skill path: `skills/sci-plot/SKILL.md`
 
 ### [seandavi/agentic-coding-intro](https://github.com/seandavi/agentic-coding-intro)
 
