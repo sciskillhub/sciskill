@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **151**
+Total repositories: **153**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -188,6 +188,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [dekan-aleksandr/biodiscovery-skills](https://github.com/dekan-aleksandr/biodiscovery-skills)
+
+Operate as a research director making original discoveries from a given biological question and dataset. Use when the task is open-ended scientific research, exploring omics or experimental data for findings, hypothesis generation and testing, screening a large candidate space of genes, variants, features or compounds, investigating an anomaly, or deciding what experiment or analysis to run next. Triggers on "make discoveries", "explore this data", "find something in", "what's in this dataset", "research this question", "generate hypotheses", "why is this result happening".
+
+Example skill path: `skills/discovery-director/SKILL.md`
+
 ### [donbr/lifesciences-research](https://github.com/donbr/lifesciences-research)
 
 Collected GitHub skill repository.
@@ -264,6 +270,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Hongda-Zhao/bio-gene-to-reference-tree](https://github.com/Hongda-Zhao/bio-gene-to-reference-tree)
+
+Build an auditable protein gene tree from an accession, raw amino-acid sequence, or protein or gene name plus source organism. Use when an agent must resolve query metadata, discover and curate ortholog or homolog references and an outgroup, cluster redundant candidates, align and trim proteins, run FastTree or IQ-TREE2, generate iTOL annotations and metadata tables, or compare a gene tree with current phylogenetic literature. Require review gates before reference selection and tree inference.
+
+Example skill path: `skills/bio-gene-to-reference-tree/SKILL.md`
+
 ### [htlin222/ask-oe-with-ego-skill](https://github.com/htlin222/ask-oe-with-ego-skill)
 
 Collected GitHub skill repository.
@@ -330,9 +342,7 @@ Collected GitHub skill repository.
 
 ### [KalarisLabs/Myriad](https://github.com/KalarisLabs/Myriad)
 
-Activate when an agent must parse high-throughput screening plate-reader data, reconcile plate maps, detect row/column/edge artifacts, normalize inhibition or activation assays, calculate Z-prime or robust Z-prime, compute robust z-scores or B-scores, assess replicate concordance, control false discoveries, call primary hits, quarantine failed plates, or produce an auditable HTS campaign-level hit table.
-
-Example skill path: `skills/normalize-qc-call-hts-hits/SKILL.md`
+Collected GitHub skill repository.
 
 ### [KalarisLabs/myriad](https://github.com/KalarisLabs/myriad)
 
@@ -476,9 +486,7 @@ Collected GitHub skill repository.
 
 ### [SciToolsmith/sci-plot](https://github.com/SciToolsmith/sci-plot)
 
-Design, implement, revise, and audit data-driven scientific figures and multi-panel evidence layouts. Use for 科研绘图、论文图、Nature-style or journal-ready publication figures, selecting evidence-appropriate visual encodings, adapting an audited case to new data, improving an existing plot without silently changing its scientific meaning, or reviewing figure code and rendered artifacts for statistical semantics, data integrity, readability, reproducibility, and export quality. Supports Python/R workflows and editable vector or raster deliverables.
-
-Example skill path: `skills/sci-plot/SKILL.md`
+Collected GitHub skill repository.
 
 ### [seandavi/agentic-coding-intro](https://github.com/seandavi/agentic-coding-intro)
 

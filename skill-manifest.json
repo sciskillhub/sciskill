@@ -324,6 +324,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "Hongda-Zhao/bio-gene-to-reference-tree",
+    "cloneUrl": "https://github.com/Hongda-Zhao/bio-gene-to-reference-tree.git",
+    "localPath": "open-source/Hongda-Zhao/bio-gene-to-reference-tree",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Hongda-Zhao/bio-gene-to-reference-tree",
+    "addedAt": "2026-08-07T14:53:07.634273Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Jason-0409-G/vivarium",
     "cloneUrl": "https://github.com/Jason-0409-G/vivarium.git",
     "localPath": "open-source/Jason-0409-G/vivarium",
@@ -790,6 +799,15 @@
     "upstreamUrl": "https://github.com/d-oit/web-doc-resolver",
     "addedAt": "2026-04-11T17:13:45.139534Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "dekan-aleksandr/biodiscovery-skills",
+    "cloneUrl": "https://github.com/dekan-aleksandr/biodiscovery-skills.git",
+    "localPath": "open-source/dekan-aleksandr/biodiscovery-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/dekan-aleksandr/biodiscovery-skills",
+    "addedAt": "2026-08-07T14:53:02.475449Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "donbr/lifesciences-research",
