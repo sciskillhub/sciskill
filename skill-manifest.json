@@ -639,6 +639,15 @@
     "addedBy": "codex-container-test"
   },
   {
+    "fullName": "YuliaNuzhnenko/bioinformatics-agent-skills",
+    "cloneUrl": "https://github.com/YuliaNuzhnenko/bioinformatics-agent-skills.git",
+    "localPath": "open-source/YuliaNuzhnenko/bioinformatics-agent-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/YuliaNuzhnenko/bioinformatics-agent-skills",
+    "addedAt": "2026-08-08T14:31:30.219193Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "agentcures/NanoCures",
     "cloneUrl": "https://github.com/agentcures/NanoCures.git",
     "localPath": "open-source/agentcures/NanoCures",
@@ -1140,6 +1149,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/r-ruser/epi-skill",
     "addedAt": "2026-07-05T15:13:08.494741Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "raydemo1/visual-to-editable-pptx-skill",
+    "cloneUrl": "https://github.com/raydemo1/visual-to-editable-pptx-skill.git",
+    "localPath": "open-source/raydemo1/visual-to-editable-pptx-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/raydemo1/visual-to-editable-pptx-skill",
+    "addedAt": "2026-08-08T14:31:52.597478Z",
     "addedBy": "github-actions"
   },
   {

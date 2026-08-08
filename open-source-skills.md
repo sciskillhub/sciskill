@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **153**
+Total repositories: **155**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -190,9 +190,7 @@ Collected GitHub skill repository.
 
 ### [dekan-aleksandr/biodiscovery-skills](https://github.com/dekan-aleksandr/biodiscovery-skills)
 
-Operate as a research director making original discoveries from a given biological question and dataset. Use when the task is open-ended scientific research, exploring omics or experimental data for findings, hypothesis generation and testing, screening a large candidate space of genes, variants, features or compounds, investigating an anomaly, or deciding what experiment or analysis to run next. Triggers on "make discoveries", "explore this data", "find something in", "what's in this dataset", "research this question", "generate hypotheses", "why is this result happening".
-
-Example skill path: `skills/discovery-director/SKILL.md`
+Collected GitHub skill repository.
 
 ### [donbr/lifesciences-research](https://github.com/donbr/lifesciences-research)
 
@@ -272,9 +270,7 @@ Collected GitHub skill repository.
 
 ### [Hongda-Zhao/bio-gene-to-reference-tree](https://github.com/Hongda-Zhao/bio-gene-to-reference-tree)
 
-Build an auditable protein gene tree from an accession, raw amino-acid sequence, or protein or gene name plus source organism. Use when an agent must resolve query metadata, discover and curate ortholog or homolog references and an outgroup, cluster redundant candidates, align and trim proteins, run FastTree or IQ-TREE2, generate iTOL annotations and metadata tables, or compare a gene tree with current phylogenetic literature. Require review gates before reference selection and tree inference.
-
-Example skill path: `skills/bio-gene-to-reference-tree/SKILL.md`
+Collected GitHub skill repository.
 
 ### [htlin222/ask-oe-with-ego-skill](https://github.com/htlin222/ask-oe-with-ego-skill)
 
@@ -448,6 +444,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [raydemo1/visual-to-editable-pptx-skill](https://github.com/raydemo1/visual-to-editable-pptx-skill)
+
+将 PDF、宣传册、科研绘图、流程图、架构图、机制图、表格和图表直接拆分为高保真、可编辑的 PPTX。用户提供视觉资料并希望得到可编辑 PPT、保持原版式、修改图中文字、编辑框线箭头照片或科研示意图时使用。自动完成文字、照片、图形、连接线和常见视觉组件的合理分层，优先复用原素材与原版式。
+
+Example skill path: `SKILL.md`
+
 ### [realactivity/tula](https://github.com/realactivity/tula)
 
 Collected GitHub skill repository.
@@ -595,6 +597,12 @@ Collected GitHub skill repository.
 ### [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills)
 
 Collected GitHub skill repository.
+
+### [YuliaNuzhnenko/bioinformatics-agent-skills](https://github.com/YuliaNuzhnenko/bioinformatics-agent-skills)
+
+Parses AlphaFold2 PDB files, computes per-residue pLDDT confidence scores, and evaluates Solvent Accessible Surface Area (SASA) of active site pockets.
+
+Example skill path: `skills/alphafold-pocket-evaluator/SKILL.md`
 
 ### [zacklecon/claude-skills](https://github.com/zacklecon/claude-skills)
 
