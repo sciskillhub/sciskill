@@ -1071,6 +1071,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "mtchuang1981/clin-data-nav",
+    "cloneUrl": "https://github.com/mtchuang1981/clin-data-nav.git",
+    "localPath": "open-source/mtchuang1981/clin-data-nav",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/mtchuang1981/clin-data-nav",
+    "addedAt": "2026-08-09T14:33:48.793487Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "mzoryy/hwpxskill",
     "cloneUrl": "https://github.com/mzoryy/hwpxskill.git",
     "localPath": "open-source/mzoryy/hwpxskill",

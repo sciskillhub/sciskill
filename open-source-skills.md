@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **155**
+Total repositories: **156**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -392,6 +392,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [mtchuang1981/clin-data-nav](https://github.com/mtchuang1981/clin-data-nav)
+
+Use when a clinical-data, CDISC, ADaM, SDTM, PICO, RWD, RWE, causal, target-trial, SAS, SQL, R, EHR, claims, registry, OMOP, or TMUCRD question requires source navigation, terminology mapping, evidence ranking, a data contract, study-design routing, or an implementation specification.
+
+Example skill path: `skills/clinical-data-research-navigator/SKILL.md`
+
 ### [mzoryy/hwpxskill](https://github.com/mzoryy/hwpxskill)
 
 Collected GitHub skill repository.
@@ -446,9 +452,7 @@ Collected GitHub skill repository.
 
 ### [raydemo1/visual-to-editable-pptx-skill](https://github.com/raydemo1/visual-to-editable-pptx-skill)
 
-将 PDF、宣传册、科研绘图、流程图、架构图、机制图、表格和图表直接拆分为高保真、可编辑的 PPTX。用户提供视觉资料并希望得到可编辑 PPT、保持原版式、修改图中文字、编辑框线箭头照片或科研示意图时使用。自动完成文字、照片、图形、连接线和常见视觉组件的合理分层，优先复用原素材与原版式。
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [realactivity/tula](https://github.com/realactivity/tula)
 
@@ -600,9 +604,7 @@ Collected GitHub skill repository.
 
 ### [YuliaNuzhnenko/bioinformatics-agent-skills](https://github.com/YuliaNuzhnenko/bioinformatics-agent-skills)
 
-Parses AlphaFold2 PDB files, computes per-residue pLDDT confidence scores, and evaluates Solvent Accessible Surface Area (SASA) of active site pockets.
-
-Example skill path: `skills/alphafold-pocket-evaluator/SKILL.md`
+Collected GitHub skill repository.
 
 ### [zacklecon/claude-skills](https://github.com/zacklecon/claude-skills)
 

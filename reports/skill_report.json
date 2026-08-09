@@ -26,10 +26,10 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 216,
+  "repo_count": 217,
   "results": [
     {
-      "repo": "mareforma/mareforma",
+      "repo": "OuroborosCollective/Wasd",
       "matched_domain_topics": [
         "science"
       ],
@@ -46,7 +46,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "OuroborosCollective/Wasd",
+      "repo": "mareforma/mareforma",
       "matched_domain_topics": [
         "science"
       ],
@@ -503,6 +503,57 @@
       "matches": []
     },
     {
+      "repo": "droftgamer-wq/researcher-skill",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "clinical-research",
+        "computational-biology",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/droftgamer-wq/researcher-skill",
+      "matches": []
+    },
+    {
       "repo": "lm203688/genetech-14-sites",
       "matched_domain_topics": [
         "bioinformatics"
@@ -565,6 +616,30 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/jiazhenz026/SciStudio",
+      "matches": []
+    },
+    {
+      "repo": "jvogan/motif",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/jvogan/motif",
       "matches": []
     },
     {
@@ -647,57 +722,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "droftgamer-wq/researcher-skill",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "clinical-research",
-        "computational-biology",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills",
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/droftgamer-wq/researcher-skill",
-      "matches": []
     },
     {
       "repo": "sarojjriyaaa/BioResearch-AI",
@@ -869,30 +893,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/Alim430/bioresearch-agent",
-      "matches": []
-    },
-    {
-      "repo": "jvogan/motif",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/jvogan/motif",
       "matches": []
     },
     {
@@ -2445,6 +2445,23 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "Julesbladed538/baidu-netdisk-transfer",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "xuzhougeng/wisp-science",
       "matched_domain_topics": [
         "bioinformatics",
@@ -2467,76 +2484,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/xuzhougeng/wisp-science",
       "matches": []
-    },
-    {
-      "repo": "dekan-aleksandr/biodiscovery-skills",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/dekan-aleksandr/biodiscovery-skills",
-      "matches": []
-    },
-    {
-      "repo": "YuliaNuzhnenko/bioinformatics-agent-skills",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology",
-        "drug-discovery",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/YuliaNuzhnenko/bioinformatics-agent-skills.git",
-      "chosen_skill_path": "skills/alphafold-pocket-evaluator/SKILL.md",
-      "front_matter": {
-        "name": "alphafold-pocket-evaluator",
-        "description": "Parses AlphaFold2 PDB files, computes per-residue pLDDT confidence scores, and evaluates Solvent Accessible Surface Area (SASA) of active site pockets.",
-        "version": "1.0.0",
-        "metadata": {
-          "author": "Yulia Nuzhnenko",
-          "domain": "Structural Biology & Docking",
-          "frameworks": [
-            "Biopython",
-            "Py3Dmol",
-            "FreeSASA",
-            "SciPy"
-          ]
-        }
-      },
-      "html_url": "https://github.com/YuliaNuzhnenko/bioinformatics-agent-skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/YuliaNuzhnenko/bioinformatics-agent-skills"
     },
     {
       "repo": "K-Dense-AI/scientific-agent-skills",
@@ -2580,6 +2527,78 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
+      "matches": []
+    },
+    {
+      "repo": "FridrichMethod/awesome-skills",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
+      "matches": []
+    },
+    {
+      "repo": "YuliaNuzhnenko/bioinformatics-agent-skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "drug-discovery",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/YuliaNuzhnenko/bioinformatics-agent-skills",
+      "matches": []
+    },
+    {
+      "repo": "dekan-aleksandr/biodiscovery-skills",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/dekan-aleksandr/biodiscovery-skills",
       "matches": []
     },
     {
@@ -2637,23 +2656,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "Julesbladed538/baidu-netdisk-transfer",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "Hongda-Zhao/bio-gene-to-reference-tree",
       "matched_domain_topics": [
         "bioinformatics"
@@ -2670,25 +2672,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/Hongda-Zhao/bio-gene-to-reference-tree",
-      "matches": []
-    },
-    {
-      "repo": "FridrichMethod/awesome-skills",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
       "matches": []
     },
     {
@@ -3637,16 +3620,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/raydemo1/visual-to-editable-pptx-skill.git",
-      "chosen_skill_path": "SKILL.md",
-      "front_matter": {
-        "name": "visual-to-editable-pptx",
-        "description": "将 PDF、宣传册、科研绘图、流程图、架构图、机制图、表格和图表直接拆分为高保真、可编辑的 PPTX。用户提供视觉资料并希望得到可编辑 PPT、保持原版式、修改图中文字、编辑框线箭头照片或科研示意图时使用。自动完成文字、照片、图形、连接线和常见视觉组件的合理分层，优先复用原素材与原版式。",
-        "compatibility": "需要 PDF 与 PPTX 处理能力；推荐 Python 的 pdfplumber、PyMuPDF、Pillow、python-pptx，以及 PowerPoint 用于最终导出和查看。涉及局部去字或组件分离时使用图像编辑能力。"
-      },
-      "html_url": "https://github.com/raydemo1/visual-to-editable-pptx-skill",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/raydemo1/visual-to-editable-pptx-skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/raydemo1/visual-to-editable-pptx-skill",
+      "matches": []
     },
     {
       "repo": "SciToolsmith/sci-plot",
@@ -4304,6 +4280,31 @@
       "matches": []
     },
     {
+      "repo": "mtchuang1981/clin-data-nav",
+      "matched_domain_topics": [
+        "clinical-research"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/mtchuang1981/clin-data-nav.git",
+      "chosen_skill_path": "skills/clinical-data-research-navigator/SKILL.md",
+      "front_matter": {
+        "name": "clinical-data-research-navigator",
+        "description": "Use when a clinical-data, CDISC, ADaM, SDTM, PICO, RWD, RWE, causal, target-trial, SAS, SQL, R, EHR, claims, registry, OMOP, or TMUCRD question requires source navigation, terminology mapping, evidence ranking, a data contract, study-design routing, or an implementation specification."
+      },
+      "html_url": "https://github.com/mtchuang1981/clin-data-nav",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/mtchuang1981/clin-data-nav"
+    },
+    {
       "repo": "r-ruser/epi-skill",
       "matched_domain_topics": [
         "clinical-research"
@@ -4321,6 +4322,23 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/r-ruser/epi-skill",
       "matches": []
+    },
+    {
+      "repo": "Efe-Cal/Iatreon",
+      "matched_domain_topics": [
+        "medical"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "api-evangelist/motics-technologies",
@@ -4357,23 +4375,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/unexplained-familyephedraceae871/openclaw-skill",
       "matches": []
-    },
-    {
-      "repo": "Efe-Cal/Iatreon",
-      "matched_domain_topics": [
-        "medical"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "medical",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "gabrielmahia/afya-mcp",
