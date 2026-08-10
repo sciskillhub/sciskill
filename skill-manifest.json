@@ -864,6 +864,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "flyanx/paper-to-wechat",
+    "cloneUrl": "https://github.com/flyanx/paper-to-wechat.git",
+    "localPath": "open-source/flyanx/paper-to-wechat",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/flyanx/paper-to-wechat",
+    "addedAt": "2026-08-10T14:55:39.726318Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "fmschulz/omics-skills",
     "cloneUrl": "https://github.com/fmschulz/omics-skills.git",
     "localPath": "open-source/fmschulz/omics-skills",
@@ -1014,6 +1023,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/khu88/ResearchFigureSkill",
     "addedAt": "2026-07-26T15:05:27.713495Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "kikixiong/craft-scientific-figure-prompts",
+    "cloneUrl": "https://github.com/kikixiong/craft-scientific-figure-prompts.git",
+    "localPath": "open-source/kikixiong/craft-scientific-figure-prompts",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/kikixiong/craft-scientific-figure-prompts",
+    "addedAt": "2026-08-10T14:57:16.120819Z",
     "addedBy": "github-actions"
   },
   {

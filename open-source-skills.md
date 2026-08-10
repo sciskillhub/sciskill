@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **156**
+Total repositories: **158**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -224,6 +224,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [flyanx/paper-to-wechat](https://github.com/flyanx/paper-to-wechat)
+
+将学术论文（链接或 PDF）转化为可直接粘贴到微信公众号编辑器的自包含 HTML 深度解读文章，并配套封面、标题、简介与朋友圈文案。Use when user provides a paper link (Science/Nature/bioRxiv/PubMed etc.), a paper PDF file, a DOI, or a 公众号文章链接 and asks to 解读这篇论文 / 论文转公众号 / 写论文解读推文 / 把论文做成公众号文章.
+
+Example skill path: `SKILL.md`
+
 ### [fmschulz/omics-skills](https://github.com/fmschulz/omics-skills)
 
 Collected GitHub skill repository.
@@ -352,6 +358,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [kikixiong/craft-scientific-figure-prompts](https://github.com/kikixiong/craft-scientific-figure-prompts)
+
+Analyze reference figures and their prompts, extract transferable visual and organizational grammar, maintain a project-wide style profile across multiple figures, and produce robust model-agnostic prompts for scientific overview figures, method diagrams, architecture schematics, graphical abstracts, and research posters. Use when Codex must learn or preserve figure style, adapt it to a paper, thesis, proposal, or technical project, rewrite or audit a long image-generation prompt, keep a multi-figure project visually consistent, preserve scientific evidence states, or iteratively improve a generated figure without copying the reference's scientific content.
+
+Example skill path: `SKILL.md`
+
 ### [kimimgo/viznoir](https://github.com/kimimgo/viznoir)
 
 Collected GitHub skill repository.
@@ -394,9 +406,7 @@ Collected GitHub skill repository.
 
 ### [mtchuang1981/clin-data-nav](https://github.com/mtchuang1981/clin-data-nav)
 
-Use when a clinical-data, CDISC, ADaM, SDTM, PICO, RWD, RWE, causal, target-trial, SAS, SQL, R, EHR, claims, registry, OMOP, or TMUCRD question requires source navigation, terminology mapping, evidence ranking, a data contract, study-design routing, or an implementation specification.
-
-Example skill path: `skills/clinical-data-research-navigator/SKILL.md`
+Collected GitHub skill repository.
 
 ### [mzoryy/hwpxskill](https://github.com/mzoryy/hwpxskill)
 
