@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 219,
+  "repo_count": 220,
   "results": [
     {
       "repo": "mareforma/mareforma",
@@ -44,36 +44,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "flyanx/paper-to-wechat",
-      "matched_domain_topics": [
-        "science"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills",
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/flyanx/paper-to-wechat.git",
-      "chosen_skill_path": "SKILL.md",
-      "front_matter": {
-        "name": "paper-to-wechat",
-        "description": "将学术论文（链接或 PDF）转化为可直接粘贴到微信公众号编辑器的自包含 HTML 深度解读文章，并配套封面、标题、简介与朋友圈文案。Use when user provides a paper link (Science/Nature/bioRxiv/PubMed etc.), a paper PDF file, a DOI, or a 公众号文章链接 and asks to 解读这篇论文 / 论文转公众号 / 写论文解读推文 / 把论文做成公众号文章."
-      },
-      "html_url": "https://github.com/flyanx/paper-to-wechat",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/flyanx/paper-to-wechat"
     },
     {
       "repo": "OuroborosCollective/Wasd",
@@ -109,6 +79,30 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ArielShemesh1999/fabius",
+      "matches": []
+    },
+    {
+      "repo": "flyanx/paper-to-wechat",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/flyanx/paper-to-wechat",
       "matches": []
     },
     {
@@ -579,6 +573,59 @@
       "matches": []
     },
     {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "jiazhenz026/SciStudio",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/jiazhenz026/SciStudio",
+      "matches": []
+    },
+    {
+      "repo": "Christospap11/recover-abundance-profile",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "droftgamer-wq/researcher-skill",
       "matched_domain_topics": [
         "bioinformatics",
@@ -651,42 +698,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/jvogan/motif",
-      "matches": []
-    },
-    {
-      "repo": "aristoteleo/PantheonOS",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "jiazhenz026/SciStudio",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/jiazhenz026/SciStudio",
       "matches": []
     },
     {
@@ -2475,6 +2486,30 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "xuzhougeng/wisp-science",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/xuzhougeng/wisp-science",
+      "matches": []
+    },
+    {
       "repo": "exciting-soursop787/claude-plus-plus",
       "matched_domain_topics": [
         "bioinformatics",
@@ -2527,30 +2562,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "xuzhougeng/wisp-science",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/xuzhougeng/wisp-science",
-      "matches": []
     },
     {
       "repo": "K-Dense-AI/scientific-agent-skills",
@@ -3636,6 +3647,25 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "k-telux/OpticalModeler",
+      "matched_domain_topics": [
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/k-telux/OpticalModeler",
+      "matches": []
+    },
+    {
       "repo": "kikixiong/craft-scientific-figure-prompts",
       "matched_domain_topics": [
         "scientific-visualization"
@@ -3650,15 +3680,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/kikixiong/craft-scientific-figure-prompts.git",
-      "chosen_skill_path": "SKILL.md",
-      "front_matter": {
-        "name": "craft-scientific-figure-prompts",
-        "description": "Analyze reference figures and their prompts, extract transferable visual and organizational grammar, maintain a project-wide style profile across multiple figures, and produce robust model-agnostic prompts for scientific overview figures, method diagrams, architecture schematics, graphical abstracts, and research posters. Use when Codex must learn or preserve figure style, adapt it to a paper, thesis, proposal, or technical project, rewrite or audit a long image-generation prompt, keep a multi-figure project visually consistent, preserve scientific evidence states, or iteratively improve a generated figure without copying the reference's scientific content."
-      },
-      "html_url": "https://github.com/kikixiong/craft-scientific-figure-prompts",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/kikixiong/craft-scientific-figure-prompts"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/kikixiong/craft-scientific-figure-prompts",
+      "matches": []
     },
     {
       "repo": "raydemo1/visual-to-editable-pptx-skill",
@@ -3751,25 +3775,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/khu88/ResearchFigureSkill",
-      "matches": []
-    },
-    {
-      "repo": "k-telux/OpticalModeler",
-      "matched_domain_topics": [
-        "scientific-visualization"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "scientific-visualization",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/k-telux/OpticalModeler",
       "matches": []
     },
     {
