@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **158**
+Total repositories: **159**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -635,3 +635,9 @@ Collected GitHub skill repository.
 ### [zongtingwei/Bioclaw_Skills_Hub](https://github.com/zongtingwei/Bioclaw_Skills_Hub)
 
 Collected GitHub skill repository.
+
+### [Ztsdut/ml-architecture-diagram-skill](https://github.com/Ztsdut/ml-architecture-diagram-skill)
+
+Create accurate, publication-ready, editable machine-learning and deep-learning architecture diagrams from model code, configuration files, model summaries, graph exports, or written specifications. Use for neural-network figures, architecture schematics, model block diagrams, training/inference diagrams, paper figures, and editable SVG/draw.io/PPTX outputs. Recover the real computation graph first, compress unimportant implementation detail, emphasize the scientific contribution, and never invent modules for aesthetics.
+
+Example skill path: `SKILL.md`
