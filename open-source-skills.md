@@ -638,6 +638,4 @@ Collected GitHub skill repository.
 
 ### [Ztsdut/ml-architecture-diagram-skill](https://github.com/Ztsdut/ml-architecture-diagram-skill)
 
-Create accurate, publication-ready, editable machine-learning and deep-learning architecture diagrams from model code, configuration files, model summaries, graph exports, or written specifications. Use for neural-network figures, architecture schematics, model block diagrams, training/inference diagrams, paper figures, and editable SVG/draw.io/PPTX outputs. Recover the real computation graph first, compress unimportant implementation detail, emphasize the scientific contribution, and never invent modules for aesthetics.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
