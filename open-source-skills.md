@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **159**
+Total repositories: **160**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -435,6 +435,12 @@ Collected GitHub skill repository.
 ### [phlex89/biotech-ai](https://github.com/phlex89/biotech-ai)
 
 Collected GitHub skill repository.
+
+### [Potato-AI0815/Potato_Figure](https://github.com/Potato-AI0815/Potato_Figure)
+
+Independent scientific, statistical, visual, and reproducibility audit for biomedical figures, with profile-driven visual correction briefs. Covers statistical-unit integrity, claim–evidence alignment, panel architecture, global coherence, evidence-disciplined color-system QA, visual QA, and reproducible delivery. Audit only — does not generate, render, or redraw figures. Works with any figure generator (R, Python, GraphPad Prism, Nature-Figure, Illustrator, AI). Triggers: review my figure, audit this figure, check scientific figure, figure QA, publication figure review, check statistics in figure, check panel logic, does this figure support the conclusion, 投稿前检查图片, 审查科研图, 检查 Figure, 图有没有统计问题, panel 是否合理, 这图为什么不好看, 怎么改这张图, visual correction.
+
+Example skill path: `SKILL.md`
 
 ### [ProfesseurHaipeng/ai-research-preflight](https://github.com/ProfesseurHaipeng/ai-research-preflight)
 
