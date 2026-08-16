@@ -612,6 +612,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "URneiU1/choosing-research-skills",
+    "cloneUrl": "https://github.com/URneiU1/choosing-research-skills.git",
+    "localPath": "open-source/URneiU1/choosing-research-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/URneiU1/choosing-research-skills",
+    "addedAt": "2026-08-16T14:21:16.825923Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "VILA-Lab/FigMirror",
     "cloneUrl": "https://github.com/VILA-Lab/FigMirror.git",
     "localPath": "open-source/VILA-Lab/FigMirror",
@@ -1078,6 +1087,15 @@
     "upstreamUrl": "https://github.com/ma-compbio-lab/SkillFoundry",
     "addedAt": "2026-04-11T17:13:46.638604Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "makidav/clinical-assistant",
+    "cloneUrl": "https://github.com/makidav/clinical-assistant.git",
+    "localPath": "open-source/makidav/clinical-assistant",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/makidav/clinical-assistant",
+    "addedAt": "2026-08-16T14:22:28.669963Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "mateooo24/timework-skill",

@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **160**
+Total repositories: **162**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -380,6 +380,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [makidav/clinical-assistant](https://github.com/makidav/clinical-assistant)
+
+Self-contained Virtual Clinical Team. An intent router picks ONE focused task or the full 8-phase workflow (intake, evidence search, GRADE, 13-archetype board, treatment plan, report, QA, update), plus conditional imaging analysis and a bounded deep-research loop for rare, newly described, undiagnosed or treatment-refractory cases. Focused modes answer literature questions without forcing a full workup. Missing decision-critical data becomes a decision tree, never a guess. Trigger on symptoms, a diagnosis, treatment or evidence questions, and on: "analiza este caso", "plan de tratamiento", "informe clinico", "junta clinica", "nadie sabe que tengo", "busca estudios", "que dice la evidencia", "ultimas guias", "tratamiento mas novedoso", "analyze this case", "clinical board", "rare disease", "undiagnosed", "deep research", "clinical-assistant". Bilingual EN/ES. Produces research and decision-support DRAFTS only, never a diagnosis, prescription, or substitute for a licensed professional.
+
+Example skill path: `SKILL.md`
+
 ### [Marshanda14816/agent-skills](https://github.com/Marshanda14816/agent-skills)
 
 Collected GitHub skill repository.
@@ -438,9 +444,7 @@ Collected GitHub skill repository.
 
 ### [Potato-AI0815/Potato_Figure](https://github.com/Potato-AI0815/Potato_Figure)
 
-Independent scientific, statistical, visual, and reproducibility audit for biomedical figures, with profile-driven visual correction briefs. Covers statistical-unit integrity, claim–evidence alignment, panel architecture, global coherence, evidence-disciplined color-system QA, visual QA, and reproducible delivery. Audit only — does not generate, render, or redraw figures. Works with any figure generator (R, Python, GraphPad Prism, Nature-Figure, Illustrator, AI). Triggers: review my figure, audit this figure, check scientific figure, figure QA, publication figure review, check statistics in figure, check panel logic, does this figure support the conclusion, 投稿前检查图片, 审查科研图, 检查 Figure, 图有没有统计问题, panel 是否合理, 这图为什么不好看, 怎么改这张图, visual correction.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [ProfesseurHaipeng/ai-research-preflight](https://github.com/ProfesseurHaipeng/ai-research-preflight)
 
@@ -573,6 +577,12 @@ Collected GitHub skill repository.
 ### [unexplained-familyephedraceae871/openclaw-skill](https://github.com/unexplained-familyephedraceae871/openclaw-skill)
 
 Collected GitHub skill repository.
+
+### [URneiU1/choosing-research-skills](https://github.com/URneiU1/choosing-research-skills)
+
+Use when setting up an agent for academic or scientific work and deciding which research skill packs to install, when a researcher asks which of the many paper-writing skills is worth using, when an installed pack gives shallow or wrong-field results, or when agent context is being consumed by research packs that are always loaded.
+
+Example skill path: `SKILL.md`
 
 ### [VILA-Lab/FigMirror](https://github.com/VILA-Lab/FigMirror)
 
