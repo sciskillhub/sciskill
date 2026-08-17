@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **162**
+Total repositories: **168**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -328,6 +328,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [K-Dense-AI/drug-discovery-agent-skills](https://github.com/K-Dense-AI/drug-discovery-agent-skills)
+
+How to use the Adaptyv Bio Foundry API and Python SDK for protein experiment design, submission, and results retrieval. Use this skill whenever the user mentions Adaptyv, Foundry API, protein binding assays, protein screening experiments, BLI/SPR assays, thermostability assays, or wants to submit protein sequences for experimental characterization. Also trigger when code imports `adaptyv`, `adaptyv_sdk`, or `FoundryClient`, or references `foundry-api-public.adaptyvbio.com`.
+
+Example skill path: `skills/adaptyv/SKILL.md`
+
 ### [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)
 
 Collected GitHub skill repository.
@@ -382,9 +388,7 @@ Collected GitHub skill repository.
 
 ### [makidav/clinical-assistant](https://github.com/makidav/clinical-assistant)
 
-Self-contained Virtual Clinical Team. An intent router picks ONE focused task or the full 8-phase workflow (intake, evidence search, GRADE, 13-archetype board, treatment plan, report, QA, update), plus conditional imaging analysis and a bounded deep-research loop for rare, newly described, undiagnosed or treatment-refractory cases. Focused modes answer literature questions without forcing a full workup. Missing decision-critical data becomes a decision tree, never a guess. Trigger on symptoms, a diagnosis, treatment or evidence questions, and on: "analiza este caso", "plan de tratamiento", "informe clinico", "junta clinica", "nadie sabe que tengo", "busca estudios", "que dice la evidencia", "ultimas guias", "tratamiento mas novedoso", "analyze this case", "clinical board", "rare disease", "undiagnosed", "deep research", "clinical-assistant". Bilingual EN/ES. Produces research and decision-support DRAFTS only, never a diagnosis, prescription, or substitute for a licensed professional.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [Marshanda14816/agent-skills](https://github.com/Marshanda14816/agent-skills)
 
@@ -434,6 +438,18 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Osmosy/vector-gene](https://github.com/Osmosy/vector-gene)
+
+Personal genomics analysis with AI agents. Template for structured health data (OKF-style Markdown), agent-driven genomic analysis pipeline (FASTQ → variants → ClinVar/gnomAD → AlphaMissense), drug response prediction, and cross-patient comparison. Use when working with genetic test data (23andMe, Genotek, Atlas, WGS/WES), building personal health dashboards, or creating AI-powered medical second opinions.
+
+Example skill path: `SKILL.md`
+
+### [Osmosy/vector-health](https://github.com/Osmosy/vector-health)
+
+Generate photorealistic rendering scripts for PyMOL and UCSF ChimeraX.
+
+Example skill path: `skills/3d-molecule-ray-tracer/SKILL.md`
+
 ### [Pavel-Kravchenko/Bioinformatics](https://github.com/Pavel-Kravchenko/Bioinformatics)
 
 Collected GitHub skill repository.
@@ -473,6 +489,12 @@ Collected GitHub skill repository.
 ### [realactivity/tula](https://github.com/realactivity/tula)
 
 Collected GitHub skill repository.
+
+### [regardo911/seven-research-workflows](https://github.com/regardo911/seven-research-workflows)
+
+Audits an experimental sample sheet for confounded designs and missing controls before any analysis runs. Use whenever a sample sheet, metadata table, or design matrix is provided, or before running differential expression, classification, or any grouped comparison.
+
+Example skill path: `chapters/03-equip-claude/skills/samplesheet-audit/SKILL.md`
 
 ### [richard-kim-79/archora-skills](https://github.com/richard-kim-79/archora-skills)
 
@@ -562,9 +584,21 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [thetahealth/mirobody](https://github.com/thetahealth/mirobody)
+
+Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks
+
+Example skill path: `skills/docx/SKILL.md`
+
 ### [toohamster/sftp-cc](https://github.com/toohamster/sftp-cc)
 
 Collected GitHub skill repository.
+
+### [u9401066/med-paper-assistant](https://github.com/u9401066/med-paper-assistant)
+
+Cross-agent workflow for evidence-grounded manuscripts, proposals, reports, student papers, and preprints with auditable gates.
+
+Example skill path: `.agents/skills/academic-writing-harness/SKILL.md`
 
 ### [ULudo/ClawReview](https://github.com/ULudo/ClawReview)
 
@@ -580,9 +614,7 @@ Collected GitHub skill repository.
 
 ### [URneiU1/choosing-research-skills](https://github.com/URneiU1/choosing-research-skills)
 
-Use when setting up an agent for academic or scientific work and deciding which research skill packs to install, when a researcher asks which of the many paper-writing skills is worth using, when an installed pack gives shallow or wrong-field results, or when agent context is being consumed by research packs that are always loaded.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [VILA-Lab/FigMirror](https://github.com/VILA-Lab/FigMirror)
 

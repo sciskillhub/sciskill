@@ -369,6 +369,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "K-Dense-AI/drug-discovery-agent-skills",
+    "cloneUrl": "https://github.com/K-Dense-AI/drug-discovery-agent-skills.git",
+    "localPath": "open-source/K-Dense-AI/drug-discovery-agent-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/K-Dense-AI/drug-discovery-agent-skills",
+    "addedAt": "2026-08-17T14:27:11.890540Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "K-Dense-AI/scientific-agent-skills",
     "cloneUrl": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
     "localPath": "open-source/K-Dense-AI/scientific-agent-skills",
@@ -466,6 +475,24 @@
     "upstreamUrl": "https://github.com/OpenRaiser/NanoResearch",
     "addedAt": "2026-04-11T17:13:45.877062Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "Osmosy/vector-gene",
+    "cloneUrl": "https://github.com/Osmosy/vector-gene.git",
+    "localPath": "open-source/Osmosy/vector-gene",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Osmosy/vector-gene",
+    "addedAt": "2026-08-17T15:05:58.893772Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "Osmosy/vector-health",
+    "cloneUrl": "https://github.com/Osmosy/vector-health.git",
+    "localPath": "open-source/Osmosy/vector-health",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Osmosy/vector-health",
+    "addedAt": "2026-08-17T15:05:53.022628Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "Pavel-Kravchenko/Bioinformatics",
@@ -1233,6 +1260,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "regardo911/seven-research-workflows",
+    "cloneUrl": "https://github.com/regardo911/seven-research-workflows.git",
+    "localPath": "open-source/regardo911/seven-research-workflows",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/regardo911/seven-research-workflows",
+    "addedAt": "2026-08-17T15:10:16.209867Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "richard-kim-79/archora-skills",
     "cloneUrl": "https://github.com/richard-kim-79/archora-skills.git",
     "localPath": "open-source/richard-kim-79/archora-skills",
@@ -1332,6 +1368,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "thetahealth/mirobody",
+    "cloneUrl": "https://github.com/thetahealth/mirobody.git",
+    "localPath": "open-source/thetahealth/mirobody",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/thetahealth/mirobody",
+    "addedAt": "2026-08-17T15:11:28.810286Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "toohamster/sftp-cc",
     "cloneUrl": "https://github.com/toohamster/sftp-cc.git",
     "localPath": "open-source/toohamster/sftp-cc",
@@ -1339,6 +1384,15 @@
     "upstreamUrl": "https://github.com/toohamster/sftp-cc",
     "addedAt": "2026-04-11T17:13:45.028065Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "u9401066/med-paper-assistant",
+    "cloneUrl": "https://github.com/u9401066/med-paper-assistant.git",
+    "localPath": "open-source/u9401066/med-paper-assistant",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/u9401066/med-paper-assistant",
+    "addedAt": "2026-08-17T15:15:05.828709Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "unexplained-familyephedraceae871/openclaw-skill",

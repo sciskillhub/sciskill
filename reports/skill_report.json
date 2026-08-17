@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 227,
+  "repo_count": 233,
   "results": [
     {
       "repo": "ArielShemesh1999/fabius",
@@ -527,6 +527,134 @@
       "matches": []
     },
     {
+      "repo": "lm203688/genetech-14-sites",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "K-Dense-AI/drug-discovery-agent-skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/K-Dense-AI/drug-discovery-agent-skills.git",
+      "chosen_skill_path": "skills/adaptyv/SKILL.md",
+      "front_matter": {
+        "name": "adaptyv",
+        "description": "How to use the Adaptyv Bio Foundry API and Python SDK for protein experiment design, submission, and results retrieval. Use this skill whenever the user mentions Adaptyv, Foundry API, protein binding assays, protein screening experiments, BLI/SPR assays, thermostability assays, or wants to submit protein sequences for experimental characterization. Also trigger when code imports `adaptyv`, `adaptyv_sdk`, or `FoundryClient`, or references `foundry-api-public.adaptyvbio.com`.",
+        "license": "MIT",
+        "allowed-tools": "Read Write Edit Bash",
+        "compatibility": "Requires Python 3.10+, an Adaptyv Foundry account, and an API key from foundry.adaptyvbio.com. Install adaptyv-sdk from GitHub with uv pip install.",
+        "metadata": {
+          "version": "1.3",
+          "skill-author": "K-Dense Inc."
+        }
+      },
+      "html_url": "https://github.com/K-Dense-AI/drug-discovery-agent-skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/drug-discovery-agent-skills"
+    },
+    {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "ClawBio/ClawBio",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics",
+        "population-genetics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "population-genetics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
+      "matches": []
+    },
+    {
+      "repo": "aicell-lab/bioengine",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
+      "matches": []
+    },
+    {
       "repo": "sarojjriyaaa/BioResearch-AI",
       "matched_domain_topics": [
         "bioinformatics",
@@ -549,9 +677,10 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "Tubo2333/bio-audit",
+      "repo": "Osmosy/vector-health",
       "matched_domain_topics": [
-        "bioinformatics"
+        "bioinformatics",
+        "medical"
       ],
       "matched_qualifier_topics": [
         "ai-agents"
@@ -560,13 +689,58 @@
         {
           "domain_topic": "bioinformatics",
           "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "ai-agents"
         }
       ],
       "matched_topics": [],
-      "status": "no_valid_skill"
+      "status": "added",
+      "clone_url": "https://github.com/Osmosy/vector-health.git",
+      "chosen_skill_path": "skills/3d-molecule-ray-tracer/SKILL.md",
+      "front_matter": {
+        "name": "d-molecule-ray-tracer",
+        "description": "Generate photorealistic rendering scripts for PyMOL and UCSF ChimeraX.",
+        "license": "MIT",
+        "author": "AIPOCH"
+      },
+      "html_url": "https://github.com/Osmosy/vector-health",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Osmosy/vector-health"
     },
     {
-      "repo": "lm203688/genetech-14-sites",
+      "repo": "Osmosy/vector-gene",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/Osmosy/vector-gene.git",
+      "chosen_skill_path": "SKILL.md",
+      "front_matter": {
+        "name": "vector-gene",
+        "description": "Personal genomics analysis with AI agents. Template for structured health data (OKF-style Markdown), agent-driven genomic analysis pipeline (FASTQ → variants → ClinVar/gnomAD → AlphaMissense), drug response prediction, and cross-patient comparison. Use when working with genetic test data (23andMe, Genotek, Atlas, WGS/WES), building personal health dashboards, or creating AI-powered medical second opinions.",
+        "based_on": "Rai220/my-health-public — personal health record system with AI agent support"
+      },
+      "html_url": "https://github.com/Osmosy/vector-gene",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Osmosy/vector-gene"
+    },
+    {
+      "repo": "Tubo2333/bio-audit",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -635,54 +809,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "ClawBio/ClawBio",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "genomics",
-        "population-genetics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "population-genetics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
-      "matches": []
-    },
-    {
-      "repo": "aicell-lab/bioengine",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
-      "matches": []
     },
     {
       "repo": "droftgamer-wq/researcher-skill",
@@ -859,23 +985,6 @@
         },
         {
           "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "aristoteleo/PantheonOS",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
           "qualifier_topic": "ai-agents"
         }
       ],
@@ -2583,67 +2692,6 @@
       "matches": []
     },
     {
-      "repo": "URneiU1/choosing-research-skills",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/URneiU1/choosing-research-skills.git",
-      "chosen_skill_path": "SKILL.md",
-      "front_matter": {
-        "name": "choosing-research-skills",
-        "description": "Use when setting up an agent for academic or scientific work and deciding which research skill packs to install, when a researcher asks which of the many paper-writing skills is worth using, when an installed pack gives shallow or wrong-field results, or when agent context is being consumed by research packs that are always loaded."
-      },
-      "html_url": "https://github.com/URneiU1/choosing-research-skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/URneiU1/choosing-research-skills"
-    },
-    {
-      "repo": "Julesbladed538/baidu-netdisk-transfer",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "FridrichMethod/awesome-skills",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
-      "matches": []
-    },
-    {
       "repo": "K-Dense-AI/scientific-agent-skills",
       "matched_domain_topics": [
         "bioinformatics",
@@ -2685,25 +2733,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
-      "matches": []
-    },
-    {
-      "repo": "Hongda-Zhao/bio-gene-to-reference-tree",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Hongda-Zhao/bio-gene-to-reference-tree",
       "matches": []
     },
     {
@@ -2759,6 +2788,105 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "Hongda-Zhao/bio-gene-to-reference-tree",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Hongda-Zhao/bio-gene-to-reference-tree",
+      "matches": []
+    },
+    {
+      "repo": "regardo911/seven-research-workflows",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/regardo911/seven-research-workflows.git",
+      "chosen_skill_path": "chapters/03-equip-claude/skills/samplesheet-audit/SKILL.md",
+      "front_matter": {
+        "name": "samplesheet-audit",
+        "description": "Audits an experimental sample sheet for confounded designs and missing controls before any analysis runs. Use whenever a sample sheet, metadata table, or design matrix is provided, or before running differential expression, classification, or any grouped comparison."
+      },
+      "html_url": "https://github.com/regardo911/seven-research-workflows",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/regardo911/seven-research-workflows"
+    },
+    {
+      "repo": "URneiU1/choosing-research-skills",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/URneiU1/choosing-research-skills",
+      "matches": []
+    },
+    {
+      "repo": "Julesbladed538/baidu-netdisk-transfer",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "FridrichMethod/awesome-skills",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
+      "matches": []
     },
     {
       "repo": "YuliaNuzhnenko/bioinformatics-agent-skills",
@@ -3311,6 +3439,32 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "thetahealth/mirobody",
+      "matched_domain_topics": [
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/thetahealth/mirobody.git",
+      "chosen_skill_path": "skills/docx/SKILL.md",
+      "front_matter": {
+        "name": "docx",
+        "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks",
+        "license": "Proprietary. LICENSE.txt has complete terms"
+      },
+      "html_url": "https://github.com/thetahealth/mirobody",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/thetahealth/mirobody"
     },
     {
       "repo": "awslabs/hcls-agent-skills",
@@ -4334,7 +4488,32 @@
       "matches": []
     },
     {
-      "repo": "api-evangelist/enjamb-labs",
+      "repo": "u9401066/med-paper-assistant",
+      "matched_domain_topics": [
+        "clinical-research"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/u9401066/med-paper-assistant.git",
+      "chosen_skill_path": ".agents/skills/academic-writing-harness/SKILL.md",
+      "front_matter": {
+        "name": "academic-writing-harness",
+        "description": "Cross-agent workflow for evidence-grounded manuscripts, proposals, reports, student papers, and preprints with auditable gates."
+      },
+      "html_url": "https://github.com/u9401066/med-paper-assistant",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/u9401066/med-paper-assistant"
+    },
+    {
+      "repo": "api-evangelist/tilda",
       "matched_domain_topics": [
         "clinical-research"
       ],
@@ -4351,7 +4530,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "api-evangelist/tilda",
+      "repo": "api-evangelist/enjamb-labs",
       "matched_domain_topics": [
         "clinical-research"
       ],
@@ -4440,25 +4619,6 @@
       "matches": []
     },
     {
-      "repo": "mtchuang1981/clin-data-nav",
-      "matched_domain_topics": [
-        "clinical-research"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/mtchuang1981/clin-data-nav",
-      "matches": []
-    },
-    {
       "repo": "Aperivue/medsci-skills",
       "matched_domain_topics": [
         "clinical-research"
@@ -4475,6 +4635,25 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/Aperivue/medsci-skills",
+      "matches": []
+    },
+    {
+      "repo": "mtchuang1981/clin-data-nav",
+      "matched_domain_topics": [
+        "clinical-research"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/mtchuang1981/clin-data-nav",
       "matches": []
     },
     {
@@ -4753,24 +4932,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/makidav/clinical-assistant.git",
-      "chosen_skill_path": "SKILL.md",
-      "front_matter": {
-        "name": "clinical-assistant",
-        "description": "Self-contained Virtual Clinical Team. An intent router picks ONE focused task or the full 8-phase workflow (intake, evidence search, GRADE, 13-archetype board, treatment plan, report, QA, update), plus conditional imaging analysis and a bounded deep-research loop for rare, newly described, undiagnosed or treatment-refractory cases. Focused modes answer literature questions without forcing a full workup. Missing decision-critical data becomes a decision tree, never a guess. Trigger on symptoms, a diagnosis, treatment or evidence questions, and on: \"analiza este caso\", \"plan de tratamiento\", \"informe clinico\", \"junta clinica\", \"nadie sabe que tengo\", \"busca estudios\", \"que dice la evidencia\", \"ultimas guias\", \"tratamiento mas novedoso\", \"analyze this case\", \"clinical board\", \"rare disease\", \"undiagnosed\", \"deep research\", \"clinical-assistant\". Bilingual EN/ES. Produces research and decision-support DRAFTS only, never a diagnosis, prescription, or substitute for a licensed professional.\n",
-        "license": "CC-BY-4.0",
-        "metadata": {
-          "version": "6.7",
-          "self-contained": true,
-          "integrates": "28 embedded capabilities + 13-archetype board + 11-mode intent router",
-          "language": "bilingual EN+ES",
-          "bundled": "scripts/clinical_patterns.py · scripts/pharmacology_ref.py · scripts/roc_analysis.py · scripts/validate_skill.py · scripts/score_eval.py (offline) · scripts/verify_citations.py (needs network) · references/ · eval/",
-          "changelog": "6.7 — goals-of-care axis: functional trajectory in P1, palliative-parallel trigger (G1-G8), proportionality gate in §3.5, mandatory Ethicist/Patient-Advocate questions in P4, two-axis plan with parallel Arm A / Arm B in P5, red-team attack 8, 12 new QA gates. Counterweights this skill's structural bias toward intervention. 6.6 — retraction/EoC/erratum gate added to citation verification (resolution is not validity), citation-drift taxonomy, contradiction taxonomy for M3, citation roles. 6.5 — validity layer: citation verification as a hard gate (L1), calibration protocol replacing adjectival confidence (L2), validated appraisal instruments AGREE II / QUADAS-2 / RoB 2 / ROBINS-I / AMSTAR-2 (L3), 13 specialty routing packs (L4), and an evaluation harness with scoring rubric and bias-injection protocol (L5/L6). 6.4 — install fix: description trimmed to <1024 chars. Added personal-baseline / rate-of-change reasoning, episodic-presentation intake with timing gate, residue rule (unexplained findings are signal), standing OPEN REQUESTS channel, and scripts/validate_skill.py structural linter. 6.3 — bug fixes: English-first database queries, occupational/environmental history in P1, bidirectional drug-interaction analysis, quantitative discriminating-test evaluation (§3.5 Bayes/LR). Added guideline hierarchy, 4 rare-disease heuristics, validated risk scores, EU/UK/LatAm trial registries, on-target vs off-target AE reasoning, and 3 bundled offline reference scripts. 6.2 — added P0 intent router: 3 orthogonal axes (MODE / DELIVERABLE / LANGUAGE), 11 modes incl. standalone evidence search + cross-study synthesis, mandatory mode declaration line, one-word correction, safety upshift rules. 6.1 — added P2c Deep Diagnostic Research (phenotype-first, anti-anchoring, bounded loop) + Track C frontier scan + N0–N3 novelty maturity ladder + P4→P2c deadlock loop-back + 4 new P7 QA gates."
-        }
-      },
-      "html_url": "https://github.com/makidav/clinical-assistant",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/makidav/clinical-assistant"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/makidav/clinical-assistant",
+      "matches": []
     },
     {
       "repo": "JuneYaooo/clinical-calculator",
@@ -4811,7 +4975,7 @@
       "matches": []
     },
     {
-      "repo": "barlasa7657/claw-skills",
+      "repo": "JuneYaooo/awesome-medical-ai-skills-cn",
       "matched_domain_topics": [
         "medical"
       ],
@@ -4828,7 +4992,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "JuneYaooo/awesome-medical-ai-skills-cn",
+      "repo": "barlasa7657/claw-skills",
       "matched_domain_topics": [
         "medical"
       ],
