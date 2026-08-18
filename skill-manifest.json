@@ -369,6 +369,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "JunhaoWu7/noetica-agent-skills",
+    "cloneUrl": "https://github.com/JunhaoWu7/noetica-agent-skills.git",
+    "localPath": "open-source/JunhaoWu7/noetica-agent-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/JunhaoWu7/noetica-agent-skills",
+    "addedAt": "2026-08-18T14:31:18.819902Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "K-Dense-AI/drug-discovery-agent-skills",
     "cloneUrl": "https://github.com/K-Dense-AI/drug-discovery-agent-skills.git",
     "localPath": "open-source/K-Dense-AI/drug-discovery-agent-skills",

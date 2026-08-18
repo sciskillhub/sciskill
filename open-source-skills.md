@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **168**
+Total repositories: **169**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -320,6 +320,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [JunhaoWu7/noetica-agent-skills](https://github.com/JunhaoWu7/noetica-agent-skills)
+
+Turn notes, Markdown, CSV files, screenshots, research, progress updates, and feedback into polished responsive HTML reports, dashboards, or result pages. Use when Codex is asked for an HTML 展示、HTML 汇报、可视化汇报、结果展示、周报、反馈分析页面、项目复盘页面, or another shareable browser-based presentation; also use when it should initialize or reuse a report-center workflow, build and test the result, then hand off private remote preview to serve-web-over-ssh.
+
+Example skill path: `skills/generate-html-report/SKILL.md`
+
 ### [jvogan/motif](https://github.com/jvogan/motif)
 
 Collected GitHub skill repository.
@@ -330,9 +336,7 @@ Collected GitHub skill repository.
 
 ### [K-Dense-AI/drug-discovery-agent-skills](https://github.com/K-Dense-AI/drug-discovery-agent-skills)
 
-How to use the Adaptyv Bio Foundry API and Python SDK for protein experiment design, submission, and results retrieval. Use this skill whenever the user mentions Adaptyv, Foundry API, protein binding assays, protein screening experiments, BLI/SPR assays, thermostability assays, or wants to submit protein sequences for experimental characterization. Also trigger when code imports `adaptyv`, `adaptyv_sdk`, or `FoundryClient`, or references `foundry-api-public.adaptyvbio.com`.
-
-Example skill path: `skills/adaptyv/SKILL.md`
+Collected GitHub skill repository.
 
 ### [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)
 
@@ -440,15 +444,11 @@ Collected GitHub skill repository.
 
 ### [Osmosy/vector-gene](https://github.com/Osmosy/vector-gene)
 
-Personal genomics analysis with AI agents. Template for structured health data (OKF-style Markdown), agent-driven genomic analysis pipeline (FASTQ → variants → ClinVar/gnomAD → AlphaMissense), drug response prediction, and cross-patient comparison. Use when working with genetic test data (23andMe, Genotek, Atlas, WGS/WES), building personal health dashboards, or creating AI-powered medical second opinions.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [Osmosy/vector-health](https://github.com/Osmosy/vector-health)
 
-Generate photorealistic rendering scripts for PyMOL and UCSF ChimeraX.
-
-Example skill path: `skills/3d-molecule-ray-tracer/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Pavel-Kravchenko/Bioinformatics](https://github.com/Pavel-Kravchenko/Bioinformatics)
 
@@ -492,9 +492,7 @@ Collected GitHub skill repository.
 
 ### [regardo911/seven-research-workflows](https://github.com/regardo911/seven-research-workflows)
 
-Audits an experimental sample sheet for confounded designs and missing controls before any analysis runs. Use whenever a sample sheet, metadata table, or design matrix is provided, or before running differential expression, classification, or any grouped comparison.
-
-Example skill path: `chapters/03-equip-claude/skills/samplesheet-audit/SKILL.md`
+Collected GitHub skill repository.
 
 ### [richard-kim-79/archora-skills](https://github.com/richard-kim-79/archora-skills)
 
@@ -586,9 +584,7 @@ Collected GitHub skill repository.
 
 ### [thetahealth/mirobody](https://github.com/thetahealth/mirobody)
 
-Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks
-
-Example skill path: `skills/docx/SKILL.md`
+Collected GitHub skill repository.
 
 ### [toohamster/sftp-cc](https://github.com/toohamster/sftp-cc)
 
@@ -596,9 +592,7 @@ Collected GitHub skill repository.
 
 ### [u9401066/med-paper-assistant](https://github.com/u9401066/med-paper-assistant)
 
-Cross-agent workflow for evidence-grounded manuscripts, proposals, reports, student papers, and preprints with auditable gates.
-
-Example skill path: `.agents/skills/academic-writing-harness/SKILL.md`
+Collected GitHub skill repository.
 
 ### [ULudo/ClawReview](https://github.com/ULudo/ClawReview)
 

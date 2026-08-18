@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 233,
+  "repo_count": 234,
   "results": [
     {
       "repo": "ArielShemesh1999/fabius",
@@ -544,10 +544,12 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "K-Dense-AI/drug-discovery-agent-skills",
+      "repo": "droftgamer-wq/researcher-skill",
       "matched_domain_topics": [
         "bioinformatics",
-        "drug-discovery"
+        "clinical-research",
+        "computational-biology",
+        "genomics"
       ],
       "matched_qualifier_topics": [
         "agent-skills",
@@ -563,48 +565,34 @@
           "qualifier_topic": "ai-agents"
         },
         {
-          "domain_topic": "drug-discovery",
+          "domain_topic": "clinical-research",
           "qualifier_topic": "agent-skills"
         },
         {
-          "domain_topic": "drug-discovery",
+          "domain_topic": "clinical-research",
           "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/K-Dense-AI/drug-discovery-agent-skills.git",
-      "chosen_skill_path": "skills/adaptyv/SKILL.md",
-      "front_matter": {
-        "name": "adaptyv",
-        "description": "How to use the Adaptyv Bio Foundry API and Python SDK for protein experiment design, submission, and results retrieval. Use this skill whenever the user mentions Adaptyv, Foundry API, protein binding assays, protein screening experiments, BLI/SPR assays, thermostability assays, or wants to submit protein sequences for experimental characterization. Also trigger when code imports `adaptyv`, `adaptyv_sdk`, or `FoundryClient`, or references `foundry-api-public.adaptyvbio.com`.",
-        "license": "MIT",
-        "allowed-tools": "Read Write Edit Bash",
-        "compatibility": "Requires Python 3.10+, an Adaptyv Foundry account, and an API key from foundry.adaptyvbio.com. Install adaptyv-sdk from GitHub with uv pip install.",
-        "metadata": {
-          "version": "1.3",
-          "skill-author": "K-Dense Inc."
-        }
-      },
-      "html_url": "https://github.com/K-Dense-AI/drug-discovery-agent-skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/drug-discovery-agent-skills"
-    },
-    {
-      "repo": "aristoteleo/PantheonOS",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
+        },
         {
-          "domain_topic": "bioinformatics",
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
           "qualifier_topic": "ai-agents"
         }
       ],
       "matched_topics": [],
-      "status": "no_valid_skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/droftgamer-wq/researcher-skill",
+      "matches": []
     },
     {
       "repo": "ClawBio/ClawBio",
@@ -636,6 +624,42 @@
       "matches": []
     },
     {
+      "repo": "LabOnoM/AROS_Pipeline_Factory",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/LabOnoM/AROS_Pipeline_Factory",
+      "matches": []
+    },
+    {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "aicell-lab/bioengine",
       "matched_domain_topics": [
         "bioinformatics"
@@ -652,6 +676,39 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
+      "matches": []
+    },
+    {
+      "repo": "K-Dense-AI/drug-discovery-agent-skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/drug-discovery-agent-skills",
       "matches": []
     },
     {
@@ -696,17 +753,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/Osmosy/vector-health.git",
-      "chosen_skill_path": "skills/3d-molecule-ray-tracer/SKILL.md",
-      "front_matter": {
-        "name": "d-molecule-ray-tracer",
-        "description": "Generate photorealistic rendering scripts for PyMOL and UCSF ChimeraX.",
-        "license": "MIT",
-        "author": "AIPOCH"
-      },
-      "html_url": "https://github.com/Osmosy/vector-health",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Osmosy/vector-health"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Osmosy/vector-health",
+      "matches": []
     },
     {
       "repo": "Osmosy/vector-gene",
@@ -728,16 +777,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/Osmosy/vector-gene.git",
-      "chosen_skill_path": "SKILL.md",
-      "front_matter": {
-        "name": "vector-gene",
-        "description": "Personal genomics analysis with AI agents. Template for structured health data (OKF-style Markdown), agent-driven genomic analysis pipeline (FASTQ → variants → ClinVar/gnomAD → AlphaMissense), drug response prediction, and cross-patient comparison. Use when working with genetic test data (23andMe, Genotek, Atlas, WGS/WES), building personal health dashboards, or creating AI-powered medical second opinions.",
-        "based_on": "Rai220/my-health-public — personal health record system with AI agent support"
-      },
-      "html_url": "https://github.com/Osmosy/vector-gene",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Osmosy/vector-gene"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Osmosy/vector-gene",
+      "matches": []
     },
     {
       "repo": "Tubo2333/bio-audit",
@@ -809,57 +851,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "droftgamer-wq/researcher-skill",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "clinical-research",
-        "computational-biology",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills",
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/droftgamer-wq/researcher-skill",
-      "matches": []
     },
     {
       "repo": "MarbuelB/AI-Forge-Research-Edition",
@@ -2084,25 +2075,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "LabOnoM/AROS_Pipeline_Factory",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/LabOnoM/AROS_Pipeline_Factory",
-      "matches": []
-    },
-    {
       "repo": "qchiujunhao/bioartifact",
       "matched_domain_topics": [
         "bioinformatics",
@@ -2692,6 +2664,23 @@
       "matches": []
     },
     {
+      "repo": "Julesbladed538/baidu-netdisk-transfer",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "K-Dense-AI/scientific-agent-skills",
       "matched_domain_topics": [
         "bioinformatics",
@@ -2733,6 +2722,25 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
+      "matches": []
+    },
+    {
+      "repo": "regardo911/seven-research-workflows",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/regardo911/seven-research-workflows",
       "matches": []
     },
     {
@@ -2809,31 +2817,6 @@
       "matches": []
     },
     {
-      "repo": "regardo911/seven-research-workflows",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/regardo911/seven-research-workflows.git",
-      "chosen_skill_path": "chapters/03-equip-claude/skills/samplesheet-audit/SKILL.md",
-      "front_matter": {
-        "name": "samplesheet-audit",
-        "description": "Audits an experimental sample sheet for confounded designs and missing controls before any analysis runs. Use whenever a sample sheet, metadata table, or design matrix is provided, or before running differential expression, classification, or any grouped comparison."
-      },
-      "html_url": "https://github.com/regardo911/seven-research-workflows",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/regardo911/seven-research-workflows"
-    },
-    {
       "repo": "URneiU1/choosing-research-skills",
       "matched_domain_topics": [
         "bioinformatics"
@@ -2851,23 +2834,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/URneiU1/choosing-research-skills",
       "matches": []
-    },
-    {
-      "repo": "Julesbladed538/baidu-netdisk-transfer",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "FridrichMethod/awesome-skills",
@@ -3455,16 +3421,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/thetahealth/mirobody.git",
-      "chosen_skill_path": "skills/docx/SKILL.md",
-      "front_matter": {
-        "name": "docx",
-        "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks",
-        "license": "Proprietary. LICENSE.txt has complete terms"
-      },
-      "html_url": "https://github.com/thetahealth/mirobody",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/thetahealth/mirobody"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/thetahealth/mirobody",
+      "matches": []
     },
     {
       "repo": "awslabs/hcls-agent-skills",
@@ -3803,6 +3762,36 @@
       "matches": []
     },
     {
+      "repo": "JunhaoWu7/noetica-agent-skills",
+      "matched_domain_topics": [
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/JunhaoWu7/noetica-agent-skills.git",
+      "chosen_skill_path": "skills/generate-html-report/SKILL.md",
+      "front_matter": {
+        "name": "generate-html-report",
+        "description": "Turn notes, Markdown, CSV files, screenshots, research, progress updates, and feedback into polished responsive HTML reports, dashboards, or result pages. Use when Codex is asked for an HTML 展示、HTML 汇报、可视化汇报、结果展示、周报、反馈分析页面、项目复盘页面, or another shareable browser-based presentation; also use when it should initialize or reuse a report-center workflow, build and test the result, then hand off private remote preview to serve-web-over-ssh."
+      },
+      "html_url": "https://github.com/JunhaoWu7/noetica-agent-skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/JunhaoWu7/noetica-agent-skills"
+    },
+    {
       "repo": "ruiwuniu/My-Academic-Skills",
       "matched_domain_topics": [
         "scientific-visualization"
@@ -4125,6 +4114,23 @@
       "matches": []
     },
     {
+      "repo": "deepbioacademy/deepbioacademy.github.io",
+      "matched_domain_topics": [
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "NovoMCP/novomcp",
       "matched_domain_topics": [
         "drug-discovery"
@@ -4206,23 +4212,6 @@
           "domain_topic": "drug-discovery",
           "qualifier_topic": "agent-skills"
         },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "deepbioacademy/deepbioacademy.github.io",
-      "matched_domain_topics": [
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
         {
           "domain_topic": "drug-discovery",
           "qualifier_topic": "ai-agents"
@@ -4502,15 +4491,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/u9401066/med-paper-assistant.git",
-      "chosen_skill_path": ".agents/skills/academic-writing-harness/SKILL.md",
-      "front_matter": {
-        "name": "academic-writing-harness",
-        "description": "Cross-agent workflow for evidence-grounded manuscripts, proposals, reports, student papers, and preprints with auditable gates."
-      },
-      "html_url": "https://github.com/u9401066/med-paper-assistant",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/u9401066/med-paper-assistant"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/u9401066/med-paper-assistant",
+      "matches": []
     },
     {
       "repo": "api-evangelist/tilda",
@@ -4975,7 +4958,7 @@
       "matches": []
     },
     {
-      "repo": "JuneYaooo/awesome-medical-ai-skills-cn",
+      "repo": "barlasa7657/claw-skills",
       "matched_domain_topics": [
         "medical"
       ],
@@ -4992,7 +4975,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "barlasa7657/claw-skills",
+      "repo": "JuneYaooo/awesome-medical-ai-skills-cn",
       "matched_domain_topics": [
         "medical"
       ],
