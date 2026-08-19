@@ -322,9 +322,7 @@ Collected GitHub skill repository.
 
 ### [JunhaoWu7/noetica-agent-skills](https://github.com/JunhaoWu7/noetica-agent-skills)
 
-Turn notes, Markdown, CSV files, screenshots, research, progress updates, and feedback into polished responsive HTML reports, dashboards, or result pages. Use when Codex is asked for an HTML 展示、HTML 汇报、可视化汇报、结果展示、周报、反馈分析页面、项目复盘页面, or another shareable browser-based presentation; also use when it should initialize or reuse a report-center workflow, build and test the result, then hand off private remote preview to serve-web-over-ssh.
-
-Example skill path: `skills/generate-html-report/SKILL.md`
+Collected GitHub skill repository.
 
 ### [jvogan/motif](https://github.com/jvogan/motif)
 
