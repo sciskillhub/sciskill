@@ -26,8 +26,25 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 236,
+  "repo_count": 237,
   "results": [
+    {
+      "repo": "OuroborosCollective/Wasd",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
     {
       "repo": "ArielShemesh1999/fabius",
       "matched_domain_topics": [
@@ -46,23 +63,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ArielShemesh1999/fabius",
       "matches": []
-    },
-    {
-      "repo": "OuroborosCollective/Wasd",
-      "matched_domain_topics": [
-        "science"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "K-Dense-AI/scientific-agents",
@@ -489,7 +489,7 @@
       "matches": []
     },
     {
-      "repo": "Chen-kaige/science_skill",
+      "repo": "KevinABC1/science_skill",
       "matched_domain_topics": [
         "science"
       ],
@@ -503,9 +503,15 @@
         }
       ],
       "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Chen-kaige/science_skill",
-      "matches": []
+      "status": "added",
+      "clone_url": "https://github.com/KevinABC1/science_skill.git",
+      "chosen_skill_path": "SKILL.md",
+      "front_matter": {
+        "name": "science-manuscript",
+        "description": "Prepare, audit, revise, or template Science-family journal manuscripts and submission packages using Science/AAAS author guidance. Use when Codex needs to work on Science, Science Advances, Science Immunology, Science Robotics, Science Signaling, or Science Translational Medicine submissions; manuscript title, abstract, one-sentence summary, main text, references, acknowledgments, figures, tables, supplementary materials, data/code/materials availability, cover letters, article-type fit, broad-audience framing, or Chinese-to-English submission preparation for Science-family journals."
+      },
+      "html_url": "https://github.com/KevinABC1/science_skill",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/KevinABC1/science_skill"
     },
     {
       "repo": "th3vib3coder/vibe-science-codex",
@@ -524,6 +530,52 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/th3vib3coder/vibe-science-codex",
+      "matches": []
+    },
+    {
+      "repo": "lm203688/genetech-14-sites",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "ClawBio/ClawBio",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics",
+        "population-genetics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "population-genetics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
       "matches": []
     },
     {
@@ -560,7 +612,7 @@
       "matches": []
     },
     {
-      "repo": "lm203688/genetech-14-sites",
+      "repo": "tmdwn725/bio-hub",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -611,35 +663,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "ClawBio/ClawBio",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "genomics",
-        "population-genetics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "population-genetics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
-      "matches": []
     },
     {
       "repo": "jiazhenz026/SciStudio",
@@ -4505,23 +4528,6 @@
       "matches": []
     },
     {
-      "repo": "xxxxchaos/oh-my-sci",
-      "matched_domain_topics": [
-        "clinical-research"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "api-evangelist/tilda",
       "matched_domain_topics": [
         "clinical-research"
@@ -4540,6 +4546,23 @@
     },
     {
       "repo": "api-evangelist/enjamb-labs",
+      "matched_domain_topics": [
+        "clinical-research"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "xxxxchaos/oh-my-sci",
       "matched_domain_topics": [
         "clinical-research"
       ],
@@ -4687,6 +4710,23 @@
       "matches": []
     },
     {
+      "repo": "api-evangelist/motics-technologies",
+      "matched_domain_topics": [
+        "medical"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "unexplained-familyephedraceae871/openclaw-skill",
       "matched_domain_topics": [
         "medical"
@@ -4704,23 +4744,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/unexplained-familyephedraceae871/openclaw-skill",
       "matches": []
-    },
-    {
-      "repo": "api-evangelist/motics-technologies",
-      "matched_domain_topics": [
-        "medical"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "medical",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "Efe-Cal/Iatreon",

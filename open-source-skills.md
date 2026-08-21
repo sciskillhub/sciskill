@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **169**
+Total repositories: **170**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -359,6 +359,12 @@ Collected GitHub skill repository.
 ### [Kayunangka/claude-skill](https://github.com/Kayunangka/claude-skill)
 
 Collected GitHub skill repository.
+
+### [KevinABC1/science_skill](https://github.com/KevinABC1/science_skill)
+
+Prepare, audit, revise, or template Science-family journal manuscripts and submission packages using Science/AAAS author guidance. Use when Codex needs to work on Science, Science Advances, Science Immunology, Science Robotics, Science Signaling, or Science Translational Medicine submissions; manuscript title, abstract, one-sentence summary, main text, references, acknowledgments, figures, tables, supplementary materials, data/code/materials availability, cover letters, article-type fit, broad-audience framing, or Chinese-to-English submission preparation for Science-family journals.
+
+Example skill path: `SKILL.md`
 
 ### [khu88/ResearchFigureSkill](https://github.com/khu88/ResearchFigureSkill)
 

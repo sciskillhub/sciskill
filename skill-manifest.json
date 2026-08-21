@@ -432,6 +432,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "KevinABC1/science_skill",
+    "cloneUrl": "https://github.com/KevinABC1/science_skill.git",
+    "localPath": "open-source/KevinABC1/science_skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/KevinABC1/science_skill",
+    "addedAt": "2026-08-21T14:32:24.749320Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "LabOnoM/AROS_Pipeline_Factory",
     "cloneUrl": "https://github.com/LabOnoM/AROS_Pipeline_Factory.git",
     "localPath": "open-source/LabOnoM/AROS_Pipeline_Factory",
