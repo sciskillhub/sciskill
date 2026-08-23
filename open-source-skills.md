@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **170**
+Total repositories: **171**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -163,6 +163,12 @@ Collected GitHub skill repository.
 ### [Chen-kaige/science_skill](https://github.com/Chen-kaige/science_skill)
 
 Collected GitHub skill repository.
+
+### [ChizkiyahuOhayon/CVPR-Figure](https://github.com/ChizkiyahuOhayon/CVPR-Figure)
+
+Create, revise and audit publication-grade pipeline, framework, teaser and module figures for CVPR, ICCV, ECCV, NeurIPS, ICLR, ICML, AAAI and ACL papers, and export them as Visio-editable .vsdx, PowerPoint-editable .pptx, plus SVG/PDF/PNG/EMF for LaTeX. Use for architecture diagrams, method overview figures, framework figures, pipeline diagrams, teaser/paradigm-comparison figures, attention and token diagrams, module zoom-ins, and 顶会论文配图、框架图、流程图、pipeline图、方法图、teaser图、 网络结构图、模型架构图、科研绘图、论文示意图、Visio可编辑图. Works from a paper section, an abstract, a method description, or source code. Drives a declarative spec through a deterministic layout engine whose palette, typography and geometry were measured out of published CVPR/ICCV/AAAI figures, then audits the result against a checklist of the things that make a diagram look machine-generated. Do not use for data plots — bar charts, curves, heatmaps, scatter and ablation plots belong in matplotlib/seaborn; use those for quantitative results.
+
+Example skill path: `SKILL.md`
 
 ### [ClawBio/ClawBio](https://github.com/ClawBio/ClawBio)
 
