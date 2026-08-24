@@ -459,6 +459,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "LawrenceRiver/genlike-scientific-svg-skill",
+    "cloneUrl": "https://github.com/LawrenceRiver/genlike-scientific-svg-skill.git",
+    "localPath": "open-source/LawrenceRiver/genlike-scientific-svg-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/LawrenceRiver/genlike-scientific-svg-skill",
+    "addedAt": "2026-08-24T14:40:45.290381Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Lord1Egypt/scientific-agent-toolkit",
     "cloneUrl": "https://github.com/Lord1Egypt/scientific-agent-toolkit.git",
     "localPath": "open-source/Lord1Egypt/scientific-agent-toolkit",
@@ -844,6 +853,15 @@
     "upstreamUrl": "https://github.com/bloody2634/claud-skills",
     "addedAt": "2026-04-11T17:13:45.852071Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "celikgo/GlowSky",
+    "cloneUrl": "https://github.com/celikgo/GlowSky.git",
+    "localPath": "open-source/celikgo/GlowSky",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/celikgo/GlowSky",
+    "addedAt": "2026-08-24T14:40:51.908048Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "changyufei222/fbbp-research-workbench",
