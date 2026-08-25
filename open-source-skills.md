@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **173**
+Total repositories: **175**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -154,9 +154,7 @@ Collected GitHub skill repository.
 
 ### [celikgo/GlowSky](https://github.com/celikgo/GlowSky)
 
-Use when touching how a structure is drawn — the 2D depiction (MoleculeStructure, RDKit-JS), the 3D viewers (Molecule3D, DockingPose3D, 3Dmol.js), the Ketcher editor surface, atom or bond colours, or anything that would change what a chemist sees. Covers why element colours are data rather than theme, the depiction conventions this app holds to, and what an LLM must never infer about a structure. Triggers on "molecule rendering", "depiction", "structure image", "atom colours", "CPK", "RDKit draw", "3Dmol", "docking pose", "Ketcher", "the molecule looks wrong", "SMILES to image".
-
-Example skill path: `.claude/skills/rendering-molecules/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Chandrikakt/earl](https://github.com/Chandrikakt/earl)
 
@@ -392,9 +390,7 @@ Collected GitHub skill repository.
 
 ### [LawrenceRiver/genlike-scientific-svg-skill](https://github.com/LawrenceRiver/genlike-scientific-svg-skill)
 
-Generate publication-ready research figures with the structured, editable finish of a professional scientific SVG from any paper-figure brief, using aesthetic web references and local FigureBench RAG.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [lhbsaa/apex-discovery](https://github.com/lhbsaa/apex-discovery)
 
@@ -544,6 +540,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [SciToolsmith/academic-figure](https://github.com/SciToolsmith/academic-figure)
+
+Improve the scientific expression, visual quality, and reproducibility of data-driven research figures in Python or R without changing their scientific meaning. Use when a user asks to improve a paper figure, choose a more suitable visualization from a research question or dataset, match a reference figure to a better chart structure, write publication-oriented plotting code, or audit figure clarity, uncertainty, layout, color, typography, and export quality. Also use for 科研绘图、论文配图、学术图形、科研图形优化、图形审校、可视化重构、图形推荐、Python/R 绘图代码 and publication-ready figure workflows. Do not use for statistics-only analysis, interactive dashboards, decorative infographics, or mechanism diagrams whose primary content is illustration rather than data.
+
+Example skill path: `skills/academic-figure/SKILL.md`
+
 ### [SciToolsmith/sci-plot](https://github.com/SciToolsmith/sci-plot)
 
 Collected GitHub skill repository.
@@ -559,6 +561,12 @@ Collected GitHub skill repository.
 ### [sethikasithum/skill-generator](https://github.com/sethikasithum/skill-generator)
 
 Collected GitHub skill repository.
+
+### [shear559/fabius](https://github.com/shear559/fabius)
+
+fabius's persistent-memory layer — lets the agent stop re-deriving: write what it learns into an interlinked markdown knowledge base, retrieve from it cheaply, and keep it healthy (index + log + when-to-add-vector). Use when work spans sessions, when a fact or decision is worth keeping, when the user says "remember this", when a knowledge base is growing, to set up a per-project memory or an Obsidian vault so the next session starts ahead, or whenever the agent is about to redo research it (or a past session) already did. Directory schema and page conventions live in references/memory-schema.md; the knowledge engine itself — a vector engine, the wiki pattern, and a RAG pipeline — lives in references/knowledge/. Cross-session auto-recall (capture → compress → re-inject without being asked) and source-grounded external-corpus connectors live in references/external-recall.md.
+
+Example skill path: `skills/fabius-archivum/SKILL.md`
 
 ### [Shroomfaerie/veriglow-agent-map-skill](https://github.com/Shroomfaerie/veriglow-agent-map-skill)
 

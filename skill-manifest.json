@@ -603,6 +603,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "SciToolsmith/academic-figure",
+    "cloneUrl": "https://github.com/SciToolsmith/academic-figure.git",
+    "localPath": "open-source/SciToolsmith/academic-figure",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/SciToolsmith/academic-figure",
+    "addedAt": "2026-08-25T14:45:26.599634Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "SciToolsmith/sci-plot",
     "cloneUrl": "https://github.com/SciToolsmith/sci-plot.git",
     "localPath": "open-source/SciToolsmith/sci-plot",
@@ -1375,6 +1384,15 @@
     "upstreamUrl": "https://github.com/sethikasithum/skill-generator",
     "addedAt": "2026-04-11T17:13:45.447681Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "shear559/fabius",
+    "cloneUrl": "https://github.com/shear559/fabius.git",
+    "localPath": "open-source/shear559/fabius",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/shear559/fabius",
+    "addedAt": "2026-08-25T14:43:39.570656Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "sounkou-bioinfo/pi-bio-agent",
