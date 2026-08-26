@@ -666,6 +666,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "Thanx01/paper-figure-skill",
+    "cloneUrl": "https://github.com/Thanx01/paper-figure-skill.git",
+    "localPath": "open-source/Thanx01/paper-figure-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Thanx01/paper-figure-skill",
+    "addedAt": "2026-08-26T14:42:50.353451Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "ULudo/ClawReview",
     "cloneUrl": "https://github.com/ULudo/ClawReview.git",
     "localPath": "open-source/ULudo/ClawReview",
@@ -1422,6 +1431,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "terravic/alphafold-database-visualize-skill",
+    "cloneUrl": "https://github.com/terravic/alphafold-database-visualize-skill.git",
+    "localPath": "open-source/terravic/alphafold-database-visualize-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/terravic/alphafold-database-visualize-skill",
+    "addedAt": "2026-08-26T14:41:36.685636Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "th3vib3coder/vibe-science-codex",
     "cloneUrl": "https://github.com/th3vib3coder/vibe-science-codex.git",
     "localPath": "open-source/th3vib3coder/vibe-science-codex",
@@ -1492,6 +1510,24 @@
     "upstreamUrl": "https://github.com/wtfhanin/Enhance-Prompt",
     "addedAt": "2026-04-11T17:13:45.394075Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "xuzhougeng/ScientificFigureLibrary",
+    "cloneUrl": "https://github.com/xuzhougeng/ScientificFigureLibrary.git",
+    "localPath": "open-source/xuzhougeng/ScientificFigureLibrary",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/xuzhougeng/ScientificFigureLibrary",
+    "addedAt": "2026-08-26T14:41:22.316156Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "xuzhougeng/svg-editor",
+    "cloneUrl": "https://github.com/xuzhougeng/svg-editor.git",
+    "localPath": "open-source/xuzhougeng/svg-editor",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/xuzhougeng/svg-editor",
+    "addedAt": "2026-08-26T14:41:20.832658Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "xuzhougeng/wisp-science",
