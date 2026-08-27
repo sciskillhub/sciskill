@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **179**
+Total repositories: **180**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -91,6 +91,12 @@ Collected GitHub skill repository.
 ### [awslabs/hcls-agent-skills](https://github.com/awslabs/hcls-agent-skills)
 
 Collected GitHub skill repository.
+
+### [Azhi-ss/academic-figure-skills](https://github.com/Azhi-ss/academic-figure-skills)
+
+Extract semantic structure and transferable style grammar from academic figures, PDFs, and paper or figure URLs for analysis, redraws, or reference-conditioned generation. Do not use it for paper-text-only figure planning.
+
+Example skill path: `academic-figure-architecture-extractor/SKILL.md`
 
 ### [baney75/GeneMachine](https://github.com/baney75/GeneMachine)
 
@@ -602,9 +608,7 @@ Collected GitHub skill repository.
 
 ### [terravic/alphafold-database-visualize-skill](https://github.com/terravic/alphafold-database-visualize-skill)
 
-Retrieve and visualize AlphaFold predicted structures for a protein. Use when the user provides a specific UniProt Accession ID and wants structural confidence metrics (pLDDT), domain boundary analysis, disorder assessment, or an interactive 3D/PAE Canvas dashboard. Do not use if the user only has a protein name, gene name, or amino acid sequence — ask for a UniProt ID first.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [th3vib3coder/vibe-science-codex](https://github.com/th3vib3coder/vibe-science-codex)
 
@@ -612,9 +616,7 @@ Collected GitHub skill repository.
 
 ### [Thanx01/paper-figure-skill](https://github.com/Thanx01/paper-figure-skill)
 
-Rebuild an academic figure or framework diagram as an editable single-slide PowerPoint by first creating or accepting a complete master image, then exhaustively regenerating every distinct UI, icon, illustration, and decoration as a separate transparent asset, and finally recomposing those assets to match the master. Use for paper method figures, model architecture diagrams, faithful PowerPoint reconstruction, fine-grained UI or icon cutouts, SVG/PNG asset delivery, paper-to-figure workflows, and interruption recovery.
-
-Example skill path: `plugins/paper-figure-skill/skills/paper-figure/SKILL.md`
+Collected GitHub skill repository.
 
 ### [thetahealth/mirobody](https://github.com/thetahealth/mirobody)
 
@@ -666,15 +668,11 @@ Collected GitHub skill repository.
 
 ### [xuzhougeng/ScientificFigureLibrary](https://github.com/xuzhougeng/ScientificFigureLibrary)
 
-Build, review, search, select, materialize, and safely publish immutable scientific-figure references from Local Published, bundled Community, FigureYa, and explicitly trusted personal Providers.
-
-Example skill path: `skills/figure-library/SKILL.md`
+Collected GitHub skill repository.
 
 ### [xuzhougeng/svg-editor](https://github.com/xuzhougeng/svg-editor)
 
-Open and surgically edit SVG scientific figures in the SVG Editor MCP App. Use when the user wants to change text, colors, fonts, positions, legends, or panel letters in an existing SVG by hand, or by selecting elements and instructing the host assistant.
-
-Example skill path: `skills/svg-editor/SKILL.md`
+Collected GitHub skill repository.
 
 ### [xuzhougeng/wisp-science](https://github.com/xuzhougeng/wisp-science)
 
