@@ -94,9 +94,7 @@ Collected GitHub skill repository.
 
 ### [Azhi-ss/academic-figure-skills](https://github.com/Azhi-ss/academic-figure-skills)
 
-Extract semantic structure and transferable style grammar from academic figures, PDFs, and paper or figure URLs for analysis, redraws, or reference-conditioned generation. Do not use it for paper-text-only figure planning.
-
-Example skill path: `academic-figure-architecture-extractor/SKILL.md`
+Collected GitHub skill repository.
 
 ### [baney75/GeneMachine](https://github.com/baney75/GeneMachine)
 
