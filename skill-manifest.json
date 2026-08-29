@@ -558,6 +558,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "Pratikrishi97/sciagent-skills",
+    "cloneUrl": "https://github.com/Pratikrishi97/sciagent-skills.git",
+    "localPath": "open-source/Pratikrishi97/sciagent-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Pratikrishi97/sciagent-skills",
+    "addedAt": "2026-08-29T17:32:03.262723Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "ProfesseurHaipeng/ai-research-preflight",
     "cloneUrl": "https://github.com/ProfesseurHaipeng/ai-research-preflight.git",
     "localPath": "open-source/ProfesseurHaipeng/ai-research-preflight",
@@ -753,6 +762,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/YuliaNuzhnenko/bioinformatics-agent-skills",
     "addedAt": "2026-08-08T14:31:30.219193Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "Zessi-C/biofigure-self-evolve",
+    "cloneUrl": "https://github.com/Zessi-C/biofigure-self-evolve.git",
+    "localPath": "open-source/Zessi-C/biofigure-self-evolve",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Zessi-C/biofigure-self-evolve",
+    "addedAt": "2026-08-29T17:32:06.292179Z",
     "addedBy": "github-actions"
   },
   {

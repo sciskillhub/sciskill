@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **180**
+Total repositories: **182**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -480,6 +480,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Pratikrishi97/sciagent-skills](https://github.com/Pratikrishi97/sciagent-skills)
+
+Astrophysics workflows using astropy for units, coordinates (SkyCoord), time (Time), cosmology, and FITS I/O with astropy.io.fits and WCS, photutils for aperture and PSF photometry, specutils for 1-D spectroscopy, poliastro for celestial mechanics, yt for AMR-based galaxy and cosmology visualization, and astroquery for SIMBAD, VizieR, and TAP catalog cross-matches. Use when handling FITS images or spectra, building sky coordinates, cross-matching catalogs, performing photometry, or simulating orbits.
+
+Example skill path: `skills/astrophysics/SKILL.md`
+
 ### [ProfesseurHaipeng/ai-research-preflight](https://github.com/ProfesseurHaipeng/ai-research-preflight)
 
 Collected GitHub skill repository.
@@ -703,6 +709,12 @@ Collected GitHub skill repository.
 ### [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides)
 
 Collected GitHub skill repository.
+
+### [Zessi-C/biofigure-self-evolve](https://github.com/Zessi-C/biofigure-self-evolve)
+
+生物信息学 figure 的学习库与复用引擎：把文献、PDF、公众号文章、截图里的图解剖成可复用的画法（图表配方 + R/Python 双模板），存入本地自进化图库；材料带代码线索（GitHub 仓库、正文内嵌代码、论文 code availability）时必先追溯原始绘图代码作为配方事实源；用户做生信数据分析要画图时（无论明确点名图型，还是分析完成后需要呈现结果），先检索图库复用已学会的画法，相似候选多个时给出差异对比与推荐，没有才从头设计。Use whenever the user sends papers, PDFs, WeChat 公众号 article links, or figure screenshots containing plots, asks to learn a figure (学一下这个图 / 入库 / 记住这个画法), asks to replicate a figure's style (照这张图画 / 按文献风格复刻), wants any bioinformatics/biostatistics chart (heatmap, volcano, KM survival, boxplot, enrichment dotplot, oncoprint, Venn/UpSet, circos, Manhattan, UMAP/t-SNE, forest, ROC…), or asks what figures the library already knows (看看图库/你都会画什么图) — even if the user does not mention "figure 库".
+
+Example skill path: `SKILL.md`
 
 ### [zhoy0409-debug/polish-sci-figures](https://github.com/zhoy0409-debug/polish-sci-figures)
 
