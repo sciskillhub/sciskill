@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **182**
+Total repositories: **183**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -427,6 +427,12 @@ Collected GitHub skill repository.
 ### [MisterBrookT/paper-skills](https://github.com/MisterBrookT/paper-skills)
 
 Collected GitHub skill repository.
+
+### [MisterBrookT/zeroplot](https://github.com/MisterBrookT/zeroplot)
+
+Create editable charts, diagrams, figures, posters, or slides from intent, data, or references.
+
+Example skill path: `skills/zeroplot/SKILL.md`
 
 ### [mnfst/manifest](https://github.com/mnfst/manifest)
 
