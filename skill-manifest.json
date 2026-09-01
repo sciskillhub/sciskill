@@ -594,6 +594,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "SID-6921/biomedical-research-skill",
+    "cloneUrl": "https://github.com/SID-6921/biomedical-research-skill.git",
+    "localPath": "open-source/SID-6921/biomedical-research-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/SID-6921/biomedical-research-skill",
+    "addedAt": "2026-09-01T17:37:37.485165Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "SL-Mar/science-skills",
     "cloneUrl": "https://github.com/SL-Mar/science-skills.git",
     "localPath": "open-source/SL-Mar/science-skills",
@@ -1546,6 +1555,15 @@
     "upstreamUrl": "https://github.com/wtfhanin/Enhance-Prompt",
     "addedAt": "2026-04-11T17:13:45.394075Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "xcl2005/academic-paper-writing-skill",
+    "cloneUrl": "https://github.com/xcl2005/academic-paper-writing-skill.git",
+    "localPath": "open-source/xcl2005/academic-paper-writing-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/xcl2005/academic-paper-writing-skill",
+    "addedAt": "2026-09-01T17:37:13.588838Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "xuzhougeng/ScientificFigureLibrary",
