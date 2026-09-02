@@ -586,9 +586,7 @@ Collected GitHub skill repository.
 
 ### [SID-6921/biomedical-research-skill](https://github.com/SID-6921/biomedical-research-skill)
 
-Biomedical domain layer for deep-research and academic-paper. Adds PubMed/MeSH literature search, survival and time-to-event statistical reporting (Kaplan-Meier, Cox, hazard ratios, competing risks), and AMA 11th citation style. Does not duplicate EQUATOR checklists, GRADE, or ICMJE authorship — those live in deep-research and academic-paper. Triggers: pubmed search, mesh terms, clinical literature search, survival analysis reporting, kaplan-meier, cox model, hazard ratio, competing risks, censoring, AMA citation, biomedical paper, clinical study writeup.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [SL-Mar/science-skills](https://github.com/SL-Mar/science-skills)
 
@@ -676,9 +674,7 @@ Collected GitHub skill repository.
 
 ### [xcl2005/academic-paper-writing-skill](https://github.com/xcl2005/academic-paper-writing-skill)
 
-Evidence-first academic research workflow for topic ideation, scholarly search, paper reading, literature and systematic reviews, study and experiment design, statistics and data analysis, scientific figures, manuscript drafting and polishing, citation checks, peer review, rebuttals, submission packages, theses, and paper-to-presentation work. Use when an agent must plan, execute, audit, write, revise, or package research while keeping claims traceable to verified sources, data, analysis, or official requirements.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [Xroft12/RedNet-Airin-skillbook-public](https://github.com/Xroft12/RedNet-Airin-skillbook-public)
 
