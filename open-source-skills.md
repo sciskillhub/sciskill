@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **185**
+Total repositories: **187**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -224,6 +224,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [fantasticjoe/biozy](https://github.com/fantasticjoe/biozy)
+
+Add a small reusable computational biology capability to Biozy when a concrete cross-project need defines its scientific contract and tests.
+
+Example skill path: `.agents/skills/biozy-add-module/SKILL.md`
+
 ### [fastfold-ai/skills](https://github.com/fastfold-ai/skills)
 
 Collected GitHub skill repository.
@@ -327,6 +333,12 @@ Collected GitHub skill repository.
 ### [Jinsong-Zhou/bio-research-skills](https://github.com/Jinsong-Zhou/bio-research-skills)
 
 Collected GitHub skill repository.
+
+### [johnsmithCA-sta/health-report-trend-analysis](https://github.com/johnsmithCA-sta/health-report-trend-analysis)
+
+体检指标趋势分析系统。当用户要求对历年体检报告进行数据化处理、指标趋势分析、健康管理工作台展示（体检报告、指标趋势、历年体检、健康管理、体检数据解析、化验单分析）时使用。支持 3 种输入形态：电子版 PDF（文本层）、扫描件 PDF、照片 JPG（自动合成 PDF）；产出统一指标字典（114 指标）、历年趋势比对（异常/显著变化/趋好趋坏）、权威医学解读（默沙东/丁香医生/中国指南）、结构化 Markdown 报告与离线 HTML 工作台。全程本地处理，自动生成脱敏数据集。趋势判定聚焦近三年（--focus-years 可配置）。不适用于股票/账单/合同等非体检文档的分析。
+
+Example skill path: `skills/health-report-trend-analysis/SKILL.md`
 
 ### [JuneYaooo/clinical-calculator](https://github.com/JuneYaooo/clinical-calculator)
 

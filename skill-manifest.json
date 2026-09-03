@@ -1008,6 +1008,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "fantasticjoe/biozy",
+    "cloneUrl": "https://github.com/fantasticjoe/biozy.git",
+    "localPath": "open-source/fantasticjoe/biozy",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/fantasticjoe/biozy",
+    "addedAt": "2026-09-03T17:31:29.036512Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "fastfold-ai/skills",
     "cloneUrl": "https://github.com/fastfold-ai/skills.git",
     "localPath": "open-source/fastfold-ai/skills",
@@ -1149,6 +1158,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/jiazhenz026/SciStudio",
     "addedAt": "2026-07-09T16:27:59.447159Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "johnsmithCA-sta/health-report-trend-analysis",
+    "cloneUrl": "https://github.com/johnsmithCA-sta/health-report-trend-analysis.git",
+    "localPath": "open-source/johnsmithCA-sta/health-report-trend-analysis",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/johnsmithCA-sta/health-report-trend-analysis",
+    "addedAt": "2026-09-03T17:33:12.289074Z",
     "addedBy": "github-actions"
   },
   {
