@@ -1152,6 +1152,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "javrodriguez/bench-to-paper-skills",
+    "cloneUrl": "https://github.com/javrodriguez/bench-to-paper-skills.git",
+    "localPath": "open-source/javrodriguez/bench-to-paper-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/javrodriguez/bench-to-paper-skills",
+    "addedAt": "2026-09-04T17:25:30.196144Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "jiazhenz026/SciStudio",
     "cloneUrl": "https://github.com/jiazhenz026/SciStudio.git",
     "localPath": "open-source/jiazhenz026/SciStudio",
@@ -1611,6 +1620,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "yeyuan98/bioresearcher-skills",
+    "cloneUrl": "https://github.com/yeyuan98/bioresearcher-skills.git",
+    "localPath": "open-source/yeyuan98/bioresearcher-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/yeyuan98/bioresearcher-skills",
+    "addedAt": "2026-09-04T17:25:25.659245Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "yigityildiz0/scientific-agent-skills",
     "cloneUrl": "https://github.com/yigityildiz0/scientific-agent-skills.git",
     "localPath": "open-source/yigityildiz0/scientific-agent-skills",
@@ -1626,6 +1644,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/yojiro253-del/BioForge",
     "addedAt": "2026-07-05T15:12:42.161035Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "yrjmdqmmx/Tuyan",
+    "cloneUrl": "https://github.com/yrjmdqmmx/Tuyan.git",
+    "localPath": "open-source/yrjmdqmmx/Tuyan",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/yrjmdqmmx/Tuyan",
+    "addedAt": "2026-09-04T17:25:59.173928Z",
     "addedBy": "github-actions"
   },
   {
