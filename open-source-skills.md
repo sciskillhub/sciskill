@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **190**
+Total repositories: **192**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -83,6 +83,12 @@ Collected GitHub skill repository.
 ### [AsadJaved66/Web-Skills-Protocol](https://github.com/AsadJaved66/Web-Skills-Protocol)
 
 Collected GitHub skill repository.
+
+### [asimfish/super_teaser](https://github.com/asimfish/super_teaser)
+
+Use when the user wants a human-in-the-loop workflow for research-paper framework figures, including paper-grounded architecture, pipeline, method, system/data-flow, or mechanism diagrams; S0-S5 candidate generation; image-only S2/S5; row-atomic image calls; prompt-index ID coherence; source-faithful audits; checkpoint recovery; and a terminal human decision boundary after S5. Not for posters, slide decks, quantitative plotting, generic software diagrams or editable SVG-only requests.
+
+Example skill path: `SKILL.md`
 
 ### [AstroReality-Li/bioinformatics-analysis-preflight](https://github.com/AstroReality-Li/bioinformatics-analysis-preflight)
 
@@ -204,6 +210,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [dks71yy-boop/plant-proteomics-skill](https://github.com/dks71yy-boop/plant-proteomics-skill)
+
+Supervise and deliver reproducible plant mass-spectrometry proteomics downstream analysis across supported or explicitly resolved plant species. Use for MaxQuant, DIA-NN, FragPipe, Spectronaut, Proteome Discoverer, or abundance matrices when the task includes input/QC audit, species and protein-ID resolution, differential abundance, GO/KEGG ORA or GSEA, PPI, plant-biological interpretation, deliverables, provenance, or runtime audit. Do not use for non-plant organisms. Never begin formal analysis before the ANALYSIS PLAN is explicitly confirmed.
+
+Example skill path: `SKILL.md`
+
 ### [donbr/lifesciences-research](https://github.com/donbr/lifesciences-research)
 
 Collected GitHub skill repository.
@@ -322,9 +334,7 @@ Collected GitHub skill repository.
 
 ### [javrodriguez/bench-to-paper-skills](https://github.com/javrodriguez/bench-to-paper-skills)
 
-Build an nf-core/rnaseq sample sheet from public sequencing accessions (SRR/ERR/DRR runs, or a sample/experiment/study) using only what ENA records and what the user states. Use when the user wants a samplesheet, a sample sheet, or "the input CSV for the pipeline" from an accession. Stops and names the missing value instead of guessing strandedness, grouping, or which runs are one sample.
-
-Example skill path: `skills/accession-to-samplesheet/SKILL.md`
+Collected GitHub skill repository.
 
 ### [JiahaoZhang-Public/ProtClaw](https://github.com/JiahaoZhang-Public/ProtClaw)
 
@@ -708,9 +718,7 @@ Collected GitHub skill repository.
 
 ### [yeyuan98/bioresearcher-skills](https://github.com/yeyuan98/bioresearcher-skills)
 
-Deep biomedical research orchestrator powered by the biomcp MCP server: clarifies the question, decomposes the topic into 2-5 research aspects, researches each aspect via parallel subagents (sequential fallback), and synthesizes a fully cited report under reports/<topic>/. Use for deep research, literature review, clinical trials, drugs, genes, variants, diseases, patents, PubMed, functional genomics, biomcp.
-
-Example skill path: `skills/bioresearcher-deep-research/SKILL.md`
+Collected GitHub skill repository.
 
 ### [yigityildiz0/scientific-agent-skills](https://github.com/yigityildiz0/scientific-agent-skills)
 
@@ -722,9 +730,7 @@ Collected GitHub skill repository.
 
 ### [yrjmdqmmx/Tuyan](https://github.com/yrjmdqmmx/Tuyan)
 
-Create, refine, or evaluate 科研图示 and scientific figures with local FigureSpec, optional PaperBananaBench retrieval, image-tool or code rendering, qualitative critique, and reproducible local outputs.
-
-Example skill path: `skills/tuyan-scientific-figure/SKILL.md`
+Collected GitHub skill repository.
 
 ### [YTItsfrost/cypress-agent-skill](https://github.com/YTItsfrost/cypress-agent-skill)
 

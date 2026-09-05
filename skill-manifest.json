@@ -873,6 +873,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "asimfish/super_teaser",
+    "cloneUrl": "https://github.com/asimfish/super_teaser.git",
+    "localPath": "open-source/asimfish/super_teaser",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/asimfish/super_teaser",
+    "addedAt": "2026-09-05T16:34:27.418622Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "awslabs/hcls-agent-skills",
     "cloneUrl": "https://github.com/awslabs/hcls-agent-skills.git",
     "localPath": "open-source/awslabs/hcls-agent-skills",
@@ -978,6 +987,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/dekan-aleksandr/biodiscovery-skills",
     "addedAt": "2026-08-07T14:53:02.475449Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "dks71yy-boop/plant-proteomics-skill",
+    "cloneUrl": "https://github.com/dks71yy-boop/plant-proteomics-skill.git",
+    "localPath": "open-source/dks71yy-boop/plant-proteomics-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/dks71yy-boop/plant-proteomics-skill",
+    "addedAt": "2026-09-05T16:34:03.023278Z",
     "addedBy": "github-actions"
   },
   {
