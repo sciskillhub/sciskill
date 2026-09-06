@@ -86,9 +86,7 @@ Collected GitHub skill repository.
 
 ### [asimfish/super_teaser](https://github.com/asimfish/super_teaser)
 
-Use when the user wants a human-in-the-loop workflow for research-paper framework figures, including paper-grounded architecture, pipeline, method, system/data-flow, or mechanism diagrams; S0-S5 candidate generation; image-only S2/S5; row-atomic image calls; prompt-index ID coherence; source-faithful audits; checkpoint recovery; and a terminal human decision boundary after S5. Not for posters, slide decks, quantitative plotting, generic software diagrams or editable SVG-only requests.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [AstroReality-Li/bioinformatics-analysis-preflight](https://github.com/AstroReality-Li/bioinformatics-analysis-preflight)
 
@@ -212,9 +210,7 @@ Collected GitHub skill repository.
 
 ### [dks71yy-boop/plant-proteomics-skill](https://github.com/dks71yy-boop/plant-proteomics-skill)
 
-Supervise and deliver reproducible plant mass-spectrometry proteomics downstream analysis across supported or explicitly resolved plant species. Use for MaxQuant, DIA-NN, FragPipe, Spectronaut, Proteome Discoverer, or abundance matrices when the task includes input/QC audit, species and protein-ID resolution, differential abundance, GO/KEGG ORA or GSEA, PPI, plant-biological interpretation, deliverables, provenance, or runtime audit. Do not use for non-plant organisms. Never begin formal analysis before the ANALYSIS PLAN is explicitly confirmed.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [donbr/lifesciences-research](https://github.com/donbr/lifesciences-research)
 
