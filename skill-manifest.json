@@ -477,6 +477,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "Lling0000/nature-skills",
+    "cloneUrl": "https://github.com/Lling0000/nature-skills.git",
+    "localPath": "open-source/Lling0000/nature-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Lling0000/nature-skills",
+    "addedAt": "2026-09-07T18:36:51.537722Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Lord1Egypt/scientific-agent-toolkit",
     "cloneUrl": "https://github.com/Lord1Egypt/scientific-agent-toolkit.git",
     "localPath": "open-source/Lord1Egypt/scientific-agent-toolkit",
@@ -1194,6 +1203,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/johnsmithCA-sta/health-report-trend-analysis",
     "addedAt": "2026-09-03T17:33:12.289074Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "jostelzer/grounded",
+    "cloneUrl": "https://github.com/jostelzer/grounded.git",
+    "localPath": "open-source/jostelzer/grounded",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/jostelzer/grounded",
+    "addedAt": "2026-09-07T18:37:00.004915Z",
     "addedBy": "github-actions"
   },
   {
