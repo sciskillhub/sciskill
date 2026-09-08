@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **194**
+Total repositories: **195**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -344,15 +344,19 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [jmche/skills-hub](https://github.com/jmche/skills-hub)
+
+Observe the user's screen via screenpipe, detect repeated research workflows, match them against existing scientific-agent-skills, and draft new skills (or composition recipes that chain existing ones) for the patterns not yet covered. Use when the user asks to analyze their recent work and propose skills based on what they actually do. Requires the screenpipe daemon (https://github.com/screenpipe/screenpipe) running locally on port 3030 — the skill has no other data source and will refuse to run if screenpipe is unreachable. All detection runs locally; only redacted cluster summaries reach the LLM.
+
+Example skill path: `autoskill/SKILL.md`
+
 ### [johnsmithCA-sta/health-report-trend-analysis](https://github.com/johnsmithCA-sta/health-report-trend-analysis)
 
 Collected GitHub skill repository.
 
 ### [jostelzer/grounded](https://github.com/jostelzer/grounded)
 
-Produce source-grounded scientific narrative reviews, or audit the claims and references of a supplied draft, using live literature discovery, verified bibliographic records, independent claim checking, and evidence receipts. Supports chat and journal PDF output.
-
-Example skill path: `skills/grounded/SKILL.md`
+Collected GitHub skill repository.
 
 ### [JuneYaooo/clinical-calculator](https://github.com/JuneYaooo/clinical-calculator)
 
@@ -428,9 +432,7 @@ Collected GitHub skill repository.
 
 ### [Lling0000/nature-skills](https://github.com/Lling0000/nature-skills)
 
-Prepare, audit, or revise Nature-ready Data Availability statements, data repository plans, dataset citations, and FAIR metadata checklists for manuscripts. Use when the user asks about Nature data availability, research data sharing, repository selection, accession numbers, restricted or sensitive data, source data, supplementary datasets, DataCite-style dataset references, FAIR metadata for academic publication, or Chinese-to-English data availability wording for Chinese-speaking authors preparing Nature-family submissions.
-
-Example skill path: `nature-data/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Lord1Egypt/scientific-agent-toolkit](https://github.com/Lord1Egypt/scientific-agent-toolkit)
 

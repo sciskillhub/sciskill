@@ -1197,6 +1197,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "jmche/skills-hub",
+    "cloneUrl": "https://github.com/jmche/skills-hub.git",
+    "localPath": "open-source/jmche/skills-hub",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/jmche/skills-hub",
+    "addedAt": "2026-09-08T17:46:11.397690Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "johnsmithCA-sta/health-report-trend-analysis",
     "cloneUrl": "https://github.com/johnsmithCA-sta/health-report-trend-analysis.git",
     "localPath": "open-source/johnsmithCA-sta/health-report-trend-analysis",
