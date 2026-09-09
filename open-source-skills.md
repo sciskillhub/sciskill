@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **195**
+Total repositories: **196**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -346,9 +346,7 @@ Collected GitHub skill repository.
 
 ### [jmche/skills-hub](https://github.com/jmche/skills-hub)
 
-Observe the user's screen via screenpipe, detect repeated research workflows, match them against existing scientific-agent-skills, and draft new skills (or composition recipes that chain existing ones) for the patterns not yet covered. Use when the user asks to analyze their recent work and propose skills based on what they actually do. Requires the screenpipe daemon (https://github.com/screenpipe/screenpipe) running locally on port 3030 — the skill has no other data source and will refuse to run if screenpipe is unreachable. All detection runs locally; only redacted cluster summaries reach the LLM.
-
-Example skill path: `autoskill/SKILL.md`
+Collected GitHub skill repository.
 
 ### [johnsmithCA-sta/health-report-trend-analysis](https://github.com/johnsmithCA-sta/health-report-trend-analysis)
 
@@ -513,6 +511,12 @@ Collected GitHub skill repository.
 ### [phlex89/biotech-ai](https://github.com/phlex89/biotech-ai)
 
 Collected GitHub skill repository.
+
+### [PlutoLei/paperbanana-skill](https://github.com/PlutoLei/paperbanana-skill)
+
+Use when user wants to create a full slide deck or presentation using PaperBanana image generation, OR modify/regenerate an existing PaperBanana slide deck, OR build an editable PPTX with native text/tables/charts. Triggers on "make slides", "create presentation", "PPT", "slide deck", "regenerate slides", "update slides", "paperbanana slides", "editable PPTX", "editable slides". Also triggers when user has an existing slide-deck directory with outline.md and wants to regenerate images or make changes. This is the PRIMARY slide deck skill — always prefer over baoyu-slide-deck.
+
+Example skill path: `plugins/paperbanana-slide-deck/skills/paperbanana-slide-deck/SKILL.md`
 
 ### [Potato-AI0815/Potato_Figure](https://github.com/Potato-AI0815/Potato_Figure)
 
