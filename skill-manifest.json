@@ -1134,6 +1134,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "gxCaesar/open-research-skills",
+    "cloneUrl": "https://github.com/gxCaesar/open-research-skills.git",
+    "localPath": "open-source/gxCaesar/open-research-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/gxCaesar/open-research-skills",
+    "addedAt": "2026-09-10T17:31:38.334977Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "htlin222/ask-oe-with-ego-skill",
     "cloneUrl": "https://github.com/htlin222/ask-oe-with-ego-skill.git",
     "localPath": "open-source/htlin222/ask-oe-with-ego-skill",
@@ -1636,6 +1645,15 @@
     "upstreamUrl": "https://github.com/wtfhanin/Enhance-Prompt",
     "addedAt": "2026-04-11T17:13:45.394075Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "wuzhenhua24/inkstone",
+    "cloneUrl": "https://github.com/wuzhenhua24/inkstone.git",
+    "localPath": "open-source/wuzhenhua24/inkstone",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/wuzhenhua24/inkstone",
+    "addedAt": "2026-09-10T17:31:42.795010Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "xcl2005/academic-paper-writing-skill",
