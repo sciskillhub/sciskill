@@ -891,6 +891,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "arbade/konsil",
+    "cloneUrl": "https://github.com/arbade/konsil.git",
+    "localPath": "open-source/arbade/konsil",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/arbade/konsil",
+    "addedAt": "2026-09-11T17:32:55.927916Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "asimfish/super_teaser",
     "cloneUrl": "https://github.com/asimfish/super_teaser.git",
     "localPath": "open-source/asimfish/super_teaser",

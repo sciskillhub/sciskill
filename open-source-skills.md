@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **198**
+Total repositories: **199**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -75,6 +75,12 @@ Collected GitHub skill repository.
 ### [Aperivue/medsci-skills](https://github.com/Aperivue/medsci-skills)
 
 Collected GitHub skill repository.
+
+### [arbade/konsil](https://github.com/arbade/konsil)
+
+Convene the Konsil medical board on a completed case file - select the roster, run parallel independent first assessments in isolated subagent contexts, run the Challenger cross-examination round, collect final positions and dissent, then hand off to board-report. Supports --solo mode for single-model comparison runs.
+
+Example skill path: `skills/board-orchestrator/SKILL.md`
 
 ### [ArielShemesh1999/fabius](https://github.com/ArielShemesh1999/fabius)
 
@@ -294,9 +300,7 @@ Collected GitHub skill repository.
 
 ### [gxCaesar/open-research-skills](https://github.com/gxCaesar/open-research-skills)
 
-Use when creating, redesigning, planning, or visually auditing scientific figures, flowcharts, method schematics or model-architecture diagrams, graphical abstracts, dense many-panel compound figures, domain-specific omics visualizations, and conference or journal figure sets, including Nature-style main, Extended Data, and Supplementary figures. Independently owns visual construction, figure legends, source-data preparation, and visual QA; does not rewrite the scientific analysis or manuscript claims.
-
-Example skill path: `skills/build-scientific-visualizations/SKILL.md`
+Collected GitHub skill repository.
 
 ### [HolobiomicsLab/asb-skill-collections](https://github.com/HolobiomicsLab/asb-skill-collections)
 
@@ -716,9 +720,7 @@ Collected GitHub skill repository.
 
 ### [wuzhenhua24/inkstone](https://github.com/wuzhenhua24/inkstone)
 
-画图表、做数据可视化、出论文插图和研报配图时用它——柱状图、条形图、折线图、散点图、箱线图、热力图、直方图、堆叠图、蜂群图等十三种静态图型。中文优先的印刷级出图：矢量 SVG / PDF / 300dpi PNG，零第三方依赖，无 JavaScript 运行时，可直接置入 Word、LaTeX、InDesign 和幻灯片。按期刊栏宽（85/114/170/156/254mm）、中文字号地板 7.5pt、线宽地板 0.35pt、灰度可读性与色盲安全约束出图，所有规范由 scripts/validate.py 机器判定，不合规当场拒绝而不是画一张错图。用于期刊配图、SCI 论文插图、券商研报、教材插图、政企汇报等需要印刷或归档的场合。Print-first static charts for Chinese documents — measured in points, journal column widths, machine-validated. 不做交互图表、仪表盘、网页可视化和动画。
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [xcl2005/academic-paper-writing-skill](https://github.com/xcl2005/academic-paper-writing-skill)
 
