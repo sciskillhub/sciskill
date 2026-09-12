@@ -78,9 +78,7 @@ Collected GitHub skill repository.
 
 ### [arbade/konsil](https://github.com/arbade/konsil)
 
-Convene the Konsil medical board on a completed case file - select the roster, run parallel independent first assessments in isolated subagent contexts, run the Challenger cross-examination round, collect final positions and dissent, then hand off to board-report. Supports --solo mode for single-model comparison runs.
-
-Example skill path: `skills/board-orchestrator/SKILL.md`
+Collected GitHub skill repository.
 
 ### [ArielShemesh1999/fabius](https://github.com/ArielShemesh1999/fabius)
 
