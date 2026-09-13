@@ -36,6 +36,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "AdamsukS/data-viz-skill",
+    "cloneUrl": "https://github.com/AdamsukS/data-viz-skill.git",
+    "localPath": "open-source/AdamsukS/data-viz-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/AdamsukS/data-viz-skill",
+    "addedAt": "2026-09-13T17:16:15.677683Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Agents365-ai/ccc-skill",
     "cloneUrl": "https://github.com/Agents365-ai/ccc-skill.git",
     "localPath": "open-source/Agents365-ai/ccc-skill",
@@ -1635,6 +1644,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/vsff6/bioagent-genomics",
     "addedAt": "2026-06-25T16:24:34.260099Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "waldronlab/agent-protocol-standard",
+    "cloneUrl": "https://github.com/waldronlab/agent-protocol-standard.git",
+    "localPath": "open-source/waldronlab/agent-protocol-standard",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/waldronlab/agent-protocol-standard",
+    "addedAt": "2026-09-13T17:14:54.646261Z",
     "addedBy": "github-actions"
   },
   {

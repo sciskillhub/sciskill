@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **199**
+Total repositories: **201**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -15,6 +15,12 @@ Collected GitHub skill repository.
 ### [24111999/claude-skills](https://github.com/24111999/claude-skills)
 
 Collected GitHub skill repository.
+
+### [AdamsukS/data-viz-skill](https://github.com/AdamsukS/data-viz-skill)
+
+Visualize user data by directly reusing and minimally editing bundled Python chart code, preserving its layouts, palettes, and information density. Add or remove supported elements for partial data; create a new composition only when substantial new information needs it or the user requests it. Use for static PNG/SVG/PDF figures across any domain.
+
+Example skill path: `SKILL.md`
 
 ### [agentcures/NanoCures](https://github.com/agentcures/NanoCures)
 
@@ -707,6 +713,12 @@ Collected GitHub skill repository.
 ### [vsff6/bioagent-genomics](https://github.com/vsff6/bioagent-genomics)
 
 Collected GitHub skill repository.
+
+### [waldronlab/agent-protocol-standard](https://github.com/waldronlab/agent-protocol-standard)
+
+Search, retrieve, evaluate trust, and execute citable workflows from federated protocol repositories
+
+Example skill path: `skills/protocol-runner/SKILL.md`
 
 ### [wenmin-wu/ds-skills](https://github.com/wenmin-wu/ds-skills)
 
