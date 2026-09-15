@@ -1098,6 +1098,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "fluxsci/flux",
+    "cloneUrl": "https://github.com/fluxsci/flux.git",
+    "localPath": "open-source/fluxsci/flux",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/fluxsci/flux",
+    "addedAt": "2026-09-15T17:56:13.939155Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "flyanx/paper-to-wechat",
     "cloneUrl": "https://github.com/flyanx/paper-to-wechat.git",
     "localPath": "open-source/flyanx/paper-to-wechat",
@@ -1599,6 +1608,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/terravic/alphafold-database-visualize-skill",
     "addedAt": "2026-08-26T14:41:36.685636Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "terravic/string-database-visualize-skill",
+    "cloneUrl": "https://github.com/terravic/string-database-visualize-skill.git",
+    "localPath": "open-source/terravic/string-database-visualize-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/terravic/string-database-visualize-skill",
+    "addedAt": "2026-09-15T17:57:03.545535Z",
     "addedBy": "github-actions"
   },
   {

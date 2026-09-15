@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **202**
+Total repositories: **204**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -255,6 +255,12 @@ Collected GitHub skill repository.
 ### [Ficere/archer](https://github.com/Ficere/archer)
 
 Collected GitHub skill repository.
+
+### [fluxsci/flux](https://github.com/fluxsci/flux)
+
+Present analysis results as publication-quality figures and write-ups in a Flux project — generate plots with the fluxplot library in the house (Flexoki) style, compose multi-panel figures, write the Quarto manuscript, render the figures to look at them, and address the user's review comments and feedback in place. Also builds **Flux Slide** talks — figure-first animated decks exported as one self-contained offline `.html`. Use whenever the user asks to put results / figures / a paper / a report / a talk or slides into Flux, to "present results via Flux", or points at a Flux project (a folder containing project.json).
+
+Example skill path: `skills/flux/SKILL.md`
 
 ### [flyanx/paper-to-wechat](https://github.com/flyanx/paper-to-wechat)
 
@@ -668,6 +674,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [terravic/string-database-visualize-skill](https://github.com/terravic/string-database-visualize-skill)
+
+Search protein-protein interactions (PPI), calculate functional enrichment (GO, KEGG, Reactome, UniProt), extract interaction subnetworks and partners, perform orthology mapping, and run rank-based gene set enrichment analysis (Values/Ranks GSEA) via the STRING Database API v12.0.
+
+Example skill path: `skills/string_database/SKILL.md`
+
 ### [th3vib3coder/vibe-science-codex](https://github.com/th3vib3coder/vibe-science-codex)
 
 Collected GitHub skill repository.
@@ -786,9 +798,7 @@ Collected GitHub skill repository.
 
 ### [Zchary1106/figurecraft](https://github.com/Zchary1106/figurecraft)
 
-Creates professional software and system architecture diagrams, including README overviews, C4-style context and container views, deployment views, nested system landscapes, component maps, and editable Draw.io output. Use for architecture diagrams, system design, project structure, 架构图, 系统图, 项目框架图, deployment topology, service map, or technical landscape. Do not use for quantitative charts or neural-network architecture.
-
-Example skill path: `skills/figurecraft-architecture/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Zessi-C/biofigure-self-evolve](https://github.com/Zessi-C/biofigure-self-evolve)
 
