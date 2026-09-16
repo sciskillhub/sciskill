@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **204**
+Total repositories: **205**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -258,9 +258,7 @@ Collected GitHub skill repository.
 
 ### [fluxsci/flux](https://github.com/fluxsci/flux)
 
-Present analysis results as publication-quality figures and write-ups in a Flux project — generate plots with the fluxplot library in the house (Flexoki) style, compose multi-panel figures, write the Quarto manuscript, render the figures to look at them, and address the user's review comments and feedback in place. Also builds **Flux Slide** talks — figure-first animated decks exported as one self-contained offline `.html`. Use whenever the user asks to put results / figures / a paper / a report / a talk or slides into Flux, to "present results via Flux", or points at a Flux project (a folder containing project.json).
-
-Example skill path: `skills/flux/SKILL.md`
+Collected GitHub skill repository.
 
 ### [flyanx/paper-to-wechat](https://github.com/flyanx/paper-to-wechat)
 
@@ -445,6 +443,12 @@ Collected GitHub skill repository.
 ### [lhbsaa/apex-discovery](https://github.com/lhbsaa/apex-discovery)
 
 Collected GitHub skill repository.
+
+### [LHC0128/blender-scientific-modeling](https://github.com/LHC0128/blender-scientific-modeling)
+
+Create or revise editable, reproducible Blender scientific apparatus illustrations from papers, reference images, and requirements using bpy. Use for research diagrams needing physical-topology checks, diagnostic renders, and clean or annotated views, especially optics, atomic physics, and photonics; not for numerical simulation or fabrication CAD. Live Blender connections are optional.
+
+Example skill path: `SKILL.md`
 
 ### [Lling0000/nature-skills](https://github.com/Lling0000/nature-skills)
 
@@ -676,9 +680,7 @@ Collected GitHub skill repository.
 
 ### [terravic/string-database-visualize-skill](https://github.com/terravic/string-database-visualize-skill)
 
-Search protein-protein interactions (PPI), calculate functional enrichment (GO, KEGG, Reactome, UniProt), extract interaction subnetworks and partners, perform orthology mapping, and run rank-based gene set enrichment analysis (Values/Ranks GSEA) via the STRING Database API v12.0.
-
-Example skill path: `skills/string_database/SKILL.md`
+Collected GitHub skill repository.
 
 ### [th3vib3coder/vibe-science-codex](https://github.com/th3vib3coder/vibe-science-codex)
 

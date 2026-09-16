@@ -26,8 +26,32 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 273,
+  "repo_count": 274,
   "results": [
+    {
+      "repo": "fluxsci/flux",
+      "matched_domain_topics": [
+        "science",
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/fluxsci/flux",
+      "matches": []
+    },
     {
       "repo": "xuzhougeng/ScientificFigureLibrary",
       "matched_domain_topics": [
@@ -51,36 +75,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/xuzhougeng/ScientificFigureLibrary",
       "matches": []
-    },
-    {
-      "repo": "fluxsci/flux",
-      "matched_domain_topics": [
-        "science",
-        "scientific-visualization"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "scientific-visualization",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/fluxsci/flux.git",
-      "chosen_skill_path": "skills/flux/SKILL.md",
-      "front_matter": {
-        "name": "flux",
-        "description": "Present analysis results as publication-quality figures and write-ups in a Flux project — generate plots with the fluxplot library in the house (Flexoki) style, compose multi-panel figures, write the Quarto manuscript, render the figures to look at them, and address the user's review comments and feedback in place. Also builds **Flux Slide** talks — figure-first animated decks exported as one self-contained offline `.html`. Use whenever the user asks to put results / figures / a paper / a report / a talk or slides into Flux, to \"present results via Flux\", or points at a Flux project (a folder containing project.json)."
-      },
-      "html_url": "https://github.com/fluxsci/flux",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/fluxsci/flux"
     },
     {
       "repo": "shear559/fabius",
@@ -689,7 +683,7 @@
       "matches": []
     },
     {
-      "repo": "jiazhenz026/SciStudio",
+      "repo": "lm203688/genetech-14-sites",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -703,9 +697,7 @@
         }
       ],
       "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/jiazhenz026/SciStudio",
-      "matches": []
+      "status": "no_valid_skill"
     },
     {
       "repo": "ClawBio/ClawBio",
@@ -737,7 +729,7 @@
       "matches": []
     },
     {
-      "repo": "lm203688/genetech-14-sites",
+      "repo": "SiYangming/bioskills",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -752,6 +744,49 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "jiazhenz026/SciStudio",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/jiazhenz026/SciStudio",
+      "matches": []
+    },
+    {
+      "repo": "jmche/skills-hub",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills",
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/jmche/skills-hub",
+      "matches": []
     },
     {
       "repo": "aicell-lab/bioengine",
@@ -797,32 +832,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/terravic/string-database-visualize-skill.git",
-      "chosen_skill_path": "skills/string_database/SKILL.md",
-      "front_matter": {
-        "name": "string-database-visualize",
-        "description": "Search protein-protein interactions (PPI), calculate functional enrichment (GO, KEGG, Reactome, UniProt), extract interaction subnetworks and partners, perform orthology mapping, and run rank-based gene set enrichment analysis (Values/Ranks GSEA) via the STRING Database API v12.0."
-      },
-      "html_url": "https://github.com/terravic/string-database-visualize-skill",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/terravic/string-database-visualize-skill"
-    },
-    {
-      "repo": "SiYangming/bioskills",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/terravic/string-database-visualize-skill",
+      "matches": []
     },
     {
       "repo": "droftgamer-wq/researcher-skill",
@@ -1152,30 +1164,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "jmche/skills-hub",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills",
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/jmche/skills-hub",
-      "matches": []
     },
     {
       "repo": "deknapp/chilecule",
@@ -3006,6 +2994,33 @@
       "matches": []
     },
     {
+      "repo": "ibrahim1990ua/academic-research-skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "xuzhougeng/wisp-science",
       "matched_domain_topics": [
         "bioinformatics",
@@ -3143,33 +3158,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/K-Dense-AI/scientific-agent-skills",
       "matches": []
-    },
-    {
-      "repo": "ibrahim1990ua/academic-research-skills",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "FridrichMethod/awesome-skills",
@@ -4432,6 +4420,31 @@
       "matches": []
     },
     {
+      "repo": "LHC0128/blender-scientific-modeling",
+      "matched_domain_topics": [
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/LHC0128/blender-scientific-modeling.git",
+      "chosen_skill_path": "SKILL.md",
+      "front_matter": {
+        "name": "blender-scientific-modeling",
+        "description": "Create or revise editable, reproducible Blender scientific apparatus illustrations from papers, reference images, and requirements using bpy. Use for research diagrams needing physical-topology checks, diagnostic renders, and clean or annotated views, especially optics, atomic physics, and photonics; not for numerical simulation or fabrication CAD. Live Blender connections are optional."
+      },
+      "html_url": "https://github.com/LHC0128/blender-scientific-modeling",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/LHC0128/blender-scientific-modeling"
+    },
+    {
       "repo": "Azhi-ss/academic-figure-skills",
       "matched_domain_topics": [
         "scientific-visualization"
@@ -5145,7 +5158,7 @@
       "matches": []
     },
     {
-      "repo": "api-evangelist/enjamb-labs",
+      "repo": "api-evangelist/tilda",
       "matched_domain_topics": [
         "clinical-research"
       ],
@@ -5162,7 +5175,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "api-evangelist/tilda",
+      "repo": "api-evangelist/enjamb-labs",
       "matched_domain_topics": [
         "clinical-research"
       ],
@@ -5346,7 +5359,7 @@
       "matches": []
     },
     {
-      "repo": "PuneetShivaay/Deep-Learning-Based-Chatbot-For-Medical-Assistance",
+      "repo": "api-evangelist/motics-technologies",
       "matched_domain_topics": [
         "medical"
       ],
@@ -5382,7 +5395,7 @@
       "matches": []
     },
     {
-      "repo": "api-evangelist/motics-technologies",
+      "repo": "PuneetShivaay/Deep-Learning-Based-Chatbot-For-Medical-Assistance",
       "matched_domain_topics": [
         "medical"
       ],

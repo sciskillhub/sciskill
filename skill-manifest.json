@@ -468,6 +468,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "LHC0128/blender-scientific-modeling",
+    "cloneUrl": "https://github.com/LHC0128/blender-scientific-modeling.git",
+    "localPath": "open-source/LHC0128/blender-scientific-modeling",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/LHC0128/blender-scientific-modeling",
+    "addedAt": "2026-09-16T17:59:41.167574Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "LabOnoM/AROS_Pipeline_Factory",
     "cloneUrl": "https://github.com/LabOnoM/AROS_Pipeline_Factory.git",
     "localPath": "open-source/LabOnoM/AROS_Pipeline_Factory",
