@@ -446,9 +446,7 @@ Collected GitHub skill repository.
 
 ### [LHC0128/blender-scientific-modeling](https://github.com/LHC0128/blender-scientific-modeling)
 
-Create or revise editable, reproducible Blender scientific apparatus illustrations from papers, reference images, and requirements using bpy. Use for research diagrams needing physical-topology checks, diagnostic renders, and clean or annotated views, especially optics, atomic physics, and photonics; not for numerical simulation or fabrication CAD. Live Blender connections are optional.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [Lling0000/nature-skills](https://github.com/Lling0000/nature-skills)
 
