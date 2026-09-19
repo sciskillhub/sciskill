@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **205**
+Total repositories: **206**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -735,6 +735,12 @@ Collected GitHub skill repository.
 ### [wtfhanin/Enhance-Prompt](https://github.com/wtfhanin/Enhance-Prompt)
 
 Collected GitHub skill repository.
+
+### [WUWeifeng710/bioinfo-trust-framework](https://github.com/WUWeifeng710/bioinfo-trust-framework)
+
+生信分析可信度总闸。任何生信分析开工前必须加载。Trustworthy bioinformatics.
+
+Example skill path: `SKILL.md`
 
 ### [wuzhenhua24/inkstone](https://github.com/wuzhenhua24/inkstone)
 
