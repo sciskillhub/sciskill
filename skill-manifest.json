@@ -882,6 +882,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "aipoch/open-science",
+    "cloneUrl": "https://github.com/aipoch/open-science.git",
+    "localPath": "open-source/aipoch/open-science",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/aipoch/open-science",
+    "addedAt": "2026-09-20T17:18:16.967805Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "aksh-3141/claude-toolshed",
     "cloneUrl": "https://github.com/aksh-3141/claude-toolshed.git",
     "localPath": "open-source/aksh-3141/claude-toolshed",

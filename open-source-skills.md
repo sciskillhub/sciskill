@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **206**
+Total repositories: **207**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -43,6 +43,12 @@ Collected GitHub skill repository.
 ### [aipoch/medical-research-skills](https://github.com/aipoch/medical-research-skills)
 
 Collected GitHub skill repository.
+
+### [aipoch/open-science](https://github.com/aipoch/open-science)
+
+Predict protein structure for monomers and multimers with AlphaFold2 via the ColabFold runner (Mirdita et al. 2022, github.com/sokrypton/ColabFold; AlphaFold2 Jumper et al. 2021). Reach for this skill to fold a sequence or complex with the AF2/AF2-Multimer evoformer, to validate designed sequences by self-consistency pLDDT, ipTM, and RMSD, or to run a quick MSA-backed prediction using the public MMseqs2 server.
+
+Example skill path: `resources/skills/alphafold2/SKILL.md`
 
 ### [aksh-3141/claude-toolshed](https://github.com/aksh-3141/claude-toolshed)
 
@@ -738,9 +744,7 @@ Collected GitHub skill repository.
 
 ### [WUWeifeng710/bioinfo-trust-framework](https://github.com/WUWeifeng710/bioinfo-trust-framework)
 
-生信分析可信度总闸。任何生信分析开工前必须加载。Trustworthy bioinformatics.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [wuzhenhua24/inkstone](https://github.com/wuzhenhua24/inkstone)
 
