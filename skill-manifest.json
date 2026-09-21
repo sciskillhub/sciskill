@@ -891,6 +891,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "aka-debug-jie/dnaman-seq-analysis",
+    "cloneUrl": "https://github.com/aka-debug-jie/dnaman-seq-analysis.git",
+    "localPath": "open-source/aka-debug-jie/dnaman-seq-analysis",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/aka-debug-jie/dnaman-seq-analysis",
+    "addedAt": "2026-09-21T19:05:03.196865Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "aksh-3141/claude-toolshed",
     "cloneUrl": "https://github.com/aksh-3141/claude-toolshed.git",
     "localPath": "open-source/aksh-3141/claude-toolshed",
@@ -1635,6 +1644,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/terravic/alphafold-database-visualize-skill",
     "addedAt": "2026-08-26T14:41:36.685636Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "terravic/human-protein-atlas-database-visualize-skill",
+    "cloneUrl": "https://github.com/terravic/human-protein-atlas-database-visualize-skill.git",
+    "localPath": "open-source/terravic/human-protein-atlas-database-visualize-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/terravic/human-protein-atlas-database-visualize-skill",
+    "addedAt": "2026-09-21T19:04:08.228225Z",
     "addedBy": "github-actions"
   },
   {

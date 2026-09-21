@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **207**
+Total repositories: **209**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -46,9 +46,13 @@ Collected GitHub skill repository.
 
 ### [aipoch/open-science](https://github.com/aipoch/open-science)
 
-Predict protein structure for monomers and multimers with AlphaFold2 via the ColabFold runner (Mirdita et al. 2022, github.com/sokrypton/ColabFold; AlphaFold2 Jumper et al. 2021). Reach for this skill to fold a sequence or complex with the AF2/AF2-Multimer evoformer, to validate designed sequences by self-consistency pLDDT, ipTM, and RMSD, or to run a quick MSA-backed prediction using the public MMseqs2 server.
+Collected GitHub skill repository.
 
-Example skill path: `resources/skills/alphafold2/SKILL.md`
+### [aka-debug-jie/dnaman-seq-analysis](https://github.com/aka-debug-jie/dnaman-seq-analysis)
+
+Drive DNAMAN 4.0 (legacy Windows GUI) for sequence analysis - restriction/enzyme mapping, primer design, translation, ORF, assembly, alignment, protein analysis - via pywinauto/Win32 automation; falls back to Biopython, primer3-py, pydna, MAFFT or BLAST+ when DNAMAN cannot do the job. Use when the user mentions DNAMAN, 酶切分析, 引物设计, 序列拼接, ORF, 序列比对, 质粒图谱, or asks to analyse .seq/GenBank files with a locally installed DNAMAN.
+
+Example skill path: `skills/dnaman-seq-analysis/SKILL.md`
 
 ### [aksh-3141/claude-toolshed](https://github.com/aksh-3141/claude-toolshed)
 
@@ -681,6 +685,12 @@ Collected GitHub skill repository.
 ### [terravic/alphafold-database-visualize-skill](https://github.com/terravic/alphafold-database-visualize-skill)
 
 Collected GitHub skill repository.
+
+### [terravic/human-protein-atlas-database-visualize-skill](https://github.com/terravic/human-protein-atlas-database-visualize-skill)
+
+Retrieve, analyze, and visualize semi-quantitative protein expression, spatial subcellular localization, and RNA-to-protein concordance from the Human Protein Atlas (HPA). Generates interactive standalone HTML5 dashboards featuring 3D physics-based cellular/organelle and organ-system network viewports, vector-rendered eukaryotic organelle maps, anatomical organ-system IHC heatmaps, and cancer pathology profiles. Use when the user asks to analyze, visualize, or profile protein abundance, cellular location, or immunohistochemistry across human tissues.
+
+Example skill path: `SKILL.md`
 
 ### [terravic/string-database-visualize-skill](https://github.com/terravic/string-database-visualize-skill)
 
