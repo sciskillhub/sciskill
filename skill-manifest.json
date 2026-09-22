@@ -1458,6 +1458,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "nihaoWX/svg_grid",
+    "cloneUrl": "https://github.com/nihaoWX/svg_grid.git",
+    "localPath": "open-source/nihaoWX/svg_grid",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/nihaoWX/svg_grid",
+    "addedAt": "2026-09-22T17:56:48.688672Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "openags/OpenAGS",
     "cloneUrl": "https://github.com/openags/OpenAGS.git",
     "localPath": "open-source/openags/OpenAGS",

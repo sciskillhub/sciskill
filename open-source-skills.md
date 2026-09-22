@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **209**
+Total repositories: **210**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -50,9 +50,7 @@ Collected GitHub skill repository.
 
 ### [aka-debug-jie/dnaman-seq-analysis](https://github.com/aka-debug-jie/dnaman-seq-analysis)
 
-Drive DNAMAN 4.0 (legacy Windows GUI) for sequence analysis - restriction/enzyme mapping, primer design, translation, ORF, assembly, alignment, protein analysis - via pywinauto/Win32 automation; falls back to Biopython, primer3-py, pydna, MAFFT or BLAST+ when DNAMAN cannot do the job. Use when the user mentions DNAMAN, 酶切分析, 引物设计, 序列拼接, ORF, 序列比对, 质粒图谱, or asks to analyse .seq/GenBank files with a locally installed DNAMAN.
-
-Example skill path: `skills/dnaman-seq-analysis/SKILL.md`
+Collected GitHub skill repository.
 
 ### [aksh-3141/claude-toolshed](https://github.com/aksh-3141/claude-toolshed)
 
@@ -514,6 +512,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [nihaoWX/svg_grid](https://github.com/nihaoWX/svg_grid)
+
+Use when assembling publication figures for a manuscript — deciding canvas size, panel letters, fonts, legends, colors, which panels to merge into one figure, and how to name/insert captions into the manuscript. Covers the "results-only", "fill" and "semantic" grouping principles, the A4 canvas convention, the paired-output rule (products `.svgz`+`.png`, panels `.svg`+`.png`), embedding non-vectorizable panels as 600-dpi `<image>`, the small non-bold serif panel letters, legends-outside-axes rule, and the manuscript integration format (Figure x / Figure Sx naming, md insertion, caption format). Triggers for "组图", "figure assembly", "panel layout", "figure caption", "Figure 1/S1 naming", "panel letters", "compose a figure".
+
+Example skill path: `docs/general-figure-guide/SKILL.md`
+
 ### [Nonsteroidevangel872/research-writing-skill](https://github.com/Nonsteroidevangel872/research-writing-skill)
 
 Collected GitHub skill repository.
@@ -688,9 +692,7 @@ Collected GitHub skill repository.
 
 ### [terravic/human-protein-atlas-database-visualize-skill](https://github.com/terravic/human-protein-atlas-database-visualize-skill)
 
-Retrieve, analyze, and visualize semi-quantitative protein expression, spatial subcellular localization, and RNA-to-protein concordance from the Human Protein Atlas (HPA). Generates interactive standalone HTML5 dashboards featuring 3D physics-based cellular/organelle and organ-system network viewports, vector-rendered eukaryotic organelle maps, anatomical organ-system IHC heatmaps, and cancer pathology profiles. Use when the user asks to analyze, visualize, or profile protein abundance, cellular location, or immunohistochemistry across human tissues.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [terravic/string-database-visualize-skill](https://github.com/terravic/string-database-visualize-skill)
 
