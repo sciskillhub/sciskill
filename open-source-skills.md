@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **210**
+Total repositories: **212**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -484,6 +484,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [mehdi-abedini/kian-nano](https://github.com/mehdi-abedini/kian-nano)
+
+Conduct evidence-grounded scientific, engineering, industrial R&D, genomics/NGS/bioinformatics, AI-assisted research, technology-intelligence, IP, business, finance, and quantitative-research workflows for Kian Nano Karno.
+
+Example skill path: `SKILL.md`
+
 ### [MisterBrookT/paper-skills](https://github.com/MisterBrookT/paper-skills)
 
 Collected GitHub skill repository.
@@ -514,9 +520,7 @@ Collected GitHub skill repository.
 
 ### [nihaoWX/svg_grid](https://github.com/nihaoWX/svg_grid)
 
-Use when assembling publication figures for a manuscript — deciding canvas size, panel letters, fonts, legends, colors, which panels to merge into one figure, and how to name/insert captions into the manuscript. Covers the "results-only", "fill" and "semantic" grouping principles, the A4 canvas convention, the paired-output rule (products `.svgz`+`.png`, panels `.svg`+`.png`), embedding non-vectorizable panels as 600-dpi `<image>`, the small non-bold serif panel letters, legends-outside-axes rule, and the manuscript integration format (Figure x / Figure Sx naming, md insertion, caption format). Triggers for "组图", "figure assembly", "panel layout", "figure caption", "Figure 1/S1 naming", "panel letters", "compose a figure".
-
-Example skill path: `docs/general-figure-guide/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Nonsteroidevangel872/research-writing-skill](https://github.com/Nonsteroidevangel872/research-writing-skill)
 
@@ -541,6 +545,12 @@ Collected GitHub skill repository.
 ### [Pavel-Kravchenko/Bioinformatics](https://github.com/Pavel-Kravchenko/Bioinformatics)
 
 Collected GitHub skill repository.
+
+### [pgraber/agentic-research-loop](https://github.com/pgraber/agentic-research-loop)
+
+Routes non-research administrative work — grants, fellowships, teaching, reporting, meetings, ops — to the right place, kept separate from the research analysis loop. Use when the user mentions admin, grants, fellowships, teaching, HDR, or other non-analysis tasks. Does not run the analysis loop.
+
+Example skill path: `skills/admin-tasks/SKILL.md`
 
 ### [phlex89/biotech-ai](https://github.com/phlex89/biotech-ai)
 
