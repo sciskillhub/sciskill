@@ -297,6 +297,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "FOURTEEN1416/academic-agent-toolkit",
+    "cloneUrl": "https://github.com/FOURTEEN1416/academic-agent-toolkit.git",
+    "localPath": "open-source/FOURTEEN1416/academic-agent-toolkit",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/FOURTEEN1416/academic-agent-toolkit",
+    "addedAt": "2026-09-24T18:14:52.034685Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Ficere/archer",
     "cloneUrl": "https://github.com/Ficere/archer.git",
     "localPath": "open-source/Ficere/archer",
@@ -1366,6 +1375,15 @@
     "upstreamUrl": "https://github.com/kimimgo/viznoir",
     "addedAt": "2026-04-11T17:13:46.307143Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "leo-cheung-itlger/rmbase-agent-skill",
+    "cloneUrl": "https://github.com/leo-cheung-itlger/rmbase-agent-skill.git",
+    "localPath": "open-source/leo-cheung-itlger/rmbase-agent-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/leo-cheung-itlger/rmbase-agent-skill",
+    "addedAt": "2026-09-24T18:11:53.105107Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "lhbsaa/apex-discovery",

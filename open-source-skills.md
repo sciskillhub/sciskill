@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **212**
+Total repositories: **214**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -284,6 +284,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [FOURTEEN1416/academic-agent-toolkit](https://github.com/FOURTEEN1416/academic-agent-toolkit)
+
+Use when main results pass result-to-claim (claim_supported=yes or partial) and ablation studies are needed for paper
+
+Example skill path: `academic-toolkit/skills/ablation-planner/SKILL.md`
+
 ### [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills)
 
 Collected GitHub skill repository.
@@ -448,6 +454,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [leo-cheung-itlger/rmbase-agent-skill](https://github.com/leo-cheung-itlger/rmbase-agent-skill)
+
+Queries RMBase v3.0 for gene-associated RNA modifications, modification sites, enzymes, snoRNAs, RNA interactions, enriched motifs, and cancer-associated RNA-modifying proteins using bundled Python scripts and official downloadable datasets. Use for reproducible RMBase epitranscriptome queries with species, genome assembly, identifiers, and provenance.
+
+Example skill path: `skills/rmbase/SKILL.md`
+
 ### [lhbsaa/apex-discovery](https://github.com/lhbsaa/apex-discovery)
 
 Collected GitHub skill repository.
@@ -486,9 +498,7 @@ Collected GitHub skill repository.
 
 ### [mehdi-abedini/kian-nano](https://github.com/mehdi-abedini/kian-nano)
 
-Conduct evidence-grounded scientific, engineering, industrial R&D, genomics/NGS/bioinformatics, AI-assisted research, technology-intelligence, IP, business, finance, and quantitative-research workflows for Kian Nano Karno.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [MisterBrookT/paper-skills](https://github.com/MisterBrookT/paper-skills)
 
@@ -548,9 +558,7 @@ Collected GitHub skill repository.
 
 ### [pgraber/agentic-research-loop](https://github.com/pgraber/agentic-research-loop)
 
-Routes non-research administrative work — grants, fellowships, teaching, reporting, meetings, ops — to the right place, kept separate from the research analysis loop. Use when the user mentions admin, grants, fellowships, teaching, HDR, or other non-analysis tasks. Does not run the analysis loop.
-
-Example skill path: `skills/admin-tasks/SKILL.md`
+Collected GitHub skill repository.
 
 ### [phlex89/biotech-ai](https://github.com/phlex89/biotech-ai)
 
