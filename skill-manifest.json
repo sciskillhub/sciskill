@@ -1494,6 +1494,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "open-biosciences/biosciences-mcp",
+    "cloneUrl": "https://github.com/open-biosciences/biosciences-mcp.git",
+    "localPath": "open-source/open-biosciences/biosciences-mcp",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/open-biosciences/biosciences-mcp",
+    "addedAt": "2026-09-25T18:15:09.582949Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "openags/OpenAGS",
     "cloneUrl": "https://github.com/openags/OpenAGS.git",
     "localPath": "open-source/openags/OpenAGS",

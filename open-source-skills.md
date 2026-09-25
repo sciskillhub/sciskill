@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **214**
+Total repositories: **215**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -286,9 +286,7 @@ Collected GitHub skill repository.
 
 ### [FOURTEEN1416/academic-agent-toolkit](https://github.com/FOURTEEN1416/academic-agent-toolkit)
 
-Use when main results pass result-to-claim (claim_supported=yes or partial) and ablation studies are needed for paper
-
-Example skill path: `academic-toolkit/skills/ablation-planner/SKILL.md`
+Collected GitHub skill repository.
 
 ### [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills)
 
@@ -456,9 +454,7 @@ Collected GitHub skill repository.
 
 ### [leo-cheung-itlger/rmbase-agent-skill](https://github.com/leo-cheung-itlger/rmbase-agent-skill)
 
-Queries RMBase v3.0 for gene-associated RNA modifications, modification sites, enzymes, snoRNAs, RNA interactions, enriched motifs, and cancer-associated RNA-modifying proteins using bundled Python scripts and official downloadable datasets. Use for reproducible RMBase epitranscriptome queries with species, genome assembly, identifiers, and provenance.
-
-Example skill path: `skills/rmbase/SKILL.md`
+Collected GitHub skill repository.
 
 ### [lhbsaa/apex-discovery](https://github.com/lhbsaa/apex-discovery)
 
@@ -535,6 +531,12 @@ Collected GitHub skill repository.
 ### [Nonsteroidevangel872/research-writing-skill](https://github.com/Nonsteroidevangel872/research-writing-skill)
 
 Collected GitHub skill repository.
+
+### [open-biosciences/biosciences-mcp](https://github.com/open-biosciences/biosciences-mcp)
+
+Shared review standard for biosciences-mcp pull requests. Decision precedence, ADR decision matrix, severity levels, evidence bar, and the finding format every reviewer emits. Reference material preloaded into the pr-review agents; it is not a task.
+
+Example skill path: `.claude/skills/pr-review-standard/SKILL.md`
 
 ### [openags/OpenAGS](https://github.com/openags/OpenAGS)
 
