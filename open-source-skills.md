@@ -534,9 +534,7 @@ Collected GitHub skill repository.
 
 ### [open-biosciences/biosciences-mcp](https://github.com/open-biosciences/biosciences-mcp)
 
-Shared review standard for biosciences-mcp pull requests. Decision precedence, ADR decision matrix, severity levels, evidence bar, and the finding format every reviewer emits. Reference material preloaded into the pr-review agents; it is not a task.
-
-Example skill path: `.claude/skills/pr-review-standard/SKILL.md`
+Collected GitHub skill repository.
 
 ### [openags/OpenAGS](https://github.com/openags/OpenAGS)
 
