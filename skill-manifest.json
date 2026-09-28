@@ -279,6 +279,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "Dominic789654/scientific-figure",
+    "cloneUrl": "https://github.com/Dominic789654/scientific-figure.git",
+    "localPath": "open-source/Dominic789654/scientific-figure",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Dominic789654/scientific-figure",
+    "addedAt": "2026-09-28T20:26:40.680844Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "DrugClaw/DrugClaw",
     "cloneUrl": "https://github.com/DrugClaw/DrugClaw.git",
     "localPath": "open-source/DrugClaw/DrugClaw",
@@ -1680,6 +1689,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/tayloranthonyanderson/haploqtl",
     "addedAt": "2026-06-24T16:17:59.132895Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "techdou/visualization-innovation",
+    "cloneUrl": "https://github.com/techdou/visualization-innovation.git",
+    "localPath": "open-source/techdou/visualization-innovation",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/techdou/visualization-innovation",
+    "addedAt": "2026-09-28T20:26:36.984849Z",
     "addedBy": "github-actions"
   },
   {
