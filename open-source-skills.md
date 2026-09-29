@@ -230,9 +230,7 @@ Collected GitHub skill repository.
 
 ### [Dominic789654/scientific-figure](https://github.com/Dominic789654/scientific-figure)
 
-Generate a polished scientific illustration (method overview, conceptual diagram, cannikin's-law-style metaphor figure, etc.) for an academic paper by calling an OpenAI-images-compatible endpoint (default gpt-image-2). Triggers when the user asks to render, generate, or iterate on a scientific figure for a paper via AI image generation — NOT for matplotlib-style data charts. Saves prompt/request/response and the PNG under reports/scientific_illustrations/ with a timestamped name so iterations are reproducible.
-
-Example skill path: `skills/scientific-figure/SKILL.md`
+Collected GitHub skill repository.
 
 ### [donbr/lifesciences-research](https://github.com/donbr/lifesciences-research)
 
@@ -704,9 +702,7 @@ Collected GitHub skill repository.
 
 ### [techdou/visualization-innovation](https://github.com/techdou/visualization-innovation)
 
-Design or critique research visualization innovation (图表二创/新视图/交互创新/多图联动创新). Use for mechanism-level redesign of reference figures, custom visual grammars, coordinated-view workflows, evidence-based visual stories, or prior-art-aware contribution claims. Exclude routine charting, styling-only polish, and faithful implementation of an already-fixed design.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [teixasalone/UnrealEngine5-Skills](https://github.com/teixasalone/UnrealEngine5-Skills)
 
