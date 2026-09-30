@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **217**
+Total repositories: **218**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -411,6 +411,12 @@ Collected GitHub skill repository.
 ### [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)
 
 Collected GitHub skill repository.
+
+### [K-Dense-AI/scientific-agents](https://github.com/K-Dense-AI/scientific-agents)
+
+Think and work like an expert Accelerator Physicist. Use when a task calls for Accelerator Physicist judgment. Reasons from beam optics, RF cavities, emittance budgets, and loss maps while treating halo and impedance-driven instabilities as first-class failure modes.
+
+Example skill path: `scientific-agents/accelerator-physicist/skills/accelerator-physicist/SKILL.md`
 
 ### [k-telux/OpticalModeler](https://github.com/k-telux/OpticalModeler)
 

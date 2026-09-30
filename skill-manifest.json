@@ -441,6 +441,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "K-Dense-AI/scientific-agents",
+    "cloneUrl": "https://github.com/K-Dense-AI/scientific-agents.git",
+    "localPath": "open-source/K-Dense-AI/scientific-agents",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/K-Dense-AI/scientific-agents",
+    "addedAt": "2026-09-30T18:54:29.390326Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "KaiyiHu/ResearchFigureSkill",
     "cloneUrl": "https://github.com/KaiyiHu/ResearchFigureSkill.git",
     "localPath": "open-source/KaiyiHu/ResearchFigureSkill",
