@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **218**
+Total repositories: **222**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -95,6 +95,12 @@ Collected GitHub skill repository.
 ### [ArielShemesh1999/fabius](https://github.com/ArielShemesh1999/fabius)
 
 Collected GitHub skill repository.
+
+### [arrizabalagags-png/Voltpeer-skills](https://github.com/arrizabalagags-png/Voltpeer-skills)
+
+Verify whether cited sources support specific claims, numbers, mechanisms, and references in a battery Review or Perspective. Use for citation audit, not corpus search.
+
+Example skill path: `skills/battery-claim-check/SKILL.md`
 
 ### [AsadJaved66/Web-Skills-Protocol](https://github.com/AsadJaved66/Web-Skills-Protocol)
 
@@ -414,9 +420,7 @@ Collected GitHub skill repository.
 
 ### [K-Dense-AI/scientific-agents](https://github.com/K-Dense-AI/scientific-agents)
 
-Think and work like an expert Accelerator Physicist. Use when a task calls for Accelerator Physicist judgment. Reasons from beam optics, RF cavities, emittance budgets, and loss maps while treating halo and impedance-driven instabilities as first-class failure modes.
-
-Example skill path: `scientific-agents/accelerator-physicist/skills/accelerator-physicist/SKILL.md`
+Collected GitHub skill repository.
 
 ### [k-telux/OpticalModeler](https://github.com/k-telux/OpticalModeler)
 
@@ -433,6 +437,12 @@ Collected GitHub skill repository.
 ### [KalarisLabs/myriad](https://github.com/KalarisLabs/myriad)
 
 Collected GitHub skill repository.
+
+### [KalarisLabs/research-agent-skills](https://github.com/KalarisLabs/research-agent-skills)
+
+Estimates intracellular metabolic fluxes from steady-state carbon-13 isotope-tracing measurements using validated atom maps, mfapy isotope simulation, constrained multistart fitting, and flux-profile diagnostics. Use for 13C-MFA, carbon tracing, mass isotopomer distributions (MDVs/MIDs), positional isotopomers, parallel tracer experiments, and determining whether labeling data constrain a pathway flux. Distinguishes measured-label inference from COBRA flux balance analysis and flags experiments requiring nonstationary MFA.
+
+Example skill path: `skills/13c-metabolic-flux/SKILL.md`
 
 ### [Kayunangka/claude-skill](https://github.com/Kayunangka/claude-skill)
 
@@ -658,6 +668,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Sculptor815/scrnaseq-gene-specificity-screen](https://github.com/Sculptor815/scrnaseq-gene-specificity-screen)
+
+Determine whether a set of genes is specifically highly expressed in particular cell types or tissues using the Human Protein Atlas (HPA) public API. Downloads the RNA expression matrices for 154 cell types (nCPM) and 51 tissues (nTPM), screens for genes whose peak falls inside a user-defined cell-type group (such as the megakaryocytic lineage or hematopoietic cells), and outputs per-cell-type / per-tissue bar charts plus Excel/TSV results. Use it to judge the cell-type or tissue specificity of a gene list, to annotate any gene list or cNMF/GEP gene module for expression specificity, or to find lineage-specific candidate genes with unknown function. Requires a gene list from the user (CSV/TSV/XLSX with a gene or symbol column) and target cell-type group definitions.
+
+Example skill path: `SKILL.md`
+
 ### [seandavi/agentic-coding-intro](https://github.com/seandavi/agentic-coding-intro)
 
 Collected GitHub skill repository.
@@ -737,6 +753,12 @@ Collected GitHub skill repository.
 ### [Thanx01/paper-figure-skill](https://github.com/Thanx01/paper-figure-skill)
 
 Collected GitHub skill repository.
+
+### [the8thday/AgenticPrism-SKILL](https://github.com/the8thday/AgenticPrism-SKILL)
+
+Estimate declared screening, confirmatory percent-inhibition or titer ADA cut points from complete repeated drug-naive negative panels, with audited normalization, outliers, run diagnostics, subject/run variance components and optional lower confidence bounds; then ADA assay sensitivity and drug tolerance from positive-control experiments against an established cut point. Routes accuracy/precision and other method-validation experiments to method-validation.
+
+Example skill path: `skills/ada-cut-point/SKILL.md`
 
 ### [thetahealth/mirobody](https://github.com/thetahealth/mirobody)
 

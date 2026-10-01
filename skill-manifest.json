@@ -477,6 +477,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "KalarisLabs/research-agent-skills",
+    "cloneUrl": "https://github.com/KalarisLabs/research-agent-skills.git",
+    "localPath": "open-source/KalarisLabs/research-agent-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/KalarisLabs/research-agent-skills",
+    "addedAt": "2026-10-01T19:17:52.103384Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Kayunangka/claude-skill",
     "cloneUrl": "https://github.com/Kayunangka/claude-skill.git",
     "localPath": "open-source/Kayunangka/claude-skill",
@@ -717,6 +726,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/SciToolsmith/sci-plot",
     "addedAt": "2026-08-05T16:02:58.769098Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "Sculptor815/scrnaseq-gene-specificity-screen",
+    "cloneUrl": "https://github.com/Sculptor815/scrnaseq-gene-specificity-screen.git",
+    "localPath": "open-source/Sculptor815/scrnaseq-gene-specificity-screen",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Sculptor815/scrnaseq-gene-specificity-screen",
+    "addedAt": "2026-10-01T19:18:46.775734Z",
     "addedBy": "github-actions"
   },
   {
@@ -978,6 +996,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/arbade/konsil",
     "addedAt": "2026-09-11T17:32:55.927916Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "arrizabalagags-png/Voltpeer-skills",
+    "cloneUrl": "https://github.com/arrizabalagags-png/Voltpeer-skills.git",
+    "localPath": "open-source/arrizabalagags-png/Voltpeer-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/arrizabalagags-png/Voltpeer-skills",
+    "addedAt": "2026-10-01T19:19:34.875100Z",
     "addedBy": "github-actions"
   },
   {
@@ -1753,6 +1780,15 @@
     "upstreamUrl": "https://github.com/th3vib3coder/vibe-science-codex",
     "addedAt": "2026-04-11T17:13:46.458470Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "the8thday/AgenticPrism-SKILL",
+    "cloneUrl": "https://github.com/the8thday/AgenticPrism-SKILL.git",
+    "localPath": "open-source/the8thday/AgenticPrism-SKILL",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/the8thday/AgenticPrism-SKILL",
+    "addedAt": "2026-10-01T19:18:58.838775Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "thetahealth/mirobody",
