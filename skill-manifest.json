@@ -1080,6 +1080,24 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "cndoin/clusterprofiler-skill",
+    "cloneUrl": "https://github.com/cndoin/clusterprofiler-skill.git",
+    "localPath": "open-source/cndoin/clusterprofiler-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/cndoin/clusterprofiler-skill",
+    "addedAt": "2026-10-02T19:00:00.326559Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "cndoin/cytoscape-agent-skill",
+    "cloneUrl": "https://github.com/cndoin/cytoscape-agent-skill.git",
+    "localPath": "open-source/cndoin/cytoscape-agent-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/cndoin/cytoscape-agent-skill",
+    "addedAt": "2026-10-02T18:58:54.472201Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "connerlambden/bgpt-mcp",
     "cloneUrl": "https://github.com/connerlambden/bgpt-mcp.git",
     "localPath": "open-source/connerlambden/bgpt-mcp",
@@ -1797,6 +1815,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/thetahealth/mirobody",
     "addedAt": "2026-08-17T15:11:28.810286Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "thetahealth/mirobody-rare",
+    "cloneUrl": "https://github.com/thetahealth/mirobody-rare.git",
+    "localPath": "open-source/thetahealth/mirobody-rare",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/thetahealth/mirobody-rare",
+    "addedAt": "2026-10-02T19:00:27.877951Z",
     "addedBy": "github-actions"
   },
   {

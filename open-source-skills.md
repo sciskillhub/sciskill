@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **222**
+Total repositories: **225**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -98,9 +98,7 @@ Collected GitHub skill repository.
 
 ### [arrizabalagags-png/Voltpeer-skills](https://github.com/arrizabalagags-png/Voltpeer-skills)
 
-Verify whether cited sources support specific claims, numbers, mechanisms, and references in a battery Review or Perspective. Use for citation audit, not corpus search.
-
-Example skill path: `skills/battery-claim-check/SKILL.md`
+Collected GitHub skill repository.
 
 ### [AsadJaved66/Web-Skills-Protocol](https://github.com/AsadJaved66/Web-Skills-Protocol)
 
@@ -205,6 +203,18 @@ Collected GitHub skill repository.
 ### [ClawBio/ClawBio](https://github.com/ClawBio/ClawBio)
 
 Collected GitHub skill repository.
+
+### [cndoin/clusterprofiler-skill](https://github.com/cndoin/clusterprofiler-skill)
+
+Y 叔（YuLab-SMU）全套生物信息学 R 包生态的 Agent 技能，覆盖 38 个包 / 6137 个白名单键（2384 个导出符号名）：clusterProfiler 4.21.x（GO/KEGG/WikiPathways/KEGG Module/PathwayCommons/DAVID/MSigDB/enricher 富集分析，ORA/GSEA/NSEA/MNSEA/网络拓扑/贝叶斯 term 选择/LLM 解读）、enrichit（C++ 富集引擎，aggregate_enrichment/bayes_enrich/harmonize_ids/setReadable/nseGO/nseKEGG/mnsea/ora/gsea）、enrichplot 可视化（dotplot/cnetplot/emapplot/gseaplot/ridgeplot/heatplot/goplot/upsetplot）、gson 知识表示、DOSE（Disease Ontology/NCG/DisGeNET 疾病注释）、ReactomePA（Reactome pathway 分析）、meshes（MeSH 富集）、GOSemSim（GO 语义相似度，含 mgoSim/godata）、ChIPseeker（ChIP-seq/ATAC-seq peak 注释）、MicrobiomeProfiler（微生物组富集）、aPEAR（网络富集装饰）、CBNplot（富集结果贝叶斯网络）、TCMDATA（中医医案数据）、aisdk（LLM 集成）、ggtree + treeio + ggtreeExtra + tidytree（系统发育树全套）、MicrobiotaProcess（微生物组深度分析）、SVP（空间转录组）+ ggsc、sclet + scMSGNN（单细胞）、createKEGGdb + CNEr（KEGG/CNE 数据库）、aplot + ggimage + ggtangle + ggbreak + ggmsa + ivolcano（科研绘图）、yulab.utils、msigdbr（MSigDB）、epiSeeker（表观遗传）、tigeR（肿瘤免疫）、scholar（学者引用）。完整覆盖 ID 转换（bitr/bitr_kegg）、离线 GSON、KEGG Module 富集、PPI 网络（STRING）、Uniprot 查询、4 大知识源（GO/KEGG/Reactome/DO/MeSH/MSigDB）。事实底座从上游源码 NAMESPACE + R/*.R 真实 formals 解析，cp_lint 自动拦截 LLM 写 R 代码时最常见的 10 类幻觉函数 / 幻觉参数 / 拼写错误 / 全角符号 / 括号不匹配。
+
+Example skill path: `SKILL.md`
+
+### [cndoin/cytoscape-agent-skill](https://github.com/cndoin/cytoscape-agent-skill)
+
+确定性驱动原版 Cytoscape 桌面引擎做网络分析与可视化。当用户要求导入/导出生物网络、 应用布局算法、计算网络统计（度、中心性、聚类）、设置可视化样式与映射、做表格数据操作、 或者要求「结果可复现 / 与原版 Cytoscape 完全一致」时使用。结果由 Cytoscape 3.10.5 原版 Java 引擎产生，AI 不参与任何数值计算。适用于医学与生物信息学场景。 支持 Windows / Linux / macOS，自带引擎或复用系统安装，无头服务器可跑， 可接入 Claude Code、Codex、Copilot、Cursor、Gemini CLI、Windsurf、Claude Desktop 等。
+
+Example skill path: `cytoscape-agent-skill/SKILL.md`
 
 ### [connerlambden/bgpt-mcp](https://github.com/connerlambden/bgpt-mcp)
 
@@ -440,9 +450,7 @@ Collected GitHub skill repository.
 
 ### [KalarisLabs/research-agent-skills](https://github.com/KalarisLabs/research-agent-skills)
 
-Estimates intracellular metabolic fluxes from steady-state carbon-13 isotope-tracing measurements using validated atom maps, mfapy isotope simulation, constrained multistart fitting, and flux-profile diagnostics. Use for 13C-MFA, carbon tracing, mass isotopomer distributions (MDVs/MIDs), positional isotopomers, parallel tracer experiments, and determining whether labeling data constrain a pathway flux. Distinguishes measured-label inference from COBRA flux balance analysis and flags experiments requiring nonstationary MFA.
-
-Example skill path: `skills/13c-metabolic-flux/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Kayunangka/claude-skill](https://github.com/Kayunangka/claude-skill)
 
@@ -670,9 +678,7 @@ Collected GitHub skill repository.
 
 ### [Sculptor815/scrnaseq-gene-specificity-screen](https://github.com/Sculptor815/scrnaseq-gene-specificity-screen)
 
-Determine whether a set of genes is specifically highly expressed in particular cell types or tissues using the Human Protein Atlas (HPA) public API. Downloads the RNA expression matrices for 154 cell types (nCPM) and 51 tissues (nTPM), screens for genes whose peak falls inside a user-defined cell-type group (such as the megakaryocytic lineage or hematopoietic cells), and outputs per-cell-type / per-tissue bar charts plus Excel/TSV results. Use it to judge the cell-type or tissue specificity of a gene list, to annotate any gene list or cNMF/GEP gene module for expression specificity, or to find lineage-specific candidate genes with unknown function. Requires a gene list from the user (CSV/TSV/XLSX with a gene or symbol column) and target cell-type group definitions.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [seandavi/agentic-coding-intro](https://github.com/seandavi/agentic-coding-intro)
 
@@ -756,13 +762,17 @@ Collected GitHub skill repository.
 
 ### [the8thday/AgenticPrism-SKILL](https://github.com/the8thday/AgenticPrism-SKILL)
 
-Estimate declared screening, confirmatory percent-inhibition or titer ADA cut points from complete repeated drug-naive negative panels, with audited normalization, outliers, run diagnostics, subject/run variance components and optional lower confidence bounds; then ADA assay sensitivity and drug tolerance from positive-control experiments against an established cut point. Routes accuracy/precision and other method-validation experiments to method-validation.
-
-Example skill path: `skills/ada-cut-point/SKILL.md`
+Collected GitHub skill repository.
 
 ### [thetahealth/mirobody](https://github.com/thetahealth/mirobody)
 
 Collected GitHub skill repository.
+
+### [thetahealth/mirobody-rare](https://github.com/thetahealth/mirobody-rare)
+
+Use when a case arrives as a directory of vendor files (a vault) and must be inventoried, indexed, decoded and sample-joined before any analysis, when running or extending the preprocessing stage behind ccprep or `preprocess --vault`, when a vault holds files of an unrecognised format, or when inventory.jsonl / identity/ / qc/ / PROVENANCE.jsonl / RUN.json output has to be produced or checked for conformance.
+
+Example skill path: `.claude/skills/case-preprocess/SKILL.md`
 
 ### [toohamster/sftp-cc](https://github.com/toohamster/sftp-cc)
 
