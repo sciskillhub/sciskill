@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **225**
+Total repositories: **227**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -206,15 +206,11 @@ Collected GitHub skill repository.
 
 ### [cndoin/clusterprofiler-skill](https://github.com/cndoin/clusterprofiler-skill)
 
-Y 叔（YuLab-SMU）全套生物信息学 R 包生态的 Agent 技能，覆盖 38 个包 / 6137 个白名单键（2384 个导出符号名）：clusterProfiler 4.21.x（GO/KEGG/WikiPathways/KEGG Module/PathwayCommons/DAVID/MSigDB/enricher 富集分析，ORA/GSEA/NSEA/MNSEA/网络拓扑/贝叶斯 term 选择/LLM 解读）、enrichit（C++ 富集引擎，aggregate_enrichment/bayes_enrich/harmonize_ids/setReadable/nseGO/nseKEGG/mnsea/ora/gsea）、enrichplot 可视化（dotplot/cnetplot/emapplot/gseaplot/ridgeplot/heatplot/goplot/upsetplot）、gson 知识表示、DOSE（Disease Ontology/NCG/DisGeNET 疾病注释）、ReactomePA（Reactome pathway 分析）、meshes（MeSH 富集）、GOSemSim（GO 语义相似度，含 mgoSim/godata）、ChIPseeker（ChIP-seq/ATAC-seq peak 注释）、MicrobiomeProfiler（微生物组富集）、aPEAR（网络富集装饰）、CBNplot（富集结果贝叶斯网络）、TCMDATA（中医医案数据）、aisdk（LLM 集成）、ggtree + treeio + ggtreeExtra + tidytree（系统发育树全套）、MicrobiotaProcess（微生物组深度分析）、SVP（空间转录组）+ ggsc、sclet + scMSGNN（单细胞）、createKEGGdb + CNEr（KEGG/CNE 数据库）、aplot + ggimage + ggtangle + ggbreak + ggmsa + ivolcano（科研绘图）、yulab.utils、msigdbr（MSigDB）、epiSeeker（表观遗传）、tigeR（肿瘤免疫）、scholar（学者引用）。完整覆盖 ID 转换（bitr/bitr_kegg）、离线 GSON、KEGG Module 富集、PPI 网络（STRING）、Uniprot 查询、4 大知识源（GO/KEGG/Reactome/DO/MeSH/MSigDB）。事实底座从上游源码 NAMESPACE + R/*.R 真实 formals 解析，cp_lint 自动拦截 LLM 写 R 代码时最常见的 10 类幻觉函数 / 幻觉参数 / 拼写错误 / 全角符号 / 括号不匹配。
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [cndoin/cytoscape-agent-skill](https://github.com/cndoin/cytoscape-agent-skill)
 
-确定性驱动原版 Cytoscape 桌面引擎做网络分析与可视化。当用户要求导入/导出生物网络、 应用布局算法、计算网络统计（度、中心性、聚类）、设置可视化样式与映射、做表格数据操作、 或者要求「结果可复现 / 与原版 Cytoscape 完全一致」时使用。结果由 Cytoscape 3.10.5 原版 Java 引擎产生，AI 不参与任何数值计算。适用于医学与生物信息学场景。 支持 Windows / Linux / macOS，自带引擎或复用系统安装，无头服务器可跑， 可接入 Claude Code、Codex、Copilot、Cursor、Gemini CLI、Windsurf、Claude Desktop 等。
-
-Example skill path: `cytoscape-agent-skill/SKILL.md`
+Collected GitHub skill repository.
 
 ### [connerlambden/bgpt-mcp](https://github.com/connerlambden/bgpt-mcp)
 
@@ -235,6 +231,12 @@ Collected GitHub skill repository.
 ### [d-oit/web-doc-resolver](https://github.com/d-oit/web-doc-resolver)
 
 Collected GitHub skill repository.
+
+### [dcc-mcp/dcc-mcp-paraview](https://github.com/dcc-mcp/dcc-mcp-paraview)
+
+Inspect and author bounded ParaView sphere and clip pipelines, save native states, and round-trip VTI/VTU/VTP datasets.
+
+Example skill path: `src/dcc_mcp_paraview/skills/paraview-pipeline/SKILL.md`
 
 ### [dekan-aleksandr/biodiscovery-skills](https://github.com/dekan-aleksandr/biodiscovery-skills)
 
@@ -716,6 +718,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [srikarjy/Biolab-mcp-server](https://github.com/srikarjy/Biolab-mcp-server)
+
+Search and preserve auditable biomedical evidence through Biolab. Use for literature, clinical-trial, or cross-source evidence searches where the user needs retrieval IDs, raw-source traceability, or audit-chain verification.
+
+Example skill path: `integrations/bioclaw/biolab-evidence/SKILL.md`
+
 ### [SURFLIN2030/swing-skills](https://github.com/SURFLIN2030/swing-skills)
 
 Collected GitHub skill repository.
@@ -770,9 +778,7 @@ Collected GitHub skill repository.
 
 ### [thetahealth/mirobody-rare](https://github.com/thetahealth/mirobody-rare)
 
-Use when a case arrives as a directory of vendor files (a vault) and must be inventoried, indexed, decoded and sample-joined before any analysis, when running or extending the preprocessing stage behind ccprep or `preprocess --vault`, when a vault holds files of an unrecognised format, or when inventory.jsonl / identity/ / qc/ / PROVENANCE.jsonl / RUN.json output has to be produced or checked for conformance.
-
-Example skill path: `.claude/skills/case-preprocess/SKILL.md`
+Collected GitHub skill repository.
 
 ### [toohamster/sftp-cc](https://github.com/toohamster/sftp-cc)
 

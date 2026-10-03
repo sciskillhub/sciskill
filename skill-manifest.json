@@ -1134,6 +1134,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "dcc-mcp/dcc-mcp-paraview",
+    "cloneUrl": "https://github.com/dcc-mcp/dcc-mcp-paraview.git",
+    "localPath": "open-source/dcc-mcp/dcc-mcp-paraview",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/dcc-mcp/dcc-mcp-paraview",
+    "addedAt": "2026-10-03T17:48:32.139714Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "dekan-aleksandr/biodiscovery-skills",
     "cloneUrl": "https://github.com/dekan-aleksandr/biodiscovery-skills.git",
     "localPath": "open-source/dekan-aleksandr/biodiscovery-skills",
@@ -1734,6 +1743,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/sounkou-bioinfo/pi-bio-agent",
     "addedAt": "2026-07-03T15:54:02.166395Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "srikarjy/Biolab-mcp-server",
+    "cloneUrl": "https://github.com/srikarjy/Biolab-mcp-server.git",
+    "localPath": "open-source/srikarjy/Biolab-mcp-server",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/srikarjy/Biolab-mcp-server",
+    "addedAt": "2026-10-03T17:46:37.243909Z",
     "addedBy": "github-actions"
   },
   {
