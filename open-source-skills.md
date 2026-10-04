@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **227**
+Total repositories: **231**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -128,6 +128,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [bioinfo-ccnu/scientific-plotting-skills](https://github.com/bioinfo-ccnu/scientific-plotting-skills)
+
+Create, restyle, and export scientific figures and multi-panel research plots in Python or R, with reproducible source code, flexible visual styles, and figure quality checks. Use for data-driven research figures; not for dashboards or illustrative artwork.
+
+Example skill path: `skills/scientific-plotting/SKILL.md`
+
 ### [BioSymphony/bioprospector](https://github.com/BioSymphony/bioprospector)
 
 Collected GitHub skill repository.
@@ -234,9 +240,7 @@ Collected GitHub skill repository.
 
 ### [dcc-mcp/dcc-mcp-paraview](https://github.com/dcc-mcp/dcc-mcp-paraview)
 
-Inspect and author bounded ParaView sphere and clip pipelines, save native states, and round-trip VTI/VTU/VTP datasets.
-
-Example skill path: `src/dcc_mcp_paraview/skills/paraview-pipeline/SKILL.md`
+Collected GitHub skill repository.
 
 ### [dekan-aleksandr/biodiscovery-skills](https://github.com/dekan-aleksandr/biodiscovery-skills)
 
@@ -720,9 +724,7 @@ Collected GitHub skill repository.
 
 ### [srikarjy/Biolab-mcp-server](https://github.com/srikarjy/Biolab-mcp-server)
 
-Search and preserve auditable biomedical evidence through Biolab. Use for literature, clinical-trial, or cross-source evidence searches where the user needs retrieval IDs, raw-source traceability, or audit-chain verification.
-
-Example skill path: `integrations/bioclaw/biolab-evidence/SKILL.md`
+Collected GitHub skill repository.
 
 ### [SURFLIN2030/swing-skills](https://github.com/SURFLIN2030/swing-skills)
 
@@ -820,6 +822,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [wjulien888-tech/research-figure-skill](https://github.com/wjulien888-tech/research-figure-skill)
+
+制作、检查和改进科研实验图表。用于已有数据的时间序列对比、预测值与真实值散点图、分场景指标比较，或审查已有图和修改 Matplotlib 代码。结合 RSS 数据可视化指南与 SciencePlots，交付图、可运行代码及检查结论。
+
+Example skill path: `skills/research-figure/SKILL.md`
+
 ### [wtfhanin/Enhance-Prompt](https://github.com/wtfhanin/Enhance-Prompt)
 
 Collected GitHub skill repository.
@@ -892,6 +900,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [zeikar/tangent](https://github.com/zeikar/tangent)
+
+This skill should be used when the user asks to "make episode 002", "start the next episode", "continue episode <slug>", "what's next for <slug>", "다음 편 만들자", or otherwise to run or resume the tangent production pipeline. It is the orchestrator's runbook for the main conversation, covering stage order, which agent or tool runs each stage, what the human hears or sees at each checkpoint, and when to commit.
+
+Example skill path: `.claude/skills/episode/SKILL.md`
+
 ### [Zessi-C/biofigure-self-evolve](https://github.com/Zessi-C/biofigure-self-evolve)
 
 Collected GitHub skill repository.
@@ -907,6 +921,12 @@ Collected GitHub skill repository.
 ### [zinxj/uikit-expert-skill](https://github.com/zinxj/uikit-expert-skill)
 
 Collected GitHub skill repository.
+
+### [zlsjtj/FigureCraft](https://github.com/zlsjtj/FigureCraft)
+
+FigureCraft 根据科学对象、关系和数据制作科研图与语义配色。适用于机制、硬件、分层材料、定量图及整套配图，交付可编辑图源和分别记录的技术、科学与视觉审阅，保留数值、拓扑和修改范围。
+
+Example skill path: `SKILL.md`
 
 ### [zongtingwei/Bioclaw_Skills_Hub](https://github.com/zongtingwei/Bioclaw_Skills_Hub)
 
