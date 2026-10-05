@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **231**
+Total repositories: **233**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -130,9 +130,7 @@ Collected GitHub skill repository.
 
 ### [bioinfo-ccnu/scientific-plotting-skills](https://github.com/bioinfo-ccnu/scientific-plotting-skills)
 
-Create, restyle, and export scientific figures and multi-panel research plots in Python or R, with reproducible source code, flexible visual styles, and figure quality checks. Use for data-driven research figures; not for dashboards or illustrative artwork.
-
-Example skill path: `skills/scientific-plotting/SKILL.md`
+Collected GitHub skill repository.
 
 ### [BioSymphony/bioprospector](https://github.com/BioSymphony/bioprospector)
 
@@ -365,6 +363,12 @@ Collected GitHub skill repository.
 ### [hubayirp/agentic-science](https://github.com/hubayirp/agentic-science)
 
 Collected GitHub skill repository.
+
+### [HututuWorks/academic-figure](https://github.com/HututuWorks/academic-figure)
+
+Improve the scientific expression, visual quality, and reproducibility of data-driven research figures in Python or R without changing their scientific meaning. Use when a user asks to improve a paper figure, choose a more suitable visualization from a research question or dataset, match a reference figure to a better chart structure, write publication-oriented plotting code, or audit figure clarity, uncertainty, layout, color, typography, and export quality. Also use for 科研绘图、论文配图、学术图形、科研图形优化、图形审校、可视化重构、图形推荐、Python/R 绘图代码 and publication-ready figure workflows. Do not use for statistics-only analysis, interactive dashboards, decorative infographics, or mechanism diagrams whose primary content is illustration rather than data.
+
+Example skill path: `skills/academic-figure/SKILL.md`
 
 ### [iblai/medical-healthcare-agents](https://github.com/iblai/medical-healthcare-agents)
 
@@ -754,6 +758,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [terravic/embl-ebi-ols-skill](https://github.com/terravic/embl-ebi-ols-skill)
+
+Query and search the EMBL-EBI Ontology Lookup Service (OLS) for biomedical ontology terms, definitions, and hierarchies across 250+ ontologies (GO, DOID, HP, MONDO, CHEBI, CL, UBERON). Generates interactive standalone HTML5 dashboards featuring 3D Network explorers, D3.js 2D Hierarchy DAGs, collapsible Lineage Trees, Input-to-Processed Data Pipeline inspectors, synonym tables, and cross-ontology xref inspectors. Use when the user asks to search, explore, navigate, or visualize ontology structures and relationships.
+
+Example skill path: `SKILL.md`
+
 ### [terravic/human-protein-atlas-database-visualize-skill](https://github.com/terravic/human-protein-atlas-database-visualize-skill)
 
 Collected GitHub skill repository.
@@ -824,9 +834,7 @@ Collected GitHub skill repository.
 
 ### [wjulien888-tech/research-figure-skill](https://github.com/wjulien888-tech/research-figure-skill)
 
-制作、检查和改进科研实验图表。用于已有数据的时间序列对比、预测值与真实值散点图、分场景指标比较，或审查已有图和修改 Matplotlib 代码。结合 RSS 数据可视化指南与 SciencePlots，交付图、可运行代码及检查结论。
-
-Example skill path: `skills/research-figure/SKILL.md`
+Collected GitHub skill repository.
 
 ### [wtfhanin/Enhance-Prompt](https://github.com/wtfhanin/Enhance-Prompt)
 
@@ -902,9 +910,7 @@ Collected GitHub skill repository.
 
 ### [zeikar/tangent](https://github.com/zeikar/tangent)
 
-This skill should be used when the user asks to "make episode 002", "start the next episode", "continue episode <slug>", "what's next for <slug>", "다음 편 만들자", or otherwise to run or resume the tangent production pipeline. It is the orchestrator's runbook for the main conversation, covering stage order, which agent or tool runs each stage, what the human hears or sees at each checkpoint, and when to commit.
-
-Example skill path: `.claude/skills/episode/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Zessi-C/biofigure-self-evolve](https://github.com/Zessi-C/biofigure-self-evolve)
 
@@ -924,9 +930,7 @@ Collected GitHub skill repository.
 
 ### [zlsjtj/FigureCraft](https://github.com/zlsjtj/FigureCraft)
 
-FigureCraft 根据科学对象、关系和数据制作科研图与语义配色。适用于机制、硬件、分层材料、定量图及整套配图，交付可编辑图源和分别记录的技术、科学与视觉审阅，保留数值、拓扑和修改范围。
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [zongtingwei/Bioclaw_Skills_Hub](https://github.com/zongtingwei/Bioclaw_Skills_Hub)
 

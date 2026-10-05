@@ -378,6 +378,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "HututuWorks/academic-figure",
+    "cloneUrl": "https://github.com/HututuWorks/academic-figure.git",
+    "localPath": "open-source/HututuWorks/academic-figure",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/HututuWorks/academic-figure",
+    "addedAt": "2026-10-05T21:24:12.250688Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Jason-0409-G/vivarium",
     "cloneUrl": "https://github.com/Jason-0409-G/vivarium.git",
     "localPath": "open-source/Jason-0409-G/vivarium",
@@ -1797,6 +1806,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/terravic/alphafold-database-visualize-skill",
     "addedAt": "2026-08-26T14:41:36.685636Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "terravic/embl-ebi-ols-skill",
+    "cloneUrl": "https://github.com/terravic/embl-ebi-ols-skill.git",
+    "localPath": "open-source/terravic/embl-ebi-ols-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/terravic/embl-ebi-ols-skill",
+    "addedAt": "2026-10-05T21:22:54.917376Z",
     "addedBy": "github-actions"
   },
   {
