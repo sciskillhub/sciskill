@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **233**
+Total repositories: **239**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -236,6 +236,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [databricks-industry-solutions/hls-skills](https://github.com/databricks-industry-solutions/hls-skills)
+
+Some description <1024 chars
+
+Example skill path: `skills/bulk-rnaseq/SKILL.md`
+
 ### [dcc-mcp/dcc-mcp-paraview](https://github.com/dcc-mcp/dcc-mcp-paraview)
 
 Collected GitHub skill repository.
@@ -366,9 +372,7 @@ Collected GitHub skill repository.
 
 ### [HututuWorks/academic-figure](https://github.com/HututuWorks/academic-figure)
 
-Improve the scientific expression, visual quality, and reproducibility of data-driven research figures in Python or R without changing their scientific meaning. Use when a user asks to improve a paper figure, choose a more suitable visualization from a research question or dataset, match a reference figure to a better chart structure, write publication-oriented plotting code, or audit figure clarity, uncertainty, layout, color, typography, and export quality. Also use for 科研绘图、论文配图、学术图形、科研图形优化、图形审校、可视化重构、图形推荐、Python/R 绘图代码 and publication-ready figure workflows. Do not use for statistics-only analysis, interactive dashboards, decorative infographics, or mechanism diagrams whose primary content is illustration rather than data.
-
-Example skill path: `skills/academic-figure/SKILL.md`
+Collected GitHub skill repository.
 
 ### [iblai/medical-healthcare-agents](https://github.com/iblai/medical-healthcare-agents)
 
@@ -409,6 +413,12 @@ Collected GitHub skill repository.
 ### [johnsmithCA-sta/health-report-trend-analysis](https://github.com/johnsmithCA-sta/health-report-trend-analysis)
 
 Collected GitHub skill repository.
+
+### [JonathanChan-geek/claude-science-skills](https://github.com/JonathanChan-geek/claude-science-skills)
+
+Predict protein structure for monomers and multimers with AlphaFold2 via the ColabFold runner (Mirdita et al. 2022, github.com/sokrypton/ColabFold; AlphaFold2 Jumper et al. 2021). Reach for this skill to fold a sequence or complex with the AF2/AF2-Multimer evoformer, to validate designed sequences by self-consistency pLDDT, ipTM, and RMSD, or to run a quick MSA-backed prediction using the public MMseqs2 server.
+
+Example skill path: `skills/alphafold2/SKILL.md`
 
 ### [jostelzer/grounded](https://github.com/jostelzer/grounded)
 
@@ -594,6 +604,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [pengqianhan/codex-paper-figure-skill](https://github.com/pengqianhan/codex-paper-figure-skill)
+
+A relentless interview to sharpen a plan or design.
+
+Example skill path: `.agents/skills/grill-me/SKILL.md`
+
 ### [pgraber/agentic-research-loop](https://github.com/pgraber/agentic-research-loop)
 
 Collected GitHub skill repository.
@@ -629,6 +645,12 @@ Collected GitHub skill repository.
 ### [qchiujunhao/labcoat](https://github.com/qchiujunhao/labcoat)
 
 Collected GitHub skill repository.
+
+### [QuietFlare/clew](https://github.com/QuietFlare/clew)
+
+Handle a written incident about a workflow run with Clew's tools over MCP. Use when someone pastes a tool advisory, a release note or a withdrawal and asks what it reached in a run, or asks to triage, plan or seal an incident.
+
+Example skill path: `skills/clew-incident/SKILL.md`
 
 ### [r-ruser/epi-skill](https://github.com/r-ruser/epi-skill)
 
@@ -760,13 +782,17 @@ Collected GitHub skill repository.
 
 ### [terravic/embl-ebi-ols-skill](https://github.com/terravic/embl-ebi-ols-skill)
 
-Query and search the EMBL-EBI Ontology Lookup Service (OLS) for biomedical ontology terms, definitions, and hierarchies across 250+ ontologies (GO, DOID, HP, MONDO, CHEBI, CL, UBERON). Generates interactive standalone HTML5 dashboards featuring 3D Network explorers, D3.js 2D Hierarchy DAGs, collapsible Lineage Trees, Input-to-Processed Data Pipeline inspectors, synonym tables, and cross-ontology xref inspectors. Use when the user asks to search, explore, navigate, or visualize ontology structures and relationships.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [terravic/human-protein-atlas-database-visualize-skill](https://github.com/terravic/human-protein-atlas-database-visualize-skill)
 
 Collected GitHub skill repository.
+
+### [terravic/protein-sequence-msa-visualize-skill](https://github.com/terravic/protein-sequence-msa-visualize-skill)
+
+Performs multiple sequence alignment (MSA) of protein sequences using EBI Clustal Omega and generates interactive standalone HTML dashboards with multi-track sequence viewers, dynamic conservation bars, all-vs-all percent identity heatmaps, and phylogenetic guide trees. Use when you need to align multiple proteins, assess residue conservation, map functional catalytic sites, or evaluate evolutionary similarity. Supports up to 4000 sequences and 4 MB.
+
+Example skill path: `SKILL.md`
 
 ### [terravic/string-database-visualize-skill](https://github.com/terravic/string-database-visualize-skill)
 
@@ -827,6 +853,12 @@ Collected GitHub skill repository.
 ### [waldronlab/agent-protocol-standard](https://github.com/waldronlab/agent-protocol-standard)
 
 Collected GitHub skill repository.
+
+### [wangshubo1578/herb-target-screening](https://github.com/wangshubo1578/herb-target-screening)
+
+输入一个蛋白质名称（基因名/蛋白名），从 HERB、TCMSP 等中药数据库反向检索可靶向该蛋白的中药单体化合物，经清洗去重（剔除内源物、合成药、离子溶剂等非中药特有成分）后，用 AutoDock Vina 批量分子对接筛选结合能最低的化合物，并对最优化合物查询 ADMET 性质、检索相关临床研究，最终输出 Markdown/HTML 报告与数据表。Use when the user wants to find traditional Chinese medicine (TCM) monomer compounds targeting a given protein, perform reverse screening of herbs/herbal ingredients against a target, run molecular docking between herbal compounds and a protein, or obtain ADMET and clinical trial information for hit compounds.
+
+Example skill path: `SKILL.md`
 
 ### [wenmin-wu/ds-skills](https://github.com/wenmin-wu/ds-skills)
 

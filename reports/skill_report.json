@@ -26,7 +26,7 @@
   "query_failure_count": 0,
   "repo_error_count": 0,
   "error_report": "reports/skill_errors.json",
-  "repo_count": 314,
+  "repo_count": 319,
   "results": [
     {
       "repo": "shear559/fabius",
@@ -50,6 +50,30 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/shear559/fabius",
+      "matches": []
+    },
+    {
+      "repo": "fluxsci/flux",
+      "matched_domain_topics": [
+        "science",
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/fluxsci/flux",
       "matches": []
     },
     {
@@ -86,30 +110,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/zeikar/tangent",
-      "matches": []
-    },
-    {
-      "repo": "fluxsci/flux",
-      "matched_domain_topics": [
-        "science",
-        "scientific-visualization"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "scientific-visualization",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/fluxsci/flux",
       "matches": []
     },
     {
@@ -568,23 +568,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "norhayat1509/skillopt-qa",
-      "matched_domain_topics": [
-        "science"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "science",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "aipoch/open-science",
       "matched_domain_topics": [
         "bioinformatics",
@@ -609,7 +592,7 @@
       "matches": []
     },
     {
-      "repo": "nihaoWX/svg_grid",
+      "repo": "norhayat1509/skillopt-qa",
       "matched_domain_topics": [
         "science"
       ],
@@ -623,9 +606,7 @@
         }
       ],
       "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/nihaoWX/svg_grid",
-      "matches": []
+      "status": "no_valid_skill"
     },
     {
       "repo": "jostelzer/grounded",
@@ -644,6 +625,25 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/jostelzer/grounded",
+      "matches": []
+    },
+    {
+      "repo": "nihaoWX/svg_grid",
+      "matched_domain_topics": [
+        "science"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "science",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/nihaoWX/svg_grid",
       "matches": []
     },
     {
@@ -728,6 +728,180 @@
       "matches": []
     },
     {
+      "repo": "nithinram97/tcga-clickhouse-agentic-stack",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "EpistasisLab/ASAREE",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "BioSymphony/structure-factory",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/BioSymphony/structure-factory",
+      "matches": []
+    },
+    {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "nickjlamb/pubcrawl",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "MarbuelB/AI-Forge-Research-Edition",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "terravic/protein-sequence-msa-visualize-skill",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/terravic/protein-sequence-msa-visualize-skill.git",
+      "chosen_skill_path": "SKILL.md",
+      "front_matter": {
+        "name": "protein-sequence-msa-visualize-skill",
+        "description": "Performs multiple sequence alignment (MSA) of protein sequences using EBI Clustal Omega and generates interactive standalone HTML dashboards with multi-track sequence viewers, dynamic conservation bars, all-vs-all percent identity heatmaps, and phylogenetic guide trees. Use when you need to align multiple proteins, assess residue conservation, map functional catalytic sites, or evaluate evolutionary similarity. Supports up to 4000 sequences and 4 MB."
+      },
+      "html_url": "https://github.com/terravic/protein-sequence-msa-visualize-skill",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/terravic/protein-sequence-msa-visualize-skill"
+    },
+    {
+      "repo": "QuietFlare/clew",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/QuietFlare/clew.git",
+      "chosen_skill_path": "skills/clew-incident/SKILL.md",
+      "front_matter": {
+        "name": "clew-incident",
+        "description": "Handle a written incident about a workflow run with Clew's tools over MCP. Use when someone pastes a tool advisory, a release note or a withdrawal and asks what it reached in a run, or asks to triage, plan or seal an incident."
+      },
+      "html_url": "https://github.com/QuietFlare/clew",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/QuietFlare/clew"
+    },
+    {
       "repo": "droftgamer-wq/researcher-skill",
       "matched_domain_topics": [
         "bioinformatics",
@@ -779,6 +953,33 @@
       "matches": []
     },
     {
+      "repo": "jayhemnani9910/biotech-accelerator",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "ai-agents"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "ClawBio/ClawBio",
       "matched_domain_topics": [
         "bioinformatics",
@@ -806,23 +1007,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
       "matches": []
-    },
-    {
-      "repo": "MarbuelB/AI-Forge-Research-Edition",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "K-Dense-AI/drug-discovery-agent-skills",
@@ -987,15 +1171,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/terravic/embl-ebi-ols-skill.git",
-      "chosen_skill_path": "SKILL.md",
-      "front_matter": {
-        "name": "embl-ebi-ols-visualize",
-        "description": "Query and search the EMBL-EBI Ontology Lookup Service (OLS) for biomedical ontology terms, definitions, and hierarchies across 250+ ontologies (GO, DOID, HP, MONDO, CHEBI, CL, UBERON). Generates interactive standalone HTML5 dashboards featuring 3D Network explorers, D3.js 2D Hierarchy DAGs, collapsible Lineage Trees, Input-to-Processed Data Pipeline inspectors, synonym tables, and cross-ontology xref inspectors. Use when the user asks to search, explore, navigate, or visualize ontology structures and relationships."
-      },
-      "html_url": "https://github.com/terravic/embl-ebi-ols-skill",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/terravic/embl-ebi-ols-skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/terravic/embl-ebi-ols-skill",
+      "matches": []
     },
     {
       "repo": "aicell-lab/bioengine",
@@ -1027,28 +1205,6 @@
       "matched_topic_pairs": [
         {
           "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "nithinram97/tcga-clickhouse-agentic-stack",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "genomics",
           "qualifier_topic": "ai-agents"
         }
       ],
@@ -1139,23 +1295,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "EpistasisLab/ASAREE",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "Jxuanrui/CSCCD-MetagenomeFlow",
       "matched_domain_topics": [
         "bioinformatics",
@@ -1176,35 +1315,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "BioSymphony/structure-factory",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology",
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/BioSymphony/structure-factory",
-      "matches": []
     },
     {
       "repo": "open-biosciences/biosciences-mcp",
@@ -1243,40 +1353,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/jiazhenz026/SciStudio",
       "matches": []
-    },
-    {
-      "repo": "aristoteleo/PantheonOS",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "nickjlamb/pubcrawl",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "aposfys/bioagent-lab",
@@ -2296,33 +2372,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "jayhemnani9910/biotech-accelerator",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology",
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "ai-agents"
-        },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "cjgunase/regulated-agent-protocol",
       "matched_domain_topics": [
         "bioinformatics"
@@ -2984,43 +3033,116 @@
       "matches": []
     },
     {
-      "repo": "NullLabTests/evolving-neurosymbolic-agent",
+      "repo": "databricks-industry-solutions/hls-skills",
       "matched_domain_topics": [
         "bioinformatics"
       ],
       "matched_qualifier_topics": [
-        "ai-agents"
+        "agent-skills"
       ],
       "matched_topic_pairs": [
         {
           "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/databricks-industry-solutions/hls-skills.git",
+      "chosen_skill_path": "skills/bulk-rnaseq/SKILL.md",
+      "front_matter": {
+        "name": "placeholder-skill",
+        "description": "Some description <1024 chars",
+        "author": "your name",
+        "license": "if any"
+      },
+      "html_url": "https://github.com/databricks-industry-solutions/hls-skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/databricks-industry-solutions/hls-skills"
+    },
+    {
+      "repo": "exciting-soursop787/claude-plus-plus",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "clinical-research",
+        "computational-biology",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "clinical-research",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
         }
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
     },
     {
-      "repo": "qchiujunhao/bioartifact",
+      "repo": "sparzinhogames-hash/awesome-scientific-ai-tools",
       "matched_domain_topics": [
         "bioinformatics",
-        "genomics"
+        "drug-discovery"
       ],
       "matched_qualifier_topics": [
-        "ai-agents"
+        "agent-skills"
       ],
       "matched_topic_pairs": [
         {
           "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
+          "qualifier_topic": "agent-skills"
         },
         {
-          "domain_topic": "genomics",
-          "qualifier_topic": "ai-agents"
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
         }
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "wangshubo1578/herb-target-screening",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "drug-discovery"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "drug-discovery",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/wangshubo1578/herb-target-screening.git",
+      "chosen_skill_path": "SKILL.md",
+      "front_matter": {
+        "name": "herb-target-screening",
+        "description": "输入一个蛋白质名称（基因名/蛋白名），从 HERB、TCMSP 等中药数据库反向检索可靶向该蛋白的中药单体化合物，经清洗去重（剔除内源物、合成药、离子溶剂等非中药特有成分）后，用 AutoDock Vina 批量分子对接筛选结合能最低的化合物，并对最优化合物查询 ADMET 性质、检索相关临床研究，最终输出 Markdown/HTML 报告与数据表。Use when the user wants to find traditional Chinese medicine (TCM) monomer compounds targeting a given protein, perform reverse screening of herbs/herbal ingredients against a target, run molecular docking between herbal compounds and a protein, or obtain ADMET and clinical trial information for hit compounds.",
+        "license": "MIT"
+      },
+      "html_url": "https://github.com/wangshubo1578/herb-target-screening",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/wangshubo1578/herb-target-screening"
     },
     {
       "repo": "Julesbladed538/baidu-netdisk-transfer",
@@ -3038,6 +3160,64 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "JonathanChan-geek/claude-science-skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "single-cell"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "single-cell",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "added",
+      "clone_url": "https://github.com/JonathanChan-geek/claude-science-skills.git",
+      "chosen_skill_path": "skills/alphafold2/SKILL.md",
+      "front_matter": {
+        "name": "alphafold2",
+        "description": "Predict protein structure for monomers and multimers with AlphaFold2 via the ColabFold runner (Mirdita et al. 2022, github.com/sokrypton/ColabFold; AlphaFold2 Jumper et al. 2021). Reach for this skill to fold a sequence or complex with the AF2/AF2-Multimer evoformer, to validate designed sequences by self-consistency pLDDT, ipTM, and RMSD, or to run a quick MSA-backed prediction using the public MMseqs2 server.\n",
+        "license": "Apache-2.0",
+        "category": "biomodels",
+        "requirements": [
+          "gpu"
+        ],
+        "metadata": {
+          "display-name": "AlphaFold2",
+          "third_party": [
+            {
+              "kind": "weights",
+              "name": "AlphaFold2",
+              "provider": "Google DeepMind",
+              "license": "CC-BY-4.0",
+              "terms_url": "https://github.com/google-deepmind/alphafold#model-parameters-license"
+            },
+            {
+              "kind": "service",
+              "name": "ColabFold MSA server (api.colabfold.com)",
+              "provider": "Steinegger Lab",
+              "info_url": "https://github.com/sokrypton/ColabFold/wiki"
+            }
+          ]
+        }
+      },
+      "html_url": "https://github.com/JonathanChan-geek/claude-science-skills",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/JonathanChan-geek/claude-science-skills"
     },
     {
       "repo": "K-Dense-AI/scientific-agent-skills",
@@ -3210,60 +3390,6 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/FridrichMethod/awesome-skills",
       "matches": []
-    },
-    {
-      "repo": "exciting-soursop787/claude-plus-plus",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "clinical-research",
-        "computational-biology",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "clinical-research",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "sparzinhogames-hash/awesome-scientific-ai-tools",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "drug-discovery"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "drug-discovery",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
     },
     {
       "repo": "cndoin/clusterprofiler-skill",
@@ -4202,6 +4328,23 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "qchiujunhao/bioartifact",
+      "matched_domain_topics": [
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "Eldergenix/bio-llm-evaluation-suite",
       "matched_domain_topics": [
         "genomics"
@@ -4289,25 +4432,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "baney75/GeneMachine",
-      "matched_domain_topics": [
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/baney75/GeneMachine",
-      "matches": []
-    },
-    {
       "repo": "micrometeoric-eye978/academic-research-skills",
       "matched_domain_topics": [
         "computational-biology",
@@ -4333,6 +4457,25 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
+    },
+    {
+      "repo": "baney75/GeneMachine",
+      "matched_domain_topics": [
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/baney75/GeneMachine",
+      "matches": []
     },
     {
       "repo": "awslabs/hcls-agent-skills",
@@ -4558,42 +4701,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "santiagopan7028/Wisp",
-      "matched_domain_topics": [
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "Sapiens-ostracism678/finance-skills",
-      "matched_domain_topics": [
-        "computational-biology"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sapiens-ostracism678/finance-skills",
-      "matches": []
-    },
-    {
       "repo": "zacklecon/claude-skills",
       "matched_domain_topics": [
         "clinical-research",
@@ -4621,6 +4728,42 @@
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/zacklecon/claude-skills",
       "matches": []
+    },
+    {
+      "repo": "Sapiens-ostracism678/finance-skills",
+      "matched_domain_topics": [
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/Sapiens-ostracism678/finance-skills",
+      "matches": []
+    },
+    {
+      "repo": "santiagopan7028/Wisp",
+      "matched_domain_topics": [
+        "computational-biology"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
     },
     {
       "repo": "Alpha-Park/genpark-protein-secondary-structure-chou-fasman-skill",
@@ -5285,7 +5428,7 @@
       "matches": []
     },
     {
-      "repo": "HututuWorks/academic-figure",
+      "repo": "pengqianhan/codex-paper-figure-skill",
       "matched_domain_topics": [
         "scientific-visualization"
       ],
@@ -5300,14 +5443,34 @@
       ],
       "matched_topics": [],
       "status": "added",
-      "clone_url": "https://github.com/HututuWorks/academic-figure.git",
-      "chosen_skill_path": "skills/academic-figure/SKILL.md",
+      "clone_url": "https://github.com/pengqianhan/codex-paper-figure-skill.git",
+      "chosen_skill_path": ".agents/skills/grill-me/SKILL.md",
       "front_matter": {
-        "name": "academic-figure",
-        "description": "Improve the scientific expression, visual quality, and reproducibility of data-driven research figures in Python or R without changing their scientific meaning. Use when a user asks to improve a paper figure, choose a more suitable visualization from a research question or dataset, match a reference figure to a better chart structure, write publication-oriented plotting code, or audit figure clarity, uncertainty, layout, color, typography, and export quality. Also use for 科研绘图、论文配图、学术图形、科研图形优化、图形审校、可视化重构、图形推荐、Python/R 绘图代码 and publication-ready figure workflows. Do not use for statistics-only analysis, interactive dashboards, decorative infographics, or mechanism diagrams whose primary content is illustration rather than data."
+        "name": "grill-me",
+        "description": "A relentless interview to sharpen a plan or design.",
+        "disable-model-invocation": true
       },
-      "html_url": "https://github.com/HututuWorks/academic-figure",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/HututuWorks/academic-figure"
+      "html_url": "https://github.com/pengqianhan/codex-paper-figure-skill",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/pengqianhan/codex-paper-figure-skill"
+    },
+    {
+      "repo": "HututuWorks/academic-figure",
+      "matched_domain_topics": [
+        "scientific-visualization"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "scientific-visualization",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/HututuWorks/academic-figure",
+      "matches": []
     },
     {
       "repo": "LawrenceRiver/FigFox-Gen-skill",
@@ -6097,6 +6260,25 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "unexplained-familyephedraceae871/openclaw-skill",
+      "matched_domain_topics": [
+        "medical"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "medical",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/unexplained-familyephedraceae871/openclaw-skill",
+      "matches": []
+    },
+    {
       "repo": "gabrielmahia/afya-mcp",
       "matched_domain_topics": [
         "medical"
@@ -6129,25 +6311,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "unexplained-familyephedraceae871/openclaw-skill",
-      "matched_domain_topics": [
-        "medical"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "medical",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/unexplained-familyephedraceae871/openclaw-skill",
-      "matches": []
     },
     {
       "repo": "arbade/konsil",

@@ -414,6 +414,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "JonathanChan-geek/claude-science-skills",
+    "cloneUrl": "https://github.com/JonathanChan-geek/claude-science-skills.git",
+    "localPath": "open-source/JonathanChan-geek/claude-science-skills",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/JonathanChan-geek/claude-science-skills",
+    "addedAt": "2026-10-06T19:21:07.687833Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "JuneYaooo/clinical-calculator",
     "cloneUrl": "https://github.com/JuneYaooo/clinical-calculator.git",
     "localPath": "open-source/JuneYaooo/clinical-calculator",
@@ -663,6 +672,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/ProfesseurHaipeng/ai-research-preflight",
     "addedAt": "2026-07-12T14:55:22.702316Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "QuietFlare/clew",
+    "cloneUrl": "https://github.com/QuietFlare/clew.git",
+    "localPath": "open-source/QuietFlare/clew",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/QuietFlare/clew",
+    "addedAt": "2026-10-06T19:19:59.975777Z",
     "addedBy": "github-actions"
   },
   {
@@ -1152,6 +1170,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "databricks-industry-solutions/hls-skills",
+    "cloneUrl": "https://github.com/databricks-industry-solutions/hls-skills.git",
+    "localPath": "open-source/databricks-industry-solutions/hls-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/databricks-industry-solutions/hls-skills",
+    "addedAt": "2026-10-06T19:20:49.519579Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "dcc-mcp/dcc-mcp-paraview",
     "cloneUrl": "https://github.com/dcc-mcp/dcc-mcp-paraview.git",
     "localPath": "open-source/dcc-mcp/dcc-mcp-paraview",
@@ -1602,6 +1629,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "pengqianhan/codex-paper-figure-skill",
+    "cloneUrl": "https://github.com/pengqianhan/codex-paper-figure-skill.git",
+    "localPath": "open-source/pengqianhan/codex-paper-figure-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/pengqianhan/codex-paper-figure-skill",
+    "addedAt": "2026-10-06T19:21:50.656801Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "pgraber/agentic-research-loop",
     "cloneUrl": "https://github.com/pgraber/agentic-research-loop.git",
     "localPath": "open-source/pgraber/agentic-research-loop",
@@ -1827,6 +1863,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "terravic/protein-sequence-msa-visualize-skill",
+    "cloneUrl": "https://github.com/terravic/protein-sequence-msa-visualize-skill.git",
+    "localPath": "open-source/terravic/protein-sequence-msa-visualize-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/terravic/protein-sequence-msa-visualize-skill",
+    "addedAt": "2026-10-06T19:19:57.593270Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "terravic/string-database-visualize-skill",
     "cloneUrl": "https://github.com/terravic/string-database-visualize-skill.git",
     "localPath": "open-source/terravic/string-database-visualize-skill",
@@ -1914,6 +1959,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/waldronlab/agent-protocol-standard",
     "addedAt": "2026-09-13T17:14:54.646261Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "wangshubo1578/herb-target-screening",
+    "cloneUrl": "https://github.com/wangshubo1578/herb-target-screening.git",
+    "localPath": "open-source/wangshubo1578/herb-target-screening",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/wangshubo1578/herb-target-screening",
+    "addedAt": "2026-10-06T19:20:52.886166Z",
     "addedBy": "github-actions"
   },
   {
