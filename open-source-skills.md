@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **239**
+Total repositories: **240**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -238,9 +238,7 @@ Collected GitHub skill repository.
 
 ### [databricks-industry-solutions/hls-skills](https://github.com/databricks-industry-solutions/hls-skills)
 
-Some description <1024 chars
-
-Example skill path: `skills/bulk-rnaseq/SKILL.md`
+Collected GitHub skill repository.
 
 ### [dcc-mcp/dcc-mcp-paraview](https://github.com/dcc-mcp/dcc-mcp-paraview)
 
@@ -416,9 +414,7 @@ Collected GitHub skill repository.
 
 ### [JonathanChan-geek/claude-science-skills](https://github.com/JonathanChan-geek/claude-science-skills)
 
-Predict protein structure for monomers and multimers with AlphaFold2 via the ColabFold runner (Mirdita et al. 2022, github.com/sokrypton/ColabFold; AlphaFold2 Jumper et al. 2021). Reach for this skill to fold a sequence or complex with the AF2/AF2-Multimer evoformer, to validate designed sequences by self-consistency pLDDT, ipTM, and RMSD, or to run a quick MSA-backed prediction using the public MMseqs2 server.
-
-Example skill path: `skills/alphafold2/SKILL.md`
+Collected GitHub skill repository.
 
 ### [jostelzer/grounded](https://github.com/jostelzer/grounded)
 
@@ -491,6 +487,12 @@ Collected GitHub skill repository.
 ### [kimimgo/viznoir](https://github.com/kimimgo/viznoir)
 
 Collected GitHub skill repository.
+
+### [KumarNavish/MechanismFigures](https://github.com/KumarNavish/MechanismFigures)
+
+Design, implement, and rigorously critique scientific figures that reveal mechanisms through geometry, dynamics, correspondence, or structure. Use for explanatory research figures, not routine chart styling or decorative infographics.
+
+Example skill path: `skills/mechanism-figures/SKILL.md`
 
 ### [LabOnoM/AROS_Pipeline_Factory](https://github.com/LabOnoM/AROS_Pipeline_Factory)
 
@@ -606,9 +608,7 @@ Collected GitHub skill repository.
 
 ### [pengqianhan/codex-paper-figure-skill](https://github.com/pengqianhan/codex-paper-figure-skill)
 
-A relentless interview to sharpen a plan or design.
-
-Example skill path: `.agents/skills/grill-me/SKILL.md`
+Collected GitHub skill repository.
 
 ### [pgraber/agentic-research-loop](https://github.com/pgraber/agentic-research-loop)
 
@@ -648,9 +648,7 @@ Collected GitHub skill repository.
 
 ### [QuietFlare/clew](https://github.com/QuietFlare/clew)
 
-Handle a written incident about a workflow run with Clew's tools over MCP. Use when someone pastes a tool advisory, a release note or a withdrawal and asks what it reached in a run, or asks to triage, plan or seal an incident.
-
-Example skill path: `skills/clew-incident/SKILL.md`
+Collected GitHub skill repository.
 
 ### [r-ruser/epi-skill](https://github.com/r-ruser/epi-skill)
 
@@ -790,9 +788,7 @@ Collected GitHub skill repository.
 
 ### [terravic/protein-sequence-msa-visualize-skill](https://github.com/terravic/protein-sequence-msa-visualize-skill)
 
-Performs multiple sequence alignment (MSA) of protein sequences using EBI Clustal Omega and generates interactive standalone HTML dashboards with multi-track sequence viewers, dynamic conservation bars, all-vs-all percent identity heatmaps, and phylogenetic guide trees. Use when you need to align multiple proteins, assess residue conservation, map functional catalytic sites, or evaluate evolutionary similarity. Supports up to 4000 sequences and 4 MB.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [terravic/string-database-visualize-skill](https://github.com/terravic/string-database-visualize-skill)
 
@@ -856,9 +852,7 @@ Collected GitHub skill repository.
 
 ### [wangshubo1578/herb-target-screening](https://github.com/wangshubo1578/herb-target-screening)
 
-输入一个蛋白质名称（基因名/蛋白名），从 HERB、TCMSP 等中药数据库反向检索可靶向该蛋白的中药单体化合物，经清洗去重（剔除内源物、合成药、离子溶剂等非中药特有成分）后，用 AutoDock Vina 批量分子对接筛选结合能最低的化合物，并对最优化合物查询 ADMET 性质、检索相关临床研究，最终输出 Markdown/HTML 报告与数据表。Use when the user wants to find traditional Chinese medicine (TCM) monomer compounds targeting a given protein, perform reverse screening of herbs/herbal ingredients against a target, run molecular docking between herbal compounds and a protein, or obtain ADMET and clinical trial information for hit compounds.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [wenmin-wu/ds-skills](https://github.com/wenmin-wu/ds-skills)
 

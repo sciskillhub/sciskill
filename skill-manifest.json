@@ -522,6 +522,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "KumarNavish/MechanismFigures",
+    "cloneUrl": "https://github.com/KumarNavish/MechanismFigures.git",
+    "localPath": "open-source/KumarNavish/MechanismFigures",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/KumarNavish/MechanismFigures",
+    "addedAt": "2026-10-07T19:45:32.164715Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "LHC0128/blender-scientific-modeling",
     "cloneUrl": "https://github.com/LHC0128/blender-scientific-modeling.git",
     "localPath": "open-source/LHC0128/blender-scientific-modeling",
