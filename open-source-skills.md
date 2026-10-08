@@ -490,9 +490,7 @@ Collected GitHub skill repository.
 
 ### [KumarNavish/MechanismFigures](https://github.com/KumarNavish/MechanismFigures)
 
-Design, implement, and rigorously critique scientific figures that reveal mechanisms through geometry, dynamics, correspondence, or structure. Use for explanatory research figures, not routine chart styling or decorative infographics.
-
-Example skill path: `skills/mechanism-figures/SKILL.md`
+Collected GitHub skill repository.
 
 ### [LabOnoM/AROS_Pipeline_Factory](https://github.com/LabOnoM/AROS_Pipeline_Factory)
 
