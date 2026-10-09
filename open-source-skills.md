@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **240**
+Total repositories: **242**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -300,6 +300,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [flyingView/img-for-bendan-edu](https://github.com/flyingView/img-for-bendan-edu)
+
+Create scientific figures from a figure brief or by reading a manuscript to select useful illustration positions. Learn from reference papers, refine generated drafts, then rebuild an editable final with code or drawing software.
+
+Example skill path: `SKILL.md`
+
 ### [fmschulz/omics-skills](https://github.com/fmschulz/omics-skills)
 
 Collected GitHub skill repository.
@@ -571,6 +577,12 @@ Collected GitHub skill repository.
 ### [nandodeejay/appstore-review-skill](https://github.com/nandodeejay/appstore-review-skill)
 
 Collected GitHub skill repository.
+
+### [nextflow-io/agent-skills](https://github.com/nextflow-io/agent-skills)
+
+INVOKE THIS SKILL IMMEDIATELY when user asks to: write/create/build a Nextflow pipeline or workflow, create any bioinformatics pipeline (RNA-seq, DNA-seq, variant calling, ChIP-seq, etc.), or compose/chain Nextflow modules from the Nextflow Registry. This skill handles all Nextflow workflow creation tasks.
+
+Example skill path: `skills/create-workflow/SKILL.md`
 
 ### [nihaoWX/svg_grid](https://github.com/nihaoWX/svg_grid)
 

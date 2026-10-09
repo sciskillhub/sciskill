@@ -1287,6 +1287,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "flyingView/img-for-bendan-edu",
+    "cloneUrl": "https://github.com/flyingView/img-for-bendan-edu.git",
+    "localPath": "open-source/flyingView/img-for-bendan-edu",
+    "defaultBranch": "codex/main",
+    "upstreamUrl": "https://github.com/flyingView/img-for-bendan-edu",
+    "addedAt": "2026-10-09T19:18:17.616461Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "fmschulz/omics-skills",
     "cloneUrl": "https://github.com/fmschulz/omics-skills.git",
     "localPath": "open-source/fmschulz/omics-skills",
@@ -1609,6 +1618,15 @@
     "upstreamUrl": "https://github.com/nandodeejay/appstore-review-skill",
     "addedAt": "2026-04-11T17:13:45.476758Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "nextflow-io/agent-skills",
+    "cloneUrl": "https://github.com/nextflow-io/agent-skills.git",
+    "localPath": "open-source/nextflow-io/agent-skills",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nextflow-io/agent-skills",
+    "addedAt": "2026-10-09T19:17:28.754280Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "nihaoWX/svg_grid",
