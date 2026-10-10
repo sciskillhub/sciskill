@@ -29,7 +29,7 @@
   "repo_count": 325,
   "results": [
     {
-      "repo": "romainsimon/slean",
+      "repo": "kee0012/dsh-science-skill",
       "matched_domain_topics": [
         "science"
       ],
@@ -46,7 +46,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "kee0012/dsh-science-skill",
+      "repo": "romainsimon/slean",
       "matched_domain_topics": [
         "science"
       ],
@@ -745,7 +745,7 @@
       "matches": []
     },
     {
-      "repo": "cyanheads/pubmed-mcp-server",
+      "repo": "QuietFlare/clew",
       "matched_domain_topics": [
         "bioinformatics"
       ],
@@ -760,7 +760,7 @@
       ],
       "matched_topics": [],
       "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/pubmed-mcp-server",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/QuietFlare/clew",
       "matches": []
     },
     {
@@ -807,6 +807,61 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/ClawBio/ClawBio",
+      "matches": []
+    },
+    {
+      "repo": "srikarjy/Biolab-mcp-server",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/srikarjy/Biolab-mcp-server",
+      "matches": []
+    },
+    {
+      "repo": "aristoteleo/PantheonOS",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "cyanheads/pubmed-mcp-server",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "ai-agents"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "ai-agents"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/cyanheads/pubmed-mcp-server",
       "matches": []
     },
     {
@@ -861,21 +916,28 @@
       "matches": []
     },
     {
-      "repo": "aristoteleo/PantheonOS",
+      "repo": "KalarisLabs/research-agent-skills",
       "matched_domain_topics": [
         "bioinformatics"
       ],
       "matched_qualifier_topics": [
+        "agent-skills",
         "ai-agents"
       ],
       "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
         {
           "domain_topic": "bioinformatics",
           "qualifier_topic": "ai-agents"
         }
       ],
       "matched_topics": [],
-      "status": "no_valid_skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/KalarisLabs/research-agent-skills",
+      "matches": []
     },
     {
       "repo": "cyanheads/ensembl-mcp-server",
@@ -918,25 +980,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/aicell-lab/bioengine",
-      "matches": []
-    },
-    {
-      "repo": "QuietFlare/clew",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/QuietFlare/clew",
       "matches": []
     },
     {
@@ -1186,30 +1229,6 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "KalarisLabs/research-agent-skills",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills",
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/KalarisLabs/research-agent-skills",
-      "matches": []
-    },
-    {
       "repo": "open-biosciences/biosciences-program",
       "matched_domain_topics": [
         "bioinformatics"
@@ -1225,25 +1244,6 @@
       ],
       "matched_topics": [],
       "status": "no_valid_skill"
-    },
-    {
-      "repo": "srikarjy/Biolab-mcp-server",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "ai-agents"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "ai-agents"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/srikarjy/Biolab-mcp-server",
-      "matches": []
     },
     {
       "repo": "terravic/embl-ebi-ols-skill",
@@ -3031,6 +3031,50 @@
       "matches": []
     },
     {
+      "repo": "Denisjoint75/wisp",
+      "matched_domain_topics": [
+        "bioinformatics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
+      "repo": "ibrahim1990ua/academic-research-skills",
+      "matched_domain_topics": [
+        "bioinformatics",
+        "computational-biology",
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "bioinformatics",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "computational-biology",
+          "qualifier_topic": "agent-skills"
+        },
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "no_valid_skill"
+    },
+    {
       "repo": "exciting-soursop787/claude-plus-plus",
       "matched_domain_topics": [
         "bioinformatics",
@@ -3150,50 +3194,6 @@
       "matches": []
     },
     {
-      "repo": "Denisjoint75/wisp",
-      "matched_domain_topics": [
-        "bioinformatics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
-      "repo": "ibrahim1990ua/academic-research-skills",
-      "matched_domain_topics": [
-        "bioinformatics",
-        "computational-biology",
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "bioinformatics",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "computational-biology",
-          "qualifier_topic": "agent-skills"
-        },
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "no_valid_skill"
-    },
-    {
       "repo": "the8thday/AgenticPrism-SKILL",
       "matched_domain_topics": [
         "bioinformatics",
@@ -3232,16 +3232,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/nextflow-io/agent-skills.git",
-      "chosen_skill_path": "skills/create-workflow/SKILL.md",
-      "front_matter": {
-        "name": "create-workflow",
-        "description": "INVOKE THIS SKILL IMMEDIATELY when user asks to: write/create/build a Nextflow pipeline or workflow,\ncreate any bioinformatics pipeline (RNA-seq, DNA-seq, variant calling, ChIP-seq, etc.),\nor compose/chain Nextflow modules from the Nextflow Registry. This skill handles all Nextflow workflow creation tasks.\n",
-        "allowed-tools": "Bash, Read, Edit, Write, Glob, Grep, Skill"
-      },
-      "html_url": "https://github.com/nextflow-io/agent-skills",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/nextflow-io/agent-skills"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/nextflow-io/agent-skills",
+      "matches": []
     },
     {
       "repo": "speetle/SCI-writing-VIP",
@@ -4431,6 +4424,25 @@
       "status": "no_valid_skill"
     },
     {
+      "repo": "baney75/GeneMachine",
+      "matched_domain_topics": [
+        "genomics"
+      ],
+      "matched_qualifier_topics": [
+        "agent-skills"
+      ],
+      "matched_topic_pairs": [
+        {
+          "domain_topic": "genomics",
+          "qualifier_topic": "agent-skills"
+        }
+      ],
+      "matched_topics": [],
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/baney75/GeneMachine",
+      "matches": []
+    },
+    {
       "repo": "micrometeoric-eye978/academic-research-skills",
       "matched_domain_topics": [
         "computational-biology",
@@ -4479,25 +4491,6 @@
       "matched_topics": [],
       "status": "already_added",
       "target_path": "/home/runner/work/sciskill/sciskill/open-source/awslabs/hcls-agent-skills",
-      "matches": []
-    },
-    {
-      "repo": "baney75/GeneMachine",
-      "matched_domain_topics": [
-        "genomics"
-      ],
-      "matched_qualifier_topics": [
-        "agent-skills"
-      ],
-      "matched_topic_pairs": [
-        {
-          "domain_topic": "genomics",
-          "qualifier_topic": "agent-skills"
-        }
-      ],
-      "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/baney75/GeneMachine",
       "matches": []
     },
     {
@@ -5173,20 +5166,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "added",
-      "clone_url": "https://github.com/flyingView/img-for-bendan-edu.git",
-      "chosen_skill_path": "SKILL.md",
-      "front_matter": {
-        "name": "img-for-bendan-edu",
-        "description": "Create scientific figures from a figure brief or by reading a manuscript to select useful illustration positions. Learn from reference papers, refine generated drafts, then rebuild an editable final with code or drawing software.",
-        "license": "MIT",
-        "metadata": {
-          "version": "0.3.0",
-          "language": "en"
-        }
-      },
-      "html_url": "https://github.com/flyingView/img-for-bendan-edu",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/flyingView/img-for-bendan-edu"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/flyingView/img-for-bendan-edu",
+      "matches": []
     },
     {
       "repo": "KumarNavish/MechanismFigures",
@@ -5686,7 +5668,7 @@
       "matches": []
     },
     {
-      "repo": "oliverkraft93-ops/covasyn-mcp-examples",
+      "repo": "SathyaMaragani/Vesyn-MSA",
       "matched_domain_topics": [
         "drug-discovery"
       ],
@@ -5703,7 +5685,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "SathyaMaragani/Vesyn-MSA",
+      "repo": "oliverkraft93-ops/covasyn-mcp-examples",
       "matched_domain_topics": [
         "drug-discovery"
       ],
@@ -6323,7 +6305,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "api-evangelist/motics-technologies",
+      "repo": "unexplained-familyephedraceae871/openclaw-skill",
       "matched_domain_topics": [
         "medical"
       ],
@@ -6337,7 +6319,9 @@
         }
       ],
       "matched_topics": [],
-      "status": "no_valid_skill"
+      "status": "already_added",
+      "target_path": "/home/runner/work/sciskill/sciskill/open-source/unexplained-familyephedraceae871/openclaw-skill",
+      "matches": []
     },
     {
       "repo": "gabrielmahia/afya-mcp",
@@ -6357,7 +6341,7 @@
       "status": "no_valid_skill"
     },
     {
-      "repo": "unexplained-familyephedraceae871/openclaw-skill",
+      "repo": "api-evangelist/motics-technologies",
       "matched_domain_topics": [
         "medical"
       ],
@@ -6371,9 +6355,7 @@
         }
       ],
       "matched_topics": [],
-      "status": "already_added",
-      "target_path": "/home/runner/work/sciskill/sciskill/open-source/unexplained-familyephedraceae871/openclaw-skill",
-      "matches": []
+      "status": "no_valid_skill"
     },
     {
       "repo": "arbade/konsil",
