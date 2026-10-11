@@ -558,6 +558,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "LiX-Works/Origin_MCP-Skill_for_Scientific-Plots",
+    "cloneUrl": "https://github.com/LiX-Works/Origin_MCP-Skill_for_Scientific-Plots.git",
+    "localPath": "open-source/LiX-Works/Origin_MCP-Skill_for_Scientific-Plots",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/LiX-Works/Origin_MCP-Skill_for_Scientific-Plots",
+    "addedAt": "2026-10-11T18:39:55.684634Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Lling0000/nature-skills",
     "cloneUrl": "https://github.com/Lling0000/nature-skills.git",
     "localPath": "open-source/Lling0000/nature-skills",
@@ -1008,6 +1017,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "anonymous-temp/EviMed-Science",
+    "cloneUrl": "https://github.com/anonymous-temp/EviMed-Science.git",
+    "localPath": "open-source/anonymous-temp/EviMed-Science",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/anonymous-temp/EviMed-Science",
+    "addedAt": "2026-10-11T18:41:24.519694Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "anthropics/life-sciences",
     "cloneUrl": "https://github.com/anthropics/life-sciences.git",
     "localPath": "open-source/anthropics/life-sciences",
@@ -1140,6 +1158,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/cndoin/cytoscape-agent-skill",
     "addedAt": "2026-10-02T18:58:54.472201Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "cndoin/med-biostat-skill",
+    "cloneUrl": "https://github.com/cndoin/med-biostat-skill.git",
+    "localPath": "open-source/cndoin/med-biostat-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/cndoin/med-biostat-skill",
+    "addedAt": "2026-10-11T18:39:08.952077Z",
     "addedBy": "github-actions"
   },
   {
@@ -1458,6 +1485,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "junghyunJJ/DeepMAST",
+    "cloneUrl": "https://github.com/junghyunJJ/DeepMAST.git",
+    "localPath": "open-source/junghyunJJ/DeepMAST",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/junghyunJJ/DeepMAST",
+    "addedAt": "2026-10-11T18:38:03.661358Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "jvogan/motif",
     "cloneUrl": "https://github.com/jvogan/motif.git",
     "localPath": "open-source/jvogan/motif",
@@ -1527,6 +1563,15 @@
     "defaultBranch": "master",
     "upstreamUrl": "https://github.com/lhbsaa/apex-discovery",
     "addedAt": "2026-07-22T15:34:16.831965Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "m4bwav/science-study-evaluator",
+    "cloneUrl": "https://github.com/m4bwav/science-study-evaluator.git",
+    "localPath": "open-source/m4bwav/science-study-evaluator",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/m4bwav/science-study-evaluator",
+    "addedAt": "2026-10-11T18:37:52.749664Z",
     "addedBy": "github-actions"
   },
   {

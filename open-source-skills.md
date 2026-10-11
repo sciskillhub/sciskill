@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **242**
+Total repositories: **247**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -75,6 +75,12 @@ Collected GitHub skill repository.
 ### [ankitgupta9525/VMware-Monitor](https://github.com/ankitgupta9525/VMware-Monitor)
 
 Collected GitHub skill repository.
+
+### [anonymous-temp/EviMed-Science](https://github.com/anonymous-temp/EviMed-Science)
+
+Use for pharmacovigilance, adverse-event signal analysis, or a structured drug-safety evidence report.
+
+Example skill path: `OpenScience/capabilities/adr-analysis/SKILL.md`
 
 ### [anthropics/life-sciences](https://github.com/anthropics/life-sciences)
 
@@ -215,6 +221,12 @@ Collected GitHub skill repository.
 ### [cndoin/cytoscape-agent-skill](https://github.com/cndoin/cytoscape-agent-skill)
 
 Collected GitHub skill repository.
+
+### [cndoin/med-biostat-skill](https://github.com/cndoin/med-biostat-skill)
+
+生信 / 医学研究全流程编排与审计（口径先于数值 · 一致性强于看起来对 · 混杂是主战场 · **数字一律由程序算出，不由 AI 推断**）。**何时自动加载**：用户要动手做、复核或投稿一项医学/生信分析时——如「这个方向能不能做、有没有人做过」「帮我分析这份 GWAS/组学/队列数据」「核对一下我这组结果对不对」「这个药/基因有没有因果证据」「把它写成可投稿的报告」。**覆盖七类形态**：(1) 药物靶点与因果推断——药物靶点 MR、孟德尔随机化（IVW/加权中位数/Egger/众数/RAPS/污染混合 + 异质性、留一、Steiger、Radial）、cis-eQTL/pQTL 工具变量、Wald ratio、共定位 coloc/PP.H4、药物重定位；(2) 遗传关联——GWAS 汇总统计处理与质控、λGC、独立位点与可信集、精细定位、区间基因注释；(3) 组学整合——eQTL/pQTL/TWAS/PWAS、组织与细胞类型富集、单细胞归属；(4) 临床统计——基线表、生存分析、预测模型（区分度+校准度+决策曲线）、C-index/NRI/IDI、竞争风险、混合效应；(5) 差异与通路——差异表达、共表达网络（WGCNA）、富集（ORA/GSEA/GSVA/ssGSEA）、单细胞、**双胞体检测**、批次校正 ComBat、细胞通讯配受体、免疫浸润、空间转录组、拟时序、**跨龄单细胞与年龄失守点**、突变特征；(6) **眼科与白内障（重点方向）**——白内障 GWAS/遗传易感位点、晶状体蛋白基因集（crystallin/MIP/GJA8/EPHA2 等）富集、**人工晶体 IOL 屈光计算（PEARL-DGS 厚透镜 TILP/等效球镜）**、logMAR·Snellen 视力换算、屈光预测误差（ME/MAE/MedAE/±0.5D 内比例）、眼压统计、角膜曲率与眼轴；(7) 数据交付与审计——数据清洗与变量挑选（缺失/离群/共线性 VIF）、数据源分级、**与官方发布的一致性核验（哈希/字节数/逐变异互证）**、混杂十二项审计、外部复现、报告规范对表（STROBE/STROBE-MR/TRIPOD+AI/PRISMA）。**触发词**：生信分析、GWAS、孟德尔随机化、MR、共定位、coloc、eQTL、pQTL、TWAS、富集分析、精细定位、位点、差异表达、WGCNA、共表达网络、生存分析、预测模型、单细胞、聚类、分群、双胞体、doublet、去双胞体、跨龄、跨年龄、年龄轨迹、失守点、年龄失守、衰老轨迹、批次效应、批次校正、ComBat、细胞通讯、配受体、免疫浸润、去卷积、空间转录组、拟时序、突变特征、TMB、蛋白组、PTM、药物靶点、倾向性评分、PSM、IPTW、因果推断、Meta 分析、荟萃分析、LASSO、岭回归、变量筛选、样本量、功效、PRS、多基因风险评分、**白内障、眼科、晶状体、人工晶体、IOL、屈光、眼轴、角膜、视力、logMAR、眼压、青光眼、ophthalmology、cataract、intraocular lens、refractive**、数据清洗、bioinformatics、colocalization、fine-mapping、Mendelian randomization、drug target、single-cell、single cell clustering、pseudotime、doublet detection、age onset、batch effect、ComBat、cell-cell communication、CellPhoneDB。**不触发**：单纯查文献、单纯问概念、单纯要一张图、与医学/生信无关的任务。This skill should be used when a user plans, executes, audits, or writes up a bioinformatics or medical research analysis end-to-end.
+
+Example skill path: `SKILL.md`
 
 ### [connerlambden/bgpt-mcp](https://github.com/connerlambden/bgpt-mcp)
 
@@ -428,6 +440,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [junghyunJJ/DeepMAST](https://github.com/junghyunJJ/DeepMAST)
+
+Role-specific literature workflow for ligand-receptor claims. Use SEARCHER Production mode for canonical INTERPRETER handoff artifacts, PLANNER mode for lightweight feasibility search, SEARCHER Retrieval-Only Benchmark mode to isolate retrieval effects, and REPORTER mode for existing papers.json plus part_name="all" RAG synthesis validation.
+
+Example skill path: `skills/biomedical-literature-search/SKILL.md`
+
 ### [JunhaoWu7/noetica-agent-skills](https://github.com/JunhaoWu7/noetica-agent-skills)
 
 Collected GitHub skill repository.
@@ -516,6 +534,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [LiX-Works/Origin_MCP-Skill_for_Scientific-Plots](https://github.com/LiX-Works/Origin_MCP-Skill_for_Scientific-Plots)
+
+Create, adjust, refresh, and inspect scientific figures in Origin through an available Origin MCP session. Use for supplied data, requested graph types and styles, and editable Origin deliverables; suggest a graph when needed and report actual execution and verification limits.
+
+Example skill path: `skills/origin-figures/SKILL.md`
+
 ### [Lling0000/nature-skills](https://github.com/Lling0000/nature-skills)
 
 Collected GitHub skill repository.
@@ -523,6 +547,12 @@ Collected GitHub skill repository.
 ### [Lord1Egypt/scientific-agent-toolkit](https://github.com/Lord1Egypt/scientific-agent-toolkit)
 
 Collected GitHub skill repository.
+
+### [m4bwav/science-study-evaluator](https://github.com/m4bwav/science-study-evaluator)
+
+Critically appraise a scientific study and the news coverage around it: verify the citation, read the paper itself, check conflicts of interest, measure how far the headline outruns the findings, and give a verdict (Solid, Real but overhyped, Weak, Junk/predatory, Fabricated/misattributed) with the reasoning explained in plain language. Use whenever the user shares a paper, DOI, PubMed link, preprint, press release or news article about research and asks whether it is legit, real, overhyped, junk or worth believing: 'is this study legit?', 'does this paper actually show that?', 'what's wrong with this research?', 'fact-check this health article', 'should I trust this headline?', 'appraise this RCT', or pastes an r/science link. Also for 'refresh science-study-evaluator' and 'is science-study-evaluator stale'. Not for writing or peer-reviewing the user's own manuscript, running statistics on their data, or searching the literature for papers on a topic.
+
+Example skill path: `skills/science-study-evaluator/SKILL.md`
 
 ### [ma-compbio-lab/SkillFoundry](https://github.com/ma-compbio-lab/SkillFoundry)
 
