@@ -279,6 +279,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "Da1yuqin/StarPaper",
+    "cloneUrl": "https://github.com/Da1yuqin/StarPaper.git",
+    "localPath": "open-source/Da1yuqin/StarPaper",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Da1yuqin/StarPaper",
+    "addedAt": "2026-10-12T22:02:32.910269Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Dominic789654/scientific-figure",
     "cloneUrl": "https://github.com/Dominic789654/scientific-figure.git",
     "localPath": "open-source/Dominic789654/scientific-figure",
@@ -1257,6 +1266,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/droftgamer-wq/researcher-skill",
     "addedAt": "2026-04-14T15:13:27.348930Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "drthyang/rmc-toolkits",
+    "cloneUrl": "https://github.com/drthyang/rmc-toolkits.git",
+    "localPath": "open-source/drthyang/rmc-toolkits",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/drthyang/rmc-toolkits",
+    "addedAt": "2026-10-12T22:02:20.866612Z",
     "addedBy": "github-actions"
   },
   {
