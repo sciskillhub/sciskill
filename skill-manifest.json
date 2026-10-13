@@ -1116,6 +1116,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "bizos-ai/bizos-charts",
+    "cloneUrl": "https://github.com/bizos-ai/bizos-charts.git",
+    "localPath": "open-source/bizos-ai/bizos-charts",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/bizos-ai/bizos-charts",
+    "addedAt": "2026-10-13T20:06:57.116818Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "blackblue-labs/zeroplot",
     "cloneUrl": "https://github.com/blackblue-labs/zeroplot.git",
     "localPath": "open-source/blackblue-labs/zeroplot",
@@ -1440,6 +1449,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "inhabitants/living-dossier",
+    "cloneUrl": "https://github.com/inhabitants/living-dossier.git",
+    "localPath": "open-source/inhabitants/living-dossier",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/inhabitants/living-dossier",
+    "addedAt": "2026-10-13T20:06:39.209816Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "jackspace/ClaudeSkillz",
     "cloneUrl": "https://github.com/jackspace/ClaudeSkillz.git",
     "localPath": "open-source/jackspace/ClaudeSkillz",
@@ -1653,6 +1671,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/mtchuang1981/clin-data-nav",
     "addedAt": "2026-08-09T14:33:48.793487Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "mumu-sci/amplicon-phylo-tree",
+    "cloneUrl": "https://github.com/mumu-sci/amplicon-phylo-tree.git",
+    "localPath": "open-source/mumu-sci/amplicon-phylo-tree",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/mumu-sci/amplicon-phylo-tree",
+    "addedAt": "2026-10-13T20:05:58.500885Z",
     "addedBy": "github-actions"
   },
   {
