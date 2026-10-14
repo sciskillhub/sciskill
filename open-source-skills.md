@@ -178,9 +178,7 @@ Collected GitHub skill repository.
 
 ### [bizos-ai/bizos-charts](https://github.com/bizos-ai/bizos-charts)
 
-Create rigorous business, financial, experimental, and biomedical charts or complete reports from supplied data. Includes an offline HTML/SVG engine with 64 exhibit types, 6 report layouts, English/Chinese output, and inspectable data. Use for charts, visualization, dashboards, performance reviews, valuation, study reports, and scientific figures; plain-text explanations and source-data cleanup do not require charts.
-
-Example skill path: `skills/bizos-charts/SKILL.md`
+Collected GitHub skill repository.
 
 ### [blackblue-labs/zeroplot](https://github.com/blackblue-labs/zeroplot)
 
@@ -404,9 +402,7 @@ Collected GitHub skill repository.
 
 ### [inhabitants/living-dossier](https://github.com/inhabitants/living-dossier)
 
-Builds a personal health dossier from a folder of lab results (PDF or photo), prescriptions, family history and genetic data, as six cross-linked Markdown documents (Hub, Clinical, Genetics, Correlator, Plan, Visit Summary). Use when someone asks to "build my health dossier", "organize my lab results", "put my exams and my DNA together", "help me understand my results over the years", "prepare a summary for my doctor", or the same in Portuguese ("monta meu dossiê de saúde", "organiza meus exames") or any other language. It organizes, synthesizes and structures; diagnosis and prescriptions belong to the doctor.
-
-Example skill path: `skills/dossier-build/SKILL.md`
+Collected GitHub skill repository.
 
 ### [jackspace/ClaudeSkillz](https://github.com/jackspace/ClaudeSkillz)
 
@@ -606,9 +602,7 @@ Collected GitHub skill repository.
 
 ### [mumu-sci/amplicon-phylo-tree](https://github.com/mumu-sci/amplicon-phylo-tree)
 
-Build defensible, publishable phylogenetic trees from second-generation amplicon data (16S/18S, ITS, nifH/amoA/COI and other marker genes): parameters are fixed per study (no hard-wired thresholds), then input audit, alignment, tree inference, rooting and acceptance, producing the tree, the alignment, the QC record and bilingual (Chinese and English) methods paragraphs. Use when the user asks to build a phylogenetic tree from amplicon data, run MAFFT / FastTree / IQ-TREE, make a phylo tree from ASVs or OTUs, check or root an existing tree, or diagnose a broken one. Chinese trigger words: 建树, 系统发育树, 进化树, 16S 树, ITS 树, nifH 树, ASV 树, 比对建树, 树挂了, 空位太多, 为什么树不对. Hard gates: the model MUST match the data type (protein vs nucleotide) as decided independently from the alignment's own character set; the tip set MUST equal the input ids exactly; a structural error or a model mismatch is a HARD STOP, and you MUST NOT deliver a tree with a known defect.
-
-Example skill path: `skills/amplicon-phylo-tree/SKILL.md`
+Collected GitHub skill repository.
 
 ### [mzoryy/hwpxskill](https://github.com/mzoryy/hwpxskill)
 
