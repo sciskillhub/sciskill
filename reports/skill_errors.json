@@ -22,17 +22,9 @@
   ],
   "legacy_topics": [],
   "query_count": 48,
-  "successful_query_count": 47,
+  "successful_query_count": 48,
   "report": "reports/skill_report.json",
-  "query_failures": [
-    {
-      "query": "archived:false is:public topic:population-genetics topic:ai-agents",
-      "domain_topic": "population-genetics",
-      "qualifier_topic": "ai-agents",
-      "legacy_topic": null,
-      "error": "HTTP 500: "
-    }
-  ],
+  "query_failures": [],
   "repo_error_count": 0,
   "repo_errors": []
 }
