@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **252**
+Total repositories: **256**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -207,6 +207,12 @@ Collected GitHub skill repository.
 ### [Chen-kaige/science_skill](https://github.com/Chen-kaige/science_skill)
 
 Collected GitHub skill repository.
+
+### [chinsudraewn0010-pixel/scientific-editorial-skill](https://github.com/chinsudraewn0010-pixel/scientific-editorial-skill)
+
+Create Swiss Scientific Editorial visual lessons, especially for mathematics, ML and LLMs, with sourced qualitative support for biology, natural sciences and other subjects. Use for interactive explanations of calculations, mechanisms, structures, comparisons or evidence, or when Scientific Editorial is requested. Not for generic dashboards or decorative imagery.
+
+Example skill path: `SKILL.md`
 
 ### [ChizkiyahuOhayon/CVPR-Figure](https://github.com/ChizkiyahuOhayon/CVPR-Figure)
 
@@ -648,6 +654,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [owehann/proteomics-discovery-skill](https://github.com/owehann/proteomics-discovery-skill)
+
+End-to-end, statistically calibrated mass-spectrometry and affinity proteomics analysis skill across all 6 modalities: (1) Global quantitative abundance (DIA/DDA/LFQ/TMT across WCL, Tissue, EV/Secretome, Biofluid/Plasma, Organelles), (2) Post-Translational Modifications (Phospho, Ubiquitin, Acetyl, Glyco with host-protein decoupling and Kinase Library inference), (3) Interactomics & Proximity Labeling (AP-MS, Co-IP, BioID, TurboID), (4) Chemoproteomics & Thermal Stability (TPP, CETSA, PISA, LiP-MS with NPARC), (5) Dose-Response & Time-Course dynamics (CurveCurator & splines), and (6) Targeted PRM/MRM, Single-Cell & Olink/SomaScan proteomics. Infers experimental design from raw .xlsx/.tsv/.parquet files, runs 12-point forensic QC and Stage 1.5 empirical null FDR calibration, executes R/Bioconductor or Python statistical engines with TOST equivalence testing, integrates clinical cohorts and live-verified literature, and produces fact-checked reports, 14 NPG figures, 7 BioRender vector schematics, and biologist-first bilingual PPTX decks.
+
+Example skill path: `SKILL.md`
+
 ### [Pavel-Kravchenko/Bioinformatics](https://github.com/Pavel-Kravchenko/Bioinformatics)
 
 Collected GitHub skill repository.
@@ -795,6 +807,12 @@ Collected GitHub skill repository.
 ### [srikarjy/Biolab-mcp-server](https://github.com/srikarjy/Biolab-mcp-server)
 
 Collected GitHub skill repository.
+
+### [starvingarc/BRIDGE](https://github.com/starvingarc/BRIDGE)
+
+Use when a researcher needs to clarify an experimental question, supplied protocol or sample context, preparation/capture relationships, independent replication, or consequential missing facts before choosing analysis. 实验背景理解、分析设计与必要追问；不用于直接解释已计算的表达或产品结果。
+
+Example skill path: `src/bridge/skills/case-understanding/SKILL.md`
 
 ### [SURFLIN2030/swing-skills](https://github.com/SURFLIN2030/swing-skills)
 
@@ -987,6 +1005,12 @@ Collected GitHub skill repository.
 ### [Zessi-C/biofigure-self-evolve](https://github.com/Zessi-C/biofigure-self-evolve)
 
 Collected GitHub skill repository.
+
+### [zhaorui-bi/ThetaBind-Harness](https://github.com/zhaorui-bi/ThetaBind-Harness)
+
+Use when generating changesets in the kimi-code repository — deciding whether to write one, which package to list, the bump level, the wording, and the confirmation workflow.
+
+Example skill path: `engine/.agents/skills/gen-changesets/SKILL.md`
 
 ### [zhoy0409-debug/polish-sci-figures](https://github.com/zhoy0409-debug/polish-sci-figures)
 

@@ -1161,6 +1161,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "chinsudraewn0010-pixel/scientific-editorial-skill",
+    "cloneUrl": "https://github.com/chinsudraewn0010-pixel/scientific-editorial-skill.git",
+    "localPath": "open-source/chinsudraewn0010-pixel/scientific-editorial-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/chinsudraewn0010-pixel/scientific-editorial-skill",
+    "addedAt": "2026-10-16T17:52:41.906453Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "cndoin/clusterprofiler-skill",
     "cloneUrl": "https://github.com/cndoin/clusterprofiler-skill.git",
     "localPath": "open-source/cndoin/clusterprofiler-skill",
@@ -1746,6 +1755,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "owehann/proteomics-discovery-skill",
+    "cloneUrl": "https://github.com/owehann/proteomics-discovery-skill.git",
+    "localPath": "open-source/owehann/proteomics-discovery-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/owehann/proteomics-discovery-skill",
+    "addedAt": "2026-10-16T17:51:29.848840Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "pengqianhan/codex-paper-figure-skill",
     "cloneUrl": "https://github.com/pengqianhan/codex-paper-figure-skill.git",
     "localPath": "open-source/pengqianhan/codex-paper-figure-skill",
@@ -1923,6 +1941,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/srikarjy/Biolab-mcp-server",
     "addedAt": "2026-10-03T17:46:37.243909Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "starvingarc/BRIDGE",
+    "cloneUrl": "https://github.com/starvingarc/BRIDGE.git",
+    "localPath": "open-source/starvingarc/BRIDGE",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/starvingarc/BRIDGE",
+    "addedAt": "2026-10-16T17:50:12.849090Z",
     "addedBy": "github-actions"
   },
   {
@@ -2220,6 +2247,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/zeikar/tangent",
     "addedAt": "2026-10-04T17:59:43.082371Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "zhaorui-bi/ThetaBind-Harness",
+    "cloneUrl": "https://github.com/zhaorui-bi/ThetaBind-Harness.git",
+    "localPath": "open-source/zhaorui-bi/ThetaBind-Harness",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/zhaorui-bi/ThetaBind-Harness",
+    "addedAt": "2026-10-16T17:52:27.064714Z",
     "addedBy": "github-actions"
   },
   {
