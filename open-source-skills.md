@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **256**
+Total repositories: **259**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -192,6 +192,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [CalebChen941028/provenance-lab](https://github.com/CalebChen941028/provenance-lab)
+
+中英双语自然语态引擎（Anti-AI Voice）：静默识别语言与文体场景（学术论文/课题申报/科普/社媒种草/商务/初稿优化）， 深度去AI腔——清洗恶性欧化、翻译腔、伪学术黑话、公式化煽情排比、冗余犹豫与防御性免责， 恢复母语呼吸节奏与笃定专业质感。当用户要求润色/改写/去AI味/优化学术或任何中文英文文案时使用； 也是 ProvenanceLab 科研流水线的写作语态规范来源。
+
+Example skill path: `adapters/claude-code/natural-voice/SKILL.md`
+
 ### [celikgo/GlowSky](https://github.com/celikgo/GlowSky)
 
 Collected GitHub skill repository.
@@ -208,11 +214,15 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Chen-Po/research-slides-skill](https://github.com/Chen-Po/research-slides-skill)
+
+Build, revise, or review research presentation decks (.pptx) — journal clubs on a scientific paper and research-progress talks — in a clean, sparse academic style. Covers deck architecture, a pptxgenjs theme with native PowerPoint equations, a reproducible build (pptxgenjs → OMML → LibreOffice), density and visual QA tools, and safe revision of decks that have already been edited by hand in PowerPoint. Use when asked for slides, a deck, a journal club, a lab-meeting or seminar presentation, or edits to an existing research deck.
+
+Example skill path: `plugins/research-slides/skills/research-slides/SKILL.md`
+
 ### [chinsudraewn0010-pixel/scientific-editorial-skill](https://github.com/chinsudraewn0010-pixel/scientific-editorial-skill)
 
-Create Swiss Scientific Editorial visual lessons, especially for mathematics, ML and LLMs, with sourced qualitative support for biology, natural sciences and other subjects. Use for interactive explanations of calculations, mechanisms, structures, comparisons or evidence, or when Scientific Editorial is requested. Not for generic dashboards or decorative imagery.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [ChizkiyahuOhayon/CVPR-Figure](https://github.com/ChizkiyahuOhayon/CVPR-Figure)
 
@@ -656,9 +666,7 @@ Collected GitHub skill repository.
 
 ### [owehann/proteomics-discovery-skill](https://github.com/owehann/proteomics-discovery-skill)
 
-End-to-end, statistically calibrated mass-spectrometry and affinity proteomics analysis skill across all 6 modalities: (1) Global quantitative abundance (DIA/DDA/LFQ/TMT across WCL, Tissue, EV/Secretome, Biofluid/Plasma, Organelles), (2) Post-Translational Modifications (Phospho, Ubiquitin, Acetyl, Glyco with host-protein decoupling and Kinase Library inference), (3) Interactomics & Proximity Labeling (AP-MS, Co-IP, BioID, TurboID), (4) Chemoproteomics & Thermal Stability (TPP, CETSA, PISA, LiP-MS with NPARC), (5) Dose-Response & Time-Course dynamics (CurveCurator & splines), and (6) Targeted PRM/MRM, Single-Cell & Olink/SomaScan proteomics. Infers experimental design from raw .xlsx/.tsv/.parquet files, runs 12-point forensic QC and Stage 1.5 empirical null FDR calibration, executes R/Bioconductor or Python statistical engines with TOST equivalence testing, integrates clinical cohorts and live-verified literature, and produces fact-checked reports, 14 NPG figures, 7 BioRender vector schematics, and biologist-first bilingual PPTX decks.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [Pavel-Kravchenko/Bioinformatics](https://github.com/Pavel-Kravchenko/Bioinformatics)
 
@@ -810,9 +818,7 @@ Collected GitHub skill repository.
 
 ### [starvingarc/BRIDGE](https://github.com/starvingarc/BRIDGE)
 
-Use when a researcher needs to clarify an experimental question, supplied protocol or sample context, preparation/capture relationships, independent replication, or consequential missing facts before choosing analysis. 实验背景理解、分析设计与必要追问；不用于直接解释已计算的表达或产品结果。
-
-Example skill path: `src/bridge/skills/case-understanding/SKILL.md`
+Collected GitHub skill repository.
 
 ### [SURFLIN2030/swing-skills](https://github.com/SURFLIN2030/swing-skills)
 
@@ -938,6 +944,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [X-laboratory-678/xingraphx](https://github.com/X-laboratory-678/xingraphx)
+
+XinGraphX 通用科研绘图：从参考图复刻或文字方案设计科研示意图、流程图、机制图与技术路线，输出原生可编辑 PPTX 和高清 PNG。适用于科研绘图、样图重绘、公式与曲线可编辑重建；不负责合入既有图集、插入 Word 或文档排版。
+
+Example skill path: `skills/xingraphx/SKILL.md`
+
 ### [xcl2005/academic-paper-writing-skill](https://github.com/xcl2005/academic-paper-writing-skill)
 
 Collected GitHub skill repository.
@@ -1008,9 +1020,7 @@ Collected GitHub skill repository.
 
 ### [zhaorui-bi/ThetaBind-Harness](https://github.com/zhaorui-bi/ThetaBind-Harness)
 
-Use when generating changesets in the kimi-code repository — deciding whether to write one, which package to list, the bump level, the wording, and the confirmation workflow.
-
-Example skill path: `engine/.agents/skills/gen-changesets/SKILL.md`
+Collected GitHub skill repository.
 
 ### [zhoy0409-debug/polish-sci-figures](https://github.com/zhoy0409-debug/polish-sci-figures)
 

@@ -234,6 +234,15 @@
     "addedBy": "huang-sh"
   },
   {
+    "fullName": "CalebChen941028/provenance-lab",
+    "cloneUrl": "https://github.com/CalebChen941028/provenance-lab.git",
+    "localPath": "open-source/CalebChen941028/provenance-lab",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/CalebChen941028/provenance-lab",
+    "addedAt": "2026-10-17T16:53:11.269827Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Chandrikakt/earl",
     "cloneUrl": "https://github.com/Chandrikakt/earl.git",
     "localPath": "open-source/Chandrikakt/earl",
@@ -241,6 +250,15 @@
     "upstreamUrl": "https://github.com/Chandrikakt/earl",
     "addedAt": "2026-04-11T17:13:45.963515Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "Chen-Po/research-slides-skill",
+    "cloneUrl": "https://github.com/Chen-Po/research-slides-skill.git",
+    "localPath": "open-source/Chen-Po/research-slides-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Chen-Po/research-slides-skill",
+    "addedAt": "2026-10-17T16:52:00.541469Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "Chen-kaige/science_skill",
@@ -888,6 +906,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/WUWeifeng710/bioinfo-trust-framework",
     "addedAt": "2026-09-19T17:01:37.640278Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "X-laboratory-678/xingraphx",
+    "cloneUrl": "https://github.com/X-laboratory-678/xingraphx.git",
+    "localPath": "open-source/X-laboratory-678/xingraphx",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/X-laboratory-678/xingraphx",
+    "addedAt": "2026-10-17T16:52:47.280638Z",
     "addedBy": "github-actions"
   },
   {
