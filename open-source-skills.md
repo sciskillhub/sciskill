@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **259**
+Total repositories: **276**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -192,11 +192,15 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [BuildHarbor/sciagent-skills](https://github.com/BuildHarbor/sciagent-skills)
+
+Astrophysics workflows using astropy for units, coordinates (SkyCoord), time (Time), cosmology, and FITS I/O with astropy.io.fits and WCS, photutils for aperture and PSF photometry, specutils for 1-D spectroscopy, poliastro for celestial mechanics, yt for AMR-based galaxy and cosmology visualization, and astroquery for SIMBAD, VizieR, and TAP catalog cross-matches. Use when handling FITS images or spectra, building sky coordinates, cross-matching catalogs, performing photometry, or simulating orbits.
+
+Example skill path: `skills/astrophysics/SKILL.md`
+
 ### [CalebChen941028/provenance-lab](https://github.com/CalebChen941028/provenance-lab)
 
-中英双语自然语态引擎（Anti-AI Voice）：静默识别语言与文体场景（学术论文/课题申报/科普/社媒种草/商务/初稿优化）， 深度去AI腔——清洗恶性欧化、翻译腔、伪学术黑话、公式化煽情排比、冗余犹豫与防御性免责， 恢复母语呼吸节奏与笃定专业质感。当用户要求润色/改写/去AI味/优化学术或任何中文英文文案时使用； 也是 ProvenanceLab 科研流水线的写作语态规范来源。
-
-Example skill path: `adapters/claude-code/natural-voice/SKILL.md`
+Collected GitHub skill repository.
 
 ### [celikgo/GlowSky](https://github.com/celikgo/GlowSky)
 
@@ -216,9 +220,7 @@ Collected GitHub skill repository.
 
 ### [Chen-Po/research-slides-skill](https://github.com/Chen-Po/research-slides-skill)
 
-Build, revise, or review research presentation decks (.pptx) — journal clubs on a scientific paper and research-progress talks — in a clean, sparse academic style. Covers deck architecture, a pptxgenjs theme with native PowerPoint equations, a reproducible build (pptxgenjs → OMML → LibreOffice), density and visual QA tools, and safe revision of decks that have already been edited by hand in PowerPoint. Use when asked for slides, a deck, a journal club, a lab-meeting or seminar presentation, or edits to an existing research deck.
-
-Example skill path: `plugins/research-slides/skills/research-slides/SKILL.md`
+Collected GitHub skill repository.
 
 ### [chinsudraewn0010-pixel/scientific-editorial-skill](https://github.com/chinsudraewn0010-pixel/scientific-editorial-skill)
 
@@ -644,6 +646,102 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [nuwa-skills/copernicus-skill](https://github.com/nuwa-skills/copernicus-skill)
+
+用哥白尼的范式革命思维、以证据挑战权威的勇气与长期观察积累的方法来分析和解决问题 当用户明确要求使用这一人物的视角、提到“copernicus-perspective”，或希望应用其核心方法分析问题时使用；不要因一般性问题自动触发。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/curie-skill](https://github.com/nuwa-skills/curie-skill)
+
+以居里夫人的科学毅力、极度专注和用事实说话的方式回答问题 当用户明确要求使用这一人物的视角、提到“curie-perspective”，或希望应用其核心方法分析问题时使用；不要因一般性问题自动触发。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/darwin-skill](https://github.com/nuwa-skills/darwin-skill)
+
+以达尔文的进化论思维、耐心观察和反确认偏误的方式回答问题 当用户明确要求使用这一人物的视角、提到“darwin-perspective”，或希望应用其核心方法分析问题时使用；不要因一般性问题自动触发。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/davinci-skill](https://github.com/nuwa-skills/davinci-skill)
+
+达芬奇的思维框架与创造方法。基于《达芬奇笔记》《艺术家传记》（瓦萨里）、沃尔特·艾萨克森《列奥纳多·达·芬奇传》、马丁·坎普《达芬奇》、弗里乔夫·卡普拉《达芬奇的科学》等30+来源深度调研，提炼5个核心思想模型、7条处世启发式和完整的表达DNA。用途：作为思维顾问，用达芬奇的视角分析创造力、跨学科思考、观察方法、项目管理等问题。 当用户提到「用达芬奇的视角」「达芬奇会怎么看」「达芬奇模式」「davinci perspective」时使用。也适用于：跨学科融合、创意方法、观察训练、好奇心驱动的学习、艺术与科学的结合。即使用户只是说「怎么培养创造力」「如何跨界思考」「观察力训练」「好奇心」也可触发。 不要在用户只是问「这个决策靠谱吗」「帮我想想」等一般性问题时触发——只在涉及创造力、观察方法、跨学科思维、好奇心驱动学习等达芬奇核心方法论时激活。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/einstein-skill](https://github.com/nuwa-skills/einstein-skill)
+
+以爱因斯坦的思维实验方法、相对论思维和想象力驱动的方式回答问题 当用户明确要求使用这一人物的视角、提到“einstein-perspective”，或希望应用其核心方法分析问题时使用；不要因一般性问题自动触发。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/faraday-skill](https://github.com/nuwa-skills/faraday-skill)
+
+用法拉第的实验精神、自学成才的直觉力与用日常事物解释科学的天赋来分析和解决问题 当用户明确要求使用这一人物的视角、提到“faraday-perspective”，或希望应用其核心方法分析问题时使用；不要因一般性问题自动触发。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/feynman-skill](https://github.com/nuwa-skills/feynman-skill)
+
+费曼的思维框架与学习方式。基于《别闹了费曼先生》《你干吗在乎别人怎么想》《费曼物理学讲义》、挑战者号事故调查报告、诺贝尔奖演讲、James Gleick《费曼传》等30+来源深度调研，提炼5个核心思想模型、7条处世启发式和完整的表达DNA。用途：作为思维顾问，用费曼的视角分析学习方法、复杂问题简化、科学思维、创造力等问题。 当用户提到「用费曼的视角」「费曼会怎么看」「费曼模式」「feynman perspective」时使用。也适用于：学习方法优化、复杂概念简化、打破权威迷信、培养好奇心、科学诚实。即使用户只是说「怎么学得更好」「这个概念太复杂了」「用简单的话解释一下」「费曼学习法」也可触发。 不要在用户只是问「帮我写个代码」「这个格式怎么调」等纯操作性问题时触发——只在涉及学习思维、化繁为简、科学精神、第一性原理思考等费曼核心方法论时激活。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/knuth-skill](https://github.com/nuwa-skills/knuth-skill)
+
+以高德纳的视角回答问题——计算机科学之美、极致严谨、文学化编程与算法思维的统一 当用户明确要求使用这一人物的视角、提到“knuth-perspective”，或希望应用其核心方法分析问题时使用；不要因一般性问题自动触发。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/newton-skill](https://github.com/nuwa-skills/newton-skill)
+
+用牛顿的第一性原理思维、数学严密性与系统化推理方式来分析和解决问题 当用户明确要求使用这一人物的视角、提到“newton-perspective”，或希望应用其核心方法分析问题时使用；不要因一般性问题自动触发。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/qianxuesen-skill](https://github.com/nuwa-skills/qianxuesen-skill)
+
+以钱学森的视角回答问题——系统工程思维、跨学科融合、航天精神与工程哲学的统一 当用户明确要求使用这一人物的视角、提到“qianxuesen-perspective”，或希望应用其核心方法分析问题时使用；不要因一般性问题自动触发。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/sagan-skill](https://github.com/nuwa-skills/sagan-skill)
+
+以卡尔·萨根的视角回答问题——科学传播的热情、宇宙视角的谦卑、怀疑精神与淡蓝小点的诗意 当用户明确要求使用这一人物的视角、提到“sagan-perspective”，或希望应用其核心方法分析问题时使用；不要因一般性问题自动触发。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/shannon-skill](https://github.com/nuwa-skills/shannon-skill)
+
+用香农的信息论思维、化繁为简的天赋与创造性玩耍精神来分析和解决问题 当用户明确要求使用这一人物的视角、提到“shannon-perspective”，或希望应用其核心方法分析问题时使用；不要因一般性问题自动触发。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/tesla-skill](https://github.com/nuwa-skills/tesla-skill)
+
+以特斯拉的想象力驱动方法、独立思考和超前发明思维回答问题 当用户明确要求使用这一人物的视角、提到“tesla-perspective”，或希望应用其核心方法分析问题时使用；不要因一般性问题自动触发。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/turing-skill](https://github.com/nuwa-skills/turing-skill)
+
+以图灵的计算思维、跨界思考和简洁优雅的问题分解方式回答问题 当用户明确要求使用这一人物的视角、提到“turing-perspective”，或希望应用其核心方法分析问题时使用；不要因一般性问题自动触发。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/vonneumann-skill](https://github.com/nuwa-skills/vonneumann-skill)
+
+用冯诺依曼的博弈论思维、计算架构直觉与跨学科超速思考能力来分析和解决问题 当用户明确要求使用这一人物的视角、提到“vonneumann-perspective”，或希望应用其核心方法分析问题时使用；不要因一般性问题自动触发。
+
+Example skill path: `SKILL.md`
+
+### [nuwa-skills/yangzhenning-skill](https://github.com/nuwa-skills/yangzhenning-skill)
+
+以诺贝尔物理学奖得主杨振宁的视角，探讨物理之美、科学品味、对称性思想以及跨文化智慧 当用户明确要求使用这一人物的视角、提到“yangzhenning-perspective”，或希望应用其核心方法分析问题时使用；不要因一般性问题自动触发。
+
+Example skill path: `SKILL.md`
+
 ### [open-biosciences/biosciences-mcp](https://github.com/open-biosciences/biosciences-mcp)
 
 Collected GitHub skill repository.
@@ -946,9 +1044,7 @@ Collected GitHub skill repository.
 
 ### [X-laboratory-678/xingraphx](https://github.com/X-laboratory-678/xingraphx)
 
-XinGraphX 通用科研绘图：从参考图复刻或文字方案设计科研示意图、流程图、机制图与技术路线，输出原生可编辑 PPTX 和高清 PNG。适用于科研绘图、样图重绘、公式与曲线可编辑重建；不负责合入既有图集、插入 Word 或文档排版。
-
-Example skill path: `skills/xingraphx/SKILL.md`
+Collected GitHub skill repository.
 
 ### [xcl2005/academic-paper-writing-skill](https://github.com/xcl2005/academic-paper-writing-skill)
 

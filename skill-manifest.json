@@ -234,6 +234,15 @@
     "addedBy": "huang-sh"
   },
   {
+    "fullName": "BuildHarbor/sciagent-skills",
+    "cloneUrl": "https://github.com/BuildHarbor/sciagent-skills.git",
+    "localPath": "open-source/BuildHarbor/sciagent-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/BuildHarbor/sciagent-skills",
+    "addedAt": "2026-10-18T17:06:56.582068Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "CalebChen941028/provenance-lab",
     "cloneUrl": "https://github.com/CalebChen941028/provenance-lab.git",
     "localPath": "open-source/CalebChen941028/provenance-lab",
@@ -1761,6 +1770,150 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/nihaoWX/svg_grid",
     "addedAt": "2026-09-22T17:56:48.688672Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/copernicus-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/copernicus-skill.git",
+    "localPath": "open-source/nuwa-skills/copernicus-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nuwa-skills/copernicus-skill",
+    "addedAt": "2026-10-18T17:05:21.414584Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/curie-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/curie-skill.git",
+    "localPath": "open-source/nuwa-skills/curie-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nuwa-skills/curie-skill",
+    "addedAt": "2026-10-18T17:05:19.782132Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/darwin-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/darwin-skill.git",
+    "localPath": "open-source/nuwa-skills/darwin-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nuwa-skills/darwin-skill",
+    "addedAt": "2026-10-18T17:05:16.347226Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/davinci-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/davinci-skill.git",
+    "localPath": "open-source/nuwa-skills/davinci-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/nuwa-skills/davinci-skill",
+    "addedAt": "2026-10-18T17:05:18.020740Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/einstein-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/einstein-skill.git",
+    "localPath": "open-source/nuwa-skills/einstein-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nuwa-skills/einstein-skill",
+    "addedAt": "2026-10-18T17:05:14.664131Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/faraday-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/faraday-skill.git",
+    "localPath": "open-source/nuwa-skills/faraday-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nuwa-skills/faraday-skill",
+    "addedAt": "2026-10-18T17:05:13.005474Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/feynman-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/feynman-skill.git",
+    "localPath": "open-source/nuwa-skills/feynman-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/nuwa-skills/feynman-skill",
+    "addedAt": "2026-10-18T17:05:11.381628Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/knuth-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/knuth-skill.git",
+    "localPath": "open-source/nuwa-skills/knuth-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nuwa-skills/knuth-skill",
+    "addedAt": "2026-10-18T17:05:26.396838Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/newton-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/newton-skill.git",
+    "localPath": "open-source/nuwa-skills/newton-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nuwa-skills/newton-skill",
+    "addedAt": "2026-10-18T17:05:09.699822Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/qianxuesen-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/qianxuesen-skill.git",
+    "localPath": "open-source/nuwa-skills/qianxuesen-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nuwa-skills/qianxuesen-skill",
+    "addedAt": "2026-10-18T17:05:24.776677Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/sagan-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/sagan-skill.git",
+    "localPath": "open-source/nuwa-skills/sagan-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nuwa-skills/sagan-skill",
+    "addedAt": "2026-10-18T17:05:23.049944Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/shannon-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/shannon-skill.git",
+    "localPath": "open-source/nuwa-skills/shannon-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nuwa-skills/shannon-skill",
+    "addedAt": "2026-10-18T17:05:08.037648Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/tesla-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/tesla-skill.git",
+    "localPath": "open-source/nuwa-skills/tesla-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nuwa-skills/tesla-skill",
+    "addedAt": "2026-10-18T17:05:06.352847Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/turing-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/turing-skill.git",
+    "localPath": "open-source/nuwa-skills/turing-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nuwa-skills/turing-skill",
+    "addedAt": "2026-10-18T17:05:04.609070Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/vonneumann-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/vonneumann-skill.git",
+    "localPath": "open-source/nuwa-skills/vonneumann-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nuwa-skills/vonneumann-skill",
+    "addedAt": "2026-10-18T17:05:02.905690Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "nuwa-skills/yangzhenning-skill",
+    "cloneUrl": "https://github.com/nuwa-skills/yangzhenning-skill.git",
+    "localPath": "open-source/nuwa-skills/yangzhenning-skill",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/nuwa-skills/yangzhenning-skill",
+    "addedAt": "2026-10-18T17:05:01.102431Z",
     "addedBy": "github-actions"
   },
   {
