@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **277**
+Total repositories: **278**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -459,6 +459,12 @@ Collected GitHub skill repository.
 ### [JonathanChan-geek/claude-science-skills](https://github.com/JonathanChan-geek/claude-science-skills)
 
 Collected GitHub skill repository.
+
+### [jonfunk21/co-scientist](https://github.com/jonfunk21/co-scientist)
+
+Use to check whether the co-scientist skill suite has updates on GitHub, to report what changed and why it might matter, and to install an update. Also the skill a scheduled daily update check invokes.
+
+Example skill path: `co-scientist-update/SKILL.md`
 
 ### [jostelzer/grounded](https://github.com/jostelzer/grounded)
 
@@ -1022,9 +1028,7 @@ Collected GitHub skill repository.
 
 ### [Xuzhen-Li/paper-viz](https://github.com/Xuzhen-Li/paper-viz)
 
-Reconstructs paper or legacy raster figures as source-aligned, editable draw.io diagrams. Use when the user asks for a same-look redraw, pixel-aligned redraw, raster-to-drawio conversion, tight icon crops, native-first editing, or precise connector and typography matching.
-
-Example skill path: `skills/drawio-source-redraw/SKILL.md`
+Collected GitHub skill repository.
 
 ### [xuzhougeng/ScientificFigureLibrary](https://github.com/xuzhougeng/ScientificFigureLibrary)
 

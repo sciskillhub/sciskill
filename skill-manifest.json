@@ -1566,6 +1566,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "jonfunk21/co-scientist",
+    "cloneUrl": "https://github.com/jonfunk21/co-scientist.git",
+    "localPath": "open-source/jonfunk21/co-scientist",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/jonfunk21/co-scientist",
+    "addedAt": "2026-10-20T18:19:56.271271Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "jostelzer/grounded",
     "cloneUrl": "https://github.com/jostelzer/grounded.git",
     "localPath": "open-source/jostelzer/grounded",
