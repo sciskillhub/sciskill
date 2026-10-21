@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **278**
+Total repositories: **281**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -256,6 +256,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [cyanheads/interpro-mcp-server](https://github.com/cyanheads/interpro-mcp-server)
+
+Scaffold an MCP App tool + UI resource pair. Use when the user asks to add a tool with interactive UI, create an MCP App, or build a visual/interactive tool.
+
+Example skill path: `framework-skills/add-app-tool/SKILL.md`
+
 ### [cyanheads/pubmed-mcp-server](https://github.com/cyanheads/pubmed-mcp-server)
 
 Collected GitHub skill repository.
@@ -462,9 +468,7 @@ Collected GitHub skill repository.
 
 ### [jonfunk21/co-scientist](https://github.com/jonfunk21/co-scientist)
 
-Use to check whether the co-scientist skill suite has updates on GitHub, to report what changed and why it might matter, and to install an update. Also the skill a scheduled daily update check invokes.
-
-Example skill path: `co-scientist-update/SKILL.md`
+Collected GitHub skill repository.
 
 ### [jostelzer/grounded](https://github.com/jostelzer/grounded)
 
@@ -637,6 +641,12 @@ Collected GitHub skill repository.
 ### [nandodeejay/appstore-review-skill](https://github.com/nandodeejay/appstore-review-skill)
 
 Collected GitHub skill repository.
+
+### [nazeeh111/flowcraft-codex](https://github.com/nazeeh111/flowcraft-codex)
+
+Create and refine editable flowcharts, research method diagrams, scientific illustrations and data-driven figures from source material. Use for process explanations, paper figures, graphical abstracts or an explicit Flowcraft request. General app UI, animated explainers and routine cloud infrastructure diagrams use their specialized workflows.
+
+Example skill path: `SKILL.md`
 
 ### [nextflow-io/agent-skills](https://github.com/nextflow-io/agent-skills)
 
@@ -1049,6 +1059,12 @@ Collected GitHub skill repository.
 ### [yigityildiz0/scientific-agent-skills](https://github.com/yigityildiz0/scientific-agent-skills)
 
 Collected GitHub skill repository.
+
+### [Ynzuses/genomics-skills-suite](https://github.com/Ynzuses/genomics-skills-suite)
+
+Design and audit non-model, polyploid, duplicated, or non-human genomic studies. Use when a task needs reference assemblies, truth sets, mapping, variant discovery, species-aware QC, paralogy or WGD, leakage, population or GWAS validation, trait simulation, or diagnosis of unexpected signals. Compose with evidence and statistics skills. Do not use for one command or generic biology.
+
+Example skill path: `genomics-study-design/SKILL.md`
 
 ### [yojiro253-del/BioForge](https://github.com/yojiro253-del/BioForge)
 

@@ -954,6 +954,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "Ynzuses/genomics-skills-suite",
+    "cloneUrl": "https://github.com/Ynzuses/genomics-skills-suite.git",
+    "localPath": "open-source/Ynzuses/genomics-skills-suite",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Ynzuses/genomics-skills-suite",
+    "addedAt": "2026-10-21T18:24:49.802199Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Yuan1z0825/nature-skills",
     "cloneUrl": "https://github.com/Yuan1z0825/nature-skills.git",
     "localPath": "open-source/Yuan1z0825/nature-skills",
@@ -1257,6 +1266,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/cyanheads/ensembl-mcp-server",
     "addedAt": "2026-06-05T16:30:52.230088Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "cyanheads/interpro-mcp-server",
+    "cloneUrl": "https://github.com/cyanheads/interpro-mcp-server.git",
+    "localPath": "open-source/cyanheads/interpro-mcp-server",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/cyanheads/interpro-mcp-server",
+    "addedAt": "2026-10-21T18:23:34.242150Z",
     "addedBy": "github-actions"
   },
   {
@@ -1771,6 +1789,15 @@
     "upstreamUrl": "https://github.com/nandodeejay/appstore-review-skill",
     "addedAt": "2026-04-11T17:13:45.476758Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "nazeeh111/flowcraft-codex",
+    "cloneUrl": "https://github.com/nazeeh111/flowcraft-codex.git",
+    "localPath": "open-source/nazeeh111/flowcraft-codex",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/nazeeh111/flowcraft-codex",
+    "addedAt": "2026-10-21T18:25:47.452388Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "nextflow-io/agent-skills",
