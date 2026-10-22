@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **281**
+Total repositories: **285**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -67,6 +67,12 @@ Collected GitHub skill repository.
 ### [AlterLab-IEU/AlterLab-Academic-Skills](https://github.com/AlterLab-IEU/AlterLab-Academic-Skills)
 
 Collected GitHub skill repository.
+
+### [AmadeusBio-ai/Molecular_Animation](https://github.com/AmadeusBio-ai/Molecular_Animation)
+
+Turn a brief (a request plus source documents and/or reference media, e.g. a document like examples/channelrhodopsin/sources/Nobel_Med_2026.md) into a delivered molecular animation with this repo's framework - project scaffold, brief, science checks, Blender shot script, look-dev, preview, final take, encoded MP4/WebM + posters, and a production record. Use when the user hands over a brief, a reference clip or a scientific document and asks for an animation, film, loop or still.
+
+Example skill path: `.claude/skills/new-film/SKILL.md`
 
 ### [ammawla/encode-toolkit](https://github.com/ammawla/encode-toolkit)
 
@@ -258,9 +264,7 @@ Collected GitHub skill repository.
 
 ### [cyanheads/interpro-mcp-server](https://github.com/cyanheads/interpro-mcp-server)
 
-Scaffold an MCP App tool + UI resource pair. Use when the user asks to add a tool with interactive UI, create an MCP App, or build a visual/interactive tool.
-
-Example skill path: `framework-skills/add-app-tool/SKILL.md`
+Collected GitHub skill repository.
 
 ### [cyanheads/pubmed-mcp-server](https://github.com/cyanheads/pubmed-mcp-server)
 
@@ -293,6 +297,12 @@ Collected GitHub skill repository.
 ### [Dominic789654/scientific-figure](https://github.com/Dominic789654/scientific-figure)
 
 Collected GitHub skill repository.
+
+### [donbr/lifesciences-deepagents](https://github.com/donbr/lifesciences-deepagents)
+
+Queries clinical databases (Open Targets, ClinicalTrials.gov) via MCP tools for target-disease associations, target tractability assessment, and clinical trial discovery. Falls back to curl when MCP is unavailable. This skill should be used when the user asks to "validate drug targets", "find clinical trials", "assess target tractability", "discover disease associations", or mentions Open Targets scores, NCT identifiers, target-disease evidence, druggability assessment, or translational research workflows.
+
+Example skill path: `.claude/skills/lifesciences-clinical/SKILL.md`
 
 ### [donbr/lifesciences-research](https://github.com/donbr/lifesciences-research)
 
@@ -644,9 +654,7 @@ Collected GitHub skill repository.
 
 ### [nazeeh111/flowcraft-codex](https://github.com/nazeeh111/flowcraft-codex)
 
-Create and refine editable flowcharts, research method diagrams, scientific illustrations and data-driven figures from source material. Use for process explanations, paper figures, graphical abstracts or an explicit Flowcraft request. General app UI, animated explainers and routine cloud infrastructure diagrams use their specialized workflows.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [nextflow-io/agent-skills](https://github.com/nextflow-io/agent-skills)
 
@@ -767,6 +775,12 @@ Collected GitHub skill repository.
 ### [PlutoLei/paperbanana-skill](https://github.com/PlutoLei/paperbanana-skill)
 
 Collected GitHub skill repository.
+
+### [pmall/curation](https://github.com/pmall/curation)
+
+Curation batch: up to 20 publications, each curated by a curator agent, merged into batch files written after the user's go. Use when the user asks to curate publications; the prompt may name the publications and the work directory.
+
+Example skill path: `prompts/skills/curate/SKILL.md`
 
 ### [Potato-AI0815/Potato_Figure](https://github.com/Potato-AI0815/Potato_Figure)
 
@@ -907,6 +921,12 @@ Collected GitHub skill repository.
 ### [Taison472/codex-skills](https://github.com/Taison472/codex-skills)
 
 Collected GitHub skill repository.
+
+### [talharaziq/bioinformatics-agent-skills](https://github.com/talharaziq/bioinformatics-agent-skills)
+
+Plan, validate, and run reproducible bulk RNA-seq workflows from FASTQ files through trimming, quality control, Salmon transcript quantification, and DESeq2 differential expression. Use when asked to analyze bulk RNA-seq, validate a sample sheet, quantify reads, compare conditions, or audit DE results.
+
+Example skill path: `skills/bulk-rnaseq/SKILL.md`
 
 ### [tayloranthonyanderson/haploqtl](https://github.com/tayloranthonyanderson/haploqtl)
 
@@ -1062,9 +1082,7 @@ Collected GitHub skill repository.
 
 ### [Ynzuses/genomics-skills-suite](https://github.com/Ynzuses/genomics-skills-suite)
 
-Design and audit non-model, polyploid, duplicated, or non-human genomic studies. Use when a task needs reference assemblies, truth sets, mapping, variant discovery, species-aware QC, paralogy or WGD, leakage, population or GWAS validation, trait simulation, or diagnosis of unexpected signals. Compose with evidence and statistics skills. Do not use for one command or generic biology.
-
-Example skill path: `genomics-study-design/SKILL.md`
+Collected GitHub skill repository.
 
 ### [yojiro253-del/BioForge](https://github.com/yojiro253-del/BioForge)
 

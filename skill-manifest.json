@@ -90,6 +90,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "AmadeusBio-ai/Molecular_Animation",
+    "cloneUrl": "https://github.com/AmadeusBio-ai/Molecular_Animation.git",
+    "localPath": "open-source/AmadeusBio-ai/Molecular_Animation",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/AmadeusBio-ai/Molecular_Animation",
+    "addedAt": "2026-10-22T18:17:19.167500Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Aperivue/medsci-skills",
     "cloneUrl": "https://github.com/Aperivue/medsci-skills.git",
     "localPath": "open-source/Aperivue/medsci-skills",
@@ -1332,6 +1341,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "donbr/lifesciences-deepagents",
+    "cloneUrl": "https://github.com/donbr/lifesciences-deepagents.git",
+    "localPath": "open-source/donbr/lifesciences-deepagents",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/donbr/lifesciences-deepagents",
+    "addedAt": "2026-10-22T18:17:37.227227Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "donbr/lifesciences-research",
     "cloneUrl": "https://github.com/donbr/lifesciences-research.git",
     "localPath": "open-source/donbr/lifesciences-research",
@@ -2016,6 +2034,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "pmall/curation",
+    "cloneUrl": "https://github.com/pmall/curation.git",
+    "localPath": "open-source/pmall/curation",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/pmall/curation",
+    "addedAt": "2026-10-22T18:17:17.237221Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "pswider/tula",
     "cloneUrl": "https://github.com/pswider/tula.git",
     "localPath": "open-source/pswider/tula",
@@ -2175,6 +2202,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/starvingarc/BRIDGE",
     "addedAt": "2026-10-16T17:50:12.849090Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "talharaziq/bioinformatics-agent-skills",
+    "cloneUrl": "https://github.com/talharaziq/bioinformatics-agent-skills.git",
+    "localPath": "open-source/talharaziq/bioinformatics-agent-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/talharaziq/bioinformatics-agent-skills",
+    "addedAt": "2026-10-22T18:17:22.654348Z",
     "addedBy": "github-actions"
   },
   {
