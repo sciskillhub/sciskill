@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **285**
+Total repositories: **288**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -70,9 +70,7 @@ Collected GitHub skill repository.
 
 ### [AmadeusBio-ai/Molecular_Animation](https://github.com/AmadeusBio-ai/Molecular_Animation)
 
-Turn a brief (a request plus source documents and/or reference media, e.g. a document like examples/channelrhodopsin/sources/Nobel_Med_2026.md) into a delivered molecular animation with this repo's framework - project scaffold, brief, science checks, Blender shot script, look-dev, preview, final take, encoded MP4/WebM + posters, and a production record. Use when the user hands over a brief, a reference clip or a scientific document and asks for an animation, film, loop or still.
-
-Example skill path: `.claude/skills/new-film/SKILL.md`
+Collected GitHub skill repository.
 
 ### [ammawla/encode-toolkit](https://github.com/ammawla/encode-toolkit)
 
@@ -282,6 +280,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [databricks-industry-solutions/vital-skills](https://github.com/databricks-industry-solutions/vital-skills)
+
+HLS solution accelerator steerage for Databricks. Routes a task to an existing databricks-industry-solutions accelerator and gives the precise next step - Pixels (DICOM medical imaging, OHIF viewer, DICOMweb, MONAI segmentation) and Genesis Workbench (protein folding and design, docking, ADMET, single-cell foundation models, variant calling, NVIDIA BioNeMo). Consult before building an imaging pipeline or biology model stack from scratch. For notebook single-cell analysis use sc-rnaseq; for de-identifying tables use phi-deidentifier.
+
+Example skill path: `skills/accelerators/SKILL.md`
+
 ### [dcc-mcp/dcc-mcp-paraview](https://github.com/dcc-mcp/dcc-mcp-paraview)
 
 Collected GitHub skill repository.
@@ -300,9 +304,7 @@ Collected GitHub skill repository.
 
 ### [donbr/lifesciences-deepagents](https://github.com/donbr/lifesciences-deepagents)
 
-Queries clinical databases (Open Targets, ClinicalTrials.gov) via MCP tools for target-disease associations, target tractability assessment, and clinical trial discovery. Falls back to curl when MCP is unavailable. This skill should be used when the user asks to "validate drug targets", "find clinical trials", "assess target tractability", "discover disease associations", or mentions Open Targets scores, NCT identifiers, target-disease evidence, druggability assessment, or translational research workflows.
-
-Example skill path: `.claude/skills/lifesciences-clinical/SKILL.md`
+Collected GitHub skill repository.
 
 ### [donbr/lifesciences-research](https://github.com/donbr/lifesciences-research)
 
@@ -778,9 +780,7 @@ Collected GitHub skill repository.
 
 ### [pmall/curation](https://github.com/pmall/curation)
 
-Curation batch: up to 20 publications, each curated by a curator agent, merged into batch files written after the user's go. Use when the user asks to curate publications; the prompt may name the publications and the work directory.
-
-Example skill path: `prompts/skills/curate/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Potato-AI0815/Potato_Figure](https://github.com/Potato-AI0815/Potato_Figure)
 
@@ -902,6 +902,18 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [sleepinlava/abi-skills](https://github.com/sleepinlava/abi-skills)
+
+Develop or revise ABI bioinformatics workflow modules and plugins. Use when adding an ABI analysis type, integrating a published pipeline or CLI, changing a plugin DAG or tool set, or adding databases, models, references, containers, and other runtime resources. The developer chooses the workflow and versions, the agent fills in engineering details, every resource requires developer review, and the finished change receives an agent code review.
+
+Example skill path: `skills/abi-plugin-development/SKILL.md`
+
+### [sologuy/biomolecular-3d-viewer](https://github.com/sologuy/biomolecular-3d-viewer)
+
+Render publication-grade 3D atomic close-up figures (.png) and standalone interactive 3Dmol.js Biomolecular Structure Viewer canvases (.html) from .pdb or .cif files, and automatically inspect inter-chain contacts, hydrogen bonds, salt bridges, and steric clashes. Use this skill when asked to visualize protein/antibody/peptide/ligand 3D structures, compare wild-type vs. mutant pockets in 3D, inspect binding interface distances or clashes, or build an interactive 3D structure viewer (Triggers: 3D structure, 3D viewer, Biomolecular Structure Viewer, pocket close-up, clash check, hydrogen bonds, salt bridges, 3dmol, 3D结构, 看结构, 3D画布, 结构可视化, 口袋特写, 碰撞检查, 氢键盐桥, PDB看图).
+
+Example skill path: `SKILL.md`
+
 ### [sounkou-bioinfo/pi-bio-agent](https://github.com/sounkou-bioinfo/pi-bio-agent)
 
 Collected GitHub skill repository.
@@ -924,9 +936,7 @@ Collected GitHub skill repository.
 
 ### [talharaziq/bioinformatics-agent-skills](https://github.com/talharaziq/bioinformatics-agent-skills)
 
-Plan, validate, and run reproducible bulk RNA-seq workflows from FASTQ files through trimming, quality control, Salmon transcript quantification, and DESeq2 differential expression. Use when asked to analyze bulk RNA-seq, validate a sample sheet, quantify reads, compare conditions, or audit DE results.
-
-Example skill path: `skills/bulk-rnaseq/SKILL.md`
+Collected GitHub skill repository.
 
 ### [tayloranthonyanderson/haploqtl](https://github.com/tayloranthonyanderson/haploqtl)
 

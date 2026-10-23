@@ -1314,6 +1314,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "databricks-industry-solutions/vital-skills",
+    "cloneUrl": "https://github.com/databricks-industry-solutions/vital-skills.git",
+    "localPath": "open-source/databricks-industry-solutions/vital-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/databricks-industry-solutions/vital-skills",
+    "addedAt": "2026-10-23T18:08:28.115848Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "dcc-mcp/dcc-mcp-paraview",
     "cloneUrl": "https://github.com/dcc-mcp/dcc-mcp-paraview.git",
     "localPath": "open-source/dcc-mcp/dcc-mcp-paraview",
@@ -2175,6 +2184,24 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/shear559/fabius",
     "addedAt": "2026-08-25T14:43:39.570656Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "sleepinlava/abi-skills",
+    "cloneUrl": "https://github.com/sleepinlava/abi-skills.git",
+    "localPath": "open-source/sleepinlava/abi-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/sleepinlava/abi-skills",
+    "addedAt": "2026-10-23T18:08:19.243405Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "sologuy/biomolecular-3d-viewer",
+    "cloneUrl": "https://github.com/sologuy/biomolecular-3d-viewer.git",
+    "localPath": "open-source/sologuy/biomolecular-3d-viewer",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/sologuy/biomolecular-3d-viewer",
+    "addedAt": "2026-10-23T18:07:00.199562Z",
     "addedBy": "github-actions"
   },
   {
