@@ -630,6 +630,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "MarbuelB/AI-Forge-Research-Edition",
+    "cloneUrl": "https://github.com/MarbuelB/AI-Forge-Research-Edition.git",
+    "localPath": "open-source/MarbuelB/AI-Forge-Research-Edition",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/MarbuelB/AI-Forge-Research-Edition",
+    "addedAt": "2026-10-24T17:12:53.353369Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Marshanda14816/agent-skills",
     "cloneUrl": "https://github.com/Marshanda14816/agent-skills.git",
     "localPath": "open-source/Marshanda14816/agent-skills",
@@ -673,6 +682,15 @@
     "upstreamUrl": "https://github.com/OpenRaiser/NanoResearch",
     "addedAt": "2026-04-11T17:13:45.877062Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "Orinkle/qpcr-kit",
+    "cloneUrl": "https://github.com/Orinkle/qpcr-kit.git",
+    "localPath": "open-source/Orinkle/qpcr-kit",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Orinkle/qpcr-kit",
+    "addedAt": "2026-10-24T17:14:10.720026Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "Osmosy/vector-gene",
@@ -1764,6 +1782,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "mianaz/biomed-skills",
+    "cloneUrl": "https://github.com/mianaz/biomed-skills.git",
+    "localPath": "open-source/mianaz/biomed-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/mianaz/biomed-skills",
+    "addedAt": "2026-10-24T17:14:19.369116Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "mnfst/manifest",
     "cloneUrl": "https://github.com/mnfst/manifest.git",
     "localPath": "open-source/mnfst/manifest",
@@ -2328,6 +2355,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/the8thday/AgenticPrism-SKILL",
     "addedAt": "2026-10-01T19:18:58.838775Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "theadamafyouni-lgtm/polyscope-genomics",
+    "cloneUrl": "https://github.com/theadamafyouni-lgtm/polyscope-genomics.git",
+    "localPath": "open-source/theadamafyouni-lgtm/polyscope-genomics",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/theadamafyouni-lgtm/polyscope-genomics",
+    "addedAt": "2026-10-24T17:13:00.464122Z",
     "addedBy": "github-actions"
   },
   {

@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **288**
+Total repositories: **292**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -282,9 +282,7 @@ Collected GitHub skill repository.
 
 ### [databricks-industry-solutions/vital-skills](https://github.com/databricks-industry-solutions/vital-skills)
 
-HLS solution accelerator steerage for Databricks. Routes a task to an existing databricks-industry-solutions accelerator and gives the precise next step - Pixels (DICOM medical imaging, OHIF viewer, DICOMweb, MONAI segmentation) and Genesis Workbench (protein folding and design, docking, ADMET, single-cell foundation models, variant calling, NVIDIA BioNeMo). Consult before building an imaging pipeline or biology model stack from scratch. For notebook single-cell analysis use sc-rnaseq; for de-identifying tables use phi-deidentifier.
-
-Example skill path: `skills/accelerators/SKILL.md`
+Collected GitHub skill repository.
 
 ### [dcc-mcp/dcc-mcp-paraview](https://github.com/dcc-mcp/dcc-mcp-paraview)
 
@@ -606,6 +604,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [MarbuelB/AI-Forge-Research-Edition](https://github.com/MarbuelB/AI-Forge-Research-Edition)
+
+Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.
+
+Example skill path: `skills/Anthropic/creative-design/algorithmic-art/SKILL.md`
+
 ### [Marshanda14816/agent-skills](https://github.com/Marshanda14816/agent-skills)
 
 Collected GitHub skill repository.
@@ -621,6 +625,12 @@ Collected GitHub skill repository.
 ### [mehdi-abedini/kian-nano](https://github.com/mehdi-abedini/kian-nano)
 
 Collected GitHub skill repository.
+
+### [mianaz/biomed-skills](https://github.com/mianaz/biomed-skills)
+
+Plan biomedical main and supplemental figures from a manuscript story and journal requirements, then assemble separate editable PowerPoint decks from individual panels. Use for figure storyboards, evidence inventories with missing-data placeholders, manuscript figure layout, and whole-figure export or visual review. Route single-panel plotting to scientific-plotting.
+
+Example skill path: `skills/figure-plan/SKILL.md`
 
 ### [MisterBrookT/paper-skills](https://github.com/MisterBrookT/paper-skills)
 
@@ -745,6 +755,12 @@ Collected GitHub skill repository.
 ### [OpenRaiser/NanoResearch](https://github.com/OpenRaiser/NanoResearch)
 
 Collected GitHub skill repository.
+
+### [Orinkle/qpcr-kit](https://github.com/Orinkle/qpcr-kit)
+
+用单文件 qpcr.html 做 qPCR 相对定量（ΔΔCt / Livak）与结果复核。当用户给出仪器导出的 qPCR 数据（Bio-Rad CFX、QuantStudio、ABI 7500、LightCycler，或自建 CSV/XLSX），要求"归一化、算倍数变化、做组间显著性检验、看 Ct 质量"，或要求核对一份已经算过的 qPCR 结果时使用。包含 96 孔板坐标还原、技术重复与生物学重复的区分、检验方法选择与判读规则。
+
+Example skill path: `kit/SKILL.md`
 
 ### [Osmosy/vector-gene](https://github.com/Osmosy/vector-gene)
 
@@ -904,15 +920,11 @@ Collected GitHub skill repository.
 
 ### [sleepinlava/abi-skills](https://github.com/sleepinlava/abi-skills)
 
-Develop or revise ABI bioinformatics workflow modules and plugins. Use when adding an ABI analysis type, integrating a published pipeline or CLI, changing a plugin DAG or tool set, or adding databases, models, references, containers, and other runtime resources. The developer chooses the workflow and versions, the agent fills in engineering details, every resource requires developer review, and the finished change receives an agent code review.
-
-Example skill path: `skills/abi-plugin-development/SKILL.md`
+Collected GitHub skill repository.
 
 ### [sologuy/biomolecular-3d-viewer](https://github.com/sologuy/biomolecular-3d-viewer)
 
-Render publication-grade 3D atomic close-up figures (.png) and standalone interactive 3Dmol.js Biomolecular Structure Viewer canvases (.html) from .pdb or .cif files, and automatically inspect inter-chain contacts, hydrogen bonds, salt bridges, and steric clashes. Use this skill when asked to visualize protein/antibody/peptide/ligand 3D structures, compare wild-type vs. mutant pockets in 3D, inspect binding interface distances or clashes, or build an interactive 3D structure viewer (Triggers: 3D structure, 3D viewer, Biomolecular Structure Viewer, pocket close-up, clash check, hydrogen bonds, salt bridges, 3dmol, 3D结构, 看结构, 3D画布, 结构可视化, 口袋特写, 碰撞检查, 氢键盐桥, PDB看图).
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [sounkou-bioinfo/pi-bio-agent](https://github.com/sounkou-bioinfo/pi-bio-agent)
 
@@ -985,6 +997,12 @@ Collected GitHub skill repository.
 ### [the8thday/AgenticPrism-SKILL](https://github.com/the8thday/AgenticPrism-SKILL)
 
 Collected GitHub skill repository.
+
+### [theadamafyouni-lgtm/polyscope-genomics](https://github.com/theadamafyouni-lgtm/polyscope-genomics)
+
+Infer the person's genetic ancestry from their genome, take their self-report, and surface any disagreement between the two without silently resolving it. Shared by select and interpret (ANC-1..ANC-6). Run after the door and before select, because select needs ancestry up front to choose a model.
+
+Example skill path: `agent/.claude/skills/ancestry/SKILL.md`
 
 ### [thetahealth/mirobody](https://github.com/thetahealth/mirobody)
 
