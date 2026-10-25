@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **292**
+Total repositories: **297**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -131,6 +131,12 @@ Collected GitHub skill repository.
 ### [baney75/GeneMachine](https://github.com/baney75/GeneMachine)
 
 Collected GitHub skill repository.
+
+### [BaslerLab/SMRTk](https://github.com/BaslerLab/SMRTk)
+
+Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.
+
+Example skill path: `skills/Anthropic/creative-design/algorithmic-art/SKILL.md`
 
 ### [bio-xyz/BioAgents](https://github.com/bio-xyz/BioAgents)
 
@@ -606,9 +612,7 @@ Collected GitHub skill repository.
 
 ### [MarbuelB/AI-Forge-Research-Edition](https://github.com/MarbuelB/AI-Forge-Research-Edition)
 
-Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.
-
-Example skill path: `skills/Anthropic/creative-design/algorithmic-art/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Marshanda14816/agent-skills](https://github.com/Marshanda14816/agent-skills)
 
@@ -617,6 +621,12 @@ Collected GitHub skill repository.
 ### [mateooo24/timework-skill](https://github.com/mateooo24/timework-skill)
 
 Collected GitHub skill repository.
+
+### [mdmanurung/mycelium-extra](https://github.com/mdmanurung/mycelium-extra)
+
+Test a plan's data assumptions against the actual sample-level table before an analysis runs, read-only. The plan's assumptions (required columns, cohort levels and row counts, unit of replication, pairing across timepoints, batch versus contrast nesting) go into a small JSON contract; a stdlib checker reports each mismatch as a structured alert with expected, observed, and evidence, and blocks on any failure of a coverage-list kind. Use when the user invokes mycelium-extra data-contract-check, when grill or a plan rests on properties of a metadata or sample table that nobody has verified, or before a statistical test whose validity depends on replication, pairing, or batch structure. Reads CSV/TSV tables and the `obs` of an `.h5ad` file (through h5py when it is installed); also compares keys, identifiers, or an `.h5ad` layer against independent evidence the plan names, and writes a machine-readable result; not for Seurat objects or checking code.
+
+Example skill path: `skills/data-contract-check/SKILL.md`
 
 ### [megana05082003/review-analyzer-skill](https://github.com/megana05082003/review-analyzer-skill)
 
@@ -628,9 +638,7 @@ Collected GitHub skill repository.
 
 ### [mianaz/biomed-skills](https://github.com/mianaz/biomed-skills)
 
-Plan biomedical main and supplemental figures from a manuscript story and journal requirements, then assemble separate editable PowerPoint decks from individual panels. Use for figure storyboards, evidence inventories with missing-data placeholders, manuscript figure layout, and whole-figure export or visual review. Route single-panel plotting to scientific-plotting.
-
-Example skill path: `skills/figure-plan/SKILL.md`
+Collected GitHub skill repository.
 
 ### [MisterBrookT/paper-skills](https://github.com/MisterBrookT/paper-skills)
 
@@ -651,6 +659,12 @@ Collected GitHub skill repository.
 ### [mumu-sci/amplicon-phylo-tree](https://github.com/mumu-sci/amplicon-phylo-tree)
 
 Collected GitHub skill repository.
+
+### [MuteJester/PyNCBI](https://github.com/MuteJester/PyNCBI)
+
+Search NCBI datasets and papers, inspect GEO sample metadata, resolve expression matrices, and retrieve sequence or study files with PyNCBI. Use for NCBI retrieval involving GEO accessions, PubMed/PMC, SRA, Gene, variants, taxonomy or assemblies; analysis of already-local data does not require this skill.
+
+Example skill path: `skills/pyncbi/SKILL.md`
 
 ### [mzoryy/hwpxskill](https://github.com/mzoryy/hwpxskill)
 
@@ -758,9 +772,7 @@ Collected GitHub skill repository.
 
 ### [Orinkle/qpcr-kit](https://github.com/Orinkle/qpcr-kit)
 
-用单文件 qpcr.html 做 qPCR 相对定量（ΔΔCt / Livak）与结果复核。当用户给出仪器导出的 qPCR 数据（Bio-Rad CFX、QuantStudio、ABI 7500、LightCycler，或自建 CSV/XLSX），要求"归一化、算倍数变化、做组间显著性检验、看 Ct 质量"，或要求核对一份已经算过的 qPCR 结果时使用。包含 96 孔板坐标还原、技术重复与生物学重复的区分、检验方法选择与判读规则。
-
-Example skill path: `kit/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Osmosy/vector-gene](https://github.com/Osmosy/vector-gene)
 
@@ -845,6 +857,12 @@ Collected GitHub skill repository.
 ### [richard-kim-79/archora-skills](https://github.com/richard-kim-79/archora-skills)
 
 Collected GitHub skill repository.
+
+### [RobinaMirbahar/antigravity-science-plugin-cookbook](https://github.com/RobinaMirbahar/antigravity-science-plugin-cookbook)
+
+Audits 3D protein coordinate files (.pdb, .cif, .mmcif) for C-alpha chain completeness, mean/median pLDDT or B-factor distribution, and disordered regions (< 50.0). Use whenever validating downloaded PDB or AlphaFold structures before docking, alignment, or 3D visualization.
+
+Example skill path: `plugins/bio-structural-qc/skills/structure-qc-audit/SKILL.md`
 
 ### [ruiwuniu/My-Academic-Skills](https://github.com/ruiwuniu/My-Academic-Skills)
 
@@ -934,6 +952,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [ssinder/bioinformatics-agent-skills](https://github.com/ssinder/bioinformatics-agent-skills)
+
+This skill should be used when running bulk RNA-seq differential expression analysis: FastQC/trimming, Salmon quantification, counts matrix construction, DESeq2 statistics, GO/KEGG enrichment and publication figures. 用于 bulk 转录组（RNA-seq）差异表达分析全流程。
+
+Example skill path: `skills/bulk-rnaseq/SKILL.md`
+
 ### [starvingarc/BRIDGE](https://github.com/starvingarc/BRIDGE)
 
 Collected GitHub skill repository.
@@ -1000,9 +1024,7 @@ Collected GitHub skill repository.
 
 ### [theadamafyouni-lgtm/polyscope-genomics](https://github.com/theadamafyouni-lgtm/polyscope-genomics)
 
-Infer the person's genetic ancestry from their genome, take their self-report, and surface any disagreement between the two without silently resolving it. Shared by select and interpret (ANC-1..ANC-6). Run after the door and before select, because select needs ancestry up front to choose a model.
-
-Example skill path: `agent/.claude/skills/ancestry/SKILL.md`
+Collected GitHub skill repository.
 
 ### [thetahealth/mirobody](https://github.com/thetahealth/mirobody)
 

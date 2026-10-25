@@ -144,6 +144,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "BaslerLab/SMRTk",
+    "cloneUrl": "https://github.com/BaslerLab/SMRTk.git",
+    "localPath": "open-source/BaslerLab/SMRTk",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/BaslerLab/SMRTk",
+    "addedAt": "2026-10-25T17:25:13.650057Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "BioSymphony/bioprospector",
     "cloneUrl": "https://github.com/BioSymphony/bioprospector.git",
     "localPath": "open-source/BioSymphony/bioprospector",
@@ -666,6 +675,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "MuteJester/PyNCBI",
+    "cloneUrl": "https://github.com/MuteJester/PyNCBI.git",
+    "localPath": "open-source/MuteJester/PyNCBI",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/MuteJester/PyNCBI",
+    "addedAt": "2026-10-25T17:26:24.864047Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Nonsteroidevangel872/research-writing-skill",
     "cloneUrl": "https://github.com/Nonsteroidevangel872/research-writing-skill.git",
     "localPath": "open-source/Nonsteroidevangel872/research-writing-skill",
@@ -762,6 +780,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/QuietFlare/clew",
     "addedAt": "2026-10-06T19:19:59.975777Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "RobinaMirbahar/antigravity-science-plugin-cookbook",
+    "cloneUrl": "https://github.com/RobinaMirbahar/antigravity-science-plugin-cookbook.git",
+    "localPath": "open-source/RobinaMirbahar/antigravity-science-plugin-cookbook",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/RobinaMirbahar/antigravity-science-plugin-cookbook",
+    "addedAt": "2026-10-25T17:25:24.099130Z",
     "addedBy": "github-actions"
   },
   {
@@ -1764,6 +1791,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "mdmanurung/mycelium-extra",
+    "cloneUrl": "https://github.com/mdmanurung/mycelium-extra.git",
+    "localPath": "open-source/mdmanurung/mycelium-extra",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/mdmanurung/mycelium-extra",
+    "addedAt": "2026-10-25T17:25:20.670936Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "megana05082003/review-analyzer-skill",
     "cloneUrl": "https://github.com/megana05082003/review-analyzer-skill.git",
     "localPath": "open-source/megana05082003/review-analyzer-skill",
@@ -2247,6 +2283,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/srikarjy/Biolab-mcp-server",
     "addedAt": "2026-10-03T17:46:37.243909Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "ssinder/bioinformatics-agent-skills",
+    "cloneUrl": "https://github.com/ssinder/bioinformatics-agent-skills.git",
+    "localPath": "open-source/ssinder/bioinformatics-agent-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/ssinder/bioinformatics-agent-skills",
+    "addedAt": "2026-10-25T17:26:22.856665Z",
     "addedBy": "github-actions"
   },
   {
