@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **297**
+Total repositories: **299**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -134,9 +134,7 @@ Collected GitHub skill repository.
 
 ### [BaslerLab/SMRTk](https://github.com/BaslerLab/SMRTk)
 
-Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.
-
-Example skill path: `skills/Anthropic/creative-design/algorithmic-art/SKILL.md`
+Collected GitHub skill repository.
 
 ### [bio-xyz/BioAgents](https://github.com/bio-xyz/BioAgents)
 
@@ -281,6 +279,12 @@ Collected GitHub skill repository.
 ### [Da1yuqin/StarPaper](https://github.com/Da1yuqin/StarPaper)
 
 Collected GitHub skill repository.
+
+### [darshak26/acmg-variant-curation](https://github.com/darshak26/acmg-variant-curation)
+
+Use when deriving ACMG codes for a variant from ClinVar, gnomAD, VEP and PubMed, or curating a VUS. Fetches all four sources live and prints the basis for every code.
+
+Example skill path: `SKILL.md`
 
 ### [databricks-industry-solutions/hls-skills](https://github.com/databricks-industry-solutions/hls-skills)
 
@@ -462,6 +466,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [jiangyuhan0318-July/figure-foundry](https://github.com/jiangyuhan0318-July/figure-foundry)
+
+Create and refine scientific data plots, method diagrams, and mixed research figures with traceable data, editable source, saved palettes, and inspection of the actual rendered output. Use for 科研绘图、实验结果图、论文架构图、机制图 and multi-panel figures.
+
+Example skill path: `skill/figure-foundry/SKILL.md`
+
 ### [jiazhenz026/SciStudio](https://github.com/jiazhenz026/SciStudio)
 
 Collected GitHub skill repository.
@@ -624,9 +634,7 @@ Collected GitHub skill repository.
 
 ### [mdmanurung/mycelium-extra](https://github.com/mdmanurung/mycelium-extra)
 
-Test a plan's data assumptions against the actual sample-level table before an analysis runs, read-only. The plan's assumptions (required columns, cohort levels and row counts, unit of replication, pairing across timepoints, batch versus contrast nesting) go into a small JSON contract; a stdlib checker reports each mismatch as a structured alert with expected, observed, and evidence, and blocks on any failure of a coverage-list kind. Use when the user invokes mycelium-extra data-contract-check, when grill or a plan rests on properties of a metadata or sample table that nobody has verified, or before a statistical test whose validity depends on replication, pairing, or batch structure. Reads CSV/TSV tables and the `obs` of an `.h5ad` file (through h5py when it is installed); also compares keys, identifiers, or an `.h5ad` layer against independent evidence the plan names, and writes a machine-readable result; not for Seurat objects or checking code.
-
-Example skill path: `skills/data-contract-check/SKILL.md`
+Collected GitHub skill repository.
 
 ### [megana05082003/review-analyzer-skill](https://github.com/megana05082003/review-analyzer-skill)
 
@@ -662,9 +670,7 @@ Collected GitHub skill repository.
 
 ### [MuteJester/PyNCBI](https://github.com/MuteJester/PyNCBI)
 
-Search NCBI datasets and papers, inspect GEO sample metadata, resolve expression matrices, and retrieve sequence or study files with PyNCBI. Use for NCBI retrieval involving GEO accessions, PubMed/PMC, SRA, Gene, variants, taxonomy or assemblies; analysis of already-local data does not require this skill.
-
-Example skill path: `skills/pyncbi/SKILL.md`
+Collected GitHub skill repository.
 
 ### [mzoryy/hwpxskill](https://github.com/mzoryy/hwpxskill)
 
@@ -860,9 +866,7 @@ Collected GitHub skill repository.
 
 ### [RobinaMirbahar/antigravity-science-plugin-cookbook](https://github.com/RobinaMirbahar/antigravity-science-plugin-cookbook)
 
-Audits 3D protein coordinate files (.pdb, .cif, .mmcif) for C-alpha chain completeness, mean/median pLDDT or B-factor distribution, and disordered regions (< 50.0). Use whenever validating downloaded PDB or AlphaFold structures before docking, alignment, or 3D visualization.
-
-Example skill path: `plugins/bio-structural-qc/skills/structure-qc-audit/SKILL.md`
+Collected GitHub skill repository.
 
 ### [ruiwuniu/My-Academic-Skills](https://github.com/ruiwuniu/My-Academic-Skills)
 
@@ -954,9 +958,7 @@ Collected GitHub skill repository.
 
 ### [ssinder/bioinformatics-agent-skills](https://github.com/ssinder/bioinformatics-agent-skills)
 
-This skill should be used when running bulk RNA-seq differential expression analysis: FastQC/trimming, Salmon quantification, counts matrix construction, DESeq2 statistics, GO/KEGG enrichment and publication figures. 用于 bulk 转录组（RNA-seq）差异表达分析全流程。
-
-Example skill path: `skills/bulk-rnaseq/SKILL.md`
+Collected GitHub skill repository.
 
 ### [starvingarc/BRIDGE](https://github.com/starvingarc/BRIDGE)
 

@@ -1350,6 +1350,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "darshak26/acmg-variant-curation",
+    "cloneUrl": "https://github.com/darshak26/acmg-variant-curation.git",
+    "localPath": "open-source/darshak26/acmg-variant-curation",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/darshak26/acmg-variant-curation",
+    "addedAt": "2026-10-26T19:45:29.670427Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "databricks-industry-solutions/hls-skills",
     "cloneUrl": "https://github.com/databricks-industry-solutions/hls-skills.git",
     "localPath": "open-source/databricks-industry-solutions/hls-skills",
@@ -1626,6 +1635,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/javrodriguez/bench-to-paper-skills",
     "addedAt": "2026-09-04T17:25:30.196144Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "jiangyuhan0318-July/figure-foundry",
+    "cloneUrl": "https://github.com/jiangyuhan0318-July/figure-foundry.git",
+    "localPath": "open-source/jiangyuhan0318-July/figure-foundry",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/jiangyuhan0318-July/figure-foundry",
+    "addedAt": "2026-10-26T19:46:11.490182Z",
     "addedBy": "github-actions"
   },
   {
