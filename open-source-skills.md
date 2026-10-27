@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **299**
+Total repositories: **300**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -282,9 +282,7 @@ Collected GitHub skill repository.
 
 ### [darshak26/acmg-variant-curation](https://github.com/darshak26/acmg-variant-curation)
 
-Use when deriving ACMG codes for a variant from ClinVar, gnomAD, VEP and PubMed, or curating a VUS. Fetches all four sources live and prints the basis for every code.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [databricks-industry-solutions/hls-skills](https://github.com/databricks-industry-solutions/hls-skills)
 
@@ -468,9 +466,7 @@ Collected GitHub skill repository.
 
 ### [jiangyuhan0318-July/figure-foundry](https://github.com/jiangyuhan0318-July/figure-foundry)
 
-Create and refine scientific data plots, method diagrams, and mixed research figures with traceable data, editable source, saved palettes, and inspection of the actual rendered output. Use for 科研绘图、实验结果图、论文架构图、机制图 and multi-panel figures.
-
-Example skill path: `skill/figure-foundry/SKILL.md`
+Collected GitHub skill repository.
 
 ### [jiazhenz026/SciStudio](https://github.com/jiazhenz026/SciStudio)
 
@@ -887,6 +883,12 @@ Collected GitHub skill repository.
 ### [ruthannepai-tech/therapeutic-program-architect](https://github.com/ruthannepai-tech/therapeutic-program-architect)
 
 Collected GitHub skill repository.
+
+### [sachinbkale27/label-image-mcp](https://github.com/sachinbkale27/label-image-mcp)
+
+Annotate images, including H&E histopathology slides, and turn them into training data with the Histopathology Annotation MCP server (label-image-mcp, Image Label at labels.sachin-kale.com). Use when the user wants to upload images or whole slides (SVS, NDPI, pyramidal TIFF), outline objects with Segment Anything / MedSAM, detect and measure nuclei (StarDist), type cells (HoVer-Net), check slide quality, normalize stain, fix or clean up annotations, share an annotated image, or export COCO JSON, YOLO or QuPath GeoJSON. Also use when the user mentions Image Label, labels.sachin-kale.com, or tools such as detect_nuclei, analyze_slide, segment_objects or export_annotations.
+
+Example skill path: `skills/label-image/SKILL.md`
 
 ### [Samuelkebede24/skill-conductor](https://github.com/Samuelkebede24/skill-conductor)
 
