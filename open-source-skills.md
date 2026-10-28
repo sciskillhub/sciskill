@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **300**
+Total repositories: **301**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -886,9 +886,7 @@ Collected GitHub skill repository.
 
 ### [sachinbkale27/label-image-mcp](https://github.com/sachinbkale27/label-image-mcp)
 
-Annotate images, including H&E histopathology slides, and turn them into training data with the Histopathology Annotation MCP server (label-image-mcp, Image Label at labels.sachin-kale.com). Use when the user wants to upload images or whole slides (SVS, NDPI, pyramidal TIFF), outline objects with Segment Anything / MedSAM, detect and measure nuclei (StarDist), type cells (HoVer-Net), check slide quality, normalize stain, fix or clean up annotations, share an annotated image, or export COCO JSON, YOLO or QuPath GeoJSON. Also use when the user mentions Image Label, labels.sachin-kale.com, or tools such as detect_nuclei, analyze_slide, segment_objects or export_annotations.
-
-Example skill path: `skills/label-image/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Samuelkebede24/skill-conductor](https://github.com/Samuelkebede24/skill-conductor)
 
@@ -1161,6 +1159,12 @@ Collected GitHub skill repository.
 ### [zacklecon/claude-skills](https://github.com/zacklecon/claude-skills)
 
 Collected GitHub skill repository.
+
+### [zararogers338-hash/OS-CXCL11-Atlas](https://github.com/zararogers338-hash/OS-CXCL11-Atlas)
+
+调度 OS-CXCL11 Atlas 公共数据科研项目，涵盖阶段门控、证据复核、分析规程、图表、稿件和本地图谱。适用于本仓库工作或明确复用这套科研流程的请求，不用于无关肿瘤或免疫治疗问答。
+
+Example skill path: `ai/locales/zh/skills/cxcl11-osteosarcoma-tme/SKILL.md`
 
 ### [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides)
 
