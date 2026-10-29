@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **301**
+Total repositories: **304**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -444,6 +444,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [irrrricardo/fig-cos](https://github.com/irrrricardo/fig-cos)
+
+Reconstruct scientific reference images as editable SVG and native PowerPoint. Default to local source-component tracing that preserves appearance, structure and layout; rebuild live text, frames and arrows separately. Also supports explicitly requested schematic design and host-generated asset assembly. Use for scientific diagrams, graphical abstracts, workflows and image-to-vector/PPT tasks, not statistical data plots or photo editing.
+
+Example skill path: `skills/fig-cos/SKILL.md`
+
 ### [jackspace/ClaudeSkillz](https://github.com/jackspace/ClaudeSkillz)
 
 Collected GitHub skill repository.
@@ -459,6 +465,12 @@ Collected GitHub skill repository.
 ### [javrodriguez/bench-to-paper-skills](https://github.com/javrodriguez/bench-to-paper-skills)
 
 Collected GitHub skill repository.
+
+### [JeongHyunsung/papercinema](https://github.com/JeongHyunsung/papercinema)
+
+Turn any CS/EE research paper into a scientifically verified, narrated, code-generated explainer film and slide figures, refined in a loop: a generator makes each cut, a fresh independent reviewer sees only the video and paper, the user joins every K rounds. Also audits such films.
+
+Example skill path: `skills/research-paper-film/SKILL.md`
 
 ### [JiahaoZhang-Public/ProtClaw](https://github.com/JiahaoZhang-Public/ProtClaw)
 
@@ -812,6 +824,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [pmall/drakkar](https://github.com/pmall/drakkar)
+
+Curation batch: publications, one or many, each curated by a curator agent, merged into batch files written after the user's go. Use when the user asks to curate publications; the prompt names them (one PMID, several, or a run's selected publications) and may name the batch directory.
+
+Example skill path: `curation/skills/curate/SKILL.md`
+
 ### [Potato-AI0815/Potato_Figure](https://github.com/Potato-AI0815/Potato_Figure)
 
 Collected GitHub skill repository.
@@ -1162,9 +1180,7 @@ Collected GitHub skill repository.
 
 ### [zararogers338-hash/OS-CXCL11-Atlas](https://github.com/zararogers338-hash/OS-CXCL11-Atlas)
 
-调度 OS-CXCL11 Atlas 公共数据科研项目，涵盖阶段门控、证据复核、分析规程、图表、稿件和本地图谱。适用于本仓库工作或明确复用这套科研流程的请求，不用于无关肿瘤或免疫治疗问答。
-
-Example skill path: `ai/locales/zh/skills/cxcl11-osteosarcoma-tme/SKILL.md`
+Collected GitHub skill repository.
 
 ### [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides)
 

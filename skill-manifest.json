@@ -450,6 +450,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "JeongHyunsung/papercinema",
+    "cloneUrl": "https://github.com/JeongHyunsung/papercinema.git",
+    "localPath": "open-source/JeongHyunsung/papercinema",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/JeongHyunsung/papercinema",
+    "addedAt": "2026-10-29T19:27:23.076317Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "JiahaoZhang-Public/ProtClaw",
     "cloneUrl": "https://github.com/JiahaoZhang-Public/ProtClaw.git",
     "localPath": "open-source/JiahaoZhang-Public/ProtClaw",
@@ -1611,6 +1620,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "irrrricardo/fig-cos",
+    "cloneUrl": "https://github.com/irrrricardo/fig-cos.git",
+    "localPath": "open-source/irrrricardo/fig-cos",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/irrrricardo/fig-cos",
+    "addedAt": "2026-10-29T19:27:28.396121Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "jackspace/ClaudeSkillz",
     "cloneUrl": "https://github.com/jackspace/ClaudeSkillz.git",
     "localPath": "open-source/jackspace/ClaudeSkillz",
@@ -2130,6 +2148,15 @@
     "defaultBranch": "master",
     "upstreamUrl": "https://github.com/pmall/curation",
     "addedAt": "2026-10-22T18:17:17.237221Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "pmall/drakkar",
+    "cloneUrl": "https://github.com/pmall/drakkar.git",
+    "localPath": "open-source/pmall/drakkar",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/pmall/drakkar",
+    "addedAt": "2026-10-29T19:25:58.881360Z",
     "addedBy": "github-actions"
   },
   {
