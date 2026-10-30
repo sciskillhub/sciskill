@@ -405,6 +405,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "GuoZheng-de-BaBa/nursing-research-skills",
+    "cloneUrl": "https://github.com/GuoZheng-de-BaBa/nursing-research-skills.git",
+    "localPath": "open-source/GuoZheng-de-BaBa/nursing-research-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/GuoZheng-de-BaBa/nursing-research-skills",
+    "addedAt": "2026-10-30T19:01:59.385276Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "GusWan58/dataclaw",
     "cloneUrl": "https://github.com/GusWan58/dataclaw.git",
     "localPath": "open-source/GusWan58/dataclaw",
@@ -690,6 +699,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/MuteJester/PyNCBI",
     "addedAt": "2026-10-25T17:26:24.864047Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "NIAGADS/open-access-service",
+    "cloneUrl": "https://github.com/NIAGADS/open-access-service.git",
+    "localPath": "open-source/NIAGADS/open-access-service",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/NIAGADS/open-access-service",
+    "addedAt": "2026-10-30T19:00:04.634867Z",
     "addedBy": "github-actions"
   },
   {
@@ -2346,6 +2364,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/ssinder/bioinformatics-agent-skills",
     "addedAt": "2026-10-25T17:26:22.856665Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "sskaye/forgegraph",
+    "cloneUrl": "https://github.com/sskaye/forgegraph.git",
+    "localPath": "open-source/sskaye/forgegraph",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/sskaye/forgegraph",
+    "addedAt": "2026-10-30T19:01:48.898148Z",
     "addedBy": "github-actions"
   },
   {

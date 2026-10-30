@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **304**
+Total repositories: **307**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -404,6 +404,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [GuoZheng-de-BaBa/nursing-research-skills](https://github.com/GuoZheng-de-BaBa/nursing-research-skills)
+
+帮助已有研究材料的用户起草或修订护理横断面论文。根据指定的研究方案、变量说明、已确认分析结果和稿件，组织方法、结果、讨论与摘要，输出中英稿及作者核实清单；核对样本、模型和图表是否一致。不把计划当结果，也不代替统计分析或作者确认。
+
+Example skill path: `skills/nursing-cross-sectional-writing/SKILL.md`
+
 ### [GusWan58/dataclaw](https://github.com/GusWan58/dataclaw)
 
 Collected GitHub skill repository.
@@ -446,9 +452,7 @@ Collected GitHub skill repository.
 
 ### [irrrricardo/fig-cos](https://github.com/irrrricardo/fig-cos)
 
-Reconstruct scientific reference images as editable SVG and native PowerPoint. Default to local source-component tracing that preserves appearance, structure and layout; rebuild live text, frames and arrows separately. Also supports explicitly requested schematic design and host-generated asset assembly. Use for scientific diagrams, graphical abstracts, workflows and image-to-vector/PPT tasks, not statistical data plots or photo editing.
-
-Example skill path: `skills/fig-cos/SKILL.md`
+Collected GitHub skill repository.
 
 ### [jackspace/ClaudeSkillz](https://github.com/jackspace/ClaudeSkillz)
 
@@ -468,9 +472,7 @@ Collected GitHub skill repository.
 
 ### [JeongHyunsung/papercinema](https://github.com/JeongHyunsung/papercinema)
 
-Turn any CS/EE research paper into a scientifically verified, narrated, code-generated explainer film and slide figures, refined in a loop: a generator makes each cut, a fresh independent reviewer sees only the video and paper, the user joins every K rounds. Also audits such films.
-
-Example skill path: `skills/research-paper-film/SKILL.md`
+Collected GitHub skill repository.
 
 ### [JiahaoZhang-Public/ProtClaw](https://github.com/JiahaoZhang-Public/ProtClaw)
 
@@ -700,6 +702,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [NIAGADS/open-access-service](https://github.com/NIAGADS/open-access-service)
+
+Implement or revise code in this repository using its established standards, utilities, models, and performance patterns. Use for coding tasks.
+
+Example skill path: `.agents/skills/project-code-review/SKILL.md`
+
 ### [nihaoWX/svg_grid](https://github.com/nihaoWX/svg_grid)
 
 Collected GitHub skill repository.
@@ -826,9 +834,7 @@ Collected GitHub skill repository.
 
 ### [pmall/drakkar](https://github.com/pmall/drakkar)
 
-Curation batch: publications, one or many, each curated by a curator agent, merged into batch files written after the user's go. Use when the user asks to curate publications; the prompt names them (one PMID, several, or a run's selected publications) and may name the batch directory.
-
-Example skill path: `curation/skills/curate/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Potato-AI0815/Potato_Figure](https://github.com/Potato-AI0815/Potato_Figure)
 
@@ -977,6 +983,12 @@ Collected GitHub skill repository.
 ### [ssinder/bioinformatics-agent-skills](https://github.com/ssinder/bioinformatics-agent-skills)
 
 Collected GitHub skill repository.
+
+### [sskaye/forgegraph](https://github.com/sskaye/forgegraph)
+
+Creates a graph from a DataFrame with the ForgeGraph library. Select a graph type, theme and format; design the graph, render it, then iterate until it meets the request and is a good visualization of the data. Use this skill whenever the user asks you to make a graph, plot, multi-panel graph, or dashboard, or asks a question about ForgeGraph.
+
+Example skill path: `src/forgegraph/skill/forgegraph/SKILL.md`
 
 ### [starvingarc/BRIDGE](https://github.com/starvingarc/BRIDGE)
 
