@@ -2286,6 +2286,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "ryanbihai/haola-checkup-mcp",
+    "cloneUrl": "https://github.com/ryanbihai/haola-checkup-mcp.git",
+    "localPath": "open-source/ryanbihai/haola-checkup-mcp",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/ryanbihai/haola-checkup-mcp",
+    "addedAt": "2026-10-31T18:12:37.514726Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "sachinbkale27/label-image-mcp",
     "cloneUrl": "https://github.com/sachinbkale27/label-image-mcp.git",
     "localPath": "open-source/sachinbkale27/label-image-mcp",

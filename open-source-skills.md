@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **307**
+Total repositories: **308**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -406,9 +406,7 @@ Collected GitHub skill repository.
 
 ### [GuoZheng-de-BaBa/nursing-research-skills](https://github.com/GuoZheng-de-BaBa/nursing-research-skills)
 
-帮助已有研究材料的用户起草或修订护理横断面论文。根据指定的研究方案、变量说明、已确认分析结果和稿件，组织方法、结果、讨论与摘要，输出中英稿及作者核实清单；核对样本、模型和图表是否一致。不把计划当结果，也不代替统计分析或作者确认。
-
-Example skill path: `skills/nursing-cross-sectional-writing/SKILL.md`
+Collected GitHub skill repository.
 
 ### [GusWan58/dataclaw](https://github.com/GusWan58/dataclaw)
 
@@ -704,9 +702,7 @@ Collected GitHub skill repository.
 
 ### [NIAGADS/open-access-service](https://github.com/NIAGADS/open-access-service)
 
-Implement or revise code in this repository using its established standards, utilities, models, and performance patterns. Use for coding tasks.
-
-Example skill path: `.agents/skills/project-code-review/SKILL.md`
+Collected GitHub skill repository.
 
 ### [nihaoWX/svg_grid](https://github.com/nihaoWX/svg_grid)
 
@@ -908,6 +904,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [ryanbihai/haola-checkup-mcp](https://github.com/ryanbihai/haola-checkup-mcp)
+
+好啦体检（haola-pe）企业团检与员工体检报价。HR 安排员工体检、做福利体检、年度体检采购、体检询价时使用，可按人均预算出多档团检套餐，逐档列出每类人群的体检项目与金额，并说明门店覆盖范围；涉及合同与发票转商务对接。后端为好啦体检 MCP 服务。
+
+Example skill path: `skills/corporate-checkup-quote/SKILL.md`
+
 ### [sachinbkale27/label-image-mcp](https://github.com/sachinbkale27/label-image-mcp)
 
 Collected GitHub skill repository.
@@ -986,9 +988,7 @@ Collected GitHub skill repository.
 
 ### [sskaye/forgegraph](https://github.com/sskaye/forgegraph)
 
-Creates a graph from a DataFrame with the ForgeGraph library. Select a graph type, theme and format; design the graph, render it, then iterate until it meets the request and is a good visualization of the data. Use this skill whenever the user asks you to make a graph, plot, multi-panel graph, or dashboard, or asks a question about ForgeGraph.
-
-Example skill path: `src/forgegraph/skill/forgegraph/SKILL.md`
+Collected GitHub skill repository.
 
 ### [starvingarc/BRIDGE](https://github.com/starvingarc/BRIDGE)
 
