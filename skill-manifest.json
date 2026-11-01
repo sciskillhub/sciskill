@@ -153,6 +153,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "Beijing-Haola-Tech/haola-checkup-mcp",
+    "cloneUrl": "https://github.com/Beijing-Haola-Tech/haola-checkup-mcp.git",
+    "localPath": "open-source/Beijing-Haola-Tech/haola-checkup-mcp",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Beijing-Haola-Tech/haola-checkup-mcp",
+    "addedAt": "2026-11-01T18:49:03.852865Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "BioSymphony/bioprospector",
     "cloneUrl": "https://github.com/BioSymphony/bioprospector.git",
     "localPath": "open-source/BioSymphony/bioprospector",
@@ -330,6 +339,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/Da1yuqin/StarPaper",
     "addedAt": "2026-10-12T22:02:32.910269Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "DaXuanGarden/daxuan-figure-router",
+    "cloneUrl": "https://github.com/DaXuanGarden/daxuan-figure-router.git",
+    "localPath": "open-source/DaXuanGarden/daxuan-figure-router",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/DaXuanGarden/daxuan-figure-router",
+    "addedAt": "2026-11-01T18:47:56.194566Z",
     "addedBy": "github-actions"
   },
   {
@@ -1467,6 +1485,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "duyunzhoudyz/dyz-med-paper-skills",
+    "cloneUrl": "https://github.com/duyunzhoudyz/dyz-med-paper-skills.git",
+    "localPath": "open-source/duyunzhoudyz/dyz-med-paper-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/duyunzhoudyz/dyz-med-paper-skills",
+    "addedAt": "2026-11-01T18:48:36.026458Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "eamag/papers2dataset",
     "cloneUrl": "https://github.com/eamag/papers2dataset.git",
     "localPath": "open-source/eamag/papers2dataset",
@@ -2517,6 +2544,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/thetahealth/mirobody-rare",
     "addedAt": "2026-10-02T19:00:27.877951Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "tingtmu/Seq-Unit-01",
+    "cloneUrl": "https://github.com/tingtmu/Seq-Unit-01.git",
+    "localPath": "open-source/tingtmu/Seq-Unit-01",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/tingtmu/Seq-Unit-01",
+    "addedAt": "2026-11-01T18:46:07.745180Z",
     "addedBy": "github-actions"
   },
   {
