@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **312**
+Total repositories: **315**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -138,9 +138,7 @@ Collected GitHub skill repository.
 
 ### [Beijing-Haola-Tech/haola-checkup-mcp](https://github.com/Beijing-Haola-Tech/haola-checkup-mcp)
 
-好啦体检（haola-pe）企业团检与员工体检报价。HR 安排员工体检、做福利体检、年度体检采购、体检询价时使用，可按人均预算出多档团检套餐，逐档列出每类人群的体检项目与金额，并说明门店覆盖范围；涉及合同与发票转商务对接。后端为好啦体检 MCP 服务。
-
-Example skill path: `skills/corporate-checkup-quote/SKILL.md`
+Collected GitHub skill repository.
 
 ### [bio-xyz/BioAgents](https://github.com/bio-xyz/BioAgents)
 
@@ -286,6 +284,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Daisy-achun/Daisy-paper-framework-skill](https://github.com/Daisy-achun/Daisy-paper-framework-skill)
+
+Create or refine publication-ready computer-science paper framework, system, pipeline, algorithm, and method diagrams. Use with a paper Method, system description, algorithm, reference figure, or existing PPT across systems, software engineering, algorithms, databases, networking, security, distributed computing, HCI, and AI/ML/CV. Produce an editable PowerPoint figure with optional visual directions and PDF/PNG/TIFF exports. Do not use for decorative infographics or generic slide styling without a paper method.
+
+Example skill path: `.agents/skills/paper-architecture-diagram/SKILL.md`
+
 ### [darshak26/acmg-variant-curation](https://github.com/darshak26/acmg-variant-curation)
 
 Collected GitHub skill repository.
@@ -300,9 +304,7 @@ Collected GitHub skill repository.
 
 ### [DaXuanGarden/daxuan-figure-router](https://github.com/DaXuanGarden/daxuan-figure-router)
 
-为科研绘图和改图选择、协调本机已安装的技能。当不知道该用哪个绘图 skill、需要选图型、改已有图、处理领域图或组合多个绘图能力时使用；保留用户指定技能、现有代码和语言。明确工具的简单修改可直接执行，无需重新选型。
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [dcc-mcp/dcc-mcp-paraview](https://github.com/dcc-mcp/dcc-mcp-paraview)
 
@@ -342,9 +344,7 @@ Collected GitHub skill repository.
 
 ### [duyunzhoudyz/dyz-med-paper-skills](https://github.com/duyunzhoudyz/dyz-med-paper-skills)
 
-从已完成正文和已核实结果生成或修订医学论文标题、结构化摘要与关键词，并按目标期刊当前作者须知核对 分节、字数和必报信息。当用户要求写摘要、压缩摘要、起学术标题或制作中英双语摘要时使用；不从缺失正文 中编造结果，也不把内置期刊配置当作实时官方要求。 Use for medical manuscript titles, structured abstracts and bilingual abstracts.
-
-Example skill path: `dyz-med-abstract/SKILL.md`
+Collected GitHub skill repository.
 
 ### [eamag/papers2dataset](https://github.com/eamag/papers2dataset)
 
@@ -978,6 +978,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [sidiangongyuan/paper-figure-to-figma](https://github.com/sidiangongyuan/paper-figure-to-figma)
+
+Reconstruct research-figure images as editable Figma artwork and revise existing reconstructions. Discover connected Figma tools to draw, review and export; works without a generation prompt or VLM API.
+
+Example skill path: `.agents/skills/paper-figure-to-figma/SKILL.md`
+
 ### [SL-Mar/science-skills](https://github.com/SL-Mar/science-skills)
 
 Collected GitHub skill repository.
@@ -1009,6 +1015,12 @@ Collected GitHub skill repository.
 ### [starvingarc/BRIDGE](https://github.com/starvingarc/BRIDGE)
 
 Collected GitHub skill repository.
+
+### [supaqwestil/scientific-editorial-skill](https://github.com/supaqwestil/scientific-editorial-skill)
+
+Create Swiss Scientific Editorial visual lessons, especially for mathematics, ML and LLMs, with sourced qualitative support for biology, natural sciences and other subjects. Use for interactive explanations of calculations, mechanisms, structures, comparisons or evidence, or when Scientific Editorial is requested. Not for generic dashboards or decorative imagery.
+
+Example skill path: `SKILL.md`
 
 ### [SURFLIN2030/swing-skills](https://github.com/SURFLIN2030/swing-skills)
 
@@ -1084,9 +1096,7 @@ Collected GitHub skill repository.
 
 ### [tingtmu/Seq-Unit-01](https://github.com/tingtmu/Seq-Unit-01)
 
-Implement tasks from an OpenSpec change. Use when the user wants to start implementing, continue implementation, or work through tasks. Also use when the user says "openspec apply", "opsx apply", or "openspec implement".
-
-Example skill path: `.agents/skills/openspec-apply-change/SKILL.md`
+Collected GitHub skill repository.
 
 ### [toohamster/sftp-cc](https://github.com/toohamster/sftp-cc)
 
