@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **315**
+Total repositories: **318**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -107,6 +107,12 @@ Collected GitHub skill repository.
 ### [arrizabalagags-png/Voltpeer-skills](https://github.com/arrizabalagags-png/Voltpeer-skills)
 
 Collected GitHub skill repository.
+
+### [aru0988/research-figure-studio](https://github.com/aru0988/research-figure-studio)
+
+Create and iteratively improve editable scientific method diagrams, experimental workflows and result charts from descriptions, code, reference figures, and screenshot feedback. Use for research-figure design, scientific palettes, process and structure diagrams, 科研绘图、论文配图、配色优化 and layout corrections. Produces vector artwork and reproducible drawing code.
+
+Example skill path: `skills/research-figure-studio/SKILL.md`
 
 ### [AsadJaved66/Web-Skills-Protocol](https://github.com/AsadJaved66/Web-Skills-Protocol)
 
@@ -284,11 +290,21 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Daisy-achun/Daisy-fig-lookpack-skill](https://github.com/Daisy-achun/Daisy-fig-lookpack-skill)
+
+Maintain and apply the Daisy pastel look-pack system for CS paper Fig.1 / method flowcharts (构图×观感). Use when extending looks, locking a style pack from Method structure, or drawing framework/pipeline figures with the fig-lookpack grammar: stage bands, modular rails, dual-stream, agent panels. Enforces ≥10pt type, true math subscripts, no nested white boxes, same-source SVG+PPTX. Prefer this skill for style-pack work; for multi-host install of the draw-focused release, see Daisy-paper-diagram-skill.
+
+Example skill path: `SKILL.md`
+
+### [Daisy-achun/Daisy-paper-diagram-skill](https://github.com/Daisy-achun/Daisy-paper-diagram-skill)
+
+Draw publication-ready computer-science paper framework, pipeline, system, and method figures (论文流程图 / Fig.1 / method diagram). Use for any request to draw, redraw, polish, or export such figures. Enforces clear visual grammar: large readable type, no text/image overlap, true math subscripts, accurate flowchart chips, editable PPTX — not low-quality demos or flattened screenshots. Composition follows the Method text; do not force any single canned layout. Do not use for decorative infographics or generic slide styling without a paper method.
+
+Example skill path: `.agents/skills/paper-framework-diagram/SKILL.md`
+
 ### [Daisy-achun/Daisy-paper-framework-skill](https://github.com/Daisy-achun/Daisy-paper-framework-skill)
 
-Create or refine publication-ready computer-science paper framework, system, pipeline, algorithm, and method diagrams. Use with a paper Method, system description, algorithm, reference figure, or existing PPT across systems, software engineering, algorithms, databases, networking, security, distributed computing, HCI, and AI/ML/CV. Produce an editable PowerPoint figure with optional visual directions and PDF/PNG/TIFF exports. Do not use for decorative infographics or generic slide styling without a paper method.
-
-Example skill path: `.agents/skills/paper-architecture-diagram/SKILL.md`
+Collected GitHub skill repository.
 
 ### [darshak26/acmg-variant-curation](https://github.com/darshak26/acmg-variant-curation)
 
@@ -980,9 +996,7 @@ Collected GitHub skill repository.
 
 ### [sidiangongyuan/paper-figure-to-figma](https://github.com/sidiangongyuan/paper-figure-to-figma)
 
-Reconstruct research-figure images as editable Figma artwork and revise existing reconstructions. Discover connected Figma tools to draw, review and export; works without a generation prompt or VLM API.
-
-Example skill path: `.agents/skills/paper-figure-to-figma/SKILL.md`
+Collected GitHub skill repository.
 
 ### [SL-Mar/science-skills](https://github.com/SL-Mar/science-skills)
 
@@ -1018,9 +1032,7 @@ Collected GitHub skill repository.
 
 ### [supaqwestil/scientific-editorial-skill](https://github.com/supaqwestil/scientific-editorial-skill)
 
-Create Swiss Scientific Editorial visual lessons, especially for mathematics, ML and LLMs, with sourced qualitative support for biology, natural sciences and other subjects. Use for interactive explanations of calculations, mechanisms, structures, comparisons or evidence, or when Scientific Editorial is requested. Not for generic dashboards or decorative imagery.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [SURFLIN2030/swing-skills](https://github.com/SURFLIN2030/swing-skills)
 

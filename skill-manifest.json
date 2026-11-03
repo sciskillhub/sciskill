@@ -351,6 +351,24 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "Daisy-achun/Daisy-fig-lookpack-skill",
+    "cloneUrl": "https://github.com/Daisy-achun/Daisy-fig-lookpack-skill.git",
+    "localPath": "open-source/Daisy-achun/Daisy-fig-lookpack-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Daisy-achun/Daisy-fig-lookpack-skill",
+    "addedAt": "2026-11-03T20:27:43.100420Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "Daisy-achun/Daisy-paper-diagram-skill",
+    "cloneUrl": "https://github.com/Daisy-achun/Daisy-paper-diagram-skill.git",
+    "localPath": "open-source/Daisy-achun/Daisy-paper-diagram-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Daisy-achun/Daisy-paper-diagram-skill",
+    "addedAt": "2026-11-03T20:27:46.238372Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Daisy-achun/Daisy-paper-framework-skill",
     "cloneUrl": "https://github.com/Daisy-achun/Daisy-paper-framework-skill.git",
     "localPath": "open-source/Daisy-achun/Daisy-paper-framework-skill",
@@ -1230,6 +1248,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/arrizabalagags-png/Voltpeer-skills",
     "addedAt": "2026-10-01T19:19:34.875100Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "aru0988/research-figure-studio",
+    "cloneUrl": "https://github.com/aru0988/research-figure-studio.git",
+    "localPath": "open-source/aru0988/research-figure-studio",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/aru0988/research-figure-studio",
+    "addedAt": "2026-11-03T20:27:47.787406Z",
     "addedBy": "github-actions"
   },
   {
