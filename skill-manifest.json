@@ -450,6 +450,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "Grady10086/Prismatica",
+    "cloneUrl": "https://github.com/Grady10086/Prismatica.git",
+    "localPath": "open-source/Grady10086/Prismatica",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Grady10086/Prismatica",
+    "addedAt": "2026-11-04T20:43:34.876213Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "GuoZheng-de-BaBa/nursing-research-skills",
     "cloneUrl": "https://github.com/GuoZheng-de-BaBa/nursing-research-skills.git",
     "localPath": "open-source/GuoZheng-de-BaBa/nursing-research-skills",
@@ -1680,6 +1689,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/hubayirp/agentic-science",
     "addedAt": "2026-05-21T16:40:35.717852Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "hujizhou35-cmd/MGA-Designer",
+    "cloneUrl": "https://github.com/hujizhou35-cmd/MGA-Designer.git",
+    "localPath": "open-source/hujizhou35-cmd/MGA-Designer",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/hujizhou35-cmd/MGA-Designer",
+    "addedAt": "2026-11-04T20:43:36.566713Z",
     "addedBy": "github-actions"
   },
   {

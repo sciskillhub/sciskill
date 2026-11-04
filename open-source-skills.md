@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **318**
+Total repositories: **320**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -110,9 +110,7 @@ Collected GitHub skill repository.
 
 ### [aru0988/research-figure-studio](https://github.com/aru0988/research-figure-studio)
 
-Create and iteratively improve editable scientific method diagrams, experimental workflows and result charts from descriptions, code, reference figures, and screenshot feedback. Use for research-figure design, scientific palettes, process and structure diagrams, 科研绘图、论文配图、配色优化 and layout corrections. Produces vector artwork and reproducible drawing code.
-
-Example skill path: `skills/research-figure-studio/SKILL.md`
+Collected GitHub skill repository.
 
 ### [AsadJaved66/Web-Skills-Protocol](https://github.com/AsadJaved66/Web-Skills-Protocol)
 
@@ -292,15 +290,11 @@ Collected GitHub skill repository.
 
 ### [Daisy-achun/Daisy-fig-lookpack-skill](https://github.com/Daisy-achun/Daisy-fig-lookpack-skill)
 
-Maintain and apply the Daisy pastel look-pack system for CS paper Fig.1 / method flowcharts (构图×观感). Use when extending looks, locking a style pack from Method structure, or drawing framework/pipeline figures with the fig-lookpack grammar: stage bands, modular rails, dual-stream, agent panels. Enforces ≥10pt type, true math subscripts, no nested white boxes, same-source SVG+PPTX. Prefer this skill for style-pack work; for multi-host install of the draw-focused release, see Daisy-paper-diagram-skill.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [Daisy-achun/Daisy-paper-diagram-skill](https://github.com/Daisy-achun/Daisy-paper-diagram-skill)
 
-Draw publication-ready computer-science paper framework, pipeline, system, and method figures (论文流程图 / Fig.1 / method diagram). Use for any request to draw, redraw, polish, or export such figures. Enforces clear visual grammar: large readable type, no text/image overlap, true math subscripts, accurate flowchart chips, editable PPTX — not low-quality demos or flattened screenshots. Composition follows the Method text; do not force any single canned layout. Do not use for decorative infographics or generic slide styling without a paper method.
-
-Example skill path: `.agents/skills/paper-framework-diagram/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Daisy-achun/Daisy-paper-framework-skill](https://github.com/Daisy-achun/Daisy-paper-framework-skill)
 
@@ -434,6 +428,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Grady10086/Prismatica](https://github.com/Grady10086/Prismatica)
+
+Paper color (配色) palette built from spot-color book colors (such as PANTONE®), with light-to-dark ramps and checks. Use when registering color book colors (.acb/.aco/.ase files, a self-built pantone-cli index, matching screenshots or HEX to a book, collection exports), proposing harmonious hues for a palette, choosing or applying colors for a paper figure (matplotlib, pgfplots), mapping ordered conditions (model size, strength) to shades, coloring boxes and arrows in a method diagram (TikZ, draw.io, PowerPoint, Figma), coloring LaTeX tables, links or highlighted text, or checking a paper for off-palette colors. Also when scientific-figure-making needs colors: this skill owns its palette.
+
+Example skill path: `skills/paper-colors/SKILL.md`
+
 ### [guhou-hvi/elsevier-figure-style](https://github.com/guhou-hvi/elsevier-figure-style)
 
 Collected GitHub skill repository.
@@ -469,6 +469,12 @@ Collected GitHub skill repository.
 ### [hubayirp/agentic-science](https://github.com/hubayirp/agentic-science)
 
 Collected GitHub skill repository.
+
+### [hujizhou35-cmd/MGA-Designer](https://github.com/hujizhou35-cmd/MGA-Designer)
+
+Design or revise a medical or biomedical manuscript's graphical abstract. Review the research and published examples, obtain author approval for content, layout and omissions, then draw and check editable vector artwork in Adobe Illustrator via MCP.
+
+Example skill path: `skills/mga-designer/SKILL.md`
 
 ### [HututuWorks/academic-figure](https://github.com/HututuWorks/academic-figure)
 
