@@ -430,9 +430,7 @@ Collected GitHub skill repository.
 
 ### [Grady10086/Prismatica](https://github.com/Grady10086/Prismatica)
 
-Paper color (配色) palette built from spot-color book colors (such as PANTONE®), with light-to-dark ramps and checks. Use when registering color book colors (.acb/.aco/.ase files, a self-built pantone-cli index, matching screenshots or HEX to a book, collection exports), proposing harmonious hues for a palette, choosing or applying colors for a paper figure (matplotlib, pgfplots), mapping ordered conditions (model size, strength) to shades, coloring boxes and arrows in a method diagram (TikZ, draw.io, PowerPoint, Figma), coloring LaTeX tables, links or highlighted text, or checking a paper for off-palette colors. Also when scientific-figure-making needs colors: this skill owns its palette.
-
-Example skill path: `skills/paper-colors/SKILL.md`
+Collected GitHub skill repository.
 
 ### [guhou-hvi/elsevier-figure-style](https://github.com/guhou-hvi/elsevier-figure-style)
 
@@ -472,9 +470,7 @@ Collected GitHub skill repository.
 
 ### [hujizhou35-cmd/MGA-Designer](https://github.com/hujizhou35-cmd/MGA-Designer)
 
-Design or revise a medical or biomedical manuscript's graphical abstract. Review the research and published examples, obtain author approval for content, layout and omissions, then draw and check editable vector artwork in Adobe Illustrator via MCP.
-
-Example skill path: `skills/mga-designer/SKILL.md`
+Collected GitHub skill repository.
 
 ### [HututuWorks/academic-figure](https://github.com/HututuWorks/academic-figure)
 
