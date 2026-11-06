@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **320**
+Total repositories: **322**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -143,6 +143,12 @@ Collected GitHub skill repository.
 ### [Beijing-Haola-Tech/haola-checkup-mcp](https://github.com/Beijing-Haola-Tech/haola-checkup-mcp)
 
 Collected GitHub skill repository.
+
+### [bijanshdevops/scientific-agent-skills](https://github.com/bijanshdevops/scientific-agent-skills)
+
+How to use the Adaptyv Bio Foundry API and Python SDK for protein experiment design, submission, and results retrieval. Use this skill whenever the user mentions Adaptyv, Foundry API, protein binding assays, protein screening experiments, BLI/SPR assays, thermostability assays, or wants to submit protein sequences for experimental characterization. Also trigger when code imports `adaptyv`, `adaptyv_sdk`, or `FoundryClient`, or references `foundry-api-public.adaptyvbio.com`.
+
+Example skill path: `skills/adaptyv/SKILL.md`
 
 ### [bio-xyz/BioAgents](https://github.com/bio-xyz/BioAgents)
 
@@ -623,6 +629,12 @@ Collected GitHub skill repository.
 ### [LabOnoM/AROS_Pipeline_Factory](https://github.com/LabOnoM/AROS_Pipeline_Factory)
 
 Collected GitHub skill repository.
+
+### [langxin11/maniplot](https://github.com/langxin11/maniplot)
+
+Publication-ready scientific plotting skill for Robotic Manipulation (IEEE ICRA/IROS/RA-L/T-RO, CoRL/RSS, and Chinese Master's Thesis). Activate this skill whenever the user asks to plot data, visualize experimental CSV/JSON/NPZ/ROS logs, analyze controller or learning performance, or create/refine figures.
+
+Example skill path: `skills/maniplot/SKILL.md`
 
 ### [LawrenceRiver/genlike-scientific-svg-skill](https://github.com/LawrenceRiver/genlike-scientific-svg-skill)
 

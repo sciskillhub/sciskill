@@ -1296,6 +1296,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "bijanshdevops/scientific-agent-skills",
+    "cloneUrl": "https://github.com/bijanshdevops/scientific-agent-skills.git",
+    "localPath": "open-source/bijanshdevops/scientific-agent-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/bijanshdevops/scientific-agent-skills",
+    "addedAt": "2026-11-06T20:18:12.588872Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "bio-xyz/BioAgents",
     "cloneUrl": "https://github.com/bio-xyz/BioAgents.git",
     "localPath": "open-source/bio-xyz/BioAgents",
@@ -1870,6 +1879,15 @@
     "upstreamUrl": "https://github.com/kimimgo/viznoir",
     "addedAt": "2026-04-11T17:13:46.307143Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "langxin11/maniplot",
+    "cloneUrl": "https://github.com/langxin11/maniplot.git",
+    "localPath": "open-source/langxin11/maniplot",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/langxin11/maniplot",
+    "addedAt": "2026-11-06T20:19:08.408698Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "leo-cheung-itlger/rmbase-agent-skill",
