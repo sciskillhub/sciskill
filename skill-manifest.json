@@ -900,6 +900,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "SPYfighting/deepseek-science",
+    "cloneUrl": "https://github.com/SPYfighting/deepseek-science.git",
+    "localPath": "open-source/SPYfighting/deepseek-science",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/SPYfighting/deepseek-science",
+    "addedAt": "2026-11-08T18:40:03.062775Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "SURFLIN2030/swing-skills",
     "cloneUrl": "https://github.com/SURFLIN2030/swing-skills.git",
     "localPath": "open-source/SURFLIN2030/swing-skills",
@@ -1485,6 +1494,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "ddpoe/workflow-canvas",
+    "cloneUrl": "https://github.com/ddpoe/workflow-canvas.git",
+    "localPath": "open-source/ddpoe/workflow-canvas",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/ddpoe/workflow-canvas",
+    "addedAt": "2026-11-08T18:40:45.015742Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "dekan-aleksandr/biodiscovery-skills",
     "cloneUrl": "https://github.com/dekan-aleksandr/biodiscovery-skills.git",
     "localPath": "open-source/dekan-aleksandr/biodiscovery-skills",
@@ -1555,6 +1573,15 @@
     "upstreamUrl": "https://github.com/eamag/papers2dataset",
     "addedAt": "2026-04-11T17:13:46.434195Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "electricsheephq/caduceus",
+    "cloneUrl": "https://github.com/electricsheephq/caduceus.git",
+    "localPath": "open-source/electricsheephq/caduceus",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/electricsheephq/caduceus",
+    "addedAt": "2026-11-08T18:41:56.723946Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "fantasticjoe/biozy",
@@ -2310,6 +2337,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/r-ruser/epi-skill",
     "addedAt": "2026-07-05T15:13:08.494741Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "raoofaltaher/science-ultrapowers",
+    "cloneUrl": "https://github.com/raoofaltaher/science-ultrapowers.git",
+    "localPath": "open-source/raoofaltaher/science-ultrapowers",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/raoofaltaher/science-ultrapowers",
+    "addedAt": "2026-11-08T18:40:20.233379Z",
     "addedBy": "github-actions"
   },
   {

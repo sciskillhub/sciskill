@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **322**
+Total repositories: **326**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -324,6 +324,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [ddpoe/workflow-canvas](https://github.com/ddpoe/workflow-canvas)
+
+Use when a user hands over a whole analysis to become a Workflow Canvas (wfc) pipeline - a folder or project of notebooks and/or scripts, possibly with helpers, configs and data, or one large notebook that does several steps - such as "here is my analysis", "convert my notebooks to wfc", "make this project a wfc pipeline", "port our lab's analysis into workflow canvas". Plans the conversion with the user (which parts belong in wfc now, the steps, modules, envs, samples and wiring) for their approval, drafts every method and the whole pipeline before anything is registered, compares the results with the original's, registers only when the user agrees, and records every change in wfc-intake/. Use it before reading the files. For one script or notebook that is one step, use creating-a-wfc-method; for how wfc works, using-wfc. Not for Snakemake, Nextflow or other workflow tools.
+
+Example skill path: `plugins/wfc/skills/converting-an-analysis-to-a-wfc-pipeline/SKILL.md`
+
 ### [dekan-aleksandr/biodiscovery-skills](https://github.com/dekan-aleksandr/biodiscovery-skills)
 
 Collected GitHub skill repository.
@@ -363,6 +369,12 @@ Collected GitHub skill repository.
 ### [eamag/papers2dataset](https://github.com/eamag/papers2dataset)
 
 Collected GitHub skill repository.
+
+### [electricsheephq/caduceus](https://github.com/electricsheephq/caduceus)
+
+Answer health and DNA questions from the local Caduceus vault, with sources and honest limits.
+
+Example skill path: `skills/caduceus-guide/SKILL.md`
 
 ### [Elfredaaroused655/claude-skills](https://github.com/Elfredaaroused655/claude-skills)
 
@@ -908,6 +920,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [raoofaltaher/science-ultrapowers](https://github.com/raoofaltaher/science-ultrapowers)
+
+Use this skill when the user asks to "debug", "find the root cause", "figure out why X fails", "investigate this bug", "this test is flaky", "the build broke", "production incident", "why is the output wrong", or when any observed behavior contradicts expected behavior. Covers the reproduce-isolate-prove-fix-verify loop, anti-shortcut gates, and numerical/scientific debugging.
+
+Example skill path: `skills/debugging/SKILL.md`
+
 ### [raydemo1/visual-to-editable-pptx-skill](https://github.com/raydemo1/visual-to-editable-pptx-skill)
 
 Collected GitHub skill repository.
@@ -1023,6 +1041,12 @@ Collected GitHub skill repository.
 ### [sounkou-bioinfo/pi-bio-agent](https://github.com/sounkou-bioinfo/pi-bio-agent)
 
 Collected GitHub skill repository.
+
+### [SPYfighting/deepseek-science](https://github.com/SPYfighting/deepseek-science)
+
+端到端自主科研流程编排。用户明确要求 autoresearch/全自动跑一个完整研究时使用：文献→假设→实验→分析→图表→报告，带强制人工检查点。
+
+Example skill path: `skills/sci-autoresearch/SKILL.md`
 
 ### [srikarjy/Biolab-mcp-server](https://github.com/srikarjy/Biolab-mcp-server)
 
