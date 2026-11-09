@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **326**
+Total repositories: **328**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -326,9 +326,7 @@ Collected GitHub skill repository.
 
 ### [ddpoe/workflow-canvas](https://github.com/ddpoe/workflow-canvas)
 
-Use when a user hands over a whole analysis to become a Workflow Canvas (wfc) pipeline - a folder or project of notebooks and/or scripts, possibly with helpers, configs and data, or one large notebook that does several steps - such as "here is my analysis", "convert my notebooks to wfc", "make this project a wfc pipeline", "port our lab's analysis into workflow canvas". Plans the conversion with the user (which parts belong in wfc now, the steps, modules, envs, samples and wiring) for their approval, drafts every method and the whole pipeline before anything is registered, compares the results with the original's, registers only when the user agrees, and records every change in wfc-intake/. Use it before reading the files. For one script or notebook that is one step, use creating-a-wfc-method; for how wfc works, using-wfc. Not for Snakemake, Nextflow or other workflow tools.
-
-Example skill path: `plugins/wfc/skills/converting-an-analysis-to-a-wfc-pipeline/SKILL.md`
+Collected GitHub skill repository.
 
 ### [dekan-aleksandr/biodiscovery-skills](https://github.com/dekan-aleksandr/biodiscovery-skills)
 
@@ -372,9 +370,7 @@ Collected GitHub skill repository.
 
 ### [electricsheephq/caduceus](https://github.com/electricsheephq/caduceus)
 
-Answer health and DNA questions from the local Caduceus vault, with sources and honest limits.
-
-Example skill path: `skills/caduceus-guide/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Elfredaaroused655/claude-skills](https://github.com/Elfredaaroused655/claude-skills)
 
@@ -524,9 +520,21 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [jevony1016/ferryman](https://github.com/jevony1016/ferryman)
+
+First-principles thinking assistant for any question: decisions (career, money, life, work), problems and root causes, learning a topic from the ground up, judging whether facts meet a rule, and drafting documents. Traces every answer to what it rests on (base facts, the exact source text, the user's own priorities), separates fact from rule, experience, consensus and guess, asks Socratic questions when information is missing, and runs an adversarial review before answering. Includes a clinical research pack: China GCP 2026, ICH E6(R3)/E2A/E8(R1)/E9, NMPA rules, 21 CFR, EU CTR, CTCAE v6.0/v5.0 verbatim, official terms, SAE/CTCAE/deviation judgments, CAPA. Triggers: "first principles", "help me decide", "think it through with me", "root cause", "explain from scratch", "quiz me", "GCP", "CTCAE", "is this an SAE", "CAPA"; Chinese "第一性原理", "帮我决定", "帮我分析", "陪我想", "从底层讲", "给我出题", "GCP 怎么规定", "CTCAE 几级", "算不算 SAE", "CAPA 怎么写"; or the same in any language. Reply in the user's language.
+
+Example skill path: `SKILL.md`
+
 ### [JiahaoZhang-Public/ProtClaw](https://github.com/JiahaoZhang-Public/ProtClaw)
 
 Collected GitHub skill repository.
+
+### [jiangfeng-strathclyde/explorable-paper](https://github.com/jiangfeng-strathclyde/explorable-paper)
+
+Create, audit, or extend an evidence-linked interactive HTML exploration of a scholarly paper. Use for explorable papers, interactive research articles, paper-to-HTML projects, parameter or theorem explorers, and offline scientific demos; not for ordinary landing pages, posters, or decorative paper summaries.
+
+Example skill path: `SKILL.md`
 
 ### [jiangyuhan0318-July/figure-foundry](https://github.com/jiangyuhan0318-July/figure-foundry)
 
@@ -922,9 +930,7 @@ Collected GitHub skill repository.
 
 ### [raoofaltaher/science-ultrapowers](https://github.com/raoofaltaher/science-ultrapowers)
 
-Use this skill when the user asks to "debug", "find the root cause", "figure out why X fails", "investigate this bug", "this test is flaky", "the build broke", "production incident", "why is the output wrong", or when any observed behavior contradicts expected behavior. Covers the reproduce-isolate-prove-fix-verify loop, anti-shortcut gates, and numerical/scientific debugging.
-
-Example skill path: `skills/debugging/SKILL.md`
+Collected GitHub skill repository.
 
 ### [raydemo1/visual-to-editable-pptx-skill](https://github.com/raydemo1/visual-to-editable-pptx-skill)
 
@@ -1044,9 +1050,7 @@ Collected GitHub skill repository.
 
 ### [SPYfighting/deepseek-science](https://github.com/SPYfighting/deepseek-science)
 
-端到端自主科研流程编排。用户明确要求 autoresearch/全自动跑一个完整研究时使用：文献→假设→实验→分析→图表→报告，带强制人工检查点。
-
-Example skill path: `skills/sci-autoresearch/SKILL.md`
+Collected GitHub skill repository.
 
 ### [srikarjy/Biolab-mcp-server](https://github.com/srikarjy/Biolab-mcp-server)
 

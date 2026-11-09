@@ -1791,6 +1791,24 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "jevony1016/ferryman",
+    "cloneUrl": "https://github.com/jevony1016/ferryman.git",
+    "localPath": "open-source/jevony1016/ferryman",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/jevony1016/ferryman",
+    "addedAt": "2026-11-09T23:19:43.039278Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "jiangfeng-strathclyde/explorable-paper",
+    "cloneUrl": "https://github.com/jiangfeng-strathclyde/explorable-paper.git",
+    "localPath": "open-source/jiangfeng-strathclyde/explorable-paper",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/jiangfeng-strathclyde/explorable-paper",
+    "addedAt": "2026-11-09T23:19:22.271613Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "jiangyuhan0318-July/figure-foundry",
     "cloneUrl": "https://github.com/jiangyuhan0318-July/figure-foundry.git",
     "localPath": "open-source/jiangyuhan0318-July/figure-foundry",
