@@ -1206,6 +1206,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "alexblogoodf/glyfiq-mcp",
+    "cloneUrl": "https://github.com/alexblogoodf/glyfiq-mcp.git",
+    "localPath": "open-source/alexblogoodf/glyfiq-mcp",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/alexblogoodf/glyfiq-mcp",
+    "addedAt": "2026-11-10T20:46:44.383464Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "ammawla/encode-toolkit",
     "cloneUrl": "https://github.com/ammawla/encode-toolkit.git",
     "localPath": "open-source/ammawla/encode-toolkit",

@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **328**
+Total repositories: **329**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -55,6 +55,12 @@ Collected GitHub skill repository.
 ### [aksh-3141/claude-toolshed](https://github.com/aksh-3141/claude-toolshed)
 
 Collected GitHub skill repository.
+
+### [alexblogoodf/glyfiq-mcp](https://github.com/alexblogoodf/glyfiq-mcp)
+
+Find and insert hand-drawn medical and health SVG icons from the Glyfiq library via its MCP server (tools search_icons, get_icon_svg, get_icons_svg, list_tags). Use this skill whenever the user needs an icon, pictogram or illustration for anything medical, health, healthcare, clinical, anatomy, pharmacy, diagnostics or wellness (heart, lungs, MRI, stethoscope, fracture, vaccine, pill, patient, clinic and similar), for a website, app, slide, UI mockup, infographic or document, even if they never mention Glyfiq. Prefer this over drawing SVG paths yourself or guessing icon names.
+
+Example skill path: `SKILL.md`
 
 ### [Alim430/bioresearch-agent](https://github.com/Alim430/bioresearch-agent)
 
@@ -522,9 +528,7 @@ Collected GitHub skill repository.
 
 ### [jevony1016/ferryman](https://github.com/jevony1016/ferryman)
 
-First-principles thinking assistant for any question: decisions (career, money, life, work), problems and root causes, learning a topic from the ground up, judging whether facts meet a rule, and drafting documents. Traces every answer to what it rests on (base facts, the exact source text, the user's own priorities), separates fact from rule, experience, consensus and guess, asks Socratic questions when information is missing, and runs an adversarial review before answering. Includes a clinical research pack: China GCP 2026, ICH E6(R3)/E2A/E8(R1)/E9, NMPA rules, 21 CFR, EU CTR, CTCAE v6.0/v5.0 verbatim, official terms, SAE/CTCAE/deviation judgments, CAPA. Triggers: "first principles", "help me decide", "think it through with me", "root cause", "explain from scratch", "quiz me", "GCP", "CTCAE", "is this an SAE", "CAPA"; Chinese "第一性原理", "帮我决定", "帮我分析", "陪我想", "从底层讲", "给我出题", "GCP 怎么规定", "CTCAE 几级", "算不算 SAE", "CAPA 怎么写"; or the same in any language. Reply in the user's language.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [JiahaoZhang-Public/ProtClaw](https://github.com/JiahaoZhang-Public/ProtClaw)
 
@@ -532,9 +536,7 @@ Collected GitHub skill repository.
 
 ### [jiangfeng-strathclyde/explorable-paper](https://github.com/jiangfeng-strathclyde/explorable-paper)
 
-Create, audit, or extend an evidence-linked interactive HTML exploration of a scholarly paper. Use for explorable papers, interactive research articles, paper-to-HTML projects, parameter or theorem explorers, and offline scientific demos; not for ordinary landing pages, posters, or decorative paper summaries.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [jiangyuhan0318-July/figure-foundry](https://github.com/jiangyuhan0318-July/figure-foundry)
 
