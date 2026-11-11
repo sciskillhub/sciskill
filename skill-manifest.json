@@ -1755,6 +1755,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "imrascal/open-scientific-draw-agent",
+    "cloneUrl": "https://github.com/imrascal/open-scientific-draw-agent.git",
+    "localPath": "open-source/imrascal/open-scientific-draw-agent",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/imrascal/open-scientific-draw-agent",
+    "addedAt": "2026-11-11T21:05:57.037602Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "inhabitants/living-dossier",
     "cloneUrl": "https://github.com/inhabitants/living-dossier.git",
     "localPath": "open-source/inhabitants/living-dossier",
@@ -2031,6 +2040,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/mianaz/biomed-skills",
     "addedAt": "2026-10-24T17:14:19.369116Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "mingeric/scientific-research-master-skill",
+    "cloneUrl": "https://github.com/mingeric/scientific-research-master-skill.git",
+    "localPath": "open-source/mingeric/scientific-research-master-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/mingeric/scientific-research-master-skill",
+    "addedAt": "2026-11-11T21:05:14.789376Z",
     "addedBy": "github-actions"
   },
   {
@@ -2760,6 +2778,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/wangshubo1578/herb-target-screening",
     "addedAt": "2026-10-06T19:20:52.886166Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "wangze1998/molecule-design-loop",
+    "cloneUrl": "https://github.com/wangze1998/molecule-design-loop.git",
+    "localPath": "open-source/wangze1998/molecule-design-loop",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/wangze1998/molecule-design-loop",
+    "addedAt": "2026-11-11T21:06:20.322576Z",
     "addedBy": "github-actions"
   },
   {

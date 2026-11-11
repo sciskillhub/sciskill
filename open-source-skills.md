@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **329**
+Total repositories: **332**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -58,9 +58,7 @@ Collected GitHub skill repository.
 
 ### [alexblogoodf/glyfiq-mcp](https://github.com/alexblogoodf/glyfiq-mcp)
 
-Find and insert hand-drawn medical and health SVG icons from the Glyfiq library via its MCP server (tools search_icons, get_icon_svg, get_icons_svg, list_tags). Use this skill whenever the user needs an icon, pictogram or illustration for anything medical, health, healthcare, clinical, anatomy, pharmacy, diagnostics or wellness (heart, lungs, MRI, stethoscope, fracture, vaccine, pill, patient, clinic and similar), for a website, app, slide, UI mockup, infographic or document, even if they never mention Glyfiq. Prefer this over drawing SVG paths yourself or guessing icon names.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [Alim430/bioresearch-agent](https://github.com/Alim430/bioresearch-agent)
 
@@ -498,6 +496,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [imrascal/open-scientific-draw-agent](https://github.com/imrascal/open-scientific-draw-agent)
+
+OSDA 科学绘图：用毫米坐标生成可编辑的 SVG 示意图并导出 PDF/PNG，需要 3D 时调用 Blender 渲染桥接。不负责数据分析和论文写作。
+
+Example skill path: `SKILL.md`
+
 ### [inhabitants/living-dossier](https://github.com/inhabitants/living-dossier)
 
 Collected GitHub skill repository.
@@ -721,6 +725,12 @@ Collected GitHub skill repository.
 ### [mianaz/biomed-skills](https://github.com/mianaz/biomed-skills)
 
 Collected GitHub skill repository.
+
+### [mingeric/scientific-research-master-skill](https://github.com/mingeric/scientific-research-master-skill)
+
+Design, run, audit, visualize, and write reproducible biomedical projects, especially pan-cancer SMC5/6 multi-omics. Use for TCGA/GEO/CPTAC/proteomics/scRNA/spatial/CRISPR/DepMap/drug response, biomarker discovery, survival and ML, virtual KO/OE, figure remastering, manuscript rewriting, journal submission, version consolidation, or controlled overwrite of generated results. Produces evidence-linked SCI-ready manuscripts, multi-panel light-theme figures, provenance reports and quality gates; never invents analyses.
+
+Example skill path: `SKILL.md`
 
 ### [MisterBrookT/paper-skills](https://github.com/MisterBrookT/paper-skills)
 
@@ -1189,6 +1199,12 @@ Collected GitHub skill repository.
 ### [wangshubo1578/herb-target-screening](https://github.com/wangshubo1578/herb-target-screening)
 
 Collected GitHub skill repository.
+
+### [wangze1998/molecule-design-loop](https://github.com/wangze1998/molecule-design-loop)
+
+Constraint-driven design loop for small molecules, polymers and materials. Use when the user asks to design molecules, ligands, inhibitors, hosts, catalysts, dyes, photoswitches, monomers, repeat units or copolymers against a written design spec; for SAR-guided analog series; or for an autonomous design round with literature grounding, RDKit filtering, synthesis-feasibility triage, structural review before calculation, optional xTB evidence, and scored iteration. Mines the user's Zotero library and searches current literature in parallel. Triggers: molecule design loop, design a series, 分子设计, 设计一轮候选物, candidate generation, scaffold optimisation, polymer repeat-unit design.
+
+Example skill path: `molecule-design-loop/SKILL.md`
 
 ### [wenmin-wu/ds-skills](https://github.com/wenmin-wu/ds-skills)
 
