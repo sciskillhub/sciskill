@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **332**
+Total repositories: **337**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -143,6 +143,12 @@ Collected GitHub skill repository.
 ### [BaslerLab/SMRTk](https://github.com/BaslerLab/SMRTk)
 
 Collected GitHub skill repository.
+
+### [BBriW/origin-science-figure-skill](https://github.com/BBriW/origin-science-figure-skill)
+
+Create, restyle, or audit editable Origin/OriginPro scientific figures, especially dual-Y heat-capacity, entropy, and magnetocaloric plots. Use for data rebinding, baseline and extrapolation checks, axis conversions, and publication export.
+
+Example skill path: `skills/origin-science-figures/SKILL.md`
 
 ### [Beijing-Haola-Tech/haola-checkup-mcp](https://github.com/Beijing-Haola-Tech/haola-checkup-mcp)
 
@@ -464,6 +470,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [HiteSit/real-scientist-skills](https://github.com/HiteSit/real-scientist-skills)
+
+Pursue a long-running goal in a single session by co-ordinating subagents.
+
+Example skill path: `customized/chief-of-staff/SKILL.md`
+
 ### [HolobiomicsLab/asb-skill-collections](https://github.com/HolobiomicsLab/asb-skill-collections)
 
 Collected GitHub skill repository.
@@ -498,9 +510,7 @@ Collected GitHub skill repository.
 
 ### [imrascal/open-scientific-draw-agent](https://github.com/imrascal/open-scientific-draw-agent)
 
-OSDA 科学绘图：用毫米坐标生成可编辑的 SVG 示意图并导出 PDF/PNG，需要 3D 时调用 Blender 渲染桥接。不负责数据分析和论文写作。
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [inhabitants/living-dossier](https://github.com/inhabitants/living-dossier)
 
@@ -654,6 +664,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Laitangtang-lab-workflows/paraview-pitfalls](https://github.com/Laitangtang-lab-workflows/paraview-pitfalls)
+
+ParaView post-processing and contour-rendering pitfall handbook (ParaView 5.6.3 bundled with OpenFOAM 9 / pvpython / Python 2.7 without numpy, WSL environment). Use when the user mentions "paraview", "pvpython", contour rendering, screenshots, SaveScreenshot, color scale, LUT, camera, framing, uniform scale, transparent-background PNG, OpenFOAM post-processing, phase-diagram rendering, or batch figure generation, or when writing/debugging pvpython scripts or batch-rendering physical fields. Five confirmed traps: the first Render forces ResetCamera, ColorBy resets the color range, SaveScreenshot keyword-arg view silently outputs 400×400, color-preset names fail silently, and UpdatePipeline loops freeze time after Fetch. Chinese companion: SKILL.zh-CN.md.
+
+Example skill path: `SKILL.md`
+
 ### [langxin11/maniplot](https://github.com/langxin11/maniplot)
 
 Collected GitHub skill repository.
@@ -728,7 +744,11 @@ Collected GitHub skill repository.
 
 ### [mingeric/scientific-research-master-skill](https://github.com/mingeric/scientific-research-master-skill)
 
-Design, run, audit, visualize, and write reproducible biomedical projects, especially pan-cancer SMC5/6 multi-omics. Use for TCGA/GEO/CPTAC/proteomics/scRNA/spatial/CRISPR/DepMap/drug response, biomarker discovery, survival and ML, virtual KO/OE, figure remastering, manuscript rewriting, journal submission, version consolidation, or controlled overwrite of generated results. Produces evidence-linked SCI-ready manuscripts, multi-panel light-theme figures, provenance reports and quality gates; never invents analyses.
+Collected GitHub skill repository.
+
+### [mingeric/smc56-pancancer-atlas](https://github.com/mingeric/smc56-pancancer-atlas)
+
+End-to-end, data-grounded SMC5/6 ten-gene pan-cancer multi-omics and single-cell atlas: question-driven panel design, EID3, structural/recruitment modules, fixed C1-C4, quantitative signatures, 50+ science-facing panels, donor-aware statistics, manuscript writing, validation, and controlled overwrite.
 
 Example skill path: `SKILL.md`
 
@@ -1164,6 +1184,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [tristanseltec/quantome](https://github.com/tristanseltec/quantome)
+
+Check the references and factual claims in a Quantome chapter (papers, guidelines, model specifications, gene facts, thresholds) against primary or official sources, and fix or flag anything unsupported. Use when asked to "check citations", "fact-check a chapter", or "verify references", and for every chapter that cites clinical guidelines or genomics or AI papers.
+
+Example skill path: `plugins/quantome-author/skills/check-citations/SKILL.md`
+
 ### [u9401066/med-paper-assistant](https://github.com/u9401066/med-paper-assistant)
 
 Collected GitHub skill repository.
@@ -1202,9 +1228,7 @@ Collected GitHub skill repository.
 
 ### [wangze1998/molecule-design-loop](https://github.com/wangze1998/molecule-design-loop)
 
-Constraint-driven design loop for small molecules, polymers and materials. Use when the user asks to design molecules, ligands, inhibitors, hosts, catalysts, dyes, photoswitches, monomers, repeat units or copolymers against a written design spec; for SAR-guided analog series; or for an autonomous design round with literature grounding, RDKit filtering, synthesis-feasibility triage, structural review before calculation, optional xTB evidence, and scored iteration. Mines the user's Zotero library and searches current literature in parallel. Triggers: molecule design loop, design a series, 分子设计, 设计一轮候选物, candidate generation, scaffold optimisation, polymer repeat-unit design.
-
-Example skill path: `molecule-design-loop/SKILL.md`
+Collected GitHub skill repository.
 
 ### [wenmin-wu/ds-skills](https://github.com/wenmin-wu/ds-skills)
 

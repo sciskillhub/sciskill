@@ -144,6 +144,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "BBriW/origin-science-figure-skill",
+    "cloneUrl": "https://github.com/BBriW/origin-science-figure-skill.git",
+    "localPath": "open-source/BBriW/origin-science-figure-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/BBriW/origin-science-figure-skill",
+    "addedAt": "2026-11-12T21:21:17.182862Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "BaslerLab/SMRTk",
     "cloneUrl": "https://github.com/BaslerLab/SMRTk.git",
     "localPath": "open-source/BaslerLab/SMRTk",
@@ -477,6 +486,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "HiteSit/real-scientist-skills",
+    "cloneUrl": "https://github.com/HiteSit/real-scientist-skills.git",
+    "localPath": "open-source/HiteSit/real-scientist-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/HiteSit/real-scientist-skills",
+    "addedAt": "2026-11-12T21:19:37.244096Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "HolobiomicsLab/asb-skill-collections",
     "cloneUrl": "https://github.com/HolobiomicsLab/asb-skill-collections.git",
     "localPath": "open-source/HolobiomicsLab/asb-skill-collections",
@@ -672,6 +690,15 @@
     "defaultBranch": "master",
     "upstreamUrl": "https://github.com/LabOnoM/AROS_Pipeline_Factory",
     "addedAt": "2026-05-13T16:17:59.015588Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "Laitangtang-lab-workflows/paraview-pitfalls",
+    "cloneUrl": "https://github.com/Laitangtang-lab-workflows/paraview-pitfalls.git",
+    "localPath": "open-source/Laitangtang-lab-workflows/paraview-pitfalls",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Laitangtang-lab-workflows/paraview-pitfalls",
+    "addedAt": "2026-11-12T21:21:15.829978Z",
     "addedBy": "github-actions"
   },
   {
@@ -2052,6 +2079,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "mingeric/smc56-pancancer-atlas",
+    "cloneUrl": "https://github.com/mingeric/smc56-pancancer-atlas.git",
+    "localPath": "open-source/mingeric/smc56-pancancer-atlas",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/mingeric/smc56-pancancer-atlas",
+    "addedAt": "2026-11-12T21:20:32.668825Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "mnfst/manifest",
     "cloneUrl": "https://github.com/mnfst/manifest.git",
     "localPath": "open-source/mnfst/manifest",
@@ -2734,6 +2770,15 @@
     "upstreamUrl": "https://github.com/toohamster/sftp-cc",
     "addedAt": "2026-04-11T17:13:45.028065Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "tristanseltec/quantome",
+    "cloneUrl": "https://github.com/tristanseltec/quantome.git",
+    "localPath": "open-source/tristanseltec/quantome",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/tristanseltec/quantome",
+    "addedAt": "2026-11-12T21:19:43.216657Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "u9401066/med-paper-assistant",
