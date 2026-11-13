@@ -486,6 +486,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "HinaShirosaki/Hikari",
+    "cloneUrl": "https://github.com/HinaShirosaki/Hikari.git",
+    "localPath": "open-source/HinaShirosaki/Hikari",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/HinaShirosaki/Hikari",
+    "addedAt": "2026-11-13T20:47:39.120972Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "HiteSit/real-scientist-skills",
     "cloneUrl": "https://github.com/HiteSit/real-scientist-skills.git",
     "localPath": "open-source/HiteSit/real-scientist-skills",
@@ -1995,6 +2004,15 @@
     "defaultBranch": "master",
     "upstreamUrl": "https://github.com/lhbsaa/apex-discovery",
     "addedAt": "2026-07-22T15:34:16.831965Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "liubarryteb12/geo-mining-suite",
+    "cloneUrl": "https://github.com/liubarryteb12/geo-mining-suite.git",
+    "localPath": "open-source/liubarryteb12/geo-mining-suite",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/liubarryteb12/geo-mining-suite",
+    "addedAt": "2026-11-13T20:47:15.758824Z",
     "addedBy": "github-actions"
   },
   {

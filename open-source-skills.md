@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **337**
+Total repositories: **339**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -146,9 +146,7 @@ Collected GitHub skill repository.
 
 ### [BBriW/origin-science-figure-skill](https://github.com/BBriW/origin-science-figure-skill)
 
-Create, restyle, or audit editable Origin/OriginPro scientific figures, especially dual-Y heat-capacity, entropy, and magnetocaloric plots. Use for data rebinding, baseline and extrapolation checks, axis conversions, and publication export.
-
-Example skill path: `skills/origin-science-figures/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Beijing-Haola-Tech/haola-checkup-mcp](https://github.com/Beijing-Haola-Tech/haola-checkup-mcp)
 
@@ -470,11 +468,15 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [HinaShirosaki/Hikari](https://github.com/HinaShirosaki/Hikari)
+
+Calculate, summarize, normalize and plot assay data with Hikari MCP. Style the live native Assay plot, add labels, reference lines and shaded bands, or revise a custom scratch graph. Use for active Assay context and user-provided assay rows.
+
+Example skill path: `src/main/agent/codex-agent/official-skills/hikari-assay-plotly/SKILL.md`
+
 ### [HiteSit/real-scientist-skills](https://github.com/HiteSit/real-scientist-skills)
 
-Pursue a long-running goal in a single session by co-ordinating subagents.
-
-Example skill path: `customized/chief-of-staff/SKILL.md`
+Collected GitHub skill repository.
 
 ### [HolobiomicsLab/asb-skill-collections](https://github.com/HolobiomicsLab/asb-skill-collections)
 
@@ -666,9 +668,7 @@ Collected GitHub skill repository.
 
 ### [Laitangtang-lab-workflows/paraview-pitfalls](https://github.com/Laitangtang-lab-workflows/paraview-pitfalls)
 
-ParaView post-processing and contour-rendering pitfall handbook (ParaView 5.6.3 bundled with OpenFOAM 9 / pvpython / Python 2.7 without numpy, WSL environment). Use when the user mentions "paraview", "pvpython", contour rendering, screenshots, SaveScreenshot, color scale, LUT, camera, framing, uniform scale, transparent-background PNG, OpenFOAM post-processing, phase-diagram rendering, or batch figure generation, or when writing/debugging pvpython scripts or batch-rendering physical fields. Five confirmed traps: the first Render forces ResetCamera, ColorBy resets the color range, SaveScreenshot keyword-arg view silently outputs 400×400, color-preset names fail silently, and UpdatePipeline loops freeze time after Fetch. Chinese companion: SKILL.zh-CN.md.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [langxin11/maniplot](https://github.com/langxin11/maniplot)
 
@@ -689,6 +689,12 @@ Collected GitHub skill repository.
 ### [LHC0128/blender-scientific-modeling](https://github.com/LHC0128/blender-scientific-modeling)
 
 Collected GitHub skill repository.
+
+### [liubarryteb12/geo-mining-suite](https://github.com/liubarryteb12/geo-mining-suite)
+
+NCBI GEO 数据集自动化下载、规范命名重构与五章节元数据建档（承接 geo-mining-workflow）。 Use when 用户已筛选出目标 GSE，需要拉取 series_matrix、family.soft、GPL 平台注释与原始 counts； Use when 需要把 GEO 数据整理成 L1_Bulk_RNAseq、L2_scRNA_snRNAseq、L3_Spatial_Visium 标准目录； Use when 需要自动生成包含样本映射表与设计矩阵建议的 info.md 和 grouping.txt。
+
+Example skill path: `skills/geo-mining-download/SKILL.md`
 
 ### [LiX-Works/Origin_MCP-Skill_for_Scientific-Plots](https://github.com/LiX-Works/Origin_MCP-Skill_for_Scientific-Plots)
 
@@ -748,9 +754,7 @@ Collected GitHub skill repository.
 
 ### [mingeric/smc56-pancancer-atlas](https://github.com/mingeric/smc56-pancancer-atlas)
 
-End-to-end, data-grounded SMC5/6 ten-gene pan-cancer multi-omics and single-cell atlas: question-driven panel design, EID3, structural/recruitment modules, fixed C1-C4, quantitative signatures, 50+ science-facing panels, donor-aware statistics, manuscript writing, validation, and controlled overwrite.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [MisterBrookT/paper-skills](https://github.com/MisterBrookT/paper-skills)
 
@@ -1186,9 +1190,7 @@ Collected GitHub skill repository.
 
 ### [tristanseltec/quantome](https://github.com/tristanseltec/quantome)
 
-Check the references and factual claims in a Quantome chapter (papers, guidelines, model specifications, gene facts, thresholds) against primary or official sources, and fix or flag anything unsupported. Use when asked to "check citations", "fact-check a chapter", or "verify references", and for every chapter that cites clinical guidelines or genomics or AI papers.
-
-Example skill path: `plugins/quantome-author/skills/check-citations/SKILL.md`
+Collected GitHub skill repository.
 
 ### [u9401066/med-paper-assistant](https://github.com/u9401066/med-paper-assistant)
 
