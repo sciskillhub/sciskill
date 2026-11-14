@@ -9,6 +9,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "0xcvaliente/immunology-skills",
+    "cloneUrl": "https://github.com/0xcvaliente/immunology-skills.git",
+    "localPath": "open-source/0xcvaliente/immunology-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/0xcvaliente/immunology-skills",
+    "addedAt": "2026-11-14T18:59:48.220234Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "2023Anita/clinical-ai-agent-skills",
     "cloneUrl": "https://github.com/2023Anita/clinical-ai-agent-skills.git",
     "localPath": "open-source/2023Anita/clinical-ai-agent-skills",
@@ -528,6 +537,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/HututuWorks/academic-figure",
     "addedAt": "2026-10-05T21:24:12.250688Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "ItsShreyamHere/warrant",
+    "cloneUrl": "https://github.com/ItsShreyamHere/warrant.git",
+    "localPath": "open-source/ItsShreyamHere/warrant",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/ItsShreyamHere/warrant",
+    "addedAt": "2026-11-14T18:58:18.027763Z",
     "addedBy": "github-actions"
   },
   {
@@ -1746,6 +1764,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "helplessness/benchthread",
+    "cloneUrl": "https://github.com/helplessness/benchthread.git",
+    "localPath": "open-source/helplessness/benchthread",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/helplessness/benchthread",
+    "addedAt": "2026-11-14T18:58:51.328041Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "htlin222/ask-oe-with-ego-skill",
     "cloneUrl": "https://github.com/htlin222/ask-oe-with-ego-skill.git",
     "localPath": "open-source/htlin222/ask-oe-with-ego-skill",
@@ -2004,6 +2031,15 @@
     "defaultBranch": "master",
     "upstreamUrl": "https://github.com/lhbsaa/apex-discovery",
     "addedAt": "2026-07-22T15:34:16.831965Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "lionelee/scifig",
+    "cloneUrl": "https://github.com/lionelee/scifig.git",
+    "localPath": "open-source/lionelee/scifig",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/lionelee/scifig",
+    "addedAt": "2026-11-14T19:00:39.718119Z",
     "addedBy": "github-actions"
   },
   {

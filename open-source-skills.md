@@ -2,11 +2,17 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **339**
+Total repositories: **343**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
 Collected GitHub skill repository.
+
+### [0xcvaliente/immunology-skills](https://github.com/0xcvaliente/immunology-skills)
+
+Computational design of antibody-format binders (VHH/nanobody, scFv, Fab) against a given target, from the task text to a ranked, defensible submission - epitope choice, objectives such as cross-species or pH-selective binding turned into design levers, calibration on controls, two or more generation routes, co-folding and scoring (ipTM, ipSAE, pLDDT), filters, a diverse top-N with a decision log, submission CSV and methods. Use when asked to design, rank, filter or select nanobodies or antibody binders, to choose between design models (RFdiffusion, BoltzGen, RFantibody, Germinal, ProteinMPNN, Boltz, Chai, OpenFold, Protenix), to interpret confidence scores, to build a reproducible design pipeline or skill, or to prepare designs for wet-lab testing (Adaptyv, Proteinbase). Orchestrates the tool skills and MCP servers already connected; models screen, they do not measure binding. Use antibody-sequence-bioinformatics for numbering, CDRs, liabilities and contigs, antibody-literature-search for the target dossier, oslo-antibodies-hackathon for that event's rules, antibody-engineering to improve an antibody you already have.
+
+Example skill path: `antibody-binder-design/SKILL.md`
 
 ### [2023Anita/clinical-ai-agent-skills](https://github.com/2023Anita/clinical-ai-agent-skills)
 
@@ -468,11 +474,15 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [helplessness/benchthread](https://github.com/helplessness/benchthread)
+
+Use when the user needs a real browser: open a website, inspect interactive elements, click, fill forms, type, wait for page changes, take screenshots, save PDFs, download files, or test a web app. This skill uses the native sandboxed browser tool, not host Chrome and not Bash-based browser automation.
+
+Example skill path: `.claude/skills/agent-browser/SKILL.md`
+
 ### [HinaShirosaki/Hikari](https://github.com/HinaShirosaki/Hikari)
 
-Calculate, summarize, normalize and plot assay data with Hikari MCP. Style the live native Assay plot, add labels, reference lines and shaded bands, or revise a custom scratch graph. Use for active Assay context and user-provided assay rows.
-
-Example skill path: `src/main/agent/codex-agent/official-skills/hikari-assay-plotly/SKILL.md`
+Collected GitHub skill repository.
 
 ### [HiteSit/real-scientist-skills](https://github.com/HiteSit/real-scientist-skills)
 
@@ -521,6 +531,12 @@ Collected GitHub skill repository.
 ### [irrrricardo/fig-cos](https://github.com/irrrricardo/fig-cos)
 
 Collected GitHub skill repository.
+
+### [ItsShreyamHere/warrant](https://github.com/ItsShreyamHere/warrant)
+
+Keeps research honest. Use whenever the user does research with you, in ML/CS experiments, data analysis, science, statistics or mathematics. Typical moments are framing a research question, planning or running an experiment, comparing methods, reporting a result or metric, citing papers, reviewing a draft or bibliography, or writing up findings. Also use when the user asks you to review, referee or fact-check a paper or draft, check its references or statistics, or asks where a number came from.
+
+Example skill path: `skills/warrant/SKILL.md`
 
 ### [jackspace/ClaudeSkillz](https://github.com/jackspace/ClaudeSkillz)
 
@@ -690,11 +706,15 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [lionelee/scifig](https://github.com/lionelee/scifig)
+
+Use when asked to draw, generate, redraw or edit a scientific figure (graphical abstract, mechanism, pathway, workflow, roadmap, framework, model or system architecture, flow diagram, schematic, cover, labelled diagram), plot research data as a journal-style chart, combine panels into one figure, convert a figure to TIFF, PDF, SVG or PPTX or make its labels editable, enlarge a generated figure to a higher resolution, check a figure against journal requirements (dpi, column width, colour-blind safety), or write a figure legend.
+
+Example skill path: `skills/scifig/SKILL.md`
+
 ### [liubarryteb12/geo-mining-suite](https://github.com/liubarryteb12/geo-mining-suite)
 
-NCBI GEO 数据集自动化下载、规范命名重构与五章节元数据建档（承接 geo-mining-workflow）。 Use when 用户已筛选出目标 GSE，需要拉取 series_matrix、family.soft、GPL 平台注释与原始 counts； Use when 需要把 GEO 数据整理成 L1_Bulk_RNAseq、L2_scRNA_snRNAseq、L3_Spatial_Visium 标准目录； Use when 需要自动生成包含样本映射表与设计矩阵建议的 info.md 和 grouping.txt。
-
-Example skill path: `skills/geo-mining-download/SKILL.md`
+Collected GitHub skill repository.
 
 ### [LiX-Works/Origin_MCP-Skill_for_Scientific-Plots](https://github.com/LiX-Works/Origin_MCP-Skill_for_Scientific-Plots)
 
