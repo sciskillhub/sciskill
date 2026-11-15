@@ -963,6 +963,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "SPYfighting/dsh-science-plugin",
+    "cloneUrl": "https://github.com/SPYfighting/dsh-science-plugin.git",
+    "localPath": "open-source/SPYfighting/dsh-science-plugin",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/SPYfighting/dsh-science-plugin",
+    "addedAt": "2026-11-15T19:33:49.805343Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "SURFLIN2030/swing-skills",
     "cloneUrl": "https://github.com/SURFLIN2030/swing-skills.git",
     "localPath": "open-source/SURFLIN2030/swing-skills",
@@ -1312,6 +1321,15 @@
     "upstreamUrl": "https://github.com/anubhavsingh-0218/uncodixify-skill",
     "addedAt": "2026-04-11T17:13:45.227856Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "aper-ai/AIVCLab",
+    "cloneUrl": "https://github.com/aper-ai/AIVCLab.git",
+    "localPath": "open-source/aper-ai/AIVCLab",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/aper-ai/AIVCLab",
+    "addedAt": "2026-11-15T19:36:29.931319Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "arbade/konsil",

@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **343**
+Total repositories: **345**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -10,9 +10,7 @@ Collected GitHub skill repository.
 
 ### [0xcvaliente/immunology-skills](https://github.com/0xcvaliente/immunology-skills)
 
-Computational design of antibody-format binders (VHH/nanobody, scFv, Fab) against a given target, from the task text to a ranked, defensible submission - epitope choice, objectives such as cross-species or pH-selective binding turned into design levers, calibration on controls, two or more generation routes, co-folding and scoring (ipTM, ipSAE, pLDDT), filters, a diverse top-N with a decision log, submission CSV and methods. Use when asked to design, rank, filter or select nanobodies or antibody binders, to choose between design models (RFdiffusion, BoltzGen, RFantibody, Germinal, ProteinMPNN, Boltz, Chai, OpenFold, Protenix), to interpret confidence scores, to build a reproducible design pipeline or skill, or to prepare designs for wet-lab testing (Adaptyv, Proteinbase). Orchestrates the tool skills and MCP servers already connected; models screen, they do not measure binding. Use antibody-sequence-bioinformatics for numbering, CDRs, liabilities and contigs, antibody-literature-search for the target dossier, oslo-antibodies-hackathon for that event's rules, antibody-engineering to improve an antibody you already have.
-
-Example skill path: `antibody-binder-design/SKILL.md`
+Collected GitHub skill repository.
 
 ### [2023Anita/clinical-ai-agent-skills](https://github.com/2023Anita/clinical-ai-agent-skills)
 
@@ -101,6 +99,12 @@ Collected GitHub skill repository.
 ### [anubhavsingh-0218/uncodixify-skill](https://github.com/anubhavsingh-0218/uncodixify-skill)
 
 Collected GitHub skill repository.
+
+### [aper-ai/AIVCLab](https://github.com/aper-ai/AIVCLab)
+
+Orchestrate extensible virtual cell research workflows for transcriptomic and single-cell data. Use for data preparation and input audits, observed-response analysis, model-based gene or compound perturbations, prediction evaluation and split audits, interpretation of existing results, public-case reproduction, and method or adapter integration. Gene knockout, overexpression and drug screening are representative applications. Execute compatible analysis routes, preserve full results and provenance, and report implementation, quality and independent-validation status separately.
+
+Example skill path: `virtual-cell-research/SKILL.md`
 
 ### [Aperivue/medsci-skills](https://github.com/Aperivue/medsci-skills)
 
@@ -476,9 +480,7 @@ Collected GitHub skill repository.
 
 ### [helplessness/benchthread](https://github.com/helplessness/benchthread)
 
-Use when the user needs a real browser: open a website, inspect interactive elements, click, fill forms, type, wait for page changes, take screenshots, save PDFs, download files, or test a web app. This skill uses the native sandboxed browser tool, not host Chrome and not Bash-based browser automation.
-
-Example skill path: `.claude/skills/agent-browser/SKILL.md`
+Collected GitHub skill repository.
 
 ### [HinaShirosaki/Hikari](https://github.com/HinaShirosaki/Hikari)
 
@@ -534,9 +536,7 @@ Collected GitHub skill repository.
 
 ### [ItsShreyamHere/warrant](https://github.com/ItsShreyamHere/warrant)
 
-Keeps research honest. Use whenever the user does research with you, in ML/CS experiments, data analysis, science, statistics or mathematics. Typical moments are framing a research question, planning or running an experiment, comparing methods, reporting a result or metric, citing papers, reviewing a draft or bibliography, or writing up findings. Also use when the user asks you to review, referee or fact-check a paper or draft, check its references or statistics, or asks where a number came from.
-
-Example skill path: `skills/warrant/SKILL.md`
+Collected GitHub skill repository.
 
 ### [jackspace/ClaudeSkillz](https://github.com/jackspace/ClaudeSkillz)
 
@@ -708,9 +708,7 @@ Collected GitHub skill repository.
 
 ### [lionelee/scifig](https://github.com/lionelee/scifig)
 
-Use when asked to draw, generate, redraw or edit a scientific figure (graphical abstract, mechanism, pathway, workflow, roadmap, framework, model or system architecture, flow diagram, schematic, cover, labelled diagram), plot research data as a journal-style chart, combine panels into one figure, convert a figure to TIFF, PDF, SVG or PPTX or make its labels editable, enlarge a generated figure to a higher resolution, check a figure against journal requirements (dpi, column width, colour-blind safety), or write a figure legend.
-
-Example skill path: `skills/scifig/SKILL.md`
+Collected GitHub skill repository.
 
 ### [liubarryteb12/geo-mining-suite](https://github.com/liubarryteb12/geo-mining-suite)
 
@@ -1107,6 +1105,12 @@ Collected GitHub skill repository.
 ### [SPYfighting/deepseek-science](https://github.com/SPYfighting/deepseek-science)
 
 Collected GitHub skill repository.
+
+### [SPYfighting/dsh-science-plugin](https://github.com/SPYfighting/dsh-science-plugin)
+
+端到端自主科研流程编排。用户明确要求 autoresearch/全自动跑一个完整研究时使用：文献→假设→实验→分析→图表→报告，带强制人工检查点。
+
+Example skill path: `skills/sci-autoresearch/SKILL.md`
 
 ### [srikarjy/Biolab-mcp-server](https://github.com/srikarjy/Biolab-mcp-server)
 
