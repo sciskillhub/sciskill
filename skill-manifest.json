@@ -396,6 +396,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "Domikohlh/gene_to_care_agent_skill",
+    "cloneUrl": "https://github.com/Domikohlh/gene_to_care_agent_skill.git",
+    "localPath": "open-source/Domikohlh/gene_to_care_agent_skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Domikohlh/gene_to_care_agent_skill",
+    "addedAt": "2026-11-16T23:14:12.313325Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Dominic789654/scientific-figure",
     "cloneUrl": "https://github.com/Dominic789654/scientific-figure.git",
     "localPath": "open-source/Dominic789654/scientific-figure",
@@ -861,6 +870,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/Osmosy/vector-health",
     "addedAt": "2026-08-17T15:05:53.022628Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "PanteraPolnocy/VOSS",
+    "cloneUrl": "https://github.com/PanteraPolnocy/VOSS.git",
+    "localPath": "open-source/PanteraPolnocy/VOSS",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/PanteraPolnocy/VOSS",
+    "addedAt": "2026-11-16T23:14:51.374812Z",
     "addedBy": "github-actions"
   },
   {
@@ -1863,6 +1881,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "itsbrendandang/agent-test",
+    "cloneUrl": "https://github.com/itsbrendandang/agent-test.git",
+    "localPath": "open-source/itsbrendandang/agent-test",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/itsbrendandang/agent-test",
+    "addedAt": "2026-11-16T23:12:59.381340Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "jackspace/ClaudeSkillz",
     "cloneUrl": "https://github.com/jackspace/ClaudeSkillz.git",
     "localPath": "open-source/jackspace/ClaudeSkillz",
@@ -2502,6 +2529,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "rare-disease-atlas/orphan-disease-venture-scout-skill",
+    "cloneUrl": "https://github.com/rare-disease-atlas/orphan-disease-venture-scout-skill.git",
+    "localPath": "open-source/rare-disease-atlas/orphan-disease-venture-scout-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/rare-disease-atlas/orphan-disease-venture-scout-skill",
+    "addedAt": "2026-11-16T23:13:44.938893Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "raydemo1/visual-to-editable-pptx-skill",
     "cloneUrl": "https://github.com/raydemo1/visual-to-editable-pptx-skill.git",
     "localPath": "open-source/raydemo1/visual-to-editable-pptx-skill",
@@ -2994,6 +3030,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/yigityildiz0/scientific-agent-skills",
     "addedAt": "2026-07-22T15:34:26.272204Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "yizheng-hub/scientific-manuscript-writing-skill",
+    "cloneUrl": "https://github.com/yizheng-hub/scientific-manuscript-writing-skill.git",
+    "localPath": "open-source/yizheng-hub/scientific-manuscript-writing-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/yizheng-hub/scientific-manuscript-writing-skill",
+    "addedAt": "2026-11-16T23:14:22.585493Z",
     "addedBy": "github-actions"
   },
   {

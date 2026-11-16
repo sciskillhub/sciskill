@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **345**
+Total repositories: **350**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -102,9 +102,7 @@ Collected GitHub skill repository.
 
 ### [aper-ai/AIVCLab](https://github.com/aper-ai/AIVCLab)
 
-Orchestrate extensible virtual cell research workflows for transcriptomic and single-cell data. Use for data preparation and input audits, observed-response analysis, model-based gene or compound perturbations, prediction evaluation and split audits, interpretation of existing results, public-case reproduction, and method or adapter integration. Gene knockout, overexpression and drug screening are representative applications. Execute compatible analysis routes, preserve full results and provenance, and report implementation, quality and independent-validation status separately.
-
-Example skill path: `virtual-cell-research/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Aperivue/medsci-skills](https://github.com/Aperivue/medsci-skills)
 
@@ -354,6 +352,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [Domikohlh/gene_to_care_agent_skill](https://github.com/Domikohlh/gene_to_care_agent_skill)
+
+Translates any genetic test report into plain language plus the published care implications, covering surveillance protocols, patient organisations and registries. It does not diagnose or recommend treatment. Use when someone shares or describes a genetics report, microarray, exome, genome, karyotype or gene panel result, or names a gene or chromosomal finding (PTEN, BRCA1/2, trisomy 21, 22q11.2, FMR1) with a clinical question; asks what a variant means, what to monitor, what to do now, or what to ask the doctor; needs a variant of uncertain significance explained; or asks whether a finding carries risk of cancer, epilepsy or heart conditions. Also use when a clinician or counsellor wants a report put in plain language for a family, and for negative or non-diagnostic results, where the answer is what the testing missed, what further testing is indicated, and the wording to take to a clinician or payer. A pasted variant or gene symbol with a clinical question counts, even without the word genetics.
+
+Example skill path: `SKILL.md`
+
 ### [Dominic789654/scientific-figure](https://github.com/Dominic789654/scientific-figure)
 
 Collected GitHub skill repository.
@@ -533,6 +537,12 @@ Collected GitHub skill repository.
 ### [irrrricardo/fig-cos](https://github.com/irrrricardo/fig-cos)
 
 Collected GitHub skill repository.
+
+### [itsbrendandang/agent-test](https://github.com/itsbrendandang/agent-test)
+
+Index of the 100 Biomni Lab skills (biomni.phylo.bio/skills), with each skill's full Overview instructions, and which of them apply to this repo's work. Use when choosing a bioinformatics or drug-discovery method, when a BixBench task needs a standard analysis workflow (RNA-seq differential expression, enrichment, clustering, single-cell), or when someone asks what Biomni skills are available. The written instructions for every previewed skill are included; the skill packages (scripts, references, assets) are not installed here.
+
+Example skill path: `.agents/skills/biomni-lab/SKILL.md`
 
 ### [ItsShreyamHere/warrant](https://github.com/ItsShreyamHere/warrant)
 
@@ -922,6 +932,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [PanteraPolnocy/VOSS](https://github.com/PanteraPolnocy/VOSS)
+
+Persona, rules and sourced-data method for Voss (unit VOSS-01, Project Asclepius), a household's medical mind - a male anthro red fox android doctor with softly glowing cyan camera-eyes, crisp and formal, and sharp-tongued with anyone who ignores his advice twice. Use to talk to Voss, to play or draw him, and for health information - medical terms, lab results read against the range printed on the report, what a medicine is and what it interacts with, when to call emergency services, getting ready for a doctor's visit, finding care, and possible explanations for symptoms with sources (never a final diagnosis, treatment or prescription; he says he cannot replace a real doctor). Also Theatre mode for roleplay medicine. Triggers include "Voss", "Dr. Voss", "VOSS-01", "Asclepius", "doc", "Theatre".
+
+Example skill path: `src/SKILL.md`
+
 ### [Pavel-Kravchenko/Bioinformatics](https://github.com/Pavel-Kravchenko/Bioinformatics)
 
 Collected GitHub skill repository.
@@ -985,6 +1001,12 @@ Collected GitHub skill repository.
 ### [raoofaltaher/science-ultrapowers](https://github.com/raoofaltaher/science-ultrapowers)
 
 Collected GitHub skill repository.
+
+### [rare-disease-atlas/orphan-disease-venture-scout-skill](https://github.com/rare-disease-atlas/orphan-disease-venture-scout-skill)
+
+Evaluates high-tractability orphan disease startup, AI-bio, public-health RWE, and venture-philanthropy opportunities using verified ClinicalTrials.gov, NCBI GEO/PDB, and FDA Orphan Drug Act data.
+
+Example skill path: `SKILL.md`
 
 ### [raydemo1/visual-to-editable-pptx-skill](https://github.com/raydemo1/visual-to-editable-pptx-skill)
 
@@ -1108,9 +1130,7 @@ Collected GitHub skill repository.
 
 ### [SPYfighting/dsh-science-plugin](https://github.com/SPYfighting/dsh-science-plugin)
 
-端到端自主科研流程编排。用户明确要求 autoresearch/全自动跑一个完整研究时使用：文献→假设→实验→分析→图表→报告，带强制人工检查点。
-
-Example skill path: `skills/sci-autoresearch/SKILL.md`
+Collected GitHub skill repository.
 
 ### [srikarjy/Biolab-mcp-server](https://github.com/srikarjy/Biolab-mcp-server)
 
@@ -1311,6 +1331,12 @@ Collected GitHub skill repository.
 ### [yigityildiz0/scientific-agent-skills](https://github.com/yigityildiz0/scientific-agent-skills)
 
 Collected GitHub skill repository.
+
+### [yizheng-hub/scientific-manuscript-writing-skill](https://github.com/yizheng-hub/scientific-manuscript-writing-skill)
+
+Develop, revise, audit, and format high-level scientific manuscripts, Supplementary Information, captions, figures, and publication Word files when evidence-led storytelling, contribution framing, cross-document consistency, or journal-ready visual design is required. Do not use for ordinary reports, essays, or administrative documents.
+
+Example skill path: `skills/scientific-manuscript-writing/SKILL.md`
 
 ### [Ynzuses/genomics-skills-suite](https://github.com/Ynzuses/genomics-skills-suite)
 
