@@ -45,6 +45,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "AbhignanVajjala/Bioinformatics-agent-skills",
+    "cloneUrl": "https://github.com/AbhignanVajjala/Bioinformatics-agent-skills.git",
+    "localPath": "open-source/AbhignanVajjala/Bioinformatics-agent-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/AbhignanVajjala/Bioinformatics-agent-skills",
+    "addedAt": "2026-11-17T22:02:22.233338Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "AdamsukS/data-viz-skill",
     "cloneUrl": "https://github.com/AdamsukS/data-viz-skill.git",
     "localPath": "open-source/AdamsukS/data-viz-skill",
@@ -348,6 +357,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/Curtisflo/karyon",
     "addedAt": "2026-06-27T15:15:50.296393Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "DLeader-Inc/kumichem-skills",
+    "cloneUrl": "https://github.com/DLeader-Inc/kumichem-skills.git",
+    "localPath": "open-source/DLeader-Inc/kumichem-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/DLeader-Inc/kumichem-skills",
+    "addedAt": "2026-11-17T22:03:16.626642Z",
     "addedBy": "github-actions"
   },
   {

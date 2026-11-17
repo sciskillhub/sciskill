@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **350**
+Total repositories: **352**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -19,6 +19,12 @@ Collected GitHub skill repository.
 ### [24111999/claude-skills](https://github.com/24111999/claude-skills)
 
 Collected GitHub skill repository.
+
+### [AbhignanVajjala/Bioinformatics-agent-skills](https://github.com/AbhignanVajjala/Bioinformatics-agent-skills)
+
+Author or review a reusable scientific Agent Skill with precise triggers, methods, evidence gates and adversarial evaluations; use for library contributions, not to generate placeholder skills or certify untested biomedical expertise.
+
+Example skill path: `.agents/skills/bioinformatics-skill-authoring/SKILL.md`
 
 ### [AdamsukS/data-viz-skill](https://github.com/AdamsukS/data-viz-skill)
 
@@ -352,11 +358,15 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [DLeader-Inc/kumichem-skills](https://github.com/DLeader-Inc/kumichem-skills)
+
+Predict activity for a supplied RNase H gapmer ASO or a batch of chemical designs through KumiChem APIs. Use for individual activity calls and chemistry comparisons, not a full ASO design workflow or splice-switching efficacy.
+
+Example skill path: `skills/kumichem-aso-activity/SKILL.md`
+
 ### [Domikohlh/gene_to_care_agent_skill](https://github.com/Domikohlh/gene_to_care_agent_skill)
 
-Translates any genetic test report into plain language plus the published care implications, covering surveillance protocols, patient organisations and registries. It does not diagnose or recommend treatment. Use when someone shares or describes a genetics report, microarray, exome, genome, karyotype or gene panel result, or names a gene or chromosomal finding (PTEN, BRCA1/2, trisomy 21, 22q11.2, FMR1) with a clinical question; asks what a variant means, what to monitor, what to do now, or what to ask the doctor; needs a variant of uncertain significance explained; or asks whether a finding carries risk of cancer, epilepsy or heart conditions. Also use when a clinician or counsellor wants a report put in plain language for a family, and for negative or non-diagnostic results, where the answer is what the testing missed, what further testing is indicated, and the wording to take to a clinician or payer. A pasted variant or gene symbol with a clinical question counts, even without the word genetics.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [Dominic789654/scientific-figure](https://github.com/Dominic789654/scientific-figure)
 
@@ -540,9 +550,7 @@ Collected GitHub skill repository.
 
 ### [itsbrendandang/agent-test](https://github.com/itsbrendandang/agent-test)
 
-Index of the 100 Biomni Lab skills (biomni.phylo.bio/skills), with each skill's full Overview instructions, and which of them apply to this repo's work. Use when choosing a bioinformatics or drug-discovery method, when a BixBench task needs a standard analysis workflow (RNA-seq differential expression, enrichment, clustering, single-cell), or when someone asks what Biomni skills are available. The written instructions for every previewed skill are included; the skill packages (scripts, references, assets) are not installed here.
-
-Example skill path: `.agents/skills/biomni-lab/SKILL.md`
+Collected GitHub skill repository.
 
 ### [ItsShreyamHere/warrant](https://github.com/ItsShreyamHere/warrant)
 
@@ -934,9 +942,7 @@ Collected GitHub skill repository.
 
 ### [PanteraPolnocy/VOSS](https://github.com/PanteraPolnocy/VOSS)
 
-Persona, rules and sourced-data method for Voss (unit VOSS-01, Project Asclepius), a household's medical mind - a male anthro red fox android doctor with softly glowing cyan camera-eyes, crisp and formal, and sharp-tongued with anyone who ignores his advice twice. Use to talk to Voss, to play or draw him, and for health information - medical terms, lab results read against the range printed on the report, what a medicine is and what it interacts with, when to call emergency services, getting ready for a doctor's visit, finding care, and possible explanations for symptoms with sources (never a final diagnosis, treatment or prescription; he says he cannot replace a real doctor). Also Theatre mode for roleplay medicine. Triggers include "Voss", "Dr. Voss", "VOSS-01", "Asclepius", "doc", "Theatre".
-
-Example skill path: `src/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Pavel-Kravchenko/Bioinformatics](https://github.com/Pavel-Kravchenko/Bioinformatics)
 
@@ -1004,9 +1010,7 @@ Collected GitHub skill repository.
 
 ### [rare-disease-atlas/orphan-disease-venture-scout-skill](https://github.com/rare-disease-atlas/orphan-disease-venture-scout-skill)
 
-Evaluates high-tractability orphan disease startup, AI-bio, public-health RWE, and venture-philanthropy opportunities using verified ClinicalTrials.gov, NCBI GEO/PDB, and FDA Orphan Drug Act data.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [raydemo1/visual-to-editable-pptx-skill](https://github.com/raydemo1/visual-to-editable-pptx-skill)
 
@@ -1334,9 +1338,7 @@ Collected GitHub skill repository.
 
 ### [yizheng-hub/scientific-manuscript-writing-skill](https://github.com/yizheng-hub/scientific-manuscript-writing-skill)
 
-Develop, revise, audit, and format high-level scientific manuscripts, Supplementary Information, captions, figures, and publication Word files when evidence-led storytelling, contribution framing, cross-document consistency, or journal-ready visual design is required. Do not use for ordinary reports, essays, or administrative documents.
-
-Example skill path: `skills/scientific-manuscript-writing/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Ynzuses/genomics-skills-suite](https://github.com/Ynzuses/genomics-skills-suite)
 
