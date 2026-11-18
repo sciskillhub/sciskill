@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **352**
+Total repositories: **355**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -22,9 +22,7 @@ Collected GitHub skill repository.
 
 ### [AbhignanVajjala/Bioinformatics-agent-skills](https://github.com/AbhignanVajjala/Bioinformatics-agent-skills)
 
-Author or review a reusable scientific Agent Skill with precise triggers, methods, evidence gates and adversarial evaluations; use for library contributions, not to generate placeholder skills or certify untested biomedical expertise.
-
-Example skill path: `.agents/skills/bioinformatics-skill-authoring/SKILL.md`
+Collected GitHub skill repository.
 
 ### [AdamsukS/data-viz-skill](https://github.com/AdamsukS/data-viz-skill)
 
@@ -360,9 +358,7 @@ Collected GitHub skill repository.
 
 ### [DLeader-Inc/kumichem-skills](https://github.com/DLeader-Inc/kumichem-skills)
 
-Predict activity for a supplied RNase H gapmer ASO or a batch of chemical designs through KumiChem APIs. Use for individual activity calls and chemistry comparisons, not a full ASO design workflow or splice-switching efficacy.
-
-Example skill path: `skills/kumichem-aso-activity/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Domikohlh/gene_to_care_agent_skill](https://github.com/Domikohlh/gene_to_care_agent_skill)
 
@@ -387,6 +383,12 @@ Collected GitHub skill repository.
 ### [drthyang/rmc-toolkits](https://github.com/drthyang/rmc-toolkits)
 
 Collected GitHub skill repository.
+
+### [drtranquanghung91-vn/grand-rounds](https://github.com/drtranquanghung91-vn/grand-rounds)
+
+Audit an existing medical slide deck (HTML or PPTX) for AI-slop patterns, wrong numbers, unverifiable references and patient identifiers.
+
+Example skill path: `skills/audit-deck/SKILL.md`
 
 ### [DrugClaw/DrugClaw](https://github.com/DrugClaw/DrugClaw)
 
@@ -707,6 +709,12 @@ Collected GitHub skill repository.
 ### [langxin11/maniplot](https://github.com/langxin11/maniplot)
 
 Collected GitHub skill repository.
+
+### [LawrenceRiver/FigFox-Gen-skill](https://github.com/LawrenceRiver/FigFox-Gen-skill)
+
+Use only when the user explicitly requests a scientific or research poster image. Accept a paper PDF and optional poster reference; stop at PNG generation. Ordinary scientific figures and methodology diagrams do not use this Skill.
+
+Example skill path: `skills/posfox-gen/SKILL.md`
 
 ### [LawrenceRiver/genlike-scientific-svg-skill](https://github.com/LawrenceRiver/genlike-scientific-svg-skill)
 
@@ -1167,6 +1175,12 @@ Collected GitHub skill repository.
 ### [talharaziq/bioinformatics-agent-skills](https://github.com/talharaziq/bioinformatics-agent-skills)
 
 Collected GitHub skill repository.
+
+### [TardisBooo/scientific-visual-studio](https://github.com/TardisBooo/scientific-visual-studio)
+
+Semantic visual storyboard designer and abstract component library. Map slide/lesson intents into SciencePlots academic charts, 3B1B mathematical animations, Qiskit quantum circuits, Control Bode/Nyquist curves, PlotNeuralNet 3D tensor volumes, PyVista vector streamlines, or system architecture layouts with zero business hardcoding.
+
+Example skill path: `skills/visual-storyboard-designer/SKILL.md`
 
 ### [tayloranthonyanderson/haploqtl](https://github.com/tayloranthonyanderson/haploqtl)
 

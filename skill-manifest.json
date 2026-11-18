@@ -756,6 +756,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "LawrenceRiver/FigFox-Gen-skill",
+    "cloneUrl": "https://github.com/LawrenceRiver/FigFox-Gen-skill.git",
+    "localPath": "open-source/LawrenceRiver/FigFox-Gen-skill",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/LawrenceRiver/FigFox-Gen-skill",
+    "addedAt": "2026-11-18T21:45:36.862043Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "LawrenceRiver/genlike-scientific-svg-skill",
     "cloneUrl": "https://github.com/LawrenceRiver/genlike-scientific-svg-skill.git",
     "localPath": "open-source/LawrenceRiver/genlike-scientific-svg-skill",
@@ -1096,6 +1105,15 @@
     "upstreamUrl": "https://github.com/Taison472/codex-skills",
     "addedAt": "2026-04-11T17:13:45.782515Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "TardisBooo/scientific-visual-studio",
+    "cloneUrl": "https://github.com/TardisBooo/scientific-visual-studio.git",
+    "localPath": "open-source/TardisBooo/scientific-visual-studio",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/TardisBooo/scientific-visual-studio",
+    "addedAt": "2026-11-18T21:45:29.874982Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "TenureAI/PhD-Zero",
@@ -1671,6 +1689,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/drthyang/rmc-toolkits",
     "addedAt": "2026-10-12T22:02:20.866612Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "drtranquanghung91-vn/grand-rounds",
+    "cloneUrl": "https://github.com/drtranquanghung91-vn/grand-rounds.git",
+    "localPath": "open-source/drtranquanghung91-vn/grand-rounds",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/drtranquanghung91-vn/grand-rounds",
+    "addedAt": "2026-11-18T21:46:22.749749Z",
     "addedBy": "github-actions"
   },
   {
