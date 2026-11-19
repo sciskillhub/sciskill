@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **355**
+Total repositories: **357**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -386,9 +386,7 @@ Collected GitHub skill repository.
 
 ### [drtranquanghung91-vn/grand-rounds](https://github.com/drtranquanghung91-vn/grand-rounds)
 
-Audit an existing medical slide deck (HTML or PPTX) for AI-slop patterns, wrong numbers, unverifiable references and patient identifiers.
-
-Example skill path: `skills/audit-deck/SKILL.md`
+Collected GitHub skill repository.
 
 ### [DrugClaw/DrugClaw](https://github.com/DrugClaw/DrugClaw)
 
@@ -712,9 +710,7 @@ Collected GitHub skill repository.
 
 ### [LawrenceRiver/FigFox-Gen-skill](https://github.com/LawrenceRiver/FigFox-Gen-skill)
 
-Use only when the user explicitly requests a scientific or research poster image. Accept a paper PDF and optional poster reference; stop at PNG generation. Ordinary scientific figures and methodology diagrams do not use this Skill.
-
-Example skill path: `skills/posfox-gen/SKILL.md`
+Collected GitHub skill repository.
 
 ### [LawrenceRiver/genlike-scientific-svg-skill](https://github.com/LawrenceRiver/genlike-scientific-svg-skill)
 
@@ -1176,11 +1172,15 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
-### [TardisBooo/scientific-visual-studio](https://github.com/TardisBooo/scientific-visual-studio)
+### [TardisBooo/figureatlas](https://github.com/TardisBooo/figureatlas)
 
-Semantic visual storyboard designer and abstract component library. Map slide/lesson intents into SciencePlots academic charts, 3B1B mathematical animations, Qiskit quantum circuits, Control Bode/Nyquist curves, PlotNeuralNet 3D tensor volumes, PyVista vector streamlines, or system architecture layouts with zero business hardcoding.
+Pick a FigureAtlas figure when a paper, slide, poster, or video frame needs a chart, diagram, map, or illustration. The catalog has 300 verified figure types across 15 families.
 
 Example skill path: `skills/visual-storyboard-designer/SKILL.md`
+
+### [TardisBooo/scientific-visual-studio](https://github.com/TardisBooo/scientific-visual-studio)
+
+Collected GitHub skill repository.
 
 ### [tayloranthonyanderson/haploqtl](https://github.com/tayloranthonyanderson/haploqtl)
 
@@ -1381,6 +1381,12 @@ Collected GitHub skill repository.
 ### [zacklecon/claude-skills](https://github.com/zacklecon/claude-skills)
 
 Collected GitHub skill repository.
+
+### [zamminhduy123/clean-charts](https://github.com/zamminhduy123/clean-charts)
+
+Draw clean, publication-ready benchmark and comparison charts in the style of AI model-launch posts (Google / DeepMind Gemini blogs, model cards) with Python + matplotlib - bar charts, stacked pass@k bars, cost-vs-quality lines, scatter with Pareto frontier, pie, doughnut, area, radar and slide layouts. Use whenever the user wants a chart that "looks like Google's", wants to recreate or clone a chart from a screenshot, or asks for clean model-vs-model benchmark charts (scores, cost per task, attack success rate, "higher is better") for a launch post, slide deck, paper or README - even if they never say "Google" but show a chart in that look (Google Sans, blue hero bars, grey competitors, value labels on top, methodology footer).
+
+Example skill path: `skills/clean-charts/SKILL.md`
 
 ### [zararogers338-hash/OS-CXCL11-Atlas](https://github.com/zararogers338-hash/OS-CXCL11-Atlas)
 

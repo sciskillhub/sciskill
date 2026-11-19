@@ -1107,6 +1107,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "TardisBooo/figureatlas",
+    "cloneUrl": "https://github.com/TardisBooo/figureatlas.git",
+    "localPath": "open-source/TardisBooo/figureatlas",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/TardisBooo/figureatlas",
+    "addedAt": "2026-11-19T22:01:51.597054Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "TardisBooo/scientific-visual-studio",
     "cloneUrl": "https://github.com/TardisBooo/scientific-visual-studio.git",
     "localPath": "open-source/TardisBooo/scientific-visual-studio",
@@ -3111,6 +3120,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/zacklecon/claude-skills",
     "addedAt": "2026-04-15T15:11:33.681088Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "zamminhduy123/clean-charts",
+    "cloneUrl": "https://github.com/zamminhduy123/clean-charts.git",
+    "localPath": "open-source/zamminhduy123/clean-charts",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/zamminhduy123/clean-charts",
+    "addedAt": "2026-11-19T22:01:53.249293Z",
     "addedBy": "github-actions"
   },
   {
