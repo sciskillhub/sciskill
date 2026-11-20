@@ -9,6 +9,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "0xcvaliente/biology-antibodies-skills",
+    "cloneUrl": "https://github.com/0xcvaliente/biology-antibodies-skills.git",
+    "localPath": "open-source/0xcvaliente/biology-antibodies-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/0xcvaliente/biology-antibodies-skills",
+    "addedAt": "2026-11-20T21:43:28.607497Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "0xcvaliente/immunology-skills",
     "cloneUrl": "https://github.com/0xcvaliente/immunology-skills.git",
     "localPath": "open-source/0xcvaliente/immunology-skills",
@@ -567,6 +576,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "IGVF-DACC/igvf-portal-mcp",
+    "cloneUrl": "https://github.com/IGVF-DACC/igvf-portal-mcp.git",
+    "localPath": "open-source/IGVF-DACC/igvf-portal-mcp",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/IGVF-DACC/igvf-portal-mcp",
+    "addedAt": "2026-11-20T21:42:21.921008Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "ItsShreyamHere/warrant",
     "cloneUrl": "https://github.com/ItsShreyamHere/warrant.git",
     "localPath": "open-source/ItsShreyamHere/warrant",
@@ -1024,6 +1042,15 @@
     "upstreamUrl": "https://github.com/SURFLIN2030/swing-skills",
     "addedAt": "2026-04-11T17:13:45.277222Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "SamDozer/antigravity-elite-harness",
+    "cloneUrl": "https://github.com/SamDozer/antigravity-elite-harness.git",
+    "localPath": "open-source/SamDozer/antigravity-elite-harness",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/SamDozer/antigravity-elite-harness",
+    "addedAt": "2026-11-20T21:42:29.896582Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "Samuelkebede24/skill-conductor",
@@ -1701,6 +1728,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "drtranquanghung91-vn/clinical-research-orchestra",
+    "cloneUrl": "https://github.com/drtranquanghung91-vn/clinical-research-orchestra.git",
+    "localPath": "open-source/drtranquanghung91-vn/clinical-research-orchestra",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/drtranquanghung91-vn/clinical-research-orchestra",
+    "addedAt": "2026-11-20T21:44:50.513455Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "drtranquanghung91-vn/grand-rounds",
     "cloneUrl": "https://github.com/drtranquanghung91-vn/grand-rounds.git",
     "localPath": "open-source/drtranquanghung91-vn/grand-rounds",
@@ -2076,6 +2112,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/k-telux/OpticalModeler",
     "addedAt": "2026-07-15T15:26:54.676826Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "karunprem45/null-hypothesis",
+    "cloneUrl": "https://github.com/karunprem45/null-hypothesis.git",
+    "localPath": "open-source/karunprem45/null-hypothesis",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/karunprem45/null-hypothesis",
+    "addedAt": "2026-11-20T21:43:05.282843Z",
     "addedBy": "github-actions"
   },
   {
