@@ -99,6 +99,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "Alex-w0731/tumor-immunology-skills",
+    "cloneUrl": "https://github.com/Alex-w0731/tumor-immunology-skills.git",
+    "localPath": "open-source/Alex-w0731/tumor-immunology-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Alex-w0731/tumor-immunology-skills",
+    "addedAt": "2026-11-21T20:23:40.165628Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Alim430/bioresearch-agent",
     "cloneUrl": "https://github.com/Alim430/bioresearch-agent.git",
     "localPath": "open-source/Alim430/bioresearch-agent",
@@ -2265,6 +2274,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/mianaz/biomed-skills",
     "addedAt": "2026-10-24T17:14:19.369116Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "mingeric/bioinformatics-sci-master",
+    "cloneUrl": "https://github.com/mingeric/bioinformatics-sci-master.git",
+    "localPath": "open-source/mingeric/bioinformatics-sci-master",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/mingeric/bioinformatics-sci-master",
+    "addedAt": "2026-11-21T20:23:35.225035Z",
     "addedBy": "github-actions"
   },
   {

@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **362**
+Total repositories: **364**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -10,9 +10,7 @@ Collected GitHub skill repository.
 
 ### [0xcvaliente/biology-antibodies-skills](https://github.com/0xcvaliente/biology-antibodies-skills)
 
-Computational design of antibody-format binders (VHH/nanobody, scFv, Fab) against a given target, from the task text to a ranked, defensible submission - epitope choice, objectives such as cross-species or pH-selective binding turned into design levers, calibration on controls, two or more generation routes, co-folding and scoring (ipTM, ipSAE, pLDDT), filters, a diverse top-N with a decision log, submission CSV and methods. Use when asked to design, rank, filter or select nanobodies or antibody binders, to choose between design models (RFdiffusion, BoltzGen, RFantibody, Germinal, ProteinMPNN, Boltz, Chai, OpenFold, Protenix), to interpret confidence scores, to build a reproducible design pipeline or skill, or to prepare designs for wet-lab testing (Adaptyv, Proteinbase). Orchestrates the tool skills and MCP servers already connected; models screen, they do not measure binding. Use antibody-sequence-bioinformatics for numbering, CDRs, liabilities and contigs, antibody-literature-search for the target dossier, oslo-antibodies-hackathon for that event's rules, antibody-engineering to improve an antibody you already have.
-
-Example skill path: `antibody-binder-design/SKILL.md`
+Collected GitHub skill repository.
 
 ### [0xcvaliente/immunology-skills](https://github.com/0xcvaliente/immunology-skills)
 
@@ -69,6 +67,12 @@ Collected GitHub skill repository.
 ### [aksh-3141/claude-toolshed](https://github.com/aksh-3141/claude-toolshed)
 
 Collected GitHub skill repository.
+
+### [Alex-w0731/tumor-immunology-skills](https://github.com/Alex-w0731/tumor-immunology-skills)
+
+Verifies the references and cited claims in tumor immunology manuscripts, grant text, slides and agent-written reports before they are shared: each reference resolves at Crossref or PubMed, its title, year, first author and journal match, retraction, expression-of-concern and correction notices are found, and the statement attributed to it is supported by what the paper reports, with numbers, species and model system, and primary data versus review or preprint checked. Ships a tested lookup script with saved-response replay. Use when the user asks to check references, verify citations, find fabricated or hallucinated references, check for retracted papers, fact-check a draft or an AI-written text, or confirm that a paper says what the text claims; also for 核对参考文献, 引用核查, 文献真实性, 撤稿, AI编造文献, 事实核查.
+
+Example skill path: `skills/citation-evidence-check/SKILL.md`
 
 ### [alexblogoodf/glyfiq-mcp](https://github.com/alexblogoodf/glyfiq-mcp)
 
@@ -392,9 +396,7 @@ Collected GitHub skill repository.
 
 ### [drtranquanghung91-vn/clinical-research-orchestra](https://github.com/drtranquanghung91-vn/clinical-research-orchestra)
 
-Use when a user starts or resumes a research project, thesis, manuscript, review, case report or poster or an existing project needs resuming, asks where their project stands, or asks whether the citations or references of a draft are correct. Triggers: "bắt đầu nghiên cứu", "tạo dự án nghiên cứu", "làm luận văn", "đề tài cơ sở", "làm tiếp đề tài", "kiểm tra trích dẫn", "trích dẫn có đúng không", "kiểm tra tài liệu tham khảo", "start a research project", "set up my thesis", "where am I in my project", "check my citations", "verify references".
-
-Example skill path: `plugins/orchestra/skills/research-project-setup/SKILL.md`
+Collected GitHub skill repository.
 
 ### [drtranquanghung91-vn/grand-rounds](https://github.com/drtranquanghung91-vn/grand-rounds)
 
@@ -550,9 +552,7 @@ Collected GitHub skill repository.
 
 ### [IGVF-DACC/igvf-portal-mcp](https://github.com/IGVF-DACC/igvf-portal-mcp)
 
-Summarize an IGVF item type by facets and guide the user through progressive filtering
-
-Example skill path: `.claude/skills/igvf-facet-filter/SKILL.md`
+Collected GitHub skill repository.
 
 ### [imrascal/open-scientific-draw-agent](https://github.com/imrascal/open-scientific-draw-agent)
 
@@ -692,9 +692,7 @@ Collected GitHub skill repository.
 
 ### [karunprem45/null-hypothesis](https://github.com/karunprem45/null-hypothesis)
 
-Split scattered evidence into per-agent folders so each agent sees one slice, nothing identifies the entity, and a test proves it. Use when building a multi-agent system whose claim depends on agents having distinct information.
-
-Example skill path: `skills/blind-agent-views/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Kayunangka/claude-skill](https://github.com/Kayunangka/claude-skill)
 
@@ -811,6 +809,12 @@ Collected GitHub skill repository.
 ### [mianaz/biomed-skills](https://github.com/mianaz/biomed-skills)
 
 Collected GitHub skill repository.
+
+### [mingeric/bioinformatics-sci-master](https://github.com/mingeric/bioinformatics-sci-master)
+
+Design, execute, audit, visualize and write reproducible SCI-grade computational biology papers from genuine public or user-supplied omics and clinical data. Use for pan-cancer biomarker discovery, multi-omics, bulk RNA-seq, survival/ML, WGCNA, scRNA-seq, spatial, virtual perturbation, immune analysis, drug response and journal submission. Invoke for study design, analysis expansion, manuscript revision, figure integration or final release. Do not invoke for wet-lab-only protocols or generic prose editing unrelated to bioinformatics.
+
+Example skill path: `SKILL.md`
 
 ### [mingeric/scientific-research-master-skill](https://github.com/mingeric/scientific-research-master-skill)
 
@@ -1090,9 +1094,7 @@ Collected GitHub skill repository.
 
 ### [SamDozer/antigravity-elite-harness](https://github.com/SamDozer/antigravity-elite-harness)
 
-Ground biological identifiers, citations, gene symbols, and macromolecular structures against authoritative REST APIs (UniProt, RCSB PDB, Ensembl, Europe PMC/PubMed, Crossref). Use when validating biological accession numbers (e.g. UniProt P04637, PDB 1TUP), citing scientific papers with DOIs or PMIDs, verifying gene symbols with Ensembl IDs, or preventing hallucinated literature references. Do NOT use when reviewing git diffs for software syntax errors, writing CSS styles, or configuring build tools.
-
-Example skill path: `skills/comp-bio/bio-literature-grounding/SKILL.md`
+Collected GitHub skill repository.
 
 ### [Samuelkebede24/skill-conductor](https://github.com/Samuelkebede24/skill-conductor)
 
