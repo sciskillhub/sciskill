@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **364**
+Total repositories: **365**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -70,9 +70,7 @@ Collected GitHub skill repository.
 
 ### [Alex-w0731/tumor-immunology-skills](https://github.com/Alex-w0731/tumor-immunology-skills)
 
-Verifies the references and cited claims in tumor immunology manuscripts, grant text, slides and agent-written reports before they are shared: each reference resolves at Crossref or PubMed, its title, year, first author and journal match, retraction, expression-of-concern and correction notices are found, and the statement attributed to it is supported by what the paper reports, with numbers, species and model system, and primary data versus review or preprint checked. Ships a tested lookup script with saved-response replay. Use when the user asks to check references, verify citations, find fabricated or hallucinated references, check for retracted papers, fact-check a draft or an AI-written text, or confirm that a paper says what the text claims; also for 核对参考文献, 引用核查, 文献真实性, 撤稿, AI编造文献, 事实核查.
-
-Example skill path: `skills/citation-evidence-check/SKILL.md`
+Collected GitHub skill repository.
 
 ### [alexblogoodf/glyfiq-mcp](https://github.com/alexblogoodf/glyfiq-mcp)
 
@@ -566,6 +564,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [ishant1994/construct-maps](https://github.com/ishant1994/construct-maps)
+
+Use for protein or peptide engineering, interpreting sequence–function relationships, designing construct libraries and controls, or comparing and visualizing existing constructs. Connect a biological objective to specific edits through literature, functional regions, residue evidence, homolog analysis, and relevant computation. Produce aligned interactive diagrams with traceable evidence, complete sequences or chemical records, and experiments that distinguish the proposed mechanisms.
+
+Example skill path: `skills/protein-construct-design/SKILL.md`
+
 ### [itsbrendandang/agent-test](https://github.com/itsbrendandang/agent-test)
 
 Collected GitHub skill repository.
@@ -812,9 +816,7 @@ Collected GitHub skill repository.
 
 ### [mingeric/bioinformatics-sci-master](https://github.com/mingeric/bioinformatics-sci-master)
 
-Design, execute, audit, visualize and write reproducible SCI-grade computational biology papers from genuine public or user-supplied omics and clinical data. Use for pan-cancer biomarker discovery, multi-omics, bulk RNA-seq, survival/ML, WGCNA, scRNA-seq, spatial, virtual perturbation, immune analysis, drug response and journal submission. Invoke for study design, analysis expansion, manuscript revision, figure integration or final release. Do not invoke for wet-lab-only protocols or generic prose editing unrelated to bioinformatics.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [mingeric/scientific-research-master-skill](https://github.com/mingeric/scientific-research-master-skill)
 
