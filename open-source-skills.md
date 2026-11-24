@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **366**
+Total repositories: **368**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -248,6 +248,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [carrot-wangqian/plant-omics-research-skills](https://github.com/carrot-wangqian/plant-omics-research-skills)
+
+Explain or audit existing omics results and scientific figures. Use for evidence-linked result interpretation, figure walkthroughs, reproducibility notes, or limited next-step recommendations without rerunning analyses or redrawing figures; not for reading external published papers or redrawing figures.
+
+Example skill path: `skills/analysis-explainer/SKILL.md`
+
 ### [celikgo/GlowSky](https://github.com/celikgo/GlowSky)
 
 Collected GitHub skill repository.
@@ -331,6 +337,12 @@ Collected GitHub skill repository.
 ### [Daisy-achun/Daisy-paper-framework-skill](https://github.com/Daisy-achun/Daisy-paper-framework-skill)
 
 Collected GitHub skill repository.
+
+### [daormar/debasher](https://github.com/daormar/debasher)
+
+Design a DeBasher program with the user: which processes it has, their options and how they connect (files or FIFOs, general or resident), and build that on the program through the MCP tools, laid out on the canvas. Use when the user wants to create a program, add or restructure processes, or decide how data flows. Does not write the code of the processes.
+
+Example skill path: `frontend/claude/plugin/skills/design/SKILL.md`
 
 ### [darshak26/acmg-variant-curation](https://github.com/darshak26/acmg-variant-curation)
 
@@ -1306,9 +1318,7 @@ Collected GitHub skill repository.
 
 ### [Vajraaaang/bio-agent-harness](https://github.com/Vajraaaang/bio-agent-harness)
 
-Inspect local RNA-seq data, check answerability, run reviewed DevHarness workflows, and assemble receipt-backed research packages from public or synthetic evidence.
-
-Example skill path: `integrations/codex/devharness/skills/rna-workbench/SKILL.md`
+Collected GitHub skill repository.
 
 ### [VILA-Lab/FigMirror](https://github.com/VILA-Lab/FigMirror)
 

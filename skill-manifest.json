@@ -1548,6 +1548,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "carrot-wangqian/plant-omics-research-skills",
+    "cloneUrl": "https://github.com/carrot-wangqian/plant-omics-research-skills.git",
+    "localPath": "open-source/carrot-wangqian/plant-omics-research-skills",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/carrot-wangqian/plant-omics-research-skills",
+    "addedAt": "2026-11-24T23:26:32.906762Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "celikgo/GlowSky",
     "cloneUrl": "https://github.com/celikgo/GlowSky.git",
     "localPath": "open-source/celikgo/GlowSky",
@@ -1645,6 +1654,15 @@
     "upstreamUrl": "https://github.com/d-oit/web-doc-resolver",
     "addedAt": "2026-04-11T17:13:45.139534Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "daormar/debasher",
+    "cloneUrl": "https://github.com/daormar/debasher.git",
+    "localPath": "open-source/daormar/debasher",
+    "defaultBranch": "master",
+    "upstreamUrl": "https://github.com/daormar/debasher",
+    "addedAt": "2026-11-24T23:24:15.043874Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "darshak26/acmg-variant-curation",
