@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **365**
+Total repositories: **366**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -566,9 +566,7 @@ Collected GitHub skill repository.
 
 ### [ishant1994/construct-maps](https://github.com/ishant1994/construct-maps)
 
-Use for protein or peptide engineering, interpreting sequence–function relationships, designing construct libraries and controls, or comparing and visualizing existing constructs. Connect a biological objective to specific edits through literature, functional regions, residue evidence, homolog analysis, and relevant computation. Produce aligned interactive diagrams with traceable evidence, complete sequences or chemical records, and experiments that distinguish the proposed mechanisms.
-
-Example skill path: `skills/protein-construct-design/SKILL.md`
+Collected GitHub skill repository.
 
 ### [itsbrendandang/agent-test](https://github.com/itsbrendandang/agent-test)
 
@@ -1305,6 +1303,12 @@ Collected GitHub skill repository.
 ### [URneiU1/choosing-research-skills](https://github.com/URneiU1/choosing-research-skills)
 
 Collected GitHub skill repository.
+
+### [Vajraaaang/bio-agent-harness](https://github.com/Vajraaaang/bio-agent-harness)
+
+Inspect local RNA-seq data, check answerability, run reviewed DevHarness workflows, and assemble receipt-backed research packages from public or synthetic evidence.
+
+Example skill path: `integrations/codex/devharness/skills/rna-workbench/SKILL.md`
 
 ### [VILA-Lab/FigMirror](https://github.com/VILA-Lab/FigMirror)
 
