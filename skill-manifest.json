@@ -864,6 +864,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "MuizZer07/Bio-STEWARD",
+    "cloneUrl": "https://github.com/MuizZer07/Bio-STEWARD.git",
+    "localPath": "open-source/MuizZer07/Bio-STEWARD",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/MuizZer07/Bio-STEWARD",
+    "addedAt": "2026-11-26T22:49:08.971459Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "MuteJester/PyNCBI",
     "cloneUrl": "https://github.com/MuteJester/PyNCBI.git",
     "localPath": "open-source/MuteJester/PyNCBI",
@@ -1752,6 +1761,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/droftgamer-wq/researcher-skill",
     "addedAt": "2026-04-14T15:13:27.348930Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "drsh4dow/phi-router",
+    "cloneUrl": "https://github.com/drsh4dow/phi-router.git",
+    "localPath": "open-source/drsh4dow/phi-router",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/drsh4dow/phi-router",
+    "addedAt": "2026-11-26T22:51:18.680772Z",
     "addedBy": "github-actions"
   },
   {

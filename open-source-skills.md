@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **371**
+Total repositories: **373**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -395,6 +395,12 @@ Collected GitHub skill repository.
 ### [droftgamer-wq/researcher-skill](https://github.com/droftgamer-wq/researcher-skill)
 
 Collected GitHub skill repository.
+
+### [drsh4dow/phi-router](https://github.com/drsh4dow/phi-router)
+
+Check a change against the TLA+ model of the router in tools/formal: a change to the parts, verdicts, lanes, pin, border, accounts, route or lifecycle code, to the verdict store or the lease registry, or to a .tla or .cfg file.
+
+Example skill path: `.agents/skills/verify-formal-model/SKILL.md`
 
 ### [drthyang/rmc-toolkits](https://github.com/drthyang/rmc-toolkits)
 
@@ -848,6 +854,12 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [MuizZer07/Bio-STEWARD](https://github.com/MuizZer07/Bio-STEWARD)
+
+Fix datasets, splits, baselines, metrics, comparison and thresholds before results are seen. Use when designing an evaluation, comparing methods with baselines, or planning a confirmatory analysis.
+
+Example skill path: `plugin/skills/benchmark-contract/SKILL.md`
+
 ### [mumu-sci/amplicon-phylo-tree](https://github.com/mumu-sci/amplicon-phylo-tree)
 
 Collected GitHub skill repository.
@@ -1082,9 +1094,7 @@ Collected GitHub skill repository.
 
 ### [runpapers/runpapers](https://github.com/runpapers/runpapers)
 
-Reproduce figures from and answer new questions with the data of "Cross-species multiomic atlas of the primate basal ganglia" (Johansen et al., Cell 2026, DOI 10.1016/j.cell.2026.10.012). Use when the user asks about basal ganglia cell types, spiny projection neurons (SPNs), STR D2 SMYD2-HTR7 SPN, cross-species gene conservation, primate-mouse homology, basal ganglia spatial transcriptomics, macaque Patch-seq electrophysiology, snATAC-seq enhancers, DeepHumanBG motif grammar, or AD/SCZ disease genetics in this atlas.
-
-Example skill path: `papers/10.1016/j.cell.2026.10.012/SKILL.md`
+Collected GitHub skill repository.
 
 ### [ruthannepai-tech/inflammatory-target-analyst](https://github.com/ruthannepai-tech/inflammatory-target-analyst)
 
@@ -1248,9 +1258,7 @@ Collected GitHub skill repository.
 
 ### [terravic/clinical-trials-workbench-skill](https://github.com/terravic/clinical-trials-workbench-skill)
 
-Use this skill when the user asks to screen or match patients to clinical trials, triage clinical trial site risk signals, monitor cross-system CTMS/EDC/IRT/Safety/QMS feeds, draft CRA monitoring visit agendas or site follow-up communications, run transparent SQL analytics over trial operations, or build and launch an interactive clinical trials workbench dashboard (dashboard.html).
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [terravic/embl-ebi-ols-skill](https://github.com/terravic/embl-ebi-ols-skill)
 
@@ -1382,9 +1390,7 @@ Collected GitHub skill repository.
 
 ### [xuankudiaozha/yggdrasil-operation](https://github.com/xuankudiaozha/yggdrasil-operation)
 
-Plan and produce evidence-grounded scientific manuscripts, figures, and tables using one editable offline HTML plan. Use for manuscript drafting and revision, independent scientific figure or table work, or an explicitly requested evidence-review workflow inherited from RRA v7. 科研论文与图表联合规划、独立制作及综述续作。 Uses adopted evidence without running new statistical analyses.
-
-Example skill path: `SKILL.md`
+Collected GitHub skill repository.
 
 ### [Xuzhen-Li/paper-viz](https://github.com/Xuzhen-Li/paper-viz)
 
