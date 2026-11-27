@@ -2,7 +2,7 @@
 
 Collected GitHub repositories that provide reusable skills, workflows, or domain-specific agent capabilities.
 
-Total repositories: **373**
+Total repositories: **377**
 
 ### [001TMF/pinakes](https://github.com/001TMF/pinakes)
 
@@ -398,9 +398,7 @@ Collected GitHub skill repository.
 
 ### [drsh4dow/phi-router](https://github.com/drsh4dow/phi-router)
 
-Check a change against the TLA+ model of the router in tools/formal: a change to the parts, verdicts, lanes, pin, border, accounts, route or lifecycle code, to the verdict store or the lease registry, or to a .tla or .cfg file.
-
-Example skill path: `.agents/skills/verify-formal-model/SKILL.md`
+Collected GitHub skill repository.
 
 ### [drthyang/rmc-toolkits](https://github.com/drthyang/rmc-toolkits)
 
@@ -445,6 +443,12 @@ Collected GitHub skill repository.
 ### [felipemsilva/PowerSkills](https://github.com/felipemsilva/PowerSkills)
 
 Collected GitHub skill repository.
+
+### [FengruGaga/research-figure-studio](https://github.com/FengruGaga/research-figure-studio)
+
+Create and iteratively improve editable scientific method diagrams, experimental workflows and result charts from descriptions, code, reference figures, and screenshot feedback. Use for research-figure design, scientific palettes, process and structure diagrams, 科研绘图、论文配图、配色优化 and layout corrections. Produces vector artwork and reproducible drawing code.
+
+Example skill path: `skills/research-figure-studio/SKILL.md`
 
 ### [Ficere/archer](https://github.com/Ficere/archer)
 
@@ -573,6 +577,12 @@ Collected GitHub skill repository.
 ### [inhabitants/living-dossier](https://github.com/inhabitants/living-dossier)
 
 Collected GitHub skill repository.
+
+### [Insightwithhari/rbai-cli](https://github.com/Insightwithhari/rbai-cli)
+
+Drive RBAi, the research assistant for the life sciences, through its command line (rbai): literature reviews, research projects and their sources, questions to the RBAi assistant (UniProt, PDB, Ensembl, ClinVar, PubMed and more), Galaxy analyses, Structure Studio, slides, Report Writer pages, files and Connect, all in the user's own RBAi account. Use when the user asks for biomedical or life-science research work through RBAi, or mentions rbai or RBAi.
+
+Example skill path: `skills/rbai/SKILL.md`
 
 ### [irrrricardo/fig-cos](https://github.com/irrrricardo/fig-cos)
 
@@ -850,15 +860,19 @@ Collected GitHub skill repository.
 
 Collected GitHub skill repository.
 
+### [mobashirrahman/agentic-scientist](https://github.com/mobashirrahman/agentic-scientist)
+
+Exact signatures and docstrings of the installed library versions and of our own helpers (src.v2.*). Use before calling an unfamiliar function, to avoid version-mismatch crashes.
+
+Example skill path: `agentic_scientist/skills/api-docs/SKILL.md`
+
 ### [mtchuang1981/clin-data-nav](https://github.com/mtchuang1981/clin-data-nav)
 
 Collected GitHub skill repository.
 
 ### [MuizZer07/Bio-STEWARD](https://github.com/MuizZer07/Bio-STEWARD)
 
-Fix datasets, splits, baselines, metrics, comparison and thresholds before results are seen. Use when designing an evaluation, comparing methods with baselines, or planning a confirmatory analysis.
-
-Example skill path: `plugin/skills/benchmark-contract/SKILL.md`
+Collected GitHub skill repository.
 
 ### [mumu-sci/amplicon-phylo-tree](https://github.com/mumu-sci/amplicon-phylo-tree)
 
@@ -1283,6 +1297,12 @@ Collected GitHub skill repository.
 ### [Thanx01/paper-figure-skill](https://github.com/Thanx01/paper-figure-skill)
 
 Collected GitHub skill repository.
+
+### [the-omics-os/lobster](https://github.com/the-omics-os/lobster)
+
+Develop and extend Lobster AI: agent plugins, stateless services, tool metadata, provenance IR, figure templates, contract tests, and local CLI behavior. Use for creating an agent or service, fixing Lobster code, adding a tool, understanding architecture, migrating a plugin, or writing tests. Before adding a new capability, follow the need-first planning workflow. Generate new agent packages with lobster scaffold agent, not by hand.
+
+Example skill path: `lobster/skills/lobster-dev/SKILL.md`
 
 ### [the8thday/AgenticPrism-SKILL](https://github.com/the8thday/AgenticPrism-SKILL)
 

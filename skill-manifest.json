@@ -477,6 +477,15 @@
     "addedBy": "github-actions"
   },
   {
+    "fullName": "FengruGaga/research-figure-studio",
+    "cloneUrl": "https://github.com/FengruGaga/research-figure-studio.git",
+    "localPath": "open-source/FengruGaga/research-figure-studio",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/FengruGaga/research-figure-studio",
+    "addedAt": "2026-11-27T22:32:05.484870Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "Ficere/archer",
     "cloneUrl": "https://github.com/Ficere/archer.git",
     "localPath": "open-source/Ficere/archer",
@@ -591,6 +600,15 @@
     "defaultBranch": "main",
     "upstreamUrl": "https://github.com/IGVF-DACC/igvf-portal-mcp",
     "addedAt": "2026-11-20T21:42:21.921008Z",
+    "addedBy": "github-actions"
+  },
+  {
+    "fullName": "Insightwithhari/rbai-cli",
+    "cloneUrl": "https://github.com/Insightwithhari/rbai-cli.git",
+    "localPath": "open-source/Insightwithhari/rbai-cli",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/Insightwithhari/rbai-cli",
+    "addedAt": "2026-11-27T22:31:15.692740Z",
     "addedBy": "github-actions"
   },
   {
@@ -2367,6 +2385,15 @@
     "addedBy": "migration-script"
   },
   {
+    "fullName": "mobashirrahman/agentic-scientist",
+    "cloneUrl": "https://github.com/mobashirrahman/agentic-scientist.git",
+    "localPath": "open-source/mobashirrahman/agentic-scientist",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/mobashirrahman/agentic-scientist",
+    "addedAt": "2026-11-27T22:32:34.703092Z",
+    "addedBy": "github-actions"
+  },
+  {
     "fullName": "mtchuang1981/clin-data-nav",
     "cloneUrl": "https://github.com/mtchuang1981/clin-data-nav.git",
     "localPath": "open-source/mtchuang1981/clin-data-nav",
@@ -3013,6 +3040,15 @@
     "upstreamUrl": "https://github.com/th3vib3coder/vibe-science-codex",
     "addedAt": "2026-04-11T17:13:46.458470Z",
     "addedBy": "migration-script"
+  },
+  {
+    "fullName": "the-omics-os/lobster",
+    "cloneUrl": "https://github.com/the-omics-os/lobster.git",
+    "localPath": "open-source/the-omics-os/lobster",
+    "defaultBranch": "main",
+    "upstreamUrl": "https://github.com/the-omics-os/lobster",
+    "addedAt": "2026-11-27T22:31:19.430504Z",
+    "addedBy": "github-actions"
   },
   {
     "fullName": "the8thday/AgenticPrism-SKILL",
